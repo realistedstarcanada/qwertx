@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 
 const DIST = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'dist');
 const PORT = Number(process.argv[2] || process.env.PORT || 4321);
-const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.xml': 'application/xml', '.txt': 'text/plain' };
+const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json', '.svg': 'image/svg+xml', '.xml': 'application/xml', '.txt': 'text/plain', '.jpg': 'image/jpeg', '.png': 'image/png', '.woff2': 'font/woff2' };
 
 http
   .createServer((req, res) => {
@@ -21,6 +21,7 @@ http
     let file = path.join(DIST, url);
     if (!file.startsWith(DIST)) return res.writeHead(403).end();
     if (fs.existsSync(file) && fs.statSync(file).isDirectory()) file = path.join(file, 'index.html');
+    if (!fs.existsSync(file) && fs.existsSync(file + '.html')) file += '.html';
     if (!fs.existsSync(file)) {
       res.writeHead(404, { 'Content-Type': TYPES['.html'] });
       return res.end(fs.readFileSync(path.join(DIST, '404.html')));

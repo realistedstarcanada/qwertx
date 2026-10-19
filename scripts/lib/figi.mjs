@@ -2,8 +2,11 @@
 // only new CUSIPs are looked up each quarter. Set OPENFIGI_API_KEY for faster limits.
 import { sleep } from './net.mjs';
 
-export async function mapCusips(cusips, cache) {
-  const todo = [...new Set(cusips)].filter((c) => c && !(c in cache));
+// Bloomberg exchange codes for US venues (composite US plus individual exchanges).
+const US = new Set(['US', 'UN', 'UW', 'UQ', 'UA', 'UR', 'UF', 'UP', 'UV', 'UD', 'UT', 'UX', 'UB', 'UC', 'UM', 'UO', 'UU']);
+
+export async function mapCusips(cusips, cache, { retry = false } = {}) {
+  const todo = [...new Set(cusips)].filter((c) => c && (!(c in cache) || (retry && !cache[c]?.ticker)));
   if (!todo.length) return 0;
   const key = process.env.OPENFIGI_API_KEY;
   const batch = key ? 100 : 10;
@@ -33,10 +36,11 @@ export async function mapCusips(cusips, cache) {
     const out = await res.json();
     out.forEach((r, j) => {
       const d = r.data || [];
-      const us = d.filter((x) => x.exchCode === 'US');
-      const pick = us.find((x) => x.marketSector === 'Equity') || us[0] || d.find((x) => x.marketSector === 'Equity') || d[0];
+      const us = d.filter((x) => US.has(x.exchCode) && x.ticker);
+      const best = us.find((x) => x.exchCode === 'US' && x.marketSector === 'Equity') || us.find((x) => x.marketSector === 'Equity') || us[0];
+      const pick = best || d.find((x) => x.marketSector === 'Equity') || d[0];
       cache[chunk[j]] = pick
-        ? { ticker: pick.exchCode === 'US' && pick.ticker ? pick.ticker.replace('/', '.') : null, name: pick.name || null, type: pick.securityType2 || null }
+        ? { ticker: best ? best.ticker.replace('/', '.').replace(/ .*$/, '') : null, name: pick.name || null, type: pick.securityType2 || null }
         : null;
       if (pick) mapped++;
     });

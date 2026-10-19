@@ -128,6 +128,18 @@
         series: [{ type: 'bar', barWidth: '56%', data: rows.map(function (x) { return x.value; }), itemStyle: { color: t.gold, borderRadius: [0, 4, 4, 0] }, label: { show: true, position: 'right', color: t.muted, fontFamily: t.mono, fontSize: 11 } }]
       };
     },
+    split: function (t, d) {
+      return {
+        grid: { left: 36, right: 12, top: 16, bottom: 28 },
+        tooltip: Object.assign(tip(t), { trigger: 'axis', axisPointer: { type: 'shadow' } }),
+        xAxis: Object.assign(axisBase(t), { type: 'category', data: d.labels, splitLine: { show: false } }),
+        yAxis: Object.assign(axisBase(t), { type: 'value', minInterval: 1 }),
+        series: [
+          { name: 'Buys', type: 'bar', data: d.buys, barGap: '12%', barWidth: '32%', itemStyle: { color: t.teal, borderRadius: [4, 4, 0, 0] } },
+          { name: 'Sells', type: 'bar', data: d.sells, barWidth: '32%', itemStyle: { color: t.coral, borderRadius: [4, 4, 0, 0] } }
+        ]
+      };
+    },
     heatmap: function (t, d) {
       var data = [];
       d.matrix.forEach(function (row, yi) { row.forEach(function (v, xi) { data.push([xi, yi, v === null ? '-' : v]); }); });

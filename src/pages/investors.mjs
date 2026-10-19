@@ -203,7 +203,7 @@ ${cross.length ? `<section class="section-sm">
   <div class="container">
     <div class="card reveal">
       <div class="card-label"><span>10 · Other smart money</span><span>Politicians and insiders</span></div><h3>Who else is trading these holdings</h3>
-      <ul class="rank-list">${cross.slice(0, 8).map((x) => `<li><span class="r">${tkr(x.h.label, x.h.stockSlug)}</span><span class="t"><b style="color:var(--text)">${esc(x.h.name)}</b><small>${[x.pol.length ? `${x.pol.length} congressional trade${x.pol.length > 1 ? 's' : ''} disclosed (${x.pol.filter((t) => t.type === 'buy').length} buys)` : '', x.insB ? `insiders bought ${money(x.insB.value)} in ${d.insiders.label}` : ''].filter(Boolean).join(' · ')}</small></span><span class="v">${pct(x.h.w)} of portfolio</span></li>`).join('')}</ul>
+      <ul class="rank-list">${cross.slice(0, 8).map((x) => `<li><span class="r">${String(x.h.rank).padStart(2, '0')}</span><span class="t">${tkr(x.h.label, x.h.stockSlug)} <b style="color:var(--text)">${esc(x.h.name)}</b><small>${[x.pol.length ? `${x.pol.length} congressional trade${x.pol.length > 1 ? 's' : ''} disclosed (${x.pol.filter((t) => t.type === 'buy').length} buys)` : '', x.insB ? `insiders bought ${money(x.insB.value)} in ${d.insiders.label}` : ''].filter(Boolean).join(' · ')}</small></span><span class="v">${pct(x.h.w)} of portfolio</span></li>`).join('')}</ul>
     </div>
   </div>
 </section>` : ''}

@@ -77,11 +77,16 @@ async function loadLegislators() {
   }
 }
 
-const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z]/g, '');
+const norm = (s) => String(s || '').replace(/,?\s+(jr|sr|ii|iii|iv)\.?$/i, '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z]/g, '');
 function findPerson(people, { first, last, chamber, state }) {
   const L = norm(last);
   const F = norm(first);
   const cands = people.filter((p) => p.chamber === chamber && (norm(p.last) === L || norm(p.last).endsWith(L) || L.endsWith(norm(p.last))));
+  if (!cands.length && F) {
+    // Try the first name too ("A. Mitchell McConnell" style names)
+    const byFirst = people.filter((p) => p.chamber === chamber && norm(p.last) === L.replace(/^.*?(?=[a-z]{4,}$)/, ''));
+    if (byFirst.length) return byFirst[0];
+  }
   if (cands.length <= 1) return cands[0] || null;
   const byState = state ? cands.filter((p) => p.state === state) : cands;
   if (byState.length === 1) return byState[0];
@@ -329,6 +334,15 @@ async function senateTrades(people, done) {
   return { trades, processed };
 }
 
+async function secCompanyNames() {
+  try {
+    const list = await fetchRetry('https://www.sec.gov/files/company_tickers.json', { headers: { 'User-Agent': process.env.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' } }, { type: 'json' });
+    return new Map(Object.values(list).map((x) => [String(x.ticker).toUpperCase().replace('-', '.'), x.title]));
+  } catch {
+    return new Map();
+  }
+}
+
 /* ------------------------------ Main ------------------------------ */
 async function run() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -352,6 +366,8 @@ async function run() {
     }
   }
   const added = parts.flatMap((p) => p.trades);
+  const names = await secCompanyNames();
+  for (const t of [...store.trades, ...added]) if (t.ticker && !t.company && names.has(t.ticker)) t.company = names.get(t.ticker);
   const cutoff = defaultSince();
   const trades = [...store.trades, ...added]
     .filter((t) => (t.date || t.filed || '') >= cutoff || (t.filed || '') >= cutoff)

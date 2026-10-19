@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Daily market snapshot: VIX history (12 months), index closes, 10-year yield, oil and gold, plus the
-// CNN Fear & Greed Index. Sources: FRED (St. Louis Fed), Stooq and CNN. Writes data/market.json.
+// CNN Fear & Greed Index. Sources: Cboe (VIX history), Yahoo Finance (closes), with FRED/Stooq fallbacks, and CNN. Writes data/market.json.
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { fetchRetry, readJSON, writeJSON } from './lib/net.mjs';
@@ -22,9 +22,46 @@ export function parseFredCsv(csv) {
 
 async function fred(id, days) {
   const from = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
-  const csv = await fetchRetry(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${id}&cosd=${from}`, { headers: { 'User-Agent': BROWSER_UA } }, { tries: 3 });
+  const csv = await fetchRetry(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${id}&cosd=${from}`, { headers: { 'User-Agent': BROWSER_UA } }, { tries: 1 });
   return parseFredCsv(csv);
 }
+
+/** Daily closes from Yahoo Finance's chart endpoint (unofficial, widely used). */
+async function yahoo(symbol, range = '3mo') {
+  const url = `https://query1.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?range=${range}&interval=1d`;
+  const j = await fetchRetry(url, { headers: { 'User-Agent': BROWSER_UA, Accept: 'application/json' } }, { type: 'json', tries: 3 });
+  const r = j?.chart?.result?.[0];
+  if (!r) throw new Error('no chart result');
+  const ts = r.timestamp || [];
+  const close = r.indicators?.quote?.[0]?.close || [];
+  return ts
+    .map((t, i) => ({ date: new Date(t * 1000).toISOString().slice(0, 10), value: close[i] }))
+    .filter((x) => typeof x.value === 'number');
+}
+
+/** Full VIX history from Cboe's public CSV (DATE,OPEN,HIGH,LOW,CLOSE). */
+async function cboeVix(days) {
+  const csv = await fetchRetry('https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv', { headers: { 'User-Agent': BROWSER_UA } }, { tries: 3 });
+  const from = new Date(Date.now() - days * 864e5).toISOString().slice(0, 10);
+  return csv
+    .trim()
+    .split(/\r?\n/)
+    .slice(1)
+    .map((l) => l.split(','))
+    .map(([d, , , , c]) => {
+      const [m, dd, y] = d.split('/');
+      return { date: `${y}-${m.padStart(2, '0')}-${dd.padStart(2, '0')}`, value: Number(c) };
+    })
+    .filter((x) => x.date >= from && Number.isFinite(x.value));
+}
+
+const firstOk = async (label, ...fns) => {
+  for (const fn of fns) {
+    const r = await safe(label, fn);
+    if (r && r.length) return r;
+  }
+  return null;
+};
 
 async function stooq(symbol) {
   const csv = await fetchRetry(`https://stooq.com/q/d/l/?s=${encodeURIComponent(symbol)}&i=d`, { headers: { 'User-Agent': BROWSER_UA } }, { tries: 2 });
@@ -75,17 +112,18 @@ export async function fetchFearGreed() {
 
 async function run() {
   const prev = readJSON(OUT, {});
-  const vix = await safe('VIX', () => fred('VIXCLS', 380));
-  const [spx, ndq, dji, dgs10, wti, brent, rut, gold] = await Promise.all([
-    safe('S&P 500', () => fred('SP500', 40)),
-    safe('Nasdaq', () => fred('NASDAQCOM', 40)),
-    safe('Dow', () => fred('DJIA', 40)),
-    safe('10Y', () => fred('DGS10', 40)),
-    safe('WTI', () => fred('DCOILWTICO', 40)),
-    safe('Brent', () => fred('DCOILBRENTEU', 40)),
-    safe('Russell 2000', () => stooq('^rut')),
-    safe('Gold', () => stooq('xauusd')),
+  const vix = await firstOk('VIX', () => cboeVix(380), () => yahoo('^VIX', '1y'), () => fred('VIXCLS', 380));
+  const [spx, ndq, dji, rut, tnx, wti, brent, gold] = await Promise.all([
+    firstOk('S&P 500', () => yahoo('^GSPC'), () => fred('SP500', 40)),
+    firstOk('Nasdaq', () => yahoo('^IXIC'), () => fred('NASDAQCOM', 40)),
+    firstOk('Dow', () => yahoo('^DJI'), () => fred('DJIA', 40)),
+    firstOk('Russell 2000', () => yahoo('^RUT'), () => stooq('^rut')),
+    firstOk('10Y', () => yahoo('^TNX'), () => fred('DGS10', 40)),
+    firstOk('WTI', () => yahoo('CL=F'), () => fred('DCOILWTICO', 40)),
+    firstOk('Brent', () => yahoo('BZ=F'), () => fred('DCOILBRENTEU', 40)),
+    firstOk('Gold', () => yahoo('GC=F'), () => stooq('xauusd')),
   ]);
+  const dgs10 = tnx;
   const fearGreed = await safe('Fear & Greed', fetchFearGreed);
 
   const out = {

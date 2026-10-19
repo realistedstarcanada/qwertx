@@ -90,7 +90,7 @@ export function vixCard(vix) {
   <div class="mood-scale" role="img" aria-label="Fear and greed scale, currently ${label}">${[1, 2, 3, 4, 5].map((i) => `<span class="z${i}${i === z ? ' on' : ''}"></span>`).join('')}</div>
   <div class="mood-legend"><span>Extreme fear</span><span>Neutral</span><span>Extreme greed</span></div>
   <p class="what-means"><b>What it means</b>${VIX_MEANS[z]}</p>
-  <span class="source-chip"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Source: <a href="https://fred.stlouisfed.org/series/VIXCLS" target="_blank" rel="noopener">FRED · Cboe VIX</a></span>
+  <span class="source-chip"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Source: <a href="https://www.cboe.com/tradable_products/vix/" target="_blank" rel="noopener">Cboe VIX index</a></span>
 </div>`;
 }
 
@@ -115,7 +115,7 @@ export function indexCard(m) {
   ].filter(Boolean);
   return `<div class="card" style="height:100%"><div class="card-label"><span>Close · ${date(idx[0].date)}</span><span>Week: ${week}</span></div><h3>Where the major indexes closed</h3><div class="idx-row">${idx
     .map((x) => `<div class="idx"><div class="n">${esc(x.name)}</div><div class="v">${n2(x.value)}</div><div class="c ${upDown(x.change)}">${signed(x.change * 100, 2)}</div></div>`)
-    .join('')}</div>${extras.length ? `<p class="mt-32 mb-0" style="font-size:14px;color:var(--muted)">${extras.join(' · ')}. Sources: FRED, Stooq.</p>` : ''}</div>`;
+    .join('')}</div>${extras.length ? `<p class="mt-32 mb-0" style="font-size:14px;color:var(--muted)">${extras.join(' · ')}. Sources: Yahoo Finance, Cboe.</p>` : ''}</div>`;
 }
 
 export const newsletter = (id = 'n') => `<section class="section-sm">

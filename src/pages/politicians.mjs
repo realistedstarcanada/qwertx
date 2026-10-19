@@ -1,4 +1,4 @@
-import { esc, money, int, date } from '../lib/format.mjs';
+import { esc, money, int, date, cleanName } from '../lib/format.mjs';
 import { chart, tkr, rankList, sourceChip, kpi, pageHero, newsletter, partyChip } from '../parts.mjs';
 
 const typeBadge = (t) => (t.type === 'buy' ? '<span class="act act-add">Buy</span>' : '<span class="act act-trim">Sell</span>');
@@ -66,7 +66,7 @@ ${q.overlap.length ? `<section class="section-sm">
   <div class="container">
     <div class="card reveal">
       <div class="card-label"><span>05 · Smart money overlap</span></div><h3>Bought by Congress, owned by super investors</h3>
-      <ul class="rank-list">${q.overlap.map((r) => `<li><span class="r">${tkr(r.ticker, r.stock.slug)}</span><span class="t"><b style="color:var(--text)">${esc(r.name)}</b><small>${r.buyers} member${r.buyers > 1 ? 's' : ''} bought · held by ${r.stock.holders.slice(0, 3).map((x) => esc(x.inv.manager)).join(', ')}${r.stock.owners > 3 ? ` +${r.stock.owners - 3}` : ''}</small></span><span class="v">${r.stock.owners} super investor${r.stock.owners > 1 ? 's' : ''}</span></li>`).join('')}</ul>
+      <ul class="rank-list">${q.overlap.map((r, i) => `<li><span class="r">${String(i + 1).padStart(2, '0')}</span><span class="t">${tkr(r.ticker, r.stock.slug)} <b style="color:var(--text)">${esc(r.name)}</b><small>${r.buyers} member${r.buyers > 1 ? 's' : ''} bought · held by ${r.stock.holders.slice(0, 3).map((x) => esc(x.inv.manager)).join(', ')}${r.stock.owners > 3 ? ` +${r.stock.owners - 3}` : ''}</small></span><span class="v">${r.stock.owners} super investor${r.stock.owners > 1 ? 's' : ''}</span></li>`).join('')}</ul>
     </div>
   </div>
 </section>` : ''}` : `<section class="section-sm"><div class="container"><div class="card">${empty}</div></div></section>`}
@@ -79,7 +79,7 @@ ${q.overlap.length ? `<section class="section-sm">
       <tbody>${P.latest
         .map((t) => {
           const s = d.stockByTicker.get(t.ticker);
-          return `<tr><td data-v="${esc(t.member)}">${partyChip(t.party)} <span style="color:var(--text);font-weight:600">${esc(t.member)}</span><div class="tkr-name">${esc(t.chamber)}${t.state ? ' · ' + esc(t.state) + (t.district ? '-' + esc(t.district) : '') : ''}</div></td><td data-v="${esc(t.ticker)}">${tkr(t.ticker, s?.hasPage ? s.slug : null)}<div class="tkr-name">${esc(cleanAsset(t.asset))}</div></td><td data-v="${t.type}">${typeBadge(t)}${t.partial ? ' <span class="form-note">partial</span>' : ''}</td><td class="num" data-v="${t.amount?.mid || 0}">${esc(t.amount?.label || '—')}</td><td class="num" data-v="${t.date || ''}">${date(t.date)}</td><td class="num" data-v="${t.filed || ''}"><a href="${esc(t.source)}" target="_blank" rel="noopener nofollow">${date(t.filed)}</a></td><td>${esc(ownerLabel(t.owner))}</td></tr>`;
+          return `<tr><td data-v="${esc(t.member)}">${partyChip(t.party)} <span style="color:var(--text);font-weight:600">${esc(t.member)}</span><div class="tkr-name">${esc(t.chamber)}${t.state ? ' · ' + esc(t.state) + (t.district ? '-' + esc(t.district) : '') : ''}</div></td><td data-v="${esc(t.ticker)}">${tkr(t.ticker, s?.hasPage ? s.slug : null)}<div class="tkr-name">${esc(t.company ? cleanName(t.company) : cleanAsset(t.asset))}</div></td><td data-v="${t.type}">${typeBadge(t)}${t.partial ? ' <span class="form-note">partial</span>' : ''}</td><td class="num" data-v="${t.amount?.mid || 0}">${esc(t.amount?.label || '—')}</td><td class="num" data-v="${t.date || ''}">${date(t.date)}</td><td class="num" data-v="${t.filed || ''}"><a href="${esc(t.source)}" target="_blank" rel="noopener nofollow">${date(t.filed)}</a></td><td>${esc(ownerLabel(t.owner))}</td></tr>`;
         })
         .join('')}</tbody></table></div>
     <p class="form-note" style="margin-top:14px">Amounts are the ranges members must report, not exact values. Only electronically filed reports with a stock ticker are included; scanned paper filings are skipped. Updated daily${P.updatedAt ? `, last on ${date(P.updatedAt)}` : ''}.</p>
@@ -104,6 +104,8 @@ ${newsletter('pol')}`;
 
 export function cleanAsset(a) {
   return String(a || '')
+    .split('>')
+    .pop()
     .replace(/^.*?(?:Joint Brokerage|Brokerage|IRA|Account|Trust)\s*[>\]]\s*/i, '')
     .replace(/^(?:F\s*S\s*:\s*\w+\s*)?(?:S\s*O\s*:\s*[^>]*>\s*)?/i, '')
     .replace(/^(?:SP|JT|DC)\s+/, '')

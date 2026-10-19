@@ -1,4 +1,4 @@
-import { esc, money, int, date } from '../lib/format.mjs';
+import { esc, money, int, date, cleanName } from '../lib/format.mjs';
 import { chart, tkr, rankList, sourceChip, kpi, pageHero, newsletter } from '../parts.mjs';
 import { titleish } from './home.mjs';
 
@@ -10,7 +10,7 @@ export function insiders(d) {
   };
   const tradeRows = (list) =>
     list
-      .map((t) => `<tr><td data-v="${esc(t.ticker)}">${tkr(t.ticker, slugOf(t.ticker))}<div class="tkr-name">${esc(titleish(t.company))}</div></td><td data-v="${esc(t.owner)}"><span style="color:var(--text);font-weight:600">${esc(titleish(t.owner))}</span><div class="tkr-name">${esc(t.role)}</div></td><td class="num" data-v="${t.value}">${money(t.value)}</td><td class="num" data-v="${t.shares}">${int(t.shares)}</td><td class="num" data-v="${t.price}">$${t.price.toFixed(2)}</td><td class="num" data-v="${t.date}">${date(t.date)}</td><td>${t.plan ? '<span class="tag">10b5-1 plan</span>' : '<span class="form-note">—</span>'}</td><td><a href="https://www.sec.gov/Archives/edgar/data/${Number(t.issuerCik)}/${String(t.acc).replace(/-/g, '')}/${t.acc}-index.htm" target="_blank" rel="noopener nofollow" aria-label="Form 4 filing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td></tr>`)
+      .map((t) => `<tr><td data-v="${esc(t.ticker)}">${tkr(t.ticker, slugOf(t.ticker))}<div class="tkr-name">${esc(cleanName(t.company))}</div></td><td data-v="${esc(t.owner)}"><span style="color:var(--text);font-weight:600">${esc(titleish(t.owner))}</span><div class="tkr-name">${esc(t.role)}</div></td><td class="num" data-v="${t.value}">${money(t.value)}</td><td class="num" data-v="${t.shares}">${int(t.shares)}</td><td class="num" data-v="${t.price}">$${t.price.toFixed(2)}</td><td class="num" data-v="${t.date}">${date(t.date)}</td><td>${t.plan ? '<span class="tag">10b5-1 plan</span>' : '<span class="form-note">—</span>'}</td><td><a href="https://www.sec.gov/Archives/edgar/data/${Number(t.issuerCik)}/${String(t.acc).replace(/-/g, '')}/${t.acc}-index.htm" target="_blank" rel="noopener nofollow" aria-label="Form 4 filing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></td></tr>`)
       .join('');
   const table = (id, caption, list) => `<div class="table-wrap reveal"><table class="data" data-sortable style="min-width:860px" id="${id}">
       <caption class="sr-only">${caption}</caption>
@@ -47,7 +47,7 @@ export function insiders(d) {
     <div class="row">
       <div class="col-7"><div class="card chart-card reveal" style="height:100%">
         <div class="card-label"><span>01 · Cluster buys</span><span>3+ officers or directors buying</span></div><h3>Where several insiders bought at once</h3>
-        ${I.clusterBuys.length ? chart('clusters', 'bars', { items: I.clusterBuys.slice(0, 12).map((c) => ({ ticker: c.ticker, name: titleish(c.company), value: c.insiders })), unit: '{v} insiders bought' }, { cls: 'chart chart-lg', label: 'Bar chart of companies where the most insiders bought shares' }) : '<p class="form-note">No cluster buys this quarter.</p>'}
+        ${I.clusterBuys.length ? chart('clusters', 'bars', { items: I.clusterBuys.slice(0, 12).map((c) => ({ ticker: c.ticker, name: cleanName(c.company), value: c.insiders })), unit: '{v} insiders bought' }, { cls: 'chart chart-lg', label: 'Bar chart of companies where the most insiders bought shares' }) : '<p class="form-note">No cluster buys this quarter.</p>'}
         <p class="caption"><b>What this means</b>One insider buying can be noise. Several executives and directors buying in the same quarter is one of the stronger signals in public data, though it is never a guarantee.</p>
       </div></div>
       <div class="col-5"><div class="card chart-card reveal" style="height:100%">
@@ -62,8 +62,8 @@ export function insiders(d) {
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>03 · Top companies bought</span><span>${esc(I.label)}</span></div><h3>Most insider money in</h3>${rankList(I.topBuyCompanies.slice(0, 10).map((c) => ({ t: tkr(c.ticker, slugOf(c.ticker)), small: `${esc(titleish(c.company))} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, v: `<span class="up">${money(c.value)}</span>` })))}</div></div>
-      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>04 · Top companies sold</span><span>${esc(I.label)}</span></div><h3>Most insider money out</h3>${rankList(I.topSellCompanies.slice(0, 10).map((c) => ({ t: tkr(c.ticker, slugOf(c.ticker)), small: `${esc(titleish(c.company))} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, v: `<span class="down">${money(c.value)}</span>` })))}</div></div>
+      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>03 · Top companies bought</span><span>${esc(I.label)}</span></div><h3>Most insider money in</h3>${rankList(I.topBuyCompanies.slice(0, 10).map((c) => ({ t: tkr(c.ticker, slugOf(c.ticker)), small: `${esc(cleanName(c.company))} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, v: `<span class="up">${money(c.value)}</span>` })))}</div></div>
+      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>04 · Top companies sold</span><span>${esc(I.label)}</span></div><h3>Most insider money out</h3>${rankList(I.topSellCompanies.slice(0, 10).map((c) => ({ t: tkr(c.ticker, slugOf(c.ticker)), small: `${esc(cleanName(c.company))} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, v: `<span class="down">${money(c.value)}</span>` })))}</div></div>
     </div>
   </div>
 </section>
@@ -71,7 +71,7 @@ ${I.overlap.length ? `<section class="section-sm">
   <div class="container">
     <div class="card reveal">
       <div class="card-label"><span>05 · Smart money overlap</span></div><h3>Insiders buying stocks super investors own</h3>
-      <ul class="rank-list">${I.overlap.map((x) => `<li><span class="r">${tkr(x.ticker, x.stock.slug)}</span><span class="t"><b style="color:var(--text)">${esc(x.stock.name)}</b><small>${x.insiders} insider${x.insiders > 1 ? 's' : ''} bought ${money(x.value)} · held by ${x.stock.holders.slice(0, 3).map((h) => esc(h.inv.manager)).join(', ')}${x.stock.owners > 3 ? ` +${x.stock.owners - 3}` : ''}</small></span><span class="v">${x.stock.owners} super investor${x.stock.owners > 1 ? 's' : ''}</span></li>`).join('')}</ul>
+      <ul class="rank-list">${I.overlap.map((x, i) => `<li><span class="r">${String(i + 1).padStart(2, '0')}</span><span class="t">${tkr(x.ticker, x.stock.slug)} <b style="color:var(--text)">${esc(x.stock.name)}</b><small>${x.insiders} insider${x.insiders > 1 ? 's' : ''} bought ${money(x.value)} · held by ${x.stock.holders.slice(0, 3).map((h) => esc(h.inv.manager)).join(', ')}${x.stock.owners > 3 ? ` +${x.stock.owners - 3}` : ''}</small></span><span class="v">${x.stock.owners} super investor${x.stock.owners > 1 ? 's' : ''}</span></li>`).join('')}</ul>
     </div>
   </div>
 </section>` : ''}

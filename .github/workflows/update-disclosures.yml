@@ -24,6 +24,8 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 45
+    env:
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -35,8 +37,6 @@ jobs:
         run: node scripts/fetch-congress.mjs --max ${{ inputs.max || '400' }} ${{ inputs.debug && '--debug' || '' }}
       - name: Insider trades (SEC Form 4 quarterly data)
         run: node scripts/fetch-insiders.mjs
-        env:
-          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
       - name: Commit updated data
         run: |
           git config user.name "qwertx-bot"

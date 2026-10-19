@@ -13,7 +13,7 @@ import { fileURLToPath } from 'node:url';
 import { readJSON, writeJSON } from './lib/net.mjs';
 import { sec, pad, dirUrl } from './lib/sec.mjs';
 import { mapCusips } from './lib/figi.mjs';
-import { updateSectors } from './lib/sectors.mjs';
+import { updateSectors, matchByName } from './lib/sectors.mjs';
 import { parseInfoTable, aggregate, diffQuarters, pickFilings } from './lib/thirteenf.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
@@ -21,6 +21,7 @@ const DATA = path.join(ROOT, 'data');
 const QUARTERS = 9;
 const args = process.argv.slice(2);
 const FORCE = args.includes('--force');
+const REMAP = args.includes('--remap');
 const only = args.filter((a) => !a.startsWith('--'));
 
 async function filingIndex(cik, acc) {
@@ -68,6 +69,16 @@ async function mergeOlderFilings(sub) {
   }
 }
 
+/** Size of the largest information-table file in a filing (a cheap proxy for how many positions it lists). */
+async function tableSize(cik, acc) {
+  try {
+    const items = await filingIndex(cik, acc);
+    return Math.max(0, ...items.filter((i) => /\.xml$/i.test(i.name) && !/primary_doc/i.test(i.name)).map((i) => parseInt(i.size) || 0));
+  } catch {
+    return 0;
+  }
+}
+
 const loadQuarter = async (cik, f) => aggregate(await infoTableRows(cik, f.acc), f.filingDate);
 
 /** Compact history entry: total, count and weights of positions >= 0.25%, keyed by CUSIP. */
@@ -105,7 +116,24 @@ async function run() {
         throw new Error(`CIK ${inv.cik} belongs to "${sub.name}", expected "${inv.expect}". Check config/investors.json.`);
       }
       await mergeOlderFilings(sub);
-      const filings = await pickFilings(sub, (f) => isRestatement(inv.cik, f), QUARTERS);
+      let filings = (await pickFilings(sub, (f) => isRestatement(inv.cik, f), QUARTERS)).map((f) => ({ ...f, cik: inv.cik }));
+      // Managers who moved to a new filing entity (e.g. Pershing Square) list earlier CIKs too.
+      for (const old of inv.previousCiks || []) {
+        try {
+          const sub2 = await sec(`https://data.sec.gov/submissions/CIK${pad(old)}.json`, 'json');
+          await mergeOlderFilings(sub2);
+          const more = (await pickFilings(sub2, (f) => isRestatement(old, f), QUARTERS)).map((f) => ({ ...f, cik: old }));
+          const byPeriod = new Map(filings.map((f) => [f.period, f]));
+          for (const f of more) {
+            const cur0 = byPeriod.get(f.period);
+            if (!cur0) byPeriod.set(f.period, f);
+            else if ((await tableSize(f.cik, f.acc)) > (await tableSize(cur0.cik, cur0.acc))) byPeriod.set(f.period, f);
+          }
+          filings = [...byPeriod.values()].sort((a, b) => b.period.localeCompare(a.period)).slice(0, QUARTERS);
+        } catch (e) {
+          console.warn(`  previous CIK ${old} skipped: ${e.message}`);
+        }
+      }
       if (!filings.length) throw new Error('no 13F-HR filings found');
       const [cur, prev] = filings;
       const ageDays = (Date.now() - Date.parse(cur.period)) / 864e5;
@@ -129,9 +157,9 @@ async function run() {
         continue;
       }
 
-      const curAgg = await loadQuarter(inv.cik, cur);
+      const curAgg = await loadQuarter(cur.cik, cur);
       if (!curAgg.holdings.length) throw new Error(`no holdings parsed from ${cur.acc}`);
-      const prevAgg = prev ? await loadQuarter(inv.cik, prev) : null;
+      const prevAgg = prev ? await loadQuarter(prev.cik, prev) : null;
       const { sold, counts } = diffQuarters(curAgg, prevAgg);
       addFlows(curAgg, sold);
 
@@ -142,7 +170,7 @@ async function run() {
         else if (haveHist.has(f.acc) && !FORCE) history.push(haveHist.get(f.acc));
         else {
           try {
-            history.push(historyEntry(f, await loadQuarter(inv.cik, f)));
+            history.push(historyEntry(f, await loadQuarter(f.cik, f)));
           } catch (e) {
             console.warn(`  history ${f.period} skipped: ${e.message}`);
           }
@@ -162,7 +190,7 @@ async function run() {
         filingDate: cur.filingDate,
         form: cur.form,
         accession: cur.acc,
-        filingUrl: `${dirUrl(inv.cik, cur.acc)}/${cur.acc}-index.htm`,
+        filingUrl: `${dirUrl(cur.cik, cur.acc)}/${cur.acc}-index.htm`,
         prevPeriod: prev?.period ?? null,
         prevAccession: prev?.acc ?? null,
         prevTotalValue: prevAgg?.total ?? null,
@@ -180,6 +208,37 @@ async function run() {
       failed++;
       console.error(`  ✗ ${e.message}`);
     }
+  }
+
+  // Fill in missing tickers across every portfolio: retry OpenFIGI, then match the issuer name
+  // against SEC's company list. Then rewrite tickers in all portfolio files.
+  try {
+    const files = fs.readdirSync(path.join(DATA, 'portfolios')).filter((f) => f.endsWith('.json'));
+    const all = files.map((f) => [f, readJSON(path.join(DATA, 'portfolios', f))]).filter(([, p]) => p);
+    const missing = new Map();
+    for (const [, p] of all) for (const h of [...p.holdings, ...(p.sold || [])]) if (!h.ticker && h.shType !== 'PRN') missing.set(h.cusip, h.issuer);
+    if (missing.size) {
+      await mapCusips([...missing.keys()], cusipMap, { retry: REMAP });
+      const still = [...missing].filter(([c]) => !cusipMap[c]?.ticker);
+      if (still.length) {
+        const n = await matchByName(still, cusipMap);
+        console.log(`Tickers: ${missing.size} missing, ${n} matched by company name`);
+      }
+      writeJSON(cusipFile, cusipMap);
+      for (const [f, p] of all) {
+        let changed = false;
+        for (const h of [...p.holdings, ...(p.sold || [])]) {
+          const t = cusipMap[h.cusip]?.ticker || null;
+          if (t && t !== h.ticker) {
+            h.ticker = t;
+            changed = true;
+          }
+        }
+        if (changed) writeJSON(path.join(DATA, 'portfolios', f), p);
+      }
+    }
+  } catch (e) {
+    console.warn(`Ticker backfill skipped: ${e.message}`);
   }
 
   // Sector + company-name lookup for every ticker we hold (cached; only new tickers are fetched).

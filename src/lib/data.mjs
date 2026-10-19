@@ -32,10 +32,22 @@ export function loadData({ root, dataDir, configPath }) {
   const insiders = insiderFiles.map((f) => readJSON(path.join(dataDir, 'insiders', f))).filter(Boolean);
 
   // ---------- Investors ----------
+  // Issuers held in more than one share class anywhere (GOOG/GOOGL, BRK.A/BRK.B) get a class label.
+  const classes = new Map();
+  for (const inv of cfg.investors) {
+    const p = readJSON(path.join(dataDir, 'portfolios', `${inv.slug}.json`));
+    for (const h of p?.holdings || []) {
+      if (h.putCall || h.shType === 'PRN') continue;
+      const k = h.cusip.slice(0, 6);
+      if (!classes.has(k)) classes.set(k, new Set());
+      classes.get(k).add(h.cusip);
+    }
+  }
   const nameFor = (h) => {
     const s = h.ticker && sectors[h.ticker];
     const base = cleanName((s && s.name) || h.issuer || h.cusip);
-    return base + (h.putCall ? ` (${h.putCall === 'CALL' ? 'call options' : 'put options'})` : classSuffix(h.cls));
+    if (h.putCall) return `${base} (${h.putCall === 'CALL' ? 'call options' : 'put options'})`;
+    return base + ((classes.get(h.cusip.slice(0, 6))?.size || 0) > 1 ? classSuffix(h.cls) : '');
   };
   const sectorFor = (h) => {
     if (h.shType === 'PRN') return 'Bonds & notes';
@@ -263,7 +275,7 @@ export function loadData({ root, dataDir, configPath }) {
     const list = ctr.filter((t) => qOf(t) === qk);
     const byTicker = new Map();
     for (const t of list) {
-      if (!byTicker.has(t.ticker)) byTicker.set(t.ticker, { ticker: t.ticker, asset: t.asset, buyers: new Set(), sellers: new Set(), buys: 0, sells: 0, buyValue: 0, sellValue: 0, parties: { D: 0, R: 0, I: 0 } });
+      if (!byTicker.has(t.ticker)) byTicker.set(t.ticker, { ticker: t.ticker, asset: t.asset, company: t.company, buyers: new Set(), sellers: new Set(), buys: 0, sells: 0, buyValue: 0, sellValue: 0, parties: { D: 0, R: 0, I: 0 } });
       const x = byTicker.get(t.ticker);
       const who = t.bioguide || t.member;
       if (t.type === 'buy') {
@@ -278,7 +290,7 @@ export function loadData({ root, dataDir, configPath }) {
       const party = (t.party || '').charAt(0);
       if (party in x.parties) x.parties[party]++;
     }
-    const rows = [...byTicker.values()].map((x) => ({ ...x, buyers: x.buyers.size, sellers: x.sellers.size, stock: stockByTicker.get(x.ticker) || null, name: cleanName((sectors[x.ticker] && sectors[x.ticker].name) || x.asset.replace(/\s*\(.*$/, '')) }));
+    const rows = [...byTicker.values()].map((x) => ({ ...x, buyers: x.buyers.size, sellers: x.sellers.size, stock: stockByTicker.get(x.ticker) || null, name: cleanName((sectors[x.ticker] && sectors[x.ticker].name) || x.company || String(x.asset || '').split('>').pop().replace(/\s*\(.*$/, '')) }));
     const byMember = new Map();
     for (const t of list) {
       const k = t.bioguide || t.member;
@@ -313,7 +325,14 @@ export function loadData({ root, dataDir, configPath }) {
   };
   const politics = {
     updatedAt: congress.updatedAt,
-    quarters: qKeys.slice(0, 3).map(politicsFor),
+    quarters: (() => {
+      // Lead with the most recent quarter that has a meaningful share of disclosures; trades
+      // keep arriving for ~45 days after a quarter ends, so a brand-new quarter starts thin.
+      const qs = qKeys.slice(0, 3).map(politicsFor);
+      const max = Math.max(0, ...qs.map((q) => q.trades));
+      const i = qs.findIndex((q) => q.trades >= max * 0.5);
+      return i > 0 ? [...qs.slice(i), ...qs.slice(0, i)] : qs;
+    })(),
     latest: ctr.slice(0, 60),
     totalTrades: ctr.length,
     byTicker: (() => {

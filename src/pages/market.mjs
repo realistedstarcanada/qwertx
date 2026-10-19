@@ -26,7 +26,7 @@ export function market(d) {
     </div>
     <div class="row mt-32">
       <div class="col reveal"><div class="card chart-card">
-        <div class="card-label"><span>VIX · 12 months</span><span>FRED daily close</span></div><h3>The fear gauge over the past year</h3>
+        <div class="card-label"><span>VIX · 12 months</span><span>Cboe daily close</span></div><h3>The fear gauge over the past year</h3>
         ${m.vix ? chart('vix', 'vix', vixChartData(m.vix), { label: 'VIX line chart over the last 12 months with fear and greed bands' }) : '<p class="form-note">Chart appears after the first market update.</p>'}
       </div></div>
     </div>

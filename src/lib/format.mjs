@@ -57,7 +57,10 @@ const SPECIAL = { ISHARES: 'iShares', JPMORGAN: 'JPMorgan', HLDGS: 'Holdings', H
 /** "META PLATFORMS INC" -> "Meta Platforms Inc". Leaves mixed-case names alone. */
 export function titleCase(name) {
   if (!name) return '';
-  if (/[a-z]/.test(name)) return name;
+  if (/[a-z]/.test(name)) {
+    // Mixed case already: only soften shouted words like "BROOKFIELD Corp".
+    return name.replace(/\b[A-Z]{5,}\b/g, (w) => SPECIAL[w] || (KEEP_UPPER.has(w) ? w : w.charAt(0) + w.slice(1).toLowerCase()));
+  }
   return name
     .split(/\s+/)
     .map((w) => {
@@ -77,8 +80,10 @@ export function cleanName(name) {
     if (t === s || t.length < 2) break;
     s = t;
   }
-  return s.replace(/\s+&$/, '').trim();
+  s = s.replace(/\s+&$/, '').trim();
+  return NAME_FIX[s] || s;
 }
+const NAME_FIX = { 'Coca Cola': 'Coca-Cola', 'Coca Cola Consolidated': 'Coca-Cola Consolidated', 'Mcdonalds': "McDonald's", 'Moodys': "Moody's", 'Lowes Companies': "Lowe's", 'Kraft Heinz': 'Kraft Heinz', 'Amazon Com': 'Amazon', 'Booking': 'Booking Holdings' };
 
 /** "(Class A)" etc. from a 13F title of class like "CAP STK CL A" or "CL B". */
 export function classSuffix(cls) {

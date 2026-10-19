@@ -43,5 +43,8 @@ jobs:
         run: node scripts/fetch-insiders.mjs --force 2>&1 | tee data/_debug/insiders.log; /tmp/commit.sh insiders
         continue-on-error: true
       - name: Congress (debug sample)
-        run: node scripts/fetch-congress.mjs --max 8 --debug 2>&1 | tee data/_debug/congress.log; /tmp/commit.sh congress
+        run: node scripts/fetch-congress.mjs --max 400 2>&1 | tee data/_debug/congress.log; /tmp/commit.sh congress
+        continue-on-error: true
+      - name: 13F ticker backfill
+        run: node scripts/fetch-13f.mjs --remap 2>&1 | tee data/_debug/13f.log; /tmp/commit.sh 13f
         continue-on-error: true

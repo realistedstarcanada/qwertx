@@ -87,7 +87,7 @@ export function summarize(dir, quarter) {
     if (value > 3e9) continue;
     const tDate = toIsoDate(t.TRANS_DATE);
     if (!tDate || tDate < minDate || tDate > maxDate) continue;
-    const ticker = (s.ISSUERTRADINGSYMBOL || '').trim().toUpperCase().replace(/\s+/g, '');
+    const ticker = (s.ISSUERTRADINGSYMBOL || '').trim().toUpperCase().split(/[,;/\s]+/)[0].replace(/[^A-Z0-9.\-]/g, '');
     if (!ticker || ticker === 'NONE' || ticker === 'N/A') continue;
     const o = (owners.get(t.ACCESSION_NUMBER) || [])[0] || {};
     rows.push({

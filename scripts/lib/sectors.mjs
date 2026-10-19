@@ -82,3 +82,32 @@ export async function updateSectors(tickers, file) {
   writeJSON(file, cache);
   return n;
 }
+
+const NAME_NOISE = /\b(INC|INCORPORATED|CORP|CORPORATION|CO|COMPANY|LTD|LIMITED|PLC|NV|N V|SA|S A|AG|SE|HLDGS?|HLDNGS|HOLDINGS?|GROUP|GRP|NEW|DEL|THE|COM|CL [A-Z]|CLASS [A-Z]|ADR|ADS|SPONSORED|SHS|ORD|LP|L P|LLC|TR|TRUST|INTL|INTERNATIONAL)\b/g;
+export const normName = (s) =>
+  String(s || '').toUpperCase().replace(/&/g, ' AND ').replace(/[^A-Z0-9 ]+/g, ' ').replace(NAME_NOISE, ' ').replace(/\s+/g, ' ').trim();
+
+/** Match 13F issuer names to SEC company tickers when CUSIP lookup fails. Mutates cusipMap. */
+export async function matchByName(pairs, cusipMap) {
+  const list = await sec('https://www.sec.gov/files/company_tickers.json', 'json');
+  const byName = new Map();
+  for (const x of Object.values(list)) {
+    const k = normName(x.title);
+    if (k && !byName.has(k)) byName.set(k, x);
+  }
+  let n = 0;
+  for (const [cusip, issuer] of pairs) {
+    let k = normName(issuer);
+    let hit = byName.get(k);
+    // 13F names are often truncated ("SEAGATE TECHNOLOGY HLDNGS PL"): drop a short trailing fragment.
+    while (!hit && /\s\S{1,3}$/.test(k)) {
+      k = k.replace(/\s\S{1,3}$/, '');
+      hit = byName.get(k);
+    }
+    if (hit) {
+      cusipMap[cusip] = { ...(cusipMap[cusip] || {}), ticker: String(hit.ticker).replace('-', '.'), name: hit.title, via: 'sec-name' };
+      n++;
+    }
+  }
+  return n;
+}
