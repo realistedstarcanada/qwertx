@@ -61,6 +61,7 @@ const pages = [
   ...d.investors.map((inv) => (inv.p ? investorPage(d, inv) : investorPending(inv))),
   smartMoney(d),
   ...d.stocks.map((s) => stockPage(d, s)),
+  ...d.extraStocks.map((s) => stockPage(d, s)),
   politicians(d),
   insiders(d),
   market(d),
@@ -87,6 +88,12 @@ for (const pg of pages) {
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, html);
 }
+
+// Search index for the hero search box (ticker, name, slug, owners, Congress trades, insider buying).
+const searchIndex = [...d.stocks, ...d.extraStocks]
+  .filter((s) => s.hasPage && (s.ticker || s.label))
+  .map((s) => ({ t: s.ticker || s.label, n: s.name, s: s.slug, o: s.owners || 0, c: s.ticker ? (d.politics.byTicker.get(s.ticker) || []).length : 0, b: s.ticker && d.insiders?.buyTickers?.[s.ticker] ? 1 : 0 }));
+fs.writeFileSync(path.join(OUT, 'search-index.json'), JSON.stringify(searchIndex));
 
 // Fear & Greed snapshot for the live gauge's fallback, sitemap, robots.
 if (d.market?.fearGreed) fs.writeFileSync(path.join(OUT, 'market-snapshot.json'), JSON.stringify(d.market.fearGreed));

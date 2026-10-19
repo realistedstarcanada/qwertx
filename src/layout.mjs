@@ -2,12 +2,12 @@
 import { esc, money, date, signed, upDown } from './lib/format.mjs';
 
 export const NAV = [
-  ['/investors.html', 'Super Investors', 'investors'],
-  ['/smart-money.html', 'Smart Money', 'smart-money'],
+  ['/investors.html', 'Fund Managers', 'investors'],
+  ['/smart-money.html', 'Top Stocks', 'smart-money'],
   ['/politicians.html', 'Politicians', 'politicians'],
   ['/insiders.html', 'Insiders', 'insiders'],
-  ['/market.html', 'Market Pulse', 'market'],
-  ['/insights.html', 'Insights', 'insights'],
+  ['/market.html', 'Market Mood', 'market'],
+  ['/insights.html', 'Learn', 'insights'],
   ['/pro.html', 'Pro', 'pro'],
 ];
 const MOBILE = [['/', 'Home', 'home'], ...NAV, ['/about.html', 'About', 'about'], ['/contact.html', 'Contact', 'contact']];
@@ -125,12 +125,12 @@ ${body}
       <div class="col">
         <h2 class="footer-title">Explore</h2>
         <ul class="footer-links">
-          <li><a href="/investors.html">Super Investors</a></li>
-          <li><a href="/smart-money.html">Smart Money Stats</a></li>
+          <li><a href="/investors.html">Fund Managers</a></li>
+          <li><a href="/smart-money.html">Top Stocks</a></li>
           <li><a href="/politicians.html">Politician Trades</a></li>
           <li><a href="/insiders.html">Insider Trades</a></li>
-          <li><a href="/market.html">Market Pulse</a></li>
-          <li><a href="/insights.html">Insights</a></li>
+          <li><a href="/market.html">Market Mood</a></li>
+          <li><a href="/insights.html">Learn</a></li>
         </ul>
       </div>
       <div class="col">

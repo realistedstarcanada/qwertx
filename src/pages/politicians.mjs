@@ -1,5 +1,5 @@
 import { esc, money, int, date, cleanName } from '../lib/format.mjs';
-import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, partyChip } from '../parts.mjs';
+import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, partyChip, tip } from '../parts.mjs';
 
 const typeBadge = (t) => (t.type === 'buy' ? '<span class="act act-add">Buy</span>' : '<span class="act act-trim">Sell</span>');
 
@@ -28,7 +28,7 @@ ${q ? `<section class="section-sm">
       ${kpi(`Trades · ${esc(q.label)}`, int(q.trades), prev ? `${int(prev.trades)} in ${esc(prev.label)}` : 'By transaction date')}
       ${kpi('Members trading', q.members, 'House and Senate')}
       ${kpi('Buys / sells', `<span class="up">${q.buys}</span> / <span class="down">${q.sells}</span>`, 'Stock transactions')}
-      ${kpi('Estimated volume', money(q.estValue), 'Midpoint of reported ranges')}
+      ${kpi(`Estimated volume${tip('range')}`, money(q.estValue), 'Midpoint of reported ranges')}
     </div>
   </div>
 </section>
@@ -75,7 +75,7 @@ ${q.overlap.length ? `<section class="section-sm">
     <div class="row between center reveal" style="margin-bottom:20px"><div><div class="card-label" style="margin:0"><span>06 · Latest disclosures</span></div><h2 style="font-size:32px;margin:6px 0 0">Recent congressional stock trades</h2></div>${sourceChip('House Clerk · Senate eFD')}</div>
     <div class="table-wrap reveal"><table class="data" data-sortable style="min-width:820px">
       <caption class="sr-only">Latest stock trades disclosed by members of Congress</caption>
-      <thead><tr><th scope="col">Member</th><th scope="col">Stock</th><th scope="col">Type</th><th class="num" scope="col">Amount</th><th class="num" scope="col">Traded</th><th class="num" scope="col">Disclosed</th><th scope="col">Owner</th></tr></thead>
+      <thead><tr><th scope="col">Member</th><th scope="col">Stock</th><th scope="col">Type</th><th class="num" scope="col">Amount ${tip('range')}</th><th class="num" scope="col">Traded</th><th class="num" scope="col">Disclosed</th><th scope="col">Owner</th></tr></thead>
       <tbody>${P.latest
         .map((t) => {
           const s = d.stockByTicker.get(t.ticker);

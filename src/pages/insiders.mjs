@@ -1,5 +1,5 @@
 import { esc, money, int, date, cleanName } from '../lib/format.mjs';
-import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter } from '../parts.mjs';
+import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, tip } from '../parts.mjs';
 import { titleish } from './home.mjs';
 
 export function insiders(d) {
@@ -38,7 +38,7 @@ export function insiders(d) {
       ${kpi('Open-market buys', `<span class="up">${int(T.buys)}</span>`, `${money(T.buyValue)} across ${int(T.buyCompanies)} companies`)}
       ${kpi('Open-market sells', `<span class="down">${int(T.sells)}</span>`, `${money(T.sellValue)} across ${int(T.sellCompanies)} companies`)}
       ${kpi('Buy / sell ratio', `${ratio.toFixed(2)}×`, 'By dollar value')}
-      ${kpi('Planned sales', `${Math.round((T.plannedSells / (T.sells || 1)) * 100)}%`, 'Made under 10b5-1 trading plans')}
+      ${kpi(`Planned sales${tip('10b5-1')}`, `${Math.round((T.plannedSells / (T.sells || 1)) * 100)}%`, 'Made under 10b5-1 trading plans')}
     </div>
   </div>
 </section>
@@ -46,7 +46,7 @@ export function insiders(d) {
   <div class="container">
     <div class="row">
       <div class="col-7"><div class="card chart-card reveal" style="height:100%">
-        <div class="card-label"><span>01 · Cluster buys</span><span>3+ officers or directors buying</span></div><h3>Where several insiders bought at once</h3>
+        <div class="card-label"><span>01 · Cluster buys</span><span>3+ officers or directors buying</span></div><h3>Where several insiders bought at once${tip('cluster')}</h3>
         ${I.clusterBuys.length ? chart('clusters', 'bars', { items: I.clusterBuys.slice(0, 12).map((c) => ({ ticker: c.ticker, name: cleanName(c.company), value: c.insiders })), unit: '{v} insiders bought' }, { cls: 'chart chart-lg', label: 'Bar chart of companies where the most insiders bought shares' }) : '<p class="form-note">No cluster buys this quarter.</p>'}
         <p class="caption"><b>What this means</b>One insider buying can be noise. Several executives and directors buying in the same quarter is one of the stronger signals in public data, though it is never a guarantee.</p>
       </div></div>

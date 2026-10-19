@@ -59,7 +59,7 @@ export function fearGreedCard(fg) {
   }).join('');
   const cmp = (l, v, f) => `<div><b data-f="${f}">${v ?? '—'}</b><span>${l}</span></div>`;
   return `<section class="card v-mood" data-fg data-score="${score ?? 50}" data-zone="${fgZone(score ?? 50)}" aria-label="Market mood: CNN Fear and Greed Index">
-  <div class="v-mood-head"><h2>Market mood</h2><span class="eyebrow">Fear &amp; Greed</span></div>
+  <div class="v-mood-head"><h2>Market mood${tip('Fear & Greed')}</h2><span class="eyebrow">Fear &amp; Greed</span></div>
   <svg viewBox="0 0 200 114" role="img" aria-label="Fear and Greed gauge reading ${score ?? 'unknown'}">
     ${arcs}${ticks}
     <text x="14" y="112" class="lbl" fill="#f2766b">Fear</text>
@@ -209,3 +209,24 @@ export const ownersLine = (s, max = 4) => {
 };
 
 export { esc, money, pct, date, quarter, signed, upDown, int };
+
+/* ---------- Plain-language tooltips (ⓘ) ---------- */
+export const GLOSSARY = {
+  '13F': 'A quarterly SEC report where large fund managers list the US stocks they own. It is filed up to 45 days after the quarter ends.',
+  'Fear & Greed': 'CNN’s 0–100 score of investor emotion, built from seven market signals. Below 25 is extreme fear, above 75 is extreme greed.',
+  VIX: 'The “fear gauge”: how much the S&P 500 is expected to swing over the next 30 days. Higher means more nervous markets.',
+  conviction: 'How concentrated a portfolio is. A high share in the top 10 stocks means the manager is making big, focused bets.',
+  bets: 'Behaves like N bets: a portfolio with 4 equal positions scores 4. Big positions pull the number down.',
+  turnover: 'Roughly how much of the portfolio was bought or sold this quarter. Low turnover means a buy-and-hold style.',
+  'STOCK Act': 'A 2012 law that requires members of Congress to disclose stock trades within 45 days.',
+  range: 'Members of Congress only report a value band, such as $1,001–$15,000, not the exact amount.',
+  insider: 'Officers, directors and 10% owners of a company. They must report trades in its stock on SEC Form 4 within two business days.',
+  cluster: 'Three or more of a company’s officers or directors buying its stock in the same quarter. One of the stronger signals in public data.',
+  '10b5-1': 'A trading plan set up in advance, often to sell on a schedule. Planned sales say little about the insider’s current view.',
+  consensus: 'How many of the fund managers we track own the stock. Different styles agreeing is worth a closer look, not proof.',
+};
+export const tip = (key) => {
+  const text = GLOSSARY[key];
+  if (!text) return '';
+  return `<button type="button" class="qx-tip" aria-label="What does ${esc(key)} mean?" data-tip="${esc(text)}"><span aria-hidden="true">i</span></button>`;
+};

@@ -1,5 +1,5 @@
 import { esc, money, pct, quarter } from '../lib/format.mjs';
-import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter } from '../parts.mjs';
+import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, tip } from '../parts.mjs';
 
 export function smartMoney(d) {
   const sm = d.smart;
@@ -7,7 +7,7 @@ export function smartMoney(d) {
   const top = sm.owned[0];
   const grand = d.stocks.slice(0, 30);
   const body = `${pageHero({
-    crumbs: [['Smart Money']],
+    crumbs: [['Top Stocks']],
     eyebrow: 'Smart money stats',
     h1: 'What the smartest money owns, <span class="accent">all at once</span>',
     lead: `We combine all ${N} super investor portfolios (${quarter(d.latestPeriod)}) to find consensus picks, big bets and the moves that many managers made at the same time.`,
@@ -29,7 +29,7 @@ export function smartMoney(d) {
   <div class="container">
     <div class="row">
       <div class="col-7"><div class="card chart-card reveal" style="height:100%">
-        <div class="card-label"><span>01 · Consensus</span><span>Number of investors holding</span></div><h3>The most widely owned stocks</h3>
+        <div class="card-label"><span>01 · Consensus</span><span>Number of investors holding</span></div><h3>The most widely owned stocks${tip('consensus')}</h3>
         ${chart('owned', 'bars', { items: sm.owned.map((s) => ({ ticker: s.label, name: s.name, value: s.owners })), unit: 'Held by {v} investors' }, { cls: 'chart chart-lg', label: top ? `Bar chart: ${top.name} is held by ${top.owners} of ${N} investors` : 'Bar chart of the most widely owned stocks' })}
         <p class="caption"><b>What this means</b>${top ? `${esc(top.name)} is owned by ${top.owners} of our ${N} investors.` : ''} Consensus isn’t proof of a good investment, but it shows where very different styles agree.</p>
       </div></div>

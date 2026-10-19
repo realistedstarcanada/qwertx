@@ -1,5 +1,5 @@
 import { esc, money, date, quarter, int, cleanName, signed, upDown } from '../lib/format.mjs';
-import { chart, tkr, fearGreedCard, vixCard, vixChartData, newsletter, proCta, ownersLine, vRank, vCard } from '../parts.mjs';
+import { chart, tkr, fearGreedCard, vixCard, vixChartData, newsletter, proCta, ownersLine, vRank, vCard, tip } from '../parts.mjs';
 
 export function movingCard(weekly) {
   const items = weekly.moving || [];
@@ -25,6 +25,38 @@ export function trendingCards(d, cols = 'col-2') {
 </article></div>`;
     })
     .join('');
+}
+
+/** "This week in 60 seconds": four plain sentences, generated from the data. */
+export function brief(d) {
+  const m = d.market || {};
+  const fg = m.fearGreed;
+  const sm = d.smart;
+  const N = d.live.length;
+  const mb = sm.mostBought[0];
+  const pq = d.politics.quarters[0];
+  const pb = pq?.mostBought[0];
+  const iq = d.insiders;
+  const cb = iq?.clusterBuys[0];
+  const page = (t) => {
+    const s = d.stockByTicker.get(t);
+    return s?.hasPage ? `/stocks/${s.slug}.html` : null;
+  };
+  const items = [
+    fg && { icon: 'fa-gauge-high', k: 'Market mood', text: `Investors are in <b>${esc(fg.rating)}</b> mode (${fg.score}/100)${m.vix ? `, and the VIX closed at ${m.vix.last.toFixed(1)}` : ''}.`, href: '/market.html', cta: 'Market mood' },
+    mb && { icon: 'fa-briefcase', k: 'Fund managers', text: `<b>${mb.buyers} of ${N}</b> top fund managers bought more <b>${esc(mb.name)}</b> in ${quarter(d.latestPeriod)}.`, href: page(mb.ticker) || '/smart-money.html', cta: 'See who' },
+    pb && { icon: 'fa-landmark', k: 'Politicians', text: `<b>${pb.buyers} members of Congress</b> bought <b>${esc(pb.name)}</b>, the most-bought stock in ${esc(pq.label)}.`, href: page(pb.ticker) || '/politicians.html', cta: 'See trades' },
+    cb && { icon: 'fa-user-tie', k: 'Insiders', text: `<b>${cb.insiders} executives</b> at <b>${esc(cleanName(cb.company))}</b> bought their own company’s stock in ${esc(iq.label)}.`, href: page(cb.ticker) || '/insiders.html', cta: 'See insiders' },
+  ].filter(Boolean);
+  if (!items.length) return '';
+  return `<section class="v-brief-wrap" aria-labelledby="brief-h">
+  <div class="container">
+    <div class="v-brief">
+      <div class="v-brief-head"><h2 id="brief-h">This week in 60 seconds</h2><span>Updated automatically from the latest filings</span></div>
+      <div class="v-brief-grid">${items.map((x) => `<a class="v-brief-item" href="${x.href}"><span class="ic"><i class="fa-solid ${x.icon}" aria-hidden="true"></i></span><span class="k">${x.k}</span><p>${x.text}</p><span class="go">${x.cta} →</span></a>`).join('')}</div>
+    </div>
+  </div>
+</section>`;
 }
 
 export function home(d) {
@@ -61,6 +93,11 @@ export function home(d) {
         <div class="eyebrow">After Work Investment Strategies</div>
         <h1>Follow the smart money, <em>not the noise.</em></h1>
         <p class="lede">For busy professionals who can’t watch the market all day. See what top fund managers, politicians and company insiders are actually buying, straight from official filings and explained in plain language.</p>
+        <form class="v-search" role="search" action="/smart-money.html" data-search autocomplete="off">
+          <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+          <input type="search" name="q" placeholder="Search a stock: Apple, NVDA, Tesla…" aria-label="Search a stock by name or ticker" aria-autocomplete="list" aria-controls="search-results" aria-expanded="false">
+          <ul class="v-search-results" id="search-results" role="listbox" hidden></ul>
+        </form>
         <div class="btn-row">
           <a class="btn btn-gold" href="/smart-money.html">See what they’re buying</a>
           <a class="btn" href="/investors.html">Browse superinvestors</a>
@@ -76,10 +113,12 @@ export function home(d) {
   </div>
 </section>
 
+${brief(d)}
+
 <section class="section-sm">
   <div class="container">
-    <div class="v-block" style="margin-top:16px">
-      <div class="v-head"><div><h2>Most held by superinvestors</h2><p>Stocks owned by the most managers we track · share classes combined</p></div><a class="v-more" href="/smart-money.html">All stocks</a></div>
+    <div class="v-block" style="margin-top:8px">
+      <div class="v-head"><div><h2>Most held by fund managers ${tip('consensus')}</h2><p>From ${q} 13F filings ${tip('13F')} · filed by ${date(d.latestFiling)}</p></div><a class="v-more" href="/smart-money.html">All stocks</a></div>
       <div class="card">${mostHeld}</div>
     </div>
 
@@ -89,17 +128,17 @@ export function home(d) {
     </div>
 
     <div class="v-block">
-      <div class="v-head"><div><h2>Superinvestors</h2><p>Click any manager for the full portfolio, charts and history</p></div><a class="v-more" href="/investors.html">Compare all ${N}</a></div>
+      <div class="v-head"><div><h2>Fund managers we track</h2><p>Click any manager for the full portfolio, charts and history</p></div><a class="v-more" href="/investors.html">Compare all ${N}</a></div>
       <div class="v-grid">${live.slice(0, 12).map(vCard).join('')}</div>
     </div>
 
     <div class="v-block v-two">
-      <div><div class="v-head"><div><h2>What Congress is buying</h2><p>Members of Congress buying, ${pq ? esc(pq.label) : 'latest quarter'} · STOCK Act filings</p></div><a class="v-more" href="/politicians.html">All trades</a></div><div class="card">${congress}</div></div>
-      <div><div class="v-head"><div><h2>Insider cluster buys</h2><p>Officers and directors buying their own stock, ${iq ? esc(iq.label) : 'latest quarter'}</p></div><a class="v-more" href="/insiders.html">All insiders</a></div><div class="card">${clusters}</div></div>
+      <div><div class="v-head"><div><h2>What Congress is buying ${tip('STOCK Act')}</h2><p>Members buying in ${pq ? esc(pq.label) : 'the latest quarter'} · disclosed through ${date(d.politics.lastFiled)}</p></div><a class="v-more" href="/politicians.html">All trades</a></div><div class="card">${congress}</div></div>
+      <div><div class="v-head"><div><h2>Insider cluster buys ${tip('cluster')}</h2><p>Executives buying their own company’s stock · SEC Form 4, ${iq ? esc(iq.label) : 'latest quarter'}</p></div><a class="v-more" href="/insiders.html">All insiders</a></div><div class="card">${clusters}</div></div>
     </div>
 
     <div class="v-block">
-      <div class="v-head"><div><h2>Market pulse</h2><p>The VIX “fear gauge” over the last 12 months and where the major indexes closed</p></div><a class="v-more" href="/market.html">Market Pulse</a></div>
+      <div class="v-head"><div><h2>Market pulse ${tip('VIX')}</h2><p>The VIX “fear gauge” over 12 months and where the major indexes closed${m.vix ? ` · close ${date(m.vix.lastDate)}` : ''}</p></div><a class="v-more" href="/market.html">Market Pulse</a></div>
       <div class="v-pulse">
         ${vixCard(m.vix)}
         <div class="card chart-card"><div class="card-label"><span>VIX · last 12 months</span><span>Cboe daily close</span></div>

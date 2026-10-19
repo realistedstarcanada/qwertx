@@ -325,6 +325,7 @@ export function loadData({ root, dataDir, configPath }) {
   };
   const politics = {
     updatedAt: congress.updatedAt,
+    lastFiled: ctr.map((t) => t.filed).filter(Boolean).sort().at(-1) || null,
     quarters: (() => {
       // Lead with the most recent quarter that has a meaningful share of disclosures; trades
       // keep arriving for ~45 days after a quarter ends, so a brand-new quarter starts thin.
@@ -360,8 +361,29 @@ export function loadData({ root, dataDir, configPath }) {
       }
     : null;
 
+  // Stocks traded by Congress or insiders that no tracked fund manager owns still get a page,
+  // so search and links always land somewhere useful.
+  const extra = new Map();
+  const addExtra = (ticker, name) => {
+    if (!ticker || !/^[A-Z][A-Z0-9.\-]{0,6}$/.test(ticker)) return;
+    const own = stockByTicker.get(ticker);
+    if ((own && own.hasPage) || extra.has(ticker)) return;
+    extra.set(ticker, {
+      ticker, label: ticker, name: cleanName((sectors[ticker] && sectors[ticker].name) || name || ticker), sector: (sectors[ticker] && sectors[ticker].sector) || null,
+      slug: slugify(ticker), holders: [], sellers: own?.sellers || [], owners: 0, value: 0, buyers: 0, newBuyers: 0, sellCount: own?.sellers?.length || 0, maxW: 0, hasPage: true, extra: true,
+    });
+  };
+  for (const t of ctr) addExtra(t.ticker, t.company || String(t.asset || '').split('>').pop().replace(/\s*\(.*$/, '').replace(/^(SP|JT|DC)\s+/, ''));
+  if (ins) {
+    for (const t of [...(ins.topBuys || []), ...(ins.topSells || []), ...(ins.topExecBuys || []), ...(ins.topExecSells || [])]) addExtra(t.ticker, t.company);
+    for (const c of [...(ins.clusterBuys || []), ...(ins.topBuyCompanies || []), ...(ins.topSellCompanies || [])]) addExtra(c.ticker, c.company);
+  }
+  for (const [t, s] of extra) stockByTicker.set(t, s);
+  const extraStocks = [...extra.values()];
+
   return {
     cfg,
+    extraStocks,
     investors,
     live,
     stocks: stockList,

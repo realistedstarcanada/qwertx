@@ -9,7 +9,7 @@ export function market(d) {
   const moving = (w.moving || []).map((x) => `<div class="col-3"><div class="card icon-box reveal" style="height:100%"><div class="icon"><i class="fa-solid ${esc(x.icon || 'fa-chart-line')}" aria-hidden="true"></i></div><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div></div>`).join('');
   const news = (d.news.items || []).slice(0, 12);
   const body = `${pageHero({
-    crumbs: [['Market Pulse']],
+    crumbs: [['Market Mood']],
     eyebrow: 'Market pulse',
     h1: 'Market mood, <span class="accent">in one glance</span>',
     lead: 'CNN’s Fear &amp; Greed Index, a fear-and-greed reading built on the VIX, the stories moving markets and live data streams, explained for people too busy to watch the market all day.',

@@ -1,9 +1,9 @@
 import { esc, money, int, pct, date, quarter, signed, upDown } from '../lib/format.mjs';
-import { chart, tkr, actBadge, wbar, sourceChip, rankList, vCard, pageHero, kpi, proCta } from '../parts.mjs';
+import { chart, tkr, actBadge, wbar, sourceChip, rankList, vCard, pageHero, kpi, proCta, tip } from '../parts.mjs';
 
 export function investorsIndex(d) {
   const body = `${pageHero({
-    crumbs: [['Super Investors']],
+    crumbs: [['Fund Managers']],
     eyebrow: 'Super investors',
     h1: `The ${d.live.length} super investors we track`,
     lead: `Value legends, activists, growth specialists and endowments, sorted by portfolio size, with holdings from each manager’s latest SEC 13F filing (${quarter(d.latestPeriod)}).`,
@@ -72,7 +72,7 @@ export function investorPage(d, inv) {
   const body = `<section class="page-hero">
   <div class="hero-bg grid"></div>
   <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/investors.html">Super Investors</a><span aria-hidden="true">/</span><span aria-current="page">${esc(inv.manager)}</span></nav>
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/investors.html">Fund Managers</a><span aria-hidden="true">/</span><span aria-current="page">${esc(inv.manager)}</span></nav>
     <div class="row row-wide center">
       <div class="col-7">
         <div class="eyebrow">Super investor portfolio</div>
@@ -82,7 +82,7 @@ export function investorPage(d, inv) {
           <span class="avatar avatar-lg" aria-hidden="true">${esc(inv.avatar)}</span>
           <div><div class="tags" style="margin-bottom:10px">${(inv.tags || []).map((t) => `<span class="tag tag-gold">${esc(t)}</span>`).join('')}</div><div class="mono" style="font-size:13px;color:#8A93A8">${esc(inv.meta || inv.firm)}</div></div>
         </div>
-        <div class="row mt-32" style="gap:10px">${sourceChip(`SEC 13F · period ${quarter(p.period)} · filed ${date(p.filingDate)} · <a href="${esc(p.filingUrl)}" target="_blank" rel="noopener">View filing</a>`)}<span class="time-badge"><i class="fa-regular fa-clock" aria-hidden="true"></i>5-min briefing</span></div>
+        <div class="row mt-32" style="gap:10px">${sourceChip(`SEC 13F${tip('13F')} · period ${quarter(p.period)} · filed ${date(p.filingDate)} · <a href="${esc(p.filingUrl)}" target="_blank" rel="noopener">View filing</a>`)}<span class="time-badge"><i class="fa-regular fa-clock" aria-hidden="true"></i>5-min briefing</span></div>
       </div>
       <div class="col-5">
         <div class="card" style="background:rgba(17,23,39,.85);border-color:#2A3550">
@@ -103,9 +103,9 @@ export function investorPage(d, inv) {
     <div class="row mt-32">
       ${kpi('Portfolio value', money(p.totalValue), p.valueChange != null ? `<span class="${upDown(p.valueChange)}">${signed(p.valueChange * 100)}</span> vs ${quarter(p.prevPeriod)}` : 'First quarter tracked')}
       ${kpi('Positions', p.holdingsCount, p.prevPeriod ? `${c.new || 0} new · ${c.sold || 0} sold out` : '&nbsp;')}
-      ${kpi('Top-10 weight', `${Math.round(p.top10)}%`, `${p.conviction} conviction`)}
-      ${kpi('Behaves like', `${Math.round(p.effN)} bets`, 'Effective number of positions')}
-      ${kpi('Turnover', p.turnover != null ? `${Math.round(p.turnover)}%` : '—', 'Portfolio traded this quarter')}
+      ${kpi(`Top-10 weight${tip('conviction')}`, `${Math.round(p.top10)}%`, `${p.conviction} conviction`)}
+      ${kpi(`Behaves like${tip('bets')}`, `${Math.round(p.effN)} bets`, 'Effective number of positions')}
+      ${kpi(`Turnover${tip('turnover')}`, p.turnover != null ? `${Math.round(p.turnover)}%` : '—', 'Portfolio traded this quarter')}
     </div>
   </div>
 </section>
@@ -234,6 +234,6 @@ export function investorPending(inv) {
     title: `${inv.manager} Portfolio`,
     description: `${inv.manager}'s ${inv.firm} portfolio from SEC 13F filings.`,
     noindex: true,
-    body: pageHero({ crumbs: [['Super Investors', '/investors.html'], [inv.manager]], eyebrow: 'Super investor portfolio', h1: `${esc(inv.manager)} portfolio`, lead: 'This portfolio fills in automatically on the next SEC data update.' }),
+    body: pageHero({ crumbs: [['Fund Managers', '/investors.html'], [inv.manager]], eyebrow: 'Super investor portfolio', h1: `${esc(inv.manager)} portfolio`, lead: 'This portfolio fills in automatically on the next SEC data update.' }),
   };
 }
