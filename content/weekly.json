@@ -1,0 +1,55 @@
+{
+  "_note": "Weekly editorial. Update every week: \"moving\" = 3-4 stories moving markets, \"trending\" = 4 stocks explained. Owners, politician and insider activity are added automatically from the data.",
+  "weekLabel": "Week ending 16 October 2026",
+  "moving": [
+    {
+      "icon": "fa-microchip",
+      "title": "AI stocks lead a sell-off",
+      "text": "The Nasdaq fell 2.1% on Friday and 4.5% for the week, ending a four-week winning streak. Chip, memory and AI-infrastructure stocks led the decline as investors questioned how AI spending gets financed."
+    },
+    {
+      "icon": "fa-fire-flame-curved",
+      "title": "Hot inflation, higher yields",
+      "text": "Hotter-than-expected CPI and PPI readings pushed the 10-year Treasury yield above 5%. Futures markets price a high chance of a Fed rate hike by December."
+    },
+    {
+      "icon": "fa-oil-well",
+      "title": "Oil back above $100",
+      "text": "WTI crude rose 3.4% to about $101 a barrel, and Brent to about $110, on Middle East supply risks. Energy was the best-performing sector."
+    }
+  ],
+  "trending": [
+    {
+      "ticker": "CRWV",
+      "date": "16 Oct 2026",
+      "title": "CoreWeave slides on AI-debt worries",
+      "happened": "CoreWeave fell about 12% on Friday, its second big drop in three days, as investors focused on the AI cloud provider’s roughly $50 billion of debt.",
+      "means": "Companies that borrow to build AI data centres now trade like rate-sensitive stocks. With 10-year yields above 5%, financing costs matter as much as demand. Expect volatility until earnings show cash flow catching up with spending.",
+      "note": "David Tepper’s Appaloosa opened a new position in Q2 2026, before this sell-off."
+    },
+    {
+      "ticker": "META",
+      "date": "16 Oct 2026",
+      "title": "Meta falls 4% ahead of earnings",
+      "happened": "Meta dropped nearly 4% on Friday as the AI sell-off hit the biggest spenders on AI infrastructure.",
+      "means": "Upcoming Big Tech earnings must show AI investment turning into revenue and cash flow. Meta’s ad business funds its spending, which separates it from borrowers, but the market wants proof.",
+      "note": "One of the most widely held stocks among our super investors."
+    },
+    {
+      "ticker": "NFLX",
+      "date": "16 Oct 2026",
+      "title": "Netflix reports earnings on 20 October",
+      "happened": "Netflix reports third-quarter results on Tuesday, 20 October, at the start of a heavy week of earnings.",
+      "means": "Subscriber growth, ad-tier revenue and margins will set the tone. A streaming business is less exposed to AI financing fears, which may help it stand out in a jittery tape.",
+      "note": "Bill Ackman’s Pershing Square opened a new position worth about $934 million in Q2 2026."
+    },
+    {
+      "ticker": "OXY",
+      "date": "16 Oct 2026",
+      "title": "Oil above $100 lifts energy stocks",
+      "happened": "Energy was the best sector on Friday (up about 2.5%) as WTI crude climbed above $101 a barrel on Middle East supply risks.",
+      "means": "Producers like Occidental earn much more cash at these prices, which supports buybacks and debt paydown. The risk is that oil prices fall back quickly if supply eases.",
+      "note": "Berkshire Hathaway owns about 265 million Occidental shares, one of its largest positions."
+    }
+  ]
+}

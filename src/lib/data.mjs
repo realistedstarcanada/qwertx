@@ -1,6 +1,8 @@
+// Loads config/ + data/ and derives everything the pages need: per-investor metrics, cross-investor
+// stock views, smart-money aggregates, similarity scores, politician and insider summaries.
 import fs from 'node:fs';
 import path from 'node:path';
-import { titleCase, slugify } from './format.mjs';
+import { cleanName, classSuffix, quarter, slugify, quarterKey } from './format.mjs';
 
 const readJSON = (f, fb = null) => {
   try {
@@ -10,84 +12,350 @@ const readJSON = (f, fb = null) => {
   }
 };
 
-export const stockSlug = (h) => (h.ticker ? slugify(h.ticker) : h.cusip.toLowerCase());
+const ACT = { new: 'New', added: 'Add', reduced: 'Trim', unchanged: 'Hold', unknown: 'Hold' };
+const ACT_LABEL = { New: 'New position', Add: 'Added shares', Trim: 'Trimmed shares', Hold: 'No change in shares' };
 
-function displayName(h) {
-  return titleCase(h.issuer || '') || h.cusip;
+export function convictionLabel(top10) {
+  return top10 >= 85 ? 'Very high' : top10 >= 65 ? 'High' : top10 >= 45 ? 'Moderate' : 'Diversified';
 }
 
-/** Load config + generated data and derive cross-investor views. */
 export function loadData({ root, dataDir, configPath }) {
   const cfg = readJSON(configPath) || { investors: [] };
+  const sectors = readJSON(path.join(dataDir, 'sectors.json'), {});
+  const market = readJSON(path.join(dataDir, 'market.json'), {});
   const news = readJSON(path.join(dataDir, 'news.json'), { updatedAt: null, items: [] });
-  const market = readJSON(path.join(dataDir, 'market.json'), null);
+  const weekly = readJSON(path.join(root, 'content', 'weekly.json'), { moving: [], trending: [] });
+  const congress = readJSON(path.join(dataDir, 'congress', 'trades.json'), { trades: [] });
+  const insiderFiles = fs.existsSync(path.join(dataDir, 'insiders'))
+    ? fs.readdirSync(path.join(dataDir, 'insiders')).filter((f) => /^\d{4}q[1-4]\.json$/.test(f)).sort().reverse()
+    : [];
+  const insiders = insiderFiles.map((f) => readJSON(path.join(dataDir, 'insiders', f))).filter(Boolean);
+
+  // ---------- Investors ----------
+  const nameFor = (h) => {
+    const s = h.ticker && sectors[h.ticker];
+    const base = cleanName((s && s.name) || h.issuer || h.cusip);
+    return base + (h.putCall ? ` (${h.putCall === 'CALL' ? 'call options' : 'put options'})` : classSuffix(h.cls));
+  };
+  const sectorFor = (h) => {
+    if (h.shType === 'PRN') return 'Bonds & notes';
+    return (h.ticker && sectors[h.ticker]?.sector) || 'Other';
+  };
+  const issuerKey = (h) => h.cusip.slice(0, 6);
 
   const investors = cfg.investors.map((inv) => {
     const p = readJSON(path.join(dataDir, 'portfolios', `${inv.slug}.json`));
-    if (!p) return { ...inv, portfolio: null };
-    const prep = (h) => ({ ...h, name: displayName(h), slug: stockSlug(h) });
-    const holdings = p.holdings.map(prep);
-    const top10 = holdings.slice(0, 10).reduce((s, h) => s + h.weight, 0);
-    return { ...inv, portfolio: { ...p, holdings, sold: (p.sold || []).map(prep), top10 } };
+    if (!p) return { ...inv, p: null };
+    const total = p.totalValue;
+    const holdings = p.holdings.map((h, i) => {
+      const act = ACT[h.status] || 'Hold';
+      return {
+        ...h,
+        rank: i + 1,
+        name: nameFor(h),
+        label: h.ticker || nameFor(h).split(' ')[0],
+        sector: sectorFor(h),
+        w: h.weight * 100,
+        act,
+        actLabel: h.status === 'added' || h.status === 'reduced' ? `${act === 'Add' ? 'Added' : 'Trimmed'} ${Math.abs((h.sharesChangePct || 0) * 100).toFixed(0)}% of shares` : ACT_LABEL[act],
+        issuer: issuerKey(h),
+      };
+    });
+    const sold = (p.sold || []).map((h) => ({ ...h, name: nameFor(h), label: h.ticker || nameFor(h).split(' ')[0], issuer: issuerKey(h) }));
+    const ws = holdings.map((h) => h.weight);
+    const top10 = ws.slice(0, 10).reduce((a, b) => a + b, 0) * 100;
+    const effN = 1 / ws.reduce((a, w) => a + w * w, 0);
+    const buys = holdings.filter((h) => (h.flow || 0) > 0).reduce((a, h) => a + h.flow, 0);
+    const sells = -[...holdings.filter((h) => (h.flow || 0) < 0), ...sold].reduce((a, h) => a + (h.flow || 0), 0);
+    const avgVal = p.prevTotalValue ? (total + p.prevTotalValue) / 2 : total;
+    const turnover = p.prevTotalValue ? (Math.min(buys, sells) / avgVal) * 100 : null;
+
+    // Sector allocation
+    const secMap = new Map();
+    for (const h of holdings) secMap.set(h.sector, (secMap.get(h.sector) || 0) + h.w);
+    let secItems = [...secMap.entries()].sort((a, b) => b[1] - a[1]);
+    if (secItems.length > 9) {
+      const rest = secItems.slice(8).reduce((a, x) => a + x[1], 0);
+      secItems = [...secItems.slice(0, 8), ['Other positions', rest]];
+    }
+    secItems = secItems.map(([n, v]) => [n, +v.toFixed(2)]);
+
+    // Concentration curve (cumulative weight of the top N positions)
+    const curve = [];
+    let cum = 0;
+    for (const h of holdings.slice(0, Math.min(holdings.length, 30))) {
+      cum += h.w;
+      curve.push(+cum.toFixed(2));
+    }
+
+    // Flows: biggest buys and sells
+    const flowRows = [
+      ...holdings.filter((h) => Math.abs(h.flow || 0) > 0).map((h) => ({ ticker: h.label, name: h.name, flow: h.flow, label: h.act === 'New' ? 'New position' : h.flow > 0 ? 'Added' : 'Trimmed' })),
+      ...sold.map((h) => ({ ticker: h.label, name: h.name, flow: h.flow || -h.prevValue, label: 'Sold out' })),
+    ];
+    const topBuys = flowRows.filter((r) => r.flow > 0).sort((a, b) => b.flow - a.flow).slice(0, 6);
+    const topSells = flowRows.filter((r) => r.flow < 0).sort((a, b) => a.flow - b.flow).slice(0, 6);
+
+    // History (value line + stacked weights of today's top 6 issuers)
+    const hist = (p.history || []).slice(-9);
+    const topIssuers = [];
+    for (const h of holdings) {
+      if (!topIssuers.find((x) => x.issuer === h.issuer)) topIssuers.push({ issuer: h.issuer, label: h.label, cusips: new Set() });
+      if (topIssuers.length >= 6) break;
+    }
+    for (const h of holdings) {
+      const t = topIssuers.find((x) => x.issuer === h.issuer);
+      if (t) t.cusips.add(h.cusip);
+    }
+    const stackSeries = topIssuers.map((t) => ({
+      name: t.label,
+      data: hist.map((q) => +Object.entries(q.w || {}).filter(([c]) => c.slice(0, 6) === t.issuer).reduce((a, [, v]) => a + v, 0).toFixed(2)),
+    }));
+    const otherSeries = hist.map((_, i) => +Math.max(0, 100 - stackSeries.reduce((a, s) => a + s.data[i], 0)).toFixed(2));
+
+    return {
+      ...inv,
+      p: {
+        ...p,
+        holdings,
+        sold,
+        top10,
+        effN,
+        conviction: convictionLabel(top10),
+        turnover,
+        buys,
+        sells,
+        valueChange: p.prevTotalValue ? (total - p.prevTotalValue) / p.prevTotalValue : null,
+        sectors: secItems,
+        curve,
+        flows: [...topBuys, ...topSells.reverse()].sort((a, b) => b.flow - a.flow),
+        hist: { labels: hist.map((q) => quarter(q.period)), values: hist.map((q) => q.total), counts: hist.map((q) => q.count) },
+        stack: { labels: hist.map((q) => quarter(q.period)), series: [...stackSeries, { name: 'Everything else', data: otherSeries }] },
+      },
+    };
   });
+  const live = investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue);
 
-  // Cross-investor stock view, keyed by CUSIP (option lines roll up into the same stock).
+  // ---------- Similarity (cosine on issuer-level weights) ----------
+  const vec = new Map(live.map((i) => {
+    const m = new Map();
+    for (const h of i.p.holdings) if (!h.putCall && h.shType !== 'PRN') m.set(h.issuer, (m.get(h.issuer) || 0) + h.weight);
+    return [i.slug, m];
+  }));
+  const norm = (m) => Math.sqrt([...m.values()].reduce((a, v) => a + v * v, 0));
+  for (const a of live) {
+    const va = vec.get(a.slug);
+    a.p.similar = live
+      .filter((b) => b.slug !== a.slug)
+      .map((b) => {
+        const vb = vec.get(b.slug);
+        let dot = 0;
+        const shared = [];
+        for (const [k, w] of va) if (vb.has(k)) {
+          dot += w * vb.get(k);
+          shared.push({ k, s: w * vb.get(k) });
+        }
+        const score = dot / (norm(va) * norm(vb) || 1);
+        const labels = shared.sort((x, y) => y.s - x.s).slice(0, 4).map((x) => a.p.holdings.find((h) => h.issuer === x.k)?.label).filter(Boolean);
+        return { inv: b, score: Math.round(score * 100), shared: labels };
+      })
+      .filter((x) => x.score > 0)
+      .sort((x, y) => y.score - x.score)
+      .slice(0, 3);
+  }
+
+  // ---------- Stocks (share classes combined by issuer) ----------
   const stocks = new Map();
-  const touch = (h) => {
-    if (!stocks.has(h.cusip)) {
-      stocks.set(h.cusip, { cusip: h.cusip, ticker: h.ticker, name: h.name, slug: h.slug, holders: [], sellers: [], combinedValue: 0 });
+  for (const inv of live) {
+    const per = new Map();
+    for (const h of inv.p.holdings) {
+      if (h.shType === 'PRN') continue;
+      if (!per.has(h.issuer)) per.set(h.issuer, { inv, w: 0, value: 0, shares: 0, acts: new Set(), lines: [] });
+      const x = per.get(h.issuer);
+      x.w += h.w;
+      x.value += h.value;
+      x.shares += h.shares;
+      x.acts.add(h.act);
+      x.lines.push(h);
     }
-    const s = stocks.get(h.cusip);
-    if (!s.ticker && h.ticker) {
-      s.ticker = h.ticker;
-      s.slug = h.slug;
+    for (const [k, x] of per) {
+      if (!stocks.has(k)) stocks.set(k, { issuer: k, classes: new Map(), holders: [], sellers: [], value: 0 });
+      const s = stocks.get(k);
+      for (const h of x.lines) s.classes.set(h.ticker || h.cusip, (s.classes.get(h.ticker || h.cusip) || 0) + h.value);
+      const act = x.acts.has('New') ? 'New' : x.acts.has('Add') ? 'Add' : x.acts.has('Trim') ? 'Trim' : 'Hold';
+      s.holders.push({ inv, w: x.w, value: x.value, shares: x.shares, act, line: x.lines[0] });
+      s.value += x.value;
+      if (!s.sample || x.value > s.sampleValue) {
+        s.sample = x.lines[0];
+        s.sampleValue = x.value;
+      }
     }
-    return s;
-  };
-  for (const inv of investors) {
-    if (!inv.portfolio) continue;
-    for (const h of inv.portfolio.holdings) {
-      const s = touch(h);
-      s.holders.push({ inv, h });
-      s.combinedValue += h.value;
+    for (const h of inv.p.sold) {
+      if (h.shType === 'PRN') continue;
+      if (!stocks.has(h.issuer)) stocks.set(h.issuer, { issuer: h.issuer, classes: new Map(), holders: [], sellers: [], value: 0, sample: h, sampleValue: 0 });
+      stocks.get(h.issuer).sellers.push({ inv, h });
     }
-    for (const h of inv.portfolio.sold) touch(h).sellers.push({ inv, h });
   }
   for (const s of stocks.values()) {
-    s.investorCount = new Set(s.holders.map((x) => x.inv.slug)).size;
-    s.buyers = new Set(s.holders.filter((x) => x.h.status === 'new' || x.h.status === 'added').map((x) => x.inv.slug)).size;
-    s.newBuyers = new Set(s.holders.filter((x) => x.h.status === 'new').map((x) => x.inv.slug)).size;
-    s.reducers = new Set(s.holders.filter((x) => x.h.status === 'reduced').map((x) => x.inv.slug)).size + new Set(s.sellers.map((x) => x.inv.slug)).size;
-    s.avgWeight = s.holders.reduce((a, x) => a + x.h.weight, 0) / Math.max(1, s.investorCount);
-    s.holders.sort((a, b) => b.h.weight - a.h.weight);
+    const primary = [...s.classes.entries()].sort((a, b) => b[1] - a[1])[0];
+    const sampleTicker = primary ? primary[0] : s.sample.ticker || s.sample.cusip;
+    const ticker = /^[A-Z.\-]{1,7}$/.test(sampleTicker) ? sampleTicker : s.sample.ticker || null;
+    s.ticker = ticker;
+    s.label = ticker || cleanName(s.sample.issuer);
+    s.name = cleanName((ticker && sectors[ticker]?.name) || s.sample.issuer);
+    s.sector = (ticker && sectors[ticker]?.sector) || 'Other';
+    s.slug = ticker ? slugify(ticker) : s.issuer.toLowerCase();
+    s.owners = s.holders.length;
+    s.holders.sort((a, b) => b.w - a.w);
+    s.maxW = s.holders[0]?.w || 0;
+    s.buyers = s.holders.filter((x) => x.act === 'New' || x.act === 'Add').length;
+    s.newBuyers = s.holders.filter((x) => x.act === 'New').length;
+    s.sellCount = s.holders.filter((x) => x.act === 'Trim').length + s.sellers.length;
+    s.hasPage = s.owners > 0;
   }
-  // Slug collisions (two CUSIPs, same ticker, e.g. share classes) get the CUSIP appended.
-  const bySlug = new Map();
+  const stockList = [...stocks.values()].filter((s) => s.hasPage).sort((a, b) => b.owners - a.owners || b.value - a.value);
+  const stockByTicker = new Map();
   for (const s of stocks.values()) {
-    if (bySlug.has(s.slug)) s.slug = `${s.slug}-${s.cusip.toLowerCase()}`;
-    bySlug.set(s.slug, s);
+    if (s.ticker) stockByTicker.set(s.ticker, s);
   }
-  const stockList = [...stocks.values()].filter((s) => s.holders.length);
-  for (const inv of investors) {
-    if (!inv.portfolio) continue;
-    for (const h of [...inv.portfolio.holdings, ...inv.portfolio.sold]) {
-      const s = stocks.get(h.cusip);
-      h.slug = s.slug;
-      h.hasPage = s.holders.length > 0;
-    }
+  // Make every holding know its stock page
+  for (const inv of live) for (const h of [...inv.p.holdings, ...inv.p.sold]) {
+    const s = stocks.get(h.issuer);
+    h.stockSlug = s && s.hasPage ? s.slug : null;
   }
 
-  const live = investors.filter((i) => i.portfolio);
-  const periods = live.map((i) => i.portfolio.period).sort();
+  // ---------- Smart money aggregates ----------
+  const latestPeriod = live.map((i) => i.p.period).sort().at(-1) || null;
+  const smart = {
+    value: live.reduce((a, i) => a + i.p.totalValue, 0),
+    positions: live.reduce((a, i) => a + i.p.holdingsCount, 0),
+    newPositions: live.reduce((a, i) => a + i.p.holdings.filter((h) => h.act === 'New').length, 0),
+    avgTop10: live.length ? live.reduce((a, i) => a + i.p.top10, 0) / live.length : 0,
+    owned: stockList.slice(0, 15),
+    bigBets: stockList
+      .map((s) => ({ s, n: s.holders.filter((x) => x.w >= 5).length }))
+      .filter((x) => x.n >= 2)
+      .sort((a, b) => b.n - a.n || b.s.maxW - a.s.maxW)
+      .slice(0, 10),
+    mostBought: [...stocks.values()].filter((s) => s.buyers > 0).sort((a, b) => b.buyers - a.buyers || b.newBuyers - a.newBuyers || b.value - a.value).slice(0, 10),
+    mostSold: [...stocks.values()].filter((s) => s.sellCount > 0).sort((a, b) => b.sellCount - a.sellCount || b.value - a.value).slice(0, 10),
+    newBets: live
+      .flatMap((inv) => inv.p.holdings.filter((h) => h.act === 'New' && h.shType !== 'PRN').map((h) => ({ inv, h })))
+      .sort((a, b) => b.h.value - a.h.value)
+      .slice(0, 10),
+  };
+  const heatStocks = stockList.slice(0, 15);
+  smart.heat = {
+    stocks: heatStocks.map((s) => s.label),
+    investors: live.map((i) => i.manager),
+    matrix: live.map((inv) => heatStocks.map((s) => {
+      const x = s.holders.find((h) => h.inv.slug === inv.slug);
+      return x ? +x.w.toFixed(2) : null;
+    })),
+  };
+  smart.heat.max = Math.min(30, Math.ceil(Math.max(5, ...smart.heat.matrix.flat().filter((v) => v != null)) / 5) * 5);
+
+  // ---------- Politicians ----------
+  const ctr = (congress.trades || []).filter((t) => t.ticker && (t.type === 'buy' || t.type === 'sell'));
+  const qOf = (t) => quarterKey(t.date || t.filed);
+  const qKeys = [...new Set(ctr.map(qOf).filter(Boolean))].sort().reverse();
+  const politicsFor = (qk) => {
+    const list = ctr.filter((t) => qOf(t) === qk);
+    const byTicker = new Map();
+    for (const t of list) {
+      if (!byTicker.has(t.ticker)) byTicker.set(t.ticker, { ticker: t.ticker, asset: t.asset, buyers: new Set(), sellers: new Set(), buys: 0, sells: 0, buyValue: 0, sellValue: 0, parties: { D: 0, R: 0, I: 0 } });
+      const x = byTicker.get(t.ticker);
+      const who = t.bioguide || t.member;
+      if (t.type === 'buy') {
+        x.buys++;
+        x.buyers.add(who);
+        x.buyValue += t.amount?.mid || 0;
+      } else {
+        x.sells++;
+        x.sellers.add(who);
+        x.sellValue += t.amount?.mid || 0;
+      }
+      const party = (t.party || '').charAt(0);
+      if (party in x.parties) x.parties[party]++;
+    }
+    const rows = [...byTicker.values()].map((x) => ({ ...x, buyers: x.buyers.size, sellers: x.sellers.size, stock: stockByTicker.get(x.ticker) || null, name: cleanName((sectors[x.ticker] && sectors[x.ticker].name) || x.asset.replace(/\s*\(.*$/, '')) }));
+    const byMember = new Map();
+    for (const t of list) {
+      const k = t.bioguide || t.member;
+      if (!byMember.has(k)) byMember.set(k, { member: t.member, party: t.party, chamber: t.chamber, state: t.state, trades: 0, buys: 0, sells: 0, value: 0, tickers: new Map() });
+      const m = byMember.get(k);
+      m.trades++;
+      m[t.type === 'buy' ? 'buys' : 'sells']++;
+      m.value += t.amount?.mid || 0;
+      m.tickers.set(t.ticker, (m.tickers.get(t.ticker) || 0) + 1);
+    }
+    const members = [...byMember.values()].map((m) => ({ ...m, top: [...m.tickers.entries()].sort((a, b) => b[1] - a[1]).slice(0, 4).map((x) => x[0]) })).sort((a, b) => b.trades - a.trades);
+    const party = { D: { buys: 0, sells: 0 }, R: { buys: 0, sells: 0 }, I: { buys: 0, sells: 0 } };
+    for (const t of list) {
+      const k = (t.party || '').charAt(0);
+      if (party[k]) party[k][t.type === 'buy' ? 'buys' : 'sells']++;
+    }
+    return {
+      key: qk,
+      label: qk ? `Q${qk.slice(5)} ${qk.slice(0, 4)}` : '—',
+      trades: list.length,
+      buys: list.filter((t) => t.type === 'buy').length,
+      sells: list.filter((t) => t.type === 'sell').length,
+      members: byMember.size,
+      estValue: list.reduce((a, t) => a + (t.amount?.mid || 0), 0),
+      mostBought: rows.filter((r) => r.buyers > 0).sort((a, b) => b.buyers - a.buyers || b.buyValue - a.buyValue).slice(0, 12),
+      mostSold: rows.filter((r) => r.sellers > 0).sort((a, b) => b.sellers - a.sellers || b.sellValue - a.sellValue).slice(0, 12),
+      biggest: list.filter((t) => t.type === 'buy').sort((a, b) => (b.amount?.mid || 0) - (a.amount?.mid || 0)).slice(0, 10),
+      activeMembers: members.slice(0, 12),
+      party,
+      overlap: rows.filter((r) => r.buyers > 0 && r.stock && r.stock.owners > 0).sort((a, b) => b.buyers - a.buyers || b.stock.owners - a.stock.owners).slice(0, 8),
+    };
+  };
+  const politics = {
+    updatedAt: congress.updatedAt,
+    quarters: qKeys.slice(0, 3).map(politicsFor),
+    latest: ctr.slice(0, 60),
+    totalTrades: ctr.length,
+    byTicker: (() => {
+      const m = new Map();
+      for (const t of ctr) {
+        if (!m.has(t.ticker)) m.set(t.ticker, []);
+        m.get(t.ticker).push(t);
+      }
+      return m;
+    })(),
+  };
+
+  // ---------- Insiders ----------
+  const ins = insiders[0] || null;
+  const insiderView = ins
+    ? {
+        ...ins,
+        label: `Q${ins.quarter.slice(5)} ${ins.quarter.slice(0, 4)}`,
+        previous: insiders.slice(1).map((q) => ({ quarter: q.quarter, label: `Q${q.quarter.slice(5)} ${q.quarter.slice(0, 4)}`, totals: q.totals })),
+        overlap: Object.entries(ins.buyTickers || {})
+          .map(([t, v]) => ({ ticker: t, ...v, stock: stockByTicker.get(t) }))
+          .filter((x) => x.stock && x.stock.owners > 0)
+          .sort((a, b) => b.stock.owners - a.stock.owners || b.value - a.value)
+          .slice(0, 10),
+      }
+    : null;
+
   return {
+    cfg,
     investors,
     live,
     stocks: stockList,
-    stockByCusip: stocks,
-    news,
+    stockByTicker,
+    smart,
     market,
-    latestPeriod: periods.at(-1) || null,
-    combinedValue: live.reduce((s, i) => s + i.portfolio.totalValue, 0),
-    lastFiling: live.map((i) => i.portfolio.filingDate).sort().at(-1) || null,
+    news,
+    weekly,
+    politics,
+    insiders: insiderView,
+    sectors,
+    latestPeriod,
+    latestFiling: live.map((i) => i.p.filingDate).sort().at(-1) || null,
+    quartersOfHistory: Math.max(0, ...live.map((i) => (i.p.history || []).length)),
   };
 }

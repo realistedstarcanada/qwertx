@@ -1,0 +1,60 @@
+/* QWERTx additions on top of the original design system: Fear & Greed gauge in the hero,
+   politician party chips, buy/sell split bars and a tighter desktop nav for the extra pages. */
+
+/* Desktop nav: 7 items fit between 1081px and the full container width */
+@media (min-width: 1081px) and (max-width: 1360px) {
+  .nav a { padding: 8px 9px; font-size: 13.5px; }
+  .header-actions .btn-sm { padding-left: 14px; padding-right: 14px; }
+}
+@media (min-width: 1081px) and (max-width: 1180px) {
+  .header-actions .btn-sm { display: none; }
+}
+
+/* Hero with the gauge on the right */
+.hero-split { position: relative; z-index: 2; }
+.hero-split .hero-content { max-width: 680px; }
+.hero-gauge { display: flex; justify-content: flex-end; }
+.hero-gauge .fg-card { width: 100%; max-width: 420px; background: rgba(17, 23, 39, .88); border-color: #2A3550; backdrop-filter: blur(6px); }
+@media (max-width: 1080px) { .hero-gauge { justify-content: flex-start; } .hero-gauge .fg-card { max-width: 520px; } }
+
+/* Fear & Greed gauge */
+.fg-card { display: flex; flex-direction: column; gap: 10px; }
+.fg-gauge { width: 100%; max-width: 340px; margin: 4px auto 0; overflow: visible; }
+.fg-tick { font: 500 7px var(--font-mono); fill: var(--muted); }
+.fg-needle { transform-origin: 100px 100px; transform-box: view-box; transition: transform 1.3s cubic-bezier(.2, .9, .3, 1.15); }
+.fg-needle path { fill: var(--text); }
+.fg-hub { fill: var(--text); }
+.fg-hub-dot { fill: var(--surface); }
+.fg-score { text-align: center; margin-top: -8px; }
+.fg-num { display: block; font-size: 52px; font-weight: 700; line-height: 1; color: var(--text); }
+.fg-rating { display: block; font-family: var(--font-display); font-size: 20px; font-weight: 600; text-transform: capitalize; margin-top: 6px; color: var(--gold); }
+.fg-card[data-zone="1"] .fg-rating, .fg-card[data-zone="2"] .fg-rating { color: var(--coral); }
+.fg-card[data-zone="4"] .fg-rating, .fg-card[data-zone="5"] .fg-rating { color: var(--teal); }
+.fg-card[data-zone="3"] .fg-rating { color: var(--text-2); }
+.fg-compare { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; text-align: center; }
+.fg-compact .fg-compare { grid-template-columns: repeat(3, 1fr); }
+.fg-compare div { border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 8px 4px; background: var(--bg-2); }
+.fg-compare b { display: block; font-size: 17px; color: var(--text); font-weight: 500; }
+.fg-compare span { display: block; font-size: 11px; color: var(--muted); font-family: var(--font-mono); }
+.fg-card .source-chip { align-self: center; }
+.fg-live.is-live::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--teal); margin-right: 6px; box-shadow: 0 0 0 3px rgba(45, 212, 191, .2); vertical-align: 1px; }
+
+/* Party chips and buy/sell split bars */
+.party { display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 6px; font: 700 11px var(--font-mono); color: #fff; vertical-align: middle; flex: none; }
+.party-D { background: #3B6FD8; }
+.party-R { background: #D2483F; }
+.party-I { background: #8A63D2; }
+.party-\? { background: var(--line-2); }
+.party-row { padding: 12px 0; border-top: 1px solid var(--line); }
+.party-row:first-of-type { border-top: 0; }
+.party-row .row { gap: 10px; }
+.split-bar { display: flex; height: 10px; border-radius: 5px; overflow: hidden; background: var(--line); margin-top: 10px; gap: 2px; }
+.split-bar .b { background: var(--teal); }
+.split-bar .s { background: var(--coral); }
+
+/* Headline list on Market Pulse */
+.news-rank li { grid-template-columns: 1fr; }
+.news-rank .t a:hover { color: var(--gold); }
+
+/* Tables: keep long names tidy */
+table.data .tkr-name { max-width: 280px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

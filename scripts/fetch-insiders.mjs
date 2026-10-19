@@ -54,7 +54,17 @@ function roleOf(rel, title) {
   return r ? r.replace(/,/g, ', ') : 'Insider';
 }
 
+function relOf(rel) {
+  const r = String(rel || '').toLowerCase();
+  return { officer: r.includes('officer'), director: r.includes('director'), owner10: r.includes('ten') || r.includes('10') };
+}
+
 export function summarize(dir, quarter) {
+  // Trades dated within the quarter (plus the prior quarter, for late filers).
+  const y = Number(quarter.slice(0, 4));
+  const q = Number(quarter.slice(5));
+  const maxDate = new Date(Date.UTC(y, q * 3, 0)).toISOString().slice(0, 10);
+  const minDate = new Date(Date.UTC(y, q * 3 - 6, 1)).toISOString().slice(0, 10);
   const subs = new Map(readTsv(path.join(dir, 'SUBMISSION.tsv')).map((s) => [s.ACCESSION_NUMBER, s]));
   const owners = new Map();
   for (const o of readTsv(path.join(dir, 'REPORTINGOWNER.tsv'))) {
@@ -72,6 +82,11 @@ export function summarize(dir, quarter) {
     const price = parseFloat(t.TRANS_PRICEPERSHARE) || 0;
     const value = shares * price;
     if (!shares || !price || value < 1000) continue;
+    // Guard against data-entry errors in filings (prices in the wrong unit, swapped fields).
+    if (price > 10000 && !/^BRK/.test(s.ISSUERTRADINGSYMBOL || '')) continue;
+    if (value > 3e9) continue;
+    const tDate = toIsoDate(t.TRANS_DATE);
+    if (!tDate || tDate < minDate || tDate > maxDate) continue;
     const ticker = (s.ISSUERTRADINGSYMBOL || '').trim().toUpperCase().replace(/\s+/g, '');
     if (!ticker || ticker === 'NONE' || ticker === 'N/A') continue;
     const o = (owners.get(t.ACCESSION_NUMBER) || [])[0] || {};
@@ -84,7 +99,8 @@ export function summarize(dir, quarter) {
       owner: (o.RPTOWNERNAME || '').trim(),
       ownerCik: o.RPTOWNERCIK,
       role: roleOf(o.RPTOWNER_RELATIONSHIP, o.RPTOWNER_TITLE),
-      date: toIsoDate(t.TRANS_DATE),
+      ...relOf(o.RPTOWNER_RELATIONSHIP),
+      date: tDate,
       filed: toIsoDate(s.FILING_DATE),
       shares,
       price,
@@ -124,7 +140,8 @@ export function summarize(dir, quarter) {
   };
   const buyCos = byCompany(buys);
   const sellCos = byCompany(sells);
-  const slim = (t) => ({ ticker: t.ticker, company: t.company, owner: t.owner, role: t.role, date: t.date, filed: t.filed, shares: Math.round(t.shares), price: +t.price.toFixed(2), value: Math.round(t.value), plan: t.plan, acc: t.acc, ownerCik: t.ownerCik, issuerCik: t.issuerCik });
+  const slim = (t) => ({ ticker: t.ticker, company: t.company, owner: t.owner, role: t.role, exec: !!(t.officer || t.director), owner10: !!t.owner10, date: t.date, filed: t.filed, shares: Math.round(t.shares), price: +t.price.toFixed(2), value: Math.round(t.value), plan: t.plan, acc: t.acc, ownerCik: t.ownerCik, issuerCik: t.issuerCik });
+  const isExec = (t) => (t.officer || t.director) && !t.owner10;
 
   const monthly = {};
   for (const t of trades) {
@@ -150,8 +167,10 @@ export function summarize(dir, quarter) {
     },
     monthly,
     topBuys: buys.sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
+    topExecBuys: buys.filter(isExec).sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
+    topExecSells: sells.filter(isExec).sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
     topSells: sells.sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
-    clusterBuys: buyCos.filter((c) => c.insiders >= 3).sort((a, b) => b.insiders - a.insiders || b.value - a.value).slice(0, 30),
+    clusterBuys: byCompany(buys.filter(isExec)).filter((c) => c.insiders >= 3).sort((a, b) => b.insiders - a.insiders || b.value - a.value).slice(0, 30),
     topBuyCompanies: buyCos.sort((a, b) => b.value - a.value).slice(0, 30),
     topSellCompanies: sellCos.sort((a, b) => b.value - a.value).slice(0, 30),
     // Every ticker with insider buying, so the site can cross-reference superinvestor holdings.
