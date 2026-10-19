@@ -220,3 +220,8 @@ table.data th { font-family: var(--font-mono); }
 /* Buttons and nav stay in the sans face */
 .btn, .nav a, .m-link, .tag, .chip, .act, .breadcrumb { font-family: var(--font-body); }
 .btn { font-weight: 600; letter-spacing: 0; }
+
+/* Hero proof points (replace the stats strip) */
+.v-proof { list-style: none; display: flex; flex-wrap: wrap; gap: 10px 22px; margin: 26px 0 0; padding: 0; font: 500 12.5px var(--font-mono); color: var(--muted); }
+.v-proof li { display: flex; align-items: center; gap: 8px; }
+.v-proof i { color: var(--teal); font-size: 12px; }

@@ -58,21 +58,20 @@ export function home(d) {
   <div class="container">
     <div class="v-hero-grid">
       <div>
-        <div class="eyebrow">Superinvestor portfolios, decoded</div>
-        <h1>See what the world’s best investors <em>actually own.</em></h1>
-        <p class="lede">QWERTx tracks the latest SEC filings of ${N} legendary investors, plus what members of Congress and company insiders are buying, and turns it all into clear visuals. Start simple, then go one click deeper whenever you want.</p>
+        <div class="eyebrow">After Work Investment Strategies</div>
+        <h1>Follow the smart money, <em>not the noise.</em></h1>
+        <p class="lede">For busy professionals who invest after work. See what top fund managers, members of Congress and company insiders are actually buying, straight from official filings and explained in plain English. No hype, no gurus, no paid picks.</p>
         <div class="btn-row">
-          <a class="btn btn-gold" href="/investors.html">Browse superinvestors</a>
-          <a class="btn" href="/smart-money.html">Most-held stocks</a>
+          <a class="btn btn-gold" href="/smart-money.html">See what they’re buying</a>
+          <a class="btn" href="/investors.html">Browse superinvestors</a>
         </div>
+        <ul class="v-proof">
+          <li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Official filings only</li>
+          <li><i class="fa-solid fa-rotate" aria-hidden="true"></i>Updated automatically</li>
+          <li><i class="fa-regular fa-clock" aria-hidden="true"></i>5-minute reads</li>
+        </ul>
       </div>
       ${fearGreedCard(m.fearGreed)}
-    </div>
-    <div class="v-stats">
-      <div><span class="k">Superinvestors</span><span class="v">${N}</span></div>
-      <div><span class="k">Combined 13F value</span><span class="v">${money(sm.value)}</span></div>
-      <div><span class="k">Latest quarter</span><span class="v">${q}</span></div>
-      <div><span class="k">Last filing</span><span class="v">${date(d.latestFiling)}</span></div>
     </div>
   </div>
 </section>
@@ -128,7 +127,7 @@ ${newsletter('n')}`;
     page: 'home',
     path: '/',
     title: 'Home',
-    description: `See what Warren Buffett, Bill Ackman and ${N - 2} other super investors own, what politicians and corporate insiders are buying, plus a live Fear & Greed gauge and daily market news.`,
+    description: `After Work Investment Strategies: follow the smart money, not the noise. See what top fund managers, members of Congress and company insiders are buying, from official filings, in plain English.`,
     body,
     charts: true,
     jsonLd: [
