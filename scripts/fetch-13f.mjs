@@ -78,6 +78,8 @@ async function run() {
       const filings = await pickFilings(sub, (f) => isRestatement(inv.cik, f));
       if (!filings.length) throw new Error('no 13F-HR filings found');
       const [cur, prev] = filings;
+      const ageDays = (Date.now() - Date.parse(cur.period)) / 864e5;
+      if (ageDays > 200) console.warn(`  ⚠ latest 13F is for ${cur.period}; this filer may have stopped filing or moved to a new CIK`);
 
       const existing = readJSON(outFile);
       if (!FORCE && existing && existing.accession === cur.acc && existing.prevAccession === (prev?.acc ?? null)) {
