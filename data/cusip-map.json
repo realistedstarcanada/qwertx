@@ -1,4 +1,34 @@
 {
+  "101137107": {
+    "ticker": "BSX",
+    "name": "BOSTON SCIENTIFIC CORP",
+    "type": "Common Stock"
+  },
+  "113004105": {
+    "ticker": "BAM",
+    "name": "BROOKFIELD ASSET MGMT-A",
+    "type": "Common Stock"
+  },
+  "115236101": {
+    "ticker": "BRO",
+    "name": "BROWN & BROWN INC",
+    "type": "Common Stock"
+  },
+  "115637100": {
+    "ticker": "BF.A",
+    "name": "BROWN-FORMAN CORP-CLASS A",
+    "type": "Common Stock"
+  },
+  "115637209": {
+    "ticker": "BF.B",
+    "name": "BROWN-FORMAN CORP-CLASS B",
+    "type": "Common Stock"
+  },
+  "117043109": {
+    "ticker": "BC",
+    "name": "BRUNSWICK CORP",
+    "type": "Common Stock"
+  },
   "124830878": {
     "ticker": "CBL",
     "name": "CBL & ASSOCIATES PROPERTIES",
@@ -9,14 +39,39 @@
     "name": "THE CIGNA GROUP",
     "type": "Common Stock"
   },
+  "126408103": {
+    "ticker": "CSX",
+    "name": "CSX CORP",
+    "type": "Common Stock"
+  },
   "126633205": {
     "ticker": "UAN",
     "name": "CVR PARTNERS LP",
     "type": "Partnership Shares"
   },
+  "126650100": {
+    "ticker": "CVS",
+    "name": "CVS HEALTH CORP",
+    "type": "Common Stock"
+  },
+  "136375102": {
+    "ticker": "CNI",
+    "name": "CANADIAN NATL RAILWAY CO",
+    "type": "Common Stock"
+  },
   "142152107": {
     "ticker": "CAI",
     "name": "CARIS LIFE SCIENCES INC",
+    "type": "Common Stock"
+  },
+  "142339100": {
+    "ticker": "CSL",
+    "name": "CARLISLE COS INC",
+    "type": "Common Stock"
+  },
+  "143130102": {
+    "ticker": "KMX",
+    "name": "CARMAX INC",
     "type": "Common Stock"
   },
   "144285103": {
@@ -27,6 +82,11 @@
   "146869102": {
     "ticker": "CVNA",
     "name": "CARVANA CO",
+    "type": "Common Stock"
+  },
+  "149123101": {
+    "ticker": "CAT",
+    "name": "CATERPILLAR INC",
     "type": "Common Stock"
   },
   "149568107": {
@@ -44,6 +104,11 @@
     "name": "CENTURI HOLDINGS INC",
     "type": "Common Stock"
   },
+  "159864107": {
+    "ticker": "CRL",
+    "name": "CHARLES RIVER LABORATORIES",
+    "type": "Common Stock"
+  },
   "165167735": {
     "ticker": "EXE",
     "name": "EXPAND ENERGY CORP",
@@ -57,6 +122,26 @@
   "171340102": {
     "ticker": "CHD",
     "name": "CHURCH & DWIGHT CO INC",
+    "type": "Common Stock"
+  },
+  "171779309": {
+    "ticker": "CIEN",
+    "name": "CIENA CORP",
+    "type": "Common Stock"
+  },
+  "172573107": {
+    "ticker": "CRCL",
+    "name": "CIRCLE INTERNET GROUP INC",
+    "type": "Common Stock"
+  },
+  "172967424": {
+    "ticker": "C",
+    "name": "CITIGROUP INC",
+    "type": "Common Stock"
+  },
+  "184496107": {
+    "ticker": "CLH",
+    "name": "CLEAN HARBORS INC",
     "type": "Common Stock"
   },
   "185899101": {
@@ -74,6 +159,31 @@
     "name": "COCA-COLA CO/THE",
     "type": "Common Stock"
   },
+  "191241108": {
+    "ticker": "KOF",
+    "name": "COCA-COLA FEMSA SAB-SP ADR",
+    "type": "Depositary Receipt"
+  },
+  "194693107": {
+    "ticker": "CIGI",
+    "name": "COLLIERS INTL GR-SUBORD VOT",
+    "type": "Common Stock"
+  },
+  "199908104": {
+    "ticker": "FIX",
+    "name": "COMFORT SYSTEMS USA INC",
+    "type": "Common Stock"
+  },
+  "216648501": {
+    "ticker": "COO",
+    "name": "COOPER COS INC/THE",
+    "type": "Common Stock"
+  },
+  "217204106": {
+    "ticker": "CPRT",
+    "name": "COPART INC",
+    "type": "Common Stock"
+  },
   "218937100": {
     "ticker": "CNR",
     "name": "CORE NATURAL RESOURCES INC",
@@ -84,9 +194,19 @@
     "name": "CORNING INC",
     "type": "Common Stock"
   },
+  "219948106": {
+    "ticker": "CPAY",
+    "name": "CORPAY INC",
+    "type": "Common Stock"
+  },
   "227046109": {
     "ticker": "CROX",
     "name": "CROCS INC",
+    "type": "Common Stock"
+  },
+  "228368106": {
+    "ticker": "CCK",
+    "name": "CROWN HOLDINGS INC",
     "type": "Common Stock"
   },
   "234264109": {
@@ -105,9 +225,34 @@
     "name": "DECKERS OUTDOOR CORP",
     "type": "Common Stock"
   },
+  "244199105": {
+    "ticker": "DE",
+    "name": "DEERE & CO",
+    "type": "Common Stock"
+  },
   "247361702": {
     "ticker": "DAL",
     "name": "DELTA AIR LINES INC",
+    "type": "Common Stock"
+  },
+  "254687106": {
+    "ticker": "DIS",
+    "name": "WALT DISNEY CO/THE",
+    "type": "Common Stock"
+  },
+  "256677105": {
+    "ticker": "DG",
+    "name": "DOLLAR GENERAL CORP",
+    "type": "Common Stock"
+  },
+  "260003108": {
+    "ticker": "DOV",
+    "name": "DOVER CORP",
+    "type": "Common Stock"
+  },
+  "277432100": {
+    "ticker": "EMN",
+    "name": "EASTMAN CHEMICAL CO",
     "type": "Common Stock"
   },
   "278768106": {
@@ -115,9 +260,39 @@
     "name": "ECHOSTAR CORP-A",
     "type": "Common Stock"
   },
+  "278865100": {
+    "ticker": "ECL",
+    "name": "ECOLAB INC",
+    "type": "Common Stock"
+  },
+  "284902509": {
+    "ticker": "EGO",
+    "name": "ELDORADO GOLD CORP",
+    "type": "Common Stock"
+  },
+  "285512109": {
+    "ticker": null,
+    "name": "ELECTRONIC ARTS INC",
+    "type": "Common Stock"
+  },
+  "293792107": {
+    "ticker": "EPD",
+    "name": "ENTERPRISE PRODUCTS PARTNERS",
+    "type": "Partnership Shares"
+  },
+  "294429105": {
+    "ticker": "EFX",
+    "name": "EQUIFAX INC",
+    "type": "Common Stock"
+  },
   "296013105": {
     "ticker": "EROC",
     "name": "EROCK INC-A",
+    "type": "Common Stock"
+  },
+  "303075105": {
+    "ticker": "FDS",
+    "name": "FACTSET RESEARCH SYSTEMS INC",
     "type": "Common Stock"
   },
   "303250104": {
@@ -125,14 +300,29 @@
     "name": "FAIR ISAAC CORP",
     "type": "Common Stock"
   },
+  "314352105": {
+    "ticker": "FDXF",
+    "name": "FEDEX FREIGHT HOLDING CO",
+    "type": "Common Stock"
+  },
   "315616102": {
     "ticker": "FFIV",
     "name": "F5 INC",
     "type": "Common Stock"
   },
+  "316841105": {
+    "ticker": "FIG",
+    "name": "FIGMA INC-CL A",
+    "type": "Common Stock"
+  },
   "320517105": {
     "ticker": "FHN",
     "name": "FIRST HORIZON CORP",
+    "type": "Common Stock"
+  },
+  "337738108": {
+    "ticker": "FISV",
+    "name": "FISERV INC",
     "type": "Common Stock"
   },
   "343412102": {
@@ -150,14 +340,39 @@
     "name": "EG ACQUISITION CORP-A -CW28",
     "type": "Warrant"
   },
+  "344419106": {
+    "ticker": "FMX",
+    "name": "FOMENTO ECONOMICO MEX-SP ADR",
+    "type": "Depositary Receipt"
+  },
   "349381103": {
     "ticker": "FIGR",
     "name": "FIGURE TECHNOLOGY SOLUT-CL A",
     "type": "Common Stock"
   },
+  "351858105": {
+    "ticker": "FNV",
+    "name": "FRANCO-NEVADA CORP",
+    "type": "Common Stock"
+  },
   "366505105": {
     "ticker": "GTX",
     "name": "GARRETT MOTION INC",
+    "type": "Common Stock"
+  },
+  "366651107": {
+    "ticker": "IT",
+    "name": "GARTNER INC",
+    "type": "Common Stock"
+  },
+  "369550108": {
+    "ticker": "GD",
+    "name": "GENERAL DYNAMICS CORP",
+    "type": "Common Stock"
+  },
+  "369604301": {
+    "ticker": "GE",
+    "name": "GENERAL ELECTRIC",
     "type": "Common Stock"
   },
   "372460105": {
@@ -170,6 +385,11 @@
     "name": "GOODYEAR TIRE & RUBBER CO",
     "type": "Common Stock"
   },
+  "384637104": {
+    "ticker": "GHC",
+    "name": "GRAHAM HOLDINGS CO-CLASS B",
+    "type": "Common Stock"
+  },
   "388689101": {
     "ticker": "GPK",
     "name": "GRAPHIC PACKAGING HOLDING CO",
@@ -179,6 +399,11 @@
     "ticker": "GRBK",
     "name": "GREEN BRICK PARTNERS INC",
     "type": "Common Stock"
+  },
+  "398438408": {
+    "ticker": "GRFS",
+    "name": "GRIFOLS SA-ADR",
+    "type": "Depositary Receipt"
   },
   "399909100": {
     "ticker": "GGAL",
@@ -190,9 +415,49 @@
     "name": "GULFPORT ENERGY CORP",
     "type": "Common Stock"
   },
+  "405166109": {
+    "ticker": "HGTY",
+    "name": "HAGERTY INC-A",
+    "type": "Common Stock"
+  },
+  "405552100": {
+    "ticker": "HLN",
+    "name": "HALEON PLC-ADR",
+    "type": "Depositary Receipt"
+  },
+  "410867105": {
+    "ticker": "THG",
+    "name": "HANOVER INSURANCE GROUP INC/",
+    "type": "Common Stock"
+  },
+  "422806208": {
+    "ticker": "HEI.A",
+    "name": "HEICO CORP-CLASS A",
+    "type": "Common Stock"
+  },
+  "423452101": {
+    "ticker": "HP",
+    "name": "HELMERICH & PAYNE",
+    "type": "Common Stock"
+  },
+  "427866108": {
+    "ticker": "HSY",
+    "name": "HERSHEY CO/THE",
+    "type": "Common Stock"
+  },
+  "428291108": {
+    "ticker": "HXL",
+    "name": "HEXCEL CORP",
+    "type": "Common Stock"
+  },
   "437076102": {
     "ticker": "HD",
     "name": "HOME DEPOT INC",
+    "type": "Common Stock"
+  },
+  "440452100": {
+    "ticker": "HRL",
+    "name": "HORMEL FOODS CORP",
     "type": "Common Stock"
   },
   "444859102": {
@@ -200,10 +465,25 @@
     "name": "HUMANA INC",
     "type": "Common Stock"
   },
+  "446413106": {
+    "ticker": "HII",
+    "name": "HUNTINGTON INGALLS INDUSTRIE",
+    "type": "Common Stock"
+  },
   "451100101": {
     "ticker": "IEP",
     "name": "ICAHN ENTERPRISES LP",
     "type": "Partnership Shares"
+  },
+  "452308109": {
+    "ticker": "ITW",
+    "name": "ILLINOIS TOOL WORKS",
+    "type": "Common Stock"
+  },
+  "457642205": {
+    "ticker": "INOD",
+    "name": "INNODATA INC",
+    "type": "Common Stock"
   },
   "457669307": {
     "ticker": "INSM",
@@ -220,6 +500,11 @@
     "name": "INTL FLAVORS & FRAGRANCES",
     "type": "Common Stock"
   },
+  "461804106": {
+    "ticker": "ITIC",
+    "name": "INVESTORS TITLE CO",
+    "type": "Common Stock"
+  },
   "464286400": {
     "ticker": "EWZ",
     "name": "ISHARES MSCI BRAZIL ETF",
@@ -230,9 +515,34 @@
     "name": "ISHARES MSCI SOUTH KOREA ETF",
     "type": "Mutual Fund"
   },
+  "464287606": {
+    "ticker": "IJK",
+    "name": "ISHARES S&P MID-CAP 400 GROW",
+    "type": "Mutual Fund"
+  },
   "464287655": {
     "ticker": "IWM",
     "name": "ISHARES RUSSELL 2000 ETF",
+    "type": "Mutual Fund"
+  },
+  "464287804": {
+    "ticker": "IJR",
+    "name": "ISHARES CORE S&P SMALL-CAP E",
+    "type": "Mutual Fund"
+  },
+  "464288257": {
+    "ticker": "ACWI",
+    "name": "ISHARES MSCI ACWI ETF",
+    "type": "Mutual Fund"
+  },
+  "464288588": {
+    "ticker": "MBB",
+    "name": "ISHARES MBS ETF",
+    "type": "Mutual Fund"
+  },
+  "464288620": {
+    "ticker": "USIG",
+    "name": "ISHARES BROAD USD INVESTMENT",
     "type": "Mutual Fund"
   },
   "465562106": {
@@ -250,12 +560,22 @@
     "name": "JETBLUE AIRWAYS CORP",
     "type": "Common Stock"
   },
+  "478160104": {
+    "ticker": "JNJ",
+    "name": "JOHNSON & JOHNSON",
+    "type": "Common Stock"
+  },
   "482480100": {
     "ticker": "KLAC",
     "name": "KLA CORP",
     "type": "Common Stock"
   },
   "485859110": null,
+  "489398107": {
+    "ticker": null,
+    "name": "KENNEDY-WILSON HOLDINGS INC",
+    "type": "Common Stock"
+  },
   "500754106": {
     "ticker": "KHC",
     "name": "KRAFT HEINZ CO/THE",
@@ -281,9 +601,19 @@
     "name": "LAM RESEARCH CORP",
     "type": "Common Stock"
   },
+  "512816109": {
+    "ticker": "LAMR",
+    "name": "LAMAR ADVERTISING CO-A",
+    "type": "REIT"
+  },
   "518415104": {
     "ticker": "LSCC",
     "name": "LATTICE SEMICONDUCTOR CORP",
+    "type": "Common Stock"
+  },
+  "521865204": {
+    "ticker": "LEA",
+    "name": "LEAR CORP",
     "type": "Common Stock"
   },
   "526057104": {
@@ -296,6 +626,16 @@
     "name": "LENNAR CORP - B SHS",
     "type": "Common Stock"
   },
+  "530307107": {
+    "ticker": null,
+    "name": "LIBERTY BROADBAND-A",
+    "type": "Common Stock"
+  },
+  "530307305": {
+    "ticker": null,
+    "name": "LIBERTY BROADBAND-C",
+    "type": "Common Stock"
+  },
   "530909100": {
     "ticker": "LLYVA",
     "name": "LIBERTY LIVE HOLDINGS-A",
@@ -306,9 +646,19 @@
     "name": "LIBERTY LIVE HOLDINGS-C",
     "type": "Common Stock"
   },
+  "531229755": {
+    "ticker": "FWONK",
+    "name": "LIBERTY MEDIA CORP-C",
+    "type": "Common Stock"
+  },
   "532457108": {
     "ticker": "LLY",
     "name": "ELI LILLY & CO",
+    "type": "Common Stock"
+  },
+  "536797103": {
+    "ticker": "LAD",
+    "name": "LITHIA MOTORS INC",
     "type": "Common Stock"
   },
   "538034109": {
@@ -316,9 +666,29 @@
     "name": "LIVE NATION ENTERTAINMENT IN",
     "type": "Common Stock"
   },
+  "539830109": {
+    "ticker": "LMT",
+    "name": "LOCKHEED MARTIN CORP",
+    "type": "Common Stock"
+  },
   "546347105": {
     "ticker": "LPX",
     "name": "LOUISIANA-PACIFIC CORP",
+    "type": "Common Stock"
+  },
+  "548661107": {
+    "ticker": "LOW",
+    "name": "LOWE'S COS INC",
+    "type": "Common Stock"
+  },
+  "550021109": {
+    "ticker": "LULU",
+    "name": "LULULEMON ATHLETICA INC",
+    "type": "Common Stock"
+  },
+  "552953101": {
+    "ticker": "MGM",
+    "name": "MGM RESORTS INTERNATIONAL",
     "type": "Common Stock"
   },
   "562750109": {
@@ -326,9 +696,24 @@
     "name": "MANHATTAN ASSOCIATES INC",
     "type": "Common Stock"
   },
+  "571748102": {
+    "ticker": "MRSH",
+    "name": "MARSH & MCLENNAN COS",
+    "type": "Common Stock"
+  },
   "571903202": {
     "ticker": "MAR",
     "name": "MARRIOTT INTERNATIONAL -CL A",
+    "type": "Common Stock"
+  },
+  "573284106": {
+    "ticker": "MLM",
+    "name": "MARTIN MARIETTA MATERIALS",
+    "type": "Common Stock"
+  },
+  "574599106": {
+    "ticker": "MAS",
+    "name": "MASCO CORP",
     "type": "Common Stock"
   },
   "576323109": {
@@ -339,6 +724,11 @@
   "577128101": {
     "ticker": "MATW",
     "name": "MATTHEWS INTL CORP-CLASS A",
+    "type": "Common Stock"
+  },
+  "580135101": {
+    "ticker": "MCD",
+    "name": "MCDONALD'S CORP",
     "type": "Common Stock"
   },
   "592688105": {
@@ -354,6 +744,11 @@
   "595112103": {
     "ticker": "MU",
     "name": "MICRON TECHNOLOGY INC",
+    "type": "Common Stock"
+  },
+  "609207105": {
+    "ticker": "MDLZ",
+    "name": "MONDELEZ INTERNATIONAL INC-A",
     "type": "Common Stock"
   },
   "610236101": {
@@ -381,6 +776,11 @@
     "name": "NAPCO SECURITY TECHNOLOGIES",
     "type": "Common Stock"
   },
+  "631103108": {
+    "ticker": "NDAQ",
+    "name": "NASDAQ INC",
+    "type": "Common Stock"
+  },
   "632307104": {
     "ticker": "NTRA",
     "name": "NATERA INC",
@@ -396,6 +796,11 @@
     "name": "NEW YORK TIMES CO-A",
     "type": "Common Stock"
   },
+  "654106103": {
+    "ticker": "NKE",
+    "name": "NIKE INC -CL B",
+    "type": "Common Stock"
+  },
   "654902204": {
     "ticker": "NOK",
     "name": "NOKIA CORP-SPON ADR",
@@ -406,14 +811,39 @@
     "name": "NORFOLK SOUTHERN CORP",
     "type": "Common Stock"
   },
+  "670100205": {
+    "ticker": "NVO",
+    "name": "NOVO-NORDISK A/S-SPONS ADR",
+    "type": "Depositary Receipt"
+  },
   "670346105": {
     "ticker": "NUE",
     "name": "NUCOR CORP",
     "type": "Common Stock"
   },
+  "670928100": {
+    "ticker": "NUV",
+    "name": "NUVEEN MUNICIPAL VALUE",
+    "type": "Mutual Fund"
+  },
   "674599105": {
     "ticker": "OXY",
     "name": "OCCIDENTAL PETROLEUM CORP",
+    "type": "Common Stock"
+  },
+  "679580100": {
+    "ticker": "ODFL",
+    "name": "OLD DOMINION FREIGHT LINE",
+    "type": "Common Stock"
+  },
+  "688239201": {
+    "ticker": "OSK",
+    "name": "OSHKOSH CORP",
+    "type": "Common Stock"
+  },
+  "690742101": {
+    "ticker": "OC",
+    "name": "OWENS CORNING",
     "type": "Common Stock"
   },
   "693656100": {
@@ -421,9 +851,24 @@
     "name": "PVH CORP",
     "type": "Common Stock"
   },
+  "693718108": {
+    "ticker": "PCAR",
+    "name": "PACCAR INC",
+    "type": "Common Stock"
+  },
   "697435105": {
     "ticker": "PANW",
     "name": "PALO ALTO NETWORKS INC",
+    "type": "Common Stock"
+  },
+  "701094104": {
+    "ticker": "PH",
+    "name": "PARKER HANNIFIN CORP",
+    "type": "Common Stock"
+  },
+  "704326107": {
+    "ticker": "PAYX",
+    "name": "PAYCHEX INC",
     "type": "Common Stock"
   },
   "707569109": {
@@ -431,14 +876,34 @@
     "name": "PENN ENTERTAINMENT INC",
     "type": "Common Stock"
   },
+  "713448108": {
+    "ticker": "PEP",
+    "name": "PEPSICO INC",
+    "type": "Common Stock"
+  },
+  "717081103": {
+    "ticker": "PFE",
+    "name": "PFIZER INC",
+    "type": "Common Stock"
+  },
   "718172109": {
     "ticker": "PM",
     "name": "PHILIP MORRIS INTERNATIONAL",
     "type": "Common Stock"
   },
+  "718546104": {
+    "ticker": "PSX",
+    "name": "PHILLIPS 66",
+    "type": "Common Stock"
+  },
   "722304102": {
     "ticker": "PDD",
     "name": "PDD HOLDINGS INC",
+    "type": "Depositary Receipt"
+  },
+  "732908108": {
+    "ticker": "PONY",
+    "name": "PONY AI INC",
     "type": "Depositary Receipt"
   },
   "741623102": {
@@ -451,6 +916,11 @@
     "name": "PROCTER & GAMBLE CO/THE",
     "type": "Common Stock"
   },
+  "743315103": {
+    "ticker": "PGR",
+    "name": "PROGRESSIVE CORP",
+    "type": "Common Stock"
+  },
   "747525103": {
     "ticker": "QCOM",
     "name": "QUALCOMM INC",
@@ -461,9 +931,24 @@
     "name": "QUANTUM CORP",
     "type": "Common Stock"
   },
+  "749607107": {
+    "ticker": "RLI",
+    "name": "RLI CORP",
+    "type": "Common Stock"
+  },
   "750917106": {
     "ticker": "RMBS",
     "name": "RAMBUS INC",
+    "type": "Common Stock"
+  },
+  "754730109": {
+    "ticker": "RJF",
+    "name": "RAYMOND JAMES FINANCIAL INC",
+    "type": "Common Stock"
+  },
+  "759351604": {
+    "ticker": "RGA",
+    "name": "REINSURANCE GROUP OF AMERICA",
     "type": "Common Stock"
   },
   "759916109": {
@@ -476,9 +961,29 @@
     "name": "RIOT PLATFORMS INC",
     "type": "Common Stock"
   },
+  "770701100": {
+    "ticker": "RVI",
+    "name": "ROBINHOOD VENTURES FUND I",
+    "type": "Mutual Fund"
+  },
+  "773903109": {
+    "ticker": "ROK",
+    "name": "ROCKWELL AUTOMATION INC",
+    "type": "Common Stock"
+  },
+  "775109200": {
+    "ticker": "RCI",
+    "name": "ROGERS COMMUNICATIONS INC-B",
+    "type": "Common Stock"
+  },
   "775711104": {
     "ticker": "ROL",
     "name": "ROLLINS INC",
+    "type": "Common Stock"
+  },
+  "776696106": {
+    "ticker": "ROP",
+    "name": "ROPER TECHNOLOGIES INC",
     "type": "Common Stock"
   },
   "778920306": {
@@ -486,14 +991,44 @@
     "name": "SHARONAI HOLDINGS INC",
     "type": "Common Stock"
   },
+  "783513203": {
+    "ticker": "RYAAY",
+    "name": "RYANAIR HOLDINGS PLC-SP ADR",
+    "type": "Depositary Receipt"
+  },
+  "784117103": {
+    "ticker": "SEIC",
+    "name": "SEI INVESTMENTS COMPANY",
+    "type": "Common Stock"
+  },
+  "803054204": {
+    "ticker": "SAP",
+    "name": "SAP SE-SPONSORED ADR",
+    "type": "Depositary Receipt"
+  },
   "806407102": {
     "ticker": "HSIC",
     "name": "HENRY SCHEIN INC",
     "type": "Common Stock"
   },
+  "808513105": {
+    "ticker": "SCHW",
+    "name": "SCHWAB (CHARLES) CORP",
+    "type": "Common Stock"
+  },
+  "810186106": {
+    "ticker": "SMG",
+    "name": "SCOTTS MIRACLE-GRO CO",
+    "type": "Common Stock"
+  },
   "812215200": {
     "ticker": "SEG",
     "name": "SEAPORT ENTERTAINMENT GROUP",
+    "type": "Common Stock"
+  },
+  "824348106": {
+    "ticker": "SHW",
+    "name": "SHERWIN-WILLIAMS CO/THE",
     "type": "Common Stock"
   },
   "829933100": {
@@ -511,6 +1046,16 @@
     "name": "SLIDE INSURANCE HOLDINGS INC",
     "type": "Common Stock"
   },
+  "833445109": {
+    "ticker": "SNOW",
+    "name": "SNOWFLAKE INC",
+    "type": "Common Stock"
+  },
+  "835699307": {
+    "ticker": "SONY",
+    "name": "SONY GROUP CORP - SP ADR",
+    "type": "Depositary Receipt"
+  },
   "845467109": {
     "ticker": null,
     "name": "SOUTHWESTERN ENERGY CO",
@@ -521,6 +1066,21 @@
     "name": "BLOCK INC",
     "type": "Common Stock"
   },
+  "855244109": {
+    "ticker": "SBUX",
+    "name": "STARBUCKS CORP",
+    "type": "Common Stock"
+  },
+  "857477103": {
+    "ticker": "STT",
+    "name": "STATE STREET CORP",
+    "type": "Common Stock"
+  },
+  "859241101": {
+    "ticker": "STRL",
+    "name": "STERLING INFRASTRUCTURE INC",
+    "type": "Common Stock"
+  },
   "861012102": {
     "ticker": "STM",
     "name": "STMICROELECTRONICS NV-NY SHS",
@@ -529,6 +1089,16 @@
   "863667101": {
     "ticker": "SYK",
     "name": "STRYKER CORP",
+    "type": "Common Stock"
+  },
+  "866966104": {
+    "ticker": "SUNB",
+    "name": "SUNBELT RENTALS HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "871607107": {
+    "ticker": "SNPS",
+    "name": "SYNOPSYS INC",
     "type": "Common Stock"
   },
   "871829107": {
@@ -545,6 +1115,11 @@
     "ticker": "TSM",
     "name": "TAIWAN SEMICONDUCTOR-SP ADR",
     "type": "Depositary Receipt"
+  },
+  "874054109": {
+    "ticker": "TTWO",
+    "name": "TAKE-TWO INTERACTIVE SOFTWRE",
+    "type": "Common Stock"
   },
   "878742204": {
     "ticker": "TECK",
@@ -564,6 +1139,11 @@
   "879433829": {
     "ticker": "TDS",
     "name": "TELEPHONE AND DATA SYSTEMS",
+    "type": "Common Stock"
+  },
+  "880770102": {
+    "ticker": "TER",
+    "name": "TERADYNE INC",
     "type": "Common Stock"
   },
   "880890108": {
@@ -586,6 +1166,11 @@
     "name": "THERMO FISHER SCIENTIFIC INC",
     "type": "Common Stock"
   },
+  "885160101": {
+    "ticker": "THO",
+    "name": "THOR INDUSTRIES INC",
+    "type": "Common Stock"
+  },
   "893641100": {
     "ticker": "TDG",
     "name": "TRANSDIGM GROUP INC",
@@ -595,6 +1180,26 @@
     "ticker": "TRIP",
     "name": "TRIPADVISOR INC",
     "type": "Common Stock"
+  },
+  "902494103": {
+    "ticker": "TSN",
+    "name": "TYSON FOODS INC-CL A",
+    "type": "Common Stock"
+  },
+  "904311107": {
+    "ticker": "UAA",
+    "name": "UNDER ARMOUR INC-CLASS A",
+    "type": "Common Stock"
+  },
+  "904311206": {
+    "ticker": "UA",
+    "name": "UNDER ARMOUR INC-CLASS C",
+    "type": "Common Stock"
+  },
+  "904767803": {
+    "ticker": "UL",
+    "name": "UNILEVER PLC-SPONSORED ADR",
+    "type": "Depositary Receipt"
   },
   "907818108": {
     "ticker": "UNP",
@@ -606,15 +1211,40 @@
     "name": "UNITED AIRLINES HOLDINGS INC",
     "type": "Common Stock"
   },
+  "911363109": {
+    "ticker": "URI",
+    "name": "UNITED RENTALS INC",
+    "type": "Common Stock"
+  },
   "911684108": {
     "ticker": "AD",
     "name": "ARRAY DIGITAL INFRASTRUCTURE",
+    "type": "Common Stock"
+  },
+  "912008109": {
+    "ticker": "USFD",
+    "name": "US FOODS HOLDING CORP",
     "type": "Common Stock"
   },
   "922475108": {
     "ticker": "VEEV",
     "name": "VEEVA SYSTEMS INC-CLASS A",
     "type": "Common Stock"
+  },
+  "922908538": {
+    "ticker": "VOT",
+    "name": "VNGRD MRNGSTR MC GRW ETF-USD",
+    "type": "Mutual Fund"
+  },
+  "922908736": {
+    "ticker": "VUG",
+    "name": "VANGUARD MRNGSTAR GR ETF-SUI",
+    "type": "Mutual Fund"
+  },
+  "922908744": {
+    "ticker": "VTV",
+    "name": "VANGUARD MRNGSTR VAL ETF-AUI",
+    "type": "Mutual Fund"
   },
   "925283103": {
     "ticker": "VSNT",
@@ -626,9 +1256,19 @@
     "name": "VICTORIA'S SECRET & CO",
     "type": "Common Stock"
   },
+  "929160109": {
+    "ticker": "VMC",
+    "name": "VULCAN MATERIALS CO",
+    "type": "Common Stock"
+  },
   "929740108": {
     "ticker": "WAB",
     "name": "WABTEC CORP",
+    "type": "Common Stock"
+  },
+  "931142103": {
+    "ticker": "WMT",
+    "name": "WALMART INC",
     "type": "Common Stock"
   },
   "934423104": {
@@ -636,15 +1276,45 @@
     "name": "WARNER BROS DISCOVERY INC",
     "type": "Common Stock"
   },
+  "934550203": {
+    "ticker": "WMG",
+    "name": "WARNER MUSIC GROUP CORP-CL A",
+    "type": "Common Stock"
+  },
   "941848103": {
     "ticker": "WAT",
     "name": "WATERS CORP",
+    "type": "Common Stock"
+  },
+  "942622200": {
+    "ticker": "WSO",
+    "name": "WATSCO INC",
+    "type": "Common Stock"
+  },
+  "947002101": {
+    "ticker": "WLTH",
+    "name": "WEALTHFRONT CORP",
+    "type": "Common Stock"
+  },
+  "949746101": {
+    "ticker": "WFC",
+    "name": "WELLS FARGO & CO",
+    "type": "Common Stock"
+  },
+  "955306105": {
+    "ticker": "WST",
+    "name": "WEST PHARMACEUTICAL SERVICES",
     "type": "Common Stock"
   },
   "960413102": {
     "ticker": "WLK",
     "name": "WESTLAKE CORP",
     "type": "Common Stock"
+  },
+  "962166104": {
+    "ticker": "WY",
+    "name": "WEYERHAEUSER CO",
+    "type": "REIT"
   },
   "963320106": {
     "ticker": "WHR",
@@ -2474,5 +3144,616 @@
     "name": "PELOTON INTERACTIVE INC-A",
     "type": "Common Stock"
   },
-  "M9T951109": null
+  "M9T951109": null,
+  "13646K108": {
+    "ticker": "CP",
+    "name": "CANADIAN PACIFIC KANSAS CITY",
+    "type": "Common Stock"
+  },
+  "N3168P101": null,
+  "94106L109": {
+    "ticker": "WM",
+    "name": "WASTE MANAGEMENT INC",
+    "type": "Common Stock"
+  },
+  "31428X106": {
+    "ticker": "FDX",
+    "name": "FEDEX CORP",
+    "type": "Common Stock"
+  },
+  "94106B101": {
+    "ticker": "WCN",
+    "name": "WASTE CONNECTIONS INC",
+    "type": "Common Stock"
+  },
+  "55825T103": {
+    "ticker": "MSGS",
+    "name": "MADISON SQUARE GARDEN SPORTS",
+    "type": "Common Stock"
+  },
+  "03524A108": {
+    "ticker": "BUD",
+    "name": "ANHEUSER-BUSCH INBEV-SPN ADR",
+    "type": "Depositary Receipt"
+  },
+  "80810D103": {
+    "ticker": "SDGR",
+    "name": "SCHRODINGER INC",
+    "type": "Common Stock"
+  },
+  "H5919C104": null,
+  "92338C103": {
+    "ticker": "VLTO",
+    "name": "VERALTO CORP",
+    "type": "Common Stock"
+  },
+  "69608A108": {
+    "ticker": "PLTR",
+    "name": "PALANTIR TECHNOLOGIES INC-A",
+    "type": "Common Stock"
+  },
+  "88023B103": {
+    "ticker": "TEM",
+    "name": "TEMPUS AI INC-CL A",
+    "type": "Common Stock"
+  },
+  "22788C105": {
+    "ticker": "CRWD",
+    "name": "CROWDSTRIKE HOLDINGS INC - A",
+    "type": "Common Stock"
+  },
+  "49271V100": {
+    "ticker": "KDP",
+    "name": "KEURIG DR PEPPER INC",
+    "type": "Common Stock"
+  },
+  "009066101": {
+    "ticker": "ABNB",
+    "name": "AIRBNB INC-CLASS A",
+    "type": "Common Stock"
+  },
+  "79466L302": {
+    "ticker": "CRM",
+    "name": "SALESFORCE INC",
+    "type": "Common Stock"
+  },
+  "46266C105": {
+    "ticker": "IQV",
+    "name": "IQVIA HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "45866F104": {
+    "ticker": "ICE",
+    "name": "INTERCONTINENTAL EXCHANGE IN",
+    "type": "Common Stock"
+  },
+  "87612G101": {
+    "ticker": "TRGP",
+    "name": "TARGA RESOURCES CORP",
+    "type": "Common Stock"
+  },
+  "20825C104": {
+    "ticker": "COP",
+    "name": "CONOCOPHILLIPS",
+    "type": "Common Stock"
+  },
+  "58933Y105": {
+    "ticker": "MRK",
+    "name": "MERCK & CO. INC.",
+    "type": "Common Stock"
+  },
+  "026874784": {
+    "ticker": "AIG",
+    "name": "AMERICAN INTERNATIONAL GROUP",
+    "type": "Common Stock"
+  },
+  "22052L104": {
+    "ticker": "CTVA",
+    "name": "CORTEVA INC",
+    "type": "Common Stock"
+  },
+  "98956P102": {
+    "ticker": "ZBH",
+    "name": "ZIMMER BIOMET HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "37045V100": {
+    "ticker": "GM",
+    "name": "GENERAL MOTORS CO",
+    "type": "Common Stock"
+  },
+  "36266G107": {
+    "ticker": "GEHC",
+    "name": "GE HEALTHCARE TECHNOLOGY",
+    "type": "Common Stock"
+  },
+  "37940X102": {
+    "ticker": "GPN",
+    "name": "GLOBAL PAYMENTS INC",
+    "type": "Common Stock"
+  },
+  "12504L109": {
+    "ticker": "CBRE",
+    "name": "CBRE GROUP INC - A",
+    "type": "Common Stock"
+  },
+  "G4705A100": null,
+  "H2927K103": null,
+  "14316J108": {
+    "ticker": "CG",
+    "name": "CARLYLE GROUP INC/THE",
+    "type": "Common Stock"
+  },
+  "21871X109": {
+    "ticker": "CRBG",
+    "name": "COREBRIDGE FINANCIAL INC",
+    "type": "Common Stock"
+  },
+  "G87052109": null,
+  "00724F101": {
+    "ticker": "ADBE",
+    "name": "ADOBE INC",
+    "type": "Common Stock"
+  },
+  "87165B103": {
+    "ticker": "SYF",
+    "name": "SYNCHRONY FINANCIAL",
+    "type": "Common Stock"
+  },
+  "29452E101": {
+    "ticker": "EQH",
+    "name": "EQUITABLE HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "075887109": {
+    "ticker": "BDX",
+    "name": "BECTON DICKINSON AND CO",
+    "type": "Common Stock"
+  },
+  "G1151C101": null,
+  "09857L108": {
+    "ticker": "BKNG",
+    "name": "BOOKING HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "000957100": {
+    "ticker": "ABM",
+    "name": "ABM INDUSTRIES INC",
+    "type": "Common Stock"
+  },
+  "91879Q109": {
+    "ticker": "MTN",
+    "name": "VAIL RESORTS INC",
+    "type": "Common Stock"
+  },
+  "68389X105": {
+    "ticker": "ORCL",
+    "name": "ORACLE CORP",
+    "type": "Common Stock"
+  },
+  "29415F104": {
+    "ticker": "NVST",
+    "name": "ENVISTA HOLDINGS CORP",
+    "type": "Common Stock"
+  },
+  "40412C101": {
+    "ticker": "HCA",
+    "name": "HCA HEALTHCARE INC",
+    "type": "Common Stock"
+  },
+  "56585A102": {
+    "ticker": "MPC",
+    "name": "MARATHON PETROLEUM CORP",
+    "type": "Common Stock"
+  },
+  "95058W100": {
+    "ticker": "WEN",
+    "name": "WENDY'S CO/THE",
+    "type": "Common Stock"
+  },
+  "01973R101": {
+    "ticker": "ALSN",
+    "name": "ALLISON TRANSMISSION HOLDING",
+    "type": "Common Stock"
+  },
+  "09290D101": {
+    "ticker": "BLK",
+    "name": "BLACKROCK INC",
+    "type": "Common Stock"
+  },
+  "26875P101": {
+    "ticker": "EOG",
+    "name": "EOG RESOURCES INC",
+    "type": "Common Stock"
+  },
+  "N30577105": null,
+  "48251W104": {
+    "ticker": "KKR",
+    "name": "KKR & CO INC",
+    "type": "Common Stock"
+  },
+  "38141G104": {
+    "ticker": "GS",
+    "name": "GOLDMAN SACHS GROUP INC",
+    "type": "Common Stock"
+  },
+  "052800109": {
+    "ticker": "ALV",
+    "name": "AUTOLIV INC",
+    "type": "Common Stock"
+  },
+  "G2717C106": null,
+  "98138H101": {
+    "ticker": "WDAY",
+    "name": "WORKDAY INC-CLASS A",
+    "type": "Common Stock"
+  },
+  "48238T109": {
+    "ticker": "OPLN",
+    "name": "OPENLANE INC",
+    "type": "Common Stock"
+  },
+  "16119P108": {
+    "ticker": "CHTR",
+    "name": "CHARTER COMMUNICATIONS INC-A",
+    "type": "Common Stock"
+  },
+  "099724106": {
+    "ticker": "BWA",
+    "name": "BORGWARNER INC",
+    "type": "Common Stock"
+  },
+  "M2029K104": null,
+  "064058100": {
+    "ticker": "BNY",
+    "name": "BANK OF NEW YORK MELLON CORP",
+    "type": "Common Stock"
+  },
+  "46625H100": {
+    "ticker": "JPM",
+    "name": "JPMORGAN CHASE & CO",
+    "type": "Common Stock"
+  },
+  "038222105": {
+    "ticker": "AMAT",
+    "name": "APPLIED MATERIALS INC",
+    "type": "Common Stock"
+  },
+  "G51502105": null,
+  "89832Q109": {
+    "ticker": "TFC",
+    "name": "TRUIST FINANCIAL CORP",
+    "type": "Common Stock"
+  },
+  "00287Y109": {
+    "ticker": "ABBV",
+    "name": "ABBVIE INC",
+    "type": "Common Stock"
+  },
+  "09260D107": {
+    "ticker": "BX",
+    "name": "BLACKSTONE INC",
+    "type": "Common Stock"
+  },
+  "22160K105": {
+    "ticker": "COST",
+    "name": "COSTCO WHOLESALE CORP",
+    "type": "Common Stock"
+  },
+  "46436E718": {
+    "ticker": "SGOV",
+    "name": "ISHARES 0-3 MONTH TREASURY B",
+    "type": "Mutual Fund"
+  },
+  "25243Q205": {
+    "ticker": "DEO",
+    "name": "DIAGEO PLC-SPONSORED ADR",
+    "type": "Depositary Receipt"
+  },
+  "74435K204": {
+    "ticker": "PUK",
+    "name": "PRUDENTIAL PLC-ADR",
+    "type": "Depositary Receipt"
+  },
+  "48241A105": {
+    "ticker": "KB",
+    "name": "KB FINANCIAL GROUP INC-ADR",
+    "type": "Depositary Receipt"
+  },
+  "46434V381": {
+    "ticker": "XT",
+    "name": "ISHAR FTURE EXP TECH ETF-USD",
+    "type": "Mutual Fund"
+  },
+  "G3643J108": null,
+  "81211K100": {
+    "ticker": null,
+    "name": "SEALED AIR CORP",
+    "type": "Common Stock"
+  },
+  "30231G102": {
+    "ticker": null,
+    "name": "EXXON MOBIL CORP",
+    "type": "Common Stock"
+  },
+  "15675D103": {
+    "ticker": "CBRS",
+    "name": "CEREBRAS SYSTEMS INC - A",
+    "type": "Common Stock"
+  },
+  "L8681T102": null,
+  "03769M106": {
+    "ticker": "APO",
+    "name": "APOLLO GLOBAL MANAGEMENT INC",
+    "type": "Common Stock"
+  },
+  "G6683N103": null,
+  "16935C109": {
+    "ticker": "CHYM",
+    "name": "CHIME FINANCIAL INC-CL A",
+    "type": "Common Stock"
+  },
+  "29445S100": {
+    "ticker": "EQPT",
+    "name": "EQUIPMENTSHARE.COM INC-A",
+    "type": "Common Stock"
+  },
+  "81762P102": {
+    "ticker": "NOW",
+    "name": "SERVICENOW INC",
+    "type": "Common Stock"
+  },
+  "G9572D103": null,
+  "00138L108": {
+    "ticker": "RERE",
+    "name": "ATRENEW INC",
+    "type": "Depositary Receipt"
+  },
+  "17253J106": {
+    "ticker": "CIFR",
+    "name": "CIPHER DIGITAL INC",
+    "type": "Common Stock"
+  },
+  "25809K105": {
+    "ticker": "DASH",
+    "name": "DOORDASH INC - A",
+    "type": "Common Stock"
+  },
+  "G00894108": null,
+  "36866J105": {
+    "ticker": "GEMI",
+    "name": "GEMINI SPACE STATION INC-A",
+    "type": "Common Stock"
+  },
+  "55318A108": {
+    "ticker": "MNTN",
+    "name": "MNTN INC-A",
+    "type": "Common Stock"
+  },
+  "98954M200": {
+    "ticker": "Z",
+    "name": "ZILLOW GROUP INC - C",
+    "type": "Common Stock"
+  },
+  "98980G102": {
+    "ticker": "ZS",
+    "name": "ZSCALER INC",
+    "type": "Common Stock"
+  },
+  "74275K108": {
+    "ticker": "PCOR",
+    "name": "PROCORE TECHNOLOGIES INC",
+    "type": "Common Stock"
+  },
+  "22160N109": {
+    "ticker": "CSGP",
+    "name": "COSTAR GROUP INC",
+    "type": "Common Stock"
+  },
+  "98954M101": {
+    "ticker": "ZG",
+    "name": "ZILLOW GROUP INC - A",
+    "type": "Common Stock"
+  },
+  "70450C101": {
+    "ticker": "PAYP",
+    "name": "PAYPAY CORP",
+    "type": "Depositary Receipt"
+  },
+  "64119N608": {
+    "ticker": "NTSK",
+    "name": "NETSKOPE INC-CL A",
+    "type": "Common Stock"
+  },
+  "98390R102": {
+    "ticker": "XNDU",
+    "name": "XANADU QUANTUM TECHNOLO-CL B",
+    "type": "Common Stock"
+  },
+  "G16910120": null,
+  "G32089107": null,
+  "G5279N105": null,
+  "N97284108": null,
+  "58507V107": {
+    "ticker": "MDLN",
+    "name": "MEDLINE INC-CL A",
+    "type": "Common Stock"
+  },
+  "88080T104": {
+    "ticker": "WULF",
+    "name": "TERAWULF INC",
+    "type": "Common Stock"
+  },
+  "50212V100": {
+    "ticker": "LPLA",
+    "name": "LPL FINANCIAL HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "04010E109": {
+    "ticker": "AGX",
+    "name": "ARGAN INC",
+    "type": "Common Stock"
+  },
+  "50012A108": {
+    "ticker": "KGS",
+    "name": "KODIAK GAS SERVICES INC",
+    "type": "Common Stock"
+  },
+  "45841N107": {
+    "ticker": "IBKR",
+    "name": "INTERACTIVE BROKERS GRO-CL A",
+    "type": "Common Stock"
+  },
+  "58155Q103": {
+    "ticker": "MCK",
+    "name": "MCKESSON CORP",
+    "type": "Common Stock"
+  },
+  "032095101": {
+    "ticker": "APH",
+    "name": "AMPHENOL CORP-CL A",
+    "type": "Common Stock"
+  },
+  "084670108": {
+    "ticker": "BRK.A",
+    "name": "BERKSHIRE HATHAWAY INC-CL A",
+    "type": "Common Stock"
+  },
+  "032654105": {
+    "ticker": "ADI",
+    "name": "ANALOG DEVICES INC",
+    "type": "Common Stock"
+  },
+  "039483102": {
+    "ticker": "ADM",
+    "name": "ARCHER-DANIELS-MIDLAND CO",
+    "type": "Common Stock"
+  },
+  "17275R102": {
+    "ticker": "CSCO",
+    "name": "CISCO SYSTEMS INC",
+    "type": "Common Stock"
+  },
+  "020002101": {
+    "ticker": "ALL",
+    "name": "ALLSTATE CORP",
+    "type": "Common Stock"
+  },
+  "74144T108": {
+    "ticker": "TROW",
+    "name": "T ROWE PRICE GROUP INC",
+    "type": "Common Stock"
+  },
+  "92345Y106": {
+    "ticker": "VRSK",
+    "name": "VERISK ANALYTICS INC",
+    "type": "Common Stock"
+  },
+  "009158106": {
+    "ticker": "APD",
+    "name": "AIR PRODUCTS & CHEMICALS INC",
+    "type": "Common Stock"
+  },
+  "G7496G103": null,
+  "14448C104": {
+    "ticker": "CARR",
+    "name": "CARRIER GLOBAL CORP",
+    "type": "Common Stock"
+  },
+  "82509L107": {
+    "ticker": "SHOP",
+    "name": "SHOPIFY INC - CLASS A",
+    "type": "Common Stock"
+  },
+  "12503M108": {
+    "ticker": "CBOE",
+    "name": "CBOE GLOBAL MARKETS INC",
+    "type": "Common Stock"
+  },
+  "45778Q107": {
+    "ticker": "NSP",
+    "name": "INSPERITY INC",
+    "type": "Common Stock"
+  },
+  "084423102": {
+    "ticker": "WRB",
+    "name": "WR BERKLEY CORP",
+    "type": "Common Stock"
+  },
+  "00508Y102": {
+    "ticker": "AYI",
+    "name": "ACUITY INC",
+    "type": "Common Stock"
+  },
+  "25754A201": {
+    "ticker": "DPZ",
+    "name": "DOMINO'S PIZZA INC",
+    "type": "Common Stock"
+  },
+  "90278Q108": {
+    "ticker": "UFPI",
+    "name": "UFP INDUSTRIES INC",
+    "type": "Common Stock"
+  },
+  "38267D109": {
+    "ticker": "GSHD",
+    "name": "GOOSEHEAD INSURANCE INC -A",
+    "type": "Common Stock"
+  },
+  "H82027105": null,
+  "71385M107": {
+    "ticker": "PRM",
+    "name": "PERIMETER SOLUTIONS INC",
+    "type": "Common Stock"
+  },
+  "03027X100": {
+    "ticker": "AMT",
+    "name": "AMERICAN TOWER CORP",
+    "type": "REIT"
+  },
+  "68634K106": {
+    "ticker": null,
+    "name": "ORLA MINING LTD",
+    "type": "Common Stock"
+  },
+  "60871R209": {
+    "ticker": "TAP",
+    "name": "MOLSON COORS BEVERAGE CO - B",
+    "type": "Common Stock"
+  },
+  "00217Y104": {
+    "ticker": "ATS",
+    "name": "ATS CORP",
+    "type": "Common Stock"
+  },
+  "064149107": {
+    "ticker": "BNS",
+    "name": "BANK OF NOVA SCOTIA",
+    "type": "Common Stock"
+  },
+  "G4863A108": null,
+  "15126Q208": {
+    "ticker": "CPAC",
+    "name": "CEMENTOS PACASMAYO SAA - ADR",
+    "type": "Depositary Receipt"
+  },
+  "09228F103": {
+    "ticker": "BB",
+    "name": "BLACKBERRY LTD",
+    "type": "Common Stock"
+  },
+  "74275G107": {
+    "ticker": "PRTH",
+    "name": "PRIORITY TECHNOLOGY HOLDINGS",
+    "type": "Common Stock"
+  },
+  "G4474Y214": null,
+  "83444M101": {
+    "ticker": "SOLV",
+    "name": "SOLVENTUM CORP",
+    "type": "Common Stock"
+  },
+  "G3421J106": null,
+  "G491BT108": null,
+  "N5505D105": null
 }

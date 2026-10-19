@@ -33,6 +33,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 2476978592,
       "ticker": "UBER"
     },
     {
@@ -48,6 +49,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 2448117792,
       "ticker": "BN"
     },
     {
@@ -63,6 +65,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 2315234425,
       "ticker": "MSFT"
     },
     {
@@ -78,6 +81,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 2041109677,
       "ticker": "AMZN"
     },
     {
@@ -93,6 +97,7 @@
       "prevShares": 9000000,
       "sharesChangePct": 2.094673777777778,
       "status": "added",
+      "flow": 1347734055.116329,
       "ticker": "HHH"
     },
     {
@@ -108,6 +113,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1872301303,
       "ticker": "QSR"
     },
     {
@@ -123,6 +129,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1800309764,
       "ticker": "META"
     },
     {
@@ -138,6 +145,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1122065552,
       "ticker": "V"
     },
     {
@@ -153,6 +161,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1091218186,
       "ticker": "MA"
     },
     {
@@ -168,6 +177,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1056088305,
       "ticker": "SPGI"
     },
     {
@@ -183,6 +193,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 934016601,
       "ticker": "NFLX"
     },
     {
@@ -198,6 +209,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 149520000,
       "ticker": "PSUS"
     },
     {
@@ -213,6 +225,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 133632548,
       "ticker": "SEG"
     },
     {
@@ -228,9 +241,74 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 33955972,
       "ticker": "HTZ"
     }
   ],
   "sold": [],
-  "updatedAt": "2026-10-19T18:25:45.454Z"
+  "history": [
+    {
+      "period": "2025-06-30",
+      "filingDate": "2025-08-14",
+      "acc": "0001172661-25-003512",
+      "total": 607500000,
+      "count": 1,
+      "w": {
+        "44267T102": 100
+      }
+    },
+    {
+      "period": "2025-09-30",
+      "filingDate": "2025-11-14",
+      "acc": "0001172661-25-005115",
+      "total": 739530000,
+      "count": 1,
+      "w": {
+        "44267T102": 100
+      }
+    },
+    {
+      "period": "2025-12-31",
+      "filingDate": "2026-02-17",
+      "acc": "0001172661-26-001095",
+      "total": 717930000,
+      "count": 1,
+      "w": {
+        "44267T102": 100
+      }
+    },
+    {
+      "period": "2026-03-31",
+      "filingDate": "2026-05-15",
+      "acc": "0001172661-26-002339",
+      "total": 569340000,
+      "count": 1,
+      "w": {
+        "44267T102": 100
+      }
+    },
+    {
+      "period": "2026-06-30",
+      "filingDate": "2026-08-14",
+      "acc": "0001172661-26-003790",
+      "total": 19465692772,
+      "count": 14,
+      "w": {
+        "594918104": 11.894,
+        "812215200": 0.687,
+        "90353T100": 12.725,
+        "11271J107": 12.577,
+        "023135106": 10.486,
+        "44267T102": 10.229,
+        "76131D103": 9.618,
+        "30303M102": 9.249,
+        "92826C839": 5.764,
+        "57636Q104": 5.606,
+        "78409V104": 5.425,
+        "64110L106": 4.798,
+        "71531T105": 0.768
+      }
+    }
+  ],
+  "updatedAt": "2026-10-19T18:47:22.130Z"
 }

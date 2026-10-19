@@ -33,6 +33,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1011873350,
       "ticker": "SPY"
     },
     {
@@ -48,6 +49,7 @@
       "prevShares": 570000,
       "sharesChangePct": 0.5526315789473685,
       "status": "added",
+      "flow": 231966000,
       "ticker": "QQQ"
     },
     {
@@ -63,6 +65,7 @@
       "prevShares": 23839575,
       "sharesChangePct": -0.1472216262244608,
       "status": "reduced",
+      "flow": -90507125.67068763,
       "ticker": null
     },
     {
@@ -78,6 +81,7 @@
       "prevShares": 5237477,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "EXE"
     },
     {
@@ -93,6 +97,7 @@
       "prevShares": 14594816,
       "sharesChangePct": -0.4796223535808879,
       "status": "reduced",
+      "flow": -253609999.3732567,
       "ticker": "GTX"
     },
     {
@@ -108,6 +113,7 @@
       "prevShares": 3223092,
       "sharesChangePct": -0.013651487453662507,
       "status": "reduced",
+      "flow": -3559159.987820422,
       "ticker": null
     },
     {
@@ -123,6 +129,7 @@
       "prevShares": 6984102,
       "sharesChangePct": -0.12269150708280034,
       "status": "reduced",
+      "flow": -35158196.64965403,
       "ticker": "INDV"
     },
     {
@@ -138,6 +145,7 @@
       "prevShares": 4292243,
       "sharesChangePct": 0.23080286926905116,
       "status": "added",
+      "flow": 36664400.61062389,
       "ticker": "TDS"
     },
     {
@@ -153,6 +161,7 @@
       "prevShares": 3791432,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "VNOM"
     },
     {
@@ -168,6 +177,7 @@
       "prevShares": 3500000,
       "sharesChangePct": 0.42857142857142855,
       "status": "added",
+      "flow": 38385000,
       "ticker": "CORZ"
     },
     {
@@ -183,6 +193,7 @@
       "prevShares": 9350708,
       "sharesChangePct": -0.4659540218772739,
       "status": "reduced",
+      "flow": -111495629.37180147,
       "ticker": "CORZ"
     },
     {
@@ -198,6 +209,7 @@
       "prevShares": 331117,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "TLN"
     },
     {
@@ -213,6 +225,7 @@
       "prevShares": 2624859,
       "sharesChangePct": 0.2214320845424459,
       "status": "added",
+      "flow": 21348504.34754266,
       "ticker": "B"
     },
     {
@@ -228,6 +241,7 @@
       "prevShares": 12188995,
       "sharesChangePct": -0.017337770669361995,
       "status": "reduced",
+      "flow": -1726566.2402671974,
       "ticker": "ITUB"
     },
     {
@@ -243,6 +257,7 @@
       "prevShares": 8551191,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -258,6 +273,7 @@
       "prevShares": 1852456,
       "sharesChangePct": 3.249601070146875,
       "status": "added",
+      "flow": 71875731.37411897,
       "ticker": "OCSL"
     },
     {
@@ -273,6 +289,7 @@
       "prevShares": 1220122,
       "sharesChangePct": -0.015572213270476231,
       "status": "reduced",
+      "flow": -1194909.9908252452,
       "ticker": "FCX"
     },
     {
@@ -288,6 +305,7 @@
       "prevShares": 3968686,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "AERO"
     },
     {
@@ -303,6 +321,7 @@
       "prevShares": 1850011,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "KRC"
     },
     {
@@ -318,6 +337,7 @@
       "prevShares": 57736000,
       "sharesChangePct": 0.10042261327421366,
       "status": "added",
+      "flow": 5757993.76349671,
       "ticker": null
     },
     {
@@ -333,6 +353,7 @@
       "prevShares": 55985000,
       "sharesChangePct": 0.1436098955077253,
       "status": "added",
+      "flow": 7832568,
       "ticker": null
     },
     {
@@ -348,6 +369,7 @@
       "prevShares": 47886000,
       "sharesChangePct": 0.3065822996282838,
       "status": "added",
+      "flow": 14562083.829606662,
       "ticker": null
     },
     {
@@ -363,6 +385,7 @@
       "prevShares": 61196000,
       "sharesChangePct": 0.09216288646316753,
       "status": "added",
+      "flow": 5161163.9493686035,
       "ticker": null
     },
     {
@@ -378,6 +401,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 60894502,
       "ticker": "SE"
     },
     {
@@ -393,6 +417,7 @@
       "prevShares": 5748780,
       "sharesChangePct": 0.31490211836250476,
       "status": "added",
+      "flow": 14102260.233492343,
       "ticker": null
     },
     {
@@ -408,6 +433,7 @@
       "prevShares": 56620000,
       "sharesChangePct": 0.09184033910279053,
       "status": "added",
+      "flow": 4845855.4383694595,
       "ticker": null
     },
     {
@@ -423,6 +449,7 @@
       "prevShares": 40423000,
       "sharesChangePct": 0.512703164040274,
       "status": "added",
+      "flow": 19351968.75,
       "ticker": null
     },
     {
@@ -438,6 +465,7 @@
       "prevShares": 3382739,
       "sharesChangePct": 0.017235441457351574,
       "status": "added",
+      "flow": 965497.6711894247,
       "ticker": "BLCO"
     },
     {
@@ -453,6 +481,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 56605446,
       "ticker": "VSAT"
     },
     {
@@ -468,6 +497,7 @@
       "prevShares": 18000001,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -483,6 +513,7 @@
       "prevShares": 52119000,
       "sharesChangePct": 0.0915980736391719,
       "status": "added",
+      "flow": 4695228.9580440475,
       "ticker": null
     },
     {
@@ -498,6 +529,7 @@
       "prevShares": 44355000,
       "sharesChangePct": 0.3189268402660354,
       "status": "added",
+      "flow": 13174244.929693509,
       "ticker": null
     },
     {
@@ -513,6 +545,7 @@
       "prevShares": 36189000,
       "sharesChangePct": 0.4823565171737268,
       "status": "added",
+      "flow": 17071968,
       "ticker": null
     },
     {
@@ -528,6 +561,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 52387693,
       "ticker": null
     },
     {
@@ -543,6 +577,7 @@
       "prevShares": 79664000,
       "sharesChangePct": -0.6736292428198434,
       "status": "reduced",
+      "flow": -107903282.20799999,
       "ticker": null
     },
     {
@@ -558,6 +593,7 @@
       "prevShares": 33070000,
       "sharesChangePct": 0.621530087692773,
       "status": "added",
+      "flow": 20029873,
       "ticker": null
     },
     {
@@ -573,6 +609,7 @@
       "prevShares": 46995000,
       "sharesChangePct": 0.15467602936482605,
       "status": "added",
+      "flow": 6987689.673208757,
       "ticker": null
     },
     {
@@ -588,6 +625,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 51847704,
       "ticker": "MATW"
     },
     {
@@ -603,6 +641,7 @@
       "prevShares": 3172009,
       "sharesChangePct": -0.017402220485503037,
       "status": "reduced",
+      "flow": -897551.9939784568,
       "ticker": null
     },
     {
@@ -618,6 +657,7 @@
       "prevShares": 35941000,
       "sharesChangePct": 0.3751982415625609,
       "status": "added",
+      "flow": 13269240,
       "ticker": null
     },
     {
@@ -633,6 +673,7 @@
       "prevShares": 21743000,
       "sharesChangePct": 1.4516396081497493,
       "status": "added",
+      "flow": 28080022.417101264,
       "ticker": null
     },
     {
@@ -648,6 +689,7 @@
       "prevShares": 500000,
       "sharesChangePct": 0.8,
       "status": "added",
+      "flow": 21060000,
       "ticker": null
     },
     {
@@ -663,6 +705,7 @@
       "prevShares": 27272000,
       "sharesChangePct": 0.7763273687298328,
       "status": "added",
+      "flow": 20219260,
       "ticker": null
     },
     {
@@ -678,6 +721,7 @@
       "prevShares": 886465,
       "sharesChangePct": 0.11831375181197228,
       "status": "added",
+      "flow": 4768939.004406131,
       "ticker": "YPF"
     },
     {
@@ -693,6 +737,7 @@
       "prevShares": 6415253,
       "sharesChangePct": -0.5323645069025337,
       "status": "reduced",
+      "flow": -47229788.74255733,
       "ticker": "TAC"
     },
     {
@@ -708,6 +753,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 39684000,
       "ticker": "VC"
     },
     {
@@ -723,6 +769,7 @@
       "prevShares": 7029667,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "RWAY"
     },
     {
@@ -738,6 +785,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 37793587,
       "ticker": null
     },
     {
@@ -753,6 +801,7 @@
       "prevShares": 38036000,
       "sharesChangePct": 0.0747712693237985,
       "status": "added",
+      "flow": 2588040,
       "ticker": null
     },
     {
@@ -768,6 +817,7 @@
       "prevShares": 11537000,
       "sharesChangePct": 2.017682239750368,
       "status": "added",
+      "flow": 22928830,
       "ticker": null
     },
     {
@@ -783,6 +833,7 @@
       "prevShares": 31046000,
       "sharesChangePct": 0.09466597951426915,
       "status": "added",
+      "flow": 2734886.5580991614,
       "ticker": null
     },
     {
@@ -798,6 +849,7 @@
       "prevShares": 447606,
       "sharesChangePct": -0.017649450632922704,
       "status": "reduced",
+      "flow": -504019.9856267597,
       "ticker": "EMBJ"
     },
     {
@@ -813,6 +865,7 @@
       "prevShares": 19745000,
       "sharesChangePct": 0.41899214991136996,
       "status": "added",
+      "flow": 7880032.5,
       "ticker": null
     },
     {
@@ -828,6 +881,7 @@
       "prevShares": 724444,
       "sharesChangePct": -0.038078857717090624,
       "status": "reduced",
+      "flow": -1000268.3568330994,
       "ticker": "AD"
     },
     {
@@ -843,6 +897,7 @@
       "prevShares": 2400000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -858,6 +913,7 @@
       "prevShares": 1000000,
       "sharesChangePct": -0.710544,
       "status": "reduced",
+      "flow": -60154652.68343375,
       "ticker": "SHAZ"
     },
     {
@@ -873,6 +929,7 @@
       "prevShares": 26126000,
       "sharesChangePct": -0.10235014927658272,
       "status": "reduced",
+      "flow": -2793527.7543919496,
       "ticker": null
     },
     {
@@ -888,6 +945,7 @@
       "prevShares": 582924,
       "sharesChangePct": -0.01818418867639692,
       "status": "reduced",
+      "flow": -452619.9851832179,
       "ticker": "TX"
     },
     {
@@ -903,6 +961,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 22128458,
       "ticker": "QMCO"
     },
     {
@@ -918,6 +977,7 @@
       "prevShares": 9376000,
       "sharesChangePct": 1.1409982935153584,
       "status": "added",
+      "flow": 9975885,
       "ticker": null
     },
     {
@@ -933,6 +993,7 @@
       "prevShares": 10982000,
       "sharesChangePct": 0.6374977235476234,
       "status": "added",
+      "flow": 6645698.958015904,
       "ticker": null
     },
     {
@@ -948,6 +1009,7 @@
       "prevShares": 6000000,
       "sharesChangePct": 1.9123333333333334,
       "status": "added",
+      "flow": 10570996.068673458,
       "ticker": null
     },
     {
@@ -963,6 +1025,7 @@
       "prevShares": 1128889,
       "sharesChangePct": 0.0664370013349408,
       "status": "added",
+      "flow": 995999.9426857459,
       "ticker": "SMPL"
     },
     {
@@ -978,6 +1041,7 @@
       "prevShares": 10221000,
       "sharesChangePct": 0.16329126308580375,
       "status": "added",
+      "flow": 2071644.7761143818,
       "ticker": null
     },
     {
@@ -993,6 +1057,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 14491478,
       "ticker": "SGRY"
     },
     {
@@ -1008,6 +1073,7 @@
       "prevShares": 12959000,
       "sharesChangePct": 0.08526892507137897,
       "status": "added",
+      "flow": 1105000,
       "ticker": null
     },
     {
@@ -1023,6 +1089,7 @@
       "prevShares": 12499000,
       "sharesChangePct": 0.1324105928474278,
       "status": "added",
+      "flow": 1642587.0322876924,
       "ticker": null
     },
     {
@@ -1038,6 +1105,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 14030632,
       "ticker": null
     },
     {
@@ -1053,6 +1121,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 13910195,
       "ticker": null
     },
     {
@@ -1068,6 +1137,7 @@
       "prevShares": 9197000,
       "sharesChangePct": 0.5266934870066325,
       "status": "added",
+      "flow": 4674460,
       "ticker": null
     },
     {
@@ -1083,6 +1153,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 12070383,
       "ticker": null
     },
     {
@@ -1098,6 +1169,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 11902500,
       "ticker": null
     },
     {
@@ -1113,6 +1185,7 @@
       "prevShares": 1600000,
       "sharesChangePct": 3.466875,
       "status": "added",
+      "flow": 9232708.69035959,
       "ticker": null
     },
     {
@@ -1128,6 +1201,7 @@
       "prevShares": 16137000,
       "sharesChangePct": -0.26380368098159507,
       "status": "reduced",
+      "flow": -4046278.5,
       "ticker": null
     },
     {
@@ -1143,6 +1217,7 @@
       "prevShares": 10313000,
       "sharesChangePct": 0.14408998351595073,
       "status": "added",
+      "flow": 1420430.1083142639,
       "ticker": null
     },
     {
@@ -1158,6 +1233,7 @@
       "prevShares": 10349000,
       "sharesChangePct": 0.08377621026186105,
       "status": "added",
+      "flow": 865646.5493045648,
       "ticker": null
     },
     {
@@ -1173,6 +1249,7 @@
       "prevShares": 10091000,
       "sharesChangePct": 0.11287285700128828,
       "status": "added",
+      "flow": 1129082.1803205698,
       "ticker": null
     },
     {
@@ -1188,6 +1265,7 @@
       "prevShares": 4500000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "MINE"
     },
     {
@@ -1203,6 +1281,7 @@
       "prevShares": 11055000,
       "sharesChangePct": -0.17268204432383538,
       "status": "reduced",
+      "flow": -2285920.006560245,
       "ticker": null
     },
     {
@@ -1218,6 +1297,7 @@
       "prevShares": 1685000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "BMM"
     },
     {
@@ -1233,6 +1313,7 @@
       "prevShares": 15977000,
       "sharesChangePct": -0.3612067346811041,
       "status": "reduced",
+      "flow": -5796097.573486185,
       "ticker": null
     },
     {
@@ -1248,6 +1329,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 10199349,
       "ticker": null
     },
     {
@@ -1263,6 +1345,7 @@
       "prevShares": 1668000,
       "sharesChangePct": 5.031774580335731,
       "status": "added",
+      "flow": 8099242.497366067,
       "ticker": null
     },
     {
@@ -1278,6 +1361,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 9198862,
       "ticker": null
     },
     {
@@ -1293,6 +1377,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 9144880,
       "ticker": null
     },
     {
@@ -1308,6 +1393,7 @@
       "prevShares": 7505294,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "SMRT"
     },
     {
@@ -1323,6 +1409,7 @@
       "prevShares": 4869000,
       "sharesChangePct": 0.7071267200657219,
       "status": "added",
+      "flow": 3427850.7171559194,
       "ticker": null
     },
     {
@@ -1338,6 +1425,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 8099425,
       "ticker": null
     },
     {
@@ -1353,6 +1441,7 @@
       "prevShares": 8247000,
       "sharesChangePct": -0.044379774463441254,
       "status": "reduced",
+      "flow": -371489.99999999994,
       "ticker": null
     },
     {
@@ -1368,6 +1457,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 7977776,
       "ticker": null
     },
     {
@@ -1383,6 +1473,7 @@
       "prevShares": 11053000,
       "sharesChangePct": -0.27033384601465665,
       "status": "reduced",
+      "flow": -2938697.8147551147,
       "ticker": null
     },
     {
@@ -1398,6 +1489,7 @@
       "prevShares": 1008000,
       "sharesChangePct": 7.1061507936507935,
       "status": "added",
+      "flow": 6814161.637008933,
       "ticker": null
     },
     {
@@ -1413,6 +1505,7 @@
       "prevShares": 3971000,
       "sharesChangePct": 0.7882145555275749,
       "status": "added",
+      "flow": 3202928.867765104,
       "ticker": null
     },
     {
@@ -1428,6 +1521,7 @@
       "prevShares": 5942000,
       "sharesChangePct": 0.3273308650286099,
       "status": "added",
+      "flow": 1784819.4966400408,
       "ticker": null
     },
     {
@@ -1443,6 +1537,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 7133750,
       "ticker": null
     },
     {
@@ -1458,6 +1553,7 @@
       "prevShares": 2849858,
       "sharesChangePct": -0.47365798576630835,
       "status": "reduced",
+      "flow": -6384828.340000001,
       "ticker": "MX"
     },
     {
@@ -1473,6 +1569,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 7064855,
       "ticker": null
     },
     {
@@ -1488,6 +1585,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 6873687,
       "ticker": null
     },
     {
@@ -1503,6 +1601,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 6858330,
       "ticker": null
     },
     {
@@ -1518,6 +1617,7 @@
       "prevShares": 5935000,
       "sharesChangePct": 0.2005054759898905,
       "status": "added",
+      "flow": 1117886,
       "ticker": null
     },
     {
@@ -1533,6 +1633,7 @@
       "prevShares": 839020,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -1548,6 +1649,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 6344687,
       "ticker": null
     },
     {
@@ -1563,6 +1665,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 6335062,
       "ticker": null
     },
     {
@@ -1578,6 +1681,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 6246180,
       "ticker": null
     },
     {
@@ -1593,6 +1697,7 @@
       "prevShares": 3306000,
       "sharesChangePct": 0.9147005444646098,
       "status": "added",
+      "flow": 2927534.4,
       "ticker": null
     },
     {
@@ -1608,6 +1713,7 @@
       "prevShares": 4998000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -1623,6 +1729,7 @@
       "prevShares": 1898000,
       "sharesChangePct": 1.6338250790305584,
       "status": "added",
+      "flow": 2992844.0180036006,
       "ticker": null
     },
     {
@@ -1638,6 +1745,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 4730000,
       "ticker": "MX"
     },
     {
@@ -1653,6 +1761,7 @@
       "prevShares": 12080000,
       "sharesChangePct": -0.5487582781456953,
       "status": "reduced",
+      "flow": -5729444.33516786,
       "ticker": null
     },
     {
@@ -1668,6 +1777,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 4676970,
       "ticker": null
     },
     {
@@ -1683,6 +1793,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 4609844,
       "ticker": null
     },
     {
@@ -1698,6 +1809,7 @@
       "prevShares": 2000000,
       "sharesChangePct": 1.307,
       "status": "added",
+      "flow": 2511008.173385349,
       "ticker": null
     },
     {
@@ -1713,6 +1825,7 @@
       "prevShares": 3009912,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": "BATL"
     },
     {
@@ -1728,6 +1841,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 3679500,
       "ticker": null
     },
     {
@@ -1743,6 +1857,7 @@
       "prevShares": 1300000,
       "sharesChangePct": 1.6153846153846154,
       "status": "added",
+      "flow": 2242221.264705882,
       "ticker": null
     },
     {
@@ -1758,6 +1873,7 @@
       "prevShares": 3496000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -1773,6 +1889,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 3396978,
       "ticker": null
     },
     {
@@ -1788,6 +1905,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 3360365,
       "ticker": null
     },
     {
@@ -1803,6 +1921,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 3340149,
       "ticker": null
     },
     {
@@ -1818,6 +1937,7 @@
       "prevShares": 5397000,
       "sharesChangePct": -0.5125069483046136,
       "status": "reduced",
+      "flow": -3296618.8848346635,
       "ticker": null
     },
     {
@@ -1833,6 +1953,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 2849571,
       "ticker": null
     },
     {
@@ -1848,6 +1969,7 @@
       "prevShares": 7600000,
       "sharesChangePct": -0.7105263157894737,
       "status": "reduced",
+      "flow": -6099300,
       "ticker": null
     },
     {
@@ -1863,6 +1985,7 @@
       "prevShares": 6251000,
       "sharesChangePct": -0.597664373700208,
       "status": "reduced",
+      "flow": -3640273.7272365806,
       "ticker": null
     },
     {
@@ -1878,6 +2001,7 @@
       "prevShares": 2000000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -1893,6 +2017,7 @@
       "prevShares": 1813000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -1908,6 +2033,7 @@
       "prevShares": 837000,
       "sharesChangePct": 1.4970131421744326,
       "status": "added",
+      "flow": 1272797.4000000001,
       "ticker": null
     },
     {
@@ -1923,6 +2049,7 @@
       "prevShares": 7699000,
       "sharesChangePct": -0.8181582023639433,
       "status": "reduced",
+      "flow": -8969776,
       "ticker": null
     },
     {
@@ -1938,6 +2065,7 @@
       "prevShares": 241188,
       "sharesChangePct": 4.7227059389356025,
       "status": "added",
+      "flow": 1606074.864082397,
       "ticker": "BTAIQ"
     },
     {
@@ -1953,6 +2081,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1834285,
       "ticker": "NNBR"
     },
     {
@@ -1968,6 +2097,7 @@
       "prevShares": 1371000,
       "sharesChangePct": -0.07293946024799416,
       "status": "reduced",
+      "flow": -132674.98033044845,
       "ticker": null
     },
     {
@@ -1983,6 +2113,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1657882,
       "ticker": null
     },
     {
@@ -1998,6 +2129,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1509375,
       "ticker": null
     },
     {
@@ -2013,6 +2145,7 @@
       "prevShares": 1622244,
       "sharesChangePct": -0.9284293854685238,
       "status": "reduced",
+      "flow": -19579807,
       "ticker": "TEO"
     },
     {
@@ -2028,6 +2161,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 1442773,
       "ticker": null
     },
     {
@@ -2043,6 +2177,7 @@
       "prevShares": 2763083,
       "sharesChangePct": -0.9638085428486948,
       "status": "reduced",
+      "flow": -31956996,
       "ticker": "CX"
     },
     {
@@ -2058,6 +2193,7 @@
       "prevShares": 4666667,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -2073,6 +2209,7 @@
       "prevShares": 5575000,
       "sharesChangePct": -0.8125560538116592,
       "status": "reduced",
+      "flow": -4246855.492822967,
       "ticker": null
     },
     {
@@ -2088,6 +2225,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 885750,
       "ticker": null
     },
     {
@@ -2103,6 +2241,7 @@
       "prevShares": 3767000,
       "sharesChangePct": -0.7671887443589063,
       "status": "reduced",
+      "flow": -2877428.335233751,
       "ticker": null
     },
     {
@@ -2118,6 +2257,7 @@
       "prevShares": 833000,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -2133,6 +2273,7 @@
       "prevShares": 20726126,
       "sharesChangePct": -0.9964144770711131,
       "status": "reduced",
+      "flow": -112965528.35772532,
       "ticker": "STKL"
     },
     {
@@ -2148,6 +2289,7 @@
       "prevShares": 399999,
       "sharesChangePct": 0,
       "status": "unchanged",
+      "flow": 0,
       "ticker": null
     },
     {
@@ -2163,6 +2305,7 @@
       "prevShares": 240038,
       "sharesChangePct": -0.5918062973362551,
       "status": "reduced",
+      "flow": -524185.79910595826,
       "ticker": null
     },
     {
@@ -2178,6 +2321,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 252112,
       "ticker": null
     },
     {
@@ -2193,6 +2337,7 @@
       "status": "new",
       "prevShares": 0,
       "sharesChangePct": null,
+      "flow": 184467,
       "ticker": "OPI"
     }
   ],
@@ -2206,6 +2351,7 @@
       "prevShares": 1000000,
       "prevValue": 181830000,
       "prevWeight": 0.027730165278693583,
+      "flow": -181830000,
       "ticker": "XOP"
     },
     {
@@ -2217,6 +2363,7 @@
       "prevShares": 6089413,
       "prevValue": 126355319,
       "prevWeight": 0.0192699437920698,
+      "flow": -126355319,
       "ticker": "PBR"
     },
     {
@@ -2228,6 +2375,7 @@
       "prevShares": 95093000,
       "prevValue": 94793457,
       "prevWeight": 0.014456570587629836,
+      "flow": -94793457,
       "ticker": null
     },
     {
@@ -2239,6 +2387,7 @@
       "prevShares": 11200308,
       "prevValue": 90050476,
       "prevWeight": 0.013733237545537205,
+      "flow": -90050476,
       "ticker": "NOK"
     },
     {
@@ -2250,6 +2399,7 @@
       "prevShares": 2153717,
       "prevValue": 82767382,
       "prevWeight": 0.012622522040063621,
+      "flow": -82767382,
       "ticker": "CBL"
     },
     {
@@ -2261,6 +2411,7 @@
       "prevShares": 55921000,
       "prevValue": 55839914,
       "prevWeight": 0.008515921709113104,
+      "flow": -55839914,
       "ticker": null
     },
     {
@@ -2272,6 +2423,7 @@
       "prevShares": 52633000,
       "prevValue": 52227725,
       "prevWeight": 0.00796504122741108,
+      "flow": -52227725,
       "ticker": null
     },
     {
@@ -2283,6 +2435,7 @@
       "prevShares": 539000,
       "prevValue": 50595930,
       "prevWeight": 0.007716182705434807,
+      "flow": -50595930,
       "ticker": null
     },
     {
@@ -2294,6 +2447,7 @@
       "prevShares": 150000,
       "prevValue": 47884500,
       "prevWeight": 0.007302673372312616,
+      "flow": -47884500,
       "ticker": "TLN"
     },
     {
@@ -2305,6 +2459,7 @@
       "prevShares": 46973000,
       "prevValue": 46679418,
       "prevWeight": 0.007118891141468538,
+      "flow": -46679418,
       "ticker": null
     },
     {
@@ -2316,6 +2471,7 @@
       "prevShares": 41053000,
       "prevValue": 40884654,
       "prevWeight": 0.006235154885234563,
+      "flow": -40884654,
       "ticker": null
     },
     {
@@ -2327,6 +2483,7 @@
       "prevShares": 37779000,
       "prevValue": 37684552,
       "prevWeight": 0.005747120141965148,
+      "flow": -37684552,
       "ticker": null
     },
     {
@@ -2338,6 +2495,7 @@
       "prevShares": 36154000,
       "prevValue": 36110163,
       "prevWeight": 0.005507016379203463,
+      "flow": -36110163,
       "ticker": null
     },
     {
@@ -2349,6 +2507,7 @@
       "prevShares": 2393791,
       "prevValue": 30784152,
       "prevWeight": 0.004694767766179539,
+      "flow": -30784152,
       "ticker": "ECVT"
     },
     {
@@ -2360,6 +2519,7 @@
       "prevShares": 26175000,
       "prevValue": 25658041,
       "prevWeight": 0.003913005101784614,
+      "flow": -25658041,
       "ticker": null
     },
     {
@@ -2371,6 +2531,7 @@
       "prevShares": 13815000,
       "prevValue": 14322701,
       "prevWeight": 0.002184297783464279,
+      "flow": -14322701,
       "ticker": null
     },
     {
@@ -2382,6 +2543,7 @@
       "prevShares": 9562000,
       "prevValue": 9564390,
       "prevWeight": 0.0014586268244507733,
+      "flow": -9564390,
       "ticker": null
     },
     {
@@ -2393,6 +2555,7 @@
       "prevShares": 7330490,
       "prevValue": 9529637,
       "prevWeight": 0.0014533267835668134,
+      "flow": -9529637,
       "ticker": "OPTU"
     },
     {
@@ -2404,6 +2567,7 @@
       "prevShares": 9166000,
       "prevValue": 9179748,
       "prevWeight": 0.0013999666130823124,
+      "flow": -9179748,
       "ticker": null
     },
     {
@@ -2415,6 +2579,7 @@
       "prevShares": 9138000,
       "prevValue": 9098706,
       "prevWeight": 0.001387607222142886,
+      "flow": -9098706,
       "ticker": null
     },
     {
@@ -2426,6 +2591,7 @@
       "prevShares": 8997000,
       "prevValue": 8790069,
       "prevWeight": 0.0013405382290112788,
+      "flow": -8790069,
       "ticker": null
     },
     {
@@ -2437,6 +2603,7 @@
       "prevShares": 7588000,
       "prevValue": 7870744,
       "prevWeight": 0.0012003356541070553,
+      "flow": -7870744,
       "ticker": null
     },
     {
@@ -2448,6 +2615,7 @@
       "prevShares": 750000,
       "prevValue": 7440000,
       "prevWeight": 0.0011346446113044066,
+      "flow": -7440000,
       "ticker": null
     },
     {
@@ -2459,6 +2627,7 @@
       "prevShares": 49028,
       "prevValue": 7164951,
       "prevWeight": 0.0010926979895712525,
+      "flow": -7164951,
       "ticker": "NRG"
     },
     {
@@ -2470,6 +2639,7 @@
       "prevShares": 4000000,
       "prevValue": 4144903,
       "prevWeight": 0.0006321225609313803,
+      "flow": -4144903,
       "ticker": null
     },
     {
@@ -2481,6 +2651,7 @@
       "prevShares": 200020,
       "prevValue": 4082408,
       "prevWeight": 0.0006225916987024193,
+      "flow": -4082408,
       "ticker": "BKLN"
     },
     {
@@ -2492,6 +2663,7 @@
       "prevShares": 3357000,
       "prevValue": 3733127,
       "prevWeight": 0.0005693242518635734,
+      "flow": -3733127,
       "ticker": null
     },
     {
@@ -2503,6 +2675,7 @@
       "prevShares": 4167000,
       "prevValue": 3729465,
       "prevWeight": 0.0005687657749056974,
+      "flow": -3729465,
       "ticker": null
     },
     {
@@ -2514,6 +2687,7 @@
       "prevShares": 2927000,
       "prevValue": 2921877,
       "prevWeight": 0.0004456037624925115,
+      "flow": -2921877,
       "ticker": null
     },
     {
@@ -2525,6 +2699,7 @@
       "prevShares": 2985000,
       "prevValue": 2918583,
       "prevWeight": 0.00044510140774121627,
+      "flow": -2918583,
       "ticker": null
     },
     {
@@ -2536,6 +2711,7 @@
       "prevShares": 114261,
       "prevValue": 2842813,
       "prevWeight": 0.0004335460284134562,
+      "flow": -2842813,
       "ticker": "HDB"
     },
     {
@@ -2547,6 +2723,7 @@
       "prevShares": 2364000,
       "prevValue": 2199111,
       "prevWeight": 0.0003353776136841727,
+      "flow": -2199111,
       "ticker": null
     },
     {
@@ -2558,6 +2735,7 @@
       "prevShares": 2173000,
       "prevValue": 2146380,
       "prevWeight": 0.0003273358200015527,
+      "flow": -2146380,
       "ticker": null
     },
     {
@@ -2569,6 +2747,7 @@
       "prevShares": 2200000,
       "prevValue": 2119150,
       "prevWeight": 0.00032318308172657706,
+      "flow": -2119150,
       "ticker": null
     },
     {
@@ -2580,6 +2759,7 @@
       "prevShares": 1950000,
       "prevValue": 2114775,
       "prevWeight": 0.00032251586799345115,
+      "flow": -2114775,
       "ticker": null
     },
     {
@@ -2591,6 +2771,7 @@
       "prevShares": 1461000,
       "prevValue": 2072428,
       "prevWeight": 0.0003160576965747807,
+      "flow": -2072428,
       "ticker": null
     },
     {
@@ -2602,6 +2783,7 @@
       "prevShares": 2060000,
       "prevValue": 2032190,
       "prevWeight": 0.00030992116030197607,
+      "flow": -2032190,
       "ticker": null
     },
     {
@@ -2613,6 +2795,7 @@
       "prevShares": 1900000,
       "prevValue": 1839200,
       "prevWeight": 0.0002804890281063259,
+      "flow": -1839200,
       "ticker": null
     },
     {
@@ -2624,6 +2807,7 @@
       "prevShares": 1292000,
       "prevValue": 1794265,
       "prevWeight": 0.00027363617116963723,
+      "flow": -1794265,
       "ticker": null
     },
     {
@@ -2635,6 +2819,7 @@
       "prevShares": 1350000,
       "prevValue": 1479600,
       "prevWeight": 0.00022564787189327957,
+      "flow": -1479600,
       "ticker": null
     },
     {
@@ -2646,6 +2831,7 @@
       "prevShares": 600000,
       "prevValue": 1462800,
       "prevWeight": 0.00022308577115807607,
+      "flow": -1462800,
       "ticker": null
     },
     {
@@ -2657,8 +2843,639 @@
       "prevShares": 4823,
       "prevValue": 492814,
       "prevWeight": 0.00007515708998324863,
+      "flow": -492814,
       "ticker": "PDD"
     }
   ],
-  "updatedAt": "2026-10-19T18:23:29.657Z"
+  "history": [
+    {
+      "period": "2024-06-30",
+      "filingDate": "2024-08-14",
+      "acc": "0000949509-24-000007",
+      "total": 6295308807,
+      "count": 152,
+      "w": {
+        "105532105": 0.25,
+        "124830878": 1.487,
+        "151290889": 1.491,
+        "165167735": 8.97,
+        "366505105": 6.015,
+        "373737105": 0.309,
+        "465562106": 0.617,
+        "629377508": 0.989,
+        "879273209": 0.347,
+        "880890108": 0.557,
+        "893870204": 0.293,
+        "984245100": 0.305,
+        "G89479102": 27.39,
+        "78462F103": 6.008,
+        "82983N108": 4.851,
+        "Y8162K204": 3.085,
+        "G0378L100": 2.526,
+        "45667G103": 2.435,
+        "91912E105": 2.263,
+        "78163D100": 2.014,
+        "35671D857": 1.867,
+        "92837L109": 1.809,
+        "8676EP108": 1.778,
+        "059460303": 1.239,
+        "47215P106": 1.158,
+        "G4766E116": 1.119,
+        "G61188101": 1.053,
+        "71654V408": 1.037,
+        "49427F108": 0.916,
+        "44332N106": 0.684,
+        "21037T109": 0.573,
+        "67401P405": 0.554,
+        "12685JAE5": 0.549,
+        "L01800108": 0.489,
+        "89677Q107": 0.437,
+        "05961W105": 0.423,
+        "477143AP6": 0.407,
+        "08579X101": 0.379,
+        "46591M109": 0.325,
+        "81141RAG5": 0.305,
+        "87266J104": 0.292,
+        "83193G107": 0.285,
+        "92840M102": 0.273,
+        "32076VAD5": 0.259
+      }
+    },
+    {
+      "period": "2024-09-30",
+      "filingDate": "2024-11-14",
+      "acc": "0000949509-24-000009",
+      "total": 6238573040,
+      "count": 168,
+      "w": {
+        "105532105": 0.293,
+        "124830878": 1.618,
+        "151290889": 1.436,
+        "165167735": 9.059,
+        "366505105": 5.78,
+        "456788108": 0.611,
+        "465562106": 0.967,
+        "722304102": 0.612,
+        "879273209": 0.372,
+        "880890108": 0.5,
+        "893870204": 0.271,
+        "G89479102": 22.165,
+        "82983N108": 4.321,
+        "78462F103": 3.633,
+        "45667G103": 2.724,
+        "G0378L100": 2.415,
+        "Y8162K204": 2.169,
+        "8676EP108": 2.119,
+        "G61188101": 2.021,
+        "87422Q109": 1.99,
+        "35671D857": 1.941,
+        "78163D100": 1.778,
+        "92837L109": 1.773,
+        "13057Q305": 1.721,
+        "91912E105": 1.536,
+        "G4766E116": 1.508,
+        "49427F108": 1.148,
+        "47215P106": 1.129,
+        "71654V408": 0.94,
+        "89677Q107": 0.754,
+        "86745KAF1": 0.718,
+        "98850P109": 0.705,
+        "44332N106": 0.696,
+        "12685JAE5": 0.612,
+        "059460303": 0.602,
+        "29336T100": 0.587,
+        "19249HAB9": 0.579,
+        "48553T106": 0.56,
+        "75606DAP6": 0.522,
+        "46591M109": 0.513,
+        "67401P405": 0.484,
+        "L01800108": 0.483,
+        "05961W105": 0.473,
+        "89422GAA5": 0.415,
+        "01609W102": 0.382,
+        "64110W102": 0.349,
+        "87266J104": 0.336,
+        "70509VAA8": 0.323,
+        "07134L107": 0.322,
+        "91325V108": 0.307,
+        "08579X101": 0.305,
+        "02156K103": 0.296,
+        "40131MAB5": 0.278,
+        "477143AP6": 0.254
+      }
+    },
+    {
+      "period": "2024-12-31",
+      "filingDate": "2025-02-12",
+      "acc": "0001790787-25-000003",
+      "total": 5635080962,
+      "count": 165,
+      "w": {
+        "124830878": 1.568,
+        "151290889": 1.46,
+        "165167735": 12.256,
+        "366505105": 7.064,
+        "456788108": 0.653,
+        "722304102": 0.478,
+        "867975104": 1.102,
+        "879273209": 0.625,
+        "880890108": 0.427,
+        "893870204": 0.413,
+        "G89479102": 13.84,
+        "82983N108": 4.403,
+        "78462F103": 3.328,
+        "45667G103": 2.935,
+        "8676EP108": 2.829,
+        "G0378L100": 2.276,
+        "92837L109": 2.202,
+        "78163D100": 2.097,
+        "G4766E116": 1.988,
+        "13057Q305": 1.885,
+        "G61188101": 1.631,
+        "92840M102": 1.615,
+        "Y8162K204": 1.426,
+        "87422Q109": 2.276,
+        "49427F108": 1.328,
+        "35671D857": 1.191,
+        "91912E105": 1.132,
+        "89677Q107": 0.874,
+        "47215P106": 0.867,
+        "19249HAB9": 0.847,
+        "86745KAF1": 0.789,
+        "71654V408": 0.765,
+        "12685JAE5": 0.764,
+        "98850P109": 0.75,
+        "70509VAA8": 0.681,
+        "74762E102": 0.673,
+        "44332N106": 0.671,
+        "477143AP6": 0.661,
+        "05961W105": 0.65,
+        "64110W102": 0.633,
+        "29336T100": 0.628,
+        "40131MAB5": 0.576,
+        "75606DAP6": 0.575,
+        "67401P405": 0.502,
+        "L01800108": 0.452,
+        "48553T106": 0.432,
+        "91325V108": 0.332,
+        "86745KAH7": 0.323,
+        "02156K103": 0.321,
+        "69331CAL2": 0.295,
+        "04351PAD3": 0.283,
+        "067901108": 0.279,
+        "08579X101": 0.271,
+        "L01800116": 0.258,
+        "02081GAB8": 0.252
+      }
+    },
+    {
+      "period": "2025-03-31",
+      "filingDate": "2025-05-15",
+      "acc": "0000949509-25-000002",
+      "total": 5169601827,
+      "count": 168,
+      "w": {
+        "124830878": 1.545,
+        "151290889": 2.104,
+        "165167735": 11.978,
+        "279158109": 0.639,
+        "366505105": 7.137,
+        "465562106": 0.738,
+        "482497104": 0.488,
+        "654902204": 1.912,
+        "675746606": 0.257,
+        "879273209": 0.534,
+        "880890108": 0.49,
+        "G89479102": 12.821,
+        "82983N108": 4.972,
+        "G0378L100": 3.924,
+        "78462F103": 3.679,
+        "78163D100": 2.158,
+        "G4766E116": 2.001,
+        "92837L109": 1.968,
+        "8676EP108": 1.949,
+        "Y8162K204": 1.617,
+        "35671D857": 1.605,
+        "G61188101": 1.604,
+        "87422Q109": 2.316,
+        "49427F108": 1.172,
+        "13057Q305": 1.171,
+        "91912E105": 1.161,
+        "89346D107": 1.008,
+        "067901108": 0.946,
+        "19249HAB9": 0.934,
+        "G4124C109": 0.9,
+        "44332N106": 0.88,
+        "477143AP6": 0.791,
+        "12685JAE5": 0.783,
+        "70509VAA8": 0.782,
+        "47215P106": 0.764,
+        "71654V408": 0.738,
+        "090040106": 0.712,
+        "75606DAP6": 0.604,
+        "67401P405": 0.55,
+        "64049MAB6": 0.528,
+        "009066AB7": 0.465,
+        "48553T106": 0.434,
+        "29786AAN6": 0.412,
+        "81141RAG5": 0.404,
+        "02156K103": 0.386,
+        "05961W105": 0.38,
+        "40131MAB5": 0.379,
+        "056752108": 0.355,
+        "L01800108": 0.35,
+        "278768AB2": 0.346,
+        "83304AAH9": 0.339,
+        "91325V108": 0.331,
+        "207410AH4": 0.317,
+        "49639K101": 0.303,
+        "29415FAD6": 0.299,
+        "32076VAD5": 0.284,
+        "53802LAB8": 0.277,
+        "57164YAF4": 0.275,
+        "87918AAF2": 0.274
+      }
+    },
+    {
+      "period": "2025-06-30",
+      "filingDate": "2025-08-13",
+      "acc": "0000949509-25-000004",
+      "total": 5814694465,
+      "count": 178,
+      "w": {
+        "124830878": 1.312,
+        "151290889": 1.769,
+        "165167735": 10.181,
+        "279158109": 0.54,
+        "366505105": 6.669,
+        "464287655": 0.891,
+        "465562106": 1.285,
+        "482497104": 0.462,
+        "654902204": 1.671,
+        "879273209": 0.402,
+        "880890108": 0.476,
+        "G89479102": 11.722,
+        "78462F103": 10.838,
+        "82983N108": 4.092,
+        "G0378L100": 3.878,
+        "G4766E116": 2.791,
+        "8676EP108": 2.067,
+        "78163D100": 1.805,
+        "92837L109": 1.695,
+        "35671D857": 1.488,
+        "G61188101": 1.414,
+        "78464A888": 1.17,
+        "06849F108": 1.131,
+        "89346D107": 1.127,
+        "49427F108": 1.092,
+        "13057Q305": 1.081,
+        "70509VAA8": 1.017,
+        "G4124C109": 1.001,
+        "477143AP6": 0.99,
+        "Y8162K204": 0.958,
+        "12685JAE5": 0.845,
+        "87422Q109": 0.974,
+        "009066AB7": 0.603,
+        "071705107": 0.564,
+        "866082AA8": 0.508,
+        "81141RAG5": 0.489,
+        "87918AAF2": 0.483,
+        "48553T106": 0.482,
+        "29786AAN6": 0.471,
+        "207410AH4": 0.453,
+        "83304AAH9": 0.44,
+        "278768AB2": 0.435,
+        "67401P405": 0.435,
+        "011642AB1": 0.418,
+        "57164YAF4": 0.415,
+        "29355AAH0": 0.387,
+        "35969L108": 0.374,
+        "92940WAD1": 0.362,
+        "29415FAD6": 0.357,
+        "679295AD7": 0.346,
+        "91912E105": 0.34,
+        "32076VAD5": 0.338,
+        "15677JAD0": 0.301,
+        "10806XAD4": 0.291,
+        "02156K103": 0.276,
+        "252131AK3": 0.273,
+        "842587DZ7": 0.256,
+        "91325V108": 0.252
+      }
+    },
+    {
+      "period": "2025-09-30",
+      "filingDate": "2025-11-13",
+      "acc": "0000949509-25-000007",
+      "total": 6490256632,
+      "count": 165,
+      "w": {
+        "124830878": 1.416,
+        "151290889": 1.447,
+        "165167735": 8.287,
+        "278768106": 0.706,
+        "366505105": 6.693,
+        "464287655": 0.82,
+        "465562106": 1.432,
+        "571903202": 0.602,
+        "654902204": 1.39,
+        "879273209": 0.295,
+        "879433829": 2.23,
+        "880890108": 0.48,
+        "911684108": 0.558,
+        "G89479102": 12.859,
+        "G0378L100": 4.535,
+        "64361Q101": 3.701,
+        "78462F103": 3.387,
+        "68389X105": 2.167,
+        "87422Q109": 2.334,
+        "8676EP108": 1.871,
+        "21874A106": 1.769,
+        "06849F108": 1.667,
+        "G61188101": 1.51,
+        "G3730V105": 1.504,
+        "89346D107": 1.35,
+        "78163D100": 1.296,
+        "49427F108": 1.204,
+        "G4124C109": 1.122,
+        "G6683N103": 1.115,
+        "477143AP6": 1.027,
+        "92837L109": 0.976,
+        "35671D857": 0.909,
+        "12685JAE5": 0.884,
+        "G9001E128": 0.867,
+        "35969L108": 0.759,
+        "071705107": 0.754,
+        "207410AH4": 0.596,
+        "009066AB7": 0.594,
+        "48553T106": 0.592,
+        "G98239109": 0.589,
+        "87918AAF2": 0.588,
+        "13057Q305": 0.569,
+        "Y8162K204": 0.562,
+        "81141RAG5": 0.548,
+        "29786AAN6": 0.537,
+        "57164YAF4": 0.528,
+        "803607AD2": 0.475,
+        "G6359F137": 0.464,
+        "866082AA8": 0.447,
+        "70509VAA8": 0.398,
+        "47215PAJ5": 0.395,
+        "81141R100": 0.389,
+        "27923Q109": 0.386,
+        "29355AAK3": 0.383,
+        "011642AB1": 0.377,
+        "67401P405": 0.372,
+        "29415FAD6": 0.371,
+        "22410JAB2": 0.367,
+        "N4732M103": 0.364,
+        "91912E105": 0.34,
+        "008073AA6": 0.34,
+        "04271TAB6": 0.331,
+        "472145AH4": 0.306,
+        "32076VAD5": 0.303,
+        "125896BX7": 0.293,
+        "09061GAK7": 0.289,
+        "55306NAB0": 0.282,
+        "02156K103": 0.278,
+        "69352PAS2": 0.277,
+        "55303JAB2": 0.255,
+        "679295AF2": 0.254,
+        "19260QAF4": 0.252,
+        "53802LAB8": 0.25,
+        "03209RAB9": 0.25
+      }
+    },
+    {
+      "period": "2025-12-31",
+      "filingDate": "2026-02-17",
+      "acc": "0000949509-26-000001",
+      "total": 7027767837,
+      "count": 172,
+      "w": {
+        "124830878": 1.325,
+        "151290889": 0.94,
+        "165167735": 7.95,
+        "366505105": 4.24,
+        "456788108": 0.278,
+        "465562106": 1.408,
+        "571903202": 0.662,
+        "654902204": 1.726,
+        "675746606": 0.255,
+        "879273209": 0.388,
+        "879433829": 2.152,
+        "880890108": 0.358,
+        "911684108": 0.553,
+        "G89479102": 7.503,
+        "G0378L100": 4.669,
+        "92189F676": 4.433,
+        "78462F103": 3.736,
+        "G4766E116": 3.629,
+        "64361Q101": 3.455,
+        "06849F108": 1.844,
+        "87422Q109": 3.366,
+        "21874A106": 2.144,
+        "G3730V105": 1.449,
+        "68389X105": 1.387,
+        "G61188101": 1.355,
+        "767292AB1": 1.322,
+        "477143AP6": 1.267,
+        "40054J109": 1.18,
+        "89346D107": 1.156,
+        "8676EP108": 1.122,
+        "G6683N103": 1.067,
+        "35671D857": 1.005,
+        "49427F108": 0.984,
+        "78163D100": 0.893,
+        "278768AB2": 0.856,
+        "12685JAE5": 0.827,
+        "071705107": 0.822,
+        "G4124C109": 0.796,
+        "G98239109": 0.773,
+        "009066AB7": 0.715,
+        "29786AAN6": 0.639,
+        "G9001E128": 0.61,
+        "27923Q109": 0.589,
+        "09061GAK7": 0.576,
+        "03209RAB9": 0.575,
+        "207410AH4": 0.551,
+        "57164YAF4": 0.547,
+        "70509VAA8": 0.547,
+        "92837L109": 0.542,
+        "35969L108": 0.537,
+        "81141RAG5": 0.537,
+        "Y8162K204": 0.537,
+        "87918AAF2": 0.523,
+        "29355AAK3": 0.475,
+        "22410JAB2": 0.458,
+        "13057Q305": 0.442,
+        "48553T106": 0.442,
+        "04271TAB6": 0.431,
+        "29415FAD6": 0.422,
+        "679295AF2": 0.395,
+        "338307AF8": 0.39,
+        "011642AB1": 0.388,
+        "91912E105": 0.375,
+        "84762LAZ8": 0.371,
+        "252131AM9": 0.367,
+        "G7553X106": 0.351,
+        "67401P405": 0.336,
+        "26142RAB0": 0.329,
+        "55303JAB2": 0.321,
+        "866082AA8": 0.306,
+        "852234AJ2": 0.284,
+        "62957HAL9": 0.279,
+        "47215PAJ5": 0.275,
+        "15677JAD0": 0.273,
+        "974637AF7": 0.271,
+        "83304AAF3": 0.26,
+        "87157DAJ8": 0.26,
+        "53802LAB8": 0.252
+      }
+    },
+    {
+      "period": "2026-03-31",
+      "filingDate": "2026-05-20",
+      "acc": "0000949509-26-000004",
+      "total": 6557119230,
+      "count": 147,
+      "w": {
+        "124830878": 1.262,
+        "151290889": 0.482,
+        "165167735": 8.769,
+        "366505105": 4.044,
+        "465562106": 1.558,
+        "654902204": 1.373,
+        "778920306": 0.347,
+        "879273209": 0.289,
+        "879433829": 2.756,
+        "880890108": 0.357,
+        "911684108": 0.51,
+        "984245100": 0.625,
+        "G89479102": 10.295,
+        "46090E103": 5.017,
+        "G0378L100": 4.786,
+        "45579U109": 3.246,
+        "78468R556": 2.773,
+        "64361Q101": 2.717,
+        "21874A106": 2.932,
+        "8676EP108": 2.047,
+        "71654V408": 1.927,
+        "06849F108": 1.633,
+        "87422Q109": 2.342,
+        "G61188101": 1.577,
+        "477143AP6": 1.446,
+        "767292AB1": 1.4,
+        "89346D107": 1.282,
+        "35671D857": 1.094,
+        "278768AB2": 0.981,
+        "G98239109": 0.921,
+        "70509VAA8": 0.86,
+        "03040WBE4": 0.852,
+        "40054J109": 0.848,
+        "29786AAN6": 0.836,
+        "09061GAK7": 0.824,
+        "071705107": 0.82,
+        "19260QAB3": 0.797,
+        "49427F108": 0.796,
+        "G9001E128": 0.773,
+        "29355AAK3": 0.772,
+        "G25457105": 0.772,
+        "57164YAF4": 0.765,
+        "78163D100": 0.737,
+        "81141RAG5": 0.716,
+        "679295AF2": 0.712,
+        "08265TAD1": 0.682,
+        "74736LAD1": 0.624,
+        "N53745100": 0.614,
+        "26142RAB0": 0.61,
+        "852234AJ2": 0.575,
+        "252131AM9": 0.569,
+        "743312AB6": 0.551,
+        "207410AH4": 0.536,
+        "91332UAB7": 0.533,
+        "03209RAB9": 0.526,
+        "87918AAF2": 0.484,
+        "27923Q109": 0.469,
+        "04271TAB6": 0.43,
+        "29082A107": 0.405,
+        "84762LAZ8": 0.399,
+        "82452JAD1": 0.391,
+        "22410JAB2": 0.391,
+        "G7553X106": 0.377,
+        "67401P405": 0.319,
+        "338307AF8": 0.289,
+        "83304AAF3": 0.286
+      }
+    },
+    {
+      "period": "2026-06-30",
+      "filingDate": "2026-08-14",
+      "acc": "0000949509-26-000005",
+      "total": 7206070520,
+      "count": 145,
+      "w": {
+        "165167735": 6.628,
+        "366505105": 3.818,
+        "465562106": 1.358,
+        "577128101": 0.72,
+        "747906600": 0.307,
+        "778920306": 0.34,
+        "879433829": 2.713,
+        "880890108": 0.339,
+        "911684108": 0.351,
+        "984245100": 0.626,
+        "78462F103": 14.042,
+        "46090E103": 9.044,
+        "G89479102": 7.275,
+        "G0378L100": 3.569,
+        "45579U109": 3.489,
+        "64361Q101": 2.231,
+        "21874A106": 3.549,
+        "87422Q109": 1.766,
+        "06849F108": 1.634,
+        "G61188101": 1.349,
+        "67401P405": 1.304,
+        "35671D857": 1.048,
+        "40054J109": 0.991,
+        "49427F108": 0.962,
+        "70509VAA8": 0.876,
+        "09061GAK7": 0.866,
+        "81141RAG5": 0.861,
+        "29786AAN6": 0.849,
+        "81141R100": 0.845,
+        "G9001E128": 0.817,
+        "29355AAK3": 0.799,
+        "252131AM9": 0.792,
+        "071705107": 0.791,
+        "92552V100": 0.786,
+        "278768AB2": 0.781,
+        "57164YAF4": 0.776,
+        "26142RAB0": 0.756,
+        "207410AH4": 0.728,
+        "V5633W109": 0.727,
+        "767292AB1": 0.725,
+        "87918AAF2": 0.725,
+        "08265TAD1": 0.724,
+        "G98239109": 0.703,
+        "91332UAB7": 0.675,
+        "338307AF8": 0.658,
+        "N53745100": 0.658,
+        "82452JAD1": 0.642,
+        "89346D107": 0.576,
+        "92839U206": 0.551,
+        "78163D100": 0.547,
+        "194014AB2": 0.524,
+        "03209RAB9": 0.516,
+        "00827BAB2": 0.476,
+        "04271TAB6": 0.439,
+        "29082A107": 0.389,
+        "83304AAF3": 0.37,
+        "G7553X106": 0.35,
+        "84762LAZ8": 0.34,
+        "974637AF7": 0.26
+      }
+    }
+  ],
+  "updatedAt": "2026-10-19T18:49:36.808Z"
 }
