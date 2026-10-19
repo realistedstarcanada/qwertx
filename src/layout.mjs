@@ -111,7 +111,7 @@ ${body}
     <div class="row row-wide">
       <div class="col-2 footer-brand" style="flex-basis:34%">
         <img src="/assets/img/logo-qwertx.svg" alt="QWERTx — After Work Investment Strategies" width="300" height="52">
-        <p>Super investor portfolios, politician and insider trades, market sentiment and plain-English news for people who invest after work. Every number links back to its official source.</p>
+        <p>Super investor portfolios, politician and insider trades, market sentiment and plain-English news for busy professionals. Every number links back to its official source.</p>
         <form class="inline-form" data-form="newsletter-footer" style="margin-top:18px">
           <div class="form-fields inline-form" style="width:100%">
             <label class="sr-only" for="f-email">Email address</label>
