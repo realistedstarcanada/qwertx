@@ -267,3 +267,9 @@ table.data th { font-family: var(--font-mono); }
 @media (max-width: 1000px) { .v-brief-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 560px) { .v-brief-grid { grid-template-columns: 1fr; } .v-brief { padding: 18px; } }
 @media (max-width: 560px) { .v-brief-item .ic { display: none; } .v-brief-item { padding: 14px; gap: 6px; } .v-brief-head h2 { font-size: 21px; } }
+
+/* Mobile menu: calmer type, readable from the first item */
+@media (max-width: 1080px) {
+  .mobile-nav a.m-link { font-family: var(--font-body); font-size: 19px; font-weight: 500; padding: 14px 4px; }
+  .mobile-nav { padding-bottom: 48px; }
+}
