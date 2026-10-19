@@ -34,7 +34,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 1175934069,
-      "ticker": null
+      "ticker": "NBIS"
     },
     {
       "key": "N07059210",
@@ -50,7 +50,7 @@
       "sharesChangePct": -0.13122836366744614,
       "status": "reduced",
       "flow": -171040114.62646222,
-      "ticker": null
+      "ticker": "ASML"
     },
     {
       "key": "G7997R103",
@@ -66,7 +66,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 965105185,
-      "ticker": null
+      "ticker": "STX"
     },
     {
       "key": "437076102",
@@ -130,7 +130,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 808550554,
-      "ticker": null
+      "ticker": "LIN"
     },
     {
       "key": "880770102",
@@ -226,7 +226,7 @@
       "sharesChangePct": 0.24225717534754537,
       "status": "added",
       "flow": 123025453.09659836,
-      "ticker": null
+      "ticker": "NU"
     },
     {
       "key": "88080T104",
@@ -354,7 +354,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 470378663,
-      "ticker": null
+      "ticker": "ONON"
     },
     {
       "key": "50212V100",
@@ -402,7 +402,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 111407813,
-      "ticker": null
+      "ticker": "BTDR"
     },
     {
       "key": "778920306",
@@ -672,7 +672,7 @@
       "prevValue": 33383144,
       "prevWeight": 0.0026613157539942915,
       "flow": -33383144,
-      "ticker": null
+      "ticker": "SPOT"
     },
     {
       "key": "57636Q104",

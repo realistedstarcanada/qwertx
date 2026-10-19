@@ -178,7 +178,7 @@
       "sharesChangePct": -0.06672741108490217,
       "status": "reduced",
       "flow": -8645217.921497257,
-      "ticker": null
+      "ticker": "TBBB"
     },
     {
       "key": "02079K305",
@@ -226,7 +226,7 @@
       "sharesChangePct": 1.406311637080868,
       "status": "added",
       "flow": 68804500,
-      "ticker": null
+      "ticker": "STX"
     },
     {
       "key": "35137L105",
@@ -322,7 +322,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "NAMS"
     },
     {
       "key": "464287655:CALL",
@@ -402,7 +402,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 64670000,
-      "ticker": null
+      "ticker": "BTDR"
     },
     {
       "key": "G25508105",
@@ -866,7 +866,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "LIN"
     },
     {
       "key": "29362U104",
@@ -1330,7 +1330,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "JBS"
     },
     {
       "key": "61225M102",
@@ -1458,7 +1458,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 5465000,
-      "ticker": null
+      "ticker": "FTAI"
     },
     {
       "key": "07373V105",
@@ -1506,7 +1506,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 3983000,
-      "ticker": null
+      "ticker": "IREN"
     },
     {
       "key": "399909100",
@@ -1538,7 +1538,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "WVE"
     }
   ],
   "sold": [
@@ -1696,7 +1696,7 @@
       "prevValue": 10588000,
       "prevWeight": 0.0031354869125700215,
       "flow": -10588000,
-      "ticker": null
+      "ticker": "LYB"
     },
     {
       "key": "90184D100",

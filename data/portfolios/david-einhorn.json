@@ -226,7 +226,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 95683657,
-      "ticker": null
+      "ticker": "VGNT"
     },
     {
       "key": "G1890L107",
@@ -242,7 +242,7 @@
       "sharesChangePct": -0.022351499436750327,
       "status": "reduced",
       "flow": -2046413.994055747,
-      "ticker": null
+      "ticker": "CPRI"
     },
     {
       "key": "05603J108",
@@ -274,7 +274,7 @@
       "sharesChangePct": -0.045222909400561756,
       "status": "reduced",
       "flow": -3941578.4715810674,
-      "ticker": null
+      "ticker": "DHT"
     },
     {
       "key": "227046109",
@@ -306,7 +306,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "ROIV"
     },
     {
       "key": "83601L102",
@@ -418,7 +418,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 59883158,
-      "ticker": null
+      "ticker": "WBD"
     },
     {
       "key": "G61188101",
@@ -434,7 +434,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "LBTYA"
     },
     {
       "key": "03674X106",
@@ -804,7 +804,7 @@
       "prevValue": 13782292,
       "prevWeight": 0.004319472215430074,
       "flow": -13782292,
-      "ticker": null
+      "ticker": "WFRD"
     },
     {
       "key": "M9T951109",
@@ -828,7 +828,7 @@
       "prevValue": 603,
       "prevWeight": 1.8898465842287588e-7,
       "flow": -603,
-      "ticker": null
+      "ticker": "KPLT"
     }
   ],
   "history": [

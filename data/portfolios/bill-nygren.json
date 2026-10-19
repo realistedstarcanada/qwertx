@@ -258,7 +258,7 @@
       "sharesChangePct": -0.018221135646582853,
       "status": "reduced",
       "flow": -28658961.427456647,
-      "ticker": null
+      "ticker": "WTW"
     },
     {
       "key": "026874784",
@@ -514,7 +514,7 @@
       "sharesChangePct": 0.094638897577649,
       "status": "added",
       "flow": 81421485.09277253,
-      "ticker": null
+      "ticker": "AER"
     },
     {
       "key": "37940X102",
@@ -642,7 +642,7 @@
       "sharesChangePct": 0.02684911257901918,
       "status": "added",
       "flow": 20294365.598890007,
-      "ticker": null
+      "ticker": "ICLR"
     },
     {
       "key": "H2927K103",
@@ -658,7 +658,7 @@
       "sharesChangePct": 0.23325097818227558,
       "status": "added",
       "flow": 141041290.70986328,
-      "ticker": null
+      "ticker": "AMRZ"
     },
     {
       "key": "14316J108",
@@ -802,7 +802,7 @@
       "sharesChangePct": 0.08230931533836092,
       "status": "added",
       "flow": 46732992.37989851,
-      "ticker": null
+      "ticker": "TEL"
     },
     {
       "key": "654106103",
@@ -1266,7 +1266,7 @@
       "sharesChangePct": -0.853890968493406,
       "status": "reduced",
       "flow": -748368727.4662318,
-      "ticker": null
+      "ticker": "WBD"
     },
     {
       "key": "91879Q109",
@@ -1586,7 +1586,7 @@
       "sharesChangePct": -0.16350710900473933,
       "status": "reduced",
       "flow": -6198822,
-      "ticker": null
+      "ticker": "ZGN"
     },
     {
       "key": "48251W104",
@@ -1682,7 +1682,7 @@
       "sharesChangePct": -0.013586107002070531,
       "status": "reduced",
       "flow": -342743.82449070737,
-      "ticker": null
+      "ticker": "CWK"
     },
     {
       "key": "98138H101",
@@ -1810,7 +1810,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 7964853,
-      "ticker": null
+      "ticker": "BIRK"
     },
     {
       "key": "941848103",

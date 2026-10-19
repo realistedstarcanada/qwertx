@@ -3486,5 +3486,485 @@
     "name": "Jefferies Financial Group Inc.",
     "sic": "6211",
     "sicDescription": "Security Brokers, Dealers & Flotation Companies"
+  },
+  "WTW": {
+    "sector": "Financials",
+    "name": "WILLIS TOWERS WATSON PLC",
+    "sic": "6411",
+    "sicDescription": "Insurance Agents, Brokers & Service"
+  },
+  "AER": {
+    "sector": "Industrials",
+    "name": "AerCap Holdings N.V.",
+    "sic": "7359",
+    "sicDescription": "Services-Equipment Rental & Leasing, NEC"
+  },
+  "ICLR": {
+    "sector": "Industrials",
+    "name": "ICON PLC",
+    "sic": "8731",
+    "sicDescription": "Services-Commercial Physical & Biological Research"
+  },
+  "AMRZ": {
+    "sector": "Materials",
+    "name": "Amrize Ltd",
+    "sic": "3241",
+    "sicDescription": "Cement, Hydraulic"
+  },
+  "TEL": {
+    "sector": "Industrials",
+    "name": "TE Connectivity plc",
+    "sic": "5065",
+    "sicDescription": "Wholesale-Electronic Parts & Equipment, NEC"
+  },
+  "WBD": {
+    "sector": "Communication",
+    "name": "Warner Bros. Discovery, Inc.",
+    "sic": "4841",
+    "sicDescription": "Cable & Other Pay Television Services"
+  },
+  "ZGN": {
+    "sector": "Consumer Discretionary",
+    "name": "Ermenegildo Zegna N.V.",
+    "sic": "2300",
+    "sicDescription": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl"
+  },
+  "CWK": {
+    "sector": "Real Estate",
+    "name": "Cushman & Wakefield Ltd.",
+    "sic": "6500",
+    "sicDescription": "Real Estate"
+  },
+  "BIRK": {
+    "sector": "Materials",
+    "name": "Birkenstock Holding plc",
+    "sic": "3140",
+    "sicDescription": "Footwear, (No Rubber)"
+  },
+  "SPOT": {
+    "sector": "Communication",
+    "name": "Spotify Technology S.A.",
+    "sic": "4832",
+    "sicDescription": "Radio Broadcasting Stations"
+  },
+  "STX": {
+    "sector": "Technology",
+    "name": "Seagate Technology Holdings plc",
+    "sic": "3572",
+    "sicDescription": "Computer Storage Devices"
+  },
+  "NU": {
+    "sector": "Financials",
+    "name": "Nu Holdings Ltd.",
+    "sic": "6199",
+    "sicDescription": "Finance Services"
+  },
+  "BULL": {
+    "sector": "Financials",
+    "name": "Webull Corp",
+    "sic": "6211",
+    "sicDescription": "Security Brokers, Dealers & Flotation Companies"
+  },
+  "ARX": {
+    "sector": "Financials",
+    "name": "Accelerant Holdings",
+    "sic": "6411",
+    "sicDescription": "Insurance Agents, Brokers & Service"
+  },
+  "BLSH": {
+    "sector": "Financials",
+    "name": "Bullish",
+    "sic": "6199",
+    "sicDescription": "Finance Services"
+  },
+  "ETOR": {
+    "sector": "Financials",
+    "name": "eToro Group Ltd.",
+    "sic": "6211",
+    "sicDescription": "Security Brokers, Dealers & Flotation Companies"
+  },
+  "KLAR": {
+    "sector": "Financials",
+    "name": "Klarna Group plc",
+    "sic": "6199",
+    "sicDescription": "Finance Services"
+  },
+  "FER": {
+    "sector": "Industrials",
+    "name": "Ferrovial N.V.",
+    "sic": "1600",
+    "sicDescription": "Heavy Construction Other Than Bldg Const - Contractors"
+  },
+  "SOPH": {
+    "sector": "Technology",
+    "name": "SOPHiA GENETICS SA",
+    "sic": "7374",
+    "sicDescription": "Services-Computer Processing & Data Preparation"
+  },
+  "FLEX": {
+    "sector": "Technology",
+    "name": "FLEX LTD.",
+    "sic": "3672",
+    "sicDescription": "Printed Circuit Boards"
+  },
+  "ASML": {
+    "sector": "Industrials",
+    "name": "ASML HOLDING NV",
+    "sic": "3559",
+    "sicDescription": "Special Industry Machinery, NEC"
+  },
+  "SN": {
+    "sector": "Consumer Discretionary",
+    "name": "SharkNinja, Inc.",
+    "sic": "3630",
+    "sicDescription": "Household Appliances"
+  },
+  "VGNT": {
+    "sector": "Consumer Discretionary",
+    "name": "Versigent PLC",
+    "sic": "3714",
+    "sicDescription": "Motor Vehicle Parts & Accessories"
+  },
+  "CPRI": {
+    "sector": "Materials",
+    "name": "Capri Holdings Ltd",
+    "sic": "3100",
+    "sicDescription": "Leather & Leather Products"
+  },
+  "DHT": {
+    "sector": "Industrials",
+    "name": "DHT Holdings, Inc.",
+    "sic": "4412",
+    "sicDescription": "Deep Sea Foreign Transportation of  Freight"
+  },
+  "ROIV": {
+    "sector": "Health Care",
+    "name": "Roivant Sciences Ltd.",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "LBTYA": {
+    "sector": "Communication",
+    "name": "Liberty Global Ltd.",
+    "sic": "4841",
+    "sicDescription": "Cable & Other Pay Television Services"
+  },
+  "WFRD": {
+    "sector": "Industrials",
+    "name": "Weatherford International plc",
+    "sic": "3533",
+    "sicDescription": "Oil & Gas Field Machinery & Equipment"
+  },
+  "KPLT": {
+    "sector": "Industrials",
+    "name": "Katapult Holdings, Inc.",
+    "sic": "7359",
+    "sicDescription": "Services-Equipment Rental & Leasing, NEC"
+  },
+  "CRDO": {
+    "sector": "Technology",
+    "name": "Credo Technology Group Holding Ltd",
+    "sic": "3674",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "ONON": {
+    "sector": "Materials",
+    "name": "On Holding AG",
+    "sic": "3021",
+    "sicDescription": "Rubber & Plastics Footwear"
+  },
+  "TRMD": {
+    "sector": "Industrials",
+    "name": "TORM plc",
+    "sic": "4412",
+    "sicDescription": "Deep Sea Foreign Transportation of  Freight"
+  },
+  "AU": {
+    "sector": "Materials",
+    "name": "AngloGold Ashanti PLC",
+    "sic": "1040",
+    "sicDescription": "Gold and Silver Ores"
+  },
+  "LILA": {
+    "sector": "Communication",
+    "name": "Liberty Latin America Ltd.",
+    "sic": "4841",
+    "sicDescription": "Cable & Other Pay Television Services"
+  },
+  "MMYT": {
+    "sector": "Industrials",
+    "name": "MakeMyTrip Ltd",
+    "sic": "4700",
+    "sicDescription": "Transportation Services"
+  },
+  "XP": {
+    "sector": "Financials",
+    "name": "XP Inc.",
+    "sic": "6211",
+    "sicDescription": "Security Brokers, Dealers & Flotation Companies"
+  },
+  "LYB": {
+    "sector": "Materials",
+    "name": "LyondellBasell Industries N.V.",
+    "sic": "2860",
+    "sicDescription": "Industrial Organic Chemicals"
+  },
+  "KRSP": {
+    "sector": "Financials",
+    "name": "Rice Acquisition Corp 3",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "BTDR": {
+    "sector": "Financials",
+    "name": "Bitdeer Technologies Group",
+    "sic": "6199",
+    "sicDescription": "Finance Services"
+  },
+  "DPC": {
+    "sector": "Materials",
+    "name": "DPC Holdings PLC",
+    "sic": "3360",
+    "sicDescription": "Nonferrous Foundries (Castings)"
+  },
+  "SVC": {
+    "sector": "Real Estate",
+    "name": "Service Properties Trust",
+    "sic": "6798",
+    "sicDescription": "Real Estate Investment Trusts"
+  },
+  "ALVO": {
+    "sector": "Health Care",
+    "name": "Alvotech",
+    "sic": "2836",
+    "sicDescription": "Biological Products, (No Diagnostic Substances)"
+  },
+  "COIN": {
+    "sector": "Financials",
+    "name": "Coinbase Global, Inc.",
+    "sic": "6199",
+    "sicDescription": "Finance Services"
+  },
+  "OKTA": {
+    "sector": "Technology",
+    "name": "Okta, Inc.",
+    "sic": "7372",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "QTWO": {
+    "sector": "Technology",
+    "name": "Q2 Holdings, Inc.",
+    "sic": "7372",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "CBRL": {
+    "sector": "Consumer Discretionary",
+    "name": "CRACKER BARREL OLD COUNTRY STORE, INC",
+    "sic": "5812",
+    "sicDescription": "Retail-Eating  Places"
+  },
+  "SYNA": {
+    "sector": "Technology",
+    "name": "SYNAPTICS Inc",
+    "sic": "3674",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "CALY": {
+    "sector": "Consumer Discretionary",
+    "name": "Callaway Golf Co",
+    "sic": "3949",
+    "sicDescription": "Sporting & Athletic Goods, NEC"
+  },
+  "LCII": {
+    "sector": "Consumer Discretionary",
+    "name": "LCI INDUSTRIES",
+    "sic": "3714",
+    "sicDescription": "Motor Vehicle Parts & Accessories"
+  },
+  "TCOM": {
+    "sector": "Industrials",
+    "name": "Trip.com Group Ltd",
+    "sic": "7389",
+    "sicDescription": "Services-Business Services, NEC"
+  },
+  "ILLU": {
+    "sector": "Financials",
+    "name": "Illumination Acquisition Corp. I",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "SO": {
+    "sector": "Utilities",
+    "name": "SOUTHERN CO",
+    "sic": "4911",
+    "sicDescription": "Electric Services"
+  },
+  "BAND": {
+    "sector": "Technology",
+    "name": "Bandwidth Inc.",
+    "sic": "7372",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "JBTM": {
+    "sector": "Industrials",
+    "name": "JBT MAREL Corp",
+    "sic": "3550",
+    "sicDescription": "Special Industry Machinery (No Metalworking Machinery)"
+  },
+  "DOCN": {
+    "sector": "Technology",
+    "name": "DigitalOcean Holdings, Inc.",
+    "sic": "7370",
+    "sicDescription": "Services-Computer Programming, Data Processing, Etc."
+  },
+  "CAKE": {
+    "sector": "Consumer Discretionary",
+    "name": "CHEESECAKE FACTORY INC",
+    "sic": "5812",
+    "sicDescription": "Retail-Eating  Places"
+  },
+  "MSTR": {
+    "sector": "Financials",
+    "name": "Strategy Inc",
+    "sic": "6199",
+    "sicDescription": "Finance Services"
+  },
+  "POST": {
+    "sector": "Consumer Staples",
+    "name": "Post Holdings, Inc.",
+    "sic": "2040",
+    "sicDescription": "Grain Mill Products"
+  },
+  "JAZZ": {
+    "sector": "Health Care",
+    "name": "Jazz Pharmaceuticals plc",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "PSN": {
+    "sector": "Technology",
+    "name": "PARSONS CORP",
+    "sic": "7373",
+    "sicDescription": "Services-Computer Integrated Systems Design"
+  },
+  "MTH": {
+    "sector": "Consumer Discretionary",
+    "name": "Meritage Homes CORP",
+    "sic": "1531",
+    "sicDescription": "Operative Builders"
+  },
+  "NEE": {
+    "sector": "Utilities",
+    "name": "NEXTERA ENERGY INC",
+    "sic": "4911",
+    "sicDescription": "Electric Services"
+  },
+  "CELC": {
+    "sector": "Health Care",
+    "name": "Celcuity Inc.",
+    "sic": "8071",
+    "sicDescription": "Services-Medical Laboratories"
+  },
+  "RIG": {
+    "sector": "Energy",
+    "name": "Transocean Ltd.",
+    "sic": "1381",
+    "sicDescription": "Drilling Oil & Gas Wells"
+  },
+  "IVZ": {
+    "sector": "Financials",
+    "name": "Invesco Ltd.",
+    "sic": "6282",
+    "sicDescription": "Investment Advice"
+  },
+  "MICC": {
+    "sector": "Consumer Staples",
+    "name": "Magnum Ice Cream Co N.V.",
+    "sic": "2024",
+    "sicDescription": "Ice Cream & Frozen Desserts"
+  },
+  "BRSL": {
+    "sector": "Consumer Discretionary",
+    "name": "Brightstar Lottery PLC",
+    "sic": "7990",
+    "sicDescription": "Services-Miscellaneous Amusement & Recreation"
+  },
+  "AON": {
+    "sector": "Financials",
+    "name": "Aon plc",
+    "sic": "6411",
+    "sicDescription": "Insurance Agents, Brokers & Service"
+  },
+  "NCLH": {
+    "sector": "Industrials",
+    "name": "Norwegian Cruise Line Holdings Ltd.",
+    "sic": "4400",
+    "sicDescription": "Water Transportation"
+  },
+  "HLF": {
+    "sector": "Health Care",
+    "name": "HERBALIFE LTD.",
+    "sic": "5122",
+    "sicDescription": "Wholesale-Drugs, Proprietaries & Druggists' Sundries"
+  },
+  "TBBB": {
+    "sector": "Consumer Staples",
+    "name": "BBB FOODS INC",
+    "sic": "5411",
+    "sicDescription": "Retail-Grocery Stores"
+  },
+  "NAMS": {
+    "sector": "Health Care",
+    "name": "NewAmsterdam Pharma Co N.V.",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "LIN": {
+    "sector": "Materials",
+    "name": "LINDE PLC",
+    "sic": "2810",
+    "sicDescription": "Industrial Inorganic Chemicals"
+  },
+  "JBS": {
+    "sector": "Consumer Staples",
+    "name": "JBS N.V.",
+    "sic": "2011",
+    "sicDescription": "Meat Packing Plants"
+  },
+  "FTAI": {
+    "sector": "Industrials",
+    "name": "FTAI Aviation Ltd.",
+    "sic": "7350",
+    "sicDescription": "Services-Miscellaneous Equipment Rental & Leasing"
+  },
+  "IREN": {
+    "sector": "Financials",
+    "name": "IREN Ltd",
+    "sic": "6199",
+    "sicDescription": "Finance Services"
+  },
+  "WVE": {
+    "sector": "Health Care",
+    "name": "Wave Life Sciences, Inc.",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "NBIS": {
+    "sector": "Technology",
+    "name": "Nebius Group N.V.",
+    "sic": "7370",
+    "sicDescription": "Services-Computer Programming, Data Processing, Etc."
+  },
+  "RNR": {
+    "sector": "Financials",
+    "name": "RENAISSANCERE HOLDINGS LTD",
+    "sic": "6331",
+    "sicDescription": "Fire, Marine & Casualty Insurance"
+  },
+  "CB": {
+    "sector": "Financials",
+    "name": "Chubb Ltd",
+    "sic": "6331",
+    "sicDescription": "Fire, Marine & Casualty Insurance"
   }
 }

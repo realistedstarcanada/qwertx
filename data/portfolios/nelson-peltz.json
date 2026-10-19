@@ -130,7 +130,7 @@
       "sharesChangePct": -0.45287693069946794,
       "status": "reduced",
       "flow": -35507006.01378061,
-      "ticker": null
+      "ticker": "IVZ"
     },
     {
       "key": "N5505D105",
@@ -146,7 +146,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "MICC"
     }
   ],
   "sold": [],

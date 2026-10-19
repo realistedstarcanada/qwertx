@@ -570,7 +570,11 @@
     "name": "KLA CORP",
     "type": "Common Stock"
   },
-  "485859110": null,
+  "485859110": {
+    "ticker": "KPLT",
+    "name": "Katapult Holdings, Inc.",
+    "via": "sec-name"
+  },
   "489398107": {
     "ticker": null,
     "name": "KENNEDY-WILSON HOLDINGS INC",
@@ -1272,9 +1276,10 @@
     "type": "Common Stock"
   },
   "934423104": {
-    "ticker": null,
-    "name": "WARNER BROS DISCOVERY INC",
-    "type": "Common Stock"
+    "ticker": "WBD",
+    "name": "Warner Bros. Discovery, Inc.",
+    "type": "Common Stock",
+    "via": "sec-name"
   },
   "934550203": {
     "ticker": "WMG",
@@ -1356,7 +1361,11 @@
     "name": "BANK OF AMERICA CORP",
     "type": "Common Stock"
   },
-  "H1467J104": null,
+  "H1467J104": {
+    "ticker": "CB",
+    "name": "Chubb Ltd",
+    "via": "sec-name"
+  },
   "02079K107": {
     "ticker": "GOOG",
     "name": "ALPHABET INC-CL C",
@@ -1467,8 +1476,16 @@
     "name": "WESCO INTERNATIONAL INC",
     "type": "Common Stock"
   },
-  "G0403H108": null,
-  "G66721104": null,
+  "G0403H108": {
+    "ticker": "AON",
+    "name": "Aon plc",
+    "via": "sec-name"
+  },
+  "G66721104": {
+    "ticker": "NCLH",
+    "name": "Norwegian Cruise Line Holdings Ltd.",
+    "via": "sec-name"
+  },
   "60855R100": {
     "ticker": "MOH",
     "name": "MOLINA HEALTHCARE INC",
@@ -1479,7 +1496,11 @@
     "name": "CME GROUP INC",
     "type": "Common Stock"
   },
-  "G4412G101": null,
+  "G4412G101": {
+    "ticker": "HLF",
+    "name": "HERBALIFE LTD.",
+    "via": "sec-name"
+  },
   "26969P108": {
     "ticker": "EXP",
     "name": "EAGLE MATERIALS INC",
@@ -1495,7 +1516,11 @@
     "name": "AMERICOLD REALTY TRUST INC",
     "type": "REIT"
   },
-  "G61188127": null,
+  "G61188127": {
+    "ticker": "LBTYA",
+    "name": "Liberty Global Ltd.",
+    "via": "sec-name"
+  },
   "40054J109": {
     "ticker": "AERO",
     "name": "GRUPO AEROMEXICO SAB DE CV",
@@ -1512,7 +1537,11 @@
     "name": "PERSHING SQUARE INC",
     "type": "Common Stock"
   },
-  "G96629103": null,
+  "G96629103": {
+    "ticker": "WTW",
+    "name": "WILLIS TOWERS WATSON PLC",
+    "via": "sec-name"
+  },
   "92243G108": {
     "ticker": "PCVX",
     "name": "VAXCYTE INC",
@@ -1558,7 +1587,11 @@
     "name": "COREWEAVE INC-CL A",
     "type": "Common Stock"
   },
-  "N07059210": null,
+  "N07059210": {
+    "ticker": "ASML",
+    "name": "ASML HOLDING NV",
+    "via": "sec-name"
+  },
   "11135F101": {
     "ticker": "AVGO",
     "name": "BROADCOM INC",
@@ -1645,7 +1678,11 @@
     "name": "WARRIOR MET COAL INC",
     "type": "Common Stock"
   },
-  "H8817H100": null,
+  "H8817H100": {
+    "ticker": "RIG",
+    "name": "Transocean Ltd.",
+    "via": "sec-name"
+  },
   "020764106": {
     "ticker": "AMR",
     "name": "ALPHA METALLURGICAL RESOURCE",
@@ -1661,8 +1698,16 @@
     "name": "INVESCO S&P 500 EQUAL WEIGHT",
     "type": "Mutual Fund"
   },
-  "G0896C103": null,
-  "G7997R103": null,
+  "G0896C103": {
+    "ticker": "TBBB",
+    "name": "BBB FOODS INC",
+    "via": "sec-name"
+  },
+  "G7997R103": {
+    "ticker": "STX",
+    "name": "Seagate Technology Holdings plc",
+    "via": "sec-name"
+  },
   "35137L105": {
     "ticker": "FOXA",
     "name": "FOX CORP - CLASS A",
@@ -1678,7 +1723,11 @@
     "name": "CDW CORP/DE",
     "type": "Common Stock"
   },
-  "N62509109": null,
+  "N62509109": {
+    "ticker": "NAMS",
+    "name": "NewAmsterdam Pharma Co N.V.",
+    "via": "sec-name"
+  },
   "76155X100": {
     "ticker": "RVMD",
     "name": "REVOLUTION MEDICINES INC",
@@ -1689,7 +1738,11 @@
     "name": "SS SPDR S&P 500 ETF TRUST-US",
     "type": "Mutual Fund"
   },
-  "G11448100": null,
+  "G11448100": {
+    "ticker": "BTDR",
+    "name": "Bitdeer Technologies Group",
+    "via": "sec-name"
+  },
   "G25508105": null,
   "88160R101": {
     "ticker": "TSLA",
@@ -1756,7 +1809,11 @@
     "name": "SOUTHERN COPPER CORP",
     "type": "Common Stock"
   },
-  "G54950103": null,
+  "G54950103": {
+    "ticker": "LIN",
+    "name": "LINDE PLC",
+    "via": "sec-name"
+  },
   "29362U104": {
     "ticker": "ENTG",
     "name": "ENTEGRIS INC",
@@ -1837,7 +1894,11 @@
     "name": "SKEENA RESOURCES LTD",
     "type": "Common Stock"
   },
-  "N4732M103": null,
+  "N4732M103": {
+    "ticker": "JBS",
+    "name": "JBS N.V.",
+    "via": "sec-name"
+  },
   "61225M102": {
     "ticker": "GLUE",
     "name": "MONTE ROSA THERAPEUTICS INC",
@@ -1873,7 +1934,11 @@
     "name": "SOLSTICE ADV MATERIALS INC",
     "type": "Common Stock"
   },
-  "G3730V105": null,
+  "G3730V105": {
+    "ticker": "FTAI",
+    "name": "FTAI Aviation Ltd.",
+    "via": "sec-name"
+  },
   "07373V105": {
     "ticker": "BEAM",
     "name": "BEAM THERAPEUTICS INC",
@@ -1884,8 +1949,16 @@
     "name": "AURORA INNOVATION INC",
     "type": "Common Stock"
   },
-  "Q4982L109": null,
-  "Y95308105": null,
+  "Q4982L109": {
+    "ticker": "IREN",
+    "name": "IREN Ltd",
+    "via": "sec-name"
+  },
+  "Y95308105": {
+    "ticker": "WVE",
+    "name": "Wave Life Sciences, Inc.",
+    "via": "sec-name"
+  },
   "68404L201": {
     "ticker": "OPCH",
     "name": "OPTION CARE HEALTH INC",
@@ -1911,7 +1984,11 @@
     "name": "CLOUDFLARE INC - CLASS A",
     "type": "Common Stock"
   },
-  "N53745100": null,
+  "N53745100": {
+    "ticker": "LYB",
+    "name": "LyondellBasell Industries N.V.",
+    "via": "sec-name"
+  },
   "90184D100": {
     "ticker": "TWST",
     "name": "TWIST BIOSCIENCE CORP",
@@ -1983,8 +2060,16 @@
     "type": "Mutual Fund"
   },
   "G5509L101": null,
-  "G48833118": null,
-  "Y2065G121": null,
+  "G48833118": {
+    "ticker": "WFRD",
+    "name": "Weatherford International plc",
+    "via": "sec-name"
+  },
+  "Y2065G121": {
+    "ticker": "DHT",
+    "name": "DHT Holdings, Inc.",
+    "via": "sec-name"
+  },
   "92556V106": {
     "ticker": "VTRS",
     "name": "VIATRIS INC",
@@ -2006,7 +2091,11 @@
     "name": "HERC HOLDINGS INC",
     "type": "Common Stock"
   },
-  "N00985106": null,
+  "N00985106": {
+    "ticker": "AER",
+    "name": "AerCap Holdings N.V.",
+    "via": "sec-name"
+  },
   "78464A631": {
     "ticker": "XAR",
     "name": "SS SPDR S&P AEROSPACE DEF",
@@ -2103,8 +2192,16 @@
     "name": "INVESCO QQQ TRUST SERIES 1",
     "type": "Mutual Fund"
   },
-  "G89479102": null,
-  "G0378L100": null,
+  "G89479102": {
+    "ticker": "TRMD",
+    "name": "TORM plc",
+    "via": "sec-name"
+  },
+  "G0378L100": {
+    "ticker": "AU",
+    "name": "AngloGold Ashanti PLC",
+    "via": "sec-name"
+  },
   "45579U109": {
     "ticker": "INDV",
     "name": "INDIVIOR PHARMACEUTICALS INC",
@@ -2130,7 +2227,11 @@
     "name": "BARRICK MINING CORP",
     "type": "Common Stock"
   },
-  "G61188101": null,
+  "G61188101": {
+    "ticker": "LBTYA",
+    "name": "Liberty Global Ltd.",
+    "via": "sec-name"
+  },
   "67401P405": {
     "ticker": "OCSL",
     "name": "OAKTREE SPECIALTY LENDING CO",
@@ -2166,7 +2267,11 @@
     "name": "ETSY INC",
     "type": "Corp"
   },
-  "G9001E128": null,
+  "G9001E128": {
+    "ticker": "LILA",
+    "name": "Liberty Latin America Ltd.",
+    "via": "sec-name"
+  },
   "29355AAK3": {
     "ticker": null,
     "name": "ENPHASE ENERGY INC",
@@ -2207,7 +2312,11 @@
     "name": "CONMED CORP",
     "type": "Corp"
   },
-  "V5633W109": null,
+  "V5633W109": {
+    "ticker": "MMYT",
+    "name": "MakeMyTrip Ltd",
+    "via": "sec-name"
+  },
   "767292AB1": {
     "ticker": null,
     "name": "RIOT PLATFORMS INC",
@@ -2223,7 +2332,11 @@
     "name": "BENTLEY SYSTEMS",
     "type": "Corp"
   },
-  "G98239109": null,
+  "G98239109": {
+    "ticker": "XP",
+    "name": "XP Inc.",
+    "via": "sec-name"
+  },
   "91332UAB7": {
     "ticker": null,
     "name": "UNITY SOFTWARE INC",
@@ -2284,7 +2397,11 @@
     "name": "SNAP INC",
     "type": "Corp"
   },
-  "G7553X106": null,
+  "G7553X106": {
+    "ticker": "KRSP",
+    "name": "Rice Acquisition Corp 3",
+    "via": "sec-name"
+  },
   "84762LAZ8": {
     "ticker": null,
     "name": "SPECTRUM BRANDS INC",
@@ -2490,7 +2607,11 @@
     "name": "PAGERDUTY INC.",
     "type": "Corp"
   },
-  "G9001E102": null,
+  "G9001E102": {
+    "ticker": "LILA",
+    "name": "Liberty Latin America Ltd.",
+    "via": "sec-name"
+  },
   "803607AD2": {
     "ticker": null,
     "name": "SAREPTA THERAPEUTICS INC",
@@ -2546,7 +2667,11 @@
     "name": "BATTALION OIL CORP",
     "type": "Common Stock"
   },
-  "G2R11M108": null,
+  "G2R11M108": {
+    "ticker": "DPC",
+    "name": "DPC Holdings PLC",
+    "via": "sec-name"
+  },
   "76954AAD5": {
     "ticker": null,
     "name": "RIVIAN AUTO INC",
@@ -2562,7 +2687,11 @@
     "name": "TRANSMEDICS GROUP INC",
     "type": "Corp"
   },
-  "81761L102": null,
+  "81761L102": {
+    "ticker": "SVC",
+    "name": "Service Properties Trust",
+    "via": "sec-name"
+  },
   "92939UAT3": {
     "ticker": null,
     "name": "WEC ENERGY GROUP INC",
@@ -2633,7 +2762,11 @@
     "name": "REVOLUTION MEDICINES INC",
     "type": "Corp"
   },
-  "L01800116": null,
+  "L01800116": {
+    "ticker": "ALVO",
+    "name": "Alvotech",
+    "via": "sec-name"
+  },
   "64049MAB6": {
     "ticker": null,
     "name": "NEOGENOMICS INC",
@@ -2659,8 +2792,16 @@
     "name": "SUNOPTA INC",
     "type": "Common Stock"
   },
-  "G7553X114": null,
-  "L01800108": null,
+  "G7553X114": {
+    "ticker": "KRSP",
+    "name": "Rice Acquisition Corp 3",
+    "via": "sec-name"
+  },
+  "L01800108": {
+    "ticker": "ALVO",
+    "name": "Alvotech",
+    "via": "sec-name"
+  },
   "819047AB7": {
     "ticker": null,
     "name": "SHAKE SHACK INC",
@@ -2682,9 +2823,10 @@
     "type": "Depositary Receipt"
   },
   "477143AP6": {
-    "ticker": null,
+    "ticker": "JBLU",
     "name": "JETBLUE AIRWAYS CORP",
-    "type": "Corp"
+    "type": "Corp",
+    "via": "sec-name"
   },
   "03040WBE4": {
     "ticker": null,
@@ -2692,25 +2834,33 @@
     "type": "Corp"
   },
   "19260QAB3": {
-    "ticker": null,
-    "name": "COINBASE GLOBAL INC",
-    "type": "Corp"
+    "ticker": "COIN",
+    "name": "Coinbase Global, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
-  "G25457105": null,
+  "G25457105": {
+    "ticker": "CRDO",
+    "name": "Credo Technology Group Holding Ltd",
+    "via": "sec-name"
+  },
   "679295AF2": {
-    "ticker": null,
-    "name": "OKTA INC",
-    "type": "Corp"
+    "ticker": "OKTA",
+    "name": "Okta, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "74736LAD1": {
-    "ticker": null,
-    "name": "Q2 HOLDINGS INC",
-    "type": "Corp"
+    "ticker": "QTWO",
+    "name": "Q2 Holdings, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "852234AJ2": {
-    "ticker": null,
-    "name": "BLOCK INC",
-    "type": "Corp"
+    "ticker": "XYZ",
+    "name": "Block, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "743312AB6": {
     "ticker": null,
@@ -2723,19 +2873,22 @@
     "type": "Common Stock"
   },
   "22410JAB2": {
-    "ticker": null,
-    "name": "CRACKER BARREL OLD COUNT",
-    "type": "Corp"
+    "ticker": "CBRL",
+    "name": "CRACKER BARREL OLD COUNTRY STORE, INC",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "87157DAJ8": {
-    "ticker": null,
-    "name": "SYNAPTICS INC",
-    "type": "Corp"
+    "ticker": "SYNA",
+    "name": "SYNAPTICS Inc",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "707569AU3": {
-    "ticker": null,
-    "name": "PENN ENTERTAINMENT INC",
-    "type": "Corp"
+    "ticker": "PENN",
+    "name": "PENN Entertainment, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "02156K103": {
     "ticker": "OPTU",
@@ -2743,30 +2896,39 @@
     "type": "Common Stock"
   },
   "131193AE4": {
-    "ticker": null,
-    "name": "CALLAWAY GOLF CO",
-    "type": "Corp"
+    "ticker": "CALY",
+    "name": "Callaway Golf Co",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "501812AB7": {
-    "ticker": null,
+    "ticker": "LCII",
     "name": "LCI INDUSTRIES",
-    "type": "Corp"
+    "type": "Corp",
+    "via": "sec-name"
   },
   "759916AD1": {
-    "ticker": null,
+    "ticker": "RGEN",
     "name": "REPLIGEN CORP",
-    "type": "Corp"
+    "type": "Corp",
+    "via": "sec-name"
   },
   "89677QAB3": {
-    "ticker": null,
-    "name": "TRIP.COM GROUP LTD",
-    "type": "Corp"
+    "ticker": "TCOM",
+    "name": "Trip.com Group Ltd",
+    "type": "Corp",
+    "via": "sec-name"
   },
-  "G470AU126": null,
+  "G470AU126": {
+    "ticker": "ILLU",
+    "name": "Illumination Acquisition Corp. I",
+    "via": "sec-name"
+  },
   "69331CAL2": {
-    "ticker": null,
-    "name": "PG&E CORP",
-    "type": "Corp"
+    "ticker": "PCG",
+    "name": "PG&E Corp",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "46138G508": {
     "ticker": "BKLN",
@@ -2774,24 +2936,28 @@
     "type": "Mutual Fund"
   },
   "842587DZ7": {
-    "ticker": null,
+    "ticker": "SO",
     "name": "SOUTHERN CO",
-    "type": "Corp"
+    "type": "Corp",
+    "via": "sec-name"
   },
   "05988JAD5": {
-    "ticker": null,
-    "name": "BANDWIDTH INC",
-    "type": "Corp"
+    "ticker": "BAND",
+    "name": "Bandwidth Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "477839AB0": {
-    "ticker": null,
-    "name": "JBT MAREL CORP",
-    "type": "Corp"
+    "ticker": "JBTM",
+    "name": "JBT MAREL Corp",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "25402DAB8": {
-    "ticker": null,
-    "name": "DIGITALOCEAN HOLDINGS",
-    "type": "Corp"
+    "ticker": "DOCN",
+    "name": "DigitalOcean Holdings, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "40415F101": {
     "ticker": "HDB",
@@ -2799,44 +2965,52 @@
     "type": "Depositary Receipt"
   },
   "19260QAF4": {
-    "ticker": null,
-    "name": "COINBASE GLOBAL INC",
-    "type": "Corp"
+    "ticker": "COIN",
+    "name": "Coinbase Global, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "163072AA9": {
-    "ticker": null,
-    "name": "CHEESECAKE FACTORY (THE)",
-    "type": "Corp"
+    "ticker": "CAKE",
+    "name": "CHEESECAKE FACTORY INC",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "594972AL5": {
-    "ticker": null,
-    "name": "STRATEGY INC",
-    "type": "Corp"
+    "ticker": "MSTR",
+    "name": "Strategy Inc",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "737446AT1": {
-    "ticker": null,
-    "name": "POST HOLDINGS INC",
-    "type": "Corp"
+    "ticker": "POST",
+    "name": "Post Holdings, Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "472145AH4": {
-    "ticker": null,
-    "name": "JAZZ INVESTMENTS I LTD",
-    "type": "Corp"
+    "ticker": "JAZZ",
+    "name": "Jazz Pharmaceuticals plc",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "70202LAD4": {
-    "ticker": null,
+    "ticker": "PSN",
     "name": "PARSONS CORP",
-    "type": "Corp"
+    "type": "Corp",
+    "via": "sec-name"
   },
   "59001ABF8": {
-    "ticker": null,
-    "name": "MERITAGE HOMES CORP",
-    "type": "Corp"
+    "ticker": "MTH",
+    "name": "Meritage Homes CORP",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "65339KCY4": {
-    "ticker": null,
-    "name": "NEXTERA ENERGY CAPITAL",
-    "type": "Corp"
+    "ticker": "NEE",
+    "name": "NEXTERA ENERGY INC",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "450056AB2": {
     "ticker": null,
@@ -2844,9 +3018,10 @@
     "type": "Corp"
   },
   "15102KAA8": {
-    "ticker": null,
-    "name": "CELCUITY INC",
-    "type": "Corp"
+    "ticker": "CELC",
+    "name": "Celcuity Inc.",
+    "type": "Corp",
+    "via": "sec-name"
   },
   "57636Q104": {
     "ticker": "MA",
@@ -2963,7 +3138,11 @@
     "name": "SOMNIGROUP INTERNATIONAL INC",
     "type": "Common Stock"
   },
-  "Y2573F102": null,
+  "Y2573F102": {
+    "ticker": "FLEX",
+    "name": "FLEX LTD.",
+    "via": "sec-name"
+  },
   "00187Y100": {
     "ticker": "APG",
     "name": "API GROUP CORP",
@@ -2980,9 +3159,10 @@
     "type": "Common Stock"
   },
   "02079K404": {
-    "ticker": null,
-    "name": "ALPHABET INC",
-    "type": "Preferred Stock"
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "type": "Preferred Stock",
+    "via": "sec-name"
   },
   "03990B101": {
     "ticker": "ARES",
@@ -2995,9 +3175,10 @@
     "type": "Common Stock"
   },
   "02079K602": {
-    "ticker": null,
-    "name": "ALPHABET INC",
-    "type": "Preferred Stock"
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "type": "Preferred Stock",
+    "via": "sec-name"
   },
   "82835W108": {
     "ticker": "SPRY",
@@ -3034,7 +3215,11 @@
     "name": "VANECK SEMICONDUCTOR ETF",
     "type": "Mutual Fund"
   },
-  "G8068L108": null,
+  "G8068L108": {
+    "ticker": "SN",
+    "name": "SharkNinja, Inc.",
+    "via": "sec-name"
+  },
   "62548M209": {
     "ticker": "CTEV",
     "name": "CLARITEV CORP",
@@ -3090,14 +3275,26 @@
     "name": "TD SYNNEX CORP",
     "type": "Common Stock"
   },
-  "G9600F104": null,
-  "G1890L107": null,
+  "G9600F104": {
+    "ticker": "VGNT",
+    "name": "Versigent PLC",
+    "via": "sec-name"
+  },
+  "G1890L107": {
+    "ticker": "CPRI",
+    "name": "Capri Holdings Ltd",
+    "via": "sec-name"
+  },
   "05603J108": {
     "ticker": "BKV",
     "name": "BKV CORPORATION",
     "type": "Common Stock"
   },
-  "G76279101": null,
+  "G76279101": {
+    "ticker": "ROIV",
+    "name": "Roivant Sciences Ltd.",
+    "via": "sec-name"
+  },
   "024061103": {
     "ticker": "DCH",
     "name": "DAUCH CORPORATION",
@@ -3150,7 +3347,11 @@
     "name": "CANADIAN PACIFIC KANSAS CITY",
     "type": "Common Stock"
   },
-  "N3168P101": null,
+  "N3168P101": {
+    "ticker": "FER",
+    "name": "Ferrovial N.V.",
+    "via": "sec-name"
+  },
   "94106L109": {
     "ticker": "WM",
     "name": "WASTE MANAGEMENT INC",
@@ -3181,7 +3382,11 @@
     "name": "SCHRODINGER INC",
     "type": "Common Stock"
   },
-  "H5919C104": null,
+  "H5919C104": {
+    "ticker": "ONON",
+    "name": "On Holding AG",
+    "via": "sec-name"
+  },
   "92338C103": {
     "ticker": "VLTO",
     "name": "VERALTO CORP",
@@ -3277,8 +3482,16 @@
     "name": "CBRE GROUP INC - A",
     "type": "Common Stock"
   },
-  "G4705A100": null,
-  "H2927K103": null,
+  "G4705A100": {
+    "ticker": "ICLR",
+    "name": "ICON PLC",
+    "via": "sec-name"
+  },
+  "H2927K103": {
+    "ticker": "AMRZ",
+    "name": "Amrize Ltd",
+    "via": "sec-name"
+  },
   "14316J108": {
     "ticker": "CG",
     "name": "CARLYLE GROUP INC/THE",
@@ -3289,7 +3502,11 @@
     "name": "COREBRIDGE FINANCIAL INC",
     "type": "Common Stock"
   },
-  "G87052109": null,
+  "G87052109": {
+    "ticker": "TEL",
+    "name": "TE Connectivity plc",
+    "via": "sec-name"
+  },
   "00724F101": {
     "ticker": "ADBE",
     "name": "ADOBE INC",
@@ -3366,7 +3583,11 @@
     "name": "EOG RESOURCES INC",
     "type": "Common Stock"
   },
-  "N30577105": null,
+  "N30577105": {
+    "ticker": "ZGN",
+    "name": "Ermenegildo Zegna N.V.",
+    "via": "sec-name"
+  },
   "48251W104": {
     "ticker": "KKR",
     "name": "KKR & CO INC",
@@ -3382,7 +3603,11 @@
     "name": "AUTOLIV INC",
     "type": "Common Stock"
   },
-  "G2717C106": null,
+  "G2717C106": {
+    "ticker": "CWK",
+    "name": "Cushman & Wakefield Ltd.",
+    "via": "sec-name"
+  },
   "98138H101": {
     "ticker": "WDAY",
     "name": "WORKDAY INC-CLASS A",
@@ -3403,7 +3628,11 @@
     "name": "BORGWARNER INC",
     "type": "Common Stock"
   },
-  "M2029K104": null,
+  "M2029K104": {
+    "ticker": "BIRK",
+    "name": "Birkenstock Holding plc",
+    "via": "sec-name"
+  },
   "064058100": {
     "ticker": "BNY",
     "name": "BANK OF NEW YORK MELLON CORP",
@@ -3481,13 +3710,21 @@
     "name": "CEREBRAS SYSTEMS INC - A",
     "type": "Common Stock"
   },
-  "L8681T102": null,
+  "L8681T102": {
+    "ticker": "SPOT",
+    "name": "Spotify Technology S.A.",
+    "via": "sec-name"
+  },
   "03769M106": {
     "ticker": "APO",
     "name": "APOLLO GLOBAL MANAGEMENT INC",
     "type": "Common Stock"
   },
-  "G6683N103": null,
+  "G6683N103": {
+    "ticker": "NU",
+    "name": "Nu Holdings Ltd.",
+    "via": "sec-name"
+  },
   "16935C109": {
     "ticker": "CHYM",
     "name": "CHIME FINANCIAL INC-CL A",
@@ -3503,7 +3740,11 @@
     "name": "SERVICENOW INC",
     "type": "Common Stock"
   },
-  "G9572D103": null,
+  "G9572D103": {
+    "ticker": "BULL",
+    "name": "Webull Corp",
+    "via": "sec-name"
+  },
   "00138L108": {
     "ticker": "RERE",
     "name": "ATRENEW INC",
@@ -3519,7 +3760,11 @@
     "name": "DOORDASH INC - A",
     "type": "Common Stock"
   },
-  "G00894108": null,
+  "G00894108": {
+    "ticker": "ARX",
+    "name": "Accelerant Holdings",
+    "via": "sec-name"
+  },
   "36866J105": {
     "ticker": "GEMI",
     "name": "GEMINI SPACE STATION INC-A",
@@ -3570,10 +3815,26 @@
     "name": "XANADU QUANTUM TECHNOLO-CL B",
     "type": "Common Stock"
   },
-  "G16910120": null,
-  "G32089107": null,
-  "G5279N105": null,
-  "N97284108": null,
+  "G16910120": {
+    "ticker": "BLSH",
+    "name": "Bullish",
+    "via": "sec-name"
+  },
+  "G32089107": {
+    "ticker": "ETOR",
+    "name": "eToro Group Ltd.",
+    "via": "sec-name"
+  },
+  "G5279N105": {
+    "ticker": "KLAR",
+    "name": "Klarna Group plc",
+    "via": "sec-name"
+  },
+  "N97284108": {
+    "ticker": "NBIS",
+    "name": "Nebius Group N.V.",
+    "via": "sec-name"
+  },
   "58507V107": {
     "ticker": "MDLN",
     "name": "MEDLINE INC-CL A",
@@ -3654,7 +3915,11 @@
     "name": "AIR PRODUCTS & CHEMICALS INC",
     "type": "Common Stock"
   },
-  "G7496G103": null,
+  "G7496G103": {
+    "ticker": "RNR",
+    "name": "RENAISSANCERE HOLDINGS LTD",
+    "via": "sec-name"
+  },
   "14448C104": {
     "ticker": "CARR",
     "name": "CARRIER GLOBAL CORP",
@@ -3700,7 +3965,11 @@
     "name": "GOOSEHEAD INSURANCE INC -A",
     "type": "Common Stock"
   },
-  "H82027105": null,
+  "H82027105": {
+    "ticker": "SOPH",
+    "name": "SOPHiA GENETICS SA",
+    "via": "sec-name"
+  },
   "71385M107": {
     "ticker": "PRM",
     "name": "PERIMETER SOLUTIONS INC",
@@ -3731,7 +4000,11 @@
     "name": "BANK OF NOVA SCOTIA",
     "type": "Common Stock"
   },
-  "G4863A108": null,
+  "G4863A108": {
+    "ticker": "BRSL",
+    "name": "Brightstar Lottery PLC",
+    "via": "sec-name"
+  },
   "15126Q208": {
     "ticker": "CPAC",
     "name": "CEMENTOS PACASMAYO SAA - ADR",
@@ -3754,6 +4027,14 @@
     "type": "Common Stock"
   },
   "G3421J106": null,
-  "G491BT108": null,
-  "N5505D105": null
+  "G491BT108": {
+    "ticker": "IVZ",
+    "name": "Invesco Ltd.",
+    "via": "sec-name"
+  },
+  "N5505D105": {
+    "ticker": "MICC",
+    "name": "Magnum Ice Cream Co N.V.",
+    "via": "sec-name"
+  }
 }

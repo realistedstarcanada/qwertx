@@ -386,7 +386,7 @@
       "sharesChangePct": 0.41450777202072536,
       "status": "added",
       "flow": 638640,
-      "ticker": null
+      "ticker": "WBD"
     },
     {
       "key": "25754A201",
@@ -418,7 +418,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "CPRI"
     },
     {
       "key": "550021109",
@@ -498,7 +498,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "BRSL"
     },
     {
       "key": "15126Q208",

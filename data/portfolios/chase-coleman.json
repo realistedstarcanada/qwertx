@@ -274,7 +274,7 @@
       "sharesChangePct": -0.25894743101582085,
       "status": "reduced",
       "flow": -187937519.59122166,
-      "ticker": null
+      "ticker": "SPOT"
     },
     {
       "key": "874054109",
@@ -370,7 +370,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 275121500,
-      "ticker": null
+      "ticker": "STX"
     },
     {
       "key": "92826C839",
@@ -434,7 +434,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "NU"
     },
     {
       "key": "947002101",
@@ -578,7 +578,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "BULL"
     },
     {
       "key": "00138L108",
@@ -722,7 +722,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "ARX"
     },
     {
       "key": "36866J105",
@@ -924,7 +924,7 @@
       "prevValue": 3573000,
       "prevWeight": 0.00015639900536467538,
       "flow": -3573000,
-      "ticker": null
+      "ticker": "BLSH"
     },
     {
       "key": "G32089107",
@@ -936,7 +936,7 @@
       "prevValue": 2402400,
       "prevWeight": 0.00010515896179347779,
       "flow": -2402400,
-      "ticker": null
+      "ticker": "ETOR"
     },
     {
       "key": "G5279N105",
@@ -948,7 +948,7 @@
       "prevValue": 2290750,
       "prevWeight": 0.0001002717664537168,
       "flow": -2290750,
-      "ticker": null
+      "ticker": "KLAR"
     },
     {
       "key": "316841105",

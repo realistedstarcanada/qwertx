@@ -178,7 +178,7 @@
       "sharesChangePct": -0.10663198959687907,
       "status": "reduced",
       "flow": -27198576.419213973,
-      "ticker": null
+      "ticker": "AON"
     },
     {
       "key": "879369106",
@@ -210,7 +210,7 @@
       "sharesChangePct": 1.1294765840220387,
       "status": "added",
       "flow": 86550840.87968951,
-      "ticker": null
+      "ticker": "NCLH"
     },
     {
       "key": "60855R100",
@@ -258,7 +258,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "HLF"
     },
     {
       "key": "26969P108",
@@ -322,7 +322,7 @@
       "sharesChangePct": -0.3623196616439183,
       "status": "reduced",
       "flow": -53395076.11409876,
-      "ticker": null
+      "ticker": "LBTYA"
     },
     {
       "key": "40054J109",
@@ -400,7 +400,7 @@
       "prevValue": 259632000,
       "prevWeight": 0.05075517361369048,
       "flow": -259632000,
-      "ticker": null
+      "ticker": "WTW"
     },
     {
       "key": "92243G108",

@@ -34,7 +34,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 533200000,
-      "ticker": null
+      "ticker": "WBD"
     },
     {
       "key": "023135106",
@@ -210,7 +210,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 166932100,
-      "ticker": null
+      "ticker": "FLEX"
     },
     {
       "key": "14040H105",
@@ -386,7 +386,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 66157000,
-      "ticker": null
+      "ticker": "GOOGL"
     },
     {
       "key": "N07059210",
@@ -402,7 +402,7 @@
       "sharesChangePct": 1.5,
       "status": "added",
       "flow": 35763696,
-      "ticker": null
+      "ticker": "ASML"
     },
     {
       "key": "871829107",
@@ -498,7 +498,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 10060000,
-      "ticker": null
+      "ticker": "GOOGL"
     },
     {
       "key": "82835W108",
@@ -804,7 +804,7 @@
       "prevValue": 13820903,
       "prevWeight": 0.006635745695967808,
       "flow": -13820903,
-      "ticker": null
+      "ticker": "SN"
     },
     {
       "key": "62548M209",

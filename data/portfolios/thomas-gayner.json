@@ -578,7 +578,7 @@
       "sharesChangePct": 0.053763440860215055,
       "status": "added",
       "flow": 5708340.000000001,
-      "ticker": null
+      "ticker": "LIN"
     },
     {
       "key": "25243Q205",
@@ -946,7 +946,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "AON"
     },
     {
       "key": "907818108",
@@ -1378,7 +1378,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "RNR"
     },
     {
       "key": "293792107",
@@ -1634,7 +1634,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "SPOT"
     },
     {
       "key": "82509L107",

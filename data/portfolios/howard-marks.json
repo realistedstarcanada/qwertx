@@ -66,7 +66,7 @@
       "sharesChangePct": -0.1472216262244608,
       "status": "reduced",
       "flow": -90507125.67068763,
-      "ticker": null
+      "ticker": "TRMD"
     },
     {
       "key": "165167735",
@@ -114,7 +114,7 @@
       "sharesChangePct": -0.013651487453662507,
       "status": "reduced",
       "flow": -3559159.987820422,
-      "ticker": null
+      "ticker": "AU"
     },
     {
       "key": "45579U109",
@@ -258,7 +258,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "LBTYA"
     },
     {
       "key": "67401P405",
@@ -418,7 +418,7 @@
       "sharesChangePct": 0.31490211836250476,
       "status": "added",
       "flow": 14102260.233492343,
-      "ticker": null
+      "ticker": "LILA"
     },
     {
       "key": "29355AAK3",
@@ -562,7 +562,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 52387693,
-      "ticker": null
+      "ticker": "MMYT"
     },
     {
       "key": "767292AB1",
@@ -642,7 +642,7 @@
       "sharesChangePct": -0.017402220485503037,
       "status": "reduced",
       "flow": -897551.9939784568,
-      "ticker": null
+      "ticker": "XP"
     },
     {
       "key": "91332UAB7",
@@ -690,7 +690,7 @@
       "sharesChangePct": 0.8,
       "status": "added",
       "flow": 21060000,
-      "ticker": null
+      "ticker": "LYB"
     },
     {
       "key": "82452JAD1",
@@ -898,7 +898,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "KRSP"
     },
     {
       "key": "778920306",
@@ -1170,7 +1170,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 11902500,
-      "ticker": null
+      "ticker": "BTDR"
     },
     {
       "key": "833445AB5",
@@ -1634,7 +1634,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "LILA"
     },
     {
       "key": "803607AD2",
@@ -1842,7 +1842,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 3679500,
-      "ticker": null
+      "ticker": "DPC"
     },
     {
       "key": "76954AAD5",
@@ -1906,7 +1906,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 3360365,
-      "ticker": null
+      "ticker": "SVC"
     },
     {
       "key": "92939UAT3",
@@ -2194,7 +2194,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "ALVO"
     },
     {
       "key": "64049MAB6",
@@ -2290,7 +2290,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "KRSP"
     },
     {
       "key": "L01800108",
@@ -2306,7 +2306,7 @@
       "sharesChangePct": -0.5918062973362551,
       "status": "reduced",
       "flow": -524185.79910595826,
-      "ticker": null
+      "ticker": "ALVO"
     },
     {
       "key": "819047AB7",
@@ -2376,7 +2376,7 @@
       "prevValue": 94793457,
       "prevWeight": 0.014456570587629836,
       "flow": -94793457,
-      "ticker": null
+      "ticker": "JBLU"
     },
     {
       "key": "654902204",
@@ -2424,7 +2424,7 @@
       "prevValue": 52227725,
       "prevWeight": 0.00796504122741108,
       "flow": -52227725,
-      "ticker": null
+      "ticker": "COIN"
     },
     {
       "key": "G25457105",
@@ -2436,7 +2436,7 @@
       "prevValue": 50595930,
       "prevWeight": 0.007716182705434807,
       "flow": -50595930,
-      "ticker": null
+      "ticker": "CRDO"
     },
     {
       "key": "87422Q109:CALL",
@@ -2460,7 +2460,7 @@
       "prevValue": 46679418,
       "prevWeight": 0.007118891141468538,
       "flow": -46679418,
-      "ticker": null
+      "ticker": "OKTA"
     },
     {
       "key": "74736LAD1",
@@ -2472,7 +2472,7 @@
       "prevValue": 40884654,
       "prevWeight": 0.006235154885234563,
       "flow": -40884654,
-      "ticker": null
+      "ticker": "QTWO"
     },
     {
       "key": "852234AJ2",
@@ -2484,7 +2484,7 @@
       "prevValue": 37684552,
       "prevWeight": 0.005747120141965148,
       "flow": -37684552,
-      "ticker": null
+      "ticker": "XYZ"
     },
     {
       "key": "743312AB6",
@@ -2520,7 +2520,7 @@
       "prevValue": 25658041,
       "prevWeight": 0.003913005101784614,
       "flow": -25658041,
-      "ticker": null
+      "ticker": "CBRL"
     },
     {
       "key": "87157DAJ8",
@@ -2532,7 +2532,7 @@
       "prevValue": 14322701,
       "prevWeight": 0.002184297783464279,
       "flow": -14322701,
-      "ticker": null
+      "ticker": "SYNA"
     },
     {
       "key": "707569AU3",
@@ -2544,7 +2544,7 @@
       "prevValue": 9564390,
       "prevWeight": 0.0014586268244507733,
       "flow": -9564390,
-      "ticker": null
+      "ticker": "PENN"
     },
     {
       "key": "02156K103",
@@ -2568,7 +2568,7 @@
       "prevValue": 9179748,
       "prevWeight": 0.0013999666130823124,
       "flow": -9179748,
-      "ticker": null
+      "ticker": "CALY"
     },
     {
       "key": "501812AB7",
@@ -2580,7 +2580,7 @@
       "prevValue": 9098706,
       "prevWeight": 0.001387607222142886,
       "flow": -9098706,
-      "ticker": null
+      "ticker": "LCII"
     },
     {
       "key": "759916AD1",
@@ -2592,7 +2592,7 @@
       "prevValue": 8790069,
       "prevWeight": 0.0013405382290112788,
       "flow": -8790069,
-      "ticker": null
+      "ticker": "RGEN"
     },
     {
       "key": "89677QAB3",
@@ -2604,7 +2604,7 @@
       "prevValue": 7870744,
       "prevWeight": 0.0012003356541070553,
       "flow": -7870744,
-      "ticker": null
+      "ticker": "TCOM"
     },
     {
       "key": "G470AU126",
@@ -2616,7 +2616,7 @@
       "prevValue": 7440000,
       "prevWeight": 0.0011346446113044066,
       "flow": -7440000,
-      "ticker": null
+      "ticker": "ILLU"
     },
     {
       "key": "629377508",
@@ -2640,7 +2640,7 @@
       "prevValue": 4144903,
       "prevWeight": 0.0006321225609313803,
       "flow": -4144903,
-      "ticker": null
+      "ticker": "PCG"
     },
     {
       "key": "46138G508",
@@ -2664,7 +2664,7 @@
       "prevValue": 3733127,
       "prevWeight": 0.0005693242518635734,
       "flow": -3733127,
-      "ticker": null
+      "ticker": "SO"
     },
     {
       "key": "05988JAD5",
@@ -2676,7 +2676,7 @@
       "prevValue": 3729465,
       "prevWeight": 0.0005687657749056974,
       "flow": -3729465,
-      "ticker": null
+      "ticker": "BAND"
     },
     {
       "key": "477839AB0",
@@ -2688,7 +2688,7 @@
       "prevValue": 2921877,
       "prevWeight": 0.0004456037624925115,
       "flow": -2921877,
-      "ticker": null
+      "ticker": "JBTM"
     },
     {
       "key": "25402DAB8",
@@ -2700,7 +2700,7 @@
       "prevValue": 2918583,
       "prevWeight": 0.00044510140774121627,
       "flow": -2918583,
-      "ticker": null
+      "ticker": "DOCN"
     },
     {
       "key": "40415F101",
@@ -2724,7 +2724,7 @@
       "prevValue": 2199111,
       "prevWeight": 0.0003353776136841727,
       "flow": -2199111,
-      "ticker": null
+      "ticker": "COIN"
     },
     {
       "key": "163072AA9",
@@ -2736,7 +2736,7 @@
       "prevValue": 2146380,
       "prevWeight": 0.0003273358200015527,
       "flow": -2146380,
-      "ticker": null
+      "ticker": "CAKE"
     },
     {
       "key": "594972AL5",
@@ -2748,7 +2748,7 @@
       "prevValue": 2119150,
       "prevWeight": 0.00032318308172657706,
       "flow": -2119150,
-      "ticker": null
+      "ticker": "MSTR"
     },
     {
       "key": "737446AT1",
@@ -2760,7 +2760,7 @@
       "prevValue": 2114775,
       "prevWeight": 0.00032251586799345115,
       "flow": -2114775,
-      "ticker": null
+      "ticker": "POST"
     },
     {
       "key": "472145AH4",
@@ -2772,7 +2772,7 @@
       "prevValue": 2072428,
       "prevWeight": 0.0003160576965747807,
       "flow": -2072428,
-      "ticker": null
+      "ticker": "JAZZ"
     },
     {
       "key": "70202LAD4",
@@ -2784,7 +2784,7 @@
       "prevValue": 2032190,
       "prevWeight": 0.00030992116030197607,
       "flow": -2032190,
-      "ticker": null
+      "ticker": "PSN"
     },
     {
       "key": "59001ABF8",
@@ -2796,7 +2796,7 @@
       "prevValue": 1839200,
       "prevWeight": 0.0002804890281063259,
       "flow": -1839200,
-      "ticker": null
+      "ticker": "MTH"
     },
     {
       "key": "65339KCY4",
@@ -2808,7 +2808,7 @@
       "prevValue": 1794265,
       "prevWeight": 0.00027363617116963723,
       "flow": -1794265,
-      "ticker": null
+      "ticker": "NEE"
     },
     {
       "key": "450056AB2",
@@ -2832,7 +2832,7 @@
       "prevValue": 1462800,
       "prevWeight": 0.00022308577115807607,
       "flow": -1462800,
-      "ticker": null
+      "ticker": "CELC"
     },
     {
       "key": "722304102",
