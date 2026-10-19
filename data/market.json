@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-19T18:47:01.008Z",
+  "updatedAt": "2026-10-19T18:56:41.051Z",
   "fearGreed": {
     "score": 24,
     "rating": "extreme fear",
@@ -7,7 +7,7 @@
     "previousWeek": 46,
     "previousMonth": 30,
     "previousYear": 22,
-    "asOf": "2026-10-19T18:41:22+00:00",
+    "asOf": "2026-10-19T18:52:29+00:00",
     "source": "CNN Fear & Greed Index"
   },
   "vix": null,
