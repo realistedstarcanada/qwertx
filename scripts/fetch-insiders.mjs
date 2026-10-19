@@ -142,6 +142,16 @@ export function summarize(dir, quarter) {
   const sellCos = byCompany(sells);
   const slim = (t) => ({ ticker: t.ticker, company: t.company, owner: t.owner, role: t.role, exec: !!(t.officer || t.director), owner10: !!t.owner10, date: t.date, filed: t.filed, shares: Math.round(t.shares), price: +t.price.toFixed(2), value: Math.round(t.value), plan: t.plan, acc: t.acc, ownerCik: t.ownerCik, issuerCik: t.issuerCik });
   const isExec = (t) => (t.officer || t.director) && !t.owner10;
+  // The same trade can appear in an original filing and an amendment: keep one.
+  const uniq = (list) => {
+    const seen = new Set();
+    return list.filter((t) => {
+      const k = `${t.ownerCik || t.owner}|${t.ticker}|${t.date}|${Math.round(t.shares)}`;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    });
+  };
 
   const monthly = {};
   for (const t of trades) {
@@ -166,10 +176,10 @@ export function summarize(dir, quarter) {
       plannedSells: sells.filter((t) => t.plan).length,
     },
     monthly,
-    topBuys: buys.sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
-    topExecBuys: buys.filter(isExec).sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
-    topExecSells: sells.filter(isExec).sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
-    topSells: sells.sort((a, b) => b.value - a.value).slice(0, 40).map(slim),
+    topBuys: uniq(buys.sort((a, b) => b.value - a.value)).slice(0, 40).map(slim),
+    topExecBuys: uniq(buys.filter(isExec).sort((a, b) => b.value - a.value)).slice(0, 40).map(slim),
+    topExecSells: uniq(sells.filter(isExec).sort((a, b) => b.value - a.value)).slice(0, 40).map(slim),
+    topSells: uniq(sells.sort((a, b) => b.value - a.value)).slice(0, 40).map(slim),
     clusterBuys: byCompany(buys.filter(isExec)).filter((c) => c.insiders >= 3).sort((a, b) => b.insiders - a.insiders || b.value - a.value).slice(0, 30),
     topBuyCompanies: buyCos.sort((a, b) => b.value - a.value).slice(0, 30),
     topSellCompanies: sellCos.sort((a, b) => b.value - a.value).slice(0, 30),

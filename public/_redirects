@@ -1,0 +1,8 @@
+# Paths from the first version of the site
+/investors/:slug/ /investors/:slug 301
+/stocks/:slug/ /stocks/:slug 301
+/investors/ /investors 301
+/stocks/ /smart-money 301
+/news/ /market 301
+/news /market 301
+/about/ /about 301

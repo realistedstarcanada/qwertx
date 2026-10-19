@@ -366,6 +366,13 @@ async function run() {
     }
   }
   const added = parts.flatMap((p) => p.trades);
+  // Fill party/state for any stored trade whose member could not be matched earlier.
+  for (const t of [...store.trades, ...added]) {
+    if (t.party) continue;
+    const parts = String(t.member).replace(/,?\s+(jr|sr|ii|iii|iv)\.?$/i, '').split(/\s+/);
+    const person = findPerson(people, { first: parts[0].replace(/\.$/, '').length > 1 ? parts[0] : parts[1] || '', last: parts[parts.length - 1], chamber: t.chamber, state: t.state });
+    if (person) Object.assign(t, { member: person.full, bioguide: person.id, party: person.party, state: t.state || person.state });
+  }
   const names = await secCompanyNames();
   for (const t of [...store.trades, ...added]) if (t.ticker && !t.company && names.has(t.ticker)) t.company = names.get(t.ticker);
   const cutoff = defaultSince();

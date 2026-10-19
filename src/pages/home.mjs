@@ -208,9 +208,10 @@ ${newsletter('n')}`;
 
 /** "SMITH JOHN A" -> "John A Smith" for SEC reporting-owner names. */
 export function titleish(name) {
+  // SEC lists people as "LAST FIRST MIDDLE"; entities are left as they are.
   const s = String(name || '').trim();
-  if (/[a-z]/.test(s)) return s;
-  const parts = s.split(/\s+/).map((w) => w.charAt(0) + w.slice(1).toLowerCase());
-  if (parts.length >= 2 && !/(inc|llc|lp|ltd|corp|trust|fund|partners|capital|holdings)\.?$/i.test(s)) return [...parts.slice(1), parts[0]].join(' ');
-  return parts.join(' ');
+  const entity = /\b(inc|llc|l\.?p|ltd|corp|corporation|trust|fund|partners|capital|holdings|group|co|company|plc|n\.?v|s\.?a|ag|gmbh|management|advisors|ventures|foundation|bank)\b\.?/i.test(s) || s.includes(',');
+  const parts = s.split(/\s+/).map((w) => (/[a-z]/.test(s) ? w : w.charAt(0) + w.slice(1).toLowerCase()));
+  if (entity) return /[a-z]/.test(s) ? s : parts.join(' ');
+  return parts.length >= 2 ? [...parts.slice(1), parts[0]].join(' ') : parts.join(' ');
 }
