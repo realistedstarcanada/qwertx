@@ -1,22 +1,22 @@
 {
   "quarter": "2026q3",
-  "generatedAt": "2026-10-19T18:47:06.187Z",
+  "generatedAt": "2026-10-19T18:56:44.519Z",
   "source": "SEC Insider Transactions Data Sets (Form 4, transaction codes P and S)",
   "totals": {
-    "buys": 2792,
-    "sells": 9666,
-    "buyValue": 1600031522137718,
-    "sellValue": 56127425878,
-    "buyCompanies": 1004,
-    "sellCompanies": 2066,
-    "plannedSells": 4754
+    "buys": 2763,
+    "sells": 9638,
+    "buyValue": 6865269239,
+    "sellValue": 44054740154,
+    "buyCompanies": 988,
+    "sellCompanies": 2060,
+    "plannedSells": 4746
   },
   "monthly": {
     "2026-09": {
       "buy": 883,
-      "sell": 2801,
+      "sell": 2800,
       "buyValue": 2283190999.120098,
-      "sellValue": 13605879305.518623
+      "sellValue": 13244381705.518631
     },
     "2026-05": {
       "buy": 13,
@@ -25,210 +25,38 @@
       "sellValue": 8947471.219999997
     },
     "2026-04": {
-      "buy": 9,
+      "buy": 10,
       "sell": 13,
-      "buyValue": 44954117.95469999,
+      "buyValue": 44956798.758999996,
       "sellValue": 1309769.11
-    },
-    "2022-03": {
-      "buy": 1,
-      "sell": 0,
-      "buyValue": 339077.56000000006,
-      "sellValue": 0
     },
     "2026-06": {
       "buy": 100,
-      "sell": 259,
+      "sell": 260,
       "buyValue": 1224974667.2969992,
-      "sellValue": 974067695.2710997
-    },
-    "2025-12": {
-      "buy": 1,
-      "sell": 1,
-      "buyValue": 24049.999999999996,
-      "sellValue": 86908.04999999999
+      "sellValue": 977331894.2210997
     },
     "2026-08": {
       "buy": 1210,
-      "sell": 4319,
-      "buyValue": 2071132716.8564,
-      "sellValue": 24344828259.894566
-    },
-    "2025-09": {
-      "buy": 1,
-      "sell": 2,
-      "buyValue": 58812,
-      "sellValue": 485384.56
-    },
-    "2026-02": {
-      "buy": 0,
-      "sell": 6,
-      "buyValue": 0,
-      "sellValue": 1799062.55
-    },
-    "2026-03": {
-      "buy": 3,
-      "sell": 4,
-      "buyValue": 1438091.0517999998,
-      "sellValue": 1375724.52
-    },
-    "2025-07": {
-      "buy": 1,
-      "sell": 0,
-      "buyValue": 3000000,
-      "sellValue": 0
+      "sell": 4316,
+      "buyValue": 1971147742.8763995,
+      "sellValue": 20681818997.334564
     },
     "2026-07": {
-      "buy": 549,
-      "sell": 2234,
-      "buyValue": 1600025830708166.8,
-      "sellValue": 17054490902.096266
-    },
-    "2025-03": {
-      "buy": 4,
-      "sell": 0,
-      "buyValue": 561716,
-      "sellValue": 0
-    },
-    "2024-03": {
-      "buy": 1,
-      "sell": 0,
-      "buyValue": 10072.5,
-      "sellValue": 0
-    },
-    "2018-12": {
-      "buy": 2,
-      "sell": 0,
-      "buyValue": 19609.5,
-      "sellValue": 0
-    },
-    "2019-06": {
-      "buy": 1,
-      "sell": 0,
-      "buyValue": 26179.72,
-      "sellValue": 0
-    },
-    "2025-05": {
-      "buy": 1,
-      "sell": 0,
-      "buyValue": 18126.02,
-      "sellValue": 0
-    },
-    "2025-10": {
-      "buy": 2,
-      "sell": 0,
-      "buyValue": 25004976.148200005,
-      "sellValue": 0
-    },
-    "2006-08": {
-      "buy": 1,
-      "sell": 0,
-      "buyValue": 49096,
-      "sellValue": 0
-    },
-    "2022-08": {
-      "buy": 0,
-      "sell": 1,
-      "buyValue": 0,
-      "sellValue": 6240
-    },
-    "2025-08": {
-      "buy": 1,
-      "sell": 2,
-      "buyValue": 1000,
-      "sellValue": 122245594.36
-    },
-    "2018-03": {
-      "buy": 1,
-      "sell": 0,
-      "buyValue": 24755,
-      "sellValue": 0
-    },
-    "2024-08": {
-      "buy": 0,
-      "sell": 1,
-      "buyValue": 0,
-      "sellValue": 1155.1499999999999
-    },
-    "2025-11": {
-      "buy": 0,
-      "sell": 2,
-      "buyValue": 0,
-      "sellValue": 136342.81
-    },
-    "2024-12": {
-      "buy": 0,
-      "sell": 2,
-      "buyValue": 0,
-      "sellValue": 504121.08
-    },
-    "2024-09": {
-      "buy": 0,
-      "sell": 1,
-      "buyValue": 0,
-      "sellValue": 2709015.6
-    },
-    "2026-01": {
-      "buy": 3,
-      "sell": 0,
-      "buyValue": 28821325,
-      "sellValue": 0
-    },
-    "2024-05": {
-      "buy": 0,
-      "sell": 1,
-      "buyValue": 0,
-      "sellValue": 8209011.42
-    },
-    "2025-06": {
-      "buy": 4,
-      "sell": 0,
-      "buyValue": 1706710,
-      "sellValue": 0
-    },
-    "2024-06": {
-      "buy": 0,
-      "sell": 1,
-      "buyValue": 0,
-      "sellValue": 343914.79000000004
+      "buy": 547,
+      "sell": 2233,
+      "buyValue": 1334925577.2679996,
+      "sellValue": 9140950316.096302
     }
   },
   "topBuys": [
-    {
-      "ticker": "FINS",
-      "company": "Angel Oak Financial Strategies Income Term Trust",
-      "owner": "MetLife Investment Management, LLC",
-      "role": "10% owner",
-      "date": "2026-07-08",
-      "filed": "2026-07-10",
-      "shares": 40000000,
-      "price": 40000000,
-      "value": 1600000000000000,
-      "plan": false,
-      "acc": "0000905148-26-003232",
-      "ownerCik": "0001529735",
-      "issuerCik": "0001745059"
-    },
-    {
-      "ticker": "REBN",
-      "company": "Reborn Coffee, Inc.",
-      "owner": "Lim Jung Jae",
-      "role": "CEO and Interim CFO",
-      "date": "2026-07-14",
-      "filed": "2026-08-06",
-      "shares": 131387,
-      "price": 180000,
-      "value": 23649660000,
-      "plan": false,
-      "acc": "0001213900-26-086304",
-      "ownerCik": "0002122599",
-      "issuerCik": "0001707910"
-    },
     {
       "ticker": "SVRE",
       "company": "SaverOne 2014 Ltd.",
       "owner": "VisionWave Holdings, Inc.",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-06-16",
       "filed": "2026-07-06",
       "shares": 326419200,
@@ -240,25 +68,12 @@
       "issuerCik": "0001894693"
     },
     {
-      "ticker": "NMM",
-      "company": "Navios Maritime Partners L.P.",
-      "owner": "Frangou Angeliki",
-      "role": "See Remarks",
-      "date": "2026-07-23",
-      "filed": "2026-07-27",
-      "shares": 3268,
-      "price": 258962.67,
-      "value": 846290002,
-      "plan": true,
-      "acc": "0001193125-26-318541",
-      "ownerCik": "0001310495",
-      "issuerCik": "0001415921"
-    },
-    {
       "ticker": "JEF",
       "company": "Jefferies Financial Group Inc.",
       "owner": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-07-15",
       "filed": "2026-08-21",
       "shares": 5906542,
@@ -274,6 +89,8 @@
       "company": "Jefferies Financial Group Inc.",
       "owner": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-07-15",
       "filed": "2026-07-17",
       "shares": 5906542,
@@ -289,6 +106,8 @@
       "company": "Madison Air Solutions Corp",
       "owner": "BERTARELLI ERNESTO",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-25",
       "filed": "2026-08-27",
       "shares": 8770524,
@@ -304,6 +123,8 @@
       "company": "LENNAR CORP /NEW/",
       "owner": "BERKSHIRE HATHAWAY INC",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-17",
       "filed": "2026-09-21",
       "shares": 2743529,
@@ -319,6 +140,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "GATES WILLIAM H III",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-03",
       "filed": "2026-09-08",
       "shares": 735303,
@@ -334,6 +157,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "GATES WILLIAM H III",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-08",
       "filed": "2026-09-10",
       "shares": 720804,
@@ -349,6 +174,8 @@
       "company": "LENNAR CORP /NEW/",
       "owner": "BUFFETT WARREN E",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-23",
       "filed": "2026-09-25",
       "shares": 1679700,
@@ -364,6 +191,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "GATES WILLIAM H III",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-10",
       "filed": "2026-09-14",
       "shares": 580810,
@@ -379,6 +208,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "CASCADE INVESTMENT, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-24",
       "filed": "2026-08-26",
       "shares": 571116,
@@ -394,6 +225,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "CASCADE INVESTMENT, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-26",
       "filed": "2026-08-28",
       "shares": 560100,
@@ -409,6 +242,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "CASCADE INVESTMENT, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-28",
       "filed": "2026-09-01",
       "shares": 552400,
@@ -424,6 +259,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "GATES WILLIAM H III",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-01",
       "filed": "2026-09-03",
       "shares": 534000,
@@ -439,6 +276,8 @@
       "company": "AppTech Payments Corp.",
       "owner": "LORD ALBERT L",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-07-31",
       "filed": "2026-08-04",
       "shares": 40000,
@@ -454,6 +293,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "GATES WILLIAM H III",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-10",
       "filed": "2026-08-12",
       "shares": 501664,
@@ -465,25 +306,12 @@
       "issuerCik": "0001060391"
     },
     {
-      "ticker": "SCTH",
-      "company": "Securetech Innovations, Inc.",
-      "owner": "SITRA J SCOTT",
-      "role": "President & CEO",
-      "date": "2026-08-21",
-      "filed": "2026-08-24",
-      "shares": 1000,
-      "price": 100000,
-      "value": 100000000,
-      "plan": false,
-      "acc": "0001335253-26-000006",
-      "ownerCik": "0001335253",
-      "issuerCik": "0001703157"
-    },
-    {
       "ticker": "PBLSX",
       "company": "AMG Pantheon Infrastructure Fund, LLC",
       "owner": "Pantheon Infrastructure (QP) (TE Onshore), a series of BlueArc Core Alternatives, LLC",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-01",
       "filed": "2026-09-03",
       "shares": 8671826,
@@ -499,6 +327,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "GATES WILLIAM H III",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-20",
       "filed": "2026-08-24",
       "shares": 400286,
@@ -514,6 +344,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "GATES WILLIAM H III",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-18",
       "filed": "2026-08-20",
       "shares": 378969,
@@ -529,6 +361,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "CASCADE INVESTMENT, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-12",
       "filed": "2026-08-14",
       "shares": 362960,
@@ -544,6 +378,8 @@
       "company": "REPUBLIC SERVICES, INC.",
       "owner": "CASCADE INVESTMENT, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-14",
       "filed": "2026-08-18",
       "shares": 356050,
@@ -559,6 +395,8 @@
       "company": "GROUP 1 AUTOMOTIVE INC",
       "owner": "Conifer Management, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-28",
       "filed": "2026-09-30",
       "shares": 273712,
@@ -574,6 +412,8 @@
       "company": "Braveheart Bio, Inc.",
       "owner": "Forbion Growth Opportunities Fund III Cooperatief U.A.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-07",
       "filed": "2026-08-07",
       "shares": 3600000,
@@ -589,6 +429,8 @@
       "company": "Kodiak Sciences Inc.",
       "owner": "667, L.P.",
       "role": "Director",
+      "exec": true,
+      "owner10": true,
       "date": "2026-09-28",
       "filed": "2026-09-30",
       "shares": 715592,
@@ -604,6 +446,8 @@
       "company": "TORTOISE ENERGY INFRASTRUCTURE CORP",
       "owner": "PRUDENTIAL INSURANCE CO OF AMERICA",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-07-15",
       "filed": "2026-07-17",
       "shares": 6000000,
@@ -619,6 +463,8 @@
       "company": "Kodiak Sciences Inc.",
       "owner": "Baker Bros. Advisors (GP) LLC",
       "role": "Director",
+      "exec": true,
+      "owner10": true,
       "date": "2026-09-28",
       "filed": "2026-09-30",
       "shares": 807840,
@@ -634,6 +480,8 @@
       "company": "LENNAR CORP /NEW/",
       "owner": "BUFFETT WARREN E",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-28",
       "filed": "2026-09-30",
       "shares": 660410,
@@ -649,6 +497,8 @@
       "company": "MapLight Therapeutics, Inc.",
       "owner": "Catalyst4, Inc.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-14",
       "filed": "2026-08-18",
       "shares": 4400000,
@@ -664,6 +514,8 @@
       "company": "GROUP 1 AUTOMOTIVE INC",
       "owner": "Conifer Management, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-03",
       "filed": "2026-09-08",
       "shares": 140280,
@@ -679,6 +531,8 @@
       "company": "AMG Pantheon Infrastructure Fund, LLC",
       "owner": "BlueArc Core Alternatives Management, LLC",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-04-01",
       "filed": "2026-09-02",
       "shares": 3679853,
@@ -694,6 +548,8 @@
       "company": "Scribe Therapeutics, Inc.",
       "owner": "Avoro Ventures LLC",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-07-24",
       "filed": "2026-07-28",
       "shares": 2391238,
@@ -709,6 +565,8 @@
       "company": "Kodiak Sciences Inc.",
       "owner": "BAKER JULIAN",
       "role": "Director",
+      "exec": true,
+      "owner10": true,
       "date": "2026-09-28",
       "filed": "2026-09-30",
       "shares": 418323,
@@ -724,6 +582,8 @@
       "company": "Braveheart Bio, Inc.",
       "owner": "Chimovits Erez",
       "role": "Director",
+      "exec": true,
+      "owner10": true,
       "date": "2026-08-07",
       "filed": "2026-08-11",
       "shares": 1940000,
@@ -739,6 +599,8 @@
       "company": "Braveheart Bio, Inc.",
       "owner": "OrbiMed Genesis GP LLC",
       "role": "Director",
+      "exec": true,
+      "owner10": true,
       "date": "2026-08-07",
       "filed": "2026-08-11",
       "shares": 1940000,
@@ -754,6 +616,8 @@
       "company": "FLOTEK INDUSTRIES INC/CN/",
       "owner": "Wilks Matthew",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-09-11",
       "filed": "2026-09-15",
       "shares": 1319493,
@@ -769,6 +633,8 @@
       "company": "GROUP 1 AUTOMOTIVE INC",
       "owner": "Conifer Management, L.L.C.",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-09-24",
       "filed": "2026-09-28",
       "shares": 126288,
@@ -784,6 +650,8 @@
       "company": "PAMT CORP",
       "owner": "MOROUN MATTHEW T",
       "role": "Director",
+      "exec": true,
+      "owner10": true,
       "date": "2026-09-03",
       "filed": "2026-09-08",
       "shares": 3268000,
@@ -793,74 +661,766 @@
       "acc": "0001683168-26-007021",
       "ownerCik": "0001030743",
       "issuerCik": "0000798287"
+    },
+    {
+      "ticker": "GRAB",
+      "company": "Grab Holdings Ltd",
+      "owner": "Tan Anthony Ping Yeow",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-21",
+      "filed": "2026-09-21",
+      "shares": 10350000,
+      "price": 2.89,
+      "value": 29911500,
+      "plan": false,
+      "acc": "0001896497-26-000009",
+      "ownerCik": "0001896497",
+      "issuerCik": "0001855612"
+    },
+    {
+      "ticker": "GSAT",
+      "company": "Globalstar, Inc.",
+      "owner": "Monroe James III",
+      "role": "Director",
+      "exec": true,
+      "owner10": true,
+      "date": "2026-09-18",
+      "filed": "2026-09-21",
+      "shares": 361600,
+      "price": 82.52,
+      "value": 29839232,
+      "plan": false,
+      "acc": "0001379664-26-000002",
+      "ownerCik": "0001379664",
+      "issuerCik": "0001366868"
+    },
+    {
+      "ticker": "CRBG",
+      "company": "Corebridge Financial, Inc.",
+      "owner": "NIPPON LIFE INSURANCE CO",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-09-28",
+      "filed": "2026-09-30",
+      "shares": 805782,
+      "price": 34.16,
+      "value": 27522685,
+      "plan": true,
+      "acc": "0001193125-26-409206",
+      "ownerCik": "0000905591",
+      "issuerCik": "0001889539"
+    },
+    {
+      "ticker": "ADRX",
+      "company": "ADARx Pharmaceuticals, Inc.",
+      "owner": "SR ONE CAPITAL MANAGEMENT, LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-09-28",
+      "filed": "2026-09-29",
+      "shares": 1600000,
+      "price": 17,
+      "value": 27200000,
+      "plan": false,
+      "acc": "0001193125-26-408064",
+      "ownerCik": "0001853723",
+      "issuerCik": "0001802369"
     }
   ],
-  "topSells": [
+  "topExecBuys": [
     {
-      "ticker": "PSX",
-      "company": "Phillips 66",
-      "owner": "Sutherland Vanessa Allen",
-      "role": "EVP, GC and Secretary",
-      "date": "2026-07-20",
-      "filed": "2026-07-21",
-      "shares": 4086,
-      "price": 1819712.89,
-      "value": 7435346885,
-      "plan": true,
-      "acc": "0001534701-26-000026",
-      "ownerCik": "0001772603",
-      "issuerCik": "0001534701"
-    },
-    {
-      "ticker": "FANG",
-      "company": "Diamondback Energy, Inc.",
-      "owner": "SGF FANG Holdings, LP",
-      "role": "10% owner",
-      "date": "2026-09-16",
-      "filed": "2026-09-17",
-      "shares": 9079675,
-      "price": 205.26,
-      "value": 1863694091,
+      "ticker": "SVRE",
+      "company": "SaverOne 2014 Ltd.",
+      "owner": "VisionWave Holdings, Inc.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-06-16",
+      "filed": "2026-07-06",
+      "shares": 326419200,
+      "price": 3.48,
+      "value": 1135938816,
       "plan": false,
-      "acc": "0001140361-26-037010",
-      "ownerCik": "0002080063",
-      "issuerCik": "0001539838"
+      "acc": "0001731122-26-000909",
+      "ownerCik": "0002038439",
+      "issuerCik": "0001894693"
     },
     {
-      "ticker": "FANG",
-      "company": "Diamondback Energy, Inc.",
-      "owner": "Greth Lyndal",
-      "role": "10% owner",
-      "date": "2026-09-16",
-      "filed": "2026-09-17",
-      "shares": 9079675,
-      "price": 205.26,
-      "value": 1863694091,
+      "ticker": "JEF",
+      "company": "Jefferies Financial Group Inc.",
+      "owner": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-15",
+      "filed": "2026-08-21",
+      "shares": 5906542,
+      "price": 54.86,
+      "value": 324032894,
       "plan": false,
-      "acc": "0001140361-26-037009",
-      "ownerCik": "0002021141",
-      "issuerCik": "0001539838"
+      "acc": "0001193125-26-360109",
+      "ownerCik": "0001022837",
+      "issuerCik": "0000096223"
     },
     {
-      "ticker": "IHT",
-      "company": "INNSUITES HOSPITALITY TRUST",
-      "owner": "WIRTH JAMES F",
-      "role": "President & CEO",
-      "date": "2026-08-21",
+      "ticker": "JEF",
+      "company": "Jefferies Financial Group Inc.",
+      "owner": "SUMITOMO MITSUI FINANCIAL GROUP, INC.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-15",
+      "filed": "2026-07-17",
+      "shares": 5906542,
+      "price": 53.96,
+      "value": 318717006,
+      "plan": false,
+      "acc": "0001193125-26-306696",
+      "ownerCik": "0001022837",
+      "issuerCik": "0000096223"
+    },
+    {
+      "ticker": "APCX",
+      "company": "AppTech Payments Corp.",
+      "owner": "LORD ALBERT L",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-31",
+      "filed": "2026-08-04",
+      "shares": 40000,
+      "price": 2897.5,
+      "value": 115900000,
+      "plan": false,
+      "acc": "0001683168-26-005941",
+      "ownerCik": "0001065138",
+      "issuerCik": "0001070050"
+    },
+    {
+      "ticker": "SCTX",
+      "company": "Scribe Therapeutics, Inc.",
+      "owner": "Avoro Ventures LLC",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-24",
+      "filed": "2026-07-28",
+      "shares": 2391238,
+      "price": 15.16,
+      "value": 36259761,
+      "plan": false,
+      "acc": "0000902664-26-003270",
+      "ownerCik": "0001879253",
+      "issuerCik": "0001853921"
+    },
+    {
+      "ticker": "FTK",
+      "company": "FLOTEK INDUSTRIES INC/CN/",
+      "owner": "Wilks Matthew",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-11",
+      "filed": "2026-09-15",
+      "shares": 1319493,
+      "price": 26.01,
+      "value": 34320013,
+      "plan": false,
+      "acc": "0001104659-26-108024",
+      "ownerCik": "0001696102",
+      "issuerCik": "0000928054"
+    },
+    {
+      "ticker": "GRAB",
+      "company": "Grab Holdings Ltd",
+      "owner": "Tan Anthony Ping Yeow",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-21",
+      "filed": "2026-09-21",
+      "shares": 10350000,
+      "price": 2.89,
+      "value": 29911500,
+      "plan": false,
+      "acc": "0001896497-26-000009",
+      "ownerCik": "0001896497",
+      "issuerCik": "0001855612"
+    },
+    {
+      "ticker": "GME",
+      "company": "GameStop Corp.",
+      "owner": "Cohen Ryan",
+      "role": "President, CEO and Chairman",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-21",
+      "filed": "2026-09-21",
+      "shares": 1150680,
+      "price": 22.94,
+      "value": 26396599,
+      "plan": false,
+      "acc": "0000921895-26-002608",
+      "ownerCik": "0001767470",
+      "issuerCik": "0001326380"
+    },
+    {
+      "ticker": "AUGO",
+      "company": "Aura Minerals Inc.",
+      "owner": "Sousa Mauad Bruno",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-28",
+      "filed": "2026-09-01",
+      "shares": 252000,
+      "price": 86.48,
+      "value": 21792600,
+      "plan": false,
+      "acc": "0002117905-26-000026",
+      "ownerCik": "0002117905",
+      "issuerCik": "0001468642"
+    },
+    {
+      "ticker": "ET",
+      "company": "Energy Transfer LP",
+      "owner": "WARREN KELCY L",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-18",
+      "filed": "2026-08-20",
+      "shares": 1000000,
+      "price": 21.26,
+      "value": 21263520,
+      "plan": false,
+      "acc": "0001193125-26-359388",
+      "ownerCik": "0001276191",
+      "issuerCik": "0001276187"
+    },
+    {
+      "ticker": "GME",
+      "company": "GameStop Corp.",
+      "owner": "Cohen Ryan",
+      "role": "President, CEO and Chairman",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-10",
+      "filed": "2026-09-10",
+      "shares": 1000000,
+      "price": 20.38,
+      "value": 20380000,
+      "plan": false,
+      "acc": "0000921895-26-002531",
+      "ownerCik": "0001767470",
+      "issuerCik": "0001326380"
+    },
+    {
+      "ticker": "SCTX",
+      "company": "Scribe Therapeutics, Inc.",
+      "owner": "GORDON CARL L",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-27",
+      "filed": "2026-07-29",
+      "shares": 1000000,
+      "price": 15,
+      "value": 15000000,
+      "plan": false,
+      "acc": "0000947871-26-000734",
+      "ownerCik": "0001282930",
+      "issuerCik": "0001853921"
+    },
+    {
+      "ticker": "SCTX",
+      "company": "Scribe Therapeutics, Inc.",
+      "owner": "ORBIMED ADVISORS LLC",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-27",
+      "filed": "2026-07-29",
+      "shares": 1000000,
+      "price": 15,
+      "value": 15000000,
+      "plan": false,
+      "acc": "0000947871-26-000733",
+      "ownerCik": "0001055951",
+      "issuerCik": "0001853921"
+    },
+    {
+      "ticker": "ALMS",
+      "company": "ALUMIS INC.",
+      "owner": "AKKARAJU SRINIVAS",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-04",
+      "filed": "2026-09-09",
+      "shares": 986721,
+      "price": 10.87,
+      "value": 10726520,
+      "plan": false,
+      "acc": "0001231919-26-001158",
+      "ownerCik": "0001253170",
+      "issuerCik": "0001847367"
+    },
+    {
+      "ticker": "GME",
+      "company": "GameStop Corp.",
+      "owner": "Cohen Ryan",
+      "role": "President, CEO and Chairman",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-29",
+      "filed": "2026-09-29",
+      "shares": 450000,
+      "price": 23.48,
+      "value": 10565895,
+      "plan": false,
+      "acc": "0000921895-26-002670",
+      "ownerCik": "0001767470",
+      "issuerCik": "0001326380"
+    },
+    {
+      "ticker": "BABA",
+      "company": "Alibaba Group Holding Ltd",
+      "owner": "Tsai Joseph C",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-25",
+      "filed": "2026-08-25",
+      "shares": 720000,
+      "price": 14.47,
+      "value": 10418400,
+      "plan": false,
+      "acc": "0001193125-26-364044",
+      "ownerCik": "0001633999",
+      "issuerCik": "0001577552"
+    },
+    {
+      "ticker": "BABA",
+      "company": "Alibaba Group Holding Ltd",
+      "owner": "Tsai Joseph C",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-24",
       "filed": "2026-08-24",
-      "shares": 34800,
-      "price": 52316.7,
-      "value": 1820621160,
-      "plan": true,
-      "acc": "0001493152-26-039933",
-      "ownerCik": "0001055365",
-      "issuerCik": "0000082473"
+      "shares": 720000,
+      "price": 14.29,
+      "value": 10288800,
+      "plan": false,
+      "acc": "0001193125-26-361902",
+      "ownerCik": "0001633999",
+      "issuerCik": "0001577552"
     },
+    {
+      "ticker": "ATTO",
+      "company": "Attovia Therapeutics, Inc.",
+      "owner": "WALSH COLIN",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-05",
+      "filed": "2026-08-28",
+      "shares": 585000,
+      "price": 17.58,
+      "value": 10285000,
+      "plan": false,
+      "acc": "0001866174-26-000011",
+      "ownerCik": "0001866174",
+      "issuerCik": "0002058707"
+    },
+    {
+      "ticker": "ATTO",
+      "company": "Attovia Therapeutics, Inc.",
+      "owner": "WALSH COLIN",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-05",
+      "filed": "2026-08-13",
+      "shares": 585000,
+      "price": 17.58,
+      "value": 10285000,
+      "plan": false,
+      "acc": "0001866174-26-000009",
+      "ownerCik": "0001866174",
+      "issuerCik": "0002058707"
+    },
+    {
+      "ticker": "FOX",
+      "company": "Fox Corp",
+      "owner": "MURDOCH LACHLAN K",
+      "role": "Executive Chair, CEO",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-15",
+      "filed": "2026-09-16",
+      "shares": 149934,
+      "price": 68.53,
+      "value": 10274977,
+      "plan": false,
+      "acc": "0001628280-26-062330",
+      "ownerCik": "0001242818",
+      "issuerCik": "0001754301"
+    },
+    {
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "owner": "KHOSROWSHAHI DARA",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-10",
+      "filed": "2026-09-10",
+      "shares": 141000,
+      "price": 70.96,
+      "value": 10005360,
+      "plan": false,
+      "acc": "0001184237-26-000008",
+      "ownerCik": "0001184237",
+      "issuerCik": "0001543151"
+    },
+    {
+      "ticker": "BLSM",
+      "company": "BlossomHill Therapeutics, Inc.",
+      "owner": "GORDON CARL L",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-10",
+      "filed": "2026-08-12",
+      "shares": 625000,
+      "price": 16,
+      "value": 10000000,
+      "plan": false,
+      "acc": "0000947871-26-000785",
+      "ownerCik": "0001282930",
+      "issuerCik": "0001839970"
+    },
+    {
+      "ticker": "BLSM",
+      "company": "BlossomHill Therapeutics, Inc.",
+      "owner": "OrbiMed Capital GP VIII LLC",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-10",
+      "filed": "2026-08-12",
+      "shares": 625000,
+      "price": 16,
+      "value": 10000000,
+      "plan": false,
+      "acc": "0000947871-26-000784",
+      "ownerCik": "0001845804",
+      "issuerCik": "0001839970"
+    },
+    {
+      "ticker": "INTC",
+      "company": "INTEL CORP",
+      "owner": "TAN LIP BU",
+      "role": "CEO",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-11",
+      "filed": "2026-08-14",
+      "shares": 105263,
+      "price": 95,
+      "value": 9999985,
+      "plan": false,
+      "acc": "0000050863-26-000177",
+      "ownerCik": "0001008463",
+      "issuerCik": "0000050863"
+    },
+    {
+      "ticker": "LILA",
+      "company": "Liberty Latin America Ltd.",
+      "owner": "DE ANGOITIA ALFONSO",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-31",
+      "filed": "2026-09-04",
+      "shares": 476190,
+      "price": 20.95,
+      "value": 9978176,
+      "plan": false,
+      "acc": "0001724519-26-000010",
+      "ownerCik": "0001724519",
+      "issuerCik": "0001712184"
+    },
+    {
+      "ticker": "KLAR",
+      "company": "Klarna Group plc",
+      "owner": "Siemiatkowski Sebastian",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-26",
+      "filed": "2026-08-28",
+      "shares": 692506,
+      "price": 14.37,
+      "value": 9951311,
+      "plan": false,
+      "acc": "0002097107-26-000004",
+      "ownerCik": "0002097107",
+      "issuerCik": "0002003292"
+    },
+    {
+      "ticker": "BSX",
+      "company": "BOSTON SCIENTIFIC CORP",
+      "owner": "Mahoney Michael F",
+      "role": "Chairman, President & CEO",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-03",
+      "filed": "2026-08-05",
+      "shares": 186240,
+      "price": 48.33,
+      "value": 9000979,
+      "plan": false,
+      "acc": "0001225208-26-006950",
+      "ownerCik": "0001533022",
+      "issuerCik": "0000885725"
+    },
+    {
+      "ticker": "APLM",
+      "company": "Apollomics Inc.",
+      "owner": "Chen Hung-Wen",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-14",
+      "filed": "2026-08-17",
+      "shares": 536667,
+      "price": 14.07,
+      "value": 7550004,
+      "plan": false,
+      "acc": "0001193125-26-354457",
+      "ownerCik": "0002023674",
+      "issuerCik": "0001944885"
+    },
+    {
+      "ticker": "IMTX",
+      "company": "Immatics N.V.",
+      "owner": "EDELMAN JOSEPH",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-26",
+      "filed": "2026-08-27",
+      "shares": 863060,
+      "price": 8.69,
+      "value": 7499991,
+      "plan": false,
+      "acc": "0001193125-26-371237",
+      "ownerCik": "0001164426",
+      "issuerCik": "0001809196"
+    },
+    {
+      "ticker": "CX",
+      "company": "CEMEX SAB DE CV",
+      "owner": "Zambrano Lozano Rogelio",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-25",
+      "filed": "2026-09-25",
+      "shares": 400800,
+      "price": 17.28,
+      "value": 6925824,
+      "plan": false,
+      "acc": "0002035244-26-000009",
+      "ownerCik": "0002035244",
+      "issuerCik": "0001076378"
+    },
+    {
+      "ticker": "AON",
+      "company": "Aon plc",
+      "owner": "KNIGHT LESTER B",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-02",
+      "filed": "2026-09-03",
+      "shares": 20000,
+      "price": 327.48,
+      "value": 6549688,
+      "plan": false,
+      "acc": "0001193125-26-382419",
+      "ownerCik": "0001023262",
+      "issuerCik": "0000315293"
+    },
+    {
+      "ticker": "BNR",
+      "company": "Burning Rock Biotech Ltd",
+      "owner": "Han Yusheng",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-06-11",
+      "filed": "2026-07-02",
+      "shares": 731410,
+      "price": 8.45,
+      "value": 6182660,
+      "plan": false,
+      "acc": "0001193125-26-293511",
+      "ownerCik": "0001843554",
+      "issuerCik": "0001792267"
+    },
+    {
+      "ticker": "BORR",
+      "company": "Borr Drilling Ltd",
+      "owner": "Troim Tor Olav",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-13",
+      "filed": "2026-08-14",
+      "shares": 1500000,
+      "price": 4.02,
+      "value": 6030000,
+      "plan": false,
+      "acc": "0001628280-26-056941",
+      "ownerCik": "0001709630",
+      "issuerCik": "0001715497"
+    },
+    {
+      "ticker": "GWRS",
+      "company": "Global Water Resources, Inc.",
+      "owner": "Levine Jonathan L",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-20",
+      "filed": "2026-08-21",
+      "shares": 651618,
+      "price": 8.85,
+      "value": 5766819,
+      "plan": false,
+      "acc": "0001628280-26-058502",
+      "ownerCik": "0001862791",
+      "issuerCik": "0001434728"
+    },
+    {
+      "ticker": "BBD",
+      "company": "BANK BRADESCO",
+      "owner": "de Oliveira Andre Luis Duarte",
+      "role": "Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-18",
+      "filed": "2026-09-21",
+      "shares": 309111,
+      "price": 17.98,
+      "value": 5557816,
+      "plan": false,
+      "acc": "0001292814-26-004621",
+      "ownerCik": "0002125973",
+      "issuerCik": "0001160330"
+    },
+    {
+      "ticker": "AXIA3",
+      "company": "AXIA Energia S.A.",
+      "owner": "Batista de Lima Filho Pedro",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-14",
+      "filed": "2026-09-16",
+      "shares": 512900,
+      "price": 10.49,
+      "value": 5378042,
+      "plan": false,
+      "acc": "0001213900-26-100498",
+      "ownerCik": "0002121444",
+      "issuerCik": "0001439124"
+    },
+    {
+      "ticker": "BPRE",
+      "company": "Bluerock Private Real Estate Fund",
+      "owner": "KAMFAR RAMIN",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-28",
+      "filed": "2026-09-30",
+      "shares": 425590,
+      "price": 12.57,
+      "value": 5350408,
+      "plan": false,
+      "acc": "0001398344-26-017661",
+      "ownerCik": "0001111908",
+      "issuerCik": "0001551047"
+    },
+    {
+      "ticker": "UBER",
+      "company": "Uber Technologies, Inc",
+      "owner": "Macdonald Andrew",
+      "role": "See Remarks",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-04",
+      "filed": "2026-09-08",
+      "shares": 70000,
+      "price": 75.83,
+      "value": 5307883,
+      "plan": false,
+      "acc": "0002071761-26-000011",
+      "ownerCik": "0002071761",
+      "issuerCik": "0001543151"
+    },
+    {
+      "ticker": "KBDC",
+      "company": "Kayne Anderson BDC, Inc.",
+      "owner": "ROBO JAMES L",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-14",
+      "filed": "2026-09-16",
+      "shares": 400000,
+      "price": 13.04,
+      "value": 5214800,
+      "plan": false,
+      "acc": "0001183254-26-000005",
+      "ownerCik": "0001183254",
+      "issuerCik": "0001747172"
+    },
+    {
+      "ticker": "NGL",
+      "company": "NGL Energy Partners LP",
+      "owner": "RAYMOND JOHN T",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-25",
+      "filed": "2026-08-26",
+      "shares": 300000,
+      "price": 16.98,
+      "value": 5094000,
+      "plan": false,
+      "acc": "0001186173-26-000004",
+      "ownerCik": "0001186173",
+      "issuerCik": "0001504461"
+    }
+  ],
+  "topExecSells": [
     {
       "ticker": "BIRK",
       "company": "Birkenstock Holding plc",
       "owner": "Chu James Michael",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-17",
       "filed": "2026-08-17",
       "shares": 28146226,
@@ -872,160 +1432,12 @@
       "issuerCik": "0001977102"
     },
     {
-      "ticker": "IHT",
-      "company": "INNSUITES HOSPITALITY TRUST",
-      "owner": "WIRTH JAMES F",
-      "role": "President & CEO",
-      "date": "2026-08-26",
-      "filed": "2026-08-28",
-      "shares": 25000,
-      "price": 33000,
-      "value": 825000000,
-      "plan": true,
-      "acc": "0001493152-26-040662",
-      "ownerCik": "0001055365",
-      "issuerCik": "0000082473"
-    },
-    {
-      "ticker": "IHT",
-      "company": "INNSUITES HOSPITALITY TRUST",
-      "owner": "WIRTH JAMES F",
-      "role": "President & CEO",
-      "date": "2026-08-28",
-      "filed": "2026-08-31",
-      "shares": 25000,
-      "price": 32102.45,
-      "value": 802561250,
-      "plan": true,
-      "acc": "0001493152-26-040902",
-      "ownerCik": "0001055365",
-      "issuerCik": "0000082473"
-    },
-    {
-      "ticker": "JMKE",
-      "company": "Jersey Mike's Subs Inc.",
-      "owner": "Submarine Buyer Holdco LLC",
-      "role": "10% owner",
-      "date": "2026-07-31",
-      "filed": "2026-08-04",
-      "shares": 29695652,
-      "price": 21.85,
-      "value": 648849996,
-      "plan": false,
-      "acc": "0001193125-26-332967",
-      "ownerCik": "0002146115",
-      "issuerCik": "0002127043"
-    },
-    {
-      "ticker": "JMKE",
-      "company": "Jersey Mike's Subs Inc.",
-      "owner": "Blackstone Group Management L.L.C.",
-      "role": "10% owner",
-      "date": "2026-07-31",
-      "filed": "2026-08-04",
-      "shares": 29695652,
-      "price": 21.85,
-      "value": 648849996,
-      "plan": false,
-      "acc": "0001193125-26-332966",
-      "ownerCik": "0001404071",
-      "issuerCik": "0002127043"
-    },
-    {
-      "ticker": "ALH",
-      "company": "Alliance Laundry Holdings Inc.",
-      "owner": "BDT Badger Holdings, LLC",
-      "role": "Director",
-      "date": "2026-08-20",
-      "filed": "2026-08-24",
-      "shares": 25932500,
-      "price": 22.74,
-      "value": 589705050,
-      "plan": false,
-      "acc": "0001628280-26-058640",
-      "ownerCik": "0002014505",
-      "issuerCik": "0001317685"
-    },
-    {
-      "ticker": "PRMB",
-      "company": "Primo Brands Corp",
-      "owner": "Triton Water Parent Holdings, LP",
-      "role": "10% owner",
-      "date": "2026-08-07",
-      "filed": "2026-08-10",
-      "shares": 20410340,
-      "price": 24.37,
-      "value": 497399986,
-      "plan": false,
-      "acc": "0001493152-26-036941",
-      "ownerCik": "0002042697",
-      "issuerCik": "0002042694"
-    },
-    {
-      "ticker": "PRMB",
-      "company": "Primo Brands Corp",
-      "owner": "Lee Tony W",
-      "role": "Director",
-      "date": "2026-08-07",
-      "filed": "2026-08-10",
-      "shares": 20410340,
-      "price": 24.37,
-      "value": 497399986,
-      "plan": false,
-      "acc": "0001493152-26-036940",
-      "ownerCik": "0001988010",
-      "issuerCik": "0002042694"
-    },
-    {
-      "ticker": "CRBG",
-      "company": "Corebridge Financial, Inc.",
-      "owner": "Blackstone Holdings I/II GP L.L.C.",
-      "role": "10% owner",
-      "date": "2026-08-10",
-      "filed": "2026-08-12",
-      "shares": 14500000,
-      "price": 33.87,
-      "value": 491115000,
-      "plan": false,
-      "acc": "0001193125-26-347014",
-      "ownerCik": "0001464695",
-      "issuerCik": "0001889539"
-    },
-    {
-      "ticker": "STNG",
-      "company": "Scorpio Tankers Inc.",
-      "owner": "Camerana Niccolo",
-      "role": "Director",
-      "date": "2026-07-10",
-      "filed": "2026-07-13",
-      "shares": 2500,
-      "price": 191325,
-      "value": 478312500,
-      "plan": false,
-      "acc": "0001995137-26-000013",
-      "ownerCik": "0001995137",
-      "issuerCik": "0001483934"
-    },
-    {
-      "ticker": "AUR",
-      "company": "Aurora Innovation, Inc.",
-      "owner": "Uber Technologies, Inc",
-      "role": "10% owner",
-      "date": "2026-08-17",
-      "filed": "2026-08-19",
-      "shares": 72000000,
-      "price": 6.55,
-      "value": 471600000,
-      "plan": false,
-      "acc": "0001552781-26-000454",
-      "ownerCik": "0001543151",
-      "issuerCik": "0001828108"
-    },
-    {
       "ticker": "NVDA",
       "company": "NVIDIA CORP",
       "owner": "STEVENS MARK A",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-31",
       "filed": "2026-09-02",
       "shares": 1848501,
@@ -1037,55 +1449,12 @@
       "issuerCik": "0001045810"
     },
     {
-      "ticker": "SN",
-      "company": "SharkNinja, Inc.",
-      "owner": "Wang Xuning",
-      "role": "Director",
-      "date": "2026-07-10",
-      "filed": "2026-07-13",
-      "shares": 2668200,
-      "price": 150.36,
-      "value": 401190552,
-      "plan": false,
-      "acc": "0001104659-26-082848",
-      "ownerCik": "0002001826",
-      "issuerCik": "0001957132"
-    },
-    {
-      "ticker": "IHT",
-      "company": "INNSUITES HOSPITALITY TRUST",
-      "owner": "BERG MARC E",
-      "role": "EVP & Secretary/Treasurer",
-      "date": "2026-09-17",
-      "filed": "2026-09-18",
-      "shares": 16000,
-      "price": 22593.6,
-      "value": 361497600,
-      "plan": true,
-      "acc": "0001493152-26-043445",
-      "ownerCik": "0001248349",
-      "issuerCik": "0000082473"
-    },
-    {
-      "ticker": "INGM",
-      "company": "Ingram Micro Holding Corp",
-      "owner": "Platinum Equity Investment Holdings V, LLC",
-      "role": "10% owner",
-      "date": "2026-09-10",
-      "filed": "2026-09-14",
-      "shares": 13125000,
-      "price": 27.19,
-      "value": 356868750,
-      "plan": false,
-      "acc": "0001104659-26-107514",
-      "ownerCik": "0001854932",
-      "issuerCik": "0001897762"
-    },
-    {
       "ticker": "AMZN",
       "company": "AMAZON COM INC",
       "owner": "BEZOS JEFFREY P",
       "role": "Executive Chair",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-03",
       "filed": "2026-08-05",
       "shares": 1209649,
@@ -1097,40 +1466,12 @@
       "issuerCik": "0001018724"
     },
     {
-      "ticker": "CELC",
-      "company": "Celcuity Inc.",
-      "owner": "BAKER JULIAN",
-      "role": "other",
-      "date": "2026-07-14",
-      "filed": "2026-07-16",
-      "shares": 3100000,
-      "price": 102.5,
-      "value": 317750000,
-      "plan": false,
-      "acc": "0001193125-26-306299",
-      "ownerCik": "0001087939",
-      "issuerCik": "0001603454"
-    },
-    {
-      "ticker": "ABNB",
-      "company": "Airbnb, Inc.",
-      "owner": "Gebbia Joseph",
-      "role": "Director",
-      "date": "2026-07-27",
-      "filed": "2026-07-29",
-      "shares": 2093303,
-      "price": 150.91,
-      "value": 315909148,
-      "plan": true,
-      "acc": "0001193125-26-324172",
-      "ownerCik": "0001834171",
-      "issuerCik": "0001559720"
-    },
-    {
       "ticker": "NVDA",
       "company": "NVIDIA CORP",
       "owner": "STEVENS MARK A",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-09-18",
       "filed": "2026-09-22",
       "shares": 1366000,
@@ -1142,25 +1483,12 @@
       "issuerCik": "0001045810"
     },
     {
-      "ticker": "ORKA",
-      "company": "Oruka Therapeutics, Inc.",
-      "owner": "Kiselak Tomas",
-      "role": "Director",
-      "date": "2026-07-01",
-      "filed": "2026-07-01",
-      "shares": 3553410,
-      "price": 84.43,
-      "value": 300014406,
-      "plan": false,
-      "acc": "0001104659-26-080009",
-      "ownerCik": "0001830177",
-      "issuerCik": "0000907654"
-    },
-    {
       "ticker": "UMC",
       "company": "UNITED MICROELECTRONICS CORP",
       "owner": "Liu Chitung",
       "role": "CFO & SVP",
+      "exec": true,
+      "owner10": false,
       "date": "2026-07-13",
       "filed": "2026-07-13",
       "shares": 1900000,
@@ -1176,6 +1504,8 @@
       "company": "Rocket Lab Corp",
       "owner": "Beck Peter",
       "role": "CEO",
+      "exec": true,
+      "owner10": false,
       "date": "2026-07-06",
       "filed": "2026-07-08",
       "shares": 3275779,
@@ -1191,6 +1521,8 @@
       "company": "FIRST ADVANTAGE CORP",
       "owner": "Osnoss Joseph",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-12",
       "filed": "2026-08-14",
       "shares": 12500000,
@@ -1202,25 +1534,12 @@
       "issuerCik": "0001210677"
     },
     {
-      "ticker": "OPLN",
-      "company": "OPENLANE, Inc.",
-      "owner": "Apax Guernsey (Holdco) PCC Ltd",
-      "role": "10% owner",
-      "date": "2026-08-13",
-      "filed": "2026-08-13",
-      "shares": 8000000,
-      "price": 34.36,
-      "value": 274880000,
-      "plan": false,
-      "acc": "0001193125-26-349541",
-      "ownerCik": "0001469807",
-      "issuerCik": "0001395942"
-    },
-    {
       "ticker": "AVGO",
       "company": "Broadcom Inc.",
       "owner": "SAMUELI HENRY",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-09-23",
       "filed": "2026-09-25",
       "shares": 702190,
@@ -1232,40 +1551,12 @@
       "issuerCik": "0001730168"
     },
     {
-      "ticker": "SVV",
-      "company": "Savers Value Village, Inc.",
-      "owner": "ARES MANAGEMENT LLC",
-      "role": "10% owner",
-      "date": "2026-08-13",
-      "filed": "2026-08-17",
-      "shares": 23000000,
-      "price": 10.25,
-      "value": 235750000,
-      "plan": false,
-      "acc": "0001104659-26-097889",
-      "ownerCik": "0001259313",
-      "issuerCik": "0001883313"
-    },
-    {
-      "ticker": "SVV",
-      "company": "Savers Value Village, Inc.",
-      "owner": "ARES MANAGEMENT LLC",
-      "role": "10% owner",
-      "date": "2026-08-13",
-      "filed": "2026-08-17",
-      "shares": 23000000,
-      "price": 10.25,
-      "value": 235750000,
-      "plan": false,
-      "acc": "0001104659-26-097885",
-      "ownerCik": "0001259313",
-      "issuerCik": "0001883313"
-    },
-    {
       "ticker": "NVDA",
       "company": "NVIDIA CORP",
       "owner": "STEVENS MARK A",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-09-03",
       "filed": "2026-09-08",
       "shares": 1022239,
@@ -1277,25 +1568,12 @@
       "issuerCik": "0001045810"
     },
     {
-      "ticker": "CRWV",
-      "company": "CoreWeave, Inc.",
-      "owner": "Snyderman David J.",
-      "role": "10% owner",
-      "date": "2026-08-12",
-      "filed": "2026-08-14",
-      "shares": 2147871,
-      "price": 107.83,
-      "value": 231601955,
-      "plan": false,
-      "acc": "0001104659-26-097429",
-      "ownerCik": "0001953511",
-      "issuerCik": "0001769628"
-    },
-    {
       "ticker": "UMC",
       "company": "UNITED MICROELECTRONICS CORP",
       "owner": "Liu Chitung",
       "role": "CFO & SVP",
+      "exec": true,
+      "owner10": false,
       "date": "2026-09-16",
       "filed": "2026-09-17",
       "shares": 1600000,
@@ -1307,25 +1585,12 @@
       "issuerCik": "0001033767"
     },
     {
-      "ticker": "LFST",
-      "company": "LifeStance Health Group, Inc.",
-      "owner": "TPG GP A, LLC",
-      "role": "10% owner",
-      "date": "2026-09-11",
-      "filed": "2026-09-15",
-      "shares": 18409705,
-      "price": 12.29,
-      "value": 226255274,
-      "plan": false,
-      "acc": "0001999371-26-020559",
-      "ownerCik": "0001903793",
-      "issuerCik": "0001845257"
-    },
-    {
       "ticker": "LTH",
       "company": "Life Time Group Holdings, Inc.",
       "owner": "Galashan John Kristofer",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-10",
       "filed": "2026-08-12",
       "shares": 5119099,
@@ -1341,6 +1606,8 @@
       "company": "Life Time Group Holdings, Inc.",
       "owner": "DANHAKL JOHN G",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-10",
       "filed": "2026-08-12",
       "shares": 5119099,
@@ -1356,6 +1623,8 @@
       "company": "Life Time Group Holdings, Inc.",
       "owner": "Green Equity Investors Side VI, L.P.",
       "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-10",
       "filed": "2026-08-12",
       "shares": 5119099,
@@ -1367,25 +1636,1017 @@
       "issuerCik": "0001869198"
     },
     {
-      "ticker": "IHT",
-      "company": "INNSUITES HOSPITALITY TRUST",
-      "owner": "WIRTH JAMES F",
+      "ticker": "TPC",
+      "company": "TUTOR PERINI CORP",
+      "owner": "TUTOR RONALD N",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-31",
+      "filed": "2026-09-02",
+      "shares": 2310000,
+      "price": 85.59,
+      "value": 197709600,
+      "plan": false,
+      "acc": "0000077543-26-000200",
+      "ownerCik": "0000906134",
+      "issuerCik": "0000077543"
+    },
+    {
+      "ticker": "CVX",
+      "company": "CHEVRON CORP",
+      "owner": "HESS JOHN B",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-03",
+      "filed": "2026-08-05",
+      "shares": 810665,
+      "price": 194.12,
+      "value": 157368779,
+      "plan": false,
+      "acc": "0000093410-26-000164",
+      "ownerCik": "0001087997",
+      "issuerCik": "0000093410"
+    },
+    {
+      "ticker": "ANET",
+      "company": "Arista Networks, Inc.",
+      "owner": "Ullal Jayshree",
+      "role": "CEO and Chairperson",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-05",
+      "filed": "2026-08-07",
+      "shares": 767029,
+      "price": 201.22,
+      "value": 154340804,
+      "plan": true,
+      "acc": "0001596532-26-000185",
+      "ownerCik": "0001605809",
+      "issuerCik": "0001596532"
+    },
+    {
+      "ticker": "CBRS",
+      "company": "Cerebras Systems Inc.",
+      "owner": "Lie Sean",
+      "role": "Chief Technology Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-20",
+      "filed": "2026-08-21",
+      "shares": 726540,
+      "price": 207.9,
+      "value": 151050463,
+      "plan": false,
+      "acc": "0001628280-26-058506",
+      "ownerCik": "0002132472",
+      "issuerCik": "0002021728"
+    },
+    {
+      "ticker": "ILMN",
+      "company": "ILLUMINA, INC.",
+      "owner": "Meister Keith A.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-04",
+      "filed": "2026-08-06",
+      "shares": 741127,
+      "price": 199.91,
+      "value": 148159897,
+      "plan": false,
+      "acc": "0001193125-26-338361",
+      "ownerCik": "0001307631",
+      "issuerCik": "0001110803"
+    },
+    {
+      "ticker": "ILMN",
+      "company": "ILLUMINA, INC.",
+      "owner": "Meister Keith A.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-19",
+      "filed": "2026-08-21",
+      "shares": 679574,
+      "price": 214.19,
+      "value": 145556398,
+      "plan": false,
+      "acc": "0001193125-26-361476",
+      "ownerCik": "0001307631",
+      "issuerCik": "0001110803"
+    },
+    {
+      "ticker": "SE",
+      "company": "Sea Ltd",
+      "owner": "Li Xiaodong",
+      "role": "Chairman and CEO",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-11",
+      "filed": "2026-08-13",
+      "shares": 1057650,
+      "price": 129.8,
+      "value": 137287768,
+      "plan": true,
+      "acc": "0001193125-26-347736",
+      "ownerCik": "0001721503",
+      "issuerCik": "0001703399"
+    },
+    {
+      "ticker": "LTH",
+      "company": "Life Time Group Holdings, Inc.",
+      "owner": "Leonard Green & Partners, L.P.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-26",
+      "filed": "2026-08-28",
+      "shares": 2879154,
+      "price": 43.8,
+      "value": 126106945,
+      "plan": false,
+      "acc": "0001193125-26-374946",
+      "ownerCik": "0001175523",
+      "issuerCik": "0001869198"
+    },
+    {
+      "ticker": "LTH",
+      "company": "Life Time Group Holdings, Inc.",
+      "owner": "DANHAKL JOHN G",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-26",
+      "filed": "2026-08-28",
+      "shares": 2879154,
+      "price": 43.8,
+      "value": 126106945,
+      "plan": false,
+      "acc": "0001193125-26-374949",
+      "ownerCik": "0001162644",
+      "issuerCik": "0001869198"
+    },
+    {
+      "ticker": "LTH",
+      "company": "Life Time Group Holdings, Inc.",
+      "owner": "Galashan John Kristofer",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-26",
+      "filed": "2026-08-28",
+      "shares": 2879154,
+      "price": 43.8,
+      "value": 126106945,
+      "plan": false,
+      "acc": "0001193125-26-374945",
+      "ownerCik": "0001590836",
+      "issuerCik": "0001869198"
+    },
+    {
+      "ticker": "CRWD",
+      "company": "CrowdStrike Holdings, Inc.",
+      "owner": "Podbere Burt W.",
+      "role": "CHIEF FINANCIAL OFFICER",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-24",
+      "filed": "2026-09-25",
+      "shares": 480000,
+      "price": 261.44,
+      "value": 125491386,
+      "plan": true,
+      "acc": "0001778610-26-000024",
+      "ownerCik": "0001778610",
+      "issuerCik": "0001535527"
+    },
+    {
+      "ticker": "ANET",
+      "company": "Arista Networks, Inc.",
+      "owner": "Ullal Jayshree",
+      "role": "CEO and Chairperson",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-12",
+      "filed": "2026-08-14",
+      "shares": 573509,
+      "price": 208.13,
+      "value": 119364080,
+      "plan": true,
+      "acc": "0001596532-26-000190",
+      "ownerCik": "0001605809",
+      "issuerCik": "0001596532"
+    },
+    {
+      "ticker": "SYK",
+      "company": "STRYKER CORP",
+      "owner": "STRYKER RONDA E",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-18",
+      "filed": "2026-08-20",
+      "shares": 350000,
+      "price": 336.5,
+      "value": 117775800,
+      "plan": false,
+      "acc": "0001242914-26-000010",
+      "ownerCik": "0001242914",
+      "issuerCik": "0000310764"
+    },
+    {
+      "ticker": "APH",
+      "company": "AMPHENOL CORP /DE/",
+      "owner": "NORWITT RICHARD ADAM",
       "role": "President & CEO",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-31",
+      "filed": "2026-08-03",
+      "shares": 686104,
+      "price": 161.76,
+      "value": 110984096,
+      "plan": false,
+      "acc": "0001104659-26-089782",
+      "ownerCik": "0001276461",
+      "issuerCik": "0000820313"
+    },
+    {
+      "ticker": "GTLB",
+      "company": "Gitlab Inc.",
+      "owner": "Sijbrandij Sytse",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-24",
+      "filed": "2026-09-28",
+      "shares": 2116200,
+      "price": 47.77,
+      "value": 101089788,
+      "plan": true,
+      "acc": "0001653482-26-000170",
+      "ownerCik": "0001886022",
+      "issuerCik": "0001653482"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc.",
+      "owner": "Slootman Frank",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-18",
+      "filed": "2026-09-22",
+      "shares": 300000,
+      "price": 334.49,
+      "value": 100345692,
+      "plan": true,
+      "acc": "0001628280-26-063114",
+      "ownerCik": "0001402348",
+      "issuerCik": "0001640147"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc.",
+      "owner": "Slootman Frank",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-18",
+      "filed": "2026-08-20",
+      "shares": 300000,
+      "price": 324.75,
+      "value": 97425114,
+      "plan": true,
+      "acc": "0001402348-26-000017",
+      "ownerCik": "0001402348",
+      "issuerCik": "0001640147"
+    },
+    {
+      "ticker": "ONC",
+      "company": "BeOne Medicines Ltd.",
+      "owner": "OYLER JOHN",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-15",
+      "filed": "2026-07-17",
+      "shares": 283154,
+      "price": 315.56,
+      "value": 89351650,
+      "plan": true,
+      "acc": "0001042047-26-000014",
+      "ownerCik": "0001042047",
+      "issuerCik": "0001651308"
+    },
+    {
+      "ticker": "SN",
+      "company": "SharkNinja, Inc.",
+      "owner": "Barrocas Mark",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-05",
+      "filed": "2026-08-07",
+      "shares": 500000,
+      "price": 177.5,
+      "value": 88750000,
+      "plan": true,
+      "acc": "0000908834-26-000386",
+      "ownerCik": "0001987144",
+      "issuerCik": "0001957132"
+    },
+    {
+      "ticker": "CPAY",
+      "company": "CORPAY, INC.",
+      "owner": "Clarke Ronald",
+      "role": "CEO & Chairman of BOD",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-24",
+      "filed": "2026-08-25",
+      "shares": 213860,
+      "price": 413.89,
+      "value": 88514513,
+      "plan": false,
+      "acc": "0001193125-26-365658",
+      "ownerCik": "0001506862",
+      "issuerCik": "0001175454"
+    },
+    {
+      "ticker": "ONC",
+      "company": "BeOne Medicines Ltd.",
+      "owner": "OYLER JOHN",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-10",
+      "filed": "2026-08-12",
+      "shares": 240810,
+      "price": 359.12,
+      "value": 86480631,
+      "plan": true,
+      "acc": "0001042047-26-000019",
+      "ownerCik": "0001042047",
+      "issuerCik": "0001651308"
+    },
+    {
+      "ticker": "PLTR",
+      "company": "Palantir Technologies Inc.",
+      "owner": "Karp Alexander C.",
+      "role": "See Remarks",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-20",
+      "filed": "2026-08-24",
+      "shares": 492348,
+      "price": 174.79,
+      "value": 86059007,
+      "plan": true,
+      "acc": "0001823951-26-000009",
+      "ownerCik": "0001823951",
+      "issuerCik": "0001321655"
+    },
+    {
+      "ticker": "ILMN",
+      "company": "ILLUMINA, INC.",
+      "owner": "Meister Keith A.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
       "date": "2026-08-25",
       "filed": "2026-08-27",
-      "shares": 12378,
-      "price": 17372.52,
-      "value": 215037053,
+      "shares": 375941,
+      "price": 226.74,
+      "value": 85241664,
+      "plan": false,
+      "acc": "0001193125-26-371756",
+      "ownerCik": "0001307631",
+      "issuerCik": "0001110803"
+    },
+    {
+      "ticker": "BEKE",
+      "company": "KE Holdings Inc.",
+      "owner": "Peng Yongdong",
+      "role": "Chief Executive Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-25",
+      "filed": "2026-09-29",
+      "shares": 16033983,
+      "price": 5.27,
+      "value": 84499090,
+      "plan": false,
+      "acc": "0001193125-26-405896",
+      "ownerCik": "0001890584",
+      "issuerCik": "0001809587"
+    },
+    {
+      "ticker": "SNOW",
+      "company": "Snowflake Inc.",
+      "owner": "Slootman Frank",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-20",
+      "filed": "2026-07-22",
+      "shares": 300000,
+      "price": 274.41,
+      "value": 82323907,
       "plan": true,
-      "acc": "0001493152-26-040452",
-      "ownerCik": "0001055365",
-      "issuerCik": "0000082473"
+      "acc": "0001402348-26-000016",
+      "ownerCik": "0001402348",
+      "issuerCik": "0001640147"
+    },
+    {
+      "ticker": "CBRS",
+      "company": "Cerebras Systems Inc.",
+      "owner": "Mallick Dhiraj",
+      "role": "Chief Operating Officer",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-29",
+      "filed": "2026-09-30",
+      "shares": 396000,
+      "price": 204.04,
+      "value": 80798604,
+      "plan": true,
+      "acc": "0001628280-26-064042",
+      "ownerCik": "0002039572",
+      "issuerCik": "0002021728"
+    },
+    {
+      "ticker": "MANE",
+      "company": "Veradermics, Inc",
+      "owner": "Averill Master Fund, Ltd.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-19",
+      "filed": "2026-08-21",
+      "shares": 750000,
+      "price": 107.25,
+      "value": 80437500,
+      "plan": false,
+      "acc": "0000899140-26-000947",
+      "ownerCik": "0001939329",
+      "issuerCik": "0001827635"
+    }
+  ],
+  "topSells": [
+    {
+      "ticker": "FANG",
+      "company": "Diamondback Energy, Inc.",
+      "owner": "SGF FANG Holdings, LP",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-09-16",
+      "filed": "2026-09-17",
+      "shares": 9079675,
+      "price": 205.26,
+      "value": 1863694091,
+      "plan": false,
+      "acc": "0001140361-26-037010",
+      "ownerCik": "0002080063",
+      "issuerCik": "0001539838"
+    },
+    {
+      "ticker": "FANG",
+      "company": "Diamondback Energy, Inc.",
+      "owner": "Greth Lyndal",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-09-16",
+      "filed": "2026-09-17",
+      "shares": 9079675,
+      "price": 205.26,
+      "value": 1863694091,
+      "plan": false,
+      "acc": "0001140361-26-037009",
+      "ownerCik": "0002021141",
+      "issuerCik": "0001539838"
+    },
+    {
+      "ticker": "BIRK",
+      "company": "Birkenstock Holding plc",
+      "owner": "Chu James Michael",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-17",
+      "filed": "2026-08-17",
+      "shares": 28146226,
+      "price": 39.18,
+      "value": 1102769135,
+      "plan": false,
+      "acc": "0001193125-26-354024",
+      "ownerCik": "0001544498",
+      "issuerCik": "0001977102"
+    },
+    {
+      "ticker": "JMKE",
+      "company": "Jersey Mike's Subs Inc.",
+      "owner": "Submarine Buyer Holdco LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-07-31",
+      "filed": "2026-08-04",
+      "shares": 29695652,
+      "price": 21.85,
+      "value": 648849996,
+      "plan": false,
+      "acc": "0001193125-26-332967",
+      "ownerCik": "0002146115",
+      "issuerCik": "0002127043"
+    },
+    {
+      "ticker": "JMKE",
+      "company": "Jersey Mike's Subs Inc.",
+      "owner": "Blackstone Group Management L.L.C.",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-07-31",
+      "filed": "2026-08-04",
+      "shares": 29695652,
+      "price": 21.85,
+      "value": 648849996,
+      "plan": false,
+      "acc": "0001193125-26-332966",
+      "ownerCik": "0001404071",
+      "issuerCik": "0002127043"
+    },
+    {
+      "ticker": "ALH",
+      "company": "Alliance Laundry Holdings Inc.",
+      "owner": "BDT Badger Holdings, LLC",
+      "role": "Director",
+      "exec": true,
+      "owner10": true,
+      "date": "2026-08-20",
+      "filed": "2026-08-24",
+      "shares": 25932500,
+      "price": 22.74,
+      "value": 589705050,
+      "plan": false,
+      "acc": "0001628280-26-058640",
+      "ownerCik": "0002014505",
+      "issuerCik": "0001317685"
+    },
+    {
+      "ticker": "PRMB",
+      "company": "Primo Brands Corp",
+      "owner": "Triton Water Parent Holdings, LP",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-07",
+      "filed": "2026-08-10",
+      "shares": 20410340,
+      "price": 24.37,
+      "value": 497399986,
+      "plan": false,
+      "acc": "0001493152-26-036941",
+      "ownerCik": "0002042697",
+      "issuerCik": "0002042694"
+    },
+    {
+      "ticker": "PRMB",
+      "company": "Primo Brands Corp",
+      "owner": "Lee Tony W",
+      "role": "Director",
+      "exec": true,
+      "owner10": true,
+      "date": "2026-08-07",
+      "filed": "2026-08-10",
+      "shares": 20410340,
+      "price": 24.37,
+      "value": 497399986,
+      "plan": false,
+      "acc": "0001493152-26-036940",
+      "ownerCik": "0001988010",
+      "issuerCik": "0002042694"
+    },
+    {
+      "ticker": "CRBG",
+      "company": "Corebridge Financial, Inc.",
+      "owner": "Blackstone Holdings I/II GP L.L.C.",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-10",
+      "filed": "2026-08-12",
+      "shares": 14500000,
+      "price": 33.87,
+      "value": 491115000,
+      "plan": false,
+      "acc": "0001193125-26-347014",
+      "ownerCik": "0001464695",
+      "issuerCik": "0001889539"
+    },
+    {
+      "ticker": "AUR",
+      "company": "Aurora Innovation, Inc.",
+      "owner": "Uber Technologies, Inc",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-17",
+      "filed": "2026-08-19",
+      "shares": 72000000,
+      "price": 6.55,
+      "value": 471600000,
+      "plan": false,
+      "acc": "0001552781-26-000454",
+      "ownerCik": "0001543151",
+      "issuerCik": "0001828108"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "owner": "STEVENS MARK A",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-31",
+      "filed": "2026-09-02",
+      "shares": 1848501,
+      "price": 222.26,
+      "value": 410845986,
+      "plan": false,
+      "acc": "0001199039-26-000012",
+      "ownerCik": "0001199039",
+      "issuerCik": "0001045810"
+    },
+    {
+      "ticker": "SN",
+      "company": "SharkNinja, Inc.",
+      "owner": "Wang Xuning",
+      "role": "Director",
+      "exec": true,
+      "owner10": true,
+      "date": "2026-07-10",
+      "filed": "2026-07-13",
+      "shares": 2668200,
+      "price": 150.36,
+      "value": 401190552,
+      "plan": false,
+      "acc": "0001104659-26-082848",
+      "ownerCik": "0002001826",
+      "issuerCik": "0001957132"
+    },
+    {
+      "ticker": "INGM",
+      "company": "Ingram Micro Holding Corp",
+      "owner": "Platinum Equity Investment Holdings V, LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-09-10",
+      "filed": "2026-09-14",
+      "shares": 13125000,
+      "price": 27.19,
+      "value": 356868750,
+      "plan": false,
+      "acc": "0001104659-26-107514",
+      "ownerCik": "0001854932",
+      "issuerCik": "0001897762"
+    },
+    {
+      "ticker": "AMZN",
+      "company": "AMAZON COM INC",
+      "owner": "BEZOS JEFFREY P",
+      "role": "Executive Chair",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-03",
+      "filed": "2026-08-05",
+      "shares": 1209649,
+      "price": 286.41,
+      "value": 346455570,
+      "plan": true,
+      "acc": "0001018724-26-000028",
+      "ownerCik": "0001043298",
+      "issuerCik": "0001018724"
+    },
+    {
+      "ticker": "CELC",
+      "company": "Celcuity Inc.",
+      "owner": "BAKER JULIAN",
+      "role": "other",
+      "exec": false,
+      "owner10": false,
+      "date": "2026-07-14",
+      "filed": "2026-07-16",
+      "shares": 3100000,
+      "price": 102.5,
+      "value": 317750000,
+      "plan": false,
+      "acc": "0001193125-26-306299",
+      "ownerCik": "0001087939",
+      "issuerCik": "0001603454"
+    },
+    {
+      "ticker": "ABNB",
+      "company": "Airbnb, Inc.",
+      "owner": "Gebbia Joseph",
+      "role": "Director",
+      "exec": true,
+      "owner10": true,
+      "date": "2026-07-27",
+      "filed": "2026-07-29",
+      "shares": 2093303,
+      "price": 150.91,
+      "value": 315909148,
+      "plan": true,
+      "acc": "0001193125-26-324172",
+      "ownerCik": "0001834171",
+      "issuerCik": "0001559720"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "owner": "STEVENS MARK A",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-18",
+      "filed": "2026-09-22",
+      "shares": 1366000,
+      "price": 219.73,
+      "value": 300144520,
+      "plan": false,
+      "acc": "0001199039-26-000016",
+      "ownerCik": "0001199039",
+      "issuerCik": "0001045810"
+    },
+    {
+      "ticker": "ORKA",
+      "company": "Oruka Therapeutics, Inc.",
+      "owner": "Kiselak Tomas",
+      "role": "Director",
+      "exec": true,
+      "owner10": true,
+      "date": "2026-07-01",
+      "filed": "2026-07-01",
+      "shares": 3553410,
+      "price": 84.43,
+      "value": 300014406,
+      "plan": false,
+      "acc": "0001104659-26-080009",
+      "ownerCik": "0001830177",
+      "issuerCik": "0000907654"
+    },
+    {
+      "ticker": "UMC",
+      "company": "UNITED MICROELECTRONICS CORP",
+      "owner": "Liu Chitung",
+      "role": "CFO & SVP",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-13",
+      "filed": "2026-07-13",
+      "shares": 1900000,
+      "price": 154.89,
+      "value": 294291000,
+      "plan": false,
+      "acc": "0001193125-26-301380",
+      "ownerCik": "0002120081",
+      "issuerCik": "0001033767"
+    },
+    {
+      "ticker": "RKLB",
+      "company": "Rocket Lab Corp",
+      "owner": "Beck Peter",
+      "role": "CEO",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-07-06",
+      "filed": "2026-07-08",
+      "shares": 3275779,
+      "price": 87.43,
+      "value": 286412627,
+      "plan": true,
+      "acc": "0002001011-26-000109",
+      "ownerCik": "0001881842",
+      "issuerCik": "0001819994"
+    },
+    {
+      "ticker": "FA",
+      "company": "FIRST ADVANTAGE CORP",
+      "owner": "Osnoss Joseph",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-12",
+      "filed": "2026-08-14",
+      "shares": 12500000,
+      "price": 22.02,
+      "value": 275250000,
+      "plan": false,
+      "acc": "0001193125-26-352400",
+      "ownerCik": "0001603955",
+      "issuerCik": "0001210677"
+    },
+    {
+      "ticker": "OPLN",
+      "company": "OPENLANE, Inc.",
+      "owner": "Apax Guernsey (Holdco) PCC Ltd",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-13",
+      "filed": "2026-08-13",
+      "shares": 8000000,
+      "price": 34.36,
+      "value": 274880000,
+      "plan": false,
+      "acc": "0001193125-26-349541",
+      "ownerCik": "0001469807",
+      "issuerCik": "0001395942"
+    },
+    {
+      "ticker": "AVGO",
+      "company": "Broadcom Inc.",
+      "owner": "SAMUELI HENRY",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-23",
+      "filed": "2026-09-25",
+      "shares": 702190,
+      "price": 356.04,
+      "value": 250006184,
+      "plan": true,
+      "acc": "0001104659-26-110983",
+      "ownerCik": "0001201633",
+      "issuerCik": "0001730168"
+    },
+    {
+      "ticker": "SVV",
+      "company": "Savers Value Village, Inc.",
+      "owner": "ARES MANAGEMENT LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-13",
+      "filed": "2026-08-17",
+      "shares": 23000000,
+      "price": 10.25,
+      "value": 235750000,
+      "plan": false,
+      "acc": "0001104659-26-097889",
+      "ownerCik": "0001259313",
+      "issuerCik": "0001883313"
+    },
+    {
+      "ticker": "SVV",
+      "company": "Savers Value Village, Inc.",
+      "owner": "ARES MANAGEMENT LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-13",
+      "filed": "2026-08-17",
+      "shares": 23000000,
+      "price": 10.25,
+      "value": 235750000,
+      "plan": false,
+      "acc": "0001104659-26-097885",
+      "ownerCik": "0001259313",
+      "issuerCik": "0001883313"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA CORP",
+      "owner": "STEVENS MARK A",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-03",
+      "filed": "2026-09-08",
+      "shares": 1022239,
+      "price": 230.51,
+      "value": 235637165,
+      "plan": false,
+      "acc": "0001199039-26-000014",
+      "ownerCik": "0001199039",
+      "issuerCik": "0001045810"
+    },
+    {
+      "ticker": "CRWV",
+      "company": "CoreWeave, Inc.",
+      "owner": "Snyderman David J.",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-12",
+      "filed": "2026-08-14",
+      "shares": 2147871,
+      "price": 107.83,
+      "value": 231601955,
+      "plan": false,
+      "acc": "0001104659-26-097429",
+      "ownerCik": "0001953511",
+      "issuerCik": "0001769628"
+    },
+    {
+      "ticker": "UMC",
+      "company": "UNITED MICROELECTRONICS CORP",
+      "owner": "Liu Chitung",
+      "role": "CFO & SVP",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-09-16",
+      "filed": "2026-09-17",
+      "shares": 1600000,
+      "price": 143,
+      "value": 228796000,
+      "plan": false,
+      "acc": "0001193125-26-393652",
+      "ownerCik": "0002120081",
+      "issuerCik": "0001033767"
+    },
+    {
+      "ticker": "LFST",
+      "company": "LifeStance Health Group, Inc.",
+      "owner": "TPG GP A, LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-09-11",
+      "filed": "2026-09-15",
+      "shares": 18409705,
+      "price": 12.29,
+      "value": 226255274,
+      "plan": false,
+      "acc": "0001999371-26-020559",
+      "ownerCik": "0001903793",
+      "issuerCik": "0001845257"
+    },
+    {
+      "ticker": "LTH",
+      "company": "Life Time Group Holdings, Inc.",
+      "owner": "Galashan John Kristofer",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-10",
+      "filed": "2026-08-12",
+      "shares": 5119099,
+      "price": 43.16,
+      "value": 220940313,
+      "plan": false,
+      "acc": "0001193125-26-347333",
+      "ownerCik": "0001590836",
+      "issuerCik": "0001869198"
+    },
+    {
+      "ticker": "LTH",
+      "company": "Life Time Group Holdings, Inc.",
+      "owner": "DANHAKL JOHN G",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-10",
+      "filed": "2026-08-12",
+      "shares": 5119099,
+      "price": 43.16,
+      "value": 220940313,
+      "plan": false,
+      "acc": "0001193125-26-347311",
+      "ownerCik": "0001162644",
+      "issuerCik": "0001869198"
+    },
+    {
+      "ticker": "LTH",
+      "company": "Life Time Group Holdings, Inc.",
+      "owner": "Green Equity Investors Side VI, L.P.",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-10",
+      "filed": "2026-08-12",
+      "shares": 5119099,
+      "price": 43.16,
+      "value": 220940313,
+      "plan": false,
+      "acc": "0001193125-26-347303",
+      "ownerCik": "0001531059",
+      "issuerCik": "0001869198"
     },
     {
       "ticker": "CRWV",
       "company": "CoreWeave, Inc.",
       "owner": "Magnetar Financial LLC",
       "role": "10% owner",
+      "exec": false,
+      "owner10": true,
       "date": "2026-08-13",
       "filed": "2026-08-14",
       "shares": 1921259,
@@ -1395,6 +2656,125 @@
       "acc": "0001104659-26-097431",
       "ownerCik": "0001352851",
       "issuerCik": "0001769628"
+    },
+    {
+      "ticker": "TPC",
+      "company": "TUTOR PERINI CORP",
+      "owner": "TUTOR RONALD N",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-31",
+      "filed": "2026-09-02",
+      "shares": 2310000,
+      "price": 85.59,
+      "value": 197709600,
+      "plan": false,
+      "acc": "0000077543-26-000200",
+      "ownerCik": "0000906134",
+      "issuerCik": "0000077543"
+    },
+    {
+      "ticker": "PRM",
+      "company": "Perimeter Solutions, Inc.",
+      "owner": "Amin Snehal",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-06-26",
+      "filed": "2026-07-13",
+      "shares": 5705979,
+      "price": 34.28,
+      "value": 195609062,
+      "plan": false,
+      "acc": "0000919574-26-004413",
+      "ownerCik": "0001893660",
+      "issuerCik": "0001880319"
+    },
+    {
+      "ticker": "AVAH",
+      "company": "Aveanna Healthcare Holdings, Inc.",
+      "owner": "WILLIAMS ROBERT M JR",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-20",
+      "filed": "2026-08-24",
+      "shares": 16750002,
+      "price": 11.5,
+      "value": 192625023,
+      "plan": false,
+      "acc": "0001193125-26-363868",
+      "ownerCik": "0001239610",
+      "issuerCik": "0001832332"
+    },
+    {
+      "ticker": "AVAH",
+      "company": "Aveanna Healthcare Holdings, Inc.",
+      "owner": "VIGANO PAUL R",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-20",
+      "filed": "2026-08-24",
+      "shares": 16750002,
+      "price": 11.5,
+      "value": 192625023,
+      "plan": false,
+      "acc": "0001193125-26-363860",
+      "ownerCik": "0001239606",
+      "issuerCik": "0001832332"
+    },
+    {
+      "ticker": "AUR",
+      "company": "Aurora Innovation, Inc.",
+      "owner": "Uber Technologies, Inc",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-09-15",
+      "filed": "2026-09-17",
+      "shares": 29369611,
+      "price": 6.21,
+      "value": 182385284,
+      "plan": false,
+      "acc": "0001552781-26-000495",
+      "ownerCik": "0001543151",
+      "issuerCik": "0001828108"
+    },
+    {
+      "ticker": "AVAH",
+      "company": "Aveanna Healthcare Holdings, Inc.",
+      "owner": "J.H. Whitney Equity Partners VII, LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-20",
+      "filed": "2026-08-24",
+      "shares": 14746077,
+      "price": 11.5,
+      "value": 169579886,
+      "plan": false,
+      "acc": "0001193125-26-363869",
+      "ownerCik": "0001567459",
+      "issuerCik": "0001832332"
+    },
+    {
+      "ticker": "CVX",
+      "company": "CHEVRON CORP",
+      "owner": "HESS JOHN B",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-08-03",
+      "filed": "2026-08-05",
+      "shares": 810665,
+      "price": 194.12,
+      "value": 157368779,
+      "plan": false,
+      "acc": "0000093410-26-000164",
+      "ownerCik": "0001087997",
+      "issuerCik": "0000093410"
     }
   ],
   "clusterBuys": [
@@ -1406,8 +2786,8 @@
       "insiders": 31,
       "roles": [
         "VP",
-        "SVP",
-        "SVP and Deputy Co-COO",
+        "SVP and GC",
+        "Chairman and CEO",
         "EVP and Co-COO"
       ],
       "last": "2026-09-07"
@@ -1432,17 +2812,17 @@
       "trades": 16,
       "insiders": 16,
       "roles": [
-        "Director",
-        "SEVP & Head Commercial Banking",
+        "President & CEO",
         "Sr. EVP, COO",
-        "SEVP & Chief Risk Officer"
+        "SEVP&Head of Consumer Banking",
+        "EVP, CFO"
       ],
       "last": "2026-07-20"
     },
     {
       "ticker": "SPG",
       "company": "SIMON PROPERTY GROUP INC.",
-      "value": 529028.26,
+      "value": 529028.2599999999,
       "trades": 11,
       "insiders": 11,
       "roles": [
@@ -1451,30 +2831,16 @@
       "last": "2026-06-30"
     },
     {
-      "ticker": "BRVE",
-      "company": "Braveheart Bio, Inc.",
-      "value": 159034950,
-      "trades": 10,
-      "insiders": 10,
-      "roles": [
-        "10% owner",
-        "Director",
-        "Chief Financial Officer",
-        "Chief Development Officer"
-      ],
-      "last": "2026-08-07"
-    },
-    {
       "ticker": "AMRZ",
       "company": "Amrize Ltd",
-      "value": 2638189.6399999997,
+      "value": 2638189.64,
       "trades": 10,
       "insiders": 10,
       "roles": [
         "Chairman & CEO",
-        "Director",
-        "Chief Legal Officer & Corp Sec",
-        "Chief Mktg & Corp Affairs Off"
+        "Chief Financial Officer",
+        "Chief People Officer",
+        "Director"
       ],
       "last": "2026-09-02"
     },
@@ -1485,39 +2851,12 @@
       "trades": 10,
       "insiders": 9,
       "roles": [
-        "President/CEO",
         "Director",
-        "EVP/CCO",
-        "EVP/CFO"
+        "President/CEO",
+        "EVP/CFO",
+        "EVP/CCO"
       ],
       "last": "2026-09-17"
-    },
-    {
-      "ticker": "SBLK",
-      "company": "Star Bulk Carriers Corp.",
-      "value": 6920496,
-      "trades": 8,
-      "insiders": 8,
-      "roles": [
-        "Director",
-        "Chief Strategy Officer",
-        "other",
-        "Chief Operating Officer"
-      ],
-      "last": "2026-09-15"
-    },
-    {
-      "ticker": "ATTO",
-      "company": "Attovia Therapeutics, Inc.",
-      "value": 72939979,
-      "trades": 8,
-      "insiders": 7,
-      "roles": [
-        "Director",
-        "other",
-        "10% owner"
-      ],
-      "last": "2026-08-06"
     },
     {
       "ticker": "CDNL",
@@ -1526,24 +2865,38 @@
       "trades": 7,
       "insiders": 7,
       "roles": [
-        "Director",
-        "Chief Financial Officer",
         "Chief Executive Officer",
-        "Chief Operating Officer"
+        "Director",
+        "Chief Operating Officer",
+        "Chief Financial Officer"
       ],
       "last": "2026-08-17"
     },
     {
-      "ticker": "CC",
-      "company": "Chemours Co",
-      "value": 488649.26330000005,
+      "ticker": "SBLK",
+      "company": "Star Bulk Carriers Corp.",
+      "value": 4817208,
       "trades": 7,
       "insiders": 7,
       "roles": [
-        "See Remarks",
-        "Chief Executive Officer",
         "Director",
-        "Chief Financial Officer"
+        "co CFO",
+        "Chief Operating Officer",
+        "Chief Strategy Officer"
+      ],
+      "last": "2026-09-15"
+    },
+    {
+      "ticker": "CC",
+      "company": "Chemours Co",
+      "value": 488649.2633,
+      "trades": 7,
+      "insiders": 7,
+      "roles": [
+        "Director",
+        "Chief Executive Officer",
+        "Chief Financial Officer",
+        "See Remarks"
       ],
       "last": "2026-08-12"
     },
@@ -1559,58 +2912,6 @@
       "last": "2026-07-02"
     },
     {
-      "ticker": "SCTX",
-      "company": "Scribe Therapeutics, Inc.",
-      "value": 71344746.25,
-      "trades": 6,
-      "insiders": 6,
-      "roles": [
-        "10% owner",
-        "Director",
-        "Chief Business Officer",
-        "Chief Financial Officer"
-      ],
-      "last": "2026-07-27"
-    },
-    {
-      "ticker": "PNAQ",
-      "company": "Pinnacle Acquisition Corp",
-      "value": 29800000,
-      "trades": 6,
-      "insiders": 6,
-      "roles": [
-        "Director",
-        "Chief Executive Officer",
-        "10% owner"
-      ],
-      "last": "2026-08-10"
-    },
-    {
-      "ticker": "BLSM",
-      "company": "BlossomHill Therapeutics, Inc.",
-      "value": 25181900,
-      "trades": 6,
-      "insiders": 6,
-      "roles": [
-        "Director",
-        "10% owner",
-        "Chief Financial Officer",
-        "General Counsel"
-      ],
-      "last": "2026-08-10"
-    },
-    {
-      "ticker": "FSBC",
-      "company": "FIVE STAR BANCORP",
-      "value": 6279988,
-      "trades": 6,
-      "insiders": 6,
-      "roles": [
-        "Director"
-      ],
-      "last": "2026-07-22"
-    },
-    {
       "ticker": "DKS",
       "company": "DICK'S SPORTING GOODS, INC.",
       "value": 5088811.42,
@@ -1623,40 +2924,30 @@
       "last": "2026-09-23"
     },
     {
-      "ticker": "CODI",
-      "company": "Compass Diversified Holdings",
-      "value": 2426628.27,
-      "trades": 7,
-      "insiders": 6,
-      "roles": [
-        "other"
-      ],
-      "last": "2026-08-26"
-    },
-    {
-      "ticker": "GBFH",
-      "company": "GBank Financial Holdings Inc.",
-      "value": 1792968.6,
+      "ticker": "BRVE",
+      "company": "Braveheart Bio, Inc.",
+      "value": 4594950,
       "trades": 6,
       "insiders": 6,
       "roles": [
         "Director",
-        "other",
-        "President/CEO (GBank)"
+        "CEO and President",
+        "Chief Financial Officer",
+        "Chief Development Officer"
       ],
-      "last": "2026-09-08"
+      "last": "2026-08-07"
     },
     {
       "ticker": "RWT",
       "company": "REDWOOD TRUST INC",
-      "value": 1353002.1474,
+      "value": 1353002.1474000001,
       "trades": 7,
       "insiders": 6,
       "roles": [
-        "Chief Human Resource Officer",
-        "Chief Legal Officer",
         "Chief Executive Officer",
-        "President"
+        "President",
+        "Director",
+        "Chief Financial Officer"
       ],
       "last": "2026-09-21"
     },
@@ -1667,17 +2958,17 @@
       "trades": 6,
       "insiders": 6,
       "roles": [
-        "Chief Accounting Officer",
-        "See Remarks",
         "President and COO",
-        "Chief Financial Officer"
+        "Chief Financial Officer",
+        "See Remarks",
+        "Chief People Officer"
       ],
       "last": "2026-07-31"
     },
     {
       "ticker": "AVBC",
       "company": "Avidia Bancorp, Inc.",
-      "value": 643527.1699999999,
+      "value": 643527.1700000002,
       "trades": 7,
       "insiders": 6,
       "roles": [
@@ -1690,7 +2981,7 @@
     {
       "ticker": "BYRN",
       "company": "Byrna Technologies Inc.",
-      "value": 428219.0364,
+      "value": 428219.0363999999,
       "trades": 8,
       "insiders": 6,
       "roles": [
@@ -1703,30 +2994,16 @@
     {
       "ticker": "WIX",
       "company": "Wix.com Ltd.",
-      "value": 185718.89,
+      "value": 185718.88999999998,
       "trades": 6,
       "insiders": 6,
       "roles": [
-        "Chief People Officer",
-        "CTO",
+        "Chief Executive Officer",
+        "President",
         "CMO",
-        "CFO"
+        "Chief People Officer"
       ],
       "last": "2026-08-31"
-    },
-    {
-      "ticker": "OKYO",
-      "company": "OKYO Pharma Ltd",
-      "value": 136035.87,
-      "trades": 7,
-      "insiders": 6,
-      "roles": [
-        "CHIEF EXECUTIVE OFFICER",
-        "Director",
-        "CHIEF DEVELOPMENT OFFICER",
-        "Chief Scientific Officer"
-      ],
-      "last": "2026-07-27"
     },
     {
       "ticker": "ACON",
@@ -1744,14 +3021,14 @@
     {
       "ticker": "CBKM",
       "company": "CONSUMERS BANCORP INC /OH/",
-      "value": 37586.3779,
+      "value": 37586.37790000001,
       "trades": 7,
       "insiders": 6,
       "roles": [
         "CEO & President",
         "Director",
-        "SVP, Chief Information Officer",
-        "SVP, Chief People Officer"
+        "SVP, Chief People Officer",
+        "EVP, Chief Credit Officer"
       ],
       "last": "2026-09-17"
     },
@@ -1762,8 +3039,8 @@
       "trades": 6,
       "insiders": 6,
       "roles": [
-        "President and CEO",
-        "Director"
+        "Director",
+        "President and CEO"
       ],
       "last": "2026-09-15"
     },
@@ -1774,50 +3051,129 @@
       "trades": 7,
       "insiders": 6,
       "roles": [
-        "Director",
-        "Chief Financial Officer",
         "Chief Operating Officer",
-        "President & CEO"
+        "President & CEO",
+        "CAO & General Counsel",
+        "VP- Customer Service"
       ],
       "last": "2026-09-21"
     },
     {
-      "ticker": "ADRX",
-      "company": "ADARx Pharmaceuticals, Inc.",
-      "value": 87745772,
+      "ticker": "SCTX",
+      "company": "Scribe Therapeutics, Inc.",
+      "value": 66344751.25,
       "trades": 5,
       "insiders": 5,
       "roles": [
         "Director",
-        "10% owner"
+        "Chief Business Officer",
+        "Chief Financial Officer"
       ],
-      "last": "2026-09-28"
+      "last": "2026-07-27"
+    },
+    {
+      "ticker": "BLSM",
+      "company": "BlossomHill Therapeutics, Inc.",
+      "value": 20181900,
+      "trades": 5,
+      "insiders": 5,
+      "roles": [
+        "Director",
+        "General Counsel",
+        "Chief Financial Officer"
+      ],
+      "last": "2026-08-10"
+    },
+    {
+      "ticker": "FSBC",
+      "company": "FIVE STAR BANCORP",
+      "value": 2029984,
+      "trades": 5,
+      "insiders": 5,
+      "roles": [
+        "Director"
+      ],
+      "last": "2026-07-22"
+    },
+    {
+      "ticker": "EWSB",
+      "company": "EWSB Bancorp, Inc. /MD/",
+      "value": 1716710,
+      "trades": 5,
+      "insiders": 5,
+      "roles": [
+        "President & CEO",
+        "VP - Member Experience",
+        "VP - Lending",
+        "VP HR Technology"
+      ],
+      "last": "2026-06-29"
+    },
+    {
+      "ticker": "ELAN",
+      "company": "Elanco Animal Health Inc",
+      "value": 1473208.84,
+      "trades": 5,
+      "insiders": 5,
+      "roles": [
+        "Director",
+        "EVP and CFO",
+        "GC AND CORP SEC"
+      ],
+      "last": "2026-08-20"
+    },
+    {
+      "ticker": "BWFG",
+      "company": "Bankwell Financial Group, Inc.",
+      "value": 916493.76,
+      "trades": 6,
+      "insiders": 5,
+      "roles": [
+        "Director"
+      ],
+      "last": "2026-09-08"
+    },
+    {
+      "ticker": "HEPA",
+      "company": "Hepion Pharmaceuticals, Inc.",
+      "value": 825000,
+      "trades": 5,
+      "insiders": 5,
+      "roles": [
+        "Executive Chairman",
+        "Interim CEO",
+        "Director",
+        "Chief Operating Officer"
+      ],
+      "last": "2026-08-03"
+    },
+    {
+      "ticker": "DKL",
+      "company": "Delek Logistics Partners, LP",
+      "value": 750000,
+      "trades": 5,
+      "insiders": 5,
+      "roles": [
+        "Chairman",
+        "EVP",
+        "President",
+        "EVP, Chief Financial Officer"
+      ],
+      "last": "2026-08-13"
+    },
+    {
+      "ticker": "FUL",
+      "company": "FULLER H B CO",
+      "value": 564904.6699999999,
+      "trades": 6,
+      "insiders": 5,
+      "roles": [
+        "Director"
+      ],
+      "last": "2026-09-29"
     }
   ],
   "topBuyCompanies": [
-    {
-      "ticker": "FINS",
-      "company": "Angel Oak Financial Strategies Income Term Trust",
-      "value": 1600000000024430,
-      "trades": 3,
-      "insiders": 2,
-      "roles": [
-        "other",
-        "10% owner"
-      ],
-      "last": "2026-09-25"
-    },
-    {
-      "ticker": "REBN",
-      "company": "Reborn Coffee, Inc.",
-      "value": 23649660000,
-      "trades": 1,
-      "insiders": 1,
-      "roles": [
-        "CEO and Interim CFO"
-      ],
-      "last": "2026-07-14"
-    },
     {
       "ticker": "RSG",
       "company": "REPUBLIC SERVICES, INC.",
@@ -1839,17 +3195,6 @@
         "Director"
       ],
       "last": "2026-06-16"
-    },
-    {
-      "ticker": "NMM",
-      "company": "Navios Maritime Partners L.P.",
-      "value": 848500452.9100001,
-      "trades": 10,
-      "insiders": 1,
-      "roles": [
-        "See Remarks"
-      ],
-      "last": "2026-08-10"
     },
     {
       "ticker": "JEF",
@@ -1908,17 +3253,6 @@
       "last": "2026-09-28"
     },
     {
-      "ticker": "PBLSX",
-      "company": "AMG Pantheon Infrastructure Fund, LLC",
-      "value": 164379127.0051,
-      "trades": 3,
-      "insiders": 3,
-      "roles": [
-        "10% owner"
-      ],
-      "last": "2026-09-01"
-    },
-    {
       "ticker": "BRVE",
       "company": "Braveheart Bio, Inc.",
       "value": 159034950,
@@ -1942,6 +3276,17 @@
         "Director"
       ],
       "last": "2026-09-28"
+    },
+    {
+      "ticker": "PBLSX",
+      "company": "AMG Pantheon Infrastructure Fund, LLC",
+      "value": 139379127.0361,
+      "trades": 2,
+      "insiders": 2,
+      "roles": [
+        "10% owner"
+      ],
+      "last": "2026-09-01"
     },
     {
       "ticker": "COE",
@@ -1977,17 +3322,6 @@
         "Interim CEO and CFO"
       ],
       "last": "2026-09-01"
-    },
-    {
-      "ticker": "SCTH",
-      "company": "Securetech Innovations, Inc.",
-      "value": 100000000,
-      "trades": 1,
-      "insiders": 1,
-      "roles": [
-        "President & CEO"
-      ],
-      "last": "2026-08-21"
     },
     {
       "ticker": "ADRX",
@@ -2140,35 +3474,58 @@
         "Director"
       ],
       "last": "2026-09-03"
+    },
+    {
+      "ticker": "GRAB",
+      "company": "Grab Holdings Ltd",
+      "value": 30777260.19,
+      "trades": 2,
+      "insiders": 2,
+      "roles": [
+        "President and COO",
+        "Chief Executive Officer"
+      ],
+      "last": "2026-09-21"
+    },
+    {
+      "ticker": "BBD",
+      "company": "BANK BRADESCO",
+      "value": 29959249.66,
+      "trades": 23,
+      "insiders": 22,
+      "roles": [
+        "Executive Officer",
+        "Director",
+        "CLO and Executive Officer"
+      ],
+      "last": "2026-09-28"
+    },
+    {
+      "ticker": "GSAT",
+      "company": "Globalstar, Inc.",
+      "value": 29839232,
+      "trades": 1,
+      "insiders": 1,
+      "roles": [
+        "Director"
+      ],
+      "last": "2026-09-18"
+    },
+    {
+      "ticker": "PNAQ",
+      "company": "Pinnacle Acquisition Corp",
+      "value": 29800000,
+      "trades": 6,
+      "insiders": 6,
+      "roles": [
+        "Director",
+        "Chief Executive Officer",
+        "10% owner"
+      ],
+      "last": "2026-08-10"
     }
   ],
   "topSellCompanies": [
-    {
-      "ticker": "PSX",
-      "company": "Phillips 66",
-      "value": 7465167248.26,
-      "trades": 8,
-      "insiders": 6,
-      "roles": [
-        "Executive Vice President",
-        "EVP, Refining",
-        "Director",
-        "SVP and Controller"
-      ],
-      "last": "2026-09-16"
-    },
-    {
-      "ticker": "IHT",
-      "company": "INNSUITES HOSPITALITY TRUST",
-      "value": 4024717062.56,
-      "trades": 5,
-      "insiders": 2,
-      "roles": [
-        "EVP & Secretary/Treasurer",
-        "President & CEO"
-      ],
-      "last": "2026-09-17"
-    },
     {
       "ticker": "FANG",
       "company": "Diamondback Energy, Inc.",
@@ -2395,20 +3752,6 @@
       "last": "2026-09-22"
     },
     {
-      "ticker": "STNG",
-      "company": "Scorpio Tankers Inc.",
-      "value": 517102560.57,
-      "trades": 5,
-      "insiders": 5,
-      "roles": [
-        "President",
-        "Chief Operating Officer",
-        "Chief Financial Officer",
-        "Secretary"
-      ],
-      "last": "2026-09-17"
-    },
-    {
       "ticker": "CRBG",
       "company": "Corebridge Financial, Inc.",
       "value": 492623633.6999999,
@@ -2542,27 +3885,56 @@
         "Senior Vice President"
       ],
       "last": "2026-09-01"
+    },
+    {
+      "ticker": "SE",
+      "company": "Sea Ltd",
+      "value": 349072832.5800001,
+      "trades": 89,
+      "insiders": 9,
+      "roles": [
+        "CCO and GC",
+        "CPO, Shopee",
+        "COO",
+        "CFO"
+      ],
+      "last": "2026-09-25"
+    },
+    {
+      "ticker": "UTHR",
+      "company": "UNITED THERAPEUTICS Corp",
+      "value": 340306136.78,
+      "trades": 72,
+      "insiders": 4,
+      "roles": [
+        "Chairperson & CEO",
+        "EVP & GENERAL COUNSEL",
+        "Director"
+      ],
+      "last": "2026-09-29"
+    },
+    {
+      "ticker": "ONC",
+      "company": "BeOne Medicines Ltd.",
+      "value": 320710769.21999997,
+      "trades": 15,
+      "insiders": 6,
+      "roles": [
+        "Director",
+        "Principal Accounting Officer",
+        "President and COO",
+        "SVP, General Counsel"
+      ],
+      "last": "2026-09-28"
     }
   ],
   "buyTickers": {
-    "FINS": {
-      "value": 1600000000024430,
-      "insiders": 2
-    },
-    "REBN": {
-      "value": 23649660000,
-      "insiders": 1
-    },
     "RSG": {
       "value": 1380322221,
       "insiders": 2
     },
     "SVRE": {
       "value": 1135938816,
-      "insiders": 1
-    },
-    "NMM": {
-      "value": 848500453,
       "insiders": 1
     },
     "JEF": {
@@ -2585,10 +3957,6 @@
       "value": 187264612,
       "insiders": 1
     },
-    "PBLSX": {
-      "value": 164379127,
-      "insiders": 3
-    },
     "BRVE": {
       "value": 159034950,
       "insiders": 10
@@ -2596,6 +3964,10 @@
     "KOD": {
       "value": 156989303,
       "insiders": 3
+    },
+    "PBLSX": {
+      "value": 139379127,
+      "insiders": 2
     },
     "COE": {
       "value": 125600111,
@@ -2608,10 +3980,6 @@
     "APCX": {
       "value": 116073550,
       "insiders": 2
-    },
-    "SCTH": {
-      "value": 100000000,
-      "insiders": 1
     },
     "ADRX": {
       "value": 87745772,
@@ -2684,10 +4052,6 @@
     "SUJA": {
       "value": 29042169,
       "insiders": 2
-    },
-    "AVR": {
-      "value": 28750000,
-      "insiders": 1
     },
     "BABA": {
       "value": 25691200,
@@ -3057,17 +4421,9 @@
       "value": 3456431,
       "insiders": 1
     },
-    "EWSB": {
-      "value": 3423420,
-      "insiders": 5
-    },
     "ACOG": {
       "value": 3418750,
       "insiders": 2
-    },
-    "CARL": {
-      "value": 3000000,
-      "insiders": 1
     },
     "VII": {
       "value": 3000000,
@@ -3152,6 +4508,10 @@
     "IPX": {
       "value": 2379118,
       "insiders": 2
+    },
+    "NMM": {
+      "value": 2377864,
+      "insiders": 1
     },
     "KURA": {
       "value": 2351000,
@@ -3253,6 +4613,10 @@
       "value": 1731632,
       "insiders": 3
     },
+    "EWSB": {
+      "value": 1716710,
+      "insiders": 5
+    },
     "EQPT": {
       "value": 1715313,
       "insiders": 2
@@ -3348,10 +4712,6 @@
     "RWT": {
       "value": 1353002,
       "insiders": 6
-    },
-    "AB-LEND": {
-      "value": 1325965,
-      "insiders": 1
     },
     "BCBP": {
       "value": 1317500,
@@ -3877,10 +5237,6 @@
       "value": 500073,
       "insiders": 1
     },
-    "CAPS": {
-      "value": 500000,
-      "insiders": 3
-    },
     "FNKO": {
       "value": 499995,
       "insiders": 1
@@ -3925,10 +5281,6 @@
       "value": 482340,
       "insiders": 2
     },
-    "SHMD": {
-      "value": 481536,
-      "insiders": 3
-    },
     "ARE": {
       "value": 479800,
       "insiders": 1
@@ -3972,6 +5324,10 @@
     "ENSC": {
       "value": 444135,
       "insiders": 1
+    },
+    "SHMD": {
+      "value": 432440,
+      "insiders": 2
     },
     "BYRN": {
       "value": 428219,
@@ -4104,10 +5460,6 @@
     "AIAI": {
       "value": 339866,
       "insiders": 4
-    },
-    "ASX:LNW": {
-      "value": 339078,
-      "insiders": 1
     },
     "HPP": {
       "value": 335000,
@@ -4765,10 +6117,6 @@
       "value": 128403,
       "insiders": 2
     },
-    "SMID": {
-      "value": 127650,
-      "insiders": 2
-    },
     "VERI": {
       "value": 126489,
       "insiders": 1
@@ -4865,6 +6213,10 @@
       "value": 108405,
       "insiders": 1
     },
+    "SMID": {
+      "value": 108040,
+      "insiders": 2
+    },
     "INDV": {
       "value": 107955,
       "insiders": 1
@@ -4919,10 +6271,6 @@
     },
     "BROS": {
       "value": 103120,
-      "insiders": 1
-    },
-    "BMA": {
-      "value": 102405,
       "insiders": 1
     },
     "ACLOX": {
@@ -5185,10 +6533,6 @@
       "value": 71500,
       "insiders": 2
     },
-    "GDV": {
-      "value": 71325,
-      "insiders": 2
-    },
     "DLPN": {
       "value": 70105,
       "insiders": 1
@@ -5237,10 +6581,6 @@
       "value": 62164,
       "insiders": 1
     },
-    "CZR": {
-      "value": 61716,
-      "insiders": 1
-    },
     "NCDL": {
       "value": 61250,
       "insiders": 1
@@ -5264,10 +6604,6 @@
     "PHIO": {
       "value": 59035,
       "insiders": 3
-    },
-    "GHM": {
-      "value": 58812,
-      "insiders": 1
     },
     "LCU": {
       "value": 58809,
@@ -5681,10 +7017,6 @@
       "value": 32120,
       "insiders": 1
     },
-    "CFND": {
-      "value": 32058,
-      "insiders": 2
-    },
     "SAFTX": {
       "value": 32000,
       "insiders": 1
@@ -5801,10 +7133,6 @@
       "value": 26908,
       "insiders": 1
     },
-    "SYK": {
-      "value": 26180,
-      "insiders": 1
-    },
     "PCSA": {
       "value": 25876,
       "insiders": 5
@@ -5833,16 +7161,16 @@
       "value": 24788,
       "insiders": 1
     },
-    "CAKE": {
-      "value": 24755,
-      "insiders": 1
-    },
     "PGEN": {
       "value": 24662,
       "insiders": 1
     },
     "ETD": {
       "value": 24610,
+      "insiders": 1
+    },
+    "FINS": {
+      "value": 24430,
       "insiders": 1
     },
     "RCKY": {
@@ -5997,10 +7325,6 @@
       "value": 18372,
       "insiders": 1
     },
-    "EMMA": {
-      "value": 18126,
-      "insiders": 1
-    },
     "BGS": {
       "value": 18028,
       "insiders": 1
@@ -6040,6 +7364,10 @@
     "BY": {
       "value": 15350,
       "insiders": 2
+    },
+    "EMMA": {
+      "value": 15026,
+      "insiders": 1
     },
     "TUSK": {
       "value": 15000,
@@ -6201,10 +7529,6 @@
       "value": 10085,
       "insiders": 1
     },
-    "ASTC": {
-      "value": 10073,
-      "insiders": 1
-    },
     "ENGN": {
       "value": 10051,
       "insiders": 1
@@ -6236,10 +7560,6 @@
     "SNBH": {
       "value": 9750,
       "insiders": 2
-    },
-    "STRR": {
-      "value": 9721,
-      "insiders": 1
     },
     "BNGO": {
       "value": 9720,
@@ -6279,6 +7599,10 @@
     },
     "AZTA": {
       "value": 8097,
+      "insiders": 1
+    },
+    "CFND": {
+      "value": 8009,
       "insiders": 1
     },
     "SCM": {
@@ -6405,10 +7729,6 @@
       "value": 5053,
       "insiders": 1
     },
-    "DRH": {
-      "value": 4976,
-      "insiders": 1
-    },
     "VERU": {
       "value": 4842,
       "insiders": 1
@@ -6489,6 +7809,10 @@
       "value": 2800,
       "insiders": 1
     },
+    "DRH": {
+      "value": 2681,
+      "insiders": 1
+    },
     "AUBN": {
       "value": 2636,
       "insiders": 2
@@ -6556,21 +7880,9 @@
     "FRAF": {
       "value": 1025,
       "insiders": 1
-    },
-    "RANGER": {
-      "value": 1000,
-      "insiders": 1
     }
   },
   "sellTickers": {
-    "PSX": {
-      "value": 7465167248,
-      "insiders": 6
-    },
-    "IHT": {
-      "value": 4024717063,
-      "insiders": 2
-    },
     "FANG": {
       "value": 3756249384,
       "insiders": 10
@@ -6638,10 +7950,6 @@
     "UMC": {
       "value": 524717000,
       "insiders": 2
-    },
-    "STNG": {
-      "value": 517102561,
-      "insiders": 5
     },
     "CRBG": {
       "value": 492623634,
@@ -6727,10 +8035,6 @@
       "value": 270846476,
       "insiders": 4
     },
-    "HOOD": {
-      "value": 255064875,
-      "insiders": 8
-    },
     "CVX": {
       "value": 228594189,
       "insiders": 5
@@ -6796,7 +8100,7 @@
       "insiders": 10
     },
     "WBD": {
-      "value": 141332866,
+      "value": 141331711,
       "insiders": 9
     },
     "MU": {
@@ -6810,6 +8114,10 @@
     "TWLO": {
       "value": 134166176,
       "insiders": 4
+    },
+    "HOOD": {
+      "value": 133129881,
+      "insiders": 7
     },
     "CRDO": {
       "value": 127448919,
@@ -7211,6 +8519,10 @@
       "value": 39213426,
       "insiders": 3
     },
+    "STNG": {
+      "value": 38790061,
+      "insiders": 4
+    },
     "QVCG": {
       "value": 38719000,
       "insiders": 2
@@ -7342,6 +8654,10 @@
     "MRK": {
       "value": 29977788,
       "insiders": 5
+    },
+    "PSX": {
+      "value": 29939162,
+      "insiders": 6
     },
     "IQV": {
       "value": 29888093,
@@ -7859,10 +9175,6 @@
       "value": 15082963,
       "insiders": 6
     },
-    "WOR": {
-      "value": 14950171,
-      "insiders": 1
-    },
     "NAVN": {
       "value": 14867856,
       "insiders": 7
@@ -8171,6 +9483,10 @@
       "value": 10039531,
       "insiders": 5
     },
+    "WOR": {
+      "value": 10005359,
+      "insiders": 1
+    },
     "BLSH": {
       "value": 9923233,
       "insiders": 1
@@ -8218,10 +9534,6 @@
     "PKE": {
       "value": 9442650,
       "insiders": 3
-    },
-    "COHR": {
-      "value": 9435864,
-      "insiders": 6
     },
     "DPZ": {
       "value": 9433641,
@@ -8347,6 +9659,10 @@
       "value": 8492493,
       "insiders": 2
     },
+    "COHR": {
+      "value": 8491357,
+      "insiders": 6
+    },
     "STUB": {
       "value": 8477184,
       "insiders": 4
@@ -8379,13 +9695,13 @@
       "value": 8210382,
       "insiders": 6
     },
-    "FRHC": {
-      "value": 8206246,
-      "insiders": 5
-    },
     "ABBV": {
       "value": 8177500,
       "insiders": 1
+    },
+    "FRHC": {
+      "value": 8119849,
+      "insiders": 4
     },
     "CACC": {
       "value": 8105446,
@@ -8419,12 +9735,12 @@
       "value": 7908799,
       "insiders": 3
     },
-    "CSTL": {
-      "value": 7895418,
-      "insiders": 4
-    },
     "ASX:LNW": {
       "value": 7853034,
+      "insiders": 4
+    },
+    "CSTL": {
+      "value": 7845473,
       "insiders": 4
     },
     "EOG": {
@@ -8604,7 +9920,7 @@
       "insiders": 6
     },
     "COHU": {
-      "value": 6793611,
+      "value": 6742541,
       "insiders": 4
     },
     "OMDA": {
@@ -8658,10 +9974,6 @@
     "TYL": {
       "value": 6478048,
       "insiders": 2
-    },
-    "AVO": {
-      "value": 6440141,
-      "insiders": 3
     },
     "ZS": {
       "value": 6418285,
@@ -8727,10 +10039,6 @@
       "value": 6161073,
       "insiders": 1
     },
-    "PAYS": {
-      "value": 6146855,
-      "insiders": 7
-    },
     "TBPH": {
       "value": 6136220,
       "insiders": 2
@@ -8742,6 +10050,10 @@
     "MTD": {
       "value": 6092712,
       "insiders": 4
+    },
+    "PAYS": {
+      "value": 6084218,
+      "insiders": 6
     },
     "BNY": {
       "value": 6033640,
@@ -8895,10 +10207,6 @@
       "value": 5462098,
       "insiders": 4
     },
-    "RCAT": {
-      "value": 5452750,
-      "insiders": 3
-    },
     "WST": {
       "value": 5443749,
       "insiders": 1
@@ -8906,6 +10214,10 @@
     "LAZ": {
       "value": 5440000,
       "insiders": 1
+    },
+    "RCAT": {
+      "value": 5352350,
+      "insiders": 3
     },
     "ORCL": {
       "value": 5342123,
@@ -9515,6 +10827,10 @@
       "value": 3265699,
       "insiders": 6
     },
+    "AVO": {
+      "value": 3238304,
+      "insiders": 1
+    },
     "AKTS": {
       "value": 3231414,
       "insiders": 3
@@ -9678,10 +10994,6 @@
     "DCO": {
       "value": 2829537,
       "insiders": 1
-    },
-    "CLH": {
-      "value": 2828046,
-      "insiders": 3
     },
     "KRRO": {
       "value": 2823243,
@@ -10607,10 +11919,6 @@
       "value": 1399192,
       "insiders": 3
     },
-    "PDEX": {
-      "value": 1398831,
-      "insiders": 3
-    },
     "EZPW": {
       "value": 1398500,
       "insiders": 2
@@ -10666,6 +11974,10 @@
     "FICO": {
       "value": 1353800,
       "insiders": 1
+    },
+    "PDEX": {
+      "value": 1351686,
+      "insiders": 2
     },
     "AA": {
       "value": 1347263,
@@ -10883,10 +12195,6 @@
       "value": 1160727,
       "insiders": 2
     },
-    "TG": {
-      "value": 1157710,
-      "insiders": 3
-    },
     "IP": {
       "value": 1156260,
       "insiders": 2
@@ -10898,6 +12206,10 @@
     "FCCO": {
       "value": 1151656,
       "insiders": 2
+    },
+    "TG": {
+      "value": 1151470,
+      "insiders": 3
     },
     "BYD": {
       "value": 1146864,
@@ -11029,6 +12341,10 @@
     },
     "SBCF": {
       "value": 1054652,
+      "insiders": 2
+    },
+    "CLH": {
+      "value": 1051104,
       "insiders": 2
     },
     "MKTX": {
@@ -12043,10 +13359,6 @@
       "value": 470817,
       "insiders": 2
     },
-    "DYAI": {
-      "value": 468829,
-      "insiders": 1
-    },
     "AUDC": {
       "value": 467357,
       "insiders": 3
@@ -12137,10 +13449,6 @@
     },
     "UNTY": {
       "value": 434725,
-      "insiders": 1
-    },
-    "IREN": {
-      "value": 434315,
       "insiders": 1
     },
     "RCKT": {
@@ -12266,10 +13574,6 @@
     "MQ": {
       "value": 392048,
       "insiders": 3
-    },
-    "WDI": {
-      "value": 391614,
-      "insiders": 1
     },
     "TRUP": {
       "value": 391088,
@@ -12541,6 +13845,10 @@
     },
     "ONTO": {
       "value": 302300,
+      "insiders": 1
+    },
+    "WDI": {
+      "value": 300541,
       "insiders": 1
     },
     "WM": {
@@ -13095,10 +14403,6 @@
       "value": 177612,
       "insiders": 1
     },
-    "AX": {
-      "value": 177600,
-      "insiders": 2
-    },
     "ATHM": {
       "value": 177231,
       "insiders": 3
@@ -13427,6 +14731,10 @@
       "value": 125134,
       "insiders": 1
     },
+    "DYAI": {
+      "value": 124915,
+      "insiders": 1
+    },
     "EZRA": {
       "value": 124210,
       "insiders": 4
@@ -13743,10 +15051,6 @@
       "value": 87182,
       "insiders": 1
     },
-    "OBK": {
-      "value": 86908,
-      "insiders": 1
-    },
     "CWCO": {
       "value": 86538,
       "insiders": 2
@@ -13813,10 +15117,6 @@
     },
     "ATEC": {
       "value": 78821,
-      "insiders": 1
-    },
-    "TDAY": {
-      "value": 78805,
       "insiders": 1
     },
     "KUST": {
@@ -14023,6 +15323,10 @@
       "value": 53767,
       "insiders": 1
     },
+    "AX": {
+      "value": 52650,
+      "insiders": 1
+    },
     "TREX": {
       "value": 52574,
       "insiders": 1
@@ -14073,10 +15377,6 @@
     },
     "ASRV": {
       "value": 48889,
-      "insiders": 1
-    },
-    "BR": {
-      "value": 48728,
       "insiders": 1
     },
     "SANM": {
@@ -14585,10 +15885,6 @@
     },
     "INTZ": {
       "value": 11700,
-      "insiders": 1
-    },
-    "RANI": {
-      "value": 11300,
       "insiders": 1
     },
     "LPSN": {
