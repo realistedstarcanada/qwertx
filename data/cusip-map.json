@@ -4,6 +4,11 @@
     "name": "CBL & ASSOCIATES PROPERTIES",
     "type": "REIT"
   },
+  "125523100": {
+    "ticker": "CI",
+    "name": "THE CIGNA GROUP",
+    "type": "Common Stock"
+  },
   "126633205": {
     "ticker": "UAN",
     "name": "CVR PARTNERS LP",
@@ -69,6 +74,11 @@
     "name": "COCA-COLA CO/THE",
     "type": "Common Stock"
   },
+  "218937100": {
+    "ticker": "CNR",
+    "name": "CORE NATURAL RESOURCES INC",
+    "type": "Common Stock"
+  },
   "219350105": {
     "ticker": "GLW",
     "name": "CORNING INC",
@@ -90,6 +100,11 @@
     "type": "Common Stock"
   },
   "236272100": null,
+  "243537107": {
+    "ticker": "DECK",
+    "name": "DECKERS OUTDOOR CORP",
+    "type": "Common Stock"
+  },
   "247361702": {
     "ticker": "DAL",
     "name": "DELTA AIR LINES INC",
@@ -401,9 +416,19 @@
     "name": "OCCIDENTAL PETROLEUM CORP",
     "type": "Common Stock"
   },
+  "693656100": {
+    "ticker": "PVH",
+    "name": "PVH CORP",
+    "type": "Common Stock"
+  },
   "697435105": {
     "ticker": "PANW",
     "name": "PALO ALTO NETWORKS INC",
+    "type": "Common Stock"
+  },
+  "707569109": {
+    "ticker": "PENN",
+    "name": "PENN ENTERTAINMENT INC",
     "type": "Common Stock"
   },
   "718172109": {
@@ -415,6 +440,11 @@
     "ticker": "PDD",
     "name": "PDD HOLDINGS INC",
     "type": "Depositary Receipt"
+  },
+  "741623102": {
+    "ticker": "PRMB",
+    "name": "PRIMO BRANDS CORP",
+    "type": "Common Stock"
   },
   "742718109": {
     "ticker": "PG",
@@ -456,6 +486,11 @@
     "name": "SHARONAI HOLDINGS INC",
     "type": "Common Stock"
   },
+  "806407102": {
+    "ticker": "HSIC",
+    "name": "HENRY SCHEIN INC",
+    "type": "Common Stock"
+  },
   "812215200": {
     "ticker": "SEG",
     "name": "SEAPORT ENTERTAINMENT GROUP",
@@ -469,6 +504,11 @@
   "830830105": {
     "ticker": "SKY",
     "name": "CHAMPION HOMES INC",
+    "type": "Common Stock"
+  },
+  "831349105": {
+    "ticker": "SLDE",
+    "name": "SLIDE INSURANCE HOLDINGS INC",
     "type": "Common Stock"
   },
   "845467109": {
@@ -551,6 +591,11 @@
     "name": "TRANSDIGM GROUP INC",
     "type": "Common Stock"
   },
+  "896945201": {
+    "ticker": "TRIP",
+    "name": "TRIPADVISOR INC",
+    "type": "Common Stock"
+  },
   "907818108": {
     "ticker": "UNP",
     "name": "UNION PACIFIC CORP",
@@ -569,6 +614,16 @@
   "922475108": {
     "ticker": "VEEV",
     "name": "VEEVA SYSTEMS INC-CLASS A",
+    "type": "Common Stock"
+  },
+  "925283103": {
+    "ticker": "VSNT",
+    "name": "VERSANT MEDIA GROUP INC",
+    "type": "Common Stock"
+  },
+  "926400102": {
+    "ticker": "VSXY",
+    "name": "VICTORIA'S SECRET & CO",
     "type": "Common Stock"
   },
   "929740108": {
@@ -2334,5 +2389,90 @@
     "ticker": "AEP",
     "name": "AMERICAN ELECTRIC POWER",
     "type": "Common Stock"
-  }
+  },
+  "71531T105": {
+    "ticker": "PSUS",
+    "name": "PERSHING SQUARE USA LTD",
+    "type": "Mutual Fund"
+  },
+  "00404A109": {
+    "ticker": "ACHC",
+    "name": "ACADIA HEALTHCARE CO INC",
+    "type": "Common Stock"
+  },
+  "34964C106": {
+    "ticker": "FBIN",
+    "name": "FORTUNE BRANDS INNOVATIONS I",
+    "type": "Common Stock"
+  },
+  "69331C108": {
+    "ticker": "PCG",
+    "name": "P G & E CORP",
+    "type": "Common Stock"
+  },
+  "15135B101": {
+    "ticker": "CNC",
+    "name": "CENTENE CORP",
+    "type": "Common Stock"
+  },
+  "87162W100": {
+    "ticker": "SNX",
+    "name": "TD SYNNEX CORP",
+    "type": "Common Stock"
+  },
+  "G9600F104": null,
+  "G1890L107": null,
+  "05603J108": {
+    "ticker": "BKV",
+    "name": "BKV CORPORATION",
+    "type": "Common Stock"
+  },
+  "G76279101": null,
+  "024061103": {
+    "ticker": "DCH",
+    "name": "DAUCH CORPORATION",
+    "type": "Common Stock"
+  },
+  "70450Y103": {
+    "ticker": "PYPL",
+    "name": "PAYPAL HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "03674X106": {
+    "ticker": "AR",
+    "name": "ANTERO RESOURCES CORP",
+    "type": "Common Stock"
+  },
+  "84790A105": {
+    "ticker": "SPB",
+    "name": "SPECTRUM BRANDS HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "N20944109": null,
+  "69932A204": {
+    "ticker": "SKYD",
+    "name": "SKYDANCE CORP",
+    "type": "Common Stock"
+  },
+  "20030N101": {
+    "ticker": "CMCSA",
+    "name": "COMCAST CORP-CLASS A",
+    "type": "Common Stock"
+  },
+  "45258J102": {
+    "ticker": "IMVT",
+    "name": "IMMUNOVANT INC",
+    "type": "Common Stock"
+  },
+  "78442P106": {
+    "ticker": "SLM",
+    "name": "SLM CORP",
+    "type": "Common Stock"
+  },
+  "70614W100": {
+    "ticker": "PTON",
+    "name": "PELOTON INTERACTIVE INC-A",
+    "type": "Common Stock"
+  },
+  "M9T951109": null
 }
