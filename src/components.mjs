@@ -48,7 +48,11 @@ export function gauge(market) {
 
 /* ---------- Small pieces ---------- */
 export const tickerChip = (h) =>
-  h.ticker ? `<span class="tk">${esc(h.ticker)}</span>` : `<span class="tk none" title="CUSIP ${esc(h.cusip)}">—</span>`;
+  h.ticker
+    ? `<span class="tk">${esc(h.ticker)}</span>`
+    : h.shType === 'PRN'
+      ? `<span class="tk none" title="Bond or note · CUSIP ${esc(h.cusip)}">BOND</span>`
+      : `<span class="tk none" title="CUSIP ${esc(h.cusip)}">—</span>`;
 
 export const optBadge = (h) => (h.putCall ? ` <span class="badge opt">${h.putCall === 'CALL' ? 'Call' : 'Put'}</span>` : '');
 
