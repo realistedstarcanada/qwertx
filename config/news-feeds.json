@@ -1,0 +1,12 @@
+{
+  "_note": "RSS feeds pulled by the daily news job. Only headlines, links, source and time are stored. Feeds that fail are skipped, so it is safe to add or remove entries.",
+  "maxItems": 40,
+  "maxAgeHours": 72,
+  "feeds": [
+    { "source": "CNBC", "url": "https://www.cnbc.com/id/20910258/device/rss/rss.html" },
+    { "source": "CNBC", "url": "https://www.cnbc.com/id/15839069/device/rss/rss.html" },
+    { "source": "MarketWatch", "url": "https://feeds.content.dowjones.io/public/rss/mw_topstories" },
+    { "source": "Yahoo Finance", "url": "https://finance.yahoo.com/news/rssindex" },
+    { "source": "Nasdaq", "url": "https://www.nasdaq.com/feed/rssoutbound?category=Markets" }
+  ]
+}

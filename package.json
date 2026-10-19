@@ -1,0 +1,16 @@
+{
+  "name": "qwertx",
+  "private": true,
+  "version": "1.0.0",
+  "description": "QWERTx — superinvestor portfolios, market mood and news. Static site, zero dependencies.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs && node scripts/serve.mjs",
+    "data:13f": "node scripts/fetch-13f.mjs",
+    "data:news": "node scripts/fetch-news.mjs",
+    "sample": "node test/make-sample.mjs && DATA_DIR=.sample/data CONFIG=.sample/investors.json node build.mjs && node scripts/serve.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

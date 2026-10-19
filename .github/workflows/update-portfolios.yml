@@ -1,0 +1,46 @@
+name: Update superinvestor portfolios
+
+on:
+  schedule:
+    - cron: '0 12 1 * *'          # monthly, on the 1st (08:00 Toronto)
+    - cron: '0 12 16 2,5,8,11 *'  # day after each 13F filing deadline, so new quarters show up fast
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Re-download every filing even if unchanged'
+        type: boolean
+        default: false
+  push:
+    branches: [main]
+    paths: ['config/investors.json']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch 13F filings from SEC EDGAR
+        run: node scripts/fetch-13f.mjs ${{ inputs.force && '--force' || '' }}
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
+          OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+      - name: Commit updated data
+        run: |
+          git config user.name "qwertx-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "data: portfolios $(date -u +%F)"
+          git pull --rebase
+          git push
