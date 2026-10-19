@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-commit
+  group: ${{ github.workflow }}
   cancel-in-progress: false
 
 jobs:
@@ -33,5 +33,4 @@ jobs:
           git add data
           if git diff --staged --quiet; then echo "No changes"; exit 0; fi
           git commit -m "data: news and markets $(date -u +%F)"
-          git pull --rebase
-          git push
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done
