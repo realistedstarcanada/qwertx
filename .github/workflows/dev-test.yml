@@ -1,0 +1,53 @@
+# Temporary: runs every data job on the redesign branch when it changes. Removed before merging.
+name: Dev test (redesign)
+
+on:
+  push:
+    branches: [redesign]
+    paths: ['scripts/**', '.github/workflows/dev-test.yml', 'config/**']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dev-test
+  cancel-in-progress: true
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
+      OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null
+      - run: |
+          cat > /tmp/commit.sh <<'SH'
+          git config user.name "qwertx-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -q -m "data: dev test $1"
+          git pull -q --rebase && git push -q
+          SH
+          chmod +x /tmp/commit.sh
+      - name: Market
+        run: node scripts/fetch-market.mjs && /tmp/commit.sh market
+        continue-on-error: true
+      - name: News
+        run: node scripts/fetch-news.mjs && /tmp/commit.sh news
+        continue-on-error: true
+      - name: Insiders
+        run: node scripts/fetch-insiders.mjs && /tmp/commit.sh insiders
+        continue-on-error: true
+      - name: Congress (debug sample)
+        run: node scripts/fetch-congress.mjs --max 6 --debug && /tmp/commit.sh congress
+        continue-on-error: true
+      - name: 13F
+        run: node scripts/fetch-13f.mjs && /tmp/commit.sh 13f
+        continue-on-error: true
