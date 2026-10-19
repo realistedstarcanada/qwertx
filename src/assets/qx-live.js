@@ -6,13 +6,13 @@
     var s = Number(d.score);
     if (!isFinite(s)) return;
     card.setAttribute('data-zone', zone(s));
-    var n = card.querySelector('.fg-needle');
+    var n = card.querySelector('.v-needle');
     if (n) n.style.transform = 'rotate(' + (s / 100 * 180 - 90).toFixed(1) + 'deg)';
     function put(f, v) { var el = card.querySelector('[data-f="' + f + '"]'); if (el && v != null) el.textContent = v; }
     put('score', Math.round(s)); put('rating', d.rating); put('prev', d.previousClose); put('week', d.previousWeek);
     put('month', d.previousMonth); put('year', d.previousYear);
     var live = card.querySelector('[data-f="live"]');
-    if (live && d.live) { live.textContent = 'Live · updates every 15 min'; live.classList.add('is-live'); }
+    if (live && d.live) { live.textContent = 'Live · CNN Fear & Greed Index'; live.classList.add('is-live'); }
   }
   function init() {
     var cards = document.querySelectorAll('[data-fg]');

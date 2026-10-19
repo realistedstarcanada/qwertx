@@ -1,5 +1,5 @@
 import { esc, money, pct, quarter } from '../lib/format.mjs';
-import { chart, tkr, rankList, sourceChip, kpi, pageHero, newsletter } from '../parts.mjs';
+import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter } from '../parts.mjs';
 
 export function smartMoney(d) {
   const sm = d.smart;
@@ -35,7 +35,7 @@ export function smartMoney(d) {
       </div></div>
       <div class="col-5"><div class="card reveal" style="height:100%">
         <div class="card-label"><span>02 · Big bets</span><span>≥5% for 2+ investors</span></div><h3>Shared high-conviction bets</h3>
-        ${rankList(sm.bigBets.map(({ s, n }) => ({ t: tkr(s.label, s.slug), small: esc(s.name), v: `${n} investors · max ${Math.round(s.maxW)}%` })))}
+        ${vRank(sm.bigBets.map(({ s, n }) => ({ name: s.name, href: `/stocks/${s.slug}.html`, sub: `${esc(s.label)} · biggest bet ${Math.round(s.maxW)}% of a portfolio`, n })), { max: 8 })}
       </div></div>
     </div>
   </div>
@@ -43,9 +43,9 @@ export function smartMoney(d) {
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-3"><div class="card reveal" style="height:100%"><div class="card-label"><span>03 · Most bought</span><span>${quarter(d.latestPeriod)}</span></div><h3>Where buyers agreed</h3>${rankList(sm.mostBought.map((s) => ({ t: tkr(s.label, s.hasPage ? s.slug : null), small: esc(s.name), v: `<span class="up">${s.buyers} buying</span>` })))}</div></div>
-      <div class="col-3"><div class="card reveal" style="height:100%"><div class="card-label"><span>04 · Most sold</span><span>${quarter(d.latestPeriod)}</span></div><h3>Where sellers agreed</h3>${rankList(sm.mostSold.map((s) => ({ t: tkr(s.label, s.hasPage ? s.slug : null), small: esc(s.name), v: `<span class="down">${s.sellCount} selling</span>` })))}</div></div>
-      <div class="col-3"><div class="card reveal" style="height:100%"><div class="card-label"><span>05 · Biggest new bets</span><span>By value</span></div><h3>Largest fresh positions</h3>${rankList(sm.newBets.map(({ inv, h }) => ({ t: tkr(h.label, h.stockSlug), small: `${esc(h.name)} · <a href="/investors/${inv.slug}.html">${esc(inv.manager)}</a>`, v: money(h.value) })))}</div></div>
+      <div class="col-3"><div class="card reveal" style="height:100%"><div class="card-label"><span>03 · Most bought</span><span>${quarter(d.latestPeriod)}</span></div><h3>Where buyers agreed</h3>${vRank(sm.mostBought.map((s) => ({ name: s.name, href: s.hasPage ? `/stocks/${s.slug}.html` : null, sub: `${esc(s.label)}${s.newBuyers ? ` · ${s.newBuyers} new` : ''}`, n: s.buyers })), { kind: 'buy', max: 10 })}</div></div>
+      <div class="col-3"><div class="card reveal" style="height:100%"><div class="card-label"><span>04 · Most sold</span><span>${quarter(d.latestPeriod)}</span></div><h3>Where sellers agreed</h3>${vRank(sm.mostSold.map((s) => ({ name: s.name, href: s.hasPage ? `/stocks/${s.slug}.html` : null, sub: `${esc(s.label)}${s.sellers.length ? ` · ${s.sellers.length} sold out` : ''}`, n: s.sellCount })), { kind: 'sell', max: 10 })}</div></div>
+      <div class="col-3"><div class="card reveal" style="height:100%"><div class="card-label"><span>05 · Biggest new bets</span><span>By value</span></div><h3>Largest fresh positions</h3>${vRank(sm.newBets.map(({ inv, h }) => ({ name: h.name, href: h.stockSlug ? `/stocks/${h.stockSlug}.html` : null, sub: `${esc(h.label)} · ${esc(inv.manager)}`, value: money(h.value) })))}</div></div>
     </div>
   </div>
 </section>

@@ -1,5 +1,5 @@
 import { esc, money, int, date, cleanName } from '../lib/format.mjs';
-import { chart, tkr, rankList, sourceChip, kpi, pageHero, newsletter } from '../parts.mjs';
+import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter } from '../parts.mjs';
 import { titleish } from './home.mjs';
 
 export function insiders(d) {
@@ -62,8 +62,8 @@ export function insiders(d) {
 <section class="section-sm">
   <div class="container">
     <div class="row">
-      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>03 · Top companies bought</span><span>${esc(I.label)}</span></div><h3>Most insider money in</h3>${rankList(I.topBuyCompanies.slice(0, 10).map((c) => ({ t: tkr(c.ticker, slugOf(c.ticker)), small: `${esc(cleanName(c.company))} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, v: `<span class="up">${money(c.value)}</span>` })))}</div></div>
-      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>04 · Top companies sold</span><span>${esc(I.label)}</span></div><h3>Most insider money out</h3>${rankList(I.topSellCompanies.slice(0, 10).map((c) => ({ t: tkr(c.ticker, slugOf(c.ticker)), small: `${esc(cleanName(c.company))} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, v: `<span class="down">${money(c.value)}</span>` })))}</div></div>
+      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>03 · Top companies bought</span><span>${esc(I.label)}</span></div><h3>Most insider money in</h3>${vRank(I.topBuyCompanies.slice(0, 10).map((c) => ({ name: cleanName(c.company), href: slugOf(c.ticker) ? `/stocks/${slugOf(c.ticker)}.html` : null, sub: `${esc(c.ticker)} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, value: `<span class="up">${money(c.value)}</span>` })))}</div></div>
+      <div class="col-2"><div class="card reveal" style="height:100%"><div class="card-label"><span>04 · Top companies sold</span><span>${esc(I.label)}</span></div><h3>Most insider money out</h3>${vRank(I.topSellCompanies.slice(0, 10).map((c) => ({ name: cleanName(c.company), href: slugOf(c.ticker) ? `/stocks/${slugOf(c.ticker)}.html` : null, sub: `${esc(c.ticker)} · ${c.insiders} insider${c.insiders > 1 ? 's' : ''}`, value: `<span class="down">${money(c.value)}</span>` })))}</div></div>
     </div>
   </div>
 </section>

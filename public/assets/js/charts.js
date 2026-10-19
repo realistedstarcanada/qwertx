@@ -14,7 +14,7 @@
       light: light, text: css('--text'), text2: css('--text-2'), muted: css('--muted'), line: css('--line'), line2: css('--line-2'),
       surface: css('--surface'), surface2: css('--surface-2'), gold: css('--gold'), teal: css('--teal'), coral: css('--coral'),
       cat: light ? CAT_LIGHT : CAT_DARK, other: light ? '#9aa1b0' : '#4a5468', hold: light ? '#8f97a8' : '#3c4660',
-      mono: "'JetBrains Mono', monospace", body: "'Inter', sans-serif"
+      mono: "'IBM Plex Mono', monospace", body: "'IBM Plex Sans', sans-serif"
     };
   }
   function money(v) {
@@ -54,8 +54,8 @@
           label: { show: false }, emphasis: { scale: true, scaleSize: 5 },
           data: d.items.map(function (x, i) { return { name: x[0], value: x[1], itemStyle: { color: x[0] === 'Other positions' || i >= 8 ? t.other : t.cat[i] } }; })
         }],
-        graphic: [{ type: 'text', left: 'center', top: '42%', style: { text: d.center || '', fill: t.text, font: '600 22px "Space Grotesk"', textAlign: 'center' } },
-                  { type: 'text', left: 'center', top: '54%', style: { text: d.centerSub || '', fill: t.muted, font: '11px "JetBrains Mono"', textAlign: 'center' } }]
+        graphic: [{ type: 'text', left: 'center', top: '42%', style: { text: d.center || '', fill: t.text, font: '500 24px "Fraunces"', textAlign: 'center' } },
+                  { type: 'text', left: 'center', top: '54%', style: { text: d.centerSub || '', fill: t.muted, font: '11px "IBM Plex Mono"', textAlign: 'center' } }]
       };
     },
     curve: function (t, d) {

@@ -1,6 +1,5 @@
-import { esc, money, date, quarter, int } from '../lib/format.mjs';
-import { tvWidget } from '../layout.mjs';
-import { chart, tkr, invCard, fearGreedCard, vixCard, vixChartData, indexCard, newsletter, proCta, ownersLine, partyChip } from '../parts.mjs';
+import { esc, money, date, quarter, int, cleanName, signed, upDown } from '../lib/format.mjs';
+import { chart, tkr, fearGreedCard, vixCard, vixChartData, newsletter, proCta, ownersLine, vRank, vCard } from '../parts.mjs';
 
 export function movingCard(weekly) {
   const items = weekly.moving || [];
@@ -32,160 +31,93 @@ export function home(d) {
   const m = d.market || {};
   const sm = d.smart;
   const live = d.live;
+  const N = live.length;
   const pq = d.politics.quarters[0];
   const iq = d.insiders;
-  const box = (icon, label, s, line, sub) =>
-    s
-      ? `<div class="col-4"><div class="card icon-box card-hover reveal" style="height:100%">
-  <div class="icon"><i class="fa-solid ${icon}" aria-hidden="true"></i></div>
-  <div class="card-label"><span>${label}</span></div>
-  <h3>${tkr(s.label, s.slug)} <span style="font-weight:500;color:var(--muted);font-size:16px">${esc(s.name)}</span></h3>
-  <p style="color:var(--text);font-family:var(--font-mono);font-size:14px;margin-bottom:6px">${line}</p>
-  <p>${sub}</p>
-</div></div>`
-      : '';
-  const names = (arr) => {
-    const n = arr.map((x) => x.inv.manager);
-    return n.length > 3 ? `${n.slice(0, 3).join(', ')} and others` : n.join(', ').replace(/, ([^,]*)$/, ' and $1');
+  const q = quarter(d.latestPeriod);
+  const stockSub = (s, extra) => `${s.ticker ? esc(s.ticker) + ' · ' : ''}${extra}`;
+  const slugFor = (t) => {
+    const s = d.stockByTicker.get(t);
+    return s?.hasPage ? s.slug : null;
   };
-  const mb = sm.mostBought[0];
-  const ms = sm.mostSold[0];
-  const mo = sm.owned[0];
-  const nb = sm.newBets[0];
+  const n2 = (v) => v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+  const mostHeld = vRank(sm.owned.slice(0, 10).map((s) => ({ name: s.name, href: `/stocks/${s.slug}.html`, sub: stockSub(s, `${money(s.value)} combined`), n: s.owners })), { max: 12 });
+  const buys = vRank(sm.mostBought.slice(0, 8).map((s) => ({ name: s.name, href: s.hasPage ? `/stocks/${s.slug}.html` : null, sub: stockSub(s, s.newBuyers ? `${s.newBuyers} new position${s.newBuyers > 1 ? 's' : ''}` : 'added to existing'), n: s.buyers })), { kind: 'buy' });
+  const sells = vRank(sm.mostSold.slice(0, 8).map((s) => ({ name: s.name, href: s.hasPage ? `/stocks/${s.slug}.html` : null, sub: stockSub(s, `${s.sellers.length} sold out, ${s.sellCount - s.sellers.length} trimmed`), n: s.sellCount })), { kind: 'sell' });
+  const congress = pq
+    ? vRank(pq.mostBought.slice(0, 8).map((r) => ({ name: r.name, href: slugFor(r.ticker) ? `/stocks/${slugFor(r.ticker)}.html` : null, sub: `${esc(r.ticker)} · ${r.buys} purchase${r.buys > 1 ? 's' : ''}${r.parties.D && r.parties.R ? ' · both parties' : r.parties.D ? ' · Democrats' : r.parties.R ? ' · Republicans' : ''}`, n: r.buyers })), { kind: 'blue', empty: 'Trades appear after the first disclosure update.' })
+    : '<p class="form-note">Trades appear after the first disclosure update.</p>';
+  const clusters = iq
+    ? vRank(iq.clusterBuys.slice(0, 8).map((c) => ({ name: cleanName(c.company), href: slugFor(c.ticker) ? `/stocks/${slugFor(c.ticker)}.html` : null, sub: `${esc(c.ticker)} · ${money(c.value)} bought`, n: c.insiders })), { kind: 'buy', empty: 'No cluster buys this quarter.' })
+    : '<p class="form-note">Insider data appears after the first quarterly update.</p>';
+  const idx = (m.indexes || []).slice(0, 4);
 
   const body = `
-<section class="hero">
-  <div class="hero-bg grid"><img src="/assets/img/hero-home.jpg" alt="A home office at night with stock charts glowing on a laptop and monitor, and a city skyline through the window" width="1672" height="941" fetchpriority="high"></div>
+<section class="v-hero">
   <div class="container">
-    <div class="row row-wide center hero-split">
-      <div class="col-7"><div class="hero-content">
-        <div class="status-pill" data-market-status><span class="status-dot" aria-hidden="true"></span><span class="status-text">Markets closed · your after-work briefing is ready</span></div>
-        <h1>See what the world’s best investors own. <span class="accent">In the time you have after work.</span></h1>
-        <p class="lead">QWERTx turns the quarterly SEC filings of ${live.length} legendary investors into clear visuals, and tracks what politicians and company insiders are buying, plus live market sentiment and plain-English news.</p>
-        <div class="btn-row mt-32">
-          <a class="btn btn-gold" href="/investors.html">Explore super investors <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-          <a class="btn" href="/market.html"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> Check market mood</a>
+    <div class="v-hero-grid">
+      <div>
+        <div class="eyebrow">Superinvestor portfolios, decoded</div>
+        <h1>See what the world’s best investors <em>actually own.</em></h1>
+        <p class="lede">QWERTx tracks the latest SEC filings of ${N} legendary investors, plus what members of Congress and company insiders are buying, and turns it all into clear visuals. Start simple, then go one click deeper whenever you want.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="/investors.html">Browse superinvestors</a>
+          <a class="btn" href="/smart-money.html">Most-held stocks</a>
         </div>
-        <div class="hero-meta"><span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Sourced from SEC, House and Senate filings</span><span><i class="fa-solid fa-rotate" aria-hidden="true"></i>Latest period: ${quarter(d.latestPeriod)}</span><span><i class="fa-solid fa-ban" aria-hidden="true"></i>No paid picks</span></div>
-      </div></div>
-      <div class="col-5 hero-gauge">${fearGreedCard(m.fearGreed)}</div>
+      </div>
+      ${fearGreedCard(m.fearGreed)}
+    </div>
+    <div class="v-stats">
+      <div><span class="k">Superinvestors</span><span class="v">${N}</span></div>
+      <div><span class="k">Combined 13F value</span><span class="v">${money(sm.value)}</span></div>
+      <div><span class="k">Latest quarter</span><span class="v">${q}</span></div>
+      <div><span class="k">Last filing</span><span class="v">${date(d.latestFiling)}</span></div>
     </div>
   </div>
 </section>
 
-<section class="trust" aria-label="QWERTx at a glance">
-  <div class="container"><div class="row">
-    <div class="trust-item"><div class="counter"><span data-count="${live.length}">${live.length}</span></div><div class="counter-label">Super investors tracked</div></div>
-    <div class="trust-item"><div class="counter"><span class="unit">$</span><span data-count="${Math.round(sm.value / 1e9)}">${Math.round(sm.value / 1e9)}</span><span class="unit">B</span></div><div class="counter-label">Portfolio value tracked</div></div>
-    <div class="trust-item"><div class="counter"><span data-count="${d.politics.totalTrades}">${d.politics.totalTrades}</span></div><div class="counter-label">Politician trades tracked</div></div>
-    <div class="trust-item"><div class="counter"><span data-count="${iq ? iq.totals.buys + iq.totals.sells : 0}">${iq ? int(iq.totals.buys + iq.totals.sells) : 0}</span></div><div class="counter-label">Insider trades ${iq ? 'in ' + iq.label : 'per quarter'}</div></div>
-  </div></div>
-</section>
-
-<section class="section bg-grid" id="market-pulse">
+<section class="section-sm">
   <div class="container">
-    <div class="section-head reveal">
-      <div><div class="eyebrow"><span class="num">01</span> / Market pulse</div><h2>How scared is the market today?</h2></div>
-      <p>The VIX measures how much turbulence investors expect over the next 30 days. We translate it into a simple fear-and-greed reading, next to CNN’s Fear &amp; Greed Index above.</p>
+    <div class="v-block" style="margin-top:16px">
+      <div class="v-head"><div><h2>Most held by superinvestors</h2><p>Stocks owned by the most managers we track · share classes combined</p></div><a class="v-more" href="/smart-money.html">All stocks</a></div>
+      <div class="card">${mostHeld}</div>
     </div>
-    <div class="row">
-      <div class="col-4 reveal">${vixCard(m.vix)}</div>
-      <div class="col-7 reveal" style="flex-grow:2">
-        <div class="card chart-card" style="height:100%">
-          <div class="card-label"><span>VIX · last 12 months</span><span>Daily close</span></div>
-          <h3>Fear spikes fade, but they come back</h3>
-          <p class="chart-sub">Shaded bands show the fear-and-greed zones. Hover to read any day.</p>
+
+    <div class="v-block v-two">
+      <div><div class="v-head"><div><h2>Biggest buys</h2><p>Most managers adding or opening, ${q}</p></div></div><div class="card">${buys}</div></div>
+      <div><div class="v-head"><div><h2>Biggest sells</h2><p>Most managers trimming or exiting</p></div></div><div class="card">${sells}</div></div>
+    </div>
+
+    <div class="v-block">
+      <div class="v-head"><div><h2>Superinvestors</h2><p>Click any manager for the full portfolio, charts and history</p></div><a class="v-more" href="/investors.html">Compare all ${N}</a></div>
+      <div class="v-grid">${live.slice(0, 12).map(vCard).join('')}</div>
+    </div>
+
+    <div class="v-block v-two">
+      <div><div class="v-head"><div><h2>What Congress is buying</h2><p>Members of Congress buying, ${pq ? esc(pq.label) : 'latest quarter'} · STOCK Act filings</p></div><a class="v-more" href="/politicians.html">All trades</a></div><div class="card">${congress}</div></div>
+      <div><div class="v-head"><div><h2>Insider cluster buys</h2><p>Officers and directors buying their own stock, ${iq ? esc(iq.label) : 'latest quarter'}</p></div><a class="v-more" href="/insiders.html">All insiders</a></div><div class="card">${clusters}</div></div>
+    </div>
+
+    <div class="v-block">
+      <div class="v-head"><div><h2>Market pulse</h2><p>The VIX “fear gauge” over the last 12 months and where the major indexes closed</p></div><a class="v-more" href="/market.html">Market Pulse</a></div>
+      <div class="v-pulse">
+        ${vixCard(m.vix)}
+        <div class="card chart-card"><div class="card-label"><span>VIX · last 12 months</span><span>Cboe daily close</span></div>
           ${m.vix ? chart('vix-home', 'vix', vixChartData(m.vix), { cls: 'chart chart-sm', label: 'Line chart of the VIX over the last 12 months' }) : '<p class="form-note">Chart appears after the first market update.</p>'}
         </div>
       </div>
+      ${idx.length ? `<div class="v-idx">${idx.map((x) => `<div><div class="n">${esc(x.name)}</div><div class="v">${n2(x.value)}</div><div class="c ${upDown(x.change)}">${signed(x.change * 100, 2)}</div></div>`).join('')}</div>` : ''}
     </div>
-    <div class="row mt-32">
-      <div class="col-5 reveal">${indexCard(m)}</div>
-      <div class="col-7 reveal">${movingCard(d.weekly)}</div>
-    </div>
-  </div>
-</section>
 
-<section class="section section-alt" id="investors">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><div class="eyebrow"><span class="num">02</span> / Super investors</div><h2>Legendary portfolios, decoded</h2></div>
-      <p>Each card shows the latest filing date, portfolio size, conviction level and the top three holdings. Open one for the full visual breakdown.</p>
-    </div>
-    <div class="row">${live.slice(0, 12).map((i) => invCard(i)).join('')}</div>
-    <div class="text-center mt-48"><a class="btn btn-gold" href="/investors.html">View all ${live.length} super investors <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
-  </div>
-</section>
+    ${(d.weekly.trending || []).length ? `<div class="v-block">
+      <div class="v-head"><div><h2>Trending stocks, explained</h2><p>What happened, what it could mean and which super investors own it · ${esc(d.weekly.weekLabel || '')}</p></div></div>
+      <div class="row">${trendingCards(d)}</div>
+    </div>` : ''}
 
-<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><div class="eyebrow"><span class="num">03</span> / This quarter</div><h2>Smart money moves in ${quarter(d.latestPeriod)}</h2></div>
-      <p>Computed across all ${live.length} portfolios by comparing each investor’s latest 13F with the quarter before.</p>
-    </div>
-    <div class="row">
-      ${box('fa-arrow-trend-up', 'Most bought', mb, `${mb?.buyers} investors bought or added`, mb ? `Bought by ${names(mb.holders.filter((x) => x.act === 'New' || x.act === 'Add'))}.` : '')}
-      ${box('fa-arrow-trend-down', 'Most sold', ms, `${ms?.sellCount} investors trimmed or exited`, ms ? `Sold by ${names([...ms.holders.filter((x) => x.act === 'Trim'), ...ms.sellers])}.` : '')}
-      ${box('fa-users', 'Most widely owned', mo, `Held by ${mo?.owners} of ${live.length} investors`, mo ? `Combined stake worth ${money(mo.value)} across our tracked portfolios.` : '')}
-      ${nb ? box('fa-bolt', 'Biggest new bet', d.stockByTicker.get(nb.h.ticker) || { label: nb.h.label, name: nb.h.name }, `${money(nb.h.value)} new position`, `Opened by ${esc(nb.inv.manager)} (${esc(nb.inv.firm)}) in ${quarter(nb.inv.p.period)}.`) : ''}
-    </div>
-    <div class="text-center mt-48"><a class="btn" href="/smart-money.html">See all smart money stats <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
-  </div>
-</section>
-
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><div class="eyebrow"><span class="num">04</span> / Follow the insiders</div><h2>What politicians and executives are buying</h2></div>
-      <p>Members of Congress must disclose stock trades under the STOCK Act; company insiders file SEC Form 4. We turn both into a quarterly scoreboard.</p>
-    </div>
-    <div class="row">
-      <div class="col-2"><div class="card reveal" style="height:100%">
-        <div class="card-label"><span>Politicians</span><span>${pq ? esc(pq.label) : 'Latest'}</span></div>
-        <h3>Most bought by members of Congress</h3>
-        ${pq && pq.mostBought.length ? `<ul class="rank-list">${pq.mostBought.slice(0, 6).map((r, i) => `<li><span class="r">${String(i + 1).padStart(2, '0')}</span><span class="t">${tkr(r.ticker, r.stock?.slug)}<small>${esc(r.name)}</small></span><span class="v"><span class="up">${r.buyers} buying</span></span></li>`).join('')}</ul>` : '<p class="form-note">Trades appear after the first disclosure update.</p>'}
-        <a class="link-arrow mt-32" style="display:inline-flex" href="/politicians.html">All politician trades <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-      </div></div>
-      <div class="col-2"><div class="card reveal" style="height:100%">
-        <div class="card-label"><span>Corporate insiders</span><span>${iq ? esc(iq.label) : 'Latest'}</span></div>
-        <h3>Largest insider purchases</h3>
-        ${iq ? `<ul class="rank-list">${iq.topBuys.slice(0, 6).map((t, i) => `<li><span class="r">${String(i + 1).padStart(2, '0')}</span><span class="t">${tkr(t.ticker, d.stockByTicker.get(t.ticker)?.hasPage ? d.stockByTicker.get(t.ticker).slug : null)}<small>${esc(titleish(t.owner))} · ${esc(t.role)}</small></span><span class="v"><span class="up">${money(t.value)}</span></span></li>`).join('')}</ul>` : '<p class="form-note">Insider data appears after the first quarterly update.</p>'}
-        <a class="link-arrow mt-32" style="display:inline-flex" href="/insiders.html">All insider trades <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-      </div></div>
-    </div>
-  </div>
-</section>
-
-${(d.weekly.trending || []).length ? `<section class="section">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><div class="eyebrow"><span class="num">05</span> / Smart money angle</div><h2>Trending stocks, and what they mean</h2></div>
-      <p>The stories moving markets this week, explained in plain English and matched with the super investors who own each stock.</p>
-    </div>
-    <div class="row">${trendingCards(d)}</div>
-  </div>
-</section>` : ''}
-
-<section class="section section-alt">
-  <div class="container">
-    <div class="section-head reveal">
-      <div><div class="eyebrow"><span class="num">06</span> / Live feed</div><h2>Latest market news and today’s movers</h2></div>
-      <p>Streaming headlines and the most active US stocks, updated throughout the trading day.</p>
-    </div>
-    <div class="row">
-      <div class="col-7 reveal"><div class="widget-frame"><div class="widget-head"><span>Market news</span><span class=live>Live</span></div>${tvWidget('embed-widget-timeline.js', { feedMode: 'market', market: 'stock', isTransparent: true, displayMode: 'regular', width: '100%', height: '100%', colorTheme: 'dark', locale: 'en' }, { height: 520 })}</div></div>
-      <div class="col-5 reveal"><div class="widget-frame"><div class="widget-head"><span>Trending US stocks</span><span class=live>Live</span></div>${tvWidget('embed-widget-hotlists.js', { colorTheme: 'dark', dateRange: '1D', exchange: 'US', showChart: true, locale: 'en', largeChartUrl: '', isTransparent: true, showSymbolLogo: true, showFloatingTooltip: false, width: '100%', height: '100%' }, { height: 520 })}</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="text-center maxw-640 mx-auto mb-48 reveal"><div class="eyebrow"><span class="num">07</span> / How it works</div><h2>From public filing to clear insight</h2><p class="lead">Built for people with day jobs: everything you need in one short session.</p></div>
-    <div class="row">
-      <div class="col-3"><div class="card icon-box reveal" style="height:100%"><span class="step-num">01</span><div class="icon"><i class="fa-solid fa-file-contract" aria-hidden="true"></i></div><h3>Filings land</h3><p>Fund managers file 13Fs every quarter, insiders file Form 4 within two business days, and members of Congress disclose trades within 45 days.</p></div></div>
-      <div class="col-3"><div class="card icon-box reveal" style="height:100%"><span class="step-num">02</span><div class="icon"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i></div><h3>We decode the data</h3><p>We read each filing straight from the official source, compare it with the last one and calculate conviction, turnover and consensus, all shown as clear visuals.</p></div></div>
-      <div class="col-3"><div class="card icon-box reveal" style="height:100%"><span class="step-num">03</span><div class="icon"><i class="fa-solid fa-mug-hot" aria-hidden="true"></i></div><h3>You decide in minutes</h3><p>Read the 30-second summary, explore the charts and check the original filing yourself. Then do your own research.</p></div></div>
+    <div class="v-block">
+      <div class="v-head"><div><h2>Market news</h2><p>${d.news.updatedAt ? `Updated ${date(d.news.updatedAt)}` : 'Updated daily'}</p></div><a class="v-more" href="/market.html">All headlines</a></div>
+      <div class="card">${d.news.items.length ? `<ul class="v-news">${d.news.items.slice(0, 8).map((n) => `<li><a href="${esc(n.link)}" target="_blank" rel="noopener nofollow">${esc(n.title)}</a><div class="meta"><span class="src">${esc(n.source)}</span>${n.published ? `<time data-rel datetime="${esc(n.published)}">${date(n.published)}</time>` : ''}</div></li>`).join('')}</ul>` : '<p class="form-note">Headlines appear after the first daily update.</p>'}</div>
     </div>
   </div>
 </section>
@@ -196,7 +128,7 @@ ${newsletter('n')}`;
     page: 'home',
     path: '/',
     title: 'Home',
-    description: `Track what Warren Buffett, Bill Ackman and ${live.length - 2} other super investors own, what politicians and corporate insiders are buying, plus a live fear and greed gauge and plain-English market news.`,
+    description: `See what Warren Buffett, Bill Ackman and ${N - 2} other super investors own, what politicians and corporate insiders are buying, plus a live Fear & Greed gauge and daily market news.`,
     body,
     charts: true,
     jsonLd: [

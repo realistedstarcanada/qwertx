@@ -39,35 +39,64 @@ export function invCard(inv, { cls = 'col-3' } = {}) {
 </a></div>`;
 }
 
-/* ---------- Fear & Greed (CNN) gauge: the "fear index on top" ---------- */
-const FG_BANDS = [[0, 25, '#E5484D', 'Extreme fear'], [25, 45, '#F08A5D', 'Fear'], [45, 55, '#8A93A8', 'Neutral'], [55, 75, '#2DD4BF', 'Greed'], [75, 100, '#14A08F', 'Extreme greed']];
+/* ---------- Fear & Greed (CNN) gauge, first-version "Market mood" card ---------- */
+const FG_BANDS = [[0, 25, '#f2766b'], [25, 45, '#f0a35e'], [45, 55, '#8d97ad'], [55, 75, '#7fd8c4'], [75, 100, '#2fd4b5']];
 const pt = (s, r) => {
   const a = Math.PI - (s / 100) * Math.PI;
   return [100 + r * Math.cos(a), 100 - r * Math.sin(a)].map((n) => n.toFixed(2));
 };
-export function fearGreedCard(fg, { compact = false } = {}) {
+const fgZone = (s) => (s < 25 ? 1 : s < 45 ? 2 : s < 55 ? 3 : s < 75 ? 4 : 5);
+export function fearGreedCard(fg) {
   const score = fg?.score ?? null;
   const arcs = FG_BANDS.map(([a, b, c]) => {
-    const [x1, y1] = pt(a + 0.7, 78);
-    const [x2, y2] = pt(b - 0.7, 78);
-    return `<path d="M${x1} ${y1} A78 78 0 0 1 ${x2} ${y2}" stroke="${c}" stroke-width="16" fill="none" stroke-linecap="butt"/>`;
+    const [x1, y1] = pt(a + 0.6, 78);
+    const [x2, y2] = pt(b - 0.6, 78);
+    return `<path d="M${x1} ${y1} A78 78 0 0 1 ${x2} ${y2}" stroke="${c}" stroke-width="18" fill="none"/>`;
   }).join('');
   const ticks = [0, 25, 50, 75, 100].map((s) => {
-    const [x, y] = pt(s, 59);
-    return `<text x="${x}" y="${(+y + 3).toFixed(1)}" text-anchor="middle" class="fg-tick">${s}</text>`;
+    const [x, y] = pt(s, 58);
+    return `<text x="${x}" y="${(+y + 3).toFixed(1)}" text-anchor="middle" class="tick">${s}</text>`;
   }).join('');
-  const cmp = (l, v, f) => `<div><b class="mono" data-f="${f}">${v ?? '—'}</b><span>${l}</span></div>`;
-  return `<div class="card fg-card${compact ? ' fg-compact' : ''}" data-fg data-score="${score ?? 50}">
-  <div class="card-label"><span>Fear &amp; Greed Index</span><span class="fg-live" data-f="live">${fg ? `Close · ${date((fg.asOf || '').slice(0, 10))}` : 'Loading'}</span></div>
-  <svg viewBox="0 0 200 112" class="fg-gauge" role="img" aria-label="Fear and Greed gauge reading ${score ?? 'unknown'}">
+  const cmp = (l, v, f) => `<div><b data-f="${f}">${v ?? '—'}</b><span>${l}</span></div>`;
+  return `<section class="card v-mood" data-fg data-score="${score ?? 50}" data-zone="${fgZone(score ?? 50)}" aria-label="Market mood: CNN Fear and Greed Index">
+  <div class="v-mood-head"><h2>Market mood</h2><span class="eyebrow">Fear &amp; Greed</span></div>
+  <svg viewBox="0 0 200 114" role="img" aria-label="Fear and Greed gauge reading ${score ?? 'unknown'}">
     ${arcs}${ticks}
-    <g class="fg-needle" style="transform:rotate(${(((score ?? 50) / 100) * 180 - 90).toFixed(1)}deg)"><path d="M98 100 L100 30 L102 100 Z"/></g>
-    <circle cx="100" cy="100" r="6.5" class="fg-hub"/><circle cx="100" cy="100" r="2.6" class="fg-hub-dot"/>
+    <text x="14" y="112" class="lbl" fill="#f2766b">Fear</text>
+    <text x="186" y="112" class="lbl" fill="#2fd4b5" text-anchor="end">Greed</text>
+    <g class="v-needle" style="transform:rotate(${(((score ?? 50) / 100) * 180 - 90).toFixed(1)}deg)"><path d="M98 100 L100 32 L102 100 Z"/></g>
+    <circle cx="100" cy="100" r="6" class="v-hub"/><circle cx="100" cy="100" r="2.5" class="v-hub-dot"/>
   </svg>
-  <div class="fg-score"><span class="fg-num mono" data-f="score">${score ?? '—'}</span><span class="fg-rating" data-f="rating">${esc(fg?.rating || 'Loading…')}</span></div>
-  <div class="fg-compare">${cmp('Prev close', fg?.previousClose, 'prev')}${cmp('1 week', fg?.previousWeek, 'week')}${cmp('1 month', fg?.previousMonth, 'month')}${compact ? '' : cmp('1 year', fg?.previousYear, 'year')}</div>
-  <span class="source-chip"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Source: CNN Business Fear &amp; Greed Index</span>
-</div>`;
+  <div class="v-mood-score"><span class="value" data-f="score">${score ?? '—'}</span><span class="label" data-f="rating">${esc(fg?.rating || 'Loading…')}</span></div>
+  <div class="v-mood-compare">${cmp('Prev close', fg?.previousClose, 'prev')}${cmp('1 week ago', fg?.previousWeek, 'week')}${cmp('1 month ago', fg?.previousMonth, 'month')}</div>
+  <p class="v-mood-foot" data-f="live">${fg ? `Close ${date((fg.asOf || '').slice(0, 10))} · CNN Fear &amp; Greed Index` : 'CNN Fear &amp; Greed Index'}</p>
+</section>`;
+}
+
+/* ---------- First-version building blocks ---------- */
+export const vTk = (label, slug) => (label ? (slug ? `<a class="v-tk" href="/stocks/${esc(slug)}.html">${esc(label)}</a>` : `<span class="v-tk">${esc(label)}</span>`) : '<span class="v-tk none">—</span>');
+
+export function vRank(items, { max = 12, kind = '', empty = 'Nothing to show yet.' } = {}) {
+  if (!items.length) return `<p class="form-note">${empty}</p>`;
+  return `<ol class="v-rank">${items
+    .map((x, i) => {
+      const meter = x.n != null ? `<span class="v-dots ${kind}" aria-hidden="true">${Array.from({ length: Math.min(max, 12) }, (_, k) => `<i class="${k < x.n ? 'on' : ''}"></i>`).join('')}</span><span class="val">${x.n}</span>` : '';
+      return `<li><span class="n">${String(i + 1).padStart(2, '0')}</span><span class="nm">${x.href ? `<a href="${x.href}">${esc(x.name)}</a>` : `<b>${esc(x.name)}</b>`}<small>${x.sub || ''}</small></span><span class="m">${meter}${x.value ? `<span class="money">${x.value}</span>` : ''}</span></li>`;
+    })
+    .join('')}</ol>`;
+}
+
+export function vCard(inv) {
+  const p = inv.p;
+  if (!p) return `<div class="v-card"><div><h3>${esc(inv.manager)}</h3><div class="firm">${esc(inv.firm)}</div></div><p class="form-note">First data update pending</p></div>`;
+  const top = p.holdings.slice(0, 5);
+  return `<a class="v-card" href="/investors/${esc(inv.slug)}.html">
+  <div><h3>${esc(inv.manager)}</h3><div class="firm">${esc(inv.firm)} · ${esc((inv.tags || [])[0] || '')}</div></div>
+  <div class="v-spark" title="Top 5 positions: ${Math.round(top.reduce((a, h) => a + h.w, 0))}% of the portfolio">${top.map((h) => `<i style="width:${h.w.toFixed(2)}%"></i>`).join('')}</div>
+  <div class="chips">${top.slice(0, 4).map((h) => `<span class="v-tk">${esc(h.label)}</span>`).join('')}</div>
+  <div class="row"><span>Portfolio</span><b>${money(p.totalValue)}${p.valueChange != null ? ` <span class="chg ${upDown(p.valueChange)}">${signed(p.valueChange * 100, 0)}</span>` : ''}</b></div>
+  <div class="row"><span>Positions · ${quarter(p.period)}</span><b>${p.holdingsCount}</b></div>
+</a>`;
 }
 
 /* ---------- VIX mood card (original design) ---------- */

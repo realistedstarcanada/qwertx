@@ -1,5 +1,5 @@
 import { esc, money, int, pct, date, quarter, signed, upDown } from '../lib/format.mjs';
-import { chart, tkr, actBadge, wbar, sourceChip, rankList, invCard, pageHero, kpi, proCta } from '../parts.mjs';
+import { chart, tkr, actBadge, wbar, sourceChip, rankList, vCard, pageHero, kpi, proCta } from '../parts.mjs';
 
 export function investorsIndex(d) {
   const body = `${pageHero({
@@ -13,7 +13,7 @@ export function investorsIndex(d) {
 <section class="section">
   <div class="container">
     <div class="row between center mb-32 reveal"><p class="mb-0" style="color:var(--muted)">Showing <b style="color:var(--text)">${d.live.length}</b> investors · <b style="color:var(--text)">${money(d.smart.value)}</b> in reported holdings</p>${sourceChip('Source: SEC EDGAR Form 13F-HR')}</div>
-    <div class="row">${d.investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue).map((i) => invCard(i)).join('')}${d.investors.filter((i) => !i.p).map((i) => invCard(i)).join('')}</div>
+    <div class="v-grid">${d.investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue).map(vCard).join('')}${d.investors.filter((i) => !i.p).map(vCard).join('')}</div>
   </div>
 </section>
 <section class="section-sm">

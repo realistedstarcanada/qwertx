@@ -1,5 +1,5 @@
 import { esc, money, int, date, cleanName } from '../lib/format.mjs';
-import { chart, tkr, rankList, sourceChip, kpi, pageHero, newsletter, partyChip } from '../parts.mjs';
+import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, partyChip } from '../parts.mjs';
 
 const typeBadge = (t) => (t.type === 'buy' ? '<span class="act act-add">Buy</span>' : '<span class="act act-trim">Sell</span>');
 
@@ -42,7 +42,7 @@ ${q ? `<section class="section-sm">
       </div></div>
       <div class="col-5"><div class="card reveal" style="height:100%">
         <div class="card-label"><span>02 · Most sold</span><span>${esc(q.label)}</span></div><h3>Stocks Congress sold the most</h3>
-        ${q.mostSold.length ? rankList(q.mostSold.slice(0, 10).map((r) => ({ t: tkr(r.ticker, r.stock?.hasPage ? r.stock.slug : null), small: esc(r.name), v: `<span class="down">${r.sellers} selling</span>` }))) : empty}
+        ${q.mostSold.length ? vRank(q.mostSold.slice(0, 10).map((r) => ({ name: r.name, href: r.stock?.hasPage ? `/stocks/${r.stock.slug}.html` : null, sub: `${esc(r.ticker)} · ${r.sells} sale${r.sells > 1 ? 's' : ''}`, n: r.sellers })), { kind: 'sell', max: 10 }) : empty}
       </div></div>
     </div>
   </div>
