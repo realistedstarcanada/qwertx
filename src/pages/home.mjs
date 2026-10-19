@@ -60,7 +60,7 @@ export function home(d) {
       <div>
         <div class="eyebrow">After Work Investment Strategies</div>
         <h1>Follow the smart money, <em>not the noise.</em></h1>
-        <p class="lede">For busy professionals who can’t watch the market all day. See what top fund managers, members of Congress and company insiders are actually buying, straight from official filings and explained in plain English. No hype, no gurus, no paid picks.</p>
+        <p class="lede">For busy professionals who can’t watch the market all day. See what top fund managers, politicians and company insiders are actually buying, straight from official filings and explained in plain language.</p>
         <div class="btn-row">
           <a class="btn btn-gold" href="/smart-money.html">See what they’re buying</a>
           <a class="btn" href="/investors.html">Browse superinvestors</a>
