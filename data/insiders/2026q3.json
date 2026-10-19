@@ -1,21 +1,21 @@
 {
   "quarter": "2026q3",
-  "generatedAt": "2026-10-19T18:56:44.519Z",
+  "generatedAt": "2026-10-19T18:59:00.480Z",
   "source": "SEC Insider Transactions Data Sets (Form 4, transaction codes P and S)",
   "totals": {
-    "buys": 2763,
-    "sells": 9638,
-    "buyValue": 6865269239,
-    "sellValue": 44054740154,
-    "buyCompanies": 988,
+    "buys": 2803,
+    "sells": 9642,
+    "buyValue": 7226480387,
+    "sellValue": 44078945161,
+    "buyCompanies": 987,
     "sellCompanies": 2060,
     "plannedSells": 4746
   },
   "monthly": {
     "2026-09": {
-      "buy": 883,
+      "buy": 887,
       "sell": 2800,
-      "buyValue": 2283190999.120098,
+      "buyValue": 2301187031.150799,
       "sellValue": 13244381705.518631
     },
     "2026-05": {
@@ -31,22 +31,22 @@
       "sellValue": 1309769.11
     },
     "2026-06": {
-      "buy": 100,
-      "sell": 260,
-      "buyValue": 1224974667.2969992,
-      "sellValue": 977331894.2210997
+      "buy": 106,
+      "sell": 261,
+      "buyValue": 1354793946.704399,
+      "sellValue": 977377395.2040998
     },
     "2026-08": {
-      "buy": 1210,
+      "buy": 1217,
       "sell": 4316,
-      "buyValue": 1971147742.8763995,
+      "buyValue": 2041599112.5224,
       "sellValue": 20681818997.334564
     },
     "2026-07": {
-      "buy": 547,
-      "sell": 2233,
-      "buyValue": 1334925577.2679996,
-      "sellValue": 9140950316.096302
+      "buy": 570,
+      "sell": 2236,
+      "buyValue": 1477870043.3568993,
+      "sellValue": 9165109822.2248
     }
   },
   "topBuys": [
@@ -119,7 +119,7 @@
       "issuerCik": "0002098430"
     },
     {
-      "ticker": "LEN,LEN.B",
+      "ticker": "LEN",
       "company": "LENNAR CORP /NEW/",
       "owner": "BERKSHIRE HATHAWAY INC",
       "role": "10% owner",
@@ -304,6 +304,23 @@
       "acc": "0001104659-26-094887",
       "ownerCik": "0000902012",
       "issuerCik": "0001060391"
+    },
+    {
+      "ticker": "N",
+      "company": "TPG Twin Brook Capital Income Fund",
+      "owner": "WINKELRIED JON",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-06-29",
+      "filed": "2026-07-01",
+      "shares": 3966554,
+      "price": 25.21,
+      "value": 99996827,
+      "plan": false,
+      "acc": "0001999371-26-014057",
+      "ownerCik": "0001366946",
+      "issuerCik": "0001913724"
     },
     {
       "ticker": "PBLSX",
@@ -510,6 +527,40 @@
       "issuerCik": "0001770069"
     },
     {
+      "ticker": "N",
+      "company": "TPG Twin Brook Capital Income Fund",
+      "owner": "WINKELRIED JON",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-07-29",
+      "filed": "2026-07-31",
+      "shares": 1984182,
+      "price": 25.2,
+      "value": 50001389,
+      "plan": false,
+      "acc": "0001999371-26-016672",
+      "ownerCik": "0001366946",
+      "issuerCik": "0001913724"
+    },
+    {
+      "ticker": "N",
+      "company": "John Hancock GA Senior Loan Trust",
+      "owner": "Manufacturers Life Reinsurance Ltd",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-08-31",
+      "filed": "2026-09-01",
+      "shares": 2693701,
+      "price": 16.33,
+      "value": 43988145,
+      "plan": false,
+      "acc": "0001765496-26-000017",
+      "ownerCik": "0001765496",
+      "issuerCik": "0001742951"
+    },
+    {
       "ticker": "GPI",
       "company": "GROUP 1 AUTOMOTIVE INC",
       "owner": "Conifer Management, L.L.C.",
@@ -542,6 +593,23 @@
       "acc": "0001104659-26-104608",
       "ownerCik": "0002098163",
       "issuerCik": "0002046200"
+    },
+    {
+      "ticker": "N",
+      "company": "John Hancock GA Mortgage Trust",
+      "owner": "Manufacturers Life Insurance Co (Bermuda Branch)",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-07-15",
+      "filed": "2026-07-17",
+      "shares": 2000000,
+      "price": 18.29,
+      "value": 36580000,
+      "plan": false,
+      "acc": "0001833683-26-000016",
+      "ownerCik": "0001833683",
+      "issuerCik": "0001742952"
     },
     {
       "ticker": "SCTX",
@@ -661,74 +729,6 @@
       "acc": "0001683168-26-007021",
       "ownerCik": "0001030743",
       "issuerCik": "0000798287"
-    },
-    {
-      "ticker": "GRAB",
-      "company": "Grab Holdings Ltd",
-      "owner": "Tan Anthony Ping Yeow",
-      "role": "Chief Executive Officer",
-      "exec": true,
-      "owner10": false,
-      "date": "2026-09-21",
-      "filed": "2026-09-21",
-      "shares": 10350000,
-      "price": 2.89,
-      "value": 29911500,
-      "plan": false,
-      "acc": "0001896497-26-000009",
-      "ownerCik": "0001896497",
-      "issuerCik": "0001855612"
-    },
-    {
-      "ticker": "GSAT",
-      "company": "Globalstar, Inc.",
-      "owner": "Monroe James III",
-      "role": "Director",
-      "exec": true,
-      "owner10": true,
-      "date": "2026-09-18",
-      "filed": "2026-09-21",
-      "shares": 361600,
-      "price": 82.52,
-      "value": 29839232,
-      "plan": false,
-      "acc": "0001379664-26-000002",
-      "ownerCik": "0001379664",
-      "issuerCik": "0001366868"
-    },
-    {
-      "ticker": "CRBG",
-      "company": "Corebridge Financial, Inc.",
-      "owner": "NIPPON LIFE INSURANCE CO",
-      "role": "10% owner",
-      "exec": false,
-      "owner10": true,
-      "date": "2026-09-28",
-      "filed": "2026-09-30",
-      "shares": 805782,
-      "price": 34.16,
-      "value": 27522685,
-      "plan": true,
-      "acc": "0001193125-26-409206",
-      "ownerCik": "0000905591",
-      "issuerCik": "0001889539"
-    },
-    {
-      "ticker": "ADRX",
-      "company": "ADARx Pharmaceuticals, Inc.",
-      "owner": "SR ONE CAPITAL MANAGEMENT, LLC",
-      "role": "10% owner",
-      "exec": false,
-      "owner10": true,
-      "date": "2026-09-28",
-      "filed": "2026-09-29",
-      "shares": 1600000,
-      "price": 17,
-      "value": 27200000,
-      "plan": false,
-      "acc": "0001193125-26-408064",
-      "ownerCik": "0001853723",
-      "issuerCik": "0001802369"
     }
   ],
   "topExecBuys": [
@@ -2820,6 +2820,20 @@
       "last": "2026-07-20"
     },
     {
+      "ticker": "N",
+      "company": "Crestline Lending Solutions, LLC",
+      "value": 2628047.1753999996,
+      "trades": 15,
+      "insiders": 13,
+      "roles": [
+        "Director",
+        "Chief Executive Officer",
+        "Chief Development Officer",
+        "Portfolio Manager"
+      ],
+      "last": "2026-09-10"
+    },
+    {
       "ticker": "SPG",
       "company": "SIMON PROPERTY GROUP INC.",
       "value": 529028.2599999999,
@@ -3160,17 +3174,6 @@
         "EVP, Chief Financial Officer"
       ],
       "last": "2026-08-13"
-    },
-    {
-      "ticker": "FUL",
-      "company": "FULLER H B CO",
-      "value": 564904.6699999999,
-      "trades": 6,
-      "insiders": 5,
-      "roles": [
-        "Director"
-      ],
-      "last": "2026-09-29"
     }
   ],
   "topBuyCompanies": [
@@ -3208,6 +3211,31 @@
       "last": "2026-07-15"
     },
     {
+      "ticker": "LEN",
+      "company": "LENNAR CORP /NEW/",
+      "value": 402660528.93,
+      "trades": 3,
+      "insiders": 2,
+      "roles": [
+        "10% owner"
+      ],
+      "last": "2026-09-28"
+    },
+    {
+      "ticker": "N",
+      "company": "Calamos Aksia Hedged Strategies Fund",
+      "value": 367472102.91010004,
+      "trades": 42,
+      "insiders": 27,
+      "roles": [
+        "10% owner",
+        "Portfolio Manager",
+        "other",
+        "Director"
+      ],
+      "last": "2026-09-23"
+    },
+    {
       "ticker": "MAIR",
       "company": "Madison Air Solutions Corp",
       "value": 219556784.28,
@@ -3218,28 +3246,6 @@
         "Director"
       ],
       "last": "2026-08-25"
-    },
-    {
-      "ticker": "LEN,LEN.B",
-      "company": "LENNAR CORP /NEW/",
-      "value": 212395151.42,
-      "trades": 1,
-      "insiders": 1,
-      "roles": [
-        "10% owner"
-      ],
-      "last": "2026-09-17"
-    },
-    {
-      "ticker": "LEN",
-      "company": "LENNAR CORP /NEW/",
-      "value": 190265377.51000002,
-      "trades": 2,
-      "insiders": 1,
-      "roles": [
-        "10% owner"
-      ],
-      "last": "2026-09-28"
     },
     {
       "ticker": "GPI",
@@ -3941,17 +3947,17 @@
       "value": 642749900,
       "insiders": 1
     },
+    "LEN": {
+      "value": 402660529,
+      "insiders": 2
+    },
+    "N": {
+      "value": 367472103,
+      "insiders": 27
+    },
     "MAIR": {
       "value": 219556784,
       "insiders": 2
-    },
-    "LEN,LEN.B": {
-      "value": 212395151,
-      "insiders": 1
-    },
-    "LEN": {
-      "value": 190265378,
-      "insiders": 1
     },
     "GPI": {
       "value": 187264612,
@@ -4288,10 +4294,6 @@
     "FSBC": {
       "value": 6279988,
       "insiders": 6
-    },
-    "[NONE]": {
-      "value": 6260956,
-      "insiders": 2
     },
     "BNR": {
       "value": 6182660,
@@ -8807,6 +8809,10 @@
       "value": 24328817,
       "insiders": 4
     },
+    "N": {
+      "value": 24205007,
+      "insiders": 4
+    },
     "SNAP": {
       "value": 24061452,
       "insiders": 5
@@ -9279,7 +9285,7 @@
       "value": 13187237,
       "insiders": 5
     },
-    "CRDACRDB": {
+    "CRDA": {
       "value": 13139411,
       "insiders": 2
     },
@@ -9591,7 +9597,7 @@
       "value": 8978697,
       "insiders": 3
     },
-    "GEF,GEF-B": {
+    "GEF": {
       "value": 8958907,
       "insiders": 7
     },
@@ -9735,7 +9741,7 @@
       "value": 7908799,
       "insiders": 3
     },
-    "ASX:LNW": {
+    "ASXLNW": {
       "value": 7853034,
       "insiders": 4
     },
@@ -11043,7 +11049,7 @@
       "value": 2720523,
       "insiders": 4
     },
-    "(CALX)": {
+    "CALX": {
       "value": 2715000,
       "insiders": 1
     },
@@ -11555,6 +11561,10 @@
       "value": 1772090,
       "insiders": 1
     },
+    "NYSE": {
+      "value": 1767489,
+      "insiders": 5
+    },
     "UVE": {
       "value": 1765000,
       "insiders": 1
@@ -12023,7 +12033,7 @@
       "value": 1325500,
       "insiders": 1
     },
-    "ZANDZG": {
+    "Z": {
       "value": 1323800,
       "insiders": 8
     },
@@ -12091,10 +12101,6 @@
       "value": 1265855,
       "insiders": 3
     },
-    "NYSE:VTEX": {
-      "value": 1265139,
-      "insiders": 4
-    },
     "UMAC": {
       "value": 1262198,
       "insiders": 3
@@ -12119,7 +12125,7 @@
       "value": 1248000,
       "insiders": 1
     },
-    "MOGA/MOGB": {
+    "MOGA": {
       "value": 1240300,
       "insiders": 1
     },
@@ -13279,15 +13285,11 @@
       "value": 504832,
       "insiders": 1
     },
-    "NYSE/TRN": {
-      "value": 502350,
-      "insiders": 1
-    },
     "FUNC": {
       "value": 500753,
       "insiders": 3
     },
-    "(SIRI)": {
+    "SIRI": {
       "value": 499660,
       "insiders": 1
     },
@@ -15511,7 +15513,7 @@
       "value": 38076,
       "insiders": 2
     },
-    "GTII/GTBIF": {
+    "GTII": {
       "value": 37853,
       "insiders": 1
     },

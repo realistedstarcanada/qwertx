@@ -1,40 +1,40 @@
 {
   "quarter": "2026q2",
-  "generatedAt": "2026-10-19T18:56:45.936Z",
+  "generatedAt": "2026-10-19T18:59:03.521Z",
   "source": "SEC Insider Transactions Data Sets (Form 4, transaction codes P and S)",
   "totals": {
-    "buys": 2949,
-    "sells": 10382,
-    "buyValue": 15396893640,
-    "sellValue": 59394380372,
+    "buys": 2992,
+    "sells": 10389,
+    "buyValue": 15658796656,
+    "sellValue": 59564927263,
     "buyCompanies": 1075,
-    "sellCompanies": 2116,
+    "sellCompanies": 2115,
     "plannedSells": 4951
   },
   "monthly": {
     "2026-06": {
-      "buy": 933,
-      "sell": 3677,
-      "buyValue": 1343358124.3304987,
-      "sellValue": 21452619373.643795
+      "buy": 942,
+      "sell": 3676,
+      "buyValue": 1486007201.2200985,
+      "sellValue": 21452614046.393795
     },
     "2026-05": {
-      "buy": 1294,
+      "buy": 1302,
       "sell": 4096,
-      "buyValue": 5812054448.753299,
+      "buyValue": 5835949181.243899,
       "sellValue": 23789892489.871387
     },
     "2026-04": {
-      "buy": 584,
-      "sell": 2406,
-      "buyValue": 3906289677.835801,
-      "sellValue": 13366232341.236513
+      "buy": 602,
+      "sell": 2412,
+      "buyValue": 3957453029.3523016,
+      "sellValue": 13536771471.674915
     },
     "2026-03": {
-      "buy": 122,
-      "sell": 184,
-      "buyValue": 4327318959.0702,
-      "sellValue": 777205327.028
+      "buy": 129,
+      "sell": 186,
+      "buyValue": 4362214819.8096,
+      "sellValue": 777218414.2588
     },
     "2026-02": {
       "buy": 10,
@@ -43,9 +43,9 @@
       "sellValue": 5932815.88
     },
     "2026-01": {
-      "buy": 6,
+      "buy": 7,
       "sell": 5,
-      "buyValue": 1737583.7820000001,
+      "buyValue": 11037578.412,
       "sellValue": 2498024.72
     }
   },
@@ -340,6 +340,23 @@
       "issuerCik": "0002068577"
     },
     {
+      "ticker": "N",
+      "company": "Innovation Access Fund",
+      "owner": "SilverBay Capital Management LLC",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-06-01",
+      "filed": "2026-06-03",
+      "shares": 3827824,
+      "price": 15.67,
+      "value": 59982002,
+      "plan": false,
+      "acc": "0001206774-26-000310",
+      "ownerCik": "0001485859",
+      "issuerCik": "0001905379"
+    },
+    {
       "ticker": "COAG",
       "company": "Hemab Therapeutics Holdings, Inc.",
       "owner": "Shah Rajeev M.",
@@ -374,7 +391,24 @@
       "issuerCik": "0002123613"
     },
     {
-      "ticker": "NASDAQ:SVC",
+      "ticker": "N",
+      "company": "Diameter Dynamic Credit Fund",
+      "owner": "Abu Dhabi Pension Fund",
+      "role": "10% owner",
+      "exec": false,
+      "owner10": true,
+      "date": "2026-06-08",
+      "filed": "2026-06-10",
+      "shares": 4990020,
+      "price": 10.02,
+      "value": 50000000,
+      "plan": false,
+      "acc": "0000929638-26-002186",
+      "ownerCik": "0002134287",
+      "issuerCik": "0002067955"
+    },
+    {
+      "ticker": "NASDAQSVC",
       "company": "Service Properties Trust",
       "owner": "PORTNOY ADAM D.",
       "role": "Director",
@@ -695,40 +729,6 @@
       "acc": "0001193125-26-163651",
       "ownerCik": "0001464867",
       "issuerCik": "0002054992"
-    },
-    {
-      "ticker": "KNOP",
-      "company": "KNOT Offshore Partners LP",
-      "owner": "Seglem Trygve",
-      "role": "Director",
-      "exec": true,
-      "owner10": false,
-      "date": "2026-06-15",
-      "filed": "2026-06-16",
-      "shares": 1250000,
-      "price": 20,
-      "value": 25000000,
-      "plan": false,
-      "acc": "0001104659-26-074731",
-      "ownerCik": "0001681573",
-      "issuerCik": "0001564180"
-    },
-    {
-      "ticker": "PSUS",
-      "company": "Pershing Square USA, Ltd.",
-      "owner": "ISRAEL RYAN",
-      "role": "Chief Investment Officer",
-      "exec": true,
-      "owner10": false,
-      "date": "2026-04-30",
-      "filed": "2026-05-01",
-      "shares": 500000,
-      "price": 50,
-      "value": 25000000,
-      "plan": false,
-      "acc": "0001140361-26-018580",
-      "ownerCik": "0001597463",
-      "issuerCik": "0002002660"
     }
   ],
   "topExecBuys": [
@@ -886,7 +886,7 @@
       "issuerCik": "0001817241"
     },
     {
-      "ticker": "NASDAQ:SVC",
+      "ticker": "NASDAQSVC",
       "company": "Service Properties Trust",
       "owner": "PORTNOY ADAM D.",
       "role": "Director",
@@ -1362,6 +1362,23 @@
       "issuerCik": "0001679273"
     },
     {
+      "ticker": "N",
+      "company": "Cantor Fitzgerald Income Trust, Inc.",
+      "owner": "Lutnick Brandon",
+      "role": "Director",
+      "exec": true,
+      "owner10": false,
+      "date": "2026-01-02",
+      "filed": "2026-04-08",
+      "shares": 478641,
+      "price": 19.43,
+      "value": 9299995,
+      "plan": false,
+      "acc": "0001213900-26-041632",
+      "ownerCik": "0002048880",
+      "issuerCik": "0001666244"
+    },
+    {
       "ticker": "DPC",
       "company": "DPC Holdings Ltd",
       "owner": "Egan David John",
@@ -1394,23 +1411,6 @@
       "acc": "0001000753-26-000078",
       "ownerCik": "0001032399",
       "issuerCik": "0001000753"
-    },
-    {
-      "ticker": "ARTV",
-      "company": "Artiva Biotherapeutics, Inc.",
-      "owner": "RA Capital Nexus Fund, L.P.",
-      "role": "Director",
-      "exec": true,
-      "owner10": false,
-      "date": "2026-06-09",
-      "filed": "2026-06-11",
-      "shares": 1027619,
-      "price": 7.44,
-      "value": 7649427,
-      "plan": false,
-      "acc": "0001231919-26-000625",
-      "ownerCik": "0001780117",
-      "issuerCik": "0001817241"
     }
   ],
   "topExecSells": [
@@ -2807,6 +2807,20 @@
       "last": "2026-06-18"
     },
     {
+      "ticker": "N",
+      "company": "Cantor Fitzgerald Income Trust, Inc.",
+      "value": 20866288.4249,
+      "trades": 17,
+      "insiders": 14,
+      "roles": [
+        "Director",
+        "President",
+        "Portfolio Manager",
+        "Secretary"
+      ],
+      "last": "2026-06-22"
+    },
+    {
       "ticker": "EFOR",
       "company": "Everforth Inc",
       "value": 1871823.4199999997,
@@ -3160,20 +3174,6 @@
         "Director"
       ],
       "last": "2026-05-20"
-    },
-    {
-      "ticker": "NEWT",
-      "company": "NewtekOne, Inc.",
-      "value": 288461.31999999995,
-      "trades": 8,
-      "insiders": 6,
-      "roles": [
-        "President, Chairman & CEO",
-        "Director",
-        "President, Newtek Bank",
-        "Cheif Financial Officer"
-      ],
-      "last": "2026-06-15"
     }
   ],
   "topBuyCompanies": [
@@ -3248,6 +3248,20 @@
         "Chief Investment Officer"
       ],
       "last": "2026-06-17"
+    },
+    {
+      "ticker": "N",
+      "company": "Calamos Aksia Hedged Strategies Fund",
+      "value": 262402760.2661,
+      "trades": 44,
+      "insiders": 30,
+      "roles": [
+        "10% owner",
+        "Director",
+        "President",
+        "Treasurer"
+      ],
+      "last": "2026-06-26"
     },
     {
       "ticker": "RSG",
@@ -3456,7 +3470,7 @@
       "last": "2026-06-05"
     },
     {
-      "ticker": "NASDAQ:SVC",
+      "ticker": "NASDAQSVC",
       "company": "Service Properties Trust",
       "value": 50297998.8,
       "trades": 5,
@@ -3522,17 +3536,6 @@
         "Director"
       ],
       "last": "2026-06-22"
-    },
-    {
-      "ticker": "QTTB",
-      "company": "Q32 Bio Inc.",
-      "value": 30000000,
-      "trades": 2,
-      "insiders": 2,
-      "roles": [
-        "Director"
-      ],
-      "last": "2026-05-28"
     }
   ],
   "topSellCompanies": [
@@ -3942,6 +3945,10 @@
       "value": 311593900,
       "insiders": 8
     },
+    "N": {
+      "value": 262402760,
+      "insiders": 30
+    },
     "RSG": {
       "value": 202366500,
       "insiders": 2
@@ -4010,7 +4017,7 @@
       "value": 55306560,
       "insiders": 1
     },
-    "NASDAQ:SVC": {
+    "NASDAQSVC": {
       "value": 50297999,
       "insiders": 5
     },
@@ -5352,10 +5359,6 @@
     },
     "DKI": {
       "value": 500000,
-      "insiders": 1
-    },
-    "NOG": {
-      "value": 499744,
       "insiders": 1
     },
     "YEXT": {
@@ -7822,7 +7825,7 @@
       "value": 12241,
       "insiders": 3
     },
-    "JUSH/JUSHF": {
+    "JUSH": {
       "value": 12005,
       "insiders": 1
     },
@@ -8471,6 +8474,10 @@
     "SE": {
       "value": 171963624,
       "insiders": 5
+    },
+    "N": {
+      "value": 170552218,
+      "insiders": 7
     },
     "PTRN": {
       "value": 167143408,
@@ -10504,7 +10511,7 @@
       "value": 5443098,
       "insiders": 4
     },
-    "ASX:LNW": {
+    "ASXLNW": {
       "value": 5404800,
       "insiders": 2
     },
@@ -10792,7 +10799,7 @@
       "value": 3907122,
       "insiders": 4
     },
-    "GTII/GTBIF": {
+    "GTII": {
       "value": 3900000,
       "insiders": 2
     },
@@ -10811,6 +10818,10 @@
     "CROX": {
       "value": 3860216,
       "insiders": 1
+    },
+    "NYSE": {
+      "value": 3856099,
+      "insiders": 9
     },
     "PUBM": {
       "value": 3842698,
@@ -11448,10 +11459,6 @@
       "value": 2452804,
       "insiders": 4
     },
-    "NYSE:KRC": {
-      "value": 2439012,
-      "insiders": 5
-    },
     "BABA": {
       "value": 2432370,
       "insiders": 4
@@ -12028,7 +12035,7 @@
       "value": 1608982,
       "insiders": 1
     },
-    "ZANDZG": {
+    "Z": {
       "value": 1605737,
       "insiders": 9
     },
@@ -12240,10 +12247,6 @@
       "value": 1419172,
       "insiders": 2
     },
-    "NYSE:VTEX": {
-      "value": 1417086,
-      "insiders": 4
-    },
     "LBRT": {
       "value": 1414929,
       "insiders": 2
@@ -12320,7 +12323,7 @@
       "value": 1358618,
       "insiders": 2
     },
-    "MOGA/MOGB": {
+    "MOGA": {
       "value": 1350047,
       "insiders": 2
     },
@@ -12612,7 +12615,7 @@
       "value": 1084470,
       "insiders": 2
     },
-    "(CALX)": {
+    "CALX": {
       "value": 1081623,
       "insiders": 1
     },
@@ -13092,7 +13095,7 @@
       "value": 741600,
       "insiders": 1
     },
-    "(SIRI)": {
+    "SIRI": {
       "value": 739942,
       "insiders": 2
     },
@@ -13248,7 +13251,7 @@
       "value": 661034,
       "insiders": 3
     },
-    "CRDACRDB": {
+    "CRDA": {
       "value": 660037,
       "insiders": 2
     },
@@ -13648,7 +13651,7 @@
       "value": 475000,
       "insiders": 1
     },
-    "HEI,HEI.A": {
+    "HEI": {
       "value": 471149,
       "insiders": 2
     },
@@ -13824,7 +13827,7 @@
       "value": 406979,
       "insiders": 1
     },
-    "GEF,GEF-B": {
+    "GEF": {
       "value": 406680,
       "insiders": 1
     },
@@ -14508,7 +14511,7 @@
       "value": 237202,
       "insiders": 1
     },
-    "ASX:CRN": {
+    "ASXCRN": {
       "value": 237068,
       "insiders": 2
     },
@@ -14988,7 +14991,7 @@
       "value": 144960,
       "insiders": 1
     },
-    "$FEED": {
+    "FEED": {
       "value": 144900,
       "insiders": 1
     },
@@ -15048,7 +15051,7 @@
       "value": 136621,
       "insiders": 2
     },
-    "BIOBIO.B": {
+    "BIO": {
       "value": 135597,
       "insiders": 1
     },
@@ -16532,10 +16535,6 @@
       "value": 5684,
       "insiders": 1
     },
-    "[NONE]": {
-      "value": 5327,
-      "insiders": 1
-    },
     "RPD": {
       "value": 5251,
       "insiders": 1
@@ -16592,7 +16591,7 @@
       "value": 3872,
       "insiders": 1
     },
-    "CIG,CIGC": {
+    "CIG": {
       "value": 3860,
       "insiders": 1
     },
