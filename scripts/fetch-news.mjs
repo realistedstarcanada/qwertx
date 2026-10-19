@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-// Daily job: pulls market headlines from the RSS feeds in config/news-feeds.json and a
-// Fear & Greed snapshot, then writes data/news.json and data/market.json.
+// Daily job: pulls market headlines from the RSS feeds in config/news-feeds.json into data/news.json.
 // Only headline, link, source and time are kept (no article text).
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -67,32 +66,6 @@ async function news() {
   return true;
 }
 
-async function market() {
-  try {
-    const d = await fetchRetry(
-      'https://production.dataviz.cnn.io/index/fearandgreed/graphdata',
-      { headers: { 'User-Agent': BROWSER_UA, Accept: 'application/json', Referer: 'https://www.cnn.com/' } },
-      { type: 'json', tries: 2 },
-    );
-    const fg = d.fear_and_greed;
-    if (!fg || typeof fg.score !== 'number') throw new Error('unexpected response');
-    writeJSON(path.join(DATA, 'market.json'), {
-      score: Math.round(fg.score),
-      rating: fg.rating,
-      previousClose: fg.previous_close != null ? Math.round(fg.previous_close) : null,
-      previousWeek: fg.previous_1_week != null ? Math.round(fg.previous_1_week) : null,
-      previousMonth: fg.previous_1_month != null ? Math.round(fg.previous_1_month) : null,
-      previousYear: fg.previous_1_year != null ? Math.round(fg.previous_1_year) : null,
-      asOf: fg.timestamp || new Date().toISOString(),
-      source: 'CNN Fear & Greed Index',
-    });
-    console.log(`• Fear & Greed: ${Math.round(fg.score)} (${fg.rating})`);
-  } catch (e) {
-    console.warn(`• Fear & Greed: skipped (${e.message})`);
-  }
-}
-
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
   await news();
-  await market();
 }

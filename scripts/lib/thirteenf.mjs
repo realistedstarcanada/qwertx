@@ -134,7 +134,7 @@ export function diffQuarters(cur, prev) {
  * Originals (13F-HR) win, unless a later amendment is a full restatement.
  * `isRestatement(filing)` is an async callback that inspects an amendment.
  */
-export async function pickFilings(submissions, isRestatement) {
+export async function pickFilings(submissions, isRestatement, max = 2) {
   const r = submissions?.filings?.recent;
   if (!r) return [];
   const byPeriod = new Map();
@@ -162,7 +162,7 @@ export async function pickFilings(submissions, isRestatement) {
       }
     }
     if (chosen) out.push({ period, ...chosen });
-    if (out.length >= 2) break;
+    if (out.length >= max) break;
   }
   return out;
 }

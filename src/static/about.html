@@ -1,0 +1,65 @@
+<!--title:About QWERTx: After Work Investment Strategies | QWERTx-->
+<!--description:QWERTx turns SEC 13F filings into clear visuals and plain-English insights for busy professionals. Learn our story, values and methodology.-->
+<!-- Elementor: Flex Container (full width, background image + overlay) — Heading H1 · Text Editor -->
+<section class="page-hero">
+  <div class="hero-bg grid"></div>
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">About</span></nav>
+    <div class="eyebrow">About QWERTx</div>
+    <h1 class="maxw-760">Built for people who invest <span class="accent">after work</span></h1>
+    <p class="lead maxw-640">QWERTY is the keyboard you use all day at work. QWERTx is what you do after: smart, focused investing research that fits into the evening.</p>
+    
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="row row-wide center">
+      <div class="col-5 reveal"><img src="assets/img/about.jpg" alt="A person studying stock charts on a laptop at home at night, with the city lights behind" width="1672" height="941" loading="lazy" style="border-radius:16px;border:1px solid var(--line)"></div>
+      <div class="col-7 reveal"><div class="eyebrow"><span class="num">01</span> / Our story</div><h2>Great research shouldn’t need a full-time job</h2>
+        <p class="lead">The world’s best investors publish what they own every quarter, but the raw filings are dense tables built for regulators, not people.</p>
+        <p>QWERTx was started by a working professional who wanted a faster way to learn from the best. We turn SEC filings into clear visuals, add the market context that matters and explain it all in plain English, so you can make better decisions in the time you actually have.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="container">
+    <div class="text-center maxw-640 mx-auto mb-48 reveal"><div class="eyebrow"><span class="num">02</span> / What we stand for</div><h2>Futuristic tools, old-fashioned honesty</h2></div>
+    <div class="row">
+      <div class="col-4"><div class="card icon-box reveal" style="height:100%"><div class="icon"><i class="fa-solid fa-link" aria-hidden="true"></i></div><h3>Every number sourced</h3><p>Each holding links back to the original SEC filing, so you never have to take our word for it.</p></div></div>
+      <div class="col-4"><div class="card icon-box reveal" style="height:100%"><div class="icon"><i class="fa-solid fa-ban" aria-hidden="true"></i></div><h3>No paid picks</h3><p>No sponsored rankings and no stock promotions. Ever.</p></div></div>
+      <div class="col-4"><div class="card icon-box reveal" style="height:100%"><div class="icon"><i class="fa-solid fa-language" aria-hidden="true"></i></div><h3>Plain English</h3><p>Every chart comes with a short “what this means” so it’s useful at a glance.</p></div></div>
+      <div class="col-4"><div class="card icon-box reveal" style="height:100%"><div class="icon"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i></div><h3>Respect your time</h3><p>30-second summaries first, deep dives one click away.</p></div></div>
+    </div>
+  </div>
+</section>
+<section class="section" id="methodology">
+  <div class="container">
+    <div class="row row-wide">
+      <div class="col-5 reveal"><div class="eyebrow"><span class="num">03</span> / Methodology</div><h2>How we calculate everything</h2><p class="lead">Transparent rules you can check yourself.</p>
+        <span class="source-chip mt-32"><i class="fa-solid fa-database" aria-hidden="true"></i>Sources: SEC EDGAR, OpenFIGI, FRED, TradingView</span></div>
+      <div class="col-7 reveal"><div class="accordion">
+        <details open><summary>Holdings data</summary><div class="acc-body">We read each manager’s Form 13F-HR information table directly from SEC EDGAR, combine duplicate lines for the same security and compare share counts with the previous quarter to label positions New, Added, Trimmed, Held or Sold out. CUSIP identifiers are mapped to tickers with OpenFIGI. Where a filer reports values in thousands, we convert to dollars.</div></details>
+        <details><summary>Conviction and “behaves like N bets”</summary><div class="acc-body">Conviction is the weight of the top 10 positions. The effective number of positions is 1 divided by the Herfindahl-Hirschman Index (the sum of squared weights): a portfolio with four equal positions scores 4.</div></details>
+        <details><summary>Turnover and buys/sells</summary><div class="acc-body">Buys and sells are estimated as the change in shares times the quarter-end price. Turnover is the smaller of total buys or sells divided by the average portfolio value, a standard approach for funds.</div></details>
+        <details><summary>Similarity score</summary><div class="acc-body">We treat each portfolio as a vector of position weights (share classes combined) and calculate the cosine similarity between investors. 100 means identical portfolios; 0 means no overlap.</div></details>
+        <details><summary>Market mood</summary><div class="acc-body">The latest VIX close from FRED is mapped onto five zones: below 12, 12–15, 15–20, 20–30 and above 30. Live widgets come from TradingView.</div></details>
+        <details><summary>Limitations</summary><div class="acc-body">13F filings arrive up to 45 days after quarter end and only cover US-listed long positions, so they leave out shorts, cash, most bonds and many foreign holdings. Prices in filings are quarter-end prices. Nothing here is investment advice.</div></details>
+      </div></div>
+    </div>
+  </div>
+</section>
+<!-- Elementor: Flex Container (row) — Image · Heading · Text · Button -->
+<section class="section">
+  <div class="container">
+    <div class="cta-band row row-wide center reveal">
+      <div class="col-7">
+        <div class="eyebrow">Coming soon · QWERTx Pro</div>
+        <h2>Professionally managed portfolios, built around your life.</h2>
+        <p class="lead">We are building QWERTx Pro: portfolios matched to your risk profile and time horizon, managed by experienced financial advisors. Join the waitlist to hear first when it launches.</p>
+        <div class="btn-row mt-32"><a class="btn btn-gold" href="pro.html#waitlist">Join the Pro waitlist <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="pro.html">How Pro will work</a></div>
+      </div>
+      <div class="col-5"><img src="assets/img/pro-hero-sm.jpg" alt="Glass panels of rising height lit in gold and teal, representing portfolios for different risk levels" width="800" height="450" loading="lazy" style="border-radius:16px;border:1px solid var(--line)"></div>
+    </div>
+  </div>
+</section>

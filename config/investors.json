@@ -1,17 +1,445 @@
 {
-  "_note": "Superinvestors tracked by QWERTx. 'cik' is the SEC filer ID; 'expect' must appear in the SEC entity name or the investor is skipped (protects against a wrong CIK). Add or remove entries here; the data workflow runs automatically when this file changes.",
+  "_note": "Super investors tracked by QWERTx. 'cik' is the SEC filer ID; 'expect' must appear in the SEC entity name or the investor is skipped (protects against a wrong CIK). Profile text (tags, meta, about, philosophy) appears on each investor page. The data workflow runs automatically when this file changes.",
   "investors": [
-    { "slug": "warren-buffett", "manager": "Warren Buffett", "firm": "Berkshire Hathaway", "cik": "0001067983", "expect": "BERKSHIRE", "style": "Concentrated value" },
-    { "slug": "bill-ackman", "manager": "Bill Ackman", "firm": "Pershing Square", "cik": "0002026053", "expect": "PERSHING", "style": "Concentrated activist" },
-    { "slug": "seth-klarman", "manager": "Seth Klarman", "firm": "Baupost Group", "cik": "0001061768", "expect": "BAUPOST", "style": "Deep value" },
-    { "slug": "david-tepper", "manager": "David Tepper", "firm": "Appaloosa", "cik": "0001656456", "expect": "APPALOOSA", "style": "Opportunistic" },
-    { "slug": "li-lu", "manager": "Li Lu", "firm": "Himalaya Capital Management", "cik": "0001709323", "expect": "HIMALAYA", "style": "Concentrated value" },
-    { "slug": "mohnish-pabrai", "manager": "Mohnish Pabrai", "firm": "Dalal Street", "cik": "0001549575", "expect": "DALAL", "style": "Concentrated value" },
-    { "slug": "stanley-druckenmiller", "manager": "Stanley Druckenmiller", "firm": "Duquesne Family Office", "cik": "0001536411", "expect": "DUQUESNE", "style": "Macro and growth" },
-    { "slug": "david-einhorn", "manager": "David Einhorn", "firm": "Greenlight Capital (DME Capital Management)", "cik": "0001489933", "expect": "DME", "style": "Value" },
-    { "slug": "howard-marks", "manager": "Howard Marks", "firm": "Oaktree Capital Management", "cik": "0000949509", "expect": "OAKTREE", "style": "Credit and value" },
-    { "slug": "terry-smith", "manager": "Terry Smith", "firm": "Fundsmith", "cik": "0001569205", "expect": "FUNDSMITH", "style": "Quality compounders" },
-    { "slug": "dan-loeb", "manager": "Dan Loeb", "firm": "Third Point", "cik": "0001040273", "expect": "THIRD POINT", "style": "Event-driven activist" },
-    { "slug": "carl-icahn", "manager": "Carl Icahn", "firm": "Icahn Capital Management", "cik": "0000921669", "expect": "ICAHN", "style": "Activist" }
+    {
+      "slug": "warren-buffett",
+      "manager": "Warren Buffett",
+      "firm": "Berkshire Hathaway",
+      "cik": "0001067983",
+      "expect": "BERKSHIRE",
+      "avatar": "WB",
+      "tags": [
+        "Value",
+        "Quality",
+        "Long-term"
+      ],
+      "meta": "Berkshire Hathaway · Omaha, Nebraska · since 1965",
+      "about": "Warren Buffett turned a struggling textile mill into Berkshire Hathaway, one of the largest companies in the world. He handed the CEO role to Greg Abel at the start of 2026 and remains chairman. Berkshire’s stock portfolio sits alongside its wholly owned businesses such as GEICO, BNSF Railway and Berkshire Hathaway Energy.",
+      "philosophy": [
+        "Buy wonderful businesses at fair prices and hold them for a very long time.",
+        "Stay inside your circle of competence and demand a margin of safety.",
+        "Keep plenty of cash so you can act when others are fearful."
+      ]
+    },
+    {
+      "slug": "bill-ackman",
+      "manager": "Bill Ackman",
+      "firm": "Pershing Square Capital Management",
+      "cik": "0002026053",
+      "expect": "PERSHING",
+      "avatar": "BA",
+      "tags": [
+        "Activist",
+        "Concentrated",
+        "Quality"
+      ],
+      "meta": "Pershing Square Capital Management · New York · since 2004",
+      "about": "Bill Ackman founded Pershing Square in 2004. He runs a small number of large, high-conviction positions in simple, predictable, cash-generating businesses, and sometimes pushes management for change. Part of the capital is permanent, through the London-listed Pershing Square Holdings.",
+      "philosophy": [
+        "Own a handful of dominant, predictable businesses with high barriers to entry.",
+        "Engage with management when change can unlock value.",
+        "Use permanent capital so short-term swings don’t force selling."
+      ]
+    },
+    {
+      "slug": "chris-hohn",
+      "manager": "Chris Hohn",
+      "firm": "TCI Fund Management",
+      "cik": "0001647251",
+      "expect": "TCI",
+      "avatar": "CH",
+      "tags": [
+        "Quality",
+        "Activist",
+        "Concentrated"
+      ],
+      "meta": "TCI Fund Management · London · since 2003",
+      "about": "Sir Chris Hohn founded The Children’s Investment Fund (TCI) in 2003. It has been one of the best-performing large hedge funds, owning a few monopoly-like businesses with pricing power and pushing for change when needed.",
+      "philosophy": [
+        "Own businesses with durable barriers to entry and pricing power.",
+        "Concentrate in your best ideas.",
+        "Engage hard when governance or strategy falls short."
+      ]
+    },
+    {
+      "slug": "gates-foundation",
+      "manager": "Gates Foundation Trust",
+      "firm": "Bill & Melinda Gates Foundation Trust",
+      "cik": "0001166559",
+      "expect": "GATES",
+      "avatar": "GF",
+      "tags": [
+        "Long-term",
+        "Endowment",
+        "Quality"
+      ],
+      "meta": "Bill & Melinda Gates Foundation Trust · Seattle / Kirkland, Washington · since 2000",
+      "about": "The Gates Foundation Trust holds the foundation’s endowment, separate from its charitable work. Its large Berkshire Hathaway stake comes from Warren Buffett’s annual gifts, which the trust sells over time to fund the foundation’s grants.",
+      "philosophy": [
+        "Preserve capital to fund decades of grant-making.",
+        "Hold durable, high-quality companies.",
+        "Steady, long-term stewardship rather than trading."
+      ]
+    },
+    {
+      "slug": "duan-yongping",
+      "manager": "Duan Yongping",
+      "firm": "H&H International Investment",
+      "cik": "0001759760",
+      "expect": "H&H",
+      "avatar": "DY",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Long-term"
+      ],
+      "meta": "H&H International Investment · Palo Alto, California · since 2000s",
+      "about": "Duan Yongping founded the electronics group behind brands like BBK, OPPO and vivo, and was an early backer of PDD. A devoted student of Warren Buffett, he invests his family’s money through H&H International with very few, very large positions.",
+      "philosophy": [
+        "Do the right things, and do them right.",
+        "Only buy what you understand and would own for ten years.",
+        "Very few decisions, held with patience."
+      ]
+    },
+    {
+      "slug": "bill-nygren",
+      "manager": "Bill Nygren",
+      "firm": "Oakmark Funds (Harris Associates)",
+      "cik": "0000813917",
+      "expect": "HARRIS",
+      "avatar": "BN",
+      "tags": [
+        "Value",
+        "Diversified",
+        "Fundamental"
+      ],
+      "meta": "Oakmark Funds (Harris Associates) · Chicago · since 1976",
+      "about": "Bill Nygren manages flagship funds at Oakmark, the fund family of Chicago-based Harris Associates. The firm buys companies trading well below its estimate of intrinsic value; the 13F covers all of Harris Associates’ US holdings.",
+      "philosophy": [
+        "Buy businesses trading at a big discount to intrinsic value.",
+        "Invest with managers who think like owners.",
+        "Sell when price approaches value, then repeat."
+      ]
+    },
+    {
+      "slug": "chase-coleman",
+      "manager": "Chase Coleman",
+      "firm": "Tiger Global Management",
+      "cik": "0001167483",
+      "expect": "TIGER",
+      "avatar": "CC",
+      "tags": [
+        "Growth",
+        "Technology",
+        "Global"
+      ],
+      "meta": "Tiger Global Management · New York · since 2001",
+      "about": "Chase Coleman, a “Tiger Cub” trained by Julian Robertson, founded Tiger Global in 2001. The public equity book focuses on global internet, software and AI leaders.",
+      "philosophy": [
+        "Back the long-term winners of technology shifts.",
+        "Combine deep fundamental research with a global lens.",
+        "Size positions by conviction and earnings growth."
+      ]
+    },
+    {
+      "slug": "stephen-mandel",
+      "manager": "Stephen Mandel",
+      "firm": "Lone Pine Capital",
+      "cik": "0001061165",
+      "expect": "LONE PINE",
+      "avatar": "SM",
+      "tags": [
+        "Growth",
+        "Long/short",
+        "Fundamental"
+      ],
+      "meta": "Lone Pine Capital · Greenwich, Connecticut · since 1997",
+      "about": "Stephen Mandel, another Tiger Cub, founded Lone Pine in 1997 and later stepped back from day-to-day management, which passed to a new generation of portfolio managers. The firm is known for high-turnover, research-driven growth investing.",
+      "philosophy": [
+        "Find businesses whose growth the market underestimates.",
+        "Do intense, bottom-up research on management and competition.",
+        "Rotate quickly when the thesis changes."
+      ]
+    },
+    {
+      "slug": "terry-smith",
+      "manager": "Terry Smith",
+      "firm": "Fundsmith",
+      "cik": "0001569205",
+      "expect": "FUNDSMITH",
+      "avatar": "TS",
+      "tags": [
+        "Quality",
+        "Global",
+        "Buy-and-hold"
+      ],
+      "meta": "Fundsmith · London · since 2010",
+      "about": "Terry Smith founded Fundsmith in 2010 with a strategy that fits on a single page. The firm owns high-quality global companies that need little debt and earn high returns on capital. The 13F covers its US-listed holdings.",
+      "philosophy": [
+        "Buy good companies.",
+        "Don’t overpay.",
+        "Do nothing."
+      ]
+    },
+    {
+      "slug": "thomas-gayner",
+      "manager": "Thomas Gayner",
+      "firm": "Markel Group",
+      "cik": "0001096343",
+      "expect": "MARKEL",
+      "avatar": "TG",
+      "tags": [
+        "Quality",
+        "Insurance float",
+        "Long-term"
+      ],
+      "meta": "Markel Group · Richmond, Virginia · since 1990",
+      "about": "Tom Gayner is CEO of Markel Group, a specialty insurer and holding company that is often compared to Berkshire. He has run the equity portfolio for decades using four simple filters.",
+      "philosophy": [
+        "Profitable businesses with good returns and little debt.",
+        "Management teams with equal talent and integrity.",
+        "Reinvestment opportunities, at a fair price."
+      ]
+    },
+    {
+      "slug": "carl-icahn",
+      "manager": "Carl Icahn",
+      "firm": "Icahn Capital Management",
+      "cik": "0000921669",
+      "expect": "ICAHN",
+      "avatar": "CI",
+      "tags": [
+        "Activist",
+        "Contrarian",
+        "Concentrated"
+      ],
+      "meta": "Icahn Capital Management · Sunny Isles Beach, Florida · since 1968",
+      "about": "Carl Icahn is one of the best-known activist investors in history, taking large stakes and pushing for board seats, buybacks or sales. Most of his capital is tied to Icahn Enterprises (IEP), which is also his largest reported holding.",
+      "philosophy": [
+        "Buy when a company is out of favour and management can be challenged.",
+        "Shareholders, not managers, should decide a company’s direction.",
+        "Be willing to stand alone against consensus."
+      ]
+    },
+    {
+      "slug": "david-tepper",
+      "manager": "David Tepper",
+      "firm": "Appaloosa Management",
+      "cik": "0001656456",
+      "expect": "APPALOOSA",
+      "avatar": "DT",
+      "tags": [
+        "Opportunistic",
+        "Macro-aware",
+        "Growth"
+      ],
+      "meta": "Appaloosa Management · Miami Beach, Florida · since 1993",
+      "about": "David Tepper built Appaloosa into one of the most successful hedge funds of its era, famous for bold, well-timed bets after market panics. The firm now mainly manages Tepper’s own money and moves quickly between sectors and themes.",
+      "philosophy": [
+        "Be aggressive when fear is at its highest and prices reflect it.",
+        "Follow policy and the economic cycle, not just company stories.",
+        "Change your mind fast when the facts change."
+      ]
+    },
+    {
+      "slug": "howard-marks",
+      "manager": "Howard Marks",
+      "firm": "Oaktree Capital Management",
+      "cik": "0000949509",
+      "expect": "OAKTREE",
+      "avatar": "HM",
+      "tags": [
+        "Credit",
+        "Distressed",
+        "Cycle-aware"
+      ],
+      "meta": "Oaktree Capital Management · Los Angeles · since 1995",
+      "about": "Howard Marks co-founded Oaktree, a global leader in credit and distressed investing; Brookfield owns a majority of the firm. His memos to clients are required reading on market cycles and risk. Oaktree’s 13F includes stocks, convertible bonds and index puts used for hedging.",
+      "philosophy": [
+        "You can’t predict the future, but you can know where we are in the cycle.",
+        "Second-level thinking: ask what everyone else is missing.",
+        "Risk means the chance of permanent loss, not volatility."
+      ]
+    },
+    {
+      "slug": "chuck-akre",
+      "manager": "Chuck Akre",
+      "firm": "Akre Capital Management",
+      "cik": "0001112520",
+      "expect": "AKRE",
+      "avatar": "CA",
+      "tags": [
+        "Quality",
+        "Compounders",
+        "Long-term"
+      ],
+      "meta": "Akre Capital Management · Middleburg, Virginia · since 1989",
+      "about": "Chuck Akre founded Akre Capital around his “three-legged stool”: extraordinary businesses, run by talented and honest managers, with great ways to reinvest their cash. Day-to-day management passed to his successors John Neff and Chris Cerrone.",
+      "philosophy": [
+        "Own extraordinary businesses with high returns on capital.",
+        "Back managers with integrity and talent.",
+        "Look for great reinvestment opportunities, then sit still."
+      ]
+    },
+    {
+      "slug": "daniel-loeb",
+      "manager": "Daniel Loeb",
+      "firm": "Third Point",
+      "cik": "0001040273",
+      "expect": "THIRD POINT",
+      "avatar": "DL",
+      "tags": [
+        "Event-driven",
+        "Activist",
+        "Opportunistic"
+      ],
+      "meta": "Third Point · New York · since 1995",
+      "about": "Daniel Loeb founded Third Point in 1995. The firm mixes event-driven and activist investing across stocks and credit, and is known for pointed letters to company boards.",
+      "philosophy": [
+        "Look for catalysts that can close the gap between price and value.",
+        "Engage directly when management falls short.",
+        "Move nimbly across asset classes."
+      ]
+    },
+    {
+      "slug": "li-lu",
+      "manager": "Li Lu",
+      "firm": "Himalaya Capital Management",
+      "cik": "0001709323",
+      "expect": "HIMALAYA",
+      "avatar": "LL",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Long-term"
+      ],
+      "meta": "Himalaya Capital Management · Seattle · since 1997",
+      "about": "Li Lu founded Himalaya Capital in 1997 and is a long-time partner of the late Charlie Munger, who entrusted part of his family’s money to him. Himalaya runs a very concentrated portfolio of US and Asian businesses.",
+      "philosophy": [
+        "Think like an owner of the whole business, not a trader of its stock.",
+        "Concentrate on the few ideas you understand deeply.",
+        "Let compounding work over decades."
+      ]
+    },
+    {
+      "slug": "prem-watsa",
+      "manager": "Prem Watsa",
+      "firm": "Fairfax Financial Holdings",
+      "cik": "0000915191",
+      "expect": "FAIRFAX",
+      "avatar": "PW",
+      "tags": [
+        "Value",
+        "Insurance float",
+        "Contrarian"
+      ],
+      "meta": "Fairfax Financial Holdings · Toronto · since 1985",
+      "about": "Prem Watsa built Fairfax, a Toronto-based insurance and investment holding company often called “Canada’s Berkshire”. He invests the insurance float with a long-term, contrarian value mindset, frequently in out-of-favour areas.",
+      "philosophy": [
+        "Buy when others are selling, with a margin of safety.",
+        "Protect the downside first; returns will follow.",
+        "Fair and friendly long-term partnerships with management."
+      ]
+    },
+    {
+      "slug": "seth-klarman",
+      "manager": "Seth Klarman",
+      "firm": "The Baupost Group",
+      "cik": "0001061768",
+      "expect": "BAUPOST",
+      "avatar": "SK",
+      "tags": [
+        "Deep value",
+        "Contrarian",
+        "Risk-averse"
+      ],
+      "meta": "The Baupost Group · Boston · since 1982",
+      "about": "Seth Klarman leads Baupost, a Boston firm known for patient, risk-averse value investing and a willingness to hold lots of cash. Much of Baupost’s capital sits in private deals, real estate and credit, so the 13F shows only its US-listed stock positions.",
+      "philosophy": [
+        "A margin of safety comes first: avoid permanent loss of capital.",
+        "Look where others are forced or unwilling to sell.",
+        "Holding cash is fine when bargains are scarce."
+      ]
+    },
+    {
+      "slug": "mohnish-pabrai",
+      "manager": "Mohnish Pabrai",
+      "firm": "Pabrai Investment Funds",
+      "cik": "0001549575",
+      "expect": "DALAL",
+      "avatar": "MP",
+      "tags": [
+        "Deep value",
+        "Concentrated",
+        "Contrarian"
+      ],
+      "meta": "Pabrai Investment Funds · Irvine, California · since 1999",
+      "about": "Mohnish Pabrai runs the Pabrai Investment Funds and the Dakshana Foundation. He follows a “heads I win, tails I don’t lose much” approach of few bets, rare bets and big bets. Many of his holdings trade outside the US, so the 13F (filed by Dalal Street, LLC) shows only the US-listed slice.",
+      "philosophy": [
+        "Few bets, big bets, infrequent bets.",
+        "Clone the best ideas of great investors shamelessly.",
+        "Low risk, high uncertainty situations are where the bargains hide."
+      ]
+    },
+    {
+      "slug": "nelson-peltz",
+      "manager": "Nelson Peltz",
+      "firm": "Trian Fund Management",
+      "cik": "0001345471",
+      "expect": "TRIAN",
+      "avatar": "NP",
+      "tags": [
+        "Activist",
+        "Operational",
+        "Concentrated"
+      ],
+      "meta": "Trian Fund Management · New York · since 2005",
+      "about": "Nelson Peltz co-founded Trian with Peter May and Ed Garden. Trian buys large stakes in underperforming, well-known companies and works with, or presses, boards to improve operations and focus.",
+      "philosophy": [
+        "Great brands can underperform because of strategy, not because of the business.",
+        "Operational change and focus unlock value.",
+        "Be patient and constructive, but persistent."
+      ]
+    },
+    {
+      "slug": "stanley-druckenmiller",
+      "manager": "Stanley Druckenmiller",
+      "firm": "Duquesne Family Office",
+      "cik": "0001536411",
+      "expect": "DUQUESNE",
+      "avatar": "SD",
+      "tags": [
+        "Macro",
+        "Growth",
+        "Flexible"
+      ],
+      "meta": "Duquesne Family Office · New York · since 1981",
+      "about": "Stanley Druckenmiller ran Duquesne Capital for three decades without a losing year and was lead portfolio manager for George Soros’s Quantum Fund. Since 2010 he has managed his own money through the Duquesne Family Office, shifting quickly between themes as the macro picture changes.",
+      "philosophy": [
+        "Make big bets when conviction is high, and cut losses quickly when wrong.",
+        "Follow liquidity and central banks: they drive markets more than earnings.",
+        "Stay flexible; no position is permanent."
+      ]
+    },
+    {
+      "slug": "david-einhorn",
+      "manager": "David Einhorn",
+      "firm": "Greenlight Capital",
+      "cik": "0001489933",
+      "expect": "DME",
+      "avatar": "DE",
+      "tags": [
+        "Value",
+        "Contrarian",
+        "Long/short"
+      ],
+      "meta": "Greenlight Capital (files as DME Capital Management) · New York · since 1996",
+      "about": "David Einhorn founded Greenlight Capital in 1996 and became known for detailed short theses and contrarian value investing. Greenlight’s 13F holdings are now reported under DME Capital Management.",
+      "philosophy": [
+        "Buy undervalued companies that the market misunderstands.",
+        "Do deep, independent research and be willing to stand alone.",
+        "Hedge with shorts; protect capital when markets look expensive."
+      ]
+    }
   ]
 }

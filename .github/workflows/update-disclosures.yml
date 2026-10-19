@@ -1,0 +1,48 @@
+name: Update politician and insider trades
+
+on:
+  schedule:
+    - cron: '15 12 * * *'      # daily, 08:15 Toronto
+  workflow_dispatch:
+    inputs:
+      debug:
+        description: 'Print parser debug output'
+        type: boolean
+        default: false
+      max:
+        description: 'Max new filings per chamber this run'
+        default: '400'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-commit
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install PDF text tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Congressional trades (House + Senate)
+        run: node scripts/fetch-congress.mjs --max ${{ inputs.max || '400' }} ${{ inputs.debug && '--debug' || '' }}
+      - name: Insider trades (SEC Form 4 quarterly data)
+        run: node scripts/fetch-insiders.mjs
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
+      - name: Commit updated data
+        run: |
+          git config user.name "qwertx-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "data: politician and insider trades $(date -u +%F)"
+          git pull --rebase
+          git push
