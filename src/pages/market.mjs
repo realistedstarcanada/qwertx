@@ -12,7 +12,7 @@ export function market(d) {
     crumbs: [['Market Pulse']],
     eyebrow: 'Market pulse',
     h1: 'Market mood, <span class="accent">in one glance</span>',
-    lead: 'CNN’s Fear &amp; Greed Index, a fear-and-greed reading built on the VIX, the stories moving markets and live data streams, explained for people who check the market after work.',
+    lead: 'CNN’s Fear &amp; Greed Index, a fear-and-greed reading built on the VIX, the stories moving markets and live data streams, explained for people too busy to watch the market all day.',
     img: 'market-pulse.jpg',
     imgAlt: 'Flowing waves of gold and teal light across a dark background, representing market sentiment',
   })}
@@ -75,7 +75,7 @@ ${(w.trending || []).length ? `<section class="section-sm">
 <section class="section">
   <div class="container">
     <div class="row row-wide">
-      <div class="col-5 reveal"><div class="eyebrow">FAQ</div><h2>Reading the market without the noise</h2><p class="lead">Short answers to the questions we hear most from after-work investors.</p><a class="link-arrow" href="/insights/vix-explained-fear-and-greed.html">Read: VIX explained <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
+      <div class="col-5 reveal"><div class="eyebrow">FAQ</div><h2>Reading the market without the noise</h2><p class="lead">Short answers to the questions we hear most from busy investors.</p><a class="link-arrow" href="/insights/vix-explained-fear-and-greed.html">Read: VIX explained <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
       <div class="col-7 reveal"><div class="accordion">
         <details open><summary>What is the VIX?</summary><div class="acc-body">The Cboe Volatility Index measures how much movement options traders expect from the S&amp;P 500 over the next 30 days. It rises when investors rush to buy protection, which is why it’s called the fear gauge.</div></details>
         <details><summary>How is the QWERTx market mood calculated?</summary><div class="acc-body">We map the latest VIX close onto five zones: below 12 extreme greed, 12–15 greed, 15–20 neutral, 20–30 fear and above 30 extreme fear. It is a simple, transparent rule of thumb, not a prediction.</div></details>
