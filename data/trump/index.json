@@ -1,0 +1,26 @@
+{
+  "updatedAt": "2026-10-20T17:14:44.665Z",
+  "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
+  "annual": {
+    "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
+    "name": "Donald-J-Trump-2026-278ANNUAL.pdf",
+    "signed": "2026-06-30"
+  },
+  "filings": [
+    {
+      "id": "2026-05-08-trump-donald-j-05-08-2026-278t-2",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/405E4EC4E27BE8D185258DF7002DD1C0/$FILE/Trump,%20Donald%20J.-05.08.2026-278T(2).pdf",
+      "name": "Trump, Donald J.-05.08.2026-278T(2).pdf",
+      "signed": "2026-05-08",
+      "received": "2026-05-12",
+      "printedRows": 9604,
+      "text": "ocr",
+      "rows": 3621,
+      "from": "2026-01-01",
+      "to": "2026-04-30",
+      "mapped": 3213,
+      "stocks": 3534,
+      "untyped": 2
+    }
+  ]
+}
