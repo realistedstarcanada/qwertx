@@ -5,6 +5,7 @@
 // Party and state come from the public unitedstates/congress-legislators dataset.
 // New filings are appended to data/congress/trades.json; filings already processed are skipped.
 // Usage: node scripts/fetch-congress.mjs [--since 2026-04-01] [--debug] [--house-only|--senate-only]
+import { parseHouseTransactions } from './lib/featured.mjs';
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
@@ -20,6 +21,7 @@ const DEBUG = args.includes('--debug');
 const argVal = (k) => (args.includes(k) ? args[args.indexOf(k) + 1] : null);
 const UA = 'Mozilla/5.0 (compatible; QWERTxBot/1.0; +https://qwertx.com)';
 const MAX_DOCS = Number(argVal('--max') || 400);
+const REPARSE_HOUSE = args.includes('--reparse-house');
 
 // Keep trades from the start of the quarter before last.
 function defaultSince() {
@@ -96,40 +98,22 @@ function findPerson(people, { first, last, chamber, state }) {
 
 /* ------------------------------ House ------------------------------ */
 export function parseHousePtrText(text) {
-  // pdftotext output of an electronically filed House PTR. Each transaction block contains
-  // "(TICKER) [ST]" and a line with type + two dates + amount; the order can vary, so parse per block.
-  const flat = text.replace(/ /g, ' ').replace(/[ \t]+/g, ' ');
-  const out = [];
-  const re = /\(([A-Z][A-Z0-9.\-]{0,7})\)\s*\[(ST|OP|EF|ET|AB|OT|OI|PS|HN)\]/g;
-  let m;
-  const hits = [];
-  while ((m = re.exec(flat))) hits.push({ i: m.index, end: re.lastIndex, ticker: m[1], kind: m[2] });
-  for (let k = 0; k < hits.length; k++) {
-    const h = hits[k];
-    const prevEnd = k ? hits[k - 1].end : 0;
-    const nextStart = k + 1 < hits.length ? hits[k + 1].i : flat.length;
-    const before = flat.slice(Math.max(prevEnd, h.i - 400), h.i);
-    const after = flat.slice(h.end, Math.min(nextStart, h.end + 500));
-    const win = before + ' @@ ' + after;
-    // type then transaction date then notification date
-    const tm = /(?:^|\s)(P|S|S \(partial\)|E)\s+(\d{2}\/\d{2}\/\d{4})\s+(\d{2}\/\d{2}\/\d{4})/.exec(after) || /(?:^|\s)(P|S|S \(partial\)|E)\s+(\d{2}\/\d{2}\/\d{4})\s+(\d{2}\/\d{2}\/\d{4})/.exec(win);
-    if (!tm) continue;
-    const amt = /(\$[\d,]+\s*-\s*(?:[\s\S]{0,80}?)\$[\d,]+|Over \$[\d,]+|\$[\d,]+ \+)/.exec(win.slice(win.indexOf(tm[2])));
-    const ownerM = /(?:^|\s)(SP|JT|DC)\s+[A-Z]/.exec(before.slice(-200));
-    const asset = before.replace(/[\s\S]*(?:\$[\d,]+|\[[A-Z]{2}\]|Cap\.?\s*Gains[^\n]*|\?)\s*/m, '').replace(/^(SP|JT|DC)\s+/, '').trim();
-    out.push({
-      ticker: h.ticker.replace(/\.$/, ''),
-      assetType: h.kind,
-      asset: (asset + ' ' + flat.slice(h.i, h.end)).replace(/\s+/g, ' ').trim().slice(-140),
-      type: normType(tm[1]),
-      partial: /partial/i.test(tm[1]),
-      date: usDate(tm[2]),
-      notified: usDate(tm[3]),
-      amount: parseAmount(amt ? amt[1] : ''),
-      owner: ownerM ? ownerM[1] : 'Self',
-    });
-  }
-  return out;
+  // pdftotext -raw of an electronically filed House PTR. Parsed entry by entry (each asset name ends with a
+  // type code like [ST]); the earlier window-based parser could take a neighbouring row's amount.
+  return parseHouseTransactions(text)
+    .filter((t) => t.ticker)
+    .map((t) => ({
+      ticker: t.ticker.replace(/\.$/, ''),
+      assetType: t.code,
+      asset: t.name.slice(0, 140),
+      type: t.type,
+      partial: t.partial,
+      date: t.date,
+      notified: t.notified || t.date,
+      amount: parseAmount(t.open ? `Over $${(t.lo - 1).toLocaleString('en-US')}` : `$${t.lo} - $${t.hi}`),
+      owner: t.owner,
+      desc: t.desc ? t.desc.slice(0, 200) : undefined,
+    }));
 }
 
 async function houseFilings(years) {
@@ -347,6 +331,12 @@ async function secCompanyNames() {
 async function run() {
   fs.mkdirSync(OUT_DIR, { recursive: true });
   const store = readJSON(OUT, { updatedAt: null, since: SINCE, processed: [], trades: [] });
+  if (REPARSE_HOUSE) {
+    // One-off: read every House filing in the window again with the current parser.
+    store.trades = store.trades.filter((t) => t.chamber !== 'House');
+    store.processed = store.processed.filter((x) => !String(x).startsWith('H'));
+    console.log('Re-reading all House filings');
+  }
   const done = new Set(store.processed);
   const people = await loadLegislators();
   console.log(`Legislators loaded: ${people.length}`);
