@@ -23,7 +23,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 120
     env:
       SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
     steps:
@@ -31,12 +31,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Install PDF text tools
-        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils >/dev/null
+      - name: Install PDF text and OCR tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr python3-pil python3-numpy >/dev/null
       - name: Congressional trades (House + Senate)
         run: node scripts/fetch-congress.mjs --max ${{ inputs.max || '400' }} ${{ inputs.debug && '--debug' || '' }}
       - name: Insider trades (SEC Form 4 quarterly data)
         run: node scripts/fetch-insiders.mjs
+      - name: President Trump (OGE periodic transaction and annual reports)
+        run: node scripts/fetch-trump.mjs
+        continue-on-error: true
+      - name: Featured members of Congress (full holdings and trades)
+        run: node scripts/fetch-featured.mjs
+        continue-on-error: true
       - name: Commit updated data
         run: |
           git config user.name "qwertx-bot"

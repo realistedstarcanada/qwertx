@@ -1,0 +1,56 @@
+{
+  "_note": "President Trump's OGE disclosures. seeds = periodic transaction reports (278-T); annual = annual reports (278e), newest last. New filings are also discovered automatically when OGE lists them. overrides fix OCR names the matcher misses (description key -> ticker).",
+  "seeds": [
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/405E4EC4E27BE8D185258DF7002DD1C0/$FILE/Trump,%20Donald%20J.-05.08.2026-278T(2).pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AC43530823BD60D485258E27002DDEF7/$FILE/Donald-J-Trump-06.25.2026-278T.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F9CA13B970439E8F85258E27002DDF15/$FILE/Donald-J-Trump-06.25.2026-278T%20(2).pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2BF91F890F718ACB85258E5B002DE16B/$FILE/Donald-J-Trump-08.12.2026-278T.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/0BDCCCE7DE13AEFA85258E8A002DE2B5/$FILE/Donald-J-Trump.09.17.2026-278T.pdf"
+  ],
+  "since": "2025-01-20",
+  "funds": {
+    "SPDR S&P 500": "SPY",
+    "ISHARES CORE S&P 500": "IVV",
+    "VANGUARD S&P 500": "VOO",
+    "VANGUARD TOTAL STOCK": "VTI",
+    "VANGUARD DIVIDEND APPRECIATION": "VIG",
+    "VANGUARD FTSE EUROPE": "VGK",
+    "VANGUARD SHORT-TERM BOND": "BSV",
+    "ISHARES GOLD TRUST": "IAU",
+    "SPDR GOLD": "GLD",
+    "RUSSELL 2000": "IWM",
+    "RUSSELL 1000": "IWB",
+    "MSCI EAFE": "EFA",
+    "ISHARES U.S. TREASURY BOND": "GOVT",
+    "ISHARES INTERNATIONAL TREASURY": "IGOV",
+    "COMMUNICATION SERVICES SELECT SECTOR": "XLC",
+    "FIDELITY MSCI COMMUNICATION": "FCOM",
+    "SPDR PORTFOLIO HIGH YIELD": "SPHY",
+    "INVESCO QQQ": "QQQ",
+    "NASDAQ 100": "QQQ",
+    "TECHNOLOGY SELECT SECTOR": "XLK",
+    "FINANCIAL SELECT SECTOR": "XLF",
+    "ENERGY SELECT SECTOR": "XLE",
+    "HEALTH CARE SELECT SECTOR": "XLV",
+    "MORNINGSTAR MID CAP": "IMCB",
+    "GLOBAL 100": "IOO",
+    "BLOOMBERG INTERNATIONAL TREASURY": "BWX"
+  },
+  "overrides": {
+    "IBM": "IBM",
+    "INTERNATIONALBUSINESSMACHINES": "IBM",
+    "EPAMSYS": "EPAM",
+    "TMOBILEUS": "TMUS",
+    "ALPHABET": "GOOGL",
+    "METAPLATFORMS": "META",
+    "GALLAGHERARTHURJ": "AJG",
+    "WESTERNUN": "WU",
+    "LAZBOY": "LZB",
+    "OIGLASS": "OI",
+    "OKLO": "OKLO"
+  },
+  "annual": [
+    "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf"
+  ]
+}

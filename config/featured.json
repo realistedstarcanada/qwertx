@@ -1,0 +1,6 @@
+{
+  "_note": "Politicians with their own portfolio page. House members are read from the Clerk's financial disclosure files (annual report holdings + periodic transaction reports). The President uses scripts/fetch-trump.mjs.",
+  "house": [
+    { "slug": "nancy-pelosi", "first": "Nancy", "last": "Pelosi", "state": "CA11" }
+  ]
+}

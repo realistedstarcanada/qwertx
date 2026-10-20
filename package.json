@@ -16,6 +16,8 @@
     "data:congress": "node scripts/fetch-congress.mjs",
     "data:insiders": "node scripts/fetch-insiders.mjs",
     "data:calendar": "node scripts/fetch-calendar.mjs",
+    "data:trump": "node scripts/fetch-trump.mjs",
+    "data:featured": "node scripts/fetch-featured.mjs",
     "test": "node --test test/*.test.mjs"
   }
 }
