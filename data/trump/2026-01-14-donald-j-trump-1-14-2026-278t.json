@@ -8,8 +8,8 @@
   "text": "ocr",
   "check": {
     "agreed": 142,
-    "resolved": 37,
-    "unresolved": 10,
+    "resolved": 34,
+    "unresolved": 13,
     "single": 32
   },
   "rows": 191,
@@ -17,7 +17,7 @@
   "to": "2026-01-02",
   "mapped": 0,
   "stocks": 6,
-  "untyped": 4,
+  "untyped": 8,
   "transactions": [
     {
       "no": 41,
@@ -169,7 +169,7 @@
       "no": 13,
       "page": 2,
       "desc": "CENTER GROVE IN MLTI FAC SCH BLDG AD VAL PPTY 1ST RFOG REV B/E ST INTRCPT 5.00 % Duo Jul 10. 2026 —",
-      "type": "P",
+      "type": "",
       "date": "2025-12-09",
       "late": true,
       "lo": 50001,
@@ -446,7 +446,7 @@
       "no": 36,
       "page": 3,
       "desc": "LAKE SHORE MI! PUB SCH MACOMB CNTY BLDG & SITE SER | QSBLF PTC 3.00 % Due Nov 1. 2026 =",
-      "type": "P",
+      "type": "",
       "date": "2025-12-04",
       "late": true,
       "lo": 100001,
@@ -764,12 +764,12 @@
       "no": 62,
       "page": 3,
       "desc": "BEAVERTON MI RURAL SCH BLOG & SITE B/E B/Q QSBLF O1D@9B.762 3.25 % Duo May 1, 2027",
-      "type": "P",
+      "type": "S",
       "date": "2025-12-02",
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "checked": 3,
+      "unverified": true,
       "cls": "muni"
     },
     {
@@ -848,7 +848,7 @@
     {
       "page": 4,
       "desc": "WASHINGTON ST HLTH CARE FACS AUTH VA MASON MED CTR REV B/E 5.00 % Duo Aug 15. 2026 —",
-      "type": "P",
+      "type": "",
       "date": "2025-12-01",
       "late": true,
       "lo": 250001,
@@ -886,7 +886,7 @@
       "no": 72,
       "page": 4,
       "desc": "WASHBURN UNIV TOPEKA KS REV 2021 A 2 B/E CR ENH 4.00 % Duo Jul 1. 2027 —",
-      "type": "P",
+      "type": "",
       "date": "2025-12-01",
       "late": true,
       "lo": 500001,
@@ -1418,7 +1418,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "checked": 2,
+      "unverified": true,
       "cls": "muni"
     },
     {
@@ -2150,7 +2150,7 @@
       "lo": 250001,
       "hi": 500000,
       "no": 177,
-      "checked": 2,
+      "unverified": true,
       "cls": "corporate"
     },
     {

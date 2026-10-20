@@ -8,8 +8,8 @@
   "text": "ocr",
   "check": {
     "agreed": 76,
-    "resolved": 56,
-    "unresolved": 35,
+    "resolved": 64,
+    "unresolved": 27,
     "single": 45
   },
   "rows": 170,
@@ -87,7 +87,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -187,7 +187,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "checked": 3,
+      "unverified": true,
       "cls": "muni"
     },
     {
@@ -237,7 +237,7 @@
       "lo": 100001,
       "hi": 250000,
       "no": 19,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -482,7 +482,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -494,7 +494,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -507,7 +507,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -592,7 +592,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -654,7 +654,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -690,7 +690,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -726,7 +726,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -739,7 +739,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -751,7 +751,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -763,7 +763,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 3,
       "cls": "corporate"
     },
     {
@@ -775,7 +775,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 3,
       "cls": "corporate"
     },
     {
@@ -800,7 +800,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "checked": 3,
+      "unverified": true,
       "cls": "corporate"
     },
     {
@@ -837,7 +837,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "checked": 3,
+      "unverified": true,
       "cls": "corporate"
     },
     {
@@ -875,7 +875,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "checked": 3,
+      "unverified": true,
       "cls": "corporate"
     },
     {
@@ -1179,7 +1179,7 @@
       "late": false,
       "lo": 250001,
       "hi": 500000,
-      "checked": 2,
+      "unverified": true,
       "cls": "corporate"
     },
     {
@@ -1299,7 +1299,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -1962,7 +1962,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "checked": 3,
+      "unverified": true,
       "cls": "stock",
       "tk": "BAC"
     },

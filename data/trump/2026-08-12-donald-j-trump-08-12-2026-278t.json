@@ -7,10 +7,10 @@
   "printedRows": 1051,
   "text": "ocr",
   "check": {
-    "agreed": 318,
-    "resolved": 0,
-    "unresolved": 243,
-    "single": 712
+    "agreed": 1006,
+    "resolved": 2,
+    "unresolved": 8,
+    "single": 22
   },
   "rows": 1030,
   "from": "2026-06-01",
@@ -28,6 +28,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GS"
     },
@@ -40,6 +41,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AME"
     },
@@ -52,6 +54,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IFF"
     },
@@ -64,6 +67,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ALL"
     },
@@ -76,6 +80,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HWM"
     },
@@ -88,6 +93,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VRSK"
     },
@@ -100,7 +106,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "KLAC"
     },
@@ -113,6 +119,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EMR"
     },
@@ -125,6 +132,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CAT"
     },
@@ -137,6 +145,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SPGI"
     },
@@ -171,6 +180,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HPE"
     },
@@ -183,6 +193,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ISRG"
     },
@@ -195,6 +206,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -206,6 +218,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LNG"
     },
@@ -218,6 +231,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NVDA"
     },
@@ -230,6 +244,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SPG"
     },
@@ -242,6 +257,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TTD"
     },
@@ -254,6 +270,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PNC"
     },
@@ -266,6 +283,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KMB"
     },
@@ -278,7 +296,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "AAPL"
     },
@@ -291,6 +309,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTSH"
     },
@@ -303,6 +322,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GDDY"
     },
@@ -315,6 +335,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "INTU"
     },
@@ -327,6 +348,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SNA"
     },
@@ -339,6 +361,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TT"
     },
@@ -351,6 +374,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HBAN"
     },
@@ -363,6 +387,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -374,7 +399,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -386,7 +411,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "fund",
       "tk": "IWM"
     },
@@ -399,7 +424,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "fund",
       "tk": "IOO"
     },
@@ -412,7 +437,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "GS"
     },
@@ -425,7 +450,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "AVGO"
     },
@@ -438,7 +463,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "fund"
     },
     {
@@ -450,7 +475,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "AVGO"
     },
@@ -463,7 +488,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "GE"
     },
@@ -476,7 +501,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "HD"
     },
@@ -489,7 +514,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "WFC"
     },
@@ -502,7 +527,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCD"
     },
@@ -552,7 +577,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "V"
     },
@@ -565,7 +590,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MA"
     },
@@ -578,7 +603,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ABT"
     },
@@ -591,7 +616,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ISRG"
     },
@@ -604,7 +629,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "RTX"
     },
@@ -617,7 +642,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "JNJ"
     },
@@ -630,7 +655,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "SYK"
     },
@@ -643,7 +668,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -655,7 +680,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MDT"
     },
@@ -668,7 +693,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "HON"
     },
@@ -681,7 +706,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCK"
     },
@@ -694,7 +719,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PG"
     },
@@ -707,7 +732,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "WM"
     },
@@ -720,7 +745,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MRK"
     },
@@ -733,7 +758,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "JCI"
     },
@@ -746,7 +771,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "SHW"
     },
@@ -759,7 +784,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BSX"
     },
@@ -772,7 +797,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTAS"
     },
@@ -785,7 +810,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "DASH"
     },
@@ -798,7 +823,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "COR"
     },
@@ -811,7 +836,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "EXC"
     },
@@ -824,7 +849,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PEP"
     },
@@ -837,6 +862,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMGN"
     },
@@ -849,6 +875,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BAC"
     },
@@ -861,6 +888,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GD"
     },
@@ -873,6 +901,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RSG"
     },
@@ -885,6 +914,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CMG"
     },
@@ -897,6 +927,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSFT"
     },
@@ -909,6 +940,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PYPL"
     },
@@ -921,6 +953,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PCG"
     },
@@ -933,6 +966,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "UAL"
     },
@@ -945,6 +979,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ROP"
     },
@@ -957,6 +992,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KMB"
     },
@@ -980,6 +1016,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NRG"
     },
@@ -992,6 +1029,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WTW"
     },
@@ -1004,6 +1042,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -1015,6 +1054,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FE"
     },
@@ -1027,6 +1067,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SW"
     },
@@ -1039,6 +1080,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CMS"
     },
@@ -1051,6 +1093,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TMUS"
     },
@@ -1063,6 +1106,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DE"
     },
@@ -1075,6 +1119,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PKG",
       "fz": 0.88
@@ -1088,6 +1133,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LNT"
     },
@@ -1100,6 +1146,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BMY"
     },
@@ -1112,6 +1159,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -1123,6 +1171,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LYB"
     },
@@ -1135,6 +1184,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "JPM"
     },
@@ -1147,6 +1197,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CAH"
     },
@@ -1159,6 +1210,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSI"
     },
@@ -1171,6 +1223,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -1182,6 +1235,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WMB"
     },
@@ -1194,6 +1248,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KMI"
     },
@@ -1206,6 +1261,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DG"
     },
@@ -1218,6 +1274,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "YUM"
     },
@@ -1230,7 +1287,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMZN"
     },
@@ -1243,6 +1300,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CCI"
     },
@@ -1255,6 +1313,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SLB"
     },
@@ -1267,6 +1326,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LHX"
     },
@@ -1279,6 +1339,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SPGI"
     },
@@ -1291,6 +1352,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VRTX"
     },
@@ -1303,6 +1365,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CVX"
     },
@@ -1315,6 +1378,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CB"
     },
@@ -1327,6 +1391,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "COP"
     },
@@ -1339,6 +1404,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ORLY"
     },
@@ -1351,6 +1417,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTVA"
     },
@@ -1363,6 +1430,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EQT"
     },
@@ -1375,6 +1443,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AIG"
     },
@@ -1387,6 +1456,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WAB"
     },
@@ -1399,6 +1469,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IDXX"
     },
@@ -1411,6 +1482,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "XOM"
     },
@@ -1423,6 +1495,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BIIB"
     },
@@ -1435,6 +1508,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BKR"
     },
@@ -1447,6 +1521,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PPL"
     },
@@ -1459,6 +1534,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DVN"
     },
@@ -1471,6 +1547,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NI"
     },
@@ -1483,6 +1560,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "OMC"
     },
@@ -1495,6 +1573,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PFE"
     },
@@ -1507,6 +1586,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "COST"
     },
@@ -1519,6 +1599,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GILD"
     },
@@ -1531,6 +1612,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SO"
     },
@@ -1543,6 +1625,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NEM"
     },
@@ -1555,6 +1638,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "XEL"
     },
@@ -1567,6 +1651,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZBH"
     },
@@ -1579,6 +1664,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AKAM"
     },
@@ -1591,6 +1677,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HAS"
     },
@@ -1603,6 +1690,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ACGL"
     },
@@ -1615,6 +1703,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NOC"
     },
@@ -1627,6 +1716,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WELL"
     },
@@ -1639,6 +1729,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IFF"
     },
@@ -1651,6 +1742,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DGX"
     },
@@ -1663,6 +1755,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ITW"
     },
@@ -1675,6 +1768,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PH"
     },
@@ -1687,6 +1781,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WAT"
     },
@@ -1699,6 +1794,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -1710,6 +1806,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ALB"
     },
@@ -1722,6 +1819,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -1733,6 +1831,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IR"
     },
@@ -1745,6 +1844,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "XYL"
     },
@@ -1757,6 +1857,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EG"
     },
@@ -1769,6 +1870,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HCA"
     },
@@ -1781,6 +1883,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ATO"
     },
@@ -1793,6 +1896,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "OTIS"
     },
@@ -1805,6 +1909,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VLTO"
     },
@@ -1817,6 +1922,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FISV"
     },
@@ -1829,6 +1935,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BDX"
     },
@@ -1841,6 +1948,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSLA"
     },
@@ -1853,6 +1961,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VICI"
     },
@@ -1865,6 +1974,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MLM"
     },
@@ -1877,6 +1987,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EXE"
     },
@@ -1889,6 +2000,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "COIN"
     },
@@ -1901,6 +2013,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ADM"
     },
@@ -1913,6 +2026,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CBRE"
     },
@@ -1925,6 +2039,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ADSK"
     },
@@ -1937,6 +2052,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TTD"
     },
@@ -1949,6 +2065,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -1960,6 +2077,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PM"
     },
@@ -1972,7 +2090,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "VEEV"
     },
@@ -1985,7 +2103,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CVNA"
     },
@@ -1998,7 +2116,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BA"
     },
@@ -2011,7 +2129,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCO"
     },
@@ -2451,7 +2569,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTAS"
     },
@@ -2464,7 +2582,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "V"
     },
@@ -2477,7 +2595,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MA"
     },
@@ -2490,7 +2608,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "RSG"
     },
@@ -2503,7 +2621,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCO"
     },
@@ -2516,7 +2634,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TMUS"
     },
@@ -2529,7 +2647,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "HD"
     },
@@ -2542,7 +2660,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -2554,7 +2672,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TYL"
     },
@@ -2567,7 +2685,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PAYX"
     },
@@ -2580,7 +2698,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "SYK"
     },
@@ -2593,7 +2711,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PG"
     },
@@ -2606,7 +2724,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "LII"
     },
@@ -2619,7 +2737,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "INTU"
     },
@@ -2632,7 +2750,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "FDS"
     },
@@ -2645,7 +2763,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "FTNT"
     },
@@ -2658,7 +2776,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CRWD"
     },
@@ -2671,7 +2789,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "preferred"
     },
     {
@@ -2683,7 +2801,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PANW"
     },
@@ -2696,7 +2814,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "NOW"
     },
@@ -2709,7 +2827,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -2721,7 +2839,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -2733,7 +2851,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -2745,7 +2863,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ECL"
     },
@@ -2758,7 +2876,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "AXON"
     },
@@ -2771,7 +2889,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "APP"
     },
@@ -2784,7 +2902,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CRM"
     },
@@ -2797,7 +2915,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "DIS"
     },
@@ -2810,7 +2928,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CMG"
     },
@@ -2823,7 +2941,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BX"
     },
@@ -2836,6 +2954,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "preferred"
     },
     {
@@ -2847,6 +2966,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -2858,6 +2978,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BR"
     },
@@ -2870,6 +2991,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "preferred"
     },
     {
@@ -2881,6 +3003,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "preferred"
     },
     {
@@ -2892,6 +3015,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BAC"
     },
@@ -2904,6 +3028,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WFC"
     },
@@ -2916,6 +3041,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "Q"
     },
@@ -2928,6 +3054,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VRT"
     },
@@ -2940,6 +3067,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -2951,6 +3079,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMCR"
     },
@@ -2963,6 +3092,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IP"
     },
@@ -2975,7 +3105,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -2987,6 +3117,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LULU"
     },
@@ -2999,6 +3130,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FIS"
     },
@@ -3011,6 +3143,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TRMB",
       "fz": 0.8
@@ -3024,6 +3157,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BG"
     },
@@ -3036,7 +3170,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TAP"
     },
@@ -3049,7 +3183,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "IT",
       "fz": 0.9
@@ -3063,7 +3197,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -3075,7 +3209,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "GPN"
     },
@@ -3088,7 +3222,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "KKR"
     },
@@ -3101,7 +3235,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CEG"
     },
@@ -3114,7 +3248,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "SBAC"
     },
@@ -3127,7 +3261,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "VICI"
     },
@@ -3140,7 +3274,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "EQT"
     },
@@ -3153,7 +3287,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CSGP"
     },
@@ -3166,7 +3300,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "COIN"
     },
@@ -3179,7 +3313,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -3191,7 +3325,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BKNG"
     },
@@ -3204,7 +3338,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -3216,7 +3350,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "HSY"
     },
@@ -3229,7 +3363,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TMO"
     },
@@ -3242,7 +3376,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "preferred"
     },
     {
@@ -3254,7 +3388,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BRO"
     },
@@ -3267,7 +3401,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "EFX"
     },
@@ -3689,7 +3823,7 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3701,7 +3835,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3713,7 +3847,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3725,7 +3859,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3737,7 +3871,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "NVDA"
     },
@@ -3750,7 +3884,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "META"
     },
@@ -3763,7 +3897,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3775,7 +3909,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3787,7 +3921,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3799,7 +3933,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3811,7 +3945,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3823,7 +3957,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3835,7 +3969,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3847,7 +3981,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3859,7 +3993,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3871,7 +4005,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3883,7 +4017,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3895,7 +4029,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSLA"
     },
@@ -3908,7 +4042,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "IBM"
     },
@@ -3921,7 +4055,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3933,7 +4067,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3945,7 +4079,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3957,7 +4091,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3969,7 +4103,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3981,7 +4115,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -3993,7 +4127,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4005,7 +4139,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4017,7 +4151,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4029,7 +4163,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4041,7 +4175,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4053,7 +4187,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4065,7 +4199,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4077,7 +4211,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "QCOM"
     },
@@ -4090,7 +4224,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4102,7 +4236,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4114,7 +4248,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4126,7 +4260,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4138,7 +4272,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4150,7 +4284,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4162,7 +4296,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -4174,7 +4308,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4186,7 +4320,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4198,7 +4332,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4210,7 +4344,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4222,7 +4356,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4234,7 +4368,7 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4246,7 +4380,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CVX"
     },
@@ -4259,7 +4393,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -4271,7 +4405,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4283,7 +4417,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4295,7 +4429,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4307,7 +4441,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4319,7 +4453,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4331,7 +4465,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PEP"
     },
@@ -4344,7 +4478,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4356,7 +4490,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4368,7 +4502,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MET"
     },
@@ -4381,7 +4515,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "KO"
     },
@@ -4394,7 +4528,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4406,7 +4540,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MDT"
     },
@@ -4419,7 +4553,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PAYX"
     },
@@ -4432,7 +4566,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -4444,7 +4578,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -4456,7 +4590,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MRK"
     },
@@ -4469,7 +4603,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BLK"
     },
@@ -4482,7 +4616,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "DUK"
     },
@@ -4911,6 +5045,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "INTU"
     },
@@ -4923,6 +5058,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AAPL"
     },
@@ -4935,6 +5071,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ADBE"
     },
@@ -4947,6 +5084,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "OWL"
     },
@@ -4959,6 +5097,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PFE"
     },
@@ -4971,6 +5110,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WMB"
     },
@@ -4983,6 +5123,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HD"
     },
@@ -4995,6 +5136,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TTWO"
     },
@@ -5007,6 +5149,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMZN"
     },
@@ -5019,6 +5162,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSLA"
     },
@@ -5031,6 +5175,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IDXX"
     },
@@ -5043,6 +5188,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AVGO"
     },
@@ -5055,6 +5201,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PEP"
     },
@@ -5067,6 +5214,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FIS"
     },
@@ -5079,6 +5227,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GOOGL"
     },
@@ -5091,6 +5240,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NXPI"
     },
@@ -5103,6 +5253,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SNPS"
     },
@@ -5115,6 +5266,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSCO"
     },
@@ -5127,6 +5279,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WDAY",
       "fz": 0.8
@@ -5140,6 +5293,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BDX"
     },
@@ -5152,6 +5306,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NVDA"
     },
@@ -5164,6 +5319,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RVMD"
     },
@@ -5176,6 +5332,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WMT"
     },
@@ -5188,6 +5345,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PTC"
     },
@@ -5200,6 +5358,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CDNS"
     },
@@ -5212,6 +5371,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DASH"
     },
@@ -5224,6 +5384,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FIS"
     },
@@ -5236,6 +5397,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WBD"
     },
@@ -5248,6 +5410,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "UTHR"
     },
@@ -5260,6 +5423,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VRTX"
     },
@@ -5272,6 +5436,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TXN"
     },
@@ -5284,6 +5449,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BBY"
     },
@@ -5296,6 +5462,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CRWV"
     },
@@ -5308,6 +5475,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GILD"
     },
@@ -5320,6 +5488,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LMT"
     },
@@ -5332,6 +5501,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "JNJ"
     },
@@ -5344,6 +5514,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCD"
     },
@@ -5356,6 +5527,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ULTA"
     },
@@ -5368,6 +5540,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CBRS"
     },
@@ -5380,6 +5553,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -5391,6 +5565,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "COST"
     },
@@ -5403,6 +5578,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NTRA"
     },
@@ -5415,6 +5591,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CPRT"
     },
@@ -5427,6 +5604,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ENTG"
     },
@@ -5439,6 +5617,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SMTC"
     },
@@ -5451,6 +5630,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SANM"
     },
@@ -5463,6 +5643,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VIAV"
     },
@@ -5475,6 +5656,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FORM"
     },
@@ -5487,6 +5669,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSFT"
     },
@@ -5499,6 +5682,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ESI"
     },
@@ -5511,6 +5695,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MOH"
     },
@@ -5523,6 +5708,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AGX"
     },
@@ -5535,6 +5721,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SNEX"
     },
@@ -5547,6 +5734,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ESE"
     },
@@ -5559,6 +5747,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KRYS"
     },
@@ -5571,6 +5760,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BTSG"
     },
@@ -5583,6 +5773,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VSAT"
     },
@@ -5595,6 +5786,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EMN"
     },
@@ -5607,6 +5799,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -5618,6 +5811,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "POWL"
     },
@@ -5630,6 +5824,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MTCH"
     },
@@ -5642,6 +5837,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PLXS"
     },
@@ -5654,6 +5850,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSGS"
     },
@@ -5666,6 +5863,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LUMN"
     },
@@ -5678,6 +5876,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "JXN"
     },
@@ -5690,6 +5889,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RHP"
     },
@@ -5702,6 +5902,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RAL"
     },
@@ -5714,6 +5915,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VSH"
     },
@@ -5726,6 +5928,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ECG"
     },
@@ -5738,6 +5941,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CORT"
     },
@@ -5750,6 +5954,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NPO"
     },
@@ -5762,6 +5967,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KMX"
     },
@@ -5774,6 +5980,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DXCM"
     },
@@ -5786,6 +5993,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZWS"
     },
@@ -5798,6 +6006,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GKOS"
     },
@@ -5810,6 +6019,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TRNO"
     },
@@ -5822,6 +6032,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ETSY"
     },
@@ -5834,6 +6045,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ALKS"
     },
@@ -5846,6 +6058,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SWKS"
     },
@@ -5858,6 +6071,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -5869,6 +6083,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VRSN"
     },
@@ -5881,6 +6096,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CHTR"
     },
@@ -5893,6 +6109,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FOXA"
     },
@@ -5905,6 +6122,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FANG"
     },
@@ -5917,6 +6135,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DOW"
     },
@@ -5929,6 +6148,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "STZ"
     },
@@ -5941,6 +6161,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DVN"
     },
@@ -5953,6 +6174,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VLO"
     },
@@ -5965,6 +6187,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -5976,6 +6199,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "XOM"
     },
@@ -5988,6 +6212,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ASTS"
     },
@@ -6000,6 +6225,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -6022,6 +6248,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "unverified": true,
       "cls": "stock",
       "tk": "VZ"
     },
@@ -6034,6 +6261,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "APP"
     },
@@ -6046,6 +6274,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CMCSA",
       "fz": 0.8
@@ -6059,6 +6288,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "REGN"
     },
@@ -6071,6 +6301,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ORLY"
     },
@@ -6083,6 +6314,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "INSM",
       "fz": 0.83
@@ -6457,6 +6689,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BRK.B"
     },
@@ -6469,6 +6702,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZG"
     },
@@ -6481,6 +6715,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZTS"
     },
@@ -6493,6 +6728,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BKNG"
     },
@@ -6505,6 +6741,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCD"
     },
@@ -6517,6 +6754,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GOOGL"
     },
@@ -6529,6 +6767,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "XOM"
     },
@@ -6541,6 +6780,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ROL"
     },
@@ -6553,6 +6793,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EFX"
     },
@@ -6565,6 +6806,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NKE"
     },
@@ -6577,6 +6819,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BSY"
     },
@@ -6589,6 +6832,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TYL"
     },
@@ -6601,6 +6845,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GPN"
     },
@@ -6613,6 +6858,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RMD"
     },
@@ -6625,6 +6871,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CEG"
     },
@@ -6637,6 +6884,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CVX"
     },
@@ -6649,6 +6897,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -6660,6 +6909,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SLB"
     },
@@ -6672,6 +6922,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -6683,6 +6934,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GILD"
     },
@@ -6695,6 +6947,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LOW"
     },
@@ -6707,6 +6960,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FOXA"
     },
@@ -6719,6 +6973,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PG"
     },
@@ -6731,6 +6986,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CBOE"
     },
@@ -6743,6 +6999,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PODD"
     },
@@ -6755,6 +7012,7 @@
       "lo": 1001,
       "hi": 15000,
       "no": 559,
+      "checked": 2,
       "cls": "stock",
       "tk": "ACM"
     },
@@ -6767,6 +7025,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PFE"
     },
@@ -6779,6 +7038,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KR"
     },
@@ -6791,6 +7051,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MRK"
     },
@@ -6803,6 +7064,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RKT"
     },
@@ -6815,6 +7077,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GEHC"
     },
@@ -6827,6 +7090,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CHTR"
     },
@@ -6839,6 +7103,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NDAQ"
     },
@@ -6851,6 +7116,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BJ"
     },
@@ -6863,6 +7129,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PM"
     },
@@ -6875,6 +7142,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FLUT"
     },
@@ -6887,6 +7155,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "APH"
     },
@@ -6899,6 +7168,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LMT"
     },
@@ -6922,6 +7192,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EXLS"
     },
@@ -6934,6 +7205,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TDY",
       "fz": 0.7
@@ -6947,6 +7219,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMT"
     },
@@ -6959,6 +7232,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RSG"
     },
@@ -6971,6 +7245,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VEEV"
     },
@@ -6994,6 +7269,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RBLX"
     },
@@ -7006,6 +7282,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FANG"
     },
@@ -7018,6 +7295,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "APG"
     },
@@ -7030,6 +7308,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PEN"
     },
@@ -7042,6 +7321,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -7053,6 +7333,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GEN"
     },
@@ -7065,6 +7346,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "JNJ"
     },
@@ -7077,6 +7359,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KMB"
     },
@@ -7089,6 +7372,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FAST"
     },
@@ -7101,6 +7385,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TRU"
     },
@@ -7113,6 +7398,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSCO"
     },
@@ -7125,6 +7411,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IT"
     },
@@ -7137,6 +7424,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ALB"
     },
@@ -7149,6 +7437,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MDT"
     },
@@ -7161,6 +7450,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PCOR"
     },
@@ -7173,6 +7463,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LYB"
     },
@@ -7185,6 +7476,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TTD"
     },
@@ -7197,6 +7489,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZBH"
     },
@@ -7209,6 +7502,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GDDY"
     },
@@ -7221,6 +7515,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SRE"
     },
@@ -7233,6 +7528,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PEP"
     },
@@ -7245,6 +7541,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -7256,6 +7553,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BLK"
     },
@@ -7268,6 +7566,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DOX"
     },
@@ -7280,6 +7579,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCO"
     },
@@ -7292,6 +7592,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VICI"
     },
@@ -7304,6 +7605,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSI"
     },
@@ -7316,6 +7618,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -7327,6 +7630,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GD"
     },
@@ -7339,6 +7643,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EQT"
     },
@@ -7351,6 +7656,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AON"
     },
@@ -7363,6 +7669,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EOG"
     },
@@ -7375,6 +7682,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CSGP"
     },
@@ -7387,6 +7695,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSTR"
     },
@@ -7399,6 +7708,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "COP"
     },
@@ -7411,6 +7721,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RGLD"
     },
@@ -7423,6 +7734,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TMUS"
     },
@@ -7435,6 +7747,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SSNC"
     },
@@ -7447,6 +7760,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "META"
     },
@@ -7459,6 +7773,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VLTO"
     },
@@ -7471,6 +7786,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "V"
     },
@@ -7483,6 +7799,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -7494,6 +7811,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "GWRE"
     },
@@ -7506,6 +7824,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CME"
     },
@@ -7518,6 +7837,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ADSK"
     },
@@ -7530,6 +7850,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CG"
     },
@@ -7542,6 +7863,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PYPL"
     },
@@ -7554,6 +7876,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CPRT"
     },
@@ -7566,6 +7889,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IDXX"
     },
@@ -7578,6 +7902,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSN"
     },
@@ -7590,6 +7915,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PR"
     },
@@ -7602,6 +7928,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PTC"
     },
@@ -7614,6 +7941,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTAS"
     },
@@ -7626,6 +7954,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DPZ"
     },
@@ -7638,6 +7967,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -7649,6 +7979,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CB"
     },
@@ -7661,6 +7992,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTSH"
     },
@@ -7673,6 +8005,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "INTU"
     },
@@ -7685,6 +8018,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CCI"
     },
@@ -7697,6 +8031,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "COST"
     },
@@ -7709,6 +8044,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "STE"
     },
@@ -7721,6 +8057,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BMY"
     },
@@ -7733,6 +8070,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WMT"
     },
@@ -7745,6 +8083,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FISV"
     },
@@ -7757,6 +8096,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NOW"
     },
@@ -7769,6 +8109,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ICE"
     },
@@ -7781,6 +8122,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BSX"
     },
@@ -7793,6 +8135,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MA"
     },
@@ -7805,6 +8148,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SPGI"
     },
@@ -7817,6 +8161,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ABT"
     },
@@ -7829,6 +8174,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TMO"
     },
@@ -7841,6 +8187,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WDAY"
     },
@@ -7853,6 +8200,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ADBE"
     },
@@ -8291,6 +8639,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CHTR"
     },
@@ -8303,6 +8652,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SNOW"
     },
@@ -8315,6 +8665,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -8326,6 +8677,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DIS"
     },
@@ -8338,6 +8690,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "XYL"
     },
@@ -8350,6 +8703,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VRTX"
     },
@@ -8362,6 +8716,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSCO"
     },
@@ -8374,6 +8729,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "fund"
     },
     {
@@ -8385,6 +8741,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AIG"
     },
@@ -8397,6 +8754,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AXON"
     },
@@ -8409,6 +8767,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "APP"
     },
@@ -8421,6 +8780,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "IDXX"
     },
@@ -8433,6 +8793,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VLTO"
     },
@@ -8445,6 +8806,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WTW"
     },
@@ -8457,6 +8819,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DASH"
     },
@@ -8469,6 +8832,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NET"
     },
@@ -8481,6 +8845,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HOOD",
       "fz": 0.74
@@ -8494,6 +8859,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -8505,6 +8871,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CHWY"
     },
@@ -8517,6 +8884,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WHR"
     },
@@ -8529,6 +8897,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PLTR"
     },
@@ -8541,6 +8910,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -8552,6 +8922,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -8563,6 +8934,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMZN"
     },
@@ -8575,6 +8947,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LLY"
     },
@@ -8587,6 +8960,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MU"
     },
@@ -8599,6 +8973,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HUBS"
     },
@@ -8611,6 +8986,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LDOS"
     },
@@ -8623,6 +8999,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MDT"
     },
@@ -8635,6 +9012,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TYL"
     },
@@ -8647,6 +9025,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZG"
     },
@@ -8659,6 +9038,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KMB"
     },
@@ -8671,6 +9051,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DOCS"
     },
@@ -8683,6 +9064,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "SCI"
     },
@@ -9547,7 +9929,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "fund",
       "tk": "VGK"
     },
@@ -9560,7 +9942,7 @@
       "late": false,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "fund",
       "tk": "BWX"
     },
@@ -9573,7 +9955,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -9585,7 +9967,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -9597,7 +9979,7 @@
       "late": true,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -9609,7 +9991,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -9621,7 +10003,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -9633,7 +10015,7 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -9645,7 +10027,7 @@
       "late": false,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "FIS"
     },
@@ -9658,7 +10040,7 @@
       "late": false,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "HD"
     },
@@ -9671,7 +10053,7 @@
       "late": false,
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ABT"
     },
@@ -9693,9 +10075,9 @@
       "type": "P",
       "date": "2026-06-22",
       "late": false,
-      "lo": 250001,
-      "hi": 500000,
-      "unverified": true,
+      "lo": 15001,
+      "hi": 50000,
+      "checked": 3,
       "cls": "stock",
       "tk": "NKE"
     },
@@ -9708,7 +10090,7 @@
       "late": false,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "GPC"
     },
@@ -9721,7 +10103,7 @@
       "late": false,
       "lo": 5000001,
       "hi": 25000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "fund",
       "tk": "VIG"
     },
@@ -9734,7 +10116,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ABG"
     },
@@ -9747,7 +10129,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "EPAM"
     },
@@ -9760,7 +10142,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "POOL"
     },
@@ -9773,7 +10155,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "LQDA"
     },
@@ -9786,7 +10168,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "FLO"
     },
@@ -9799,7 +10181,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CPB"
     },
@@ -9812,7 +10194,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "LKQ"
     },
@@ -9825,7 +10207,7 @@
       "late": true,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -9837,7 +10219,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PRIM"
     },
@@ -9850,6 +10232,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DAVE"
     },
@@ -9862,6 +10245,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ETD"
     },
@@ -9874,6 +10258,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MKTX"
     },
@@ -9886,6 +10271,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PTON"
     },
@@ -9898,6 +10284,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -9909,6 +10296,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RELY"
     },
@@ -9921,6 +10309,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LAZ"
     },
@@ -9933,6 +10322,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CNMD"
     },
@@ -9945,6 +10335,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -10386,6 +10777,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MNRO"
     },
@@ -10398,6 +10790,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AAP",
       "fz": 0.86
@@ -10411,6 +10804,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AGX"
     },
@@ -10423,6 +10817,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BBT"
     },
@@ -10435,6 +10830,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FORM"
     },
@@ -10447,6 +10843,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "RAL"
     },
@@ -10459,6 +10856,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PTCT"
     },
@@ -10471,6 +10869,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "JBTM"
     },
@@ -10483,6 +10882,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ATMU"
     },
@@ -10495,6 +10895,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VGNT"
     },
@@ -10507,6 +10908,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VSAT"
     },
@@ -10519,6 +10921,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "DBD"
     },
@@ -10531,6 +10934,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LFST"
     },
@@ -10543,6 +10947,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -10554,6 +10959,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EFOR"
     },
@@ -10566,6 +10972,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BL"
     },
@@ -10578,6 +10985,7 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NABL"
     },
@@ -10590,6 +10998,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PZZA"
     },
@@ -10602,6 +11011,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "AORT"
     },
@@ -10637,6 +11047,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PATK"
     },
@@ -10649,6 +11060,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -10660,6 +11072,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PRGO"
     },
@@ -10672,6 +11085,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ROCK"
     },
@@ -10684,6 +11098,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NAVI"
     },
@@ -10696,6 +11111,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ALRM"
     },
@@ -10708,6 +11124,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LYFT"
     },
@@ -10720,6 +11137,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BMI"
     },
@@ -10732,6 +11150,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BANF"
     },
@@ -10744,6 +11163,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CARG"
     },
@@ -10756,6 +11176,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NMIH"
     },
@@ -10768,6 +11189,7 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FCPT"
     },
@@ -11205,7 +11627,7 @@
       "late": false,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSFT"
     },
@@ -11218,7 +11640,7 @@
       "late": false,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "HD"
     },
@@ -11231,7 +11653,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CRM"
     },
@@ -11244,7 +11666,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "T"
     },
@@ -11257,7 +11679,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ABT"
     },
@@ -11270,7 +11692,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MA"
     },
@@ -11283,7 +11705,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "SYK"
     },
@@ -11296,7 +11718,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -11308,7 +11730,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ISRG"
     },
@@ -11321,7 +11743,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BKNG"
     },
@@ -11334,7 +11756,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "META"
     },
@@ -11347,7 +11769,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "FIS"
     },
@@ -11360,7 +11782,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PLTR"
     },
@@ -11373,7 +11795,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "KKR"
     },
@@ -11386,7 +11808,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ROP"
     },
@@ -11399,7 +11821,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "SPGI"
     },
@@ -11412,7 +11834,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -11424,7 +11846,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "SHW"
     },
@@ -11437,7 +11859,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMT"
     },
@@ -11450,7 +11872,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "LULU"
     },
@@ -11463,7 +11885,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "COIN"
     },
@@ -11476,7 +11898,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZTS"
     },
@@ -11489,7 +11911,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "KR"
     },
@@ -11502,7 +11924,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BR"
     },
@@ -11515,7 +11937,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "DELL"
     },
@@ -11528,7 +11950,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BRO"
     },
@@ -11541,7 +11963,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZG"
     },
@@ -11554,7 +11976,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -11566,7 +11988,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CEG"
     },
@@ -11579,7 +12001,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "FLUT"
     },
@@ -11592,7 +12014,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MDT"
     },
@@ -11605,6 +12027,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CPNG"
     },
@@ -11617,6 +12040,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MKC"
     },
@@ -11629,6 +12053,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "VZ"
     },
@@ -11641,6 +12066,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TDG"
     },
@@ -11653,6 +12079,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "TTD"
     },
@@ -11665,6 +12092,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CMG"
     },
@@ -11677,6 +12105,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "JPM"
     },
@@ -11689,6 +12118,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CHTR"
     },
@@ -11701,6 +12131,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KMB"
     },
@@ -11713,6 +12144,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LCID"
     },
@@ -11725,6 +12157,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CRWV"
     },
@@ -11737,6 +12170,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MRVL"
     },
@@ -11749,6 +12183,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CRDO"
     },
@@ -11761,6 +12196,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FOXA"
     },
@@ -11773,6 +12209,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "OLN"
     },
@@ -11797,6 +12234,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MRSH"
     },
@@ -11809,6 +12247,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PSN"
     },
@@ -11821,6 +12260,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "FOXA"
     },
@@ -11833,6 +12273,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "ALAB"
     },
@@ -11845,6 +12286,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "LOW"
     },
@@ -11857,6 +12299,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "WLK"
     },
@@ -11869,6 +12312,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "PEGA"
     },
@@ -11881,6 +12325,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BX"
     },
@@ -11893,6 +12338,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CI"
     },
@@ -11905,6 +12351,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EFX"
     },
@@ -11917,6 +12364,7 @@
       "late": false,
       "lo": 1001,
       "hi": 15000,
+      "checked": 2,
       "cls": "stock",
       "tk": "MSA"
     },
@@ -11929,6 +12377,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CBRE"
     },
@@ -11941,6 +12390,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "NOC"
     },
@@ -11953,6 +12403,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "HLI"
     },
@@ -11965,6 +12416,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "EXLS"
     },
@@ -11977,6 +12429,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "BSY"
     },
@@ -11989,6 +12442,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "KD"
     },
@@ -12001,6 +12455,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
+      "checked": 2,
       "cls": "stock",
       "tk": "CVNA"
     },
@@ -12438,7 +12893,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTAS"
     },
@@ -12451,7 +12906,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CTSH"
     },
@@ -12464,7 +12919,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CSGP"
     },
@@ -12489,7 +12944,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSCO"
     },
@@ -12502,7 +12957,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MORN"
     },
@@ -12515,7 +12970,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "RMD"
     },
@@ -12528,7 +12983,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "NDAQ"
     },
@@ -12541,7 +12996,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "DOCU"
     },
@@ -12554,7 +13009,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ZS"
     },
@@ -12567,7 +13022,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "NFLX"
     },
@@ -12580,7 +13035,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "MCD"
     },
@@ -12593,7 +13048,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "STE"
     },
@@ -12606,7 +13061,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CPRT"
     },
@@ -12619,7 +13074,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BRK.B"
     },
@@ -12632,7 +13087,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "WDAY"
     },
@@ -12645,7 +13100,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TMUS"
     },
@@ -12658,7 +13113,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "NKE"
     },
@@ -12671,7 +13126,7 @@
       "late": false,
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "PODD"
     },
@@ -12684,7 +13139,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "FISV"
     },
@@ -12697,7 +13152,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "AMZN"
     },
@@ -12710,7 +13165,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "TSLA"
     },
@@ -12723,7 +13178,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "INTU"
     },
@@ -12736,7 +13191,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "BSX"
     },
@@ -12749,7 +13204,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "ADBE"
     },
@@ -12762,7 +13217,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "CMCSA"
     },
@@ -12775,7 +13230,7 @@
       "late": false,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock",
       "tk": "COST"
     }

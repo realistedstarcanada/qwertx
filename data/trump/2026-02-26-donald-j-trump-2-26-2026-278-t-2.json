@@ -8,8 +8,8 @@
   "text": "ocr",
   "check": {
     "agreed": 27,
-    "resolved": 19,
-    "unresolved": 24,
+    "resolved": 20,
+    "unresolved": 23,
     "single": 43
   },
   "rows": 78,
@@ -17,7 +17,7 @@
   "to": "2026-02-01",
   "mapped": 3,
   "stocks": 4,
-  "untyped": 7,
+  "untyped": 8,
   "transactions": [
     {
       "no": 5,
@@ -40,7 +40,7 @@
       "late": false,
       "lo": 15001,
       "hi": 50000,
-      "unverified": true,
+      "checked": 3,
       "cls": "corporate"
     },
     {
@@ -113,7 +113,7 @@
       "approx": true,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -208,9 +208,9 @@
       "type": "P",
       "date": "2026-01-02",
       "late": true,
-      "lo": 1000001,
-      "hi": 5000000,
-      "checked": 2,
+      "lo": 500001,
+      "hi": 1000000,
+      "unverified": true,
       "cls": "fund",
       "tk": "SPHY"
     },
@@ -512,7 +512,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -590,7 +590,7 @@
       "no": 52,
       "page": 3,
       "desc": "OREGON HTLH SCI UNIV SER A REV B/E 5.00 % Due Jul 1, 2026 —",
-      "type": "P",
+      "type": "",
       "date": "2026-01-09",
       "late": false,
       "lo": 50001,
@@ -885,7 +885,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "checked": 2,
+      "unverified": true,
       "cls": "stock"
     },
     {

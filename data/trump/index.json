@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T20:27:08.212Z",
+  "updatedAt": "2026-10-20T20:40:41.322Z",
   "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
   "annual": {
     "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
@@ -17,8 +17,8 @@
       "text": "ocr",
       "check": {
         "agreed": 28,
-        "resolved": 1,
-        "unresolved": 68,
+        "resolved": 17,
+        "unresolved": 52,
         "single": 63
       },
       "rows": 101,
@@ -26,7 +26,7 @@
       "to": "2025-11-13",
       "mapped": 0,
       "stocks": 6,
-      "untyped": 28
+      "untyped": 29
     },
     {
       "id": "2026-01-14-donald-j-trump-1-14-2026-278t",
@@ -38,8 +38,8 @@
       "text": "ocr",
       "check": {
         "agreed": 142,
-        "resolved": 37,
-        "unresolved": 10,
+        "resolved": 34,
+        "unresolved": 13,
         "single": 32
       },
       "rows": 191,
@@ -47,7 +47,7 @@
       "to": "2026-01-02",
       "mapped": 0,
       "stocks": 6,
-      "untyped": 4
+      "untyped": 8
     },
     {
       "id": "2026-02-26-donald-j-trump-2-26-2026-278-t-1",
@@ -80,8 +80,8 @@
       "text": "ocr",
       "check": {
         "agreed": 27,
-        "resolved": 19,
-        "unresolved": 24,
+        "resolved": 20,
+        "unresolved": 23,
         "single": 43
       },
       "rows": 78,
@@ -89,7 +89,7 @@
       "to": "2026-02-01",
       "mapped": 3,
       "stocks": 4,
-      "untyped": 7
+      "untyped": 8
     },
     {
       "id": "2026-04-20-donald-j-trump-4-20-2026-278t",
@@ -101,8 +101,8 @@
       "text": "ocr",
       "check": {
         "agreed": 76,
-        "resolved": 56,
-        "unresolved": 35,
+        "resolved": 64,
+        "unresolved": 27,
         "single": 45
       },
       "rows": 170,
@@ -121,10 +121,10 @@
       "printedRows": 69,
       "text": "ocr",
       "check": {
-        "agreed": 30,
-        "resolved": 0,
-        "unresolved": 32,
-        "single": 38
+        "agreed": 54,
+        "resolved": 5,
+        "unresolved": 5,
+        "single": 14
       },
       "rows": 68,
       "from": "2026-01-22",
@@ -205,10 +205,10 @@
       "printedRows": 1051,
       "text": "ocr",
       "check": {
-        "agreed": 318,
-        "resolved": 0,
-        "unresolved": 243,
-        "single": 712
+        "agreed": 1006,
+        "resolved": 2,
+        "unresolved": 8,
+        "single": 22
       },
       "rows": 1030,
       "from": "2026-06-01",

@@ -8,8 +8,8 @@
   "text": "ocr",
   "check": {
     "agreed": 28,
-    "resolved": 1,
-    "unresolved": 68,
+    "resolved": 17,
+    "unresolved": 52,
     "single": 63
   },
   "rows": 101,
@@ -17,7 +17,7 @@
   "to": "2025-11-13",
   "mapped": 0,
   "stocks": 6,
-  "untyped": 28,
+  "untyped": 29,
   "transactions": [
     {
       "no": 2,
@@ -186,7 +186,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -198,7 +198,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -269,7 +269,7 @@
       "lo": 100001,
       "hi": 250000,
       "no": 22,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -281,7 +281,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -306,7 +306,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -688,7 +688,7 @@
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
@@ -700,7 +700,7 @@
       "late": false,
       "lo": 1000001,
       "hi": 5000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "stock"
     },
     {
@@ -782,7 +782,7 @@
       "late": false,
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 3,
       "cls": "stock"
     },
     {
@@ -873,13 +873,13 @@
       "no": 78,
       "page": 4,
       "desc": "PENNSYLVANIA ST TPK COMMN OIL FRANCHISE TAX REV SUB BDS 2021 B DUE",
-      "type": "",
+      "type": "P",
       "date": "2025-11-03",
       "approx": true,
       "late": false,
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -901,9 +901,9 @@
       "type": "P",
       "date": "2025-10-31",
       "late": false,
-      "lo": 100001,
-      "hi": 250000,
-      "unverified": true,
+      "lo": 500001,
+      "hi": 1000000,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -1020,9 +1020,9 @@
       "type": "P",
       "date": "2025-11-04",
       "approx": true,
-      "lo": 15001,
-      "hi": 50000,
-      "unverified": true,
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -1055,7 +1055,7 @@
       "date": "2025-11-03",
       "lo": 50001,
       "hi": 100000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -1077,7 +1077,7 @@
       "date": "2025-11-03",
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
@@ -1094,11 +1094,11 @@
       "no": 100,
       "page": 5,
       "desc": "urchase No WESTFIELD IN HIGH SCH 95 BLDG AD VAL PPTY TAX B REV RFOG B/E ST INTRCPT 5.00 % Due Jan 15. 2027",
-      "type": "P",
+      "type": "",
       "date": "2025-11-03",
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -1116,11 +1116,11 @@
       "no": 102,
       "page": 5,
       "desc": "fice urchase No | woDLEBURY IN SCHS BLDG CORP AD VALOREM PPTY TAX REV B/E B/Q ST INTRCPT 5.00 % Due Jul 15, 2027",
-      "type": "P",
+      "type": "",
       "date": "2025-11-03",
       "lo": 250001,
       "hi": 500000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
@@ -1175,7 +1175,7 @@
       "date": "2025-10-31",
       "lo": 100001,
       "hi": 250000,
-      "unverified": true,
+      "checked": 3,
       "cls": "muni"
     },
     {
