@@ -113,7 +113,25 @@ function pdfTexts(url, file) {
   const texts = [];
   try { texts.push(['ocr', execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), file], { maxBuffer: 512 * 1024 * 1024 }).toString('utf8')]); } catch (e) { log('  OCR failed', String(e.stderr || e.message).slice(0, 300)); }
   try { texts.push(['layer', execFileSync('pdftotext', ['-layout', file, '-'], { maxBuffer: 256 * 1024 * 1024 }).toString('utf8')]); } catch {}
+  // When the scan's own text layer is missing or weak, make a second independent reading ourselves
+  // (higher resolution, different page-layout mode) so every row can still be checked twice.
+  const rowsOf = (t) => (t ? parse278T(t, { year: 2026 }).length : 0);
+  const ocrRows = rowsOf(texts.find((t) => t[0] === 'ocr')?.[1]);
+  if (ocrRows && rowsOf(texts.find((t) => t[0] === 'layer')?.[1]) < ocrRows * 0.8) {
+    try { texts.push(['ocr2', execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), file], { env: { ...process.env, OCR_DPI: '400', OCR_PSM: '4' }, maxBuffer: 512 * 1024 * 1024 }).toString('utf8')]); } catch (e) { log('  second OCR failed', String(e.stderr || e.message).slice(0, 200)); }
+  }
   return texts;
+}
+
+/** The form's last printed row number: the last number that continues the running order (OCR can misread a single number). */
+function lastRowNo(rows) {
+  for (let i = rows.length - 1; i > 0; i--) {
+    const n = rows[i].no;
+    if (!n) continue;
+    let j = i - 1; while (j >= 0 && !rows[j].no) j--;
+    if (j >= 0 && n > rows[j].no && n - rows[j].no <= i - j + 2) return Math.max(n, rows.length > n ? rows.length : n);
+  }
+  return rows.length || null;
 }
 
 const quality = (rows) => rows.filter((r) => r.type && !r.approx).length;
@@ -163,9 +181,9 @@ async function main() {
     const minDate = new Date(Date.parse(end) - 200 * 864e5).toISOString().slice(0, 10);
     const tries = texts.map(([how, text]) => ({ how, text, rows: parse278T(text, { year, minDate, maxDate: end }) }));
     // Our Tesseract pass reads amounts more reliably than the scan's own OCR layer; use it unless it lost rows.
-    const ocr = tries.find((t) => t.how === 'ocr'), layer = tries.find((t) => t.how === 'layer');
+    const ocr = tries.find((t) => t.how === 'ocr'), layer = tries.find((t) => t.how === 'layer'), ocr2 = tries.find((t) => t.how === 'ocr2');
     const pick = ocr && (!layer || ocr.rows.length >= layer.rows.length * 0.9) ? ocr : tries.sort((a, b) => quality(b.rows) - quality(a.rows))[0];
-    const other = tries.find((t) => t !== pick);
+    const other = pick === ocr && ocr2 ? ocr2 : tries.find((t) => t !== pick && t.how !== 'ocr2') || tries.find((t) => t !== pick);
     const { how, text, rows } = pick;
     // Double check: line up the two readings by printed row number and compare amount and type.
     // Triple check: where they disagree on anything above $50,000, read that page a third time
@@ -207,7 +225,7 @@ async function main() {
     }
     if (DEBUG) for (const t of tries) fs.writeFileSync(path.join(ROOT, 'data/_debug', `${id}.${t.how}.txt`), t.text);
     const lastNo = Math.max(0, ...[...text.matchAll(/^\s{0,20}(\d{1,4})\s{2,}\S/gm)].map((m) => Number(m[1])).filter((n) => n < 20000));
-    const meta = { id, url: f.url, name: f.name, signed: f.signed, received: recIso, printedRows: Math.max(0, ...rows.map((r) => r.no || 0)) || null, text: how, check };
+    const meta = { id, url: f.url, name: f.name, signed: f.signed, received: recIso, printedRows: lastRowNo(rows), text: how, check };
     parsed.push({ meta, rows, file });
     log(`${f.name}: ${tries.map((t) => `${t.how} ${t.rows.length} rows/${quality(t.rows)} clean`).join(', ')}; printed ${lastNo}; using ${how}`);
     await sleep(800);

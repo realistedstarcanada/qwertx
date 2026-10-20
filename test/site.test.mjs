@@ -156,3 +156,42 @@ Part 7: Transactions`;
   assert.equal(a[1].open, true);
   assert.equal(parseRange('None (or less than $1,001)').hi, 1000);
 });
+
+test('House PTR rows split by a page break keep their name, owner and amount', async () => {
+  const { parseHouseTransactions } = await import('../scripts/lib/featured.mjs');
+  const text = `S O : 150 Main Street Trust > Bank of America
+International Business Machines P 06/16/2026 07/02/2026 $15,001 -
+ID Owner Asset Transaction
+Type
+Date Notification
+Date
+Amount Cap.
+Gains >
+$200?
+Corporation Common Stock (IBM)
+[ST]
+$50,000
+F S : New
+S O : Merrill Lynch Tax Efficient Core
+JT LyondellBasell Industries NV S 09/23/2025 10/07/2025 $1,001 - $15,000
+ID Owner Asset Transaction
+Gains >
+$200?
+Ordinary Shares Class A (LYB) [ST]
+F S : New`;
+  const r = parseHouseTransactions(text);
+  assert.equal(r.length, 2);
+  assert.deepEqual([r[0].ticker, r[0].name.startsWith('International Business Machines'), r[0].type, r[0].lo, r[0].hi], ['IBM', true, 'buy', 15001, 50000]);
+  assert.deepEqual([r[1].ticker, r[1].owner, r[1].type, r[1].date], ['LYB', 'JT', 'sell', '2025-09-23']);
+});
+
+test('OGE 278-T: lowercase yes/no notification column and row numbers', async () => {
+  const { parse278T } = await import('../scripts/lib/oge278t.mjs');
+  const text = `1          BLACK BELT ENERGY GAS DIST AL GAS REV PJ G SER B B/E 4.00 % Due Oct 1, 2052        purchase        2/23/2026        no $100,001 - $250,000
+2          COLORADO HLTH FACS AUTH REV COMSPIRIT HLTH SER A2 B/E 5.00 % Due Aug 1, 2026        purchase        2/23/2026        no $100,001 - $250,000
+3          MAIN STREET NAT GAS INC GA GAS SPLY REV C B/E 4.00 % Due Mar 1, 2050               sale            2/23/2026        yes $500,001 - $1,000,000`;
+  const r = parse278T(text, { year: 2026, minDate: '2026-01-01', maxDate: '2026-05-15' });
+  assert.equal(r.length, 3);
+  assert.deepEqual(r.map((x) => x.no), [1, 2, 3]);
+  assert.deepEqual([r[2].type, r[2].lo, r[2].late], ['S', 500001, true]);
+});

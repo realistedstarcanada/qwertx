@@ -75,6 +75,8 @@ export function assetKind(desc) {
 
 const HOUSE_NOISE = /^(Asset Owner|Asset Owner Value|ID Owner Asset|Type|Date Notification|Date|Amount Cap\.|Gains >|\$200\?|\$1,000\?|Filing ID #|\* For the complete|Clerk of the House|F I$|Name: Hon|Status:|State\/District|T$|P T R|F D R|I P O|Yes No|C S$|I CERTIFY|my knowledge|Digitally Signed)/;
 const OWNER = /^(SP|JT|DC)\s+/;
+const INCOMPLETE = /^(Stock|Common|Class|Account|Units|Shares|Ordinary|Corporation|Incorporated|Series|American|Depositary|Inc\.?|Corp|Company|Fund|Trust|LLC|L\.P\.|Ltd|Limited|plc|Group|Holdings|Technologies|Industries|\(\w+\))\b/;
+const INCOME = /^(Dividends|Capital Gains|Interest|Rent|Partnership|Income|Grape|None|Royalties|Excepted|Tax-Deferred)/;
 const AMT = /(\$[\d,]+\s*-\s*\$[\d,]+|Over \$[\d,]+|Spouse\/DC Over \$1,000,000|None|\$[\d,]+\.\d{2}(?=\s|$))/;
 
 function houseEntries(lines) {
@@ -86,12 +88,26 @@ function houseEntries(lines) {
     const c = /\[([A-Z]{2})\]/.exec(l);
     if (c) {
       let name = l.slice(0, c.index).trim();
-      // The name may have wrapped onto the line above ("Alphabet Inc. - Class A Common" / "Stock (GOOGL) [ST]").
-      const prev = lines[i - 1] || '';
-      const incomplete = !name || /^[(\[a-z]/.test(name) || /^(Stock|Common|Class|Account|Units|Shares|Inc\.?|Corp|Company|Fund|Trust|LLC|L\.P\.|Holdings|\(\w+\))\b/.test(name);
-      const prevIsData = /^([LDC]|F S) :/.test(prev) || AMT.test(prev) || /^(Dividends|Capital Gains|Interest|Rent|Partnership|Income|Grape|None|Royalties|Excepted|Tax-Deferred)/.test(prev);
-      if (incomplete && prev && !prevIsData && cur && cur.tail.length && cur.tail[cur.tail.length - 1] === prev) { cur.tail.pop(); name = prev + ' ' + name; }
-      else if (incomplete && prev && !prevIsData && !cur) name = prev + ' ' + name;
+      // The name may have wrapped onto lines above ("Alphabet Inc. - Class A Common" / "Stock (GOOGL) [ST]"), and a
+      // page break can split a row so the name and the transaction sit above the page header:
+      // "International Business Machines P 06/16/2026 07/02/2026 $15,001 -" / (header) / "Corporation Common Stock (IBM)" / "[ST]".
+      const txRe = /(?:^|\s)(?:P|S(?:\s*\(partial\))?|E)\s+\d{2}\/\d{2}\/\d{4}/;
+      const txAfter = txRe.test(l.slice(c.index)) || txRe.test(lines[i + 1] || '');
+      const isIncomplete = (t) => !t || /^[(\[a-z]/.test(t) || INCOMPLETE.test(t);
+      const isData = (t) => /^([LDC]|F S|S O) :/.test(t) || (AMT.test(t) && !/[A-Za-z]{4}/.test(t.replace(/Over|None|Spouse\/DC/g, ''))) || INCOME.test(t);
+      const hasTx = (t) => /^(?:(?:SP|JT|DC)\s+)?[A-Z0-9(][^:]*\s(?:P|S(?:\s*\(partial\))?|E)\s+\d{2}\/\d{2}\/\d{4}/.test(t) && !/^([LDC]|F S|S O) :/.test(t);
+      const taken = [];
+      for (let k = i - 1; k >= Math.max(0, i - 3); k--) {
+        const prev = lines[k];
+        const need = isIncomplete(name) || (!txAfter && !txRe.test(name) && hasTx(prev));
+        if (!need || !prev || (isData(prev) && !hasTx(prev))) break;
+        // Only lines the previous entry has not used for its own transaction details.
+        if (cur && !(cur.tail.length && cur.tail[cur.tail.length - 1] === prev)) break;
+        if (cur) cur.tail.pop();
+        taken.push(prev);
+        name = prev + ' ' + name;
+        if (hasTx(prev) || /^(SP|JT|DC)\s/.test(prev)) break;
+      }
       cur = { name: name.trim(), code: c[1], tail: [l.slice(c.index + c[0].length).trim()] };
       entries.push(cur);
     } else if (cur) cur.tail.push(l);
@@ -101,7 +117,7 @@ function houseEntries(lines) {
     const head = after.split(/\n(?=(?:[LDC]|F S) :)/)[0].replace(/\n/g, ' ').trim();
     const desc = (/(?:^|\n)D : ([\s\S]*?)(?=\n(?:[LC]|F S) :|$)/.exec(after) || [])[1];
     let nm = e.name, hd = head;
-    const split = /\s((?:P|S(?:\s*\(partial\))?|E)\s+\d{2}\/\d{2}\/\d{4}(?:\s+\d{2}\/\d{2}\/\d{4})?\s+\$[\d,]+\s*-?)\s/.exec(' ' + nm + ' ');
+    const split = /\s((?:P|S(?:\s*\(partial\))?|E)\s+\d{2}\/\d{2}\/\d{4}(?:\s+\d{2}\/\d{2}\/\d{4})?\s+\$[\d,]+(?:\s*-\s*(?:\$[\d,]+)?)?)\s/.exec(' ' + nm + ' ');
     if (split) { nm = (' ' + nm + ' ').replace(split[1], ' ').replace(/\s+/g, ' ').trim(); hd = (split[1] + ' ' + hd).trim(); }
     const owner = OWNER.exec(nm) ? OWNER.exec(nm)[1] : (/^(SP|JT|DC)\b/.exec(hd) || [])[1] || 'Self';
     const name = nm.replace(OWNER, '').trim();

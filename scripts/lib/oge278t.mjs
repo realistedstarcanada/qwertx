@@ -129,7 +129,7 @@ export function parse278T(text, ctx = {}) {
     let before = line.slice(0, am.index).replace(/\s+$/, '');
     // Trailing Yes/No (and stray bullets) belongs to the notification column.
     let late;
-    before = before.replace(/\s*[•·.,]?\s*\b([YV][eoa][s5aotl]|N[o0])\s*[•·.]?\s*$/, (_, x) => { late = /^[YV]/.test(x); return ''; });
+    before = before.replace(/\s*[•·.,‘'’]?\s*\b([YVyv][eoa][s5aotl]|[Nn][o0e])\s*[•·.]?\s*$/, (_, x) => { late = /^[YVyv]/.test(x); return ''; });
     let cols = [...buf.flatMap((b) => b.split(/\s{2,}/)), ...before.trim().split(/\s{2,}/)].map((c) => c.trim()).filter(Boolean);
     buf = [];
     if (!amount) continue;
