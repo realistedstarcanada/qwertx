@@ -456,3 +456,8 @@ a.earn-pill:hover { border-color: var(--gold); }
   --text: #e9ecf3; --text-2: #c9cfdc; --muted: #949eb3; --faint: #66718a; --gold: #f2b33d; --gold-2: #ffd27a; --teal: #2fd4b5; --coral: #f2766b;
 }
 :root[data-theme="light"] { --faint: #6B7385; }
+.pro-plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 760px; }
+.pro-plan { display: flex; flex-direction: column; gap: 10px; }
+.pro-plan h3 { font-family: var(--font-mono); font-size: 26px; font-weight: 500; }
+.pro-plan .btn { margin-top: auto; }
+@media (max-width: 640px) { .pro-plans { grid-template-columns: 1fr; } }

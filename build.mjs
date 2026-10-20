@@ -16,6 +16,7 @@ import { insiders } from './src/pages/insiders.mjs';
 import { market } from './src/pages/market.mjs';
 import { calendarPage } from './src/pages/calendar.mjs';
 import { personPage } from './src/pages/people.mjs';
+import { proPages } from './src/pages/pro-pages.mjs';
 import { staticPages } from './src/pages/static.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -69,6 +70,7 @@ const pages = [
   insiders(d),
   market(d),
   calendarPage(d),
+  ...proPages(ROOT),
   ...staticPages(ROOT),
 ];
 const notFound = {

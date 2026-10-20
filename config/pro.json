@@ -1,0 +1,9 @@
+{
+  "_note": "Stripe products for QWERTx Pro. Product IDs are not secret. The secret key lives in Cloudflare as STRIPE_SECRET_KEY. Test mode until launch.",
+  "mode": "test",
+  "plans": {
+    "monthly": { "product": "prod_VTfVgVp2U9qR5k", "label": "Monthly", "price": "US$12 / month" },
+    "yearly": { "product": "prod_VTfWfjclNvpbjI", "label": "Yearly", "price": "US$98 / year" }
+  },
+  "promoCode": "AFTERHOURS"
+}
