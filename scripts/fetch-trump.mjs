@@ -108,9 +108,9 @@ async function tickerMatcher() {
  * (table rules removed, then Tesseract) reads cleaner, so both are parsed and the better result wins.
  */
 function pdfTexts(url, file) {
-  execFileSync('curl', ['-sSL', '--fail', '-m', '240', '-A', UA['User-Agent'], '-o', file, url]);
+  execFileSync('curl', ['-sSL', '--fail', '--retry', '5', '--retry-delay', '15', '--retry-all-errors', '-m', '300', '-A', UA['User-Agent'], '-o', file, url]);
   const texts = [];
-  try { texts.push(['ocr', execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), file], { maxBuffer: 512 * 1024 * 1024 }).toString('utf8')]); } catch (e) { log('  OCR failed', e.message.slice(0, 200)); }
+  try { texts.push(['ocr', execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), file], { maxBuffer: 512 * 1024 * 1024 }).toString('utf8')]); } catch (e) { log('  OCR failed', String(e.stderr || e.message).slice(0, 300)); }
   try { texts.push(['layer', execFileSync('pdftotext', ['-layout', file, '-'], { maxBuffer: 256 * 1024 * 1024 }).toString('utf8')]); } catch {}
   return texts;
 }
@@ -151,7 +151,7 @@ async function main() {
     const prev = known.get(f.url) && readJSON(file);
     if (prev && prev.transactions?.length && !FORCE) { parsed.push({ meta: { ...prev, transactions: undefined }, rows: prev.transactions, file }); continue; }
     let texts;
-    try { texts = pdfTexts(f.url, path.join(tmp, 'f.pdf')); } catch (e) { log('download failed', f.name, e.message); continue; }
+    try { texts = pdfTexts(f.url, path.join(tmp, 'f.pdf')); } catch (e) { log('download failed', f.name, String(e.stderr || e.message).slice(0, 300)); continue; }
     if (!texts.length) continue;
     const all = texts.map((t) => t[1]).join('\n');
     const received = (/OGE\s*Received:?\s*([\d]{1,2}\/[\d]{1,2}\/20\d\d)/i.exec(all) || [])[1];
@@ -224,7 +224,7 @@ async function main() {
     if (!prevH || prevH.url !== annual.url || FORCE) {
       try {
         const file = path.join(os.tmpdir(), 'annual.pdf');
-        execFileSync('curl', ['-sSL', '--fail', '-m', '600', '-A', UA['User-Agent'], '-o', file, annual.url]);
+        execFileSync('curl', ['-sSL', '--fail', '--retry', '5', '--retry-delay', '15', '--retry-all-errors', '-m', '900', '-A', UA['User-Agent'], '-o', file, annual.url]);
         const text = execFileSync('pdftotext', ['-layout', file, '-'], { maxBuffer: 1 << 30 }).toString('utf8');
         const year = (/Year \(Annual Report only\):\s*(20\d\d)/.exec(text) || [])[1] || null;
         const received = (/OGE Received:?\s*(\d{1,2}\/\d{1,2}\/20\d\d)/.exec(text) || [])[1];
@@ -255,4 +255,6 @@ async function main() {
   }
 }
 
-main().catch((e) => { console.error(e); process.exit(1); });
+main()
+  .catch((e) => { log('FAILED', e.stack || e.message); process.exitCode = 1; })
+  .finally(() => { try { fs.writeFileSync(path.join(OUT, 'last-run.log'), dbg.slice(-200).join('\n') + '\n'); } catch {} });
