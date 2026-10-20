@@ -186,6 +186,21 @@ async function main() {
     await sleep(800);
   }
 
+  // Each report covers a few consecutive weeks. A date far outside that window is an OCR slip:
+  // replace it with the date of the row before it (rows are listed roughly in date order).
+  for (const p of parsed) {
+    const ds = p.rows.map((r) => r.date).filter(Boolean).sort();
+    if (ds.length < 20) continue;
+    const lo = Date.parse(ds[Math.floor(ds.length * 0.02)]) - 10 * 864e5, hi = Date.parse(ds[Math.floor(ds.length * 0.98)]) + 10 * 864e5;
+    let prev = null, fixed = 0;
+    for (const r of p.rows) {
+      const t = Date.parse(r.date);
+      if (t < lo || t > hi) { if (prev) { r.date = prev; r.approx = true; fixed++; } }
+      else prev = r.date;
+    }
+    if (fixed) log(`  ${p.meta.name}: ${fixed} out-of-range dates set to neighbours`);
+  }
+
   // Map names to tickers on every run, so better overrides apply to old filings too.
   const unmapped = new Map();
   const learned = [];
