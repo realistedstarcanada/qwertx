@@ -15,7 +15,7 @@
   "rows": 3621,
   "from": "2026-01-01",
   "to": "2026-04-08",
-  "mapped": 3213,
+  "mapped": 3225,
   "stocks": 3534,
   "untyped": 2,
   "transactions": [
@@ -371,7 +371,9 @@
       "lo": 1000001,
       "hi": 5000000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "KRUS",
+      "fz": 0.73
     },
     {
       "no": 28,
@@ -2217,7 +2219,9 @@
       "lo": 100001,
       "hi": 250000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.67
     },
     {
       "page": 7,
@@ -10343,7 +10347,9 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "WDC",
+      "fz": 0.7
     },
     {
       "no": 809,
@@ -12224,7 +12230,9 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "WDC",
+      "fz": 0.7
     },
     {
       "no": 957,
@@ -14970,7 +14978,9 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "WDC",
+      "fz": 0.7
     },
     {
       "no": 1172,
@@ -15284,7 +15294,9 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "no": 1197,
@@ -25448,7 +25460,9 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "no": 1981,
@@ -30754,7 +30768,9 @@
       "lo": 1001,
       "hi": 15000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "no": 2393,
@@ -33520,7 +33536,9 @@
       "lo": 1001,
       "hi": 15000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "UAL",
+      "fz": 0.82
     },
     {
       "no": 2607,
@@ -36354,7 +36372,9 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.69
     },
     {
       "page": 87,
@@ -40658,7 +40678,9 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 3,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "no": 3166,
@@ -46033,7 +46055,9 @@
       "lo": 250001,
       "hi": 500000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.67
     },
     {
       "no": 3585,
