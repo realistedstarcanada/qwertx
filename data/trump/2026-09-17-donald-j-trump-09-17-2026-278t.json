@@ -1,0 +1,5117 @@
+{
+  "id": "2026-09-17-donald-j-trump-09-17-2026-278t",
+  "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/0BDCCCE7DE13AEFA85258E8A002DE2B5/$FILE/Donald-J-Trump.09.17.2026-278T.pdf",
+  "name": "Donald-J-Trump.09.17.2026-278T.pdf",
+  "signed": "2026-09-17",
+  "received": "2026-09-25",
+  "printedRows": 517,
+  "text": "ocr",
+  "rows": 517,
+  "from": "2026-08-03",
+  "to": "2026-08-31",
+  "mapped": 435,
+  "stocks": 445,
+  "untyped": 0,
+  "transactions": [
+    {
+      "desc": "COMMONWEALTH PA FING AUTH TOB MSTR SETTLMT PMT REV B/E 5.00 % Due Jun 1. 2027",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "LOUISVILLE JEFFERSON KY CNTY METRO GOVT HLTH SER C NORTON HC INC REV B/E 5.00 % Due Oct 1. 2047",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "TARRANT CNTY TX HSG FIN CORP REV MLTIFAM REV MERIDIAN APTS B B/E PTC 5.00 % Due Sep 1. 2028",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "WENTZVILLE MO SCH DIST R 04 RFDG & IMPT 2018 B/E MDDP 4.00 % Due Mar 1. 2038",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "BEXAR CNTY TX HOSP DIST CTF OBLIG DB B/E 5.00 % Due Feb 15. 2028",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "muni"
+    },
+    {
+      "desc": "COLORADO HLTH FACS AUTH REV RFDG EVANGELICAL LUTHERN GOOD SAM B/E PTC 5.00 % Due Jun 1, 2047",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "muni"
+    },
+    {
+      "desc": "NEW HAMPSHIRE HLTH & ED FACS AUTH CATHOLIC MED CTR REV B/E OID @97.875 3.75 % Due Jul 1. 2040",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "muni"
+    },
+    {
+      "desc": "GREAT VLY SCH DIST PA CHESTER CNTY B/E 4.00 % Due Sep 1. 2027",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "DALLAS TX AREA RAPID TRAN SALES TAX REV RFDG SR LIEN B/E 5.00 % Due Dec 1. 2026",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "IPS MLTI SCH BLDG IN AD VALOREM 1ST MTG RFDG REV IMPT B/E ST INTRCPT 5.00 % Due Jan 15, 2028",
+      "type": "P",
+      "date": "2026-08-19",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "COLUMBUS IN MLTI SCH BLDG CORP PPTY TAX 1ST MTG REV B/E ST INTRCPT 5.00 % Due Jul 15. 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "KENTUCKY ST PPTY & BLDG COMMN REV PJ 122 SER A B/E 5.00 % Due Nov 1. 2026",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "BRAZOS CNTY TX RFDG B/E 5.00 % Due Sep 1. 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "BONHAM TX INDPT SCH DIST BLDG 2023 B/E PSF GTD 5.00 % Due Feb 15, 2027",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "SOUTH CAROLINA ST HSG FIN & DEV AUTH MTG REV 2022A B/E 5.00 % Due Jul 1. 2027",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MARICOPA CNTY AZ SPL HLTHCARE DIST SER C B/E 5.00 % Due Jul 1.2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "BLACK BELT ENERGY GAS DIST AL GAS REV PJ 6 SER B B/E 4.00 % Due Oct 1. 2052",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "ST LOUIS MO INDL DEV AUTH MLTIFAM HSG REV BREWERY APTS B/E PTC 3.15 % Due Apr 1. 2046",
+      "type": "P",
+      "date": "2026-08-19",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "SOUTH DAKOTA CONSV DIST REV ST REVLVG FD B/E 5.00 % Due Aug 1, 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "FORT BEND CNTY TX MUD 182 2023 BAM B/E CR ENH 5.00 % Due Sep 1. 2027",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "CLARK CNTY NV ARPT SYS JR SUB LIEN NT SER B REV B/E AMT 5.00 % Due Jul 1, 2027",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MICHIGAN FIN AUTH REV LOCAL GOVT LN RFDG PUB LTG AUTH LOC A BAM B/E 5.00 % Due Jul 1. 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "OREGON ST HSG & CMNTY SVCS DEPT MLTIFAM REV HSG REDMOND LANDING B/E 3.01 % Due May 1. 2028",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "FAIRFIELD TX INDPT SCH DIST BLDG 2025 B/E PSF GTD 5.00 % Due Aua 15. 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MESQUITE TX WTRWKS & SWR SYS REV B/E 4.00 % Due Mar 1, 2028",
+      "type": "P",
+      "date": "2026-08-19",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "KALAMAZOO MI CAP IMPT 2022 AGI B/E 5.00 % Due Oct 1. 2026",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "CEDAR MTN MN INDPT SCH DIST 2754 FAC MAINT SER A B/E B/Q CR ENH 5.00 % Due Feb 1. 2028",
+      "type": "P",
+      "date": "2026-08-20",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "KENTUCKY INC KY PUB ENERGY AUTH GAS SPLY REV SER C 1 B/E 4.00 % Due Feb 1, 2050",
+      "type": "P",
+      "date": "2026-08-20",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "VOLUSIA CNTY FL SCH BRD CTF PARTN RFDG REV B/E 5.00 % Due Aua 1. 2027",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "ORLANDO FL UTILS COMMN UTIL SYS REV RFDG SER C B/E 5.00 % Due Oct 1. 2026",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "EVANSVILLE VANDERBURGH CNTY IN BLDG AUTH LSE RENT REV RFDG AGM B/E 4.00 % Due Jul 15. 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "AGAWAM MA MUN PURP LN 2018 B/E B/Q 4.00 % Due Jun 15, 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "muni"
+    },
+    {
+      "desc": "PENNSYLVANIA ST 1ST RFDG 2025 B B/E 5.00 % Due Aua 15. 2027",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "muni"
+    },
+    {
+      "desc": "COPPERAS COVE TX COMB TAX REV CTF PARTN DB B/E B/Q 5.00 % Due Aua 15, 2027",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MASSACHUSETTS ST SCH BLDG DEDICATED SALES TAX REV SR SER B B/E 5.00 % Due Nov 15, 2031",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "muni"
+    },
+    {
+      "desc": "ELECTRONIC ARTS INC",
+      "type": "S",
+      "date": "2026-08-05",
+      "late": true,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock"
+    },
+    {
+      "desc": "BRAZOS CNTY TX RFDG B/E 5.00 % Due Sep 1. 2027",
+      "type": "S",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "ISHARES INTERNATIONAL TREASURY BOND ETF",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "IGOV"
+    },
+    {
+      "desc": "VANGUARD FTSE EUROPE ETF",
+      "type": "P",
+      "date": "2026-08-06",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "VGK"
+    },
+    {
+      "desc": "STATE STREET COMMUNICATION SERVICES SELECT SECTOR SPDR ETF",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "XLC"
+    },
+    {
+      "desc": "ISHARES U.S. TREASURY BOND ETF",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "GOVT"
+    },
+    {
+      "desc": "VANGUARD SHORT-TERM BOND INDEX FUND ETF SHARES",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "BSV"
+    },
+    {
+      "desc": "FIDELITY MSCI COMMUNICATION SERVICES INDEX ETF",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "FCOM"
+    },
+    {
+      "desc": "ISHARES GOLD TRUST",
+      "type": "S",
+      "date": "2026-08-06",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "IAU"
+    },
+    {
+      "desc": "STATE STREET SPDR BLOOMBERG INTERNATIONAL TREASURY BOND ETF",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "BWX"
+    },
+    {
+      "desc": "KENTUCKY INC KY PUB 5% VP IDR DUE 01/01/SS",
+      "type": "P",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MICHIGAN ST HOSP FI 5% SYST HLTH DUE",
+      "type": "P",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MISSOURI ST HEALTH 5% SYST HLTH DUE",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MICHIGAN ST HOSP FI 5% SYST HLTH DUE",
+      "type": "P",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MICHIGAN ST HOSP FI 5% SYST HLTH DUE",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MIAMI-DADE CNTY S.25% UNIV EDUC DUE",
+      "type": "S",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "PENNSYLVANIA ST 5.25% HOSP HLTH DUE",
+      "type": "S",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "TEXAS TRANSN COMMN 5% TPK TRAN DUE",
+      "type": "S",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "WASHINGTON ST HEALT 5% SYST HLTH DUE",
+      "type": "S",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "DELAWARE VALLEY PA 4% POOL AUTH DUE",
+      "type": "S",
+      "date": "2026-08-25",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "WISCONSIN ST HEALTH 5% SYST HLTH DUE",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MICROSOFT CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "MSFT"
+    },
+    {
+      "desc": "MCDONALDS CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "MCD"
+    },
+    {
+      "desc": "COMCAST CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "CMCSA"
+    },
+    {
+      "desc": "CONSTELLATION BRANDS INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "STZ"
+    },
+    {
+      "desc": "ZOETIS INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "ZTS"
+    },
+    {
+      "desc": "GALLAGHER ARTHUR J & CO",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "AJG",
+      "fz": 0.94
+    },
+    {
+      "desc": "NVIDIA CORP",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "NVDA"
+    },
+    {
+      "desc": "CORP",
+      "type": "P",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock"
+    },
+    {
+      "desc": "CORP",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock"
+    },
+    {
+      "desc": "BOOKING HLDGS INC",
+      "type": "S",
+      "date": "2026-08-03",
+      "late": true,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "BKNG"
+    },
+    {
+      "desc": "VANGUARD DIVIDEND APPRECIATION INDEX FUND ETF SHARES",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "VIG"
+    },
+    {
+      "desc": "EPAM SYS INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "EPAM"
+    },
+    {
+      "desc": "PRIMORIS SVCS CORP",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "PRIM"
+    },
+    {
+      "desc": "LAZARD INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LAZ"
+    },
+    {
+      "desc": "TENABLE HLDGS INC :",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TENB"
+    },
+    {
+      "desc": "MIRION TECHNOLOGIES INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "MIR"
+    },
+    {
+      "desc": "BADGER METER INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BMI"
+    },
+    {
+      "desc": "STEPSTONE GROUP INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "STEP"
+    },
+    {
+      "desc": "FMC CORP",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "FMC"
+    },
+    {
+      "desc": "PELOTON INTERACTIVE INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PTON"
+    },
+    {
+      "desc": "ATMUS FILTRATION TECHNOL",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ATMU"
+    },
+    {
+      "desc": "WARBY PARKER INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "WRBY"
+    },
+    {
+      "desc": "MASTERBRAND INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "MBC"
+    },
+    {
+      "desc": "CONSTRUCTION PARTNERS IN",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ROAD"
+    },
+    {
+      "desc": "POOL CORP",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "POOL"
+    },
+    {
+      "desc": "UNIVERSAL TECHNICAL INST",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "UTI"
+    },
+    {
+      "desc": "SMITH PPTYS",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock"
+    },
+    {
+      "desc": "MOHAWK INDS INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "MHK"
+    },
+    {
+      "desc": "ADAPT HEALTH CORP",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AHCO"
+    },
+    {
+      "desc": "WOLVERINE WORLD WIDE INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "WWW"
+    },
+    {
+      "desc": "AGNT, INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AGNT"
+    },
+    {
+      "desc": "EVERFORTH INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "EFOR"
+    },
+    {
+      "desc": "VSE CORP",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "VSEC"
+    },
+    {
+      "desc": "CERTARA INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CERT"
+    },
+    {
+      "desc": "ZOOMINFO TECHNOLOGIES IN",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "GTM"
+    },
+    {
+      "desc": "GLASS INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "PAPA JOHNS INTL INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PZZA"
+    },
+    {
+      "desc": "BLACKSTONE MTG TR INC REIT",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "BX"
+    },
+    {
+      "desc": "COGENT COMMUNICATIONS HL",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CCOI",
+      "fz": 0.83
+    },
+    {
+      "desc": "VERSIGENT LTD F",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "VGNT"
+    },
+    {
+      "desc": "ADVANCE AUTO PTS INC",
+      "type": "P",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AAP",
+      "fz": 0.86
+    },
+    {
+      "desc": "LCLINDS",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LNN",
+      "fz": 0.67
+    },
+    {
+      "desc": "STRIDE INC :",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LRN"
+    },
+    {
+      "desc": "FLOWERS FOODS INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "FLO"
+    },
+    {
+      "desc": "QUIDELORTHO CORP",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "QDEL"
+    },
+    {
+      "desc": "MEDICAL PPTYS TR INC REIT",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MPT"
+    },
+    {
+      "desc": "GREENBRIER COS INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "GBX"
+    },
+    {
+      "desc": "ACADIA RLTY TR REIT",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "MATTHEWS INTL CORP",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MATW"
+    },
+    {
+      "desc": "ALBANY INTL CORP",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AIN"
+    },
+    {
+      "desc": "UNDER ARMOUR INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "UAA"
+    },
+    {
+      "desc": "KEMPER CORP DEL",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "KMPR"
+    },
+    {
+      "desc": "HAWAIIAN ELEC INDS INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "HE"
+    },
+    {
+      "desc": "F&G ANNUITIES & LIFE INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "FG"
+    },
+    {
+      "desc": "DREAM FINDERS HOMES INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "DFH"
+    },
+    {
+      "desc": "LKQ CORP",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LKQ"
+    },
+    {
+      "desc": "LEGALZOOM COM INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LZ"
+    },
+    {
+      "desc": "JBT MAREL CORP",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "JBTM"
+    },
+    {
+      "desc": "TRIPADVISOR INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TRIP"
+    },
+    {
+      "desc": "COLLEGIUM PHARMACEUTICAL",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "COLL"
+    },
+    {
+      "desc": "WESTERN UN CO",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "WU"
+    },
+    {
+      "desc": "ALIGNMENT HEALTHCARE INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ALHC"
+    },
+    {
+      "desc": "BRIGHT HORIZONS FAMILY S",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BFAM"
+    },
+    {
+      "desc": "KARMAN HLDGS INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "KRMN"
+    },
+    {
+      "desc": "GOODYEAR TIRE & RUBR CO",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "GT"
+    },
+    {
+      "desc": "GROUP 1 AUTOMOTIVE INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "GPI"
+    },
+    {
+      "desc": "LAZ BOY INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LZB"
+    },
+    {
+      "desc": "LEMAITRE VASCULAR INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LMAT"
+    },
+    {
+      "desc": "PROSPERITY BANCSHARES IN",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PB"
+    },
+    {
+      "desc": "LIQUIDIA CORP",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LQDA"
+    },
+    {
+      "desc": "WALKER & DUNLOP INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "WD"
+    },
+    {
+      "desc": "ARGAN INC",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AGX"
+    },
+    {
+      "desc": "MICROSOFT CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "MSFT"
+    },
+    {
+      "desc": "ORACLE CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "ORCL"
+    },
+    {
+      "desc": "META PLATFORMS INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "META"
+    },
+    {
+      "desc": "UBER TECHNOLOGIES INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "UBER"
+    },
+    {
+      "desc": "CRH PUBLIC LIMITED CO",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "CRH"
+    },
+    {
+      "desc": "PUBLIC SVC ENTERPRISE GR",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "PEG"
+    },
+    {
+      "desc": "AMERICAN TOWER CORP NEW REIT",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "AMT"
+    },
+    {
+      "desc": "LENNAR CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LEN"
+    },
+    {
+      "desc": "NIKE INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "NKE"
+    },
+    {
+      "desc": "FISERV INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "FISV"
+    },
+    {
+      "desc": "PROCTER & GAMBLE CO",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PG"
+    },
+    {
+      "desc": "TRACTOR SUPPLY CO",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TSCO"
+    },
+    {
+      "desc": "COUPANG INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CPNG"
+    },
+    {
+      "desc": "ALASKA AIR GROUP INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ALK"
+    },
+    {
+      "desc": "BOSTON SCIENTIFIC CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BSX"
+    },
+    {
+      "desc": "OTIS WORLDWIDE CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "OTIS"
+    },
+    {
+      "desc": "AUTOZONE INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AZO"
+    },
+    {
+      "desc": "NXP SEMICONDUCTORS N V",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "NXPI"
+    },
+    {
+      "desc": "BUILDERS FIRSTSOURCE INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BLDR"
+    },
+    {
+      "desc": "CARNIVAL CORP LTD",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CCL"
+    },
+    {
+      "desc": "VISTRA CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "VST"
+    },
+    {
+      "desc": "TALEN ENERGY CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TLN"
+    },
+    {
+      "desc": "UNIVERSAL DISPLAY CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "OLED"
+    },
+    {
+      "desc": "CROWN CASTLE INC REIT",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CCI"
+    },
+    {
+      "desc": "WHIRLPOOL CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "WHR"
+    },
+    {
+      "desc": "OKLO INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "OKLO"
+    },
+    {
+      "desc": "ZOETIS INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ZTS"
+    },
+    {
+      "desc": "T-MOBILE US INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TMUS"
+    },
+    {
+      "desc": "PENTAIR PLC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PNR"
+    },
+    {
+      "desc": "SUPER MICRO COMPUTER INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "SMCI"
+    },
+    {
+      "desc": "VONTIER CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "VNT"
+    },
+    {
+      "desc": "INSULET CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PODD"
+    },
+    {
+      "desc": "SYSCO CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "SYY"
+    },
+    {
+      "desc": "QXxO INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock"
+    },
+    {
+      "desc": "APTIV PLC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "APTV"
+    },
+    {
+      "desc": "JOBY AVIATION INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "JOBY"
+    },
+    {
+      "desc": "AES CORP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AES"
+    },
+    {
+      "desc": "APPLOVIN CORP :",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "APP"
+    },
+    {
+      "desc": "CORE & MAIN INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CNM"
+    },
+    {
+      "desc": "EVERPURE INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "P"
+    },
+    {
+      "desc": "COREWEAVE INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CRWV"
+    },
+    {
+      "desc": "CREDO TECHNOLOGY GROUP",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CRDO"
+    },
+    {
+      "desc": "AECOM",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ACM"
+    },
+    {
+      "desc": "CELSIUS HLDGS INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CELH"
+    },
+    {
+      "desc": "MODERNA INC",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MRNA"
+    },
+    {
+      "desc": "ALNYLAM PHARMACEUTICALS",
+      "type": "P",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ALNY"
+    },
+    {
+      "desc": "AKAMAI TECHNOLOGIES INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AKAM"
+    },
+    {
+      "desc": "TAKE-TWO INTERACTIVE SOF",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TTWO"
+    },
+    {
+      "desc": "MOBILITY GLOBAL INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MBGL"
+    },
+    {
+      "desc": "POST HLDGS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "POST"
+    },
+    {
+      "desc": "CINCINNATI FINL CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CINF"
+    },
+    {
+      "desc": "BROADCOM INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AVGO"
+    },
+    {
+      "desc": "L3HARRIS TECHNOLOGIES IN",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LHX"
+    },
+    {
+      "desc": "THE TRADE DESK INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TTD"
+    },
+    {
+      "desc": "SHIFT4 PMTS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "THE CIGNA GROUP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CI"
+    },
+    {
+      "desc": "AAON INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AAON"
+    },
+    {
+      "desc": "RB GLOBAL INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "RBA"
+    },
+    {
+      "desc": "DELL TECHNOLOGIES INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "DELL"
+    },
+    {
+      "desc": "MARKEL GROUP INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "MKL"
+    },
+    {
+      "desc": "UPSTART HLDGS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "UPST"
+    },
+    {
+      "desc": "LUCID GROUP INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LCID"
+    },
+    {
+      "desc": "SYNOPSYS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "SNPS"
+    },
+    {
+      "desc": "CMS ENERGY CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CMS"
+    },
+    {
+      "desc": "PPL CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PPL"
+    },
+    {
+      "desc": "BERKSHIRE HATHAWAY",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BRK.B"
+    },
+    {
+      "desc": "PALO ALTO NETWORKS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PANW"
+    },
+    {
+      "desc": "WINGSTOP INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "WING"
+    },
+    {
+      "desc": "ROCKET LAB CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "RKLB"
+    },
+    {
+      "desc": "ATLASSIAN CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TEAM"
+    },
+    {
+      "desc": "ROBLOX CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "RBLX"
+    },
+    {
+      "desc": "CONSTELLATION BRANDS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "STZ"
+    },
+    {
+      "desc": "FLUTTER ENTMT PLC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "FLUT"
+    },
+    {
+      "desc": "TRANSDIGM GROUP INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TDG"
+    },
+    {
+      "desc": "AMERICAN INTL GROUP INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AIG"
+    },
+    {
+      "desc": "UNITED RENTALS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "URI"
+    },
+    {
+      "desc": "HONEYWELL AEROSPACE INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "HONA"
+    },
+    {
+      "desc": "AMRIZE LTD",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "AMRZ"
+    },
+    {
+      "desc": "WALMART INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "WMT"
+    },
+    {
+      "desc": "TESLA INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "TSLA"
+    },
+    {
+      "desc": "CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock"
+    },
+    {
+      "desc": "MCDONALDS CORP",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "MCD"
+    },
+    {
+      "desc": "LOWES COS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "LOW"
+    },
+    {
+      "desc": "TIX COS INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock"
+    },
+    {
+      "desc": "INTUITIVE SURGICAL INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "ISRG"
+    },
+    {
+      "desc": "HOME DEPOT INC",
+      "type": "S",
+      "date": "2026-08-28",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "HD"
+    },
+    {
+      "desc": "TIX COS INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "WALMART INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "WMT"
+    },
+    {
+      "desc": "DUKE ENERGY CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "DUK"
+    },
+    {
+      "desc": "BERKSHIRE HATHAWAY",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "BRK.B"
+    },
+    {
+      "desc": "HILTON WORLDWIDE HLDGS |",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "HLT"
+    },
+    {
+      "desc": "SYNOPSYS INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SNPS"
+    },
+    {
+      "desc": "CURTISS WRIGHT CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CW"
+    },
+    {
+      "desc": "JABILINC :",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "JBL"
+    },
+    {
+      "desc": "GE AEROSPACE",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "GE"
+    },
+    {
+      "desc": "APPLE INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AAPL"
+    },
+    {
+      "desc": "ENTERGY CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ETR"
+    },
+    {
+      "desc": "MARTIN MARIETTA MATLS IN",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MLM"
+    },
+    {
+      "desc": "RB GLOBAL INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "RBA"
+    },
+    {
+      "desc": "PROCTER & GAMBLE CO",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PG"
+    },
+    {
+      "desc": "WOODWARD INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "WWD"
+    },
+    {
+      "desc": "AECOM",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ACM"
+    },
+    {
+      "desc": "GENERAL MTRS CO",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "GM"
+    },
+    {
+      "desc": "ROBLOX CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "RBLX"
+    },
+    {
+      "desc": "IBM CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "IBM"
+    },
+    {
+      "desc": "CIENA CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CIEN"
+    },
+    {
+      "desc": "LINDE PLC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LIN"
+    },
+    {
+      "desc": "CADENCE DESIGN SYS INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CDNS"
+    },
+    {
+      "desc": "APPLOVIN CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "APP"
+    },
+    {
+      "desc": "INSULET CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PODD"
+    },
+    {
+      "desc": "XCEL ENERGY INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "XEL"
+    },
+    {
+      "desc": "FAIR ISAAC CORP",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "FICO"
+    },
+    {
+      "desc": "MSCI INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MSCI"
+    },
+    {
+      "desc": "AMRIZE LTD F",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AMRZ"
+    },
+    {
+      "desc": "ALPHABET INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "GOOGL"
+    },
+    {
+      "desc": "MARKEL GROUP INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MKL"
+    },
+    {
+      "desc": "VERTIV HLDGS CO",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "VRT"
+    },
+    {
+      "desc": "ROCKET COMPANIES",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "RKT"
+    },
+    {
+      "desc": "GENERAC HLDGS INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "GNRC"
+    },
+    {
+      "desc": "CARNIVAL CORP LTD",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CCL"
+    },
+    {
+      "desc": "CONSTELLATION ENERGY COR",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CEG"
+    },
+    {
+      "desc": "PHILIP MORRIS INTL INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PM"
+    },
+    {
+      "desc": "L3HARRIS TECHNOLOGIES INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LHX"
+    },
+    {
+      "desc": "S&P GLOBAL INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SPGI"
+    },
+    {
+      "desc": "SERVICENOW INC",
+      "type": "S",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NOW"
+    },
+    {
+      "desc": "TRANSDIGM GROUP INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TDG"
+    },
+    {
+      "desc": "VONTIER CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "VNT"
+    },
+    {
+      "desc": "SYSCO CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SYY"
+    },
+    {
+      "desc": "AES CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AES"
+    },
+    {
+      "desc": "CORE & MAIN INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CNM"
+    },
+    {
+      "desc": "BUILDERS FIRSTSOURCE INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "BLDR"
+    },
+    {
+      "desc": "NETFLIX INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NFLX"
+    },
+    {
+      "desc": "NVIDIA CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NVDA"
+    },
+    {
+      "desc": "QUALCOMM INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "QCOM"
+    },
+    {
+      "desc": "TXNM ENERGY INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TXNM"
+    },
+    {
+      "desc": "MODERNA INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MRNA"
+    },
+    {
+      "desc": "NEWMONT CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NEM"
+    },
+    {
+      "desc": "DISNEY WALT CO",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "DIS"
+    },
+    {
+      "desc": "BOEING CO ;",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "BA"
+    },
+    {
+      "desc": "API GROUP CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "APG"
+    },
+    {
+      "desc": "CRH PUBLIC LIMITED CO",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CRH"
+    },
+    {
+      "desc": "MCDONALDS CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MCD"
+    },
+    {
+      "desc": "SHERWIN-WILLIAMS CO",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SHW"
+    },
+    {
+      "desc": "PPL CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PPL"
+    },
+    {
+      "desc": "ORACLE CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ORCL"
+    },
+    {
+      "desc": "META PLATFORMS INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "META"
+    },
+    {
+      "desc": "INTUITIVE SURGICAL INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ISRG"
+    },
+    {
+      "desc": "COSTCO WHSL CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "COST"
+    },
+    {
+      "desc": "PALANTIR TECHNOLOGIES IN",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PLTR"
+    },
+    {
+      "desc": "PUBLIC SVC ENTERPRISE GR",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PEG"
+    },
+    {
+      "desc": "MICROSOFT CORP",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MSFT"
+    },
+    {
+      "desc": "TESLA INC",
+      "type": "P",
+      "date": "2026-08-24",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TSLA"
+    },
+    {
+      "desc": "MICROSOFT CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MSFT"
+    },
+    {
+      "desc": "IBM CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "IBM"
+    },
+    {
+      "desc": "INTUITIVE SURGICAL INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ISRG"
+    },
+    {
+      "desc": "T-MOBILE US INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TMUS"
+    },
+    {
+      "desc": "META PLATFORMS INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "META"
+    },
+    {
+      "desc": "PUBLIC SVC ENTERPRISE GR",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PEG"
+    },
+    {
+      "desc": "MCDONALDS CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MCD"
+    },
+    {
+      "desc": "VERIZON COMMUNICATIONS |",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "VZ"
+    },
+    {
+      "desc": "VISTRA CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "VST"
+    },
+    {
+      "desc": "COSTCO WHSL CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "COST"
+    },
+    {
+      "desc": "MICRON TECHNOLOGY INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MU"
+    },
+    {
+      "desc": "ORACLE CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ORCL"
+    },
+    {
+      "desc": "HONEYWELL AEROSPACE INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "HONA"
+    },
+    {
+      "desc": "EXELON CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "EXC"
+    },
+    {
+      "desc": "AUTOZONE INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AZO"
+    },
+    {
+      "desc": "COINBASE GLOBAL INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "COIN"
+    },
+    {
+      "desc": "NIKE INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NKE"
+    },
+    {
+      "desc": "PENTAIR",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PNR"
+    },
+    {
+      "desc": "KROGER CO",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "KR"
+    },
+    {
+      "desc": "PEPSICO INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PEP"
+    },
+    {
+      "desc": "INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "WATSCO INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "WSO"
+    },
+    {
+      "desc": "ENERGY GROUP INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "ZOETIS INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ZTS"
+    },
+    {
+      "desc": "TYLER TECHNOLOGIES INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TYL"
+    },
+    {
+      "desc": "CONSTELLATION ENERGY CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CEG"
+    },
+    {
+      "desc": "BANCO SANTANDER SA :",
+      "type": "S",
+      "date": "2026-08-31",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SAN"
+    },
+    {
+      "desc": "ROBLOX CORP",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "RBLX"
+    },
+    {
+      "desc": "AMRIZE LTD",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AMRZ"
+    },
+    {
+      "desc": "CME GROUP INC CLASS",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CME"
+    },
+    {
+      "desc": "SEMPRA",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SRE"
+    },
+    {
+      "desc": "CONSTELLATION BRANDS INC",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "STZ"
+    },
+    {
+      "desc": "INTUIT",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "INTU"
+    },
+    {
+      "desc": "FISERV INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "FISV"
+    },
+    {
+      "desc": "STRYKER CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SYK"
+    },
+    {
+      "desc": "WILLIAMS COS INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "WMB"
+    },
+    {
+      "desc": "THE TRADE DESK INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TTD"
+    },
+    {
+      "desc": "SEAGATE TECHNOLOGY",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "STX"
+    },
+    {
+      "desc": "ADOBE INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ADBE"
+    },
+    {
+      "desc": "SOMNIGROUP INTERNTNL",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SGI"
+    },
+    {
+      "desc": "LENNOX INTL INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LII"
+    },
+    {
+      "desc": "ALNYLAM PHARMACEUTICALS",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ALNY"
+    },
+    {
+      "desc": "LOWES COS INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LOW"
+    },
+    {
+      "desc": "AMERICAN TOWER CORP NEW REIT",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AMT"
+    },
+    {
+      "desc": "ALBERTSONS CO",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ACI"
+    },
+    {
+      "desc": "NVIDIA CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NVDA"
+    },
+    {
+      "desc": "ROCKET LAB CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "RKLB"
+    },
+    {
+      "desc": "CHIPOTLE MEXICAN GRILL |",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CMG"
+    },
+    {
+      "desc": "FLUTTER ENTMT",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "FLUT"
+    },
+    {
+      "desc": "MP MATLS CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MP"
+    },
+    {
+      "desc": "STRATEGY INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "MSTR"
+    },
+    {
+      "desc": "NXP SEMICONDUCTORS N V F",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NXPI"
+    },
+    {
+      "desc": "APTIV",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "APTV"
+    },
+    {
+      "desc": "COUPANG INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CPNG"
+    },
+    {
+      "desc": "INSULET CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PODD"
+    },
+    {
+      "desc": "SOUTHERN CO *",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "SO"
+    },
+    {
+      "desc": "PROGRESSIVE CORP OH",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PGR"
+    },
+    {
+      "desc": "CROWN CASTLE INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CCI"
+    },
+    {
+      "desc": "APPLOVIN CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "APP"
+    },
+    {
+      "desc": "SALESFORCE INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "CRM"
+    },
+    {
+      "desc": "BOEING CO",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "BA"
+    },
+    {
+      "desc": "LINDE",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LIN"
+    },
+    {
+      "desc": "TALEN ENERGY CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "TLN"
+    },
+    {
+      "desc": "BOSTON SCIENTIFIC CORP",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "BSX"
+    },
+    {
+      "desc": "SERVICENOW INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NOW"
+    },
+    {
+      "desc": "PALANTIR TECHNOLOGIES INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PLTR"
+    },
+    {
+      "desc": "ACCENTURE IRELAND",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "PROCTER & GAMBLE CO",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "PG"
+    },
+    {
+      "desc": "AT&T INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "T"
+    },
+    {
+      "desc": "NETFLIX INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "NFLX"
+    },
+    {
+      "desc": "AMAZON.COM INC",
+      "type": "P",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "AMZN"
+    },
+    {
+      "desc": "Ishares Tr Russell 2000 Etf",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "fund",
+      "tk": "IWM"
+    },
+    {
+      "desc": "Arlington Tex Higher Ed Fin Corp Ed Rev Bds Harmonv Pub Schs 2026 5.000%",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "muni"
+    },
+    {
+      "desc": "Ishares Tr Global 100 Etf",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "fund",
+      "tk": "IOO"
+    },
+    {
+      "desc": "ishares Tr Msci Eafe Etf",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "fund",
+      "tk": "EFA"
+    },
+    {
+      "desc": "Vanguard Index Fds Morningstar Mid Cap Etf",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "fund",
+      "tk": "IMCB"
+    },
+    {
+      "desc": "Federated Hermes Government Obligations Fund Class Cil S",
+      "type": "S",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "fund"
+    },
+    {
+      "desc": "Modine Mfg Co",
+      "type": "S",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "MOD"
+    },
+    {
+      "desc": "MICHIGAN ST TRUNK LINE RV BE/R/ 5 DUE 111530 DTD 090926 FC 051527 2.850% YIELD TO MATURITY",
+      "type": "P",
+      "date": "2026-08-19",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "muni"
+    },
+    {
+      "desc": "TYSON FOODS INC",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TSN"
+    },
+    {
+      "desc": "FOX CORP",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "FOXA"
+    },
+    {
+      "desc": "BROWN & BROWN INC",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BRO"
+    },
+    {
+      "desc": "GE HEALTHCARE TECHNOLOGIES INC",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "GEHC"
+    },
+    {
+      "desc": "SCHEIN HENRY INC",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "HSIC"
+    },
+    {
+      "desc": "ABBOTT LABS",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ABT"
+    },
+    {
+      "desc": "TJX COS INC",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TJX"
+    },
+    {
+      "desc": "MODERNA INC",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "MRNA"
+    },
+    {
+      "desc": "EMERSON ELECTRIC CO",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "EMR"
+    },
+    {
+      "desc": "EXPEDITORS INTL WASH INC",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock"
+    },
+    {
+      "desc": "DIGITAL REALTY TRUST INC",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "DLR"
+    },
+    {
+      "desc": "CHEVRON CORP",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CVX"
+    },
+    {
+      "desc": "CINTAS CORP",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CTAS"
+    },
+    {
+      "desc": "NVIDIA CORP",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "NVDA"
+    },
+    {
+      "desc": "RESMED INC",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "RMD"
+    },
+    {
+      "desc": "AMAZON.COM INC",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AMZN"
+    },
+    {
+      "desc": "IQVIA HLDGS INC",
+      "type": "S",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "IQV"
+    },
+    {
+      "desc": "AUTOMATIC DATA PROCESSNG INC",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ADP",
+      "fz": 0.93
+    },
+    {
+      "desc": "AIR PROD & CHEMICAL INC",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "APD",
+      "fz": 0.75
+    },
+    {
+      "desc": "BROADCOM INC",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "AVGO"
+    },
+    {
+      "desc": "MICROSOFT CORP",
+      "type": "P",
+      "date": "2026-08-26",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "MSFT"
+    },
+    {
+      "desc": "Meta Platforms, Inc",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "META"
+    },
+    {
+      "desc": "AT & TINC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock"
+    },
+    {
+      "desc": "CONOCOPHILLIPS",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "COP"
+    },
+    {
+      "desc": "ABBOTT LABS INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "ABT"
+    },
+    {
+      "desc": "NETFLIX COM INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "NFLX"
+    },
+    {
+      "desc": "CHEVRON CORP",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "CVX"
+    },
+    {
+      "desc": "WALMART STORES INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock"
+    },
+    {
+      "desc": "LOWES COS INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "LOW"
+    },
+    {
+      "desc": "COLORADO HEALTH FACS AUTH RE 5.0000%",
+      "type": "P",
+      "date": "2026-08-04",
+      "late": true,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "Medtronic",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "MDT"
+    },
+    {
+      "desc": "GENERAL MILLS",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "GIS"
+    },
+    {
+      "desc": "MCDONALDS CORP",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "MCD"
+    },
+    {
+      "desc": "WALT DISNEY COMPANY",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "DIS"
+    },
+    {
+      "desc": "VISA INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "V"
+    },
+    {
+      "desc": "COMCAST CORP",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "CMCSA"
+    },
+    {
+      "desc": "KKR & CO INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "KKR"
+    },
+    {
+      "desc": "MONDELEZ INTL INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "MDLZ"
+    },
+    {
+      "desc": "BERKSHIRE HATHAWAY INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "BRK.B"
+    },
+    {
+      "desc": "BOOKING HLDGS INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "BKNG"
+    },
+    {
+      "desc": "S&P GLOBAL INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "SPGI"
+    },
+    {
+      "desc": "KROGER",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "KR"
+    },
+    {
+      "desc": "PROGRESSIVE CORP OHIO",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "PGR"
+    },
+    {
+      "desc": "Blackstone Inc",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "BX"
+    },
+    {
+      "desc": "VERIZON COMMUNICATIONS",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "VZ"
+    },
+    {
+      "desc": "OCCIDENTAL PETE CORP",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "OXY"
+    },
+    {
+      "desc": "CAPITAL ONE FINL CORP",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "COF"
+    },
+    {
+      "desc": "MASTERCARD INCORPORATED",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "MA"
+    },
+    {
+      "desc": "CONSTELLATION ENERGY CORP",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "CEG"
+    },
+    {
+      "desc": "AMERICAN EXPRESS CO PERP -E 6.4500%",
+      "type": "P",
+      "date": "2026-08-05",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "preferred"
+    },
+    {
+      "desc": "MCCORMICK & CO NON VOTING",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock"
+    },
+    {
+      "desc": "PFIZER INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "PFE"
+    },
+    {
+      "desc": "AMERICAN EXPRESS CO PERP -E 6.4500%",
+      "type": "P",
+      "date": "2026-08-05",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "preferred"
+    },
+    {
+      "desc": "EXPAND ENERGY CORPORATION",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "EXE"
+    },
+    {
+      "desc": "EOG RESOURCES INC",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "EOG"
+    },
+    {
+      "desc": "AMERICAN EXPRESS CO PERP -E 6.4500%",
+      "type": "P",
+      "date": "2026-08-05",
+      "late": true,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "preferred"
+    },
+    {
+      "desc": "STRYKER CORP",
+      "type": "P",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "SYK"
+    },
+    {
+      "desc": "NRG ENERGY INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "NRG"
+    },
+    {
+      "desc": "GENERAC HLDGS INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "GNRC"
+    },
+    {
+      "desc": "VERSANT MEDIA GROUP INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "VSNT"
+    },
+    {
+      "desc": "TEXAS PACIFIC LAND CORPORATION",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "TPL"
+    },
+    {
+      "desc": "TAPESTRY INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "TPR"
+    },
+    {
+      "desc": "IDEXX LABS INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "IDXX"
+    },
+    {
+      "desc": "VERISK ANALYTICS, INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "VRSK"
+    },
+    {
+      "desc": "BALL CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "BALL"
+    },
+    {
+      "desc": "PPG INDS INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "PPG"
+    },
+    {
+      "desc": "Interactive Brokers Group Inc",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "IBKR"
+    },
+    {
+      "desc": "QUALCOMM INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "QCOM"
+    },
+    {
+      "desc": "PUBLIC SVC ENTERPRISE GROUP INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "PEG"
+    },
+    {
+      "desc": "KLA Corp",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "KLAC"
+    },
+    {
+      "desc": "UNITEDHEALTH GROUP INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "UNH"
+    },
+    {
+      "desc": "Monolithic Pwr Sys Inc",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "MPWR",
+      "fz": 0.8
+    },
+    {
+      "desc": "CENTERPOINT ENERGY INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "CNP"
+    },
+    {
+      "desc": "VISTRA CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "VST"
+    },
+    {
+      "desc": "L3HARRIS TECHNOLOGIES INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "LHX"
+    },
+    {
+      "desc": "Hubbell Inc",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "HUBB"
+    },
+    {
+      "desc": "GRAINGER W W INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "GWW",
+      "fz": 0.89
+    },
+    {
+      "desc": "ROYAL CARIBBEAN GROUP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock"
+    },
+    {
+      "desc": "INTEL CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "INTC"
+    },
+    {
+      "desc": "CROWDSTRIKE HLDGS INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "CRWD"
+    },
+    {
+      "desc": "NIKE INC CLASS B",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "NKE"
+    },
+    {
+      "desc": "HONEYWELL AEROSPACE INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "HONA"
+    },
+    {
+      "desc": "EMCOR GROUP INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "EME"
+    },
+    {
+      "desc": "CIENA CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "CIEN"
+    },
+    {
+      "desc": "VERTIV HOLDINGS CO",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "VRT"
+    },
+    {
+      "desc": "DOMINOS PIZZA INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "DPZ"
+    },
+    {
+      "desc": "APPLOVIN CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "APP"
+    },
+    {
+      "desc": "MICRON TECHNOLOGY INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "MU"
+    },
+    {
+      "desc": "COHERENT CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "COHR"
+    },
+    {
+      "desc": "INVITATION HOMES INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "INVH"
+    },
+    {
+      "desc": "ELECTRONIC ARTS INC",
+      "type": "S",
+      "date": "2026-08-06",
+      "late": true,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock"
+    },
+    {
+      "desc": "THE TRADE DESK INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "TTD"
+    },
+    {
+      "desc": "MARVELL TECHNOLOGY GROUP LTD",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "MRVL"
+    },
+    {
+      "desc": "SOUTHERN CO",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "SO"
+    },
+    {
+      "desc": "KATY TEX INDPT SCH DIST UNLT 5.0000%",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "muni"
+    },
+    {
+      "desc": "PROCTER & GAMBLE COMPANY",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "PG"
+    },
+    {
+      "desc": "APPLIED MATERIALS",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "AMAT"
+    },
+    {
+      "desc": "AMERICAN EXPRESS CO ALT TIER 3.5500%",
+      "type": "S",
+      "date": "2026-08-05",
+      "late": true,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "corporate"
+    },
+    {
+      "desc": "CARRIER GLOBAL CORPORATION",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "CARR"
+    },
+    {
+      "desc": "SAN ANTONIO TEX WTR REV SYS 5.0000%",
+      "type": "S",
+      "date": "2026-08-10",
+      "late": true,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "muni"
+    },
+    {
+      "desc": "MICROCHIP TECHNOLOGY INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "MCHP"
+    },
+    {
+      "desc": "FORTINET INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "FTNT"
+    },
+    {
+      "desc": "BROADCOM INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "AVGO"
+    },
+    {
+      "desc": "BOEING COMPANY",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "BA"
+    },
+    {
+      "desc": "LENNOX INTL INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "LII"
+    },
+    {
+      "desc": "HOME DEPOT INC :",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "HD"
+    },
+    {
+      "desc": "ZOETIS INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "ZTS"
+    },
+    {
+      "desc": "T-MOBILE US INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "TMUS"
+    },
+    {
+      "desc": "DATADOG INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "DDOG"
+    },
+    {
+      "desc": "CDW CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "CDW"
+    },
+    {
+      "desc": "TRANSDIGM GROUP INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "TDG"
+    },
+    {
+      "desc": "DELL TECHNOLOGIES INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "DELL"
+    },
+    {
+      "desc": "PALO ALTO NETWORKS INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "PANW"
+    },
+    {
+      "desc": "NVIDIA CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "NVDA"
+    },
+    {
+      "desc": "KIMBERLY-CLARK CORP",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "KMB"
+    },
+    {
+      "desc": "CHURCH & DWIGHT INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "CHD"
+    },
+    {
+      "desc": "ADVANCED MICRO DEVICES INC",
+      "type": "S",
+      "date": "2026-08-21",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "stock",
+      "tk": "AMD"
+    },
+    {
+      "desc": "\\3harrls Technologies Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LHX",
+      "fz": 0.7
+    },
+    {
+      "desc": "Abbott Labs",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ABT"
+    },
+    {
+      "desc": "DR Horton Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "DHI"
+    },
+    {
+      "desc": "Ge Healthcare Technologies Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "GEHC"
+    },
+    {
+      "desc": "Microsoft Coro",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "MSFT"
+    },
+    {
+      "desc": "Cme Group Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CME"
+    },
+    {
+      "desc": "Lennar Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "LEN"
+    },
+    {
+      "desc": "Boeing Co",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BA"
+    },
+    {
+      "desc": "Qnity Electronics Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "Q"
+    },
+    {
+      "desc": "Vistra Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "VST"
+    },
+    {
+      "desc": "Zoetis Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "ZTS"
+    },
+    {
+      "desc": "At&t Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "T"
+    },
+    {
+      "desc": "Mcdonalds",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "MCD"
+    },
+    {
+      "desc": "Lowes Cos Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "LOW"
+    },
+    {
+      "desc": "Te Connectivity",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "TEL"
+    },
+    {
+      "desc": "Procter & Gamble Co",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PG"
+    },
+    {
+      "desc": "Accenture Plc Ireland",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock"
+    },
+    {
+      "desc": "Amazon Com Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 250001,
+      "hi": 500000,
+      "cls": "stock",
+      "tk": "AMZN"
+    },
+    {
+      "desc": "Costco Whsl Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "COST"
+    },
+    {
+      "desc": "Eat Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock"
+    },
+    {
+      "desc": "Cbre Group Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CBRE"
+    },
+    {
+      "desc": "Pepsico Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "PEP"
+    },
+    {
+      "desc": "International Business Machs Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "IBM",
+      "fz": 0.85
+    },
+    {
+      "desc": "Salesforce Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CRM"
+    },
+    {
+      "desc": "Disney Walt Co",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "DIS"
+    },
+    {
+      "desc": "Servicenow Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "NOW"
+    },
+    {
+      "desc": "CRH Ple",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock"
+    },
+    {
+      "desc": "Kroger Co",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1001,
+      "hi": 15000,
+      "cls": "stock",
+      "tk": "KR"
+    },
+    {
+      "desc": "Oracle Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "ORCL"
+    },
+    {
+      "desc": "Palantir Technologles Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock"
+    },
+    {
+      "desc": "Meta Platforms Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "META"
+    },
+    {
+      "desc": "Nvidia Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "cls": "stock",
+      "tk": "NVDA"
+    },
+    {
+      "desc": "Uber Technologies Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "UBER"
+    },
+    {
+      "desc": "Alphabet Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "GOOGL"
+    },
+    {
+      "desc": "Alphabet Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "cls": "stock",
+      "tk": "GOOGL"
+    },
+    {
+      "desc": "Comeast Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "CMCSA",
+      "fz": 0.67
+    },
+    {
+      "desc": "Boston Scientific Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "BSX"
+    },
+    {
+      "desc": "Netflix Inc",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 50001,
+      "hi": 100000,
+      "cls": "stock",
+      "tk": "NFLX"
+    },
+    {
+      "desc": "Strvker Corp",
+      "type": "P",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 15001,
+      "hi": 50000,
+      "cls": "stock",
+      "tk": "SYK",
+      "fz": 0.67
+    },
+    {
+      "desc": "Ishares Tr Russell 1000 Etf",
+      "type": "S",
+      "date": "2026-08-17",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "fund",
+      "tk": "IWB"
+    },
+    {
+      "desc": "SPACE EXPLORATION TECHN SENIOR UNSECURED NOTES REG S DUE",
+      "type": "P",
+      "date": "2026-08-18",
+      "late": false,
+      "lo": 1000001,
+      "hi": 5000000,
+      "cls": "corporate"
+    }
+  ]
+}

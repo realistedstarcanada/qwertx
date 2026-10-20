@@ -9,7 +9,7 @@
   "rows": 3621,
   "from": "2026-01-01",
   "to": "2026-04-30",
-  "mapped": 3213,
+  "mapped": 3225,
   "stocks": 3534,
   "untyped": 2,
   "transactions": [
@@ -287,7 +287,9 @@
       "late": true,
       "lo": 1000001,
       "hi": 5000000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "KRUS",
+      "fz": 0.73
     },
     {
       "desc": "DELL TECHNOLOGIES INC CLC",
@@ -1717,7 +1719,9 @@
       "late": true,
       "lo": 100001,
       "hi": 250000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.67
     },
     {
       "desc": "APPLE INC",
@@ -8023,7 +8027,9 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "WDC",
+      "fz": 0.7
     },
     {
       "desc": "CISCO SYSTEMS INC",
@@ -9523,7 +9529,9 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "WDC",
+      "fz": 0.7
     },
     {
       "desc": "WORKDAY INC CL A",
@@ -11680,7 +11688,9 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "WDC",
+      "fz": 0.7
     },
     {
       "desc": "SCHRODINGER INC",
@@ -11930,7 +11940,9 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "desc": "MOTOROLA SOLUTIONS INC",
@@ -19873,7 +19885,9 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "desc": "VERTEX PHARMACEUTICALS INC",
@@ -24005,7 +24019,9 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "desc": "BLOCK INC A CLASS A",
@@ -26142,7 +26158,9 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "UAL",
+      "fz": 0.82
     },
     {
       "desc": "LENNAR CORP CLASS A",
@@ -28357,7 +28375,9 @@
       "late": true,
       "lo": 1001,
       "hi": 15000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.69
     },
     {
       "desc": "AECOM",
@@ -31746,7 +31766,9 @@
       "late": true,
       "lo": 15001,
       "hi": 50000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.74
     },
     {
       "desc": "SERVICE CORP INTL",
@@ -35973,7 +35995,9 @@
       "late": true,
       "lo": 250001,
       "hi": 500000,
-      "cls": "stock"
+      "cls": "stock",
+      "tk": "HOOD",
+      "fz": 0.67
     },
     {
       "desc": "MASTERCARD INC CLASS A",

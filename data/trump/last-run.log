@@ -1,0 +1,22 @@
+list page error https://extapps2.oge.gov/201/Presiden.nsf/f53dcc215a28dcbb85258ccb0066175a?OpenForm fetch failed
+list page error https://extapps2.oge.gov/201/Presiden.nsf/PAS%20Filings%20by%20Date?OpenView&Count=1000 fetch failed
+list page error https://extapps2.oge.gov/201/Presiden.nsf/PAS%20IndexA?OpenView&RestrictToCategory=T&ExpandView&Count=1000 fetch failed
+PDF links: 7
+SEC tickers 10443
+  amount check: MICROSOFT CORP 2026-04-17 5000001 -> 100001
+  amount check: AMAZON COM INC 2026-04-17 5000001 -> 100001
+Donald-J-Trump-06.25.2026-278T.pdf: ocr 1372 rows/1307 clean, layer 1356 rows/1274 clean; printed 1375; using ocr
+Donald-J-Trump-06.25.2026-278T (2).pdf: ocr 1147 rows/1139 clean, layer 1135 rows/1123 clean; printed 1150; using ocr
+Donald-J-Trump-08.12.2026-278T.pdf: ocr 1030 rows/1029 clean, layer 0 rows/0 clean; printed 1051; using ocr
+  amount check: MICROSOFT CORP 2026-07-08 5000001 -> 15001
+  amount check: AMAZON INC 2026-07-08 5000001 -> 1001
+Donald-J-Trump-09.8.2026-278T.pdf: ocr 1154 rows/163 clean, layer 1118 rows/187 clean; printed 1156; using ocr
+  amount check: Meta Platforms, Inc 2026-08-21 5000001 -> 100001
+Donald-J-Trump.09.17.2026-278T.pdf: ocr 517 rows/517 clean, layer 512 rows/416 clean; printed 517; using ocr
+Trump, Donald J.-05.08.2026-278T(2).pdf: 3621 rows, 3225/3534 stocks mapped, 2 untyped, 2026-01-01..2026-04-30
+Donald-J-Trump-06.25.2026-278T.pdf: 1372 rows, 1234/1323 stocks mapped, 0 untyped, 2026-04-01..2026-04-30
+Donald-J-Trump-06.25.2026-278T (2).pdf: 1147 rows, 1018/1079 stocks mapped, 0 untyped, 2026-05-05..2026-05-29
+Donald-J-Trump-08.12.2026-278T.pdf: 1030 rows, 869/915 stocks mapped, 0 untyped, 2026-06-01..2026-06-29
+Donald-J-Trump-09.8.2026-278T.pdf: 1154 rows, 1024/1094 stocks mapped, 0 untyped, 2026-07-06..2026-07-23
+Donald-J-Trump.09.17.2026-278T.pdf: 517 rows, 435/445 stocks mapped, 0 untyped, 2026-08-03..2026-08-31
+annual report: 6181 investment lines, 2614 holdings, 1409 with tickers

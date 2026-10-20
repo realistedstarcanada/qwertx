@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T17:14:44.665Z",
+  "updatedAt": "2026-10-20T17:30:12.107Z",
   "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
   "annual": {
     "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
@@ -18,9 +18,84 @@
       "rows": 3621,
       "from": "2026-01-01",
       "to": "2026-04-30",
-      "mapped": 3213,
+      "mapped": 3225,
       "stocks": 3534,
       "untyped": 2
+    },
+    {
+      "id": "2026-06-25-donald-j-trump-06-25-2026-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AC43530823BD60D485258E27002DDEF7/$FILE/Donald-J-Trump-06.25.2026-278T.pdf",
+      "name": "Donald-J-Trump-06.25.2026-278T.pdf",
+      "signed": "2026-06-25",
+      "received": "2026-06-29",
+      "printedRows": 1375,
+      "text": "ocr",
+      "rows": 1372,
+      "from": "2026-04-01",
+      "to": "2026-04-30",
+      "mapped": 1234,
+      "stocks": 1323,
+      "untyped": 0
+    },
+    {
+      "id": "2026-06-25-donald-j-trump-06-25-2026-278t-2",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F9CA13B970439E8F85258E27002DDF15/$FILE/Donald-J-Trump-06.25.2026-278T%20(2).pdf",
+      "name": "Donald-J-Trump-06.25.2026-278T (2).pdf",
+      "signed": "2026-06-25",
+      "received": "2026-06-29",
+      "printedRows": 1150,
+      "text": "ocr",
+      "rows": 1147,
+      "from": "2026-05-05",
+      "to": "2026-05-29",
+      "mapped": 1018,
+      "stocks": 1079,
+      "untyped": 0
+    },
+    {
+      "id": "2026-08-12-donald-j-trump-08-12-2026-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2BF91F890F718ACB85258E5B002DE16B/$FILE/Donald-J-Trump-08.12.2026-278T.pdf",
+      "name": "Donald-J-Trump-08.12.2026-278T.pdf",
+      "signed": "2026-08-12",
+      "received": "2026-08-13",
+      "printedRows": 1051,
+      "text": "ocr",
+      "rows": 1030,
+      "from": "2026-06-01",
+      "to": "2026-06-29",
+      "mapped": 869,
+      "stocks": 915,
+      "untyped": 0
+    },
+    {
+      "id": "2026-09-08-donald-j-trump-09-8-2026-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
+      "name": "Donald-J-Trump-09.8.2026-278T.pdf",
+      "signed": "2026-09-08",
+      "received": null,
+      "printedRows": 1156,
+      "text": "ocr",
+      "rows": 1154,
+      "from": "2026-07-06",
+      "to": "2026-07-23",
+      "mapped": 1024,
+      "stocks": 1094,
+      "untyped": 0
+    },
+    {
+      "id": "2026-09-17-donald-j-trump-09-17-2026-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/0BDCCCE7DE13AEFA85258E8A002DE2B5/$FILE/Donald-J-Trump.09.17.2026-278T.pdf",
+      "name": "Donald-J-Trump.09.17.2026-278T.pdf",
+      "signed": "2026-09-17",
+      "received": "2026-09-25",
+      "printedRows": 517,
+      "text": "ocr",
+      "rows": 517,
+      "from": "2026-08-03",
+      "to": "2026-08-31",
+      "mapped": 435,
+      "stocks": 445,
+      "untyped": 0
     }
   ]
 }
