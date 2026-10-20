@@ -18,6 +18,7 @@ const B = 'https://extapps2.oge.gov/201/Presiden.nsf';
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; QWERTx research; admin@qwertx.com)' };
 const FORCE = process.argv.includes('--force');
 const DEBUG = process.argv.includes('--debug');
+const ONLY = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : null;
 const cfg = readJSON(path.join(ROOT, 'config/trump.json'), {});
 const dbg = [];
 const log = (...a) => { console.log(...a); dbg.push(a.join(' ')); };
@@ -148,8 +149,9 @@ async function main() {
   for (const f of filings) {
     const id = (f.signed || 'x') + '-' + f.name.replace(/\.pdf$/i, '').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '').toLowerCase().slice(-40);
     const file = path.join(OUT, id + '.json');
+    if (ONLY && !f.name.includes(ONLY)) { const keep = readJSON(file); if (keep) parsed.push({ meta: { ...keep, transactions: undefined }, rows: keep.transactions, file }); continue; }
     const prev = known.get(f.url) && readJSON(file);
-    if (prev && prev.transactions?.length && !FORCE) { parsed.push({ meta: { ...prev, transactions: undefined }, rows: prev.transactions, file }); continue; }
+    if (prev && prev.transactions?.length && !FORCE && !ONLY) { parsed.push({ meta: { ...prev, transactions: undefined }, rows: prev.transactions, file }); continue; }
     let texts;
     try { texts = pdfTexts(f.url, path.join(tmp, 'f.pdf')); } catch (e) { log('download failed', f.name, String(e.stderr || e.message).slice(0, 300)); continue; }
     if (!texts.length) continue;
