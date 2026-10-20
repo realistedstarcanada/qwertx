@@ -433,3 +433,26 @@ a.earn-pill:hover { border-color: var(--gold); }
 .fp-checks li { display: grid; grid-template-columns: 18px 1fr; gap: 10px; font-size: 14px; line-height: 1.5; color: var(--text-2); }
 .fp-checks i { color: var(--teal); margin-top: 3px; }
 @media (max-width: 520px) { .fp-mini li { grid-template-columns: 62px 44px 1fr; gap: 6px 8px; } .fp-mini .v { grid-column: 3; font-size: 11px; color: var(--muted); } .fp-mini .a { grid-column: 3; grid-row: 1; } .fp-mini .act { font-size: 10px; padding: 2px 5px; } .fp-mini .d { font-size: 11px; } }
+
+/* ==========================================================================
+   Light theme: page heads sit on the cream page, so they use the light palette.
+   Only the panels that are dark by design (market-mood card, hero search) keep dark colours.
+   ========================================================================== */
+:root[data-theme="light"] .page-hero,
+:root[data-theme="light"] .v-hero {
+  --bg: #F6F4EF; --bg-2: #EFECE4; --surface: #FFFFFF; --surface-2: #F7F5F0; --line: #E3DFD4; --line-2: #CFC9BA;
+  --text: #0B0F1A; --text-2: #2C3445; --muted: #4E5769; --faint: #6B7385; --slate: #d9d4c7;
+  --gold: #B9781A; --gold-2: #D9951F; --teal: #0F8F7E; --coral: #C73E3E;
+  color: var(--text);
+}
+:root[data-theme="light"] .page-hero h1, :root[data-theme="light"] .v-hero h1 { color: var(--text); }
+:root[data-theme="light"] .page-hero .lead, :root[data-theme="light"] .v-hero .lede { color: var(--muted); }
+:root[data-theme="light"] .page-hero h1 .accent, :root[data-theme="light"] .v-hero h1 em { color: var(--gold); }
+:root[data-theme="light"] .breadcrumb, :root[data-theme="light"] .breadcrumb a { color: #5B6478; }
+:root[data-theme="light"] .breadcrumb a:hover { color: var(--gold); }
+:root[data-theme="light"] .v-hero .v-mood,
+:root[data-theme="light"] .v-hero .v-search {
+  --bg: #080c17; --bg-2: #0c1221; --surface: #101829; --surface-2: #152036; --line: #19243c; --line-2: #22304d;
+  --text: #e9ecf3; --text-2: #c9cfdc; --muted: #949eb3; --faint: #66718a; --gold: #f2b33d; --gold-2: #ffd27a; --teal: #2fd4b5; --coral: #f2766b;
+}
+:root[data-theme="light"] { --faint: #6B7385; }

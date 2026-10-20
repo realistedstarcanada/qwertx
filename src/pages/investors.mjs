@@ -80,13 +80,13 @@ export function investorPage(d, inv) {
         <p class="lead maxw-640">Latest holdings of ${esc(inv.firm)} as of ${quarter(p.period)}: ${p.holdingsCount} positions worth ${money(p.totalValue)}, decoded into plain English.</p>
         <div class="row center mt-32" style="gap:16px">
           <span class="avatar avatar-lg" aria-hidden="true">${esc(inv.avatar)}</span>
-          <div><div class="tags" style="margin-bottom:10px">${(inv.tags || []).map((t) => `<span class="tag tag-gold">${esc(t)}</span>`).join('')}</div><div class="mono" style="font-size:13px;color:#8A93A8">${esc(inv.meta || inv.firm)}</div></div>
+          <div><div class="tags" style="margin-bottom:10px">${(inv.tags || []).map((t) => `<span class="tag tag-gold">${esc(t)}</span>`).join('')}</div><div class="mono" style="font-size:13px;color:var(--muted)">${esc(inv.meta || inv.firm)}</div></div>
         </div>
         <div class="row mt-32" style="gap:10px">${sourceChip(`SEC 13F${tip('13F')} · period ${quarter(p.period)} · filed ${date(p.filingDate)} · <a href="${esc(p.filingUrl)}" target="_blank" rel="noopener">View filing</a>`)}<span class="time-badge"><i class="fa-regular fa-clock" aria-hidden="true"></i>5-min briefing</span></div>
       </div>
       <div class="col-5">
-        <div class="card" style="background:rgba(17,23,39,.85);border-color:#2A3550">
-          <div class="card-label"><span style="color:#8A93A8">Top 5 holdings</span><span style="color:#8A93A8">${quarter(p.period)}</span></div>
+        <div class="card">
+          <div class="card-label"><span>Top 5 holdings</span><span>${quarter(p.period)}</span></div>
           <ul class="rank-list hero-rank">${top5.map((h, i) => `<li><span class="r">${i + 1}</span><span class="t">${tkr(h.label, h.stockSlug)}<small>${esc(h.name)}</small></span><span class="v">${wbar(h.w, maxW, 35)}${pct(h.w)}</span></li>`).join('')}</ul>
         </div>
       </div>
