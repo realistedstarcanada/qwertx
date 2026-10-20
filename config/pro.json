@@ -3,7 +3,7 @@
   "mode": "test",
   "plans": {
     "monthly": { "product": "prod_VTfVgVp2U9qR5k", "label": "Monthly", "price": "US$12 / month" },
-    "yearly": { "product": "prod_VTfWfjclNvpbjI", "label": "Yearly", "price": "US$98 / year" }
+    "yearly": { "product": "prod_VTfWfjcINvpbjI", "label": "Yearly", "price": "US$98 / year" }
   },
   "promoCode": "AFTERHOURS"
 }
