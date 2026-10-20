@@ -171,7 +171,13 @@ async function main() {
     const prev = known.get(f.url) && readJSON(file);
     if (prev && prev.transactions?.length && !FORCE && !ONLY) { parsed.push({ meta: { ...prev, transactions: undefined }, rows: prev.transactions, file }); continue; }
     let texts;
-    try { texts = pdfTexts(f.url, path.join(tmp, 'f.pdf')); } catch (e) { log('download failed', f.name, String(e.stderr || e.message).slice(0, 300)); continue; }
+    try { texts = pdfTexts(f.url, path.join(tmp, 'f.pdf')); } catch (e) {
+      log('download failed', f.name, String(e.stderr || e.message).slice(0, 300));
+      // OGE's site is sometimes unreachable: keep the last good reading of this report rather than dropping it.
+      const keep = readJSON(file);
+      if (keep?.transactions?.length) { parsed.push({ meta: { ...keep, transactions: undefined }, rows: keep.transactions, file }); log('  kept previous reading of', f.name); }
+      continue;
+    }
     if (!texts.length) continue;
     const all = texts.map((t) => t[1]).join('\n');
     const received = (/OGE\s*Received:?\s*([\d]{1,2}\/[\d]{1,2}\/20\d\d)/i.exec(all) || [])[1];
