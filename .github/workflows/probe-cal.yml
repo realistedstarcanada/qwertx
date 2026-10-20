@@ -1,0 +1,20 @@
+name: Probe calendar (temporary)
+on:
+  push:
+    branches: [probe-cal]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p data/_debug
+          for p in monthly yearly; do curl -sS "https://qwertx.pages.dev/api/checkout?plan=$p&format=json" | sed -E 's#(cs_test_[A-Za-z0-9]{6})[A-Za-z0-9]+#\1…#' >> data/_debug/checkout.txt; echo >> data/_debug/checkout.txt; done
+          curl -sS -o /dev/null -w "test page %{http_code}\n" https://qwertx.pages.dev/pro/checkout-test.html >> data/_debug/checkout.txt
+          cat data/_debug/checkout.txt
+      - run: |
+          git config user.name qwertx-bot && git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f data/_debug && git commit -m "probe output" && git push -f origin HEAD:probe-cal
