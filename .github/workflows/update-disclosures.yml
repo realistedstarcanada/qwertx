@@ -12,6 +12,9 @@ on:
       max:
         description: 'Max new filings per chamber this run'
         default: '400'
+      trump_only:
+        description: 'Re-read only these Trump reports (comma-separated parts of file names)'
+        default: ''
       reprocess:
         description: 'Re-read every House and President filing with the current parsers'
         type: boolean
@@ -42,7 +45,7 @@ jobs:
       - name: Insider trades (SEC Form 4 quarterly data)
         run: node scripts/fetch-insiders.mjs
       - name: President Trump (OGE periodic transaction and annual reports)
-        run: node scripts/fetch-trump.mjs ${{ inputs.reprocess && '--force' || '' }}
+        run: node scripts/fetch-trump.mjs ${{ inputs.reprocess && '--force' || '' }} ${{ inputs.trump_only && format('--only "{0}"', inputs.trump_only) || '' }}
         continue-on-error: true
       - name: Featured members of Congress (full holdings and trades)
         run: node scripts/fetch-featured.mjs ${{ inputs.reprocess && '--force' || '' }}

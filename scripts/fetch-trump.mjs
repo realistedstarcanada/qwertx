@@ -18,7 +18,7 @@ const B = 'https://extapps2.oge.gov/201/Presiden.nsf';
 const UA = { 'User-Agent': 'Mozilla/5.0 (compatible; QWERTx research; admin@qwertx.com)' };
 const FORCE = process.argv.includes('--force');
 const DEBUG = process.argv.includes('--debug');
-const ONLY = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1] : null;
+const ONLY = process.argv.includes('--only') ? process.argv[process.argv.indexOf('--only') + 1].split(',').map((x) => x.trim()).filter(Boolean) : null;
 const cfg = readJSON(path.join(ROOT, 'config/trump.json'), {});
 const dbg = [];
 const log = (...a) => { console.log(...a); dbg.push(a.join(' ')); };
@@ -118,7 +118,7 @@ function pdfTexts(url, file) {
   const rowsOf = (t) => (t ? parse278T(t, { year: 2026 }).length : 0);
   const ocrRows = rowsOf(texts.find((t) => t[0] === 'ocr')?.[1]);
   if (ocrRows && rowsOf(texts.find((t) => t[0] === 'layer')?.[1]) < ocrRows * 0.8) {
-    try { texts.push(['ocr2', execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), file], { env: { ...process.env, OCR_DPI: '400', OCR_PSM: '4' }, maxBuffer: 512 * 1024 * 1024 }).toString('utf8')]); } catch (e) { log('  second OCR failed', String(e.stderr || e.message).slice(0, 200)); }
+    try { texts.push(['ocr2', execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), file], { env: { ...process.env, OCR_DPI: '400', OCR_PSM: '6' }, maxBuffer: 512 * 1024 * 1024 }).toString('utf8')]); } catch (e) { log('  second OCR failed', String(e.stderr || e.message).slice(0, 200)); }
   }
   return texts;
 }
@@ -167,7 +167,7 @@ async function main() {
   for (const f of filings) {
     const id = (f.signed || 'x') + '-' + f.name.replace(/\.pdf$/i, '').replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '').toLowerCase().slice(-40);
     const file = path.join(OUT, id + '.json');
-    if (ONLY && !f.name.includes(ONLY)) { const keep = readJSON(file); if (keep) parsed.push({ meta: { ...keep, transactions: undefined }, rows: keep.transactions, file }); continue; }
+    if (ONLY && !ONLY.some((o) => f.name.includes(o))) { const keep = readJSON(file); if (keep) parsed.push({ meta: { ...keep, transactions: undefined }, rows: keep.transactions, file }); continue; }
     const prev = known.get(f.url) && readJSON(file);
     if (prev && prev.transactions?.length && !FORCE && !ONLY) { parsed.push({ meta: { ...prev, transactions: undefined }, rows: prev.transactions, file }); continue; }
     let texts;
@@ -210,7 +210,7 @@ async function main() {
       const third = new Map();
       for (const pg of pages) {
         try {
-          const t = execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), path.join(tmp, 'f.pdf')], { env: { ...process.env, OCR_FIRST: String(pg), OCR_LAST: String(pg), OCR_DPI: '400', OCR_PSM: '4' }, maxBuffer: 64 << 20 }).toString('utf8');
+          const t = execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), path.join(tmp, 'f.pdf')], { env: { ...process.env, OCR_FIRST: String(pg), OCR_LAST: String(pg), OCR_DPI: '500', OCR_PSM: '6' }, maxBuffer: 64 << 20 }).toString('utf8');
           for (const x of parse278T(t, { year, minDate, maxDate: end })) if (x.no) third.set(x.no, x);
         } catch (e) { log('  third reading failed on page', pg, String(e.message).slice(0, 120)); }
       }
