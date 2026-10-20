@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T17:30:12.107Z",
+  "updatedAt": "2026-10-20T18:25:38.951Z",
   "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
   "annual": {
     "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
@@ -8,16 +8,148 @@
   },
   "filings": [
     {
+      "id": "2025-12-18-donald-j-trump-12-18-2025-278-t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87BFE542A2751E0285258D6600346FCD/$FILE/Donald%20J.%20Trump%2012.18.2025%20278-T.pdf",
+      "name": "Donald J. Trump 12.18.2025 278-T.pdf",
+      "signed": "2025-12-18",
+      "received": "2025-12-19",
+      "printedRows": 107,
+      "text": "ocr",
+      "check": {
+        "agreed": 28,
+        "resolved": 1,
+        "unresolved": 68,
+        "single": 63
+      },
+      "rows": 101,
+      "from": "2025-10-20",
+      "to": "2025-11-13",
+      "mapped": 0,
+      "stocks": 6,
+      "untyped": 27
+    },
+    {
+      "id": "2026-01-14-donald-j-trump-1-14-2026-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/268353939B7DACB585258D81003471B1/$FILE/Donald-J-Trump%201.14.2026-278T.pdf",
+      "name": "Donald-J-Trump 1.14.2026-278T.pdf",
+      "signed": "2026-01-14",
+      "received": "2026-01-14",
+      "printedRows": 190,
+      "text": "layer",
+      "check": {
+        "agreed": 18,
+        "resolved": 2,
+        "unresolved": 123,
+        "single": 127
+      },
+      "rows": 146,
+      "from": "2025-12-01",
+      "to": "2025-12-12",
+      "mapped": 0,
+      "stocks": 27,
+      "untyped": 0
+    },
+    {
+      "id": "2026-02-26-donald-j-trump-2-26-2026-278-t-1",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/174165F6E1E120B185258DB000347F54/$FILE/Donald%20J.%20Trump%202.26.2026%20278-T%20(1).pdf",
+      "name": "Donald J. Trump 2.26.2026 278-T (1).pdf",
+      "signed": "2026-02-26",
+      "received": "2026-02-27",
+      "printedRows": 410,
+      "text": "ocr",
+      "check": {
+        "agreed": 59,
+        "resolved": 0,
+        "unresolved": 76,
+        "single": 77
+      },
+      "rows": 162,
+      "from": "2025-10-15",
+      "to": "2025-11-13",
+      "mapped": 14,
+      "stocks": 13,
+      "untyped": 35
+    },
+    {
+      "id": "2026-02-26-donald-j-trump-2-26-2026-278-t-2",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/BCF60D94B8F1E59285258DB000347F61/$FILE/Donald%20J.%20Trump%202.26.2026%20278-T%20(2).pdf",
+      "name": "Donald J. Trump 2.26.2026 278-T (2).pdf",
+      "signed": "2026-02-26",
+      "received": "2026-02-27",
+      "printedRows": 80,
+      "text": "ocr",
+      "check": {
+        "agreed": 15,
+        "resolved": 11,
+        "unresolved": 24,
+        "single": 39
+      },
+      "rows": 58,
+      "from": "2026-01-02",
+      "to": "2026-01-21",
+      "mapped": 2,
+      "stocks": 4,
+      "untyped": 6
+    },
+    {
+      "id": "2026-04-20-donald-j-trump-4-20-2026-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/CD75555856A7D2E485258DE4002DD4A0/$FILE/Donald-J-Trump-4.20.2026-278T.pdf",
+      "name": "Donald-J-Trump-4.20.2026-278T.pdf",
+      "signed": "2026-04-20",
+      "received": "2026-04-23",
+      "printedRows": 475,
+      "text": "ocr",
+      "check": {
+        "agreed": 76,
+        "resolved": 56,
+        "unresolved": 35,
+        "single": 45
+      },
+      "rows": 170,
+      "from": "2026-03-01",
+      "to": "2026-03-31",
+      "mapped": 5,
+      "stocks": 6,
+      "untyped": 0
+    },
+    {
+      "id": "2026-05-08-trump-donald-j-05-08-2026-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/5326D3AF5BE7C25385258DF7002DD1B7/$FILE/Trump%2C%20Donald%20J.-05.08.2026-278T.pdf",
+      "name": "Trump, Donald J.-05.08.2026-278T.pdf",
+      "signed": "2026-05-08",
+      "received": "2026-05-12",
+      "printedRows": 69,
+      "text": "ocr",
+      "check": {
+        "agreed": 2,
+        "resolved": 0,
+        "unresolved": 45,
+        "single": 55
+      },
+      "rows": 58,
+      "from": "2026-02-23",
+      "to": "2026-02-24",
+      "mapped": 3,
+      "stocks": 3,
+      "untyped": 0
+    },
+    {
       "id": "2026-05-08-trump-donald-j-05-08-2026-278t-2",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/405E4EC4E27BE8D185258DF7002DD1C0/$FILE/Trump,%20Donald%20J.-05.08.2026-278T(2).pdf",
       "name": "Trump, Donald J.-05.08.2026-278T(2).pdf",
       "signed": "2026-05-08",
       "received": "2026-05-12",
-      "printedRows": 9604,
+      "printedRows": 3914,
       "text": "ocr",
+      "check": {
+        "agreed": 2535,
+        "resolved": 394,
+        "unresolved": 198,
+        "single": 799
+      },
       "rows": 3621,
       "from": "2026-01-01",
-      "to": "2026-04-30",
+      "to": "2026-04-08",
       "mapped": 3225,
       "stocks": 3534,
       "untyped": 2
@@ -30,6 +162,12 @@
       "received": "2026-06-29",
       "printedRows": 1375,
       "text": "ocr",
+      "check": {
+        "agreed": 1277,
+        "resolved": 21,
+        "unresolved": 29,
+        "single": 70
+      },
       "rows": 1372,
       "from": "2026-04-01",
       "to": "2026-04-30",
@@ -45,6 +183,12 @@
       "received": "2026-06-29",
       "printedRows": 1150,
       "text": "ocr",
+      "check": {
+        "agreed": 1088,
+        "resolved": 13,
+        "unresolved": 13,
+        "single": 49
+      },
       "rows": 1147,
       "from": "2026-05-05",
       "to": "2026-05-29",
@@ -60,6 +204,12 @@
       "received": "2026-08-13",
       "printedRows": 1051,
       "text": "ocr",
+      "check": {
+        "agreed": 0,
+        "resolved": 101,
+        "unresolved": 243,
+        "single": 1030
+      },
       "rows": 1030,
       "from": "2026-06-01",
       "to": "2026-06-29",
@@ -75,6 +225,12 @@
       "received": null,
       "printedRows": 1156,
       "text": "ocr",
+      "check": {
+        "agreed": 1086,
+        "resolved": 4,
+        "unresolved": 21,
+        "single": 53
+      },
       "rows": 1154,
       "from": "2026-07-06",
       "to": "2026-07-23",
@@ -90,6 +246,12 @@
       "received": "2026-09-25",
       "printedRows": 517,
       "text": "ocr",
+      "check": {
+        "agreed": 492,
+        "resolved": 1,
+        "unresolved": 12,
+        "single": 20
+      },
       "rows": 517,
       "from": "2026-08-03",
       "to": "2026-08-31",

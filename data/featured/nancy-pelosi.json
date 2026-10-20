@@ -1,6 +1,58 @@
 {
   "slug": "nancy-pelosi",
-  "updatedAt": "2026-10-20T17:30:12.447Z",
+  "checks": [
+    {
+      "year": "2025",
+      "annual": 19,
+      "ptr": 19,
+      "matched": 19,
+      "onlyAnnual": [],
+      "onlyPtr": []
+    }
+  ],
+  "completeness": [
+    {
+      "id": "10075701",
+      "codes": 87,
+      "parsed": 87
+    },
+    {
+      "id": "20026590",
+      "codes": 9,
+      "parsed": 9
+    },
+    {
+      "id": "20030630",
+      "codes": 2,
+      "parsed": 2
+    },
+    {
+      "id": "20033337",
+      "codes": 1,
+      "parsed": 1
+    },
+    {
+      "id": "20033725",
+      "codes": 18,
+      "parsed": 18
+    },
+    {
+      "id": "20034836",
+      "codes": 2,
+      "parsed": 2
+    },
+    {
+      "id": "20035143",
+      "codes": 7,
+      "parsed": 7
+    },
+    {
+      "id": "20035553",
+      "codes": 1,
+      "parsed": 1
+    }
+  ],
+  "updatedAt": "2026-10-20T18:25:44.048Z",
   "annualDoc": "10075701",
   "docs": {
     "10075701": {
@@ -8,6 +60,7 @@
       "filed": "2026-05-15",
       "year": "2025",
       "url": "https://disclosures-clerk.house.gov/public_disc/financial-pdfs/2025/10075701.pdf",
+      "codes": 87,
       "holdings": [
         {
           "name": "11 Zinfandel Lane - Home & Vineyard",
@@ -1111,6 +1164,7 @@
       "kind": "ptr",
       "filed": "2025-01-17",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20026590.pdf",
+      "codes": 9,
       "transactions": [
         {
           "name": "Alphabet Inc. - Class A Common Stock (GOOGL)",
@@ -1269,6 +1323,7 @@
       "kind": "ptr",
       "filed": "2025-07-09",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20030630.pdf",
+      "codes": 2,
       "transactions": [
         {
           "name": "Broadcom Inc. - Common Stock (AVGO)",
@@ -1304,6 +1359,7 @@
       "kind": "ptr",
       "filed": "2025-10-24",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2025/20033337.pdf",
+      "codes": 1,
       "transactions": [
         {
           "name": "Apple Inc. - Common Stock (AAPL)",
@@ -1325,6 +1381,7 @@
       "kind": "ptr",
       "filed": "2026-01-23",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20033725.pdf",
+      "codes": 18,
       "transactions": [
         {
           "name": "AllianceBernstein Holding L.P. Units (AB)",
@@ -1543,6 +1600,35 @@
           "option": null
         },
         {
+          "name": "Tempus AI, Inc. - Class A Common Stock (TEM)",
+          "ticker": "TEM",
+          "code": "ST",
+          "owner": "SP",
+          "type": "buy",
+          "partial": false,
+          "date": "2026-01-16",
+          "lo": 50001,
+          "hi": 100000,
+          "label": "$50,001 – $100,000",
+          "desc": "Exercised 50 call options purchased 1/14/25 (5,000 shares) at a strike price of $20 with an expiration date of 1/16/26.",
+          "option": null
+        },
+        {
+          "name": "Versant Media Group, Inc. - Class A Common Stock (VSNT)",
+          "ticker": "VSNT",
+          "code": "ST",
+          "owner": "SP",
+          "type": "exchange",
+          "partial": false,
+          "date": "2026-01-02",
+          "lo": 15,
+          "hi": 15,
+          "label": "$15",
+          "exact": true,
+          "desc": "776 shares and cash in lieu received as a result of spinoff from Comcast Corporation. No shares of Comcast were surrendered as a result of the spinoff.",
+          "option": null
+        },
+        {
           "name": "Vistra Corp. Common Stock (VST)",
           "ticker": "VST",
           "code": "ST",
@@ -1576,6 +1662,7 @@
       "kind": "ptr",
       "filed": "2026-06-23",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20034836.pdf",
+      "codes": 2,
       "transactions": [
         {
           "name": "Intel Corporation - Common Stock (INTC)",
@@ -1621,6 +1708,7 @@
       "kind": "ptr",
       "filed": "2026-08-21",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035143.pdf",
+      "codes": 7,
       "transactions": [
         {
           "name": "Bloom Energy Corporation Class A Common Stock (BE)",
@@ -1741,6 +1829,7 @@
       "kind": "ptr",
       "filed": "2026-10-02",
       "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035553.pdf",
+      "codes": 1,
       "transactions": [
         {
           "name": "REOF XXX, LLC",
