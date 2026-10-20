@@ -38,7 +38,7 @@ export function earnCard(r) {
   <span class="tk">${esc(r.ticker)}</span>
   <span class="nm">${esc(r.stockName || r.name.replace(/,? (Inc|Corporation|Corp|Ltd|plc|N\.V\.|S\.A\.|Company)\.?\s*$/i, ''))}</span>
   <span class="when">${whenIcon(r.time)}</span>
-  ${r.eps != null ? `<span class="eps">EPS <b>${money(r.eps)}</b>${r.epsForecast != null ? ` vs ${money(r.epsForecast)} est.` : ''}</span>` : r.epsForecast != null ? `<span class="eps">EPS est. <b>${money(r.epsForecast)}</b>${r.lastYearEps != null ? ` · last year ${money(r.lastYearEps)}` : ''}</span>` : ''}
+  ${r.eps != null ? `<span class="eps">EPS <b>${money(r.eps)}</b>${r.epsForecast != null ? ` vs ${money(r.epsForecast)} est.` : ''}</span>${r.epsForecast != null ? `<span class="cal-verdict ${r.eps >= r.epsForecast ? 'v-good' : 'v-bad'}" style="align-self:flex-start;margin-top:4px">${r.eps > r.epsForecast ? 'Beat estimate' : r.eps === r.epsForecast ? 'Met estimate' : 'Missed estimate'}</span>` : ''}` : r.epsForecast != null ? `<span class="eps">EPS est. <b>${money(r.epsForecast)}</b>${r.lastYearEps != null ? ` · last year ${money(r.lastYearEps)}` : ''}</span>` : ''}
   ${r.owners ? `<span class="own"><i class="fa-solid fa-user-tie" aria-hidden="true"></i> ${r.owners} fund manager${r.owners > 1 ? 's' : ''} own it</span>` : ''}
 </${tag}>`;
 }
