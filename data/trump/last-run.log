@@ -5,40 +5,40 @@ PDF links: 14
 SEC tickers 10443
   checks: 28 rows agree in two readings, 1 settled by a third reading (4 pages), 68 unresolved, 63 read once
 Donald J. Trump 12.18.2025 278-T.pdf: ocr 101 rows/62 clean, layer 94 rows/67 clean; printed 107; using ocr
-  checks: 18 rows agree in two readings, 2 settled by a third reading (5 pages), 123 unresolved, 127 read once
-Donald-J-Trump 1.14.2026-278T.pdf: layer 146 rows/7 clean, ocr 25 rows/1 clean; printed 191; using layer
-  checks: 59 rows agree in two readings, 0 settled by a third reading (6 pages), 76 unresolved, 77 read once
-Donald J. Trump 2.26.2026 278-T (1).pdf: ocr 162 rows/2 clean, layer 148 rows/13 clean; printed 474; using ocr
-  checks: 15 rows agree in two readings, 11 settled by a third reading (3 pages), 24 unresolved, 39 read once
-Donald J. Trump 2.26.2026 278-T (2).pdf: ocr 58 rows/6 clean, layer 49 rows/4 clean; printed 81; using ocr
+  checks: 142 rows agree in two readings, 37 settled by a third reading (6 pages), 10 unresolved, 32 read once
+Donald-J-Trump 1.14.2026-278T.pdf: ocr 191 rows/164 clean, layer 182 rows/63 clean; printed 477; using ocr
+  checks: 64 rows agree in two readings, 7 settled by a third reading (6 pages), 68 unresolved, 74 read once
+Donald J. Trump 2.26.2026 278-T (1).pdf: ocr 166 rows/20 clean, layer 148 rows/13 clean; printed 474; using ocr
+  checks: 27 rows agree in two readings, 19 settled by a third reading (3 pages), 24 unresolved, 43 read once
+Donald J. Trump 2.26.2026 278-T (2).pdf: ocr 78 rows/46 clean, layer 71 rows/40 clean; printed 81; using ocr
   checks: 76 rows agree in two readings, 56 settled by a third reading (6 pages), 35 unresolved, 45 read once
-Donald-J-Trump-4.20.2026-278T.pdf: ocr 170 rows/134 clean, layer 158 rows/63 clean; printed 475; using ocr
-  checks: 2 rows agree in two readings, 0 settled by a third reading (2 pages), 45 unresolved, 55 read once
-Trump, Donald J.-05.08.2026-278T.pdf: ocr 58 rows/2 clean, layer 36 rows/3 clean; printed 69; using ocr
-  checks: 2535 rows agree in two readings, 394 settled by a third reading (76 pages), 198 unresolved, 799 read once
-Trump, Donald J.-05.08.2026-278T(2).pdf: ocr 3621 rows/3003 clean, layer 3548 rows/3289 clean; printed 9604; using ocr
-  checks: 1277 rows agree in two readings, 21 settled by a third reading (23 pages), 29 unresolved, 70 read once
-Donald-J-Trump-06.25.2026-278T.pdf: ocr 1372 rows/1307 clean, layer 1356 rows/1274 clean; printed 1375; using ocr
-  checks: 1088 rows agree in two readings, 13 settled by a third reading (10 pages), 13 unresolved, 49 read once
-Donald-J-Trump-06.25.2026-278T (2).pdf: ocr 1147 rows/1139 clean, layer 1135 rows/1123 clean; printed 1150; using ocr
-  checks: 0 rows agree in two readings, 101 settled by a third reading (19 pages), 243 unresolved, 1030 read once
-Donald-J-Trump-08.12.2026-278T.pdf: ocr 1030 rows/1029 clean, layer 0 rows/0 clean; printed 1051; using ocr
-  checks: 1086 rows agree in two readings, 4 settled by a third reading (13 pages), 21 unresolved, 53 read once
-Donald-J-Trump-09.8.2026-278T.pdf: ocr 1154 rows/163 clean, layer 1118 rows/187 clean; printed 1156; using ocr
+Donald-J-Trump-4.20.2026-278T.pdf: ocr 170 rows/136 clean, layer 158 rows/63 clean; printed 475; using ocr
+  checks: 30 rows agree in two readings, 0 settled by a third reading (2 pages), 32 unresolved, 38 read once
+Trump, Donald J.-05.08.2026-278T.pdf: ocr 68 rows/66 clean, layer 39 rows/5 clean, ocr2 35 rows/35 clean; printed 69; using ocr
+  checks: 2535 rows agree in two readings, 394 settled by a third reading (76 pages), 198 unresolved, 798 read once
+Trump, Donald J.-05.08.2026-278T(2).pdf: ocr 3621 rows/3006 clean, layer 3548 rows/3290 clean; printed 9604; using ocr
+download failed Donald-J-Trump-06.25.2026-278T.pdf curl: (28) Failed to connect to extapps2.oge.gov port 443 after 135902 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132440 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132439 ms: Couldn't connect to s
+download failed Donald-J-Trump-06.25.2026-278T (2).pdf curl: (28) Failed to connect to extapps2.oge.gov port 443 after 135156 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132439 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132440 ms: Couldn't connect to s
+download failed Donald-J-Trump-08.12.2026-278T.pdf curl: (28) Failed to connect to extapps2.oge.gov port 443 after 135155 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132440 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132453 ms: Couldn't connect to s
+download failed Donald-J-Trump-09.8.2026-278T.pdf curl: (28) Failed to connect to extapps2.oge.gov port 443 after 135155 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132439 ms: Couldn't connect to server
+curl: (28) Failed to connect to extapps2.oge.gov port 443 after 132440 ms: Couldn't connect to s
   checks: 492 rows agree in two readings, 1 settled by a third reading (3 pages), 12 unresolved, 20 read once
 Donald-J-Trump.09.17.2026-278T.pdf: ocr 517 rows/517 clean, layer 512 rows/416 clean; printed 517; using ocr
   Donald-J-Trump-4.20.2026-278T.pdf: 2 out-of-range dates set to neighbours
   Trump, Donald J.-05.08.2026-278T(2).pdf: 53 out-of-range dates set to neighbours
-Donald J. Trump 12.18.2025 278-T.pdf: 101 rows, 0/6 stocks mapped, 27 untyped, 2025-10-20..2025-11-13
-Donald-J-Trump 1.14.2026-278T.pdf: 146 rows, 0/27 stocks mapped, 0 untyped, 2025-12-01..2025-12-12
-Donald J. Trump 2.26.2026 278-T (1).pdf: 162 rows, 14/13 stocks mapped, 35 untyped, 2025-10-15..2025-11-13
-Donald J. Trump 2.26.2026 278-T (2).pdf: 58 rows, 2/4 stocks mapped, 6 untyped, 2026-01-02..2026-01-21
+Donald J. Trump 12.18.2025 278-T.pdf: 101 rows, 0/6 stocks mapped, 28 untyped, 2025-10-20..2025-11-13
+Donald-J-Trump 1.14.2026-278T.pdf: 191 rows, 0/6 stocks mapped, 4 untyped, 2025-11-14..2026-01-02
+Donald J. Trump 2.26.2026 278-T (1).pdf: 166 rows, 14/13 stocks mapped, 30 untyped, 2025-09-09..2025-11-17
+Donald J. Trump 2.26.2026 278-T (2).pdf: 78 rows, 3/4 stocks mapped, 7 untyped, 2026-01-02..2026-02-01
 Donald-J-Trump-4.20.2026-278T.pdf: 170 rows, 5/6 stocks mapped, 0 untyped, 2026-03-01..2026-03-31
-Trump, Donald J.-05.08.2026-278T.pdf: 58 rows, 3/3 stocks mapped, 0 untyped, 2026-02-23..2026-02-24
-Trump, Donald J.-05.08.2026-278T(2).pdf: 3621 rows, 3225/3534 stocks mapped, 2 untyped, 2026-01-01..2026-04-08
-Donald-J-Trump-06.25.2026-278T.pdf: 1372 rows, 1234/1323 stocks mapped, 0 untyped, 2026-04-01..2026-04-30
-Donald-J-Trump-06.25.2026-278T (2).pdf: 1147 rows, 1018/1079 stocks mapped, 0 untyped, 2026-05-05..2026-05-29
-Donald-J-Trump-08.12.2026-278T.pdf: 1030 rows, 869/915 stocks mapped, 0 untyped, 2026-06-01..2026-06-29
-Donald-J-Trump-09.8.2026-278T.pdf: 1154 rows, 1024/1094 stocks mapped, 0 untyped, 2026-07-06..2026-07-23
+Trump, Donald J.-05.08.2026-278T.pdf: 68 rows, 3/3 stocks mapped, 0 untyped, 2026-01-22..2026-02-24
+Trump, Donald J.-05.08.2026-278T(2).pdf: 3621 rows, 3213/3534 stocks mapped, 2 untyped, 2026-01-01..2026-04-08
 Donald-J-Trump.09.17.2026-278T.pdf: 517 rows, 435/445 stocks mapped, 0 untyped, 2026-08-03..2026-08-31
 annual report: 6181 investment lines, 2614 holdings, 1409 with tickers

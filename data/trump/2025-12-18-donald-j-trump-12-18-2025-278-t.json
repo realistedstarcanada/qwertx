@@ -17,7 +17,7 @@
   "to": "2025-11-13",
   "mapped": 0,
   "stocks": 6,
-  "untyped": 27,
+  "untyped": 28,
   "transactions": [
     {
       "no": 2,
@@ -254,6 +254,7 @@
       "desc": "OUN CORP DUE",
       "type": "P",
       "date": "2025-11-06",
+      "late": false,
       "lo": 100001,
       "hi": 250000,
       "unverified": true,
@@ -458,10 +459,11 @@
     },
     {
       "page": 3,
-      "desc": "BAKER HUGHES LLC/CO-OBL 03.337% 121527 DTD121117 purchase §=—",
-      "type": "P",
+      "desc": "BAKER HUGHES LLC/CO-OBL 03.337% 121527 DTD121117",
+      "type": "",
       "date": "2025-11-03",
       "approx": true,
+      "late": false,
       "lo": 100001,
       "hi": 250000,
       "unverified": true,

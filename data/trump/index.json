@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-20T18:25:38.951Z",
+  "updatedAt": "2026-10-20T20:07:36.014Z",
   "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
   "annual": {
     "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
@@ -26,7 +26,7 @@
       "to": "2025-11-13",
       "mapped": 0,
       "stocks": 6,
-      "untyped": 27
+      "untyped": 28
     },
     {
       "id": "2026-01-14-donald-j-trump-1-14-2026-278t",
@@ -34,20 +34,20 @@
       "name": "Donald-J-Trump 1.14.2026-278T.pdf",
       "signed": "2026-01-14",
       "received": "2026-01-14",
-      "printedRows": 190,
-      "text": "layer",
+      "printedRows": 191,
+      "text": "ocr",
       "check": {
-        "agreed": 18,
-        "resolved": 2,
-        "unresolved": 123,
-        "single": 127
+        "agreed": 142,
+        "resolved": 37,
+        "unresolved": 10,
+        "single": 32
       },
-      "rows": 146,
-      "from": "2025-12-01",
-      "to": "2025-12-12",
+      "rows": 191,
+      "from": "2025-11-14",
+      "to": "2026-01-02",
       "mapped": 0,
-      "stocks": 27,
-      "untyped": 0
+      "stocks": 6,
+      "untyped": 4
     },
     {
       "id": "2026-02-26-donald-j-trump-2-26-2026-278-t-1",
@@ -55,20 +55,20 @@
       "name": "Donald J. Trump 2.26.2026 278-T (1).pdf",
       "signed": "2026-02-26",
       "received": "2026-02-27",
-      "printedRows": 410,
+      "printedRows": 174,
       "text": "ocr",
       "check": {
-        "agreed": 59,
-        "resolved": 0,
-        "unresolved": 76,
-        "single": 77
+        "agreed": 64,
+        "resolved": 7,
+        "unresolved": 68,
+        "single": 74
       },
-      "rows": 162,
-      "from": "2025-10-15",
-      "to": "2025-11-13",
+      "rows": 166,
+      "from": "2025-09-09",
+      "to": "2025-11-17",
       "mapped": 14,
       "stocks": 13,
-      "untyped": 35
+      "untyped": 30
     },
     {
       "id": "2026-02-26-donald-j-trump-2-26-2026-278-t-2",
@@ -76,20 +76,20 @@
       "name": "Donald J. Trump 2.26.2026 278-T (2).pdf",
       "signed": "2026-02-26",
       "received": "2026-02-27",
-      "printedRows": 80,
+      "printedRows": 78,
       "text": "ocr",
       "check": {
-        "agreed": 15,
-        "resolved": 11,
+        "agreed": 27,
+        "resolved": 19,
         "unresolved": 24,
-        "single": 39
+        "single": 43
       },
-      "rows": 58,
+      "rows": 78,
       "from": "2026-01-02",
-      "to": "2026-01-21",
-      "mapped": 2,
+      "to": "2026-02-01",
+      "mapped": 3,
       "stocks": 4,
-      "untyped": 6
+      "untyped": 7
     },
     {
       "id": "2026-04-20-donald-j-trump-4-20-2026-278t",
@@ -97,7 +97,7 @@
       "name": "Donald-J-Trump-4.20.2026-278T.pdf",
       "signed": "2026-04-20",
       "received": "2026-04-23",
-      "printedRows": 475,
+      "printedRows": 174,
       "text": "ocr",
       "check": {
         "agreed": 76,
@@ -121,13 +121,13 @@
       "printedRows": 69,
       "text": "ocr",
       "check": {
-        "agreed": 2,
+        "agreed": 30,
         "resolved": 0,
-        "unresolved": 45,
-        "single": 55
+        "unresolved": 32,
+        "single": 38
       },
-      "rows": 58,
-      "from": "2026-02-23",
+      "rows": 68,
+      "from": "2026-01-22",
       "to": "2026-02-24",
       "mapped": 3,
       "stocks": 3,
@@ -139,104 +139,20 @@
       "name": "Trump, Donald J.-05.08.2026-278T(2).pdf",
       "signed": "2026-05-08",
       "received": "2026-05-12",
-      "printedRows": 3914,
+      "printedRows": 3642,
       "text": "ocr",
       "check": {
         "agreed": 2535,
         "resolved": 394,
         "unresolved": 198,
-        "single": 799
+        "single": 798
       },
       "rows": 3621,
       "from": "2026-01-01",
       "to": "2026-04-08",
-      "mapped": 3225,
+      "mapped": 3213,
       "stocks": 3534,
       "untyped": 2
-    },
-    {
-      "id": "2026-06-25-donald-j-trump-06-25-2026-278t",
-      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AC43530823BD60D485258E27002DDEF7/$FILE/Donald-J-Trump-06.25.2026-278T.pdf",
-      "name": "Donald-J-Trump-06.25.2026-278T.pdf",
-      "signed": "2026-06-25",
-      "received": "2026-06-29",
-      "printedRows": 1375,
-      "text": "ocr",
-      "check": {
-        "agreed": 1277,
-        "resolved": 21,
-        "unresolved": 29,
-        "single": 70
-      },
-      "rows": 1372,
-      "from": "2026-04-01",
-      "to": "2026-04-30",
-      "mapped": 1234,
-      "stocks": 1323,
-      "untyped": 0
-    },
-    {
-      "id": "2026-06-25-donald-j-trump-06-25-2026-278t-2",
-      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/F9CA13B970439E8F85258E27002DDF15/$FILE/Donald-J-Trump-06.25.2026-278T%20(2).pdf",
-      "name": "Donald-J-Trump-06.25.2026-278T (2).pdf",
-      "signed": "2026-06-25",
-      "received": "2026-06-29",
-      "printedRows": 1150,
-      "text": "ocr",
-      "check": {
-        "agreed": 1088,
-        "resolved": 13,
-        "unresolved": 13,
-        "single": 49
-      },
-      "rows": 1147,
-      "from": "2026-05-05",
-      "to": "2026-05-29",
-      "mapped": 1018,
-      "stocks": 1079,
-      "untyped": 0
-    },
-    {
-      "id": "2026-08-12-donald-j-trump-08-12-2026-278t",
-      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2BF91F890F718ACB85258E5B002DE16B/$FILE/Donald-J-Trump-08.12.2026-278T.pdf",
-      "name": "Donald-J-Trump-08.12.2026-278T.pdf",
-      "signed": "2026-08-12",
-      "received": "2026-08-13",
-      "printedRows": 1051,
-      "text": "ocr",
-      "check": {
-        "agreed": 0,
-        "resolved": 101,
-        "unresolved": 243,
-        "single": 1030
-      },
-      "rows": 1030,
-      "from": "2026-06-01",
-      "to": "2026-06-29",
-      "mapped": 869,
-      "stocks": 915,
-      "untyped": 0
-    },
-    {
-      "id": "2026-09-08-donald-j-trump-09-8-2026-278t",
-      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E590116FC9631E9885258E7A002DE209/$FILE/Donald-J-Trump-09.8.2026-278T.pdf",
-      "name": "Donald-J-Trump-09.8.2026-278T.pdf",
-      "signed": "2026-09-08",
-      "received": null,
-      "printedRows": 1156,
-      "text": "ocr",
-      "check": {
-        "agreed": 1086,
-        "resolved": 4,
-        "unresolved": 21,
-        "single": 53
-      },
-      "rows": 1154,
-      "from": "2026-07-06",
-      "to": "2026-07-23",
-      "mapped": 1024,
-      "stocks": 1094,
-      "untyped": 0
     },
     {
       "id": "2026-09-17-donald-j-trump-09-17-2026-278t",

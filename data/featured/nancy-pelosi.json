@@ -52,7 +52,7 @@
       "parsed": 1
     }
   ],
-  "updatedAt": "2026-10-20T18:25:44.048Z",
+  "updatedAt": "2026-10-20T20:07:41.087Z",
   "annualDoc": "10075701",
   "docs": {
     "10075701": {
@@ -152,7 +152,7 @@
           "lo": 500001,
           "hi": 1000000,
           "label": "$500,001 – $1,000,000",
-          "desc": "50 call options with a strike price of $150 and an expiration date of 1/16/26 and 20 call options with a strike price of $120 and an expiration date of 1/15/27.",
+          "desc": "50 call options with a strike price of $150 and an expiration date of 1/16/26 and 20 call options with a strike price of $120 and an",
           "option": {
             "contracts": 50,
             "right": "call",
@@ -161,7 +161,7 @@
           }
         },
         {
-          "name": "American Express Company (AXP)",
+          "name": "expiration date of 1/15/27. American Express Company (AXP)",
           "ticker": "AXP",
           "code": "ST",
           "owner": "SP",
