@@ -7,6 +7,7 @@ export const NAV = [
   ['/politicians.html', 'Politicians', 'politicians'],
   ['/insiders.html', 'Insiders', 'insiders'],
   ['/market.html', 'Market Mood', 'market'],
+  ['/calendar.html', 'Calendar', 'calendar'],
   ['/insights.html', 'Learn', 'insights'],
   ['/pro.html', 'Pro', 'pro'],
 ];

@@ -2,6 +2,7 @@ import { esc, date } from '../lib/format.mjs';
 import { tvWidget } from '../layout.mjs';
 import { chart, fearGreedCard, vixCard, vixChartData, indexCard, pageHero, newsletter } from '../parts.mjs';
 import { trendingCards } from './home.mjs';
+import { comingUp } from './calendar.mjs';
 
 export function market(d) {
   const m = d.market || {};
@@ -44,6 +45,12 @@ export function market(d) {
     </div>
   </div>
 </section>
+${d.calendar ? `<section class="section-sm" id="coming-up">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:22px"><div><div class="eyebrow">Coming up</div><h2 style="font-size:36px">Dates that can move markets</h2></div><p>The big economic releases and company earnings ahead, explained on the <a href="/calendar.html">calendar page</a>.</p></div>
+    ${comingUp(d.calendar, { earnings: 12 })}
+  </div>
+</section>` : ''}
 ${moving ? `<section class="section-sm">
   <div class="container">
     <div class="section-head reveal" style="margin-bottom:28px"><div><div class="eyebrow">This week</div><h2 style="font-size:36px">What’s moving markets</h2></div><p>${esc(w.weekLabel || '')}</p></div>
@@ -61,8 +68,7 @@ ${moving ? `<section class="section-sm">
       <div class="col reveal"><div class="widget-frame"><div class="widget-head"><span>S&amp;P 500 heatmap · today</span><span class=live>Live</span></div>${tvWidget('embed-widget-stock-heatmap.js', { exchanges: [], dataSource: 'SPX500', grouping: 'sector', blockSize: 'market_cap_basic', blockColor: 'change', locale: 'en', symbolUrl: '', colorTheme: 'dark', hasTopBar: false, isDataSetEnabled: false, isZoomEnabled: true, hasSymbolTooltip: true, isMonoSize: false, width: '100%', height: '100%' }, { height: 520 })}</div></div>
     </div>
     <div class="row mt-32">
-      <div class="col-7 reveal"><div class="widget-frame"><div class="widget-head"><span>Market news</span><span class=live>Live</span></div>${tvWidget('embed-widget-timeline.js', { feedMode: 'market', market: 'stock', isTransparent: true, displayMode: 'regular', width: '100%', height: '100%', colorTheme: 'dark', locale: 'en' }, { height: 560 })}</div></div>
-      <div class="col-5 reveal"><div class="widget-frame"><div class="widget-head"><span>Economic calendar · US &amp; Canada</span><span class=live>Live</span></div>${tvWidget('embed-widget-events.js', { colorTheme: 'dark', isTransparent: true, width: '100%', height: '100%', locale: 'en', importanceFilter: '0,1', countryFilter: 'us,ca' }, { height: 560 })}</div></div>
+      <div class="col reveal"><div class="widget-frame"><div class="widget-head"><span>Market news</span><span class=live>Live</span></div>${tvWidget('embed-widget-timeline.js', { feedMode: 'market', market: 'stock', isTransparent: true, displayMode: 'regular', width: '100%', height: '100%', colorTheme: 'dark', locale: 'en' }, { height: 560 })}</div></div>
     </div>
   </div>
 </section>

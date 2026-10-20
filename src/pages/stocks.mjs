@@ -3,6 +3,14 @@ import { tvWidget } from '../layout.mjs';
 import { tkr, actBadge, wbar, sourceChip, kpi, pageHero, proCta, partyChip, tip } from '../parts.mjs';
 import { titleish } from './home.mjs';
 
+/** "Next earnings: Wed Oct 21 · after close · EPS est. $6.54" */
+export const earningsChip = (s) => {
+  const e = s.nextEarnings;
+  if (!e) return '';
+  const t = e.time === 'bmo' ? 'before the open' : e.time === 'amc' ? 'after the close' : '';
+  return `<a class="earn-chip" href="/calendar.html#earnings"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Next earnings: <b>${e.label}</b>${t ? ` · ${t}` : ''}${e.epsForecast != null ? ` · EPS est. $${e.epsForecast.toFixed(2)}` : ''}</a>`;
+};
+
 const liveChart = (s) =>
   s.ticker
     ? tvWidget('embed-widget-symbol-overview.js', { symbols: [[s.name, `${s.ticker}|1D`]], chartOnly: false, width: '100%', height: '100%', locale: 'en', colorTheme: 'dark', autosize: true, showVolume: false, hideDateRanges: false, scalePosition: 'right', scaleMode: 'Normal', noTimeScale: false, valuesTracking: '1', changeMode: 'price-and-percent', chartType: 'area', lineColor: '#F2B33D', topColor: 'rgba(242,179,61,0.25)', bottomColor: 'rgba(242,179,61,0)', isTransparent: true }, { height: 440 })
@@ -52,6 +60,7 @@ export function stockPage(d, s) {
     crumbs: [['Top Stocks', '/smart-money.html'], [s.label]],
     eyebrow: `${esc(s.sector)} · owned by ${s.owners} fund manager${s.owners > 1 ? 's' : ''}`,
     h1: `Who owns ${esc(label)}?`,
+    extra: earningsChip(s),
     lead: `${s.owners} of the ${N} fund managers we track hold ${esc(s.name)}, worth ${money(s.value)} combined as of ${quarter(d.latestPeriod)}. ${esc(top.inv.manager)} has the biggest bet at ${pct(top.w)} of the portfolio.`,
   })}
 <section class="section-sm">
@@ -113,6 +122,7 @@ function tradedStockPage(d, s) {
     crumbs: [['Top Stocks', '/smart-money.html'], [s.label]],
     eyebrow: `${s.sector ? esc(s.sector) + ' · ' : ''}not held by our fund managers`,
     h1: `Who’s trading ${esc(label)}?`,
+    extra: earningsChip(s),
     lead: `None of the ${N} fund managers we track own ${esc(s.name)} in their latest 13F filing${s.sellers.length ? ` (${s.sellers.length} sold out last quarter)` : ''}. Here is what politicians and company insiders did.`,
   })}
 <section class="section-sm">

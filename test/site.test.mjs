@@ -63,3 +63,35 @@ test('insider dates, sectors, name matching and FRED CSV', () => {
   assert.equal(normName('NEBIUS GROUP N.V.'), 'NEBIUS');
   assert.deepEqual(parseFredCsv('DATE,VIXCLS\n2026-10-15,16.46\n2026-10-16,.\n'), [{ date: '2026-10-15', value: 16.46 }]);
 });
+
+test('calendar: plain-English verdicts, one row per release, big earnings only', async () => {
+  const { buildCalendar } = await import('../src/lib/calendar.mjs');
+  const cal = {
+    updatedAt: '2026-10-20T12:00:00Z',
+    econ: [
+      { id: '1', country: 'US', title: 'Inflation Rate YoY', date: '2026-10-14T12:30:00.000Z', period: 'Sep', actual: 3.7, forecast: 3.6, previous: 3.4, unit: '%', scale: '', importance: 1 },
+      { id: '2', country: 'US', title: 'Core Inflation Rate YoY', date: '2026-10-14T12:30:00.000Z', period: 'Sep', actual: 2.6, forecast: 2.5, previous: 2.4, unit: '%', scale: '', importance: 1 },
+      { id: '3', country: 'US', title: 'Fed Interest Rate Decision', date: '2026-10-28T18:00:00.000Z', period: '', actual: null, forecast: 4, previous: 4, unit: '%', scale: '', importance: 1 },
+      { id: '4', country: 'US', title: 'Initial Jobless Claims', date: '2026-10-15T12:30:00.000Z', period: 'Oct/10', actual: 210, forecast: 200, previous: 198, unit: '', scale: 'K', importance: 0 },
+      { id: '5', country: 'US', title: 'API Crude Oil Stock Change', date: '2026-10-21T20:30:00.000Z', period: '', actual: null, forecast: null, previous: 1, unit: '', scale: 'M', importance: 0 },
+    ],
+    earnings: [
+      { date: '2026-10-21', ticker: 'META', name: 'Meta Platforms, Inc.', time: 'amc', marketCap: 1.8e12, epsForecast: 6.54 },
+      { date: '2026-10-21', ticker: 'TINY', name: 'Tiny Co', time: 'bmo', marketCap: 12e9, epsForecast: 0.1 },
+      { date: '2026-10-28', ticker: 'GOOG', name: 'Alphabet Inc.', time: 'amc', marketCap: 4e12 },
+      { date: '2026-10-28', ticker: 'GOOGL', name: 'Alphabet Inc.', time: 'amc', marketCap: 4e12 },
+    ],
+  };
+  const c = buildCalendar(cal, { now: new Date('2026-10-20T16:00:00Z') });
+  const cpi = c.recent.find((e) => e.key === 'cpi');
+  assert.equal(cpi.verdict.text, 'Hotter than expected');
+  assert.equal(cpi.also[0].actual, '2.6%');
+  assert.equal(c.recent.find((e) => e.key === 'claims').verdict.text, 'Weaker than expected');
+  const fed = c.weeks.flatMap((w) => w.events).find((e) => e.key === 'fed');
+  assert.equal(fed.verdict.text, 'Expected: hold at 4.00%');
+  assert.equal(fed.time, '2:00 pm ET');
+  assert.ok(!c.weeks.flatMap((w) => w.events).some((e) => /Crude/.test(e.title)), 'noise is filtered out');
+  const tickers = c.earnings.weeks.flatMap((w) => w.days.flatMap((d) => d.items.map((r) => r.ticker)));
+  assert.deepEqual(tickers.sort(), ['GOOG', 'META']);
+  assert.equal(c.earnings.nextByTicker.get('META').label, 'Wed Oct 21');
+});

@@ -14,6 +14,7 @@ import { smartMoney } from './src/pages/smart.mjs';
 import { politicians } from './src/pages/politicians.mjs';
 import { insiders } from './src/pages/insiders.mjs';
 import { market } from './src/pages/market.mjs';
+import { calendarPage } from './src/pages/calendar.mjs';
 import { staticPages } from './src/pages/static.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -65,6 +66,7 @@ const pages = [
   politicians(d),
   insiders(d),
   market(d),
+  calendarPage(d),
   ...staticPages(ROOT),
 ];
 const notFound = {

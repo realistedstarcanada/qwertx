@@ -15,6 +15,7 @@
     "data:market": "node scripts/fetch-market.mjs",
     "data:congress": "node scripts/fetch-congress.mjs",
     "data:insiders": "node scripts/fetch-insiders.mjs",
+    "data:calendar": "node scripts/fetch-calendar.mjs",
     "test": "node --test test/*.test.mjs"
   }
 }

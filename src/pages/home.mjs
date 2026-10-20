@@ -1,3 +1,4 @@
+import { comingUp } from './calendar.mjs';
 import { esc, money, date, quarter, int, cleanName, signed, upDown } from '../lib/format.mjs';
 import { chart, tkr, fearGreedCard, vixCard, vixChartData, newsletter, proCta, ownersLine, vRank, vCard, tip } from '../parts.mjs';
 
@@ -147,6 +148,11 @@ ${brief(d)}
       </div>
       ${idx.length ? `<div class="v-idx">${idx.map((x) => `<div><div class="n">${esc(x.name)}</div><div class="v">${n2(x.value)}</div><div class="c ${upDown(x.change)}">${signed(x.change * 100, 2)}</div></div>`).join('')}</div>` : ''}
     </div>
+
+    ${d.calendar ? `<div class="v-block">
+      <div class="v-head"><div><h2>Coming up</h2><p>Economic reports and big-company earnings that can move markets · times in ET</p></div><a class="v-more" href="/calendar.html">Full calendar</a></div>
+      ${comingUp(d.calendar, { earnings: 12 })}
+    </div>` : ''}
 
     ${(d.weekly.trending || []).length ? `<div class="v-block">
       <div class="v-head"><div><h2>Trending stocks, explained</h2><p>What happened, what it could mean and which super investors own it · ${esc(d.weekly.weekLabel || '')}</p></div></div>

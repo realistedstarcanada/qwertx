@@ -3,6 +3,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { cleanName, classSuffix, quarter, slugify, quarterKey } from './format.mjs';
+import { loadTrump } from './trump.mjs';
+import { buildCalendar } from './calendar.mjs';
 
 const readJSON = (f, fb = null) => {
   try {
@@ -381,6 +383,14 @@ export function loadData({ root, dataDir, configPath }) {
   for (const [t, s] of extra) stockByTicker.set(t, s);
   const extraStocks = [...extra.values()];
 
+  // President Trump's periodic transaction reports (OGE 278-T).
+  const trump = loadTrump(dataDir, { stockByTicker, sectors });
+  if (trump) for (const [t, x] of trump.byTicker) { const s = stockByTicker.get(t); if (s) s.trump = x; }
+
+  // Economic calendar and earnings dates.
+  const calendar = buildCalendar(readJSON(path.join(dataDir, 'calendar.json'), null), { stockByTicker });
+  if (calendar) for (const [t, x] of calendar.earnings.nextByTicker) { const s = stockByTicker.get(t); if (s) s.nextEarnings = x; }
+
   return {
     cfg,
     extraStocks,
@@ -393,6 +403,8 @@ export function loadData({ root, dataDir, configPath }) {
     news,
     weekly,
     politics,
+    trump,
+    calendar,
     insiders: insiderView,
     sectors,
     latestPeriod,
