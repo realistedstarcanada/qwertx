@@ -1,5 +1,6 @@
 import { esc, money, int, date, cleanName } from '../lib/format.mjs';
 import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, partyChip, tip } from '../parts.mjs';
+import { featuredCards } from './people.mjs';
 
 const typeBadge = (t) => (t.type === 'buy' ? '<span class="act act-add">Buy</span>' : '<span class="act act-trim">Sell</span>');
 
@@ -21,6 +22,7 @@ export function politicians(d) {
     img: 'market-pulse.jpg',
     imgAlt: 'Flowing waves of gold and teal light across a dark background',
   })}
+${featuredCards(d.people || [])}
 ${q ? `<section class="section-sm">
   <div class="container">
     <h2 class="sr-only">This quarter at a glance</h2>
@@ -79,7 +81,7 @@ ${q.overlap.length ? `<section class="section-sm">
       <tbody>${P.latest
         .map((t) => {
           const s = d.stockByTicker.get(t.ticker);
-          return `<tr><td data-v="${esc(t.member)}">${partyChip(t.party)} <span style="color:var(--text);font-weight:600">${esc(t.member)}</span><div class="tkr-name">${esc(t.chamber)}${t.state ? ' · ' + esc(t.state) + (t.district ? '-' + esc(t.district) : '') : ''}</div></td><td data-v="${esc(t.ticker)}">${tkr(t.ticker, s?.hasPage ? s.slug : null)}<div class="tkr-name">${esc(t.company ? cleanName(t.company) : cleanAsset(t.asset))}</div></td><td data-v="${t.type}">${typeBadge(t)}${t.partial ? ' <span class="form-note">partial</span>' : ''}</td><td class="num" data-v="${t.amount?.mid || 0}">${esc(t.amount?.label || '—')}</td><td class="num" data-v="${t.date || ''}">${date(t.date)}</td><td class="num" data-v="${t.filed || ''}"><a href="${esc(t.source)}" target="_blank" rel="noopener nofollow">${date(t.filed)}</a></td><td>${esc(ownerLabel(t.owner))}</td></tr>`;
+          return `<tr><td data-v="${esc(t.member)}">${partyChip(t.party)} ${/Pelosi/.test(t.member) && (d.people || []).some((p) => p.slug === 'nancy-pelosi') ? `<a href="/politicians/nancy-pelosi.html" style="color:var(--text);font-weight:600">${esc(t.member)}</a>` : `<span style="color:var(--text);font-weight:600">${esc(t.member)}</span>`}<div class="tkr-name">${esc(t.chamber)}${t.state ? ' · ' + esc(t.state) + (t.district ? '-' + esc(t.district) : '') : ''}</div></td><td data-v="${esc(t.ticker)}">${tkr(t.ticker, s?.hasPage ? s.slug : null)}<div class="tkr-name">${esc(t.company ? cleanName(t.company) : cleanAsset(t.asset))}</div></td><td data-v="${t.type}">${typeBadge(t)}${t.partial ? ' <span class="form-note">partial</span>' : ''}</td><td class="num" data-v="${t.amount?.mid || 0}">${esc(t.amount?.label || '—')}</td><td class="num" data-v="${t.date || ''}">${date(t.date)}</td><td class="num" data-v="${t.filed || ''}"><a href="${esc(t.source)}" target="_blank" rel="noopener nofollow">${date(t.filed)}</a></td><td>${esc(ownerLabel(t.owner))}</td></tr>`;
         })
         .join('')}</tbody></table></div>
     <p class="form-note" style="margin-top:14px">Amounts are the ranges members must report, not exact values. Only electronically filed reports with a stock ticker are included; scanned paper filings are skipped. Updated daily${P.updatedAt ? `, last on ${date(P.updatedAt)}` : ''}.</p>

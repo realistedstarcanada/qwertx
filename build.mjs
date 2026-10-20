@@ -15,6 +15,7 @@ import { politicians } from './src/pages/politicians.mjs';
 import { insiders } from './src/pages/insiders.mjs';
 import { market } from './src/pages/market.mjs';
 import { calendarPage } from './src/pages/calendar.mjs';
+import { personPage } from './src/pages/people.mjs';
 import { staticPages } from './src/pages/static.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -64,6 +65,7 @@ const pages = [
   ...d.stocks.map((s) => stockPage(d, s)),
   ...d.extraStocks.map((s) => stockPage(d, s)),
   politicians(d),
+  ...(d.people || []).map((p) => personPage(d, p)),
   insiders(d),
   market(d),
   calendarPage(d),

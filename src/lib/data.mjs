@@ -5,6 +5,7 @@ import path from 'node:path';
 import { cleanName, classSuffix, quarter, slugify, quarterKey } from './format.mjs';
 import { loadTrump } from './trump.mjs';
 import { buildCalendar } from './calendar.mjs';
+import { loadPeople } from './people.mjs';
 
 const readJSON = (f, fb = null) => {
   try {
@@ -387,6 +388,9 @@ export function loadData({ root, dataDir, configPath }) {
   const trump = loadTrump(dataDir, { stockByTicker, sectors });
   if (trump) for (const [t, x] of trump.byTicker) { const s = stockByTicker.get(t); if (s) s.trump = x; }
 
+  // Featured politician portfolios (Trump, Pelosi).
+  const people = loadPeople({ dataDir, trump, stockByTicker });
+
   // Economic calendar and earnings dates.
   const calendar = buildCalendar(readJSON(path.join(dataDir, 'calendar.json'), null), { stockByTicker });
   if (calendar) for (const [t, x] of calendar.earnings.nextByTicker) { const s = stockByTicker.get(t); if (s) s.nextEarnings = x; }
@@ -404,6 +408,7 @@ export function loadData({ root, dataDir, configPath }) {
     weekly,
     politics,
     trump,
+    people,
     calendar,
     insiders: insiderView,
     sectors,

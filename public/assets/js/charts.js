@@ -130,13 +130,13 @@
     },
     split: function (t, d) {
       return {
-        grid: { left: 36, right: 12, top: 16, bottom: 28 },
-        tooltip: Object.assign(tip(t), { trigger: 'axis', axisPointer: { type: 'shadow' } }),
+        grid: { left: d.money ? 56 : 36, right: 12, top: 16, bottom: 28 },
+        tooltip: Object.assign(tip(t), { trigger: 'axis', axisPointer: { type: 'shadow' }, valueFormatter: d.money ? function (v) { return money(v); } : undefined }),
         xAxis: Object.assign(axisBase(t), { type: 'category', data: d.labels, splitLine: { show: false } }),
-        yAxis: Object.assign(axisBase(t), { type: 'value', minInterval: 1 }),
+        yAxis: Object.assign(axisBase(t), { type: 'value', minInterval: 1, axisLabel: d.money ? { color: t.muted, fontFamily: t.mono, fontSize: 11, formatter: function (v) { return money(v); } } : undefined }),
         series: [
-          { name: 'Buys', type: 'bar', data: d.buys, barGap: '12%', barWidth: '32%', itemStyle: { color: t.teal, borderRadius: [4, 4, 0, 0] } },
-          { name: 'Sells', type: 'bar', data: d.sells, barWidth: '32%', itemStyle: { color: t.coral, borderRadius: [4, 4, 0, 0] } }
+          { name: d.buyLabel || 'Buys', type: 'bar', data: d.buys, barGap: '12%', barWidth: '32%', itemStyle: { color: t.teal, borderRadius: [4, 4, 0, 0] } },
+          { name: d.sellLabel || 'Sells', type: 'bar', data: d.sells, barWidth: '32%', itemStyle: { color: t.coral, borderRadius: [4, 4, 0, 0] } }
         ]
       };
     },

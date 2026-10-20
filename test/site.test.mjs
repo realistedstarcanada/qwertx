@@ -95,3 +95,64 @@ test('calendar: plain-English verdicts, one row per release, big earnings only',
   assert.deepEqual(tickers.sort(), ['GOOG', 'META']);
   assert.equal(c.earnings.nextByTicker.get('META').label, 'Wed Oct 21');
 });
+
+test('House disclosures: holdings with value ranges, PTR trades with option details', async () => {
+  const { parseHouseHoldings, parseHouseTransactions, parse278eAssets, parseRange } = await import('../scripts/lib/featured.mjs');
+  const annual = `F D R
+S A: A "U " I
+Asset Owner Value of Asset Income Type(s) Income Tx. >
+$1,000?
+11 Zinfandel Lane - Home & Vineyard [RP] JT $5,000,001 -
+$25,000,000
+Grape Sales $100,001 -
+$1,000,000
+L : St. Helena/Napa, CA, US
+Alphabet Inc. - Class A Common Stock (GOOGL)
+[OP]
+SP $1,000,001 -
+$5,000,000
+None
+D : 50 call options with a strike price of $150 and an expiration date of 1/16/26.
+Apple Inc. (AAPL) [ST] SP $5,000,001 -
+$25,000,000
+Capital Gains,
+Dividends
+Over $5,000,000
+S B: T`;
+  const h = parseHouseHoldings(annual);
+  assert.equal(h.length, 3);
+  assert.deepEqual([h[0].code, h[0].owner, h[0].lo], ['RP', 'JT', 5000001]);
+  assert.equal(h[1].ticker, 'GOOGL');
+  assert.equal(h[1].owner, 'SP');
+  assert.equal(h[1].option.strike, 150);
+  assert.equal(h[2].hi, 25000000);
+  const ptr = `P T R
+ID Owner Asset Transaction
+SP Alphabet Inc. - Class A Common
+Stock (GOOGL) [OP]
+P 12/30/2025 12/30/2025 $250,001 -
+$500,000
+F S : New
+D : Purchased 20 call options with a strike price of $150 and an expiration date of 1/15/27.
+SP Apple Inc. - Common Stock (AAPL)
+[ST]
+S (partial) 12/24/2025 12/24/2025 $5,000,001 -
+$25,000,000
+F S : New
+D : Sold 45,000 shares.`;
+  const t = parseHouseTransactions(ptr);
+  assert.equal(t.length, 2);
+  assert.deepEqual([t[0].ticker, t[0].type, t[0].date, t[0].option.contracts], ['GOOGL', 'buy', '2025-12-30', 20]);
+  assert.deepEqual([t[1].ticker, t[1].type, t[1].partial, t[1].lo], ['AAPL', 'sell', true, 5000001]);
+  const oge = `Part 6: Other Assets and Income
+#      Description                                   EIF     Value                      Income Type     Income Amount
+              INVESTMENT ACCOUNT #6
+12     NVIDIA CORP                                   N/A     $5,000,001 - $25,000,000   None (or less than $201)
+13     U.S. BROKERAGE ACCOUNT MONEY MARKET           N/A     Over $50,000,000
+Part 7: Transactions`;
+  const a = parse278eAssets(oge);
+  assert.equal(a.length, 2);
+  assert.equal(a[0].account, 'INVESTMENT ACCOUNT #6');
+  assert.equal(a[1].open, true);
+  assert.equal(parseRange('None (or less than $1,001)').hi, 1000);
+});

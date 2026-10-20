@@ -60,6 +60,8 @@ export function loadTrump(dataDir, { stockByTicker, sectors }) {
     return cleanName(titleCase(r.desc.replace(/\s+(F|CL\s?[A-C]|CLASS\s+[A-C]|NEW|REIT)$/gi, '')));
   };
   for (const r of rows) {
+    // An unconfirmed reading above $25M is more likely an OCR slip than a real trade: count it in the $5M-$25M band.
+    if (r.unverified && r.lo > 25000000) { r.lo = 5000001; r.hi = 25000000; r.capped = true; }
     r.name = nameFor(r);
     r.est = mid(r);
     r.q = quarterKey(r.date);
@@ -152,6 +154,7 @@ export function loadTrump(dataDir, { stockByTicker, sectors }) {
     gaps,
     byTicker,
     overlap: ytdOverlap,
+    recent: rows.filter((r) => r.type === 'P' || r.type === 'S').sort((a, b) => b.date.localeCompare(a.date) || b.lo - a.lo).slice(0, 400),
     total: rows.length,
   };
 }
