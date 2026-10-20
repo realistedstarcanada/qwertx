@@ -141,6 +141,7 @@ async function houseFilings(years) {
   return list;
 }
 
+const houseCheck = { docs: 0, complete: 0, incomplete: [] };
 async function houseTrades(people, done) {
   const years = [...new Set([Number(SINCE.slice(0, 4)), new Date().getUTCFullYear()])];
   const filings = (await houseFilings(years)).filter((f) => f.filed && f.filed >= SINCE && !done.has(`H${f.docId}`));
@@ -168,6 +169,11 @@ async function houseTrades(people, done) {
       const state = f.stateDst.slice(0, 2);
       const person = findPerson(people, { first: f.first, last: f.last, chamber: 'House', state });
       const rows = parseHousePtrText(text);
+      // Completeness: each asset on the form ends with a type code like [ST]; all of them must be read.
+      const codes = (text.match(/\[[A-Z]{2}\]/g) || []).length;
+      const readAll = parseHouseTransactions(text).length;
+      houseCheck.docs++;
+      if (readAll === codes) houseCheck.complete++; else houseCheck.incomplete.push(`${f.docId}:${readAll}/${codes}`);
       for (const r of rows)
         trades.push({
           id: `H${f.docId}-${trades.length}`,
@@ -370,7 +376,10 @@ async function run() {
     .filter((t) => (t.date || t.filed || '') >= cutoff || (t.filed || '') >= cutoff)
     .sort((a, b) => (b.filed || '').localeCompare(a.filed || '') || (b.date || '').localeCompare(a.date || ''));
   const processed = [...new Set([...store.processed, ...parts.flatMap((p) => p.processed)])].slice(-6000);
-  writeJSON(OUT, { updatedAt: new Date().toISOString(), since: cutoff, processed, trades });
+  if (houseCheck.docs) console.log(`House completeness: ${houseCheck.complete}/${houseCheck.docs} filings fully read${houseCheck.incomplete.length ? `; check ${houseCheck.incomplete.slice(0, 40).join(', ')}` : ''}`);
+  const prevChecks = store.checks || {};
+  const checks = { house: houseCheck.docs ? { at: new Date().toISOString(), ...houseCheck, incomplete: houseCheck.incomplete.slice(0, 200) } : prevChecks.house || null };
+  writeJSON(OUT, { updatedAt: new Date().toISOString(), since: cutoff, checks, processed, trades });
   const stocks = trades.filter((t) => t.ticker);
   console.log(`Added ${added.length} trades (${added.filter((t) => t.ticker).length} with tickers). Store now has ${trades.length} trades, ${stocks.length} with tickers.`);
 }

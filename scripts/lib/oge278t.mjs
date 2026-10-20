@@ -110,14 +110,17 @@ export function parse278T(text, ctx = {}) {
   const rows = [];
   let buf = [];
   let lastDate = null;
+  let page = 1;
+  let loneNo = null;
   for (const raw of text.split(/\n/)) {
+    page += (raw.match(/\f/g) || []).length;
     const line = raw.replace(/\f/g, '').replace(/\s+$/, '');
     if (!line.trim()) continue;
     if (HEADER.test(line) && !/\$\s?\d/.test(line)) { buf = []; continue; }
     const am = AMOUNT.exec(line);
     if (!am || !/\d{3}/.test(am[1].replace(/\s/g, ''))) {
       const t = line.trim();
-      if (/^\d{1,4}$/.test(t)) continue;
+      if (/^\d{1,4}$/.test(t)) { loneNo = Number(t); continue; }
       if (t.length > 2) buf.push(t);
       if (buf.length > 3) buf.shift();
       continue;
@@ -149,6 +152,10 @@ export function parse278T(text, ctx = {}) {
     if (!date) date = lastDate;
     if (date) lastDate = date;
     let descCols = ti > -1 ? cols.slice(0, ti) : cols.slice(0, -1);
+    // The printed row number (first column), used to line up independent readings of the same form.
+    const noM = /^[•.\-|\s]*(\d{1,4})(?:\s|$)/.exec(descCols[0] || '');
+    let no = noM ? Number(noM[1]) : loneNo;
+    loneNo = null;
     descCols = descCols.filter((c) => !/^[•.\-\s]*\d{1,4}$/.test(c)).map((c) => c.replace(/^[•.\-]?\s*\d{1,4}\s+(?=\S)/, ''));
     let desc = descCols.join(' ').replace(/\s{2,}/g, ' ').replace(/^.*\bAmount\b\s*/i, '').trim();
     let typ2 = type;
@@ -166,7 +173,21 @@ export function parse278T(text, ctx = {}) {
     }
     desc = cleanDesc(desc);
     if (!date || !/[A-Za-z]{3,}/.test(desc) || NOISE_ROW.test(desc)) continue;
-    rows.push({ desc, type: typ2, date, approx: approx || undefined, late, lo: amount[0], hi: amount[1] });
+    rows.push({ no: no || undefined, page, desc, type: typ2, date, approx: approx || undefined, late, lo: amount[0], hi: amount[1] });
+  }
+  // Drop row numbers that break the running order (OCR noise), then fill runs of missing numbers
+  // between two known ones when the count fits exactly. Row numbers line up independent readings.
+  for (let i = 0; i < rows.length; i++) {
+    const a = rows[i - 1]?.no, b = rows[i + 1]?.no, n = rows[i].no;
+    if (n && a && b && (n <= a || n >= b)) delete rows[i].no;
+  }
+  for (let i = 0; i < rows.length; i++) {
+    if (rows[i].no) continue;
+    let j = i;
+    while (j < rows.length && !rows[j].no) j++;
+    const a = i > 0 ? rows[i - 1].no : 0, b = j < rows.length ? rows[j].no : null;
+    if (b != null && b - a - 1 === j - i) for (let k = i; k < j; k++) rows[k].no = a + (k - i) + 1;
+    i = j;
   }
   return rows;
 }

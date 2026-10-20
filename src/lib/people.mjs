@@ -71,7 +71,7 @@ function trumpPerson(trump, dataDir, stockByTicker) {
   const trades = (trump?.recent || []).map((r) => ({
     date: r.date, type: r.type === 'P' ? 'buy' : 'sell', name: r.name, ticker: r.tk || null, slug: linkStock(r.tk, stockByTicker),
     kindLabel: { stock: 'Stock', fund: 'ETF / fund', muni: 'Municipal bond', corporate: 'Corporate bond', treasury: 'US Treasury', preferred: 'Preferred' }[r.cls] || 'Other',
-    lo: r.lo, hi: r.hi, src: r.src, approx: r.approx || r.capped,
+    lo: r.lo, hi: r.hi, src: r.src, approx: r.approx, unconfirmed: r.unverified || r.capped,
   }));
   const year = trump?.year || String(new Date().getUTCFullYear());
   return {
@@ -96,6 +96,24 @@ function trumpPerson(trump, dataDir, stockByTicker) {
     gaps: trump?.gaps || [],
     mixTrades: trump?.ytd.mix || [],
     latestFiled: trump?.filings?.[0] ? trump.filings[0].received || trump.filings[0].signed : null,
+    checks: trumpChecks(trump),
+  };
+}
+
+function trumpChecks(trump) {
+  const fs = trump?.filings || [];
+  const sum = (k) => fs.reduce((a, f) => a + (f.check?.[k] || 0), 0);
+  const rows = fs.reduce((a, f) => a + (f.rows || 0), 0);
+  const printed = fs.reduce((a, f) => a + (f.printedRows || 0), 0);
+  const agreed = sum('agreed'), resolved = sum('resolved'), unresolved = sum('unresolved');
+  return {
+    reports: fs.length,
+    lines: [
+      `${fs.length} official reports from the Office of Government Ethics, read directly from the scanned originals.`,
+      printed ? `${rows.toLocaleString('en-US')} of the ${printed.toLocaleString('en-US')} numbered rows on those forms were read (${((rows / printed) * 100).toFixed(1)}%).` : null,
+      agreed + resolved ? `Each page is read twice by two independent text-recognition passes. ${agreed.toLocaleString('en-US')} rows match exactly; ${resolved.toLocaleString('en-US')} more were settled by a third reading.` : null,
+      unresolved ? `${unresolved.toLocaleString('en-US')} amounts could not be confirmed and are shown with ≈ at the lower reading.` : null,
+    ].filter(Boolean),
   };
 }
 
@@ -144,6 +162,22 @@ function housePerson(slug, meta, dataDir, stockByTicker) {
     byMonth: [],
     gaps: [],
     latestFiled: docs.filter((x) => x.kind === 'ptr').map((x) => x.filed).sort().at(-1) || null,
+    checks: houseChecks(d, docs),
+  };
+}
+
+function houseChecks(d, docs) {
+  const comp = d.completeness || [];
+  const full = comp.filter((c) => c.codes === c.parsed).length;
+  const ptrs = docs.filter((x) => x.kind === 'ptr');
+  return {
+    reports: docs.length,
+    lines: [
+      `${ptrs.length} periodic transaction reports and the latest annual report, read directly from the Clerk of the House.`,
+      comp.length ? `${full} of ${comp.length} reports fully read: every asset listed on the form is on this page.` : null,
+      ...(d.checks || []).map((c) => `Cross-checked: all ${c.annual} transactions on her ${c.year} annual report ${c.matched === c.annual && c.annual === c.ptr ? 'match' : `vs. ${c.matched} matched in`} her ${c.year} trade reports${c.matched === c.annual && c.annual === c.ptr ? ' exactly' : ''}.`),
+      'Spot check in October 2026 against Capitol Trades and ValueInvesting.io: every trade they list matches ours, but their lists stop in 2025.',
+    ].filter(Boolean),
   };
 }
 

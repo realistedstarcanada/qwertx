@@ -15,7 +15,12 @@ export function parseRange(s) {
   const over = /Over \$([\d,]+)/i.exec(t);
   if (over) { const lo = Number(over[1].replace(/,/g, '')) + 1; return { lo, hi: lo, label: `Over $${over[1]}`, open: true }; }
   const m = /\$([\d,]+)\s*(?:-|–|to)\s*\$([\d,]+)/.exec(t);
-  if (!m) return null;
+  if (!m) {
+    // Some filers report an exact value instead of a range ("$15.00").
+    const one = /^\$([\d,]+(?:\.\d{2})?)$/.exec(t);
+    if (one) { const v = Math.round(Number(one[1].replace(/,/g, ''))); return { lo: v, hi: v, label: `$${v.toLocaleString('en-US')}`, exact: true }; }
+    return null;
+  }
   const lo = Number(m[1].replace(/,/g, '')), hi = Number(m[2].replace(/,/g, ''));
   return { lo, hi, label: `$${m[1]} – $${m[2]}` };
 }
@@ -70,7 +75,7 @@ export function assetKind(desc) {
 
 const HOUSE_NOISE = /^(Asset Owner|Asset Owner Value|ID Owner Asset|Type|Date Notification|Date|Amount Cap\.|Gains >|\$200\?|\$1,000\?|Filing ID #|\* For the complete|Clerk of the House|F I$|Name: Hon|Status:|State\/District|T$|P T R|F D R|I P O|Yes No|C S$|I CERTIFY|my knowledge|Digitally Signed)/;
 const OWNER = /^(SP|JT|DC)\s+/;
-const AMT = /(\$[\d,]+\s*-\s*\$[\d,]+|Over \$[\d,]+|Spouse\/DC Over \$1,000,000|None)/;
+const AMT = /(\$[\d,]+\s*-\s*\$[\d,]+|Over \$[\d,]+|Spouse\/DC Over \$1,000,000|None|\$[\d,]+\.\d{2}(?=\s|$))/;
 
 function houseEntries(lines) {
   // Each entry ends its name with an asset-type code like [ST], [OP], [RP].
@@ -95,10 +100,13 @@ function houseEntries(lines) {
     const after = e.tail.join('\n');
     const head = after.split(/\n(?=(?:[LDC]|F S) :)/)[0].replace(/\n/g, ' ').trim();
     const desc = (/(?:^|\n)D : ([\s\S]*?)(?=\n(?:[LC]|F S) :|$)/.exec(after) || [])[1];
-    const owner = OWNER.exec(e.name) ? OWNER.exec(e.name)[1] : (/^(SP|JT|DC)\b/.exec(head) || [])[1] || 'Self';
-    const name = e.name.replace(OWNER, '').trim();
+    let nm = e.name, hd = head;
+    const split = /\s((?:P|S(?:\s*\(partial\))?|E)\s+\d{2}\/\d{2}\/\d{4}(?:\s+\d{2}\/\d{2}\/\d{4})?\s+\$[\d,]+\s*-?)\s/.exec(' ' + nm + ' ');
+    if (split) { nm = (' ' + nm + ' ').replace(split[1], ' ').replace(/\s+/g, ' ').trim(); hd = (split[1] + ' ' + hd).trim(); }
+    const owner = OWNER.exec(nm) ? OWNER.exec(nm)[1] : (/^(SP|JT|DC)\b/.exec(hd) || [])[1] || 'Self';
+    const name = nm.replace(OWNER, '').trim();
     const ticker = (/\(([A-Z][A-Z.\-]{0,6})\)\s*$/.exec(name) || [])[1] || null;
-    return { name, ticker, code: e.code, owner, head: head.trim(), desc: desc ? desc.replace(/\s+/g, ' ').trim() : '' };
+    return { name, ticker, code: e.code, owner, head: hd.trim(), desc: desc ? desc.replace(/\s+/g, ' ').trim() : '' };
   });
 }
 

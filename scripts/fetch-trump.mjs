@@ -165,22 +165,47 @@ async function main() {
     const pick = ocr && (!layer || ocr.rows.length >= layer.rows.length * 0.9) ? ocr : tries.sort((a, b) => quality(b.rows) - quality(a.rows))[0];
     const other = tries.find((t) => t !== pick);
     const { how, text, rows } = pick;
-    // Cross-check the large amounts against the other reading; when they disagree keep the smaller range.
+    // Double check: line up the two readings by printed row number and compare amount and type.
+    // Triple check: where they disagree on anything above $50,000, read that page a third time
+    // (higher resolution, different layout mode) and take the answer two readings agree on.
+    const check = { agreed: 0, resolved: 0, unresolved: 0, single: 0 };
     if (other) {
-      const key = (r) => nameKey(r.desc).slice(0, 10) + '|' + r.type;
-      const alt = new Map();
-      for (const r of other.rows) { const k = key(r); if (!alt.has(k)) alt.set(k, []); alt.get(k).push(r); }
+      const same = (a, b) => a && b && a.lo === b.lo && a.type === b.type;
+      const near = (a, b) => nameKey(a.desc).slice(0, 4) === nameKey(b.desc).slice(0, 4) || Math.abs(Date.parse(a.date) - Date.parse(b.date)) < 2 * 864e5;
+      const byNo = new Map(other.rows.filter((r) => r.no).map((r) => [r.no, r]));
+      const disputed = [];
       for (const r of rows) {
-        if (r.lo < 5000001) continue;
-        const cands = (alt.get(key(r)) || []).filter((x) => Math.abs(Date.parse(x.date) - Date.parse(r.date)) < 5 * 864e5);
-        if (!cands.length) { r.unverified = true; continue; }
-        const lo = Math.min(...cands.map((x) => x.lo));
-        if (lo < r.lo) { const c = cands.find((x) => x.lo === lo); log(`  amount check: ${r.desc} ${r.date} ${r.lo} -> ${c.lo}`); r.lo = c.lo; r.hi = c.hi; }
+        const o = r.no && byNo.get(r.no);
+        if (!o || !near(r, o)) { check.single++; if (r.lo > 50000) disputed.push([r, null]); continue; }
+        if (same(r, o)) { check.agreed++; r.checked = 2; continue; }
+        if (Math.max(r.lo, o.lo) > 50000 || r.type !== o.type) disputed.push([r, o]); else { check.agreed++; r.checked = 2; r.lo = Math.min(r.lo, o.lo); r.hi = r.lo === o.lo ? o.hi : r.hi; }
       }
+      const pages = [...new Set(disputed.map(([r]) => r.page))].sort((a, b) => a - b);
+      const third = new Map();
+      for (const pg of pages) {
+        try {
+          const t = execFileSync('bash', [path.join(ROOT, 'scripts/ocr-pdf.sh'), path.join(tmp, 'f.pdf')], { env: { ...process.env, OCR_FIRST: String(pg), OCR_LAST: String(pg), OCR_DPI: '400', OCR_PSM: '4' }, maxBuffer: 64 << 20 }).toString('utf8');
+          for (const x of parse278T(t, { year, minDate, maxDate: end })) if (x.no) third.set(x.no, x);
+        } catch (e) { log('  third reading failed on page', pg, String(e.message).slice(0, 120)); }
+      }
+      for (const [r, o] of disputed) {
+        const t3 = third.get(r.no);
+        const votes = [r, o, t3 && near(r, t3) ? t3 : null].filter(Boolean);
+        const pickVote = votes.find((v) => votes.filter((w) => w.lo === v.lo && w.type === v.type).length >= 2);
+        if (pickVote) { Object.assign(r, { lo: pickVote.lo, hi: pickVote.hi, type: pickVote.type, checked: votes.length }); check.resolved++; }
+        else {
+          // No two readings agree: keep the most conservative amount and flag it.
+          const lo = Math.min(...votes.map((v) => v.lo));
+          const v = votes.find((x) => x.lo === lo);
+          Object.assign(r, { lo: v.lo, hi: v.hi, unverified: true });
+          check.unresolved++;
+        }
+      }
+      log(`  checks: ${check.agreed} rows agree in two readings, ${check.resolved} settled by a third reading (${pages.length} pages), ${check.unresolved} unresolved, ${check.single} read once`);
     }
     if (DEBUG) for (const t of tries) fs.writeFileSync(path.join(ROOT, 'data/_debug', `${id}.${t.how}.txt`), t.text);
     const lastNo = Math.max(0, ...[...text.matchAll(/^\s{0,20}(\d{1,4})\s{2,}\S/gm)].map((m) => Number(m[1])).filter((n) => n < 20000));
-    const meta = { id, url: f.url, name: f.name, signed: f.signed, received: recIso, printedRows: lastNo || null, text: how };
+    const meta = { id, url: f.url, name: f.name, signed: f.signed, received: recIso, printedRows: Math.max(0, ...rows.map((r) => r.no || 0)) || null, text: how, check };
     parsed.push({ meta, rows, file });
     log(`${f.name}: ${tries.map((t) => `${t.how} ${t.rows.length} rows/${quality(t.rows)} clean`).join(', ')}; printed ${lastNo}; using ${how}`);
     await sleep(800);
