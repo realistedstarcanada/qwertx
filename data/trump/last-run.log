@@ -3,21 +3,6 @@ list 1: 73 Trump links
 list 2: 73 Trump links
 PDF links: 14
 SEC tickers 10443
-  checks: 28 rows agree in two readings, 17 settled by a third reading (4 pages), 52 unresolved, 63 read once
-Donald J. Trump 12.18.2025 278-T.pdf: ocr 101 rows/60 clean, layer 94 rows/67 clean; printed 107; using ocr
-  checks: 142 rows agree in two readings, 34 settled by a third reading (6 pages), 13 unresolved, 32 read once
-Donald-J-Trump 1.14.2026-278T.pdf: ocr 191 rows/160 clean, layer 182 rows/63 clean; printed 477; using ocr
-  checks: 64 rows agree in two readings, 7 settled by a third reading (6 pages), 68 unresolved, 74 read once
-Donald J. Trump 2.26.2026 278-T (1).pdf: ocr 166 rows/20 clean, layer 148 rows/13 clean; printed 474; using ocr
-  checks: 27 rows agree in two readings, 20 settled by a third reading (3 pages), 23 unresolved, 43 read once
-Donald J. Trump 2.26.2026 278-T (2).pdf: ocr 78 rows/45 clean, layer 71 rows/40 clean; printed 81; using ocr
-  checks: 76 rows agree in two readings, 64 settled by a third reading (6 pages), 27 unresolved, 45 read once
-Donald-J-Trump-4.20.2026-278T.pdf: ocr 170 rows/136 clean, layer 158 rows/63 clean; printed 475; using ocr
-  checks: 54 rows agree in two readings, 5 settled by a third reading (2 pages), 5 unresolved, 14 read once
-Trump, Donald J.-05.08.2026-278T.pdf: ocr 68 rows/66 clean, layer 39 rows/5 clean, ocr2 66 rows/66 clean; printed 69; using ocr
-  checks: 1006 rows agree in two readings, 2 settled by a third reading (6 pages), 8 unresolved, 22 read once
-Donald-J-Trump-08.12.2026-278T.pdf: ocr 1030 rows/1029 clean, layer 0 rows/0 clean, ocr2 1036 rows/1034 clean; printed 1051; using ocr
-  Donald-J-Trump-4.20.2026-278T.pdf: 2 out-of-range dates set to neighbours
 Donald J. Trump 12.18.2025 278-T.pdf: 101 rows, 0/6 stocks mapped, 29 untyped, 2025-10-20..2025-11-13
 Donald-J-Trump 1.14.2026-278T.pdf: 191 rows, 0/6 stocks mapped, 8 untyped, 2025-11-14..2026-01-02
 Donald J. Trump 2.26.2026 278-T (1).pdf: 166 rows, 14/13 stocks mapped, 30 untyped, 2025-09-09..2025-11-17
