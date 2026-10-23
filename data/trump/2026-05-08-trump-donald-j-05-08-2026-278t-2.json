@@ -15,7 +15,7 @@
   "rows": 3621,
   "from": "2026-01-01",
   "to": "2026-04-08",
-  "mapped": 3225,
+  "mapped": 3223,
   "stocks": 3534,
   "untyped": 2,
   "transactions": [
@@ -19858,8 +19858,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "BLFS"
+      "cls": "stock"
     },
     {
       "page": 48,
@@ -40665,8 +40664,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "BLFS"
+      "cls": "stock"
     },
     {
       "no": 3165,

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T12:54:27.733Z",
+  "updatedAt": "2026-10-23T12:58:31.551Z",
   "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
   "annual": {
     "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
@@ -150,7 +150,7 @@
       "rows": 3621,
       "from": "2026-01-01",
       "to": "2026-04-08",
-      "mapped": 3225,
+      "mapped": 3223,
       "stocks": 3534,
       "untyped": 2
     },
