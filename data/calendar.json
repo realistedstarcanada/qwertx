@@ -1,47 +1,19 @@
 {
-  "updatedAt": "2026-10-23T21:55:47.884Z",
+  "updatedAt": "2026-10-24T11:21:51.772Z",
   "econ": [
     {
-      "id": "421625",
-      "country": "CA",
-      "title": "BoC Gov Macklem Speech",
-      "date": "2026-10-14T06:05:00.000Z",
-      "period": "",
-      "actual": null,
+      "id": "398487",
+      "country": "US",
+      "title": "CPI s.a",
+      "date": "2026-10-14T12:30:00.000Z",
+      "period": "Sep",
+      "actual": 336.3,
       "forecast": null,
-      "previous": null,
+      "previous": 334.13,
       "unit": "",
       "scale": "",
       "importance": 0,
-      "source": "Central Bank"
-    },
-    {
-      "id": "421609",
-      "country": "US",
-      "title": "Fed Bowman Speech",
-      "date": "2026-10-14T09:40:00.000Z",
-      "period": "",
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "Federal Reserve"
-    },
-    {
-      "id": "397042",
-      "country": "US",
-      "title": "MBA 30-Year Mortgage Rate",
-      "date": "2026-10-14T11:00:00.000Z",
-      "period": "Oct/09",
-      "actual": 7.5,
-      "forecast": null,
-      "previous": 7.49,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "Mortgage Bankers Association of America"
+      "source": "Bureau of Labour Statistics"
     },
     {
       "id": "398220",
@@ -114,20 +86,6 @@
       "source": "Bureau of Labour Statistics"
     },
     {
-      "id": "398487",
-      "country": "US",
-      "title": "CPI s.a",
-      "date": "2026-10-14T12:30:00.000Z",
-      "period": "Sep",
-      "actual": 336.3,
-      "forecast": null,
-      "previous": 334.13,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "Bureau of Labour Statistics"
-    },
-    {
       "id": "421605",
       "country": "US",
       "title": "Fed Barkin Speech",
@@ -170,17 +128,31 @@
       "source": "Federal Reserve"
     },
     {
-      "id": "398494",
+      "id": "398427",
       "country": "US",
-      "title": "Retail Sales Ex Autos MoM",
+      "title": "PPI MoM",
       "date": "2026-10-15T12:30:00.000Z",
       "period": "Sep",
-      "actual": 0.9,
+      "actual": 1.3,
       "forecast": 0.5,
-      "previous": 1.4,
+      "previous": 0.5,
       "unit": "%",
       "scale": "",
-      "importance": 0,
+      "importance": 1,
+      "source": "Bureau of Labour Statistics"
+    },
+    {
+      "id": "399247",
+      "country": "US",
+      "title": "Retail Sales MoM",
+      "date": "2026-10-15T12:30:00.000Z",
+      "period": "Sep",
+      "actual": 0.8,
+      "forecast": 0.3,
+      "previous": 1.3,
+      "unit": "%",
+      "scale": "",
+      "importance": 1,
       "source": "Census Bureau"
     },
     {
@@ -226,34 +198,6 @@
       "source": "Department of Labour"
     },
     {
-      "id": "399247",
-      "country": "US",
-      "title": "Retail Sales MoM",
-      "date": "2026-10-15T12:30:00.000Z",
-      "period": "Sep",
-      "actual": 0.8,
-      "forecast": 0.3,
-      "previous": 1.3,
-      "unit": "%",
-      "scale": "",
-      "importance": 1,
-      "source": "Census Bureau"
-    },
-    {
-      "id": "398427",
-      "country": "US",
-      "title": "PPI MoM",
-      "date": "2026-10-15T12:30:00.000Z",
-      "period": "Sep",
-      "actual": 1.3,
-      "forecast": 0.5,
-      "previous": 0.5,
-      "unit": "%",
-      "scale": "",
-      "importance": 1,
-      "source": "Bureau of Labour Statistics"
-    },
-    {
       "id": "397058",
       "country": "US",
       "title": "Initial Jobless Claims",
@@ -280,6 +224,20 @@
       "scale": "",
       "importance": 0,
       "source": "Federal Reserve Bank of Philadelphia"
+    },
+    {
+      "id": "398494",
+      "country": "US",
+      "title": "Retail Sales Ex Autos MoM",
+      "date": "2026-10-15T12:30:00.000Z",
+      "period": "Sep",
+      "actual": 0.9,
+      "forecast": 0.5,
+      "previous": 1.4,
+      "unit": "%",
+      "scale": "",
+      "importance": 0,
+      "source": "Census Bureau"
     },
     {
       "id": "399269",
@@ -310,20 +268,6 @@
       "source": "Federal Reserve Bank of Atlanta"
     },
     {
-      "id": "397049",
-      "country": "US",
-      "title": "EIA Gasoline Stocks Change",
-      "date": "2026-10-15T16:00:00.000Z",
-      "period": "Oct/09",
-      "actual": 3.518,
-      "forecast": -0.5,
-      "previous": 0.382,
-      "unit": "",
-      "scale": "M",
-      "importance": 0,
-      "source": "U.S. Energy Information Administration"
-    },
-    {
       "id": "397045",
       "country": "US",
       "title": "EIA Crude Oil Stocks Change",
@@ -332,6 +276,20 @@
       "actual": -8.557,
       "forecast": -0.3,
       "previous": -3.186,
+      "unit": "",
+      "scale": "M",
+      "importance": 0,
+      "source": "U.S. Energy Information Administration"
+    },
+    {
+      "id": "397049",
+      "country": "US",
+      "title": "EIA Gasoline Stocks Change",
+      "date": "2026-10-15T16:00:00.000Z",
+      "period": "Oct/09",
+      "actual": 3.518,
+      "forecast": -0.5,
+      "previous": 0.382,
       "unit": "",
       "scale": "M",
       "importance": 0,
@@ -394,20 +352,6 @@
       "source": "Mortgage and Housing Corporation"
     },
     {
-      "id": "399217",
-      "country": "US",
-      "title": "Import Prices MoM",
-      "date": "2026-10-16T12:30:00.000Z",
-      "period": "Sep",
-      "actual": 1.1,
-      "forecast": 0.8,
-      "previous": 0.5,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "Bureau of Labour Statistics"
-    },
-    {
       "id": "398006",
       "country": "US",
       "title": "Export Prices MoM",
@@ -416,6 +360,20 @@
       "actual": 2.2,
       "forecast": 1,
       "previous": 1.2,
+      "unit": "%",
+      "scale": "",
+      "importance": 0,
+      "source": "Bureau of Labour Statistics"
+    },
+    {
+      "id": "399217",
+      "country": "US",
+      "title": "Import Prices MoM",
+      "date": "2026-10-16T12:30:00.000Z",
+      "period": "Sep",
+      "actual": 1.1,
+      "forecast": 0.8,
+      "previous": 0.5,
       "unit": "%",
       "scale": "",
       "importance": 0,
@@ -478,20 +436,6 @@
       "source": "Federal Reserve"
     },
     {
-      "id": "410254",
-      "country": "CA",
-      "title": "Core Inflation Rate YoY",
-      "date": "2026-10-19T12:30:00.000Z",
-      "period": "Sep",
-      "actual": 2.2,
-      "forecast": null,
-      "previous": 2.4,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "Statistics Canada"
-    },
-    {
       "id": "409418",
       "country": "CA",
       "title": "Inflation Rate YoY",
@@ -503,6 +447,20 @@
       "unit": "%",
       "scale": "",
       "importance": 1,
+      "source": "Statistics Canada"
+    },
+    {
+      "id": "410254",
+      "country": "CA",
+      "title": "Core Inflation Rate YoY",
+      "date": "2026-10-19T12:30:00.000Z",
+      "period": "Sep",
+      "actual": 2.2,
+      "forecast": null,
+      "previous": 2.4,
+      "unit": "%",
+      "scale": "",
+      "importance": 0,
       "source": "Statistics Canada"
     },
     {
@@ -534,9 +492,9 @@
       "source": "National Association of Home Builders"
     },
     {
-      "id": "394262",
+      "id": "394263",
       "country": "CA",
-      "title": "BoC Survey of Consumer Expectations",
+      "title": "BoC Business Outlook Survey",
       "date": "2026-10-19T14:30:00.000Z",
       "period": "",
       "actual": null,
@@ -548,9 +506,9 @@
       "source": "Central Bank"
     },
     {
-      "id": "394263",
+      "id": "394262",
       "country": "CA",
-      "title": "BoC Business Outlook Survey",
+      "title": "BoC Survey of Consumer Expectations",
       "date": "2026-10-19T14:30:00.000Z",
       "period": "",
       "actual": null,
@@ -574,20 +532,6 @@
       "scale": "K",
       "importance": 0,
       "source": "Automatic Data Processing, Inc."
-    },
-    {
-      "id": "398490",
-      "country": "US",
-      "title": "Housing Starts MoM",
-      "date": "2026-10-20T12:30:00.000Z",
-      "period": "Sep",
-      "actual": -5.2,
-      "forecast": null,
-      "previous": -5.9,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "Census Bureau"
     },
     {
       "id": "399226",
@@ -618,6 +562,20 @@
       "source": "Census Bureau"
     },
     {
+      "id": "398490",
+      "country": "US",
+      "title": "Housing Starts MoM",
+      "date": "2026-10-20T12:30:00.000Z",
+      "period": "Sep",
+      "actual": -5.2,
+      "forecast": null,
+      "previous": -5.9,
+      "unit": "%",
+      "scale": "",
+      "importance": 0,
+      "source": "Census Bureau"
+    },
+    {
       "id": "399131",
       "country": "US",
       "title": "Building Permits Prel",
@@ -632,20 +590,6 @@
       "source": "Census Bureau"
     },
     {
-      "id": "399122",
-      "country": "US",
-      "title": "Pending Home Sales MoM",
-      "date": "2026-10-20T14:00:00.000Z",
-      "period": "Sep",
-      "actual": -7.3,
-      "forecast": -0.5,
-      "previous": 0.3,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "National Association of Realtors"
-    },
-    {
       "id": "398322",
       "country": "US",
       "title": "Pending Home Sales YoY",
@@ -654,6 +598,20 @@
       "actual": -11.3,
       "forecast": null,
       "previous": -4.7,
+      "unit": "%",
+      "scale": "",
+      "importance": 0,
+      "source": "National Association of Realtors"
+    },
+    {
+      "id": "399122",
+      "country": "US",
+      "title": "Pending Home Sales MoM",
+      "date": "2026-10-20T14:00:00.000Z",
+      "period": "Sep",
+      "actual": -7.3,
+      "forecast": -0.5,
+      "previous": 0.3,
       "unit": "%",
       "scale": "",
       "importance": 0,
@@ -702,20 +660,6 @@
       "source": "Mortgage Bankers Association of America"
     },
     {
-      "id": "397098",
-      "country": "US",
-      "title": "EIA Gasoline Stocks Change",
-      "date": "2026-10-21T14:30:00.000Z",
-      "period": "Oct/16",
-      "actual": -2.952,
-      "forecast": -0.4,
-      "previous": 3.518,
-      "unit": "",
-      "scale": "M",
-      "importance": 0,
-      "source": "U.S. Energy Information Administration"
-    },
-    {
       "id": "397100",
       "country": "US",
       "title": "EIA Crude Oil Stocks Change",
@@ -730,18 +674,18 @@
       "source": "U.S. Energy Information Administration"
     },
     {
-      "id": "397108",
+      "id": "397098",
       "country": "US",
-      "title": "Initial Jobless Claims",
-      "date": "2026-10-22T12:30:00.000Z",
-      "period": "Oct/17",
-      "actual": 194,
-      "forecast": 200,
-      "previous": 200,
+      "title": "EIA Gasoline Stocks Change",
+      "date": "2026-10-21T14:30:00.000Z",
+      "period": "Oct/16",
+      "actual": -2.952,
+      "forecast": -0.4,
+      "previous": 3.518,
       "unit": "",
-      "scale": "K",
+      "scale": "M",
       "importance": 0,
-      "source": "Department of Labour"
+      "source": "U.S. Energy Information Administration"
     },
     {
       "id": "409958",
@@ -756,6 +700,20 @@
       "scale": "",
       "importance": 0,
       "source": "Statistics Canada"
+    },
+    {
+      "id": "397108",
+      "country": "US",
+      "title": "Initial Jobless Claims",
+      "date": "2026-10-22T12:30:00.000Z",
+      "period": "Oct/17",
+      "actual": 194,
+      "forecast": 200,
+      "previous": 200,
+      "unit": "",
+      "scale": "K",
+      "importance": 0,
+      "source": "Department of Labour"
     },
     {
       "id": "404648",
@@ -800,20 +758,6 @@
       "source": "Statistics Canada"
     },
     {
-      "id": "399085",
-      "country": "US",
-      "title": "S&P Global Services PMI Flash",
-      "date": "2026-10-23T13:45:00.000Z",
-      "period": "Oct",
-      "actual": 57.9,
-      "forecast": 58,
-      "previous": 58.8,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "S&P Global"
-    },
-    {
       "id": "398504",
       "country": "US",
       "title": "S&P Global Manufacturing PMI Flash",
@@ -822,6 +766,20 @@
       "actual": 56,
       "forecast": 55.5,
       "previous": 55.9,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "S&P Global"
+    },
+    {
+      "id": "399085",
+      "country": "US",
+      "title": "S&P Global Services PMI Flash",
+      "date": "2026-10-23T13:45:00.000Z",
+      "period": "Oct",
+      "actual": 57.9,
+      "forecast": 58,
+      "previous": 58.8,
       "unit": "",
       "scale": "",
       "importance": 0,
@@ -912,20 +870,6 @@
       "source": "Automatic Data Processing, Inc."
     },
     {
-      "id": "398125",
-      "country": "US",
-      "title": "Durable Goods Orders MoM",
-      "date": "2026-10-27T12:30:00.000Z",
-      "period": "Sep",
-      "actual": null,
-      "forecast": 0.6,
-      "previous": 0,
-      "unit": "%",
-      "scale": "",
-      "importance": 1,
-      "source": "Census Bureau"
-    },
-    {
       "id": "398394",
       "country": "US",
       "title": "Durable Goods Orders Ex Transp MoM",
@@ -937,6 +881,20 @@
       "unit": "%",
       "scale": "",
       "importance": 0,
+      "source": "Census Bureau"
+    },
+    {
+      "id": "398125",
+      "country": "US",
+      "title": "Durable Goods Orders MoM",
+      "date": "2026-10-27T12:30:00.000Z",
+      "period": "Sep",
+      "actual": null,
+      "forecast": 0.6,
+      "previous": 0,
+      "unit": "%",
+      "scale": "",
+      "importance": 1,
       "source": "Census Bureau"
     },
     {
@@ -954,16 +912,16 @@
       "source": "Standard and Poor's"
     },
     {
-      "id": "399185",
+      "id": "398441",
       "country": "US",
-      "title": "New Home Sales",
+      "title": "New Home Sales MoM",
       "date": "2026-10-27T14:00:00.000Z",
       "period": "Sep",
       "actual": null,
-      "forecast": 0.66,
-      "previous": 0.684,
-      "unit": "",
-      "scale": "M",
+      "forecast": null,
+      "previous": 6.4,
+      "unit": "%",
+      "scale": "",
       "importance": 0,
       "source": "Census Bureau"
     },
@@ -982,16 +940,16 @@
       "source": ""
     },
     {
-      "id": "398441",
+      "id": "399185",
       "country": "US",
-      "title": "New Home Sales MoM",
+      "title": "New Home Sales",
       "date": "2026-10-27T14:00:00.000Z",
       "period": "Sep",
       "actual": null,
-      "forecast": null,
-      "previous": 6.4,
-      "unit": "%",
-      "scale": "",
+      "forecast": 0.66,
+      "previous": 0.684,
+      "unit": "",
+      "scale": "M",
       "importance": 0,
       "source": "Census Bureau"
     },
@@ -1038,14 +996,14 @@
       "source": "Mortgage Bankers Association of America"
     },
     {
-      "id": "398634",
+      "id": "399039",
       "country": "US",
-      "title": "Wholesale Inventories MoM Adv",
+      "title": "Retail Inventories Ex Autos MoM Adv",
       "date": "2026-10-28T12:30:00.000Z",
       "period": "Sep",
       "actual": null,
       "forecast": null,
-      "previous": 0.5,
+      "previous": 0,
       "unit": "%",
       "scale": "",
       "importance": 0,
@@ -1066,32 +1024,18 @@
       "source": "Census Bureau"
     },
     {
-      "id": "399039",
+      "id": "398634",
       "country": "US",
-      "title": "Retail Inventories Ex Autos MoM Adv",
+      "title": "Wholesale Inventories MoM Adv",
       "date": "2026-10-28T12:30:00.000Z",
       "period": "Sep",
       "actual": null,
       "forecast": null,
-      "previous": 0,
+      "previous": 0.5,
       "unit": "%",
       "scale": "",
       "importance": 0,
       "source": "Census Bureau"
-    },
-    {
-      "id": "394241",
-      "country": "CA",
-      "title": "BoC Interest Rate Decision",
-      "date": "2026-10-28T13:45:00.000Z",
-      "period": "",
-      "actual": null,
-      "forecast": 2.5,
-      "previous": 2.25,
-      "unit": "%",
-      "scale": "",
-      "importance": 1,
-      "source": "Central Bank"
     },
     {
       "id": "394247",
@@ -1108,17 +1052,17 @@
       "source": "Central Bank"
     },
     {
-      "id": "394254",
+      "id": "394241",
       "country": "CA",
-      "title": "BoC Press Conference",
-      "date": "2026-10-28T14:30:00.000Z",
+      "title": "BoC Interest Rate Decision",
+      "date": "2026-10-28T13:45:00.000Z",
       "period": "",
       "actual": null,
-      "forecast": null,
-      "previous": null,
-      "unit": "",
+      "forecast": 2.5,
+      "previous": 2.25,
+      "unit": "%",
       "scale": "",
-      "importance": 0,
+      "importance": 1,
       "source": "Central Bank"
     },
     {
@@ -1148,6 +1092,20 @@
       "scale": "",
       "importance": 0,
       "source": "U.S. Energy Information Administration"
+    },
+    {
+      "id": "394254",
+      "country": "CA",
+      "title": "BoC Press Conference",
+      "date": "2026-10-28T14:30:00.000Z",
+      "period": "",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "Central Bank"
     },
     {
       "id": "421536",
@@ -1276,20 +1234,6 @@
       "source": "Bureau of Economics Analysis"
     },
     {
-      "id": "398269",
-      "country": "US",
-      "title": "Personal Spending MoM",
-      "date": "2026-10-29T12:30:00.000Z",
-      "period": "Sep",
-      "actual": null,
-      "forecast": 0.3,
-      "previous": 0.9,
-      "unit": "%",
-      "scale": "",
-      "importance": 1,
-      "source": "Bureau of Economics Analysis"
-    },
-    {
       "id": "397886",
       "country": "US",
       "title": "Core PCE Price Index MoM",
@@ -1298,6 +1242,20 @@
       "actual": null,
       "forecast": 0.3,
       "previous": 0.2,
+      "unit": "%",
+      "scale": "",
+      "importance": 1,
+      "source": "Bureau of Economics Analysis"
+    },
+    {
+      "id": "398269",
+      "country": "US",
+      "title": "Personal Spending MoM",
+      "date": "2026-10-29T12:30:00.000Z",
+      "period": "Sep",
+      "actual": null,
+      "forecast": 0.3,
+      "previous": 0.9,
       "unit": "%",
       "scale": "",
       "importance": 1,
@@ -1316,34 +1274,6 @@
       "scale": "",
       "importance": 0,
       "source": "Federal Reserve Bank of Atlanta"
-    },
-    {
-      "id": "406395",
-      "country": "CA",
-      "title": "GDP MoM",
-      "date": "2026-10-30T12:30:00.000Z",
-      "period": "Aug",
-      "actual": null,
-      "forecast": 0.2,
-      "previous": 0,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "Statistics Canada"
-    },
-    {
-      "id": "398921",
-      "country": "US",
-      "title": "Employment Cost - Benefits QoQ",
-      "date": "2026-10-30T12:30:00.000Z",
-      "period": "Q3",
-      "actual": null,
-      "forecast": null,
-      "previous": 1,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "Bureau of Labour Statistics"
     },
     {
       "id": "398882",
@@ -1388,6 +1318,34 @@
       "source": "Statistics Canada"
     },
     {
+      "id": "398921",
+      "country": "US",
+      "title": "Employment Cost - Benefits QoQ",
+      "date": "2026-10-30T12:30:00.000Z",
+      "period": "Q3",
+      "actual": null,
+      "forecast": null,
+      "previous": 1,
+      "unit": "%",
+      "scale": "",
+      "importance": 0,
+      "source": "Bureau of Labour Statistics"
+    },
+    {
+      "id": "406395",
+      "country": "CA",
+      "title": "GDP MoM",
+      "date": "2026-10-30T12:30:00.000Z",
+      "period": "Aug",
+      "actual": null,
+      "forecast": 0.2,
+      "previous": 0,
+      "unit": "%",
+      "scale": "",
+      "importance": 0,
+      "source": "Statistics Canada"
+    },
+    {
       "id": "398483",
       "country": "US",
       "title": "Chicago PMI",
@@ -1416,20 +1374,6 @@
       "source": "Federal Reserve"
     },
     {
-      "id": "397196",
-      "country": "US",
-      "title": "ISM Manufacturing Employment",
-      "date": "2026-11-02T14:00:00.000Z",
-      "period": "Oct",
-      "actual": null,
-      "forecast": null,
-      "previous": 52.7,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "Institute for Supply Management"
-    },
-    {
       "id": "397194",
       "country": "US",
       "title": "ISM Manufacturing PMI",
@@ -1441,6 +1385,20 @@
       "unit": "",
       "scale": "",
       "importance": 1,
+      "source": "Institute for Supply Management"
+    },
+    {
+      "id": "397196",
+      "country": "US",
+      "title": "ISM Manufacturing Employment",
+      "date": "2026-11-02T14:00:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": 52.7,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
       "source": "Institute for Supply Management"
     },
     {
@@ -1570,20 +1528,6 @@
       "source": "Automatic Data Processing, Inc."
     },
     {
-      "id": "398811",
-      "country": "US",
-      "title": "Imports",
-      "date": "2026-11-04T13:30:00.000Z",
-      "period": "Sep",
-      "actual": null,
-      "forecast": null,
-      "previous": 420.8,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "Census Bureau"
-    },
-    {
       "id": "399144",
       "country": "US",
       "title": "Balance of Trade",
@@ -1598,18 +1542,18 @@
       "source": "Bureau of Economics Analysis"
     },
     {
-      "id": "404874",
-      "country": "CA",
-      "title": "Balance of Trade",
+      "id": "398811",
+      "country": "US",
+      "title": "Imports",
       "date": "2026-11-04T13:30:00.000Z",
-      "period": "Oct",
+      "period": "Sep",
       "actual": null,
       "forecast": null,
-      "previous": 4.2,
+      "previous": 420.8,
       "unit": "",
       "scale": "",
       "importance": 0,
-      "source": "Statistics Canada"
+      "source": "Census Bureau"
     },
     {
       "id": "398949",
@@ -1626,6 +1570,20 @@
       "source": "Census Bureau"
     },
     {
+      "id": "404874",
+      "country": "CA",
+      "title": "Balance of Trade",
+      "date": "2026-11-04T13:30:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": 4.2,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "Statistics Canada"
+    },
+    {
       "id": "397226",
       "country": "US",
       "title": "ISM Services PMI",
@@ -1640,9 +1598,9 @@
       "source": "Institute for Supply Management"
     },
     {
-      "id": "397235",
+      "id": "397231",
       "country": "US",
-      "title": "EIA Crude Oil Stocks Change",
+      "title": "EIA Gasoline Stocks Change",
       "date": "2026-11-04T14:30:00.000Z",
       "period": "Oct/30",
       "actual": null,
@@ -1654,9 +1612,9 @@
       "source": "U.S. Energy Information Administration"
     },
     {
-      "id": "397231",
+      "id": "397235",
       "country": "US",
-      "title": "EIA Gasoline Stocks Change",
+      "title": "EIA Crude Oil Stocks Change",
       "date": "2026-11-04T14:30:00.000Z",
       "period": "Oct/30",
       "actual": null,
@@ -1722,6 +1680,20 @@
       "scale": "",
       "importance": 0,
       "source": "Federal Reserve"
+    },
+    {
+      "id": "397256",
+      "country": "US",
+      "title": "Non Farm Payrolls",
+      "date": "2026-11-06T13:30:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": 29,
+      "unit": "",
+      "scale": "",
+      "importance": 1,
+      "source": "Bureau of Labour Statistics"
     },
     {
       "id": "404864",
@@ -1850,18 +1822,18 @@
       "source": "Bureau of Labour Statistics"
     },
     {
-      "id": "397256",
-      "country": "US",
-      "title": "Non Farm Payrolls",
-      "date": "2026-11-06T13:30:00.000Z",
+      "id": "406075",
+      "country": "CA",
+      "title": "Ivey PMI s.a",
+      "date": "2026-11-06T15:00:00.000Z",
       "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": 29,
+      "previous": 58.2,
       "unit": "",
       "scale": "",
       "importance": 1,
-      "source": "Bureau of Labour Statistics"
+      "source": "Ivey Business School"
     },
     {
       "id": "397307",
@@ -1876,20 +1848,6 @@
       "scale": "",
       "importance": 1,
       "source": "University of Michigan"
-    },
-    {
-      "id": "406075",
-      "country": "CA",
-      "title": "Ivey PMI s.a",
-      "date": "2026-11-06T15:00:00.000Z",
-      "period": "Oct",
-      "actual": null,
-      "forecast": null,
-      "previous": 58.2,
-      "unit": "",
-      "scale": "",
-      "importance": 1,
-      "source": "Ivey Business School"
     },
     {
       "id": "421919",
@@ -1934,28 +1892,14 @@
       "source": "Automatic Data Processing, Inc."
     },
     {
-      "id": "398109",
+      "id": "397913",
       "country": "US",
-      "title": "CPI s.a",
+      "title": "Core Inflation Rate YoY",
       "date": "2026-11-10T13:30:00.000Z",
       "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": 336.3,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "Bureau of Labour Statistics"
-    },
-    {
-      "id": "398679",
-      "country": "US",
-      "title": "Inflation Rate MoM",
-      "date": "2026-11-10T13:30:00.000Z",
-      "period": "Oct",
-      "actual": null,
-      "forecast": null,
-      "previous": 0.6,
+      "previous": 2.6,
       "unit": "",
       "scale": "",
       "importance": 1,
@@ -1976,31 +1920,31 @@
       "source": "Bureau of Labour Statistics"
     },
     {
-      "id": "398243",
+      "id": "398679",
       "country": "US",
-      "title": "Core Inflation Rate MoM",
+      "title": "Inflation Rate MoM",
       "date": "2026-11-10T13:30:00.000Z",
       "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": 0.3,
+      "previous": 0.6,
       "unit": "",
       "scale": "",
       "importance": 1,
       "source": "Bureau of Labour Statistics"
     },
     {
-      "id": "397913",
+      "id": "398109",
       "country": "US",
-      "title": "Core Inflation Rate YoY",
+      "title": "CPI s.a",
       "date": "2026-11-10T13:30:00.000Z",
       "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": 2.6,
+      "previous": 336.3,
       "unit": "",
       "scale": "",
-      "importance": 1,
+      "importance": 0,
       "source": "Bureau of Labour Statistics"
     },
     {
@@ -2015,6 +1959,20 @@
       "unit": "",
       "scale": "",
       "importance": 0,
+      "source": "Bureau of Labour Statistics"
+    },
+    {
+      "id": "398243",
+      "country": "US",
+      "title": "Core Inflation Rate MoM",
+      "date": "2026-11-10T13:30:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": 0.3,
+      "unit": "",
+      "scale": "",
+      "importance": 1,
       "source": "Bureau of Labour Statistics"
     },
     {
@@ -2088,20 +2046,6 @@
       "source": "Department of Labour"
     },
     {
-      "id": "398059",
-      "country": "US",
-      "title": "Existing Home Sales",
-      "date": "2026-11-12T15:00:00.000Z",
-      "period": "Oct",
-      "actual": null,
-      "forecast": null,
-      "previous": 3.99,
-      "unit": "",
-      "scale": "",
-      "importance": 1,
-      "source": "National Association of Realtors"
-    },
-    {
       "id": "398942",
       "country": "US",
       "title": "Existing Home Sales MoM",
@@ -2113,6 +2057,20 @@
       "unit": "",
       "scale": "",
       "importance": 0,
+      "source": "National Association of Realtors"
+    },
+    {
+      "id": "398059",
+      "country": "US",
+      "title": "Existing Home Sales",
+      "date": "2026-11-12T15:00:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": 3.99,
+      "unit": "",
+      "scale": "",
+      "importance": 1,
       "source": "National Association of Realtors"
     },
     {
@@ -2144,20 +2102,6 @@
       "source": "U.S. Energy Information Administration"
     },
     {
-      "id": "398183",
-      "country": "US",
-      "title": "PPI MoM",
-      "date": "2026-11-13T13:30:00.000Z",
-      "period": "Oct",
-      "actual": null,
-      "forecast": null,
-      "previous": 1.3,
-      "unit": "",
-      "scale": "",
-      "importance": 1,
-      "source": "Bureau of Labour Statistics"
-    },
-    {
       "id": "399135",
       "country": "US",
       "title": "Core PPI MoM",
@@ -2172,32 +2116,18 @@
       "source": "Department of Labour"
     },
     {
-      "id": "397940",
+      "id": "398183",
       "country": "US",
-      "title": "NY Empire State Manufacturing Index",
-      "date": "2026-11-16T13:30:00.000Z",
-      "period": "Nov",
-      "actual": null,
-      "forecast": null,
-      "previous": 25.5,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "Federal Reserve Bank of New York"
-    },
-    {
-      "id": "410775",
-      "country": "CA",
-      "title": "Inflation Rate YoY",
-      "date": "2026-11-16T13:30:00.000Z",
+      "title": "PPI MoM",
+      "date": "2026-11-13T13:30:00.000Z",
       "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": 3.1,
+      "previous": 1.3,
       "unit": "",
       "scale": "",
       "importance": 1,
-      "source": "Statistics Canada"
+      "source": "Bureau of Labour Statistics"
     },
     {
       "id": "409230",
@@ -2226,6 +2156,34 @@
       "scale": "",
       "importance": 0,
       "source": "Statistics Canada"
+    },
+    {
+      "id": "410775",
+      "country": "CA",
+      "title": "Inflation Rate YoY",
+      "date": "2026-11-16T13:30:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": 3.1,
+      "unit": "",
+      "scale": "",
+      "importance": 1,
+      "source": "Statistics Canada"
+    },
+    {
+      "id": "397940",
+      "country": "US",
+      "title": "NY Empire State Manufacturing Index",
+      "date": "2026-11-16T13:30:00.000Z",
+      "period": "Nov",
+      "actual": null,
+      "forecast": null,
+      "previous": 25.5,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "Federal Reserve Bank of New York"
     },
     {
       "id": "404440",
@@ -2270,14 +2228,28 @@
       "source": "Bureau of Labour Statistics"
     },
     {
-      "id": "398828",
+      "id": "399093",
       "country": "US",
-      "title": "Retail Sales Ex Autos MoM",
+      "title": "Retail Sales MoM",
       "date": "2026-11-17T13:30:00.000Z",
       "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": 0.9,
+      "previous": 0.8,
+      "unit": "",
+      "scale": "",
+      "importance": 1,
+      "source": "Census Bureau"
+    },
+    {
+      "id": "399325",
+      "country": "US",
+      "title": "Retail Sales Control Group MoM",
+      "date": "2026-11-17T13:30:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
       "unit": "",
       "scale": "",
       "importance": 0,
@@ -2298,31 +2270,17 @@
       "source": "Bureau of Labour Statistics"
     },
     {
-      "id": "399325",
+      "id": "398828",
       "country": "US",
-      "title": "Retail Sales Control Group MoM",
+      "title": "Retail Sales Ex Autos MoM",
       "date": "2026-11-17T13:30:00.000Z",
       "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": null,
+      "previous": 0.9,
       "unit": "",
       "scale": "",
       "importance": 0,
-      "source": "Census Bureau"
-    },
-    {
-      "id": "399093",
-      "country": "US",
-      "title": "Retail Sales MoM",
-      "date": "2026-11-17T13:30:00.000Z",
-      "period": "Oct",
-      "actual": null,
-      "forecast": null,
-      "previous": 0.8,
-      "unit": "",
-      "scale": "",
-      "importance": 1,
       "source": "Census Bureau"
     },
     {
@@ -2340,20 +2298,6 @@
       "source": "Federal Reserve"
     },
     {
-      "id": "398825",
-      "country": "US",
-      "title": "NAHB Housing Market Index",
-      "date": "2026-11-17T15:00:00.000Z",
-      "period": "Nov",
-      "actual": null,
-      "forecast": null,
-      "previous": 29,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "National Association of Home Builders"
-    },
-    {
       "id": "398435",
       "country": "US",
       "title": "Business Inventories MoM",
@@ -2366,6 +2310,20 @@
       "scale": "",
       "importance": 0,
       "source": "Census Bureau"
+    },
+    {
+      "id": "398825",
+      "country": "US",
+      "title": "NAHB Housing Market Index",
+      "date": "2026-11-17T15:00:00.000Z",
+      "period": "Nov",
+      "actual": null,
+      "forecast": null,
+      "previous": 29,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "National Association of Home Builders"
     },
     {
       "id": "421541",
@@ -2410,20 +2368,6 @@
       "source": "Mortgage Bankers Association of America"
     },
     {
-      "id": "398118",
-      "country": "US",
-      "title": "Building Permits MoM Prel",
-      "date": "2026-11-18T13:30:00.000Z",
-      "period": "Oct",
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "unit": "",
-      "scale": "",
-      "importance": 0,
-      "source": "Census Bureau"
-    },
-    {
       "id": "398646",
       "country": "US",
       "title": "Building Permits Prel",
@@ -2449,6 +2393,20 @@
       "unit": "",
       "scale": "",
       "importance": 1,
+      "source": "Census Bureau"
+    },
+    {
+      "id": "398118",
+      "country": "US",
+      "title": "Building Permits MoM Prel",
+      "date": "2026-11-18T13:30:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
       "source": "Census Bureau"
     },
     {
@@ -2592,7 +2550,7 @@
       "source": "Federal Reserve Bank of Philadelphia"
     },
     {
-      "id": "421920",
+      "id": "421607",
       "country": "US",
       "title": "Fed Hammack Speech",
       "date": "2026-11-19T13:50:00.000Z",
@@ -2606,7 +2564,7 @@
       "source": "Federal Reserve"
     },
     {
-      "id": "421607",
+      "id": "421920",
       "country": "US",
       "title": "Fed Hammack Speech",
       "date": "2026-11-19T13:50:00.000Z",
@@ -2648,20 +2606,6 @@
       "source": "Statistics Canada"
     },
     {
-      "id": "407365",
-      "country": "CA",
-      "title": "Retail Sales MoM Final",
-      "date": "2026-11-20T13:30:00.000Z",
-      "period": "Sep",
-      "actual": null,
-      "forecast": 0.7,
-      "previous": 1.2,
-      "unit": "%",
-      "scale": "",
-      "importance": 0,
-      "source": "Statistics Canada"
-    },
-    {
       "id": "410051",
       "country": "CA",
       "title": "Retail Sales Ex Autos MoM",
@@ -2671,6 +2615,20 @@
       "forecast": null,
       "previous": 1.2,
       "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "Statistics Canada"
+    },
+    {
+      "id": "407365",
+      "country": "CA",
+      "title": "Retail Sales MoM Final",
+      "date": "2026-11-20T13:30:00.000Z",
+      "period": "Sep",
+      "actual": null,
+      "forecast": 0.7,
+      "previous": 1.2,
+      "unit": "%",
       "scale": "",
       "importance": 0,
       "source": "Statistics Canada"
@@ -2688,6 +2646,62 @@
       "scale": "",
       "importance": 0,
       "source": "University of Michigan"
+    },
+    {
+      "id": "398707",
+      "country": "US",
+      "title": "Chicago Fed National Activity Index",
+      "date": "2026-11-23T13:30:00.000Z",
+      "period": "Oct",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "Federal Reserve Bank of Chicago"
+    },
+    {
+      "id": "398306",
+      "country": "US",
+      "title": "S&P Global Services PMI Flash",
+      "date": "2026-11-23T14:45:00.000Z",
+      "period": "Nov",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "S&P Global"
+    },
+    {
+      "id": "398148",
+      "country": "US",
+      "title": "S&P Global Composite PMI Flash",
+      "date": "2026-11-23T14:45:00.000Z",
+      "period": "Nov",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "S&P Global"
+    },
+    {
+      "id": "399138",
+      "country": "US",
+      "title": "S&P Global Manufacturing PMI Flash",
+      "date": "2026-11-23T14:45:00.000Z",
+      "period": "Nov",
+      "actual": null,
+      "forecast": null,
+      "previous": null,
+      "unit": "",
+      "scale": "",
+      "importance": 0,
+      "source": "S&P Global"
     }
   ],
   "earnings": [
@@ -4637,8 +4651,8 @@
       "quarter": "Sep/2026",
       "epsForecast": 4.47,
       "estimates": 9,
-      "lastYearEps": 4.14,
-      "eps": null,
+      "lastYearEps": null,
+      "eps": 4.14,
       "surprise": null
     },
     {
@@ -4650,8 +4664,8 @@
       "quarter": "Sep/2026",
       "epsForecast": 1.92,
       "estimates": 2,
-      "lastYearEps": 0.9,
-      "eps": null,
+      "lastYearEps": null,
+      "eps": 0.9,
       "surprise": null
     },
     {
@@ -4663,8 +4677,8 @@
       "quarter": "Sep/2026",
       "epsForecast": 0.62,
       "estimates": 10,
-      "lastYearEps": 0.69,
-      "eps": null,
+      "lastYearEps": null,
+      "eps": 0.69,
       "surprise": null
     },
     {
@@ -4676,8 +4690,8 @@
       "quarter": "Sep/2026",
       "epsForecast": 0.21,
       "estimates": 3,
-      "lastYearEps": 0.2,
-      "eps": null,
+      "lastYearEps": null,
+      "eps": 0.2,
       "surprise": null
     },
     {
@@ -4689,8 +4703,8 @@
       "quarter": "Sep/2026",
       "epsForecast": 46.61,
       "estimates": 5,
-      "lastYearEps": 44.62,
-      "eps": null,
+      "lastYearEps": null,
+      "eps": 44.62,
       "surprise": null
     },
     {
@@ -4702,8 +4716,8 @@
       "quarter": "Sep/2026",
       "epsForecast": 0.85,
       "estimates": 4,
-      "lastYearEps": 0.99,
-      "eps": null,
+      "lastYearEps": null,
+      "eps": 0.99,
       "surprise": null
     },
     {
@@ -4715,8 +4729,8 @@
       "quarter": "Sep/2026",
       "epsForecast": 0.16,
       "estimates": 1,
-      "lastYearEps": 0.19,
-      "eps": null,
+      "lastYearEps": null,
+      "eps": 0.19,
       "surprise": null
     },
     {
