@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-10-23T12:58:25.965Z",
+  "updatedAt": "2026-10-24T12:47:02.379Z",
   "since": "2026-04-01",
   "checks": {
     "house": {
-      "at": "2026-10-22T12:54:21.785Z",
+      "at": "2026-10-24T12:47:02.379Z",
       "docs": 2,
       "complete": 2,
       "incomplete": []
@@ -404,9 +404,115 @@
     "H20035687",
     "H20035691",
     "S/search/view/ptr/7dfdae57-9401-4bf1-9059-85d1e5ee4a84/",
-    "S/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/"
+    "S/search/view/ptr/94c5f7b9-cdbc-40b4-aeba-de920da58588/",
+    "H20035669",
+    "H20035700"
   ],
   "trades": [
+    {
+      "id": "H20035669-3",
+      "chamber": "House",
+      "member": "Cleo Fields",
+      "bioguide": "F000110",
+      "party": "Democrat",
+      "state": "LA",
+      "district": "06",
+      "filed": "2026-10-22",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf",
+      "ticker": "TSM",
+      "assetType": "ST",
+      "asset": "Manufacturing Company Ltd. (TSM)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-10-09",
+      "notified": "2026-10-09",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "Self",
+      "company": "TAIWAN SEMICONDUCTOR MANUFACTURING CO LTD"
+    },
+    {
+      "id": "H20035669-0",
+      "chamber": "House",
+      "member": "Cleo Fields",
+      "bioguide": "F000110",
+      "party": "Democrat",
+      "state": "LA",
+      "district": "06",
+      "filed": "2026-10-22",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf",
+      "ticker": "NVDA",
+      "assetType": "ST",
+      "asset": "NVIDIA Corporation - Common Stock (NVDA)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-10-01",
+      "notified": "2026-10-01",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "Self",
+      "company": "NVIDIA CORP"
+    },
+    {
+      "id": "H20035669-1",
+      "chamber": "House",
+      "member": "Cleo Fields",
+      "bioguide": "F000110",
+      "party": "Democrat",
+      "state": "LA",
+      "district": "06",
+      "filed": "2026-10-22",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf",
+      "ticker": "NVDA",
+      "assetType": "ST",
+      "asset": "NVIDIA Corporation - Common Stock (NVDA)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-10-01",
+      "notified": "2026-10-01",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "Self",
+      "company": "NVIDIA CORP"
+    },
+    {
+      "id": "H20035669-2",
+      "chamber": "House",
+      "member": "Cleo Fields",
+      "bioguide": "F000110",
+      "party": "Democrat",
+      "state": "LA",
+      "district": "06",
+      "filed": "2026-10-22",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035669.pdf",
+      "ticker": "NVDA",
+      "assetType": "ST",
+      "asset": "NVIDIA Corporation - Common Stock (NVDA)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-10-01",
+      "notified": "2026-10-01",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "Self",
+      "company": "NVIDIA CORP"
+    },
     {
       "id": "S7dfdae57-9401-4bf1-9059-85d1e5ee4a84-0",
       "chamber": "Senate",
