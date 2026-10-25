@@ -2,17 +2,10 @@ list 0: 0 Trump links
 list 1: 73 Trump links
 list 2: 73 Trump links
 PDF links: 22
+skip grs02-8.pdf
 SEC tickers 10429
   checks: 437 rows agree in two readings, 12 settled by a third reading (9 pages), 4 unresolved, 11 read once
 Donald-J-Trump-08.12.2025-278T.pdf: ocr 453 rows/448 clean, layer 452 rows/442 clean; printed 507; using ocr
-  checks: 11 rows agree in two readings, 0 settled by a third reading (4 pages), 91 unresolved, 129 read once
-Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: ocr 140 rows/91 clean, layer 0 rows/0 clean, ocr2 140 rows/112 clean; printed 108; using ocr
-  checks: 3 rows agree in two readings, 0 settled by a third reading (1 pages), 27 unresolved, 33 read once
-Donald-J-Trump-08.12.2025-278T(3).pdf: ocr 36 rows/35 clean, layer 36 rows/36 clean; printed 38; using ocr
-  checks: 18 rows agree in two readings, 0 settled by a third reading (1 pages), 5 unresolved, 6 read once
-Donald J. Trump 9.3.25 278-T.pdf: ocr 24 rows/24 clean, layer 24 rows/24 clean; printed 10; using ocr
-  checks: 28 rows agree in two readings, 5 settled by a third reading (1 pages), 4 unresolved, 9 read once
-Donald J. Trump 10.17.2025 278-T.pdf: ocr 37 rows/37 clean, layer 33 rows/33 clean; printed 39; using ocr
   checks: 31 rows agree in two readings, 3 settled by a third reading (3 pages), 33 unresolved, 42 read once
 Donald J. Trump 10.20.2025 278-T.pdf: ocr 73 rows/70 clean, layer 77 rows/72 clean; printed 86; using ocr
   checks: 23 rows agree in two readings, 0 settled by a third reading (1 pages), 32 unresolved, 32 read once
