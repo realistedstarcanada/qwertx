@@ -49,7 +49,7 @@ jobs:
       - name: Insider trades (SEC Form 4 quarterly data)
         run: node scripts/fetch-insiders.mjs
       - name: President Trump (OGE periodic transaction and annual reports)
-        run: node scripts/fetch-trump.mjs ${{ inputs.reprocess && '--force' || '' }} ${{ inputs.trump_only && format('--only "{0}"', inputs.trump_only) || '' }}
+        run: node scripts/fetch-trump.mjs ${{ inputs.debug && '--debug' || '' }} ${{ inputs.reprocess && '--force' || '' }} ${{ inputs.trump_only && format('--only "{0}"', inputs.trump_only) || '' }}
         continue-on-error: true
       - name: Featured members of Congress (full holdings and trades)
         run: node scripts/fetch-featured.mjs ${{ inputs.reprocess && '--force' || '' }}

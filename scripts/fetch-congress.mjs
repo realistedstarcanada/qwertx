@@ -173,7 +173,11 @@ async function houseTrades(people, done) {
       const codes = (text.match(/\[[A-Z]{2}\]/g) || []).length;
       const readAll = parseHouseTransactions(text).length;
       houseCheck.docs++;
-      if (readAll === codes) houseCheck.complete++; else houseCheck.incomplete.push(`${f.docId}:${readAll}/${codes}`);
+      if (readAll === codes) houseCheck.complete++;
+      else {
+        houseCheck.incomplete.push(`${f.docId}:${readAll}/${codes}`);
+        if (DEBUG) { fs.mkdirSync(path.join(ROOT, 'data/_debug'), { recursive: true }); fs.writeFileSync(path.join(ROOT, 'data/_debug', `house-${f.docId}.txt`), text + '\n\n===== PARSED =====\n' + JSON.stringify(parseHouseTransactions(text), null, 1)); }
+      }
       for (const r of rows)
         trades.push({
           id: `H${f.docId}-${trades.length}`,
