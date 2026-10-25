@@ -98,7 +98,7 @@ ${JSON.stringify({ symbols: TAPE_SYMBOLS.map(([proName, t]) => ({ proName, title
     <nav class="nav" aria-label="Main">${NAV.map(([h, l, k]) => `<a href="${h}"${k === page ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
     <div class="header-actions">
       <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to light mode"><i class="fa-solid fa-sun" aria-hidden="true"></i></button>
-      <a class="btn btn-gold btn-sm" href="/pro.html#waitlist">Join waitlist</a>
+      <a class="btn btn-gold btn-sm" href="/pro.html#waitlist">Pro early access</a>
       <button class="icon-btn menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
     </div>
   </div>

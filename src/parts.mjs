@@ -173,12 +173,12 @@ export const proCta = `<section class="section">
   <div class="container">
     <div class="cta-band row row-wide center reveal">
       <div class="col-7">
-        <div class="eyebrow">Coming soon · QWERTx Pro</div>
-        <h2>Professionally managed portfolios, built around your life.</h2>
-        <p class="lead">We are building QWERTx Pro: portfolios matched to your risk profile and time horizon, managed by experienced financial advisors. Join the waitlist to hear first when it launches.</p>
-        <div class="btn-row mt-32"><a class="btn btn-gold" href="/pro.html#waitlist">Join the Pro waitlist <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="/pro.html">How Pro will work</a></div>
+        <div class="eyebrow">Launching soon · QWERTx Pro</div>
+        <h2>Know when smart money moves your stocks.</h2>
+        <p class="lead">QWERTx Pro alerts you when super investors, politicians or insiders trade the stocks on your watchlist, scores every stock on smart money activity and sends you a five-minute Friday brief. Get early access and the founding-member offer.</p>
+        <div class="btn-row mt-32"><a class="btn btn-gold" href="/pro.html#waitlist">Get early access <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="/pro.html">See what Pro includes</a></div>
       </div>
-      <div class="col-5"><img src="/assets/img/pro-hero-sm.jpg" alt="Glass panels of rising height lit in gold and teal, representing portfolios for different risk levels" width="800" height="450" loading="lazy" style="border-radius:16px;border:1px solid var(--line)"></div>
+      <div class="col-5"><img src="/assets/img/pro-hero-sm.jpg" alt="Glass panels of rising height lit in gold and teal" width="800" height="450" loading="lazy" style="border-radius:16px;border:1px solid var(--line)"></div>
     </div>
   </div>
 </section>`;
