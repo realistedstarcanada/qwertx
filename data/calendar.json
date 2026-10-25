@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-10-25T02:43:53.377Z",
+  "updatedAt": "2026-10-25T11:21:56.140Z",
   "econ": [
     {
-      "id": "421610",
+      "id": "398427",
       "country": "US",
-      "title": "Fed Bowman Speech",
-      "date": "2026-10-15T02:55:00.000Z",
-      "period": "",
-      "actual": null,
-      "forecast": null,
-      "previous": null,
-      "unit": "",
+      "title": "PPI MoM",
+      "date": "2026-10-15T12:30:00.000Z",
+      "period": "Sep",
+      "actual": 1.3,
+      "forecast": 0.5,
+      "previous": 0.5,
+      "unit": "%",
       "scale": "",
-      "importance": 0,
-      "source": "Federal Reserve"
+      "importance": 1,
+      "source": "Bureau of Labour Statistics"
     },
     {
       "id": "399247",
@@ -28,20 +28,6 @@
       "scale": "",
       "importance": 1,
       "source": "Census Bureau"
-    },
-    {
-      "id": "398427",
-      "country": "US",
-      "title": "PPI MoM",
-      "date": "2026-10-15T12:30:00.000Z",
-      "period": "Sep",
-      "actual": 1.3,
-      "forecast": 0.5,
-      "previous": 0.5,
-      "unit": "%",
-      "scale": "",
-      "importance": 1,
-      "source": "Bureau of Labour Statistics"
     },
     {
       "id": "399088",
@@ -1038,14 +1024,14 @@
       "source": "Federal Reserve"
     },
     {
-      "id": "398255",
+      "id": "398178",
       "country": "US",
-      "title": "Personal Income MoM",
+      "title": "GDP Growth Rate QoQ Adv",
       "date": "2026-10-29T12:30:00.000Z",
-      "period": "Sep",
+      "period": "Q3",
       "actual": null,
-      "forecast": 0.3,
-      "previous": 0.2,
+      "forecast": 3.2,
+      "previous": 2.2,
       "unit": "%",
       "scale": "",
       "importance": 1,
@@ -1108,14 +1094,14 @@
       "source": "Bureau of Economics Analysis"
     },
     {
-      "id": "398178",
+      "id": "398255",
       "country": "US",
-      "title": "GDP Growth Rate QoQ Adv",
+      "title": "Personal Income MoM",
       "date": "2026-10-29T12:30:00.000Z",
-      "period": "Q3",
+      "period": "Sep",
       "actual": null,
-      "forecast": 3.2,
-      "previous": 2.2,
+      "forecast": 0.3,
+      "previous": 0.2,
       "unit": "%",
       "scale": "",
       "importance": 1,
