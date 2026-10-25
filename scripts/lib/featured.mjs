@@ -79,7 +79,7 @@ const INCOMPLETE = /^(Stock|Common|Class|Account|Units|Shares|Ordinary|Corporati
 const INCOME = /^(Dividends|Capital Gains|Interest|Rent|Partnership|Income|Grape|None|Royalties|Excepted|Tax-Deferred)/;
 const AMT = /(\$[\d,]+\s*-\s*\$[\d,]+|Over \$[\d,]+|Spouse\/DC Over \$1,000,000|None|\$[\d,]+\.\d{2}(?=\s|$))/;
 
-function houseEntries(lines) {
+function houseEntries(lines, { tx = false } = {}) {
   // Each entry ends its name with an asset-type code like [ST], [OP], [RP].
   const entries = [];
   let cur = null;
@@ -97,16 +97,26 @@ function houseEntries(lines) {
       const isData = (t) => /^([LDC]|F S|S O) :/.test(t) || (AMT.test(t) && !/[A-Za-z]{4}/.test(t.replace(/Over|None|Spouse\/DC/g, ''))) || INCOME.test(t);
       const hasTx = (t) => /^(?:(?:SP|JT|DC)\s+)?[A-Z0-9(][^:]*\s(?:P|S(?:\s*\(partial\))?|E)\s+\d{2}\/\d{2}\/\d{4}/.test(t) && !/^([LDC]|F S|S O) :/.test(t);
       const taken = [];
-      for (let k = i - 1; k >= Math.max(0, i - 3); k--) {
+      // A page break can also fall after the transaction line, leaving only the end of the name and the code below
+      // the header: "JT Virtus Artificial Intelligence &" / "Technology Opportunities Fund" / "S 09/23/2026 10/02/2026 $15,001 -" /
+      // "$50,000" / (header) / "Common Shares of Beneficial Interest" / "(AIO) [ST]".
+      const amtCont = (t) => /^(\$[\d,]+|Over \$[\d,]+)$/.test(t || '');
+      const bareTx = (t) => /^(?:P|S(?:\s*\(partial\))?|E)\s+\d{2}\/\d{2}\/\d{4}/.test(t || '');
+      let needName = false;
+      for (let k = i - 1; k >= Math.max(0, i - (tx && !txAfter ? 8 : 3)); k--) {
         const prev = lines[k];
-        const need = isIncomplete(name) || (!txAfter && !txRe.test(name) && hasTx(prev));
-        if (!need || !prev || (isData(prev) && !hasTx(prev))) break;
+        if (!prev) break;
+        const seeking = tx && !txAfter && !txRe.test(name);
+        const need = needName || isIncomplete(name) || (seeking && (hasTx(prev) || bareTx(prev) || amtCont(prev) || (k === i - 1 && !isData(prev))));
+        if (!need || (isData(prev) && !hasTx(prev) && !(seeking && amtCont(prev)))) break;
         // Only lines the previous entry has not used for its own transaction details.
         if (cur && !(cur.tail.length && cur.tail[cur.tail.length - 1] === prev)) break;
         if (cur) cur.tail.pop();
         taken.push(prev);
         name = prev + ' ' + name;
-        if (hasTx(prev) || /^(SP|JT|DC)\s/.test(prev)) break;
+        if (/^(SP|JT|DC)\s/.test(prev)) break;
+        if (bareTx(prev)) { needName = true; continue; }
+        if (hasTx(prev)) break;
       }
       cur = { name: name.trim(), code: c[1], tail: [l.slice(c.index + c[0].length).trim()] };
       entries.push(cur);
@@ -152,7 +162,7 @@ export function parseHouseHoldings(raw) {
 /** Transactions from a House PTR (or Schedule B of an annual report). */
 export function parseHouseTransactions(raw, { annual = false } = {}) {
   const lines = annual ? clip(raw, /^S B:/, /^S C:/) : clip(raw, null, null);
-  return houseEntries(lines).map((e) => {
+  return houseEntries(lines, { tx: true }).map((e) => {
     const h = e.head.replace(/^(SP|JT|DC)\s+/, '');
     const m = /^(P|S(?:\s*\(partial\))?|E)\s+(\d{2}\/\d{2}\/\d{4})(?:\s+(\d{2}\/\d{2}\/\d{4}))?\s+(.*)$/.exec(h) || /^(\d{2}\/\d{2}\/\d{4})\s+(P|S(?:\s*\(partial\))?|E)\s+(.*)$/.exec(h);
     if (!m) return null;

@@ -226,3 +226,17 @@ test('OGE 278-T: heading fragments do not swallow the first row of a page', asyn
   assert.equal(rows[1].no, 29);
   assert.match(rows[1].desc, /^NORTHERN PALM/);
 });
+
+test('House PTR: a page break between the transaction line and the asset code keeps the row', async () => {
+  const { parseHouseTransactions } = await import('../scripts/lib/featured.mjs');
+  const text = ['JT UnitedHealth Group Incorporated', 'Common Stock (UNH) [ST]', 'S 09/23/2026 10/02/2026 $15,001 -', '$50,000', 'F S : New', 'S O : Hern Family Foundation',
+    'JT Virtus Artificial Intelligence &', 'Technology Opportunities Fund', 'S 09/23/2026 10/02/2026 $15,001 -', '$50,000',
+    'Filing ID #20035588', 'ID Owner Asset Transaction', 'Type', 'Date Notification', 'Date', 'Amount Cap.', 'Gains >', '$200?',
+    'Common Shares of Beneficial Interest', '(AIO) [ST]', 'F S : New'].join('\n');
+  const rows = parseHouseTransactions(text);
+  assert.equal(rows.length, 2);
+  assert.equal(rows[0].ticker, 'UNH');
+  assert.equal(rows[1].ticker, 'AIO');
+  assert.equal(rows[1].type, 'sell');
+  assert.equal(rows[1].hi, 50000);
+});
