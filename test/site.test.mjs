@@ -203,3 +203,14 @@ test('OGE classifier: OCR-damaged municipal bonds and bank deposits are not stoc
   assert.equal(classify('FIRST HORIZON BK MEMPHIS TENN OUE'), 'corporate');
   for (const s of ['APPLE INC', 'FIFTH THIRD BANCORP', 'CITY HOLDING CO', 'PUBLIC STORAGE', 'STATE STREET CORP', 'FIRST CITIZENS BANCSHARES INC DEL CL A']) assert.equal(classify(s), 'stock', s);
 });
+
+test('form API saves sign-ups, rejects bad email and says when storage is missing', async () => {
+  const { onRequestPost } = await import('../functions/api/form.js');
+  const q = [];
+  const DB = { prepare: (s) => ({ s, bind: (...a) => ({ s, a }) }), batch: async (x) => { q.push(...x); } };
+  const req = (b) => new Request('https://x/api/form', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(b) });
+  assert.equal((await onRequestPost({ request: req({ kind: 'newsletter', email: 'A@B.co' }), env: { DB } })).status, 200);
+  assert.ok(q.some((x) => /INSERT INTO subscribers/.test(x.s) && x.a[0] === 'a@b.co'));
+  assert.equal((await onRequestPost({ request: req({ kind: 'newsletter', email: 'nope' }), env: { DB } })).status, 422);
+  assert.equal((await onRequestPost({ request: req({ kind: 'contact', email: 'a@b.co', name: 'A', message: 'hi' }), env: {} })).status, 503);
+});
