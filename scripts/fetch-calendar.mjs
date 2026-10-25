@@ -6,6 +6,7 @@
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { fetchRetry, readJSON, writeJSON, sleep } from './lib/net.mjs';
+import { loadData } from '../src/lib/data.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const OUT = path.join(ROOT, 'data', 'calendar.json');
@@ -51,22 +52,48 @@ async function earningsDay(day) {
       eps: num(r.eps),
       surprise: num(r.surprise),
     }))
-    .filter((r) => r.ticker && (r.marketCap || 0) >= 10e9);
+    .filter((r) => r.ticker && ((r.marketCap || 0) >= 10e9 || tracked.has(r.ticker)));
+}
+
+// Every stock that has a page on the site, so each one can show its next earnings date.
+const FUNDLIKE = /\b(ETF|ETN|FUND|TRUST|ISHARES|SPDR|INDEX|PORTFOLIO|PROSHARES|INVESCO QQQ|VANGUARD|SELECT SECTOR|ACQUISITION|SPAC|WARRANTS?|UNITS?|RIGHTS?)\b/i;
+let tracked = new Set();
+function trackedStocks() {
+  try {
+    const d = loadData({ root: ROOT, dataDir: path.join(ROOT, 'data'), configPath: path.join(ROOT, 'config', 'investors.json') });
+    return [...d.stockByTicker.values()].filter((s) => s.hasPage && s.ticker && /^[A-Z][A-Z.]{0,5}$/.test(s.ticker) && !FUNDLIKE.test(s.name || ''));
+  } catch (e) { console.error('could not load tracked stocks:', e.message); return []; }
+}
+
+// Nasdaq's per-company page: "Earnings announcement* for MU: Dec 17, 2026". Used for the few companies the
+// calendar sweep doesn't reach (reporting more than ~3 months out, or too small for the daily lists).
+const MON = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12 };
+async function symbolDate(t) {
+  const j = await fetchRetry(`https://api.nasdaq.com/api/analyst/${encodeURIComponent(t.replace('.', '/'))}/earnings-date`, {
+    headers: { 'User-Agent': UA, Accept: 'application/json, text/plain, */*', Origin: 'https://www.nasdaq.com', Referer: 'https://www.nasdaq.com/', 'Accept-Language': 'en-US,en;q=0.9' },
+  }, { type: 'json', tries: 2 });
+  const text = `${j?.data?.announcement || ''} ${j?.data?.reportText || ''}`;
+  const m = /:\s*([A-Z][a-z]{2})\w*\s+(\d{1,2}),\s*(20\d\d)/.exec(text);
+  if (!m || !MON[m[1]]) return null;
+  return { date: `${m[3]}-${String(MON[m[1]]).padStart(2, '0')}-${m[2].padStart(2, '0')}`, estimated: /estimat|projected|\*/i.test(text) && !/confirmed/i.test(text) };
 }
 
 async function main() {
   const prev = readJSON(OUT, {});
   const now = new Date();
-  const out = { updatedAt: now.toISOString(), econ: prev.econ || [], earnings: prev.earnings || [] };
+  const out = { updatedAt: now.toISOString(), econ: prev.econ || [], earnings: prev.earnings || [], symbolDates: prev.symbolDates || {} };
+  const stocks = trackedStocks();
+  tracked = new Set(stocks.map((s) => s.ticker));
+  console.log(`tracked stocks: ${tracked.size}`);
 
   try {
     out.econ = await economic(new Date(now - 10 * DAY), new Date(+now + 45 * DAY));
     console.log(`economic events: ${out.econ.length}`);
   } catch (e) { console.error('economic calendar failed, keeping previous:', e.message); }
 
-  // Weekdays from the start of this month (or a week back) to five weeks ahead.
-  const start = new Date(Math.min(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1), +now - 7 * DAY));
-  const end = new Date(+now + 35 * DAY);
+  // Weekdays from ~7 weeks back (so recent results show) to ~14 weeks ahead (one full reporting cycle).
+  const start = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate()) - 49 * DAY);
+  const end = new Date(+now + 98 * DAY);
   const earnings = [];
   let fails = 0;
   for (let d = start; d <= end; d = new Date(+d + DAY)) {
@@ -74,9 +101,26 @@ async function main() {
     try { earnings.push(...(await earningsDay(iso(d)))); } catch (e) { fails++; console.error('earnings', iso(d), e.message); }
     await sleep(350);
   }
-  if (earnings.length && fails < 5) out.earnings = earnings;
+  if (earnings.length && fails < 10) out.earnings = earnings;
   else console.error(`earnings: ${earnings.length} rows, ${fails} failed days; keeping previous`);
-  console.log(`earnings rows (>$10B): ${out.earnings.length}`);
+  console.log(`earnings rows: ${out.earnings.length}`);
+
+  // Companies with no upcoming date in the sweep: ask Nasdaq per company, at most once a day each.
+  const today = iso(now);
+  const haveNext = new Set(out.earnings.filter((r) => r.date >= today).map((r) => r.ticker));
+  for (const [t, x] of Object.entries(out.symbolDates)) if (!tracked.has(t) || (x.date && x.date < today && Date.parse(x.checked) < +now - 20 * 3600e3)) delete out.symbolDates[t];
+  const todo = stocks.map((s) => s.ticker).filter((t) => !haveNext.has(t) && !(out.symbolDates[t] && Date.parse(out.symbolDates[t].checked) > +now - 20 * 3600e3));
+  let got = 0, miss = 0, err = 0;
+  const limit = Number(process.env.SYMBOL_LIMIT || 450);
+  for (const t of todo.slice(0, limit)) {
+    try {
+      const r = await symbolDate(t);
+      out.symbolDates[t] = { ...(r || { date: null }), checked: now.toISOString() };
+      if (r && r.date >= today) got++; else miss++;
+    } catch (e) { err++; if (err >= 25) { console.error('per-company lookups failing, stopping:', e.message); break; } }
+    await sleep(250);
+  }
+  console.log(`per-company dates: ${todo.length} to check, ${got} found, ${miss} without a future date, ${err} errors`);
   writeJSON(OUT, out);
 }
 

@@ -5,10 +5,18 @@ import { titleish } from './home.mjs';
 
 /** "Next earnings: Wed Oct 21 · after close · EPS est. $6.54" */
 export const earningsChip = (s) => {
-  const e = s.nextEarnings;
-  if (!e) return '';
-  const t = e.time === 'bmo' ? 'before the open' : e.time === 'amc' ? 'after the close' : '';
-  return `<a class="earn-chip" href="/calendar.html#earnings"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Next earnings: <b>${e.label}</b>${t ? ` · ${t}` : ''}${e.epsForecast != null ? ` · EPS est. $${e.epsForecast.toFixed(2)}` : ''}</a>`;
+  const e = s.nextEarnings, l = s.lastEarnings;
+  const parts = [];
+  if (e) {
+    const t = e.time === 'bmo' ? 'before the open' : e.time === 'amc' ? 'after the close' : '';
+    parts.push(`<a class="earn-chip" href="/calendar.html#earnings"><i class="fa-regular fa-calendar" aria-hidden="true"></i> Next earnings: <b>${e.label}</b>${e.estimated ? ' (expected)' : ''}${t ? ` · ${t}` : ''}${e.epsForecast != null ? ` · EPS est. $${e.epsForecast.toFixed(2)}` : ''}</a>`);
+  }
+  // Show the last result when it came out in the past six weeks (or when no next date is known yet).
+  if (l && (!e || Date.parse(l.date) > Date.now() - 42 * 864e5)) {
+    const beat = l.epsForecast != null ? (l.eps > l.epsForecast ? ['up', 'beat'] : l.eps < l.epsForecast ? ['down', 'missed'] : ['', 'matched']) : null;
+    parts.push(`<span class="earn-chip"><i class="fa-solid fa-receipt" aria-hidden="true"></i> Last earnings: <b>${l.label}</b> · EPS $${l.eps.toFixed(2)}${beat ? ` <span class="${beat[0]}">${beat[1]}</span> the $${l.epsForecast.toFixed(2)} estimate` : ''}</span>`);
+  }
+  return parts.join(' ');
 };
 
 const liveChart = (s) =>

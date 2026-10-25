@@ -394,6 +394,7 @@ export function loadData({ root, dataDir, configPath }) {
   // Economic calendar and earnings dates.
   const calendar = buildCalendar(readJSON(path.join(dataDir, 'calendar.json'), null), { stockByTicker });
   if (calendar) for (const [t, x] of calendar.earnings.nextByTicker) { const s = stockByTicker.get(t); if (s) s.nextEarnings = x; }
+  if (calendar) for (const [t, x] of calendar.earnings.lastByTicker) { const s = stockByTicker.get(t); if (s) s.lastEarnings = x; }
 
   return {
     cfg,

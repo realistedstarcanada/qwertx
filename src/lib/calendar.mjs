@@ -229,6 +229,15 @@ export function buildCalendar(cal, { now = new Date(), stockByTicker = new Map()
   const reported = earn.filter((r) => r.date < today && major(r) && r.eps != null).sort((a, b) => b.date.localeCompare(a.date) || (b.marketCap || 0) - (a.marketCap || 0));
   const nextByTicker = new Map();
   for (const r of earn.filter((x) => x.date >= today).sort((a, b) => a.date.localeCompare(b.date))) if (!nextByTicker.has(r.ticker)) nextByTicker.set(r.ticker, { date: r.date, label: dayLabel(r.date), time: r.time, epsForecast: r.epsForecast });
+  // Dates looked up per company (reports more than ~3 months out, or smaller companies).
+  for (const [t, x] of Object.entries(cal.symbolDates || {})) {
+    if (x?.date && x.date >= today && !nextByTicker.has(t)) nextByTicker.set(t, { date: x.date, label: dayLabel(x.date), time: '', epsForecast: null, estimated: !!x.estimated });
+  }
+  // The most recent result, for companies that just reported.
+  const lastByTicker = new Map();
+  for (const r of earn.filter((x) => x.date < today && x.eps != null).sort((a, b) => b.date.localeCompare(a.date))) {
+    if (!lastByTicker.has(r.ticker)) lastByTicker.set(r.ticker, { date: r.date, label: dayLabel(r.date), eps: r.eps, epsForecast: r.epsForecast, quarter: r.quarter });
+  }
 
   return {
     updatedAt: cal.updatedAt,
@@ -243,6 +252,7 @@ export function buildCalendar(cal, { now = new Date(), stockByTicker = new Map()
       thisWeek: upcomingEarn.filter((r) => r.date < nextMon).sort((a, b) => (b.marketCap || 0) - (a.marketCap || 0)),
       reported: reported.slice(0, 12),
       nextByTicker,
+      lastByTicker,
     },
   };
 }
