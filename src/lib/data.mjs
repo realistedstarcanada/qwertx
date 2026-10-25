@@ -395,6 +395,17 @@ export function loadData({ root, dataDir, configPath }) {
   const calendar = buildCalendar(readJSON(path.join(dataDir, 'calendar.json'), null), { stockByTicker });
   if (calendar) for (const [t, x] of calendar.earnings.nextByTicker) { const s = stockByTicker.get(t); if (s) s.nextEarnings = x; }
   if (calendar) for (const [t, x] of calendar.earnings.lastByTicker) { const s = stockByTicker.get(t); if (s) s.lastEarnings = x; }
+  // Other share classes of the same company (GOOG and GOOGL, FOX and FOXA) report together.
+  if (calendar) {
+    const co = (s) => String(s.name || '').toLowerCase().replace(/\b(class|cl|series)\s*[a-z]\b|\b(inc|corp|corporation|co|plc|ltd|the)\b|[^a-z]/g, '');
+    const byCo = new Map();
+    for (const s of stockByTicker.values()) if (s.nextEarnings || s.lastEarnings) { const k = co(s); if (k.length > 3 && !byCo.has(k)) byCo.set(k, s); }
+    for (const s of stockByTicker.values()) {
+      if (s.nextEarnings || s.lastEarnings) continue;
+      const m = byCo.get(co(s));
+      if (m && m !== s) { s.nextEarnings = m.nextEarnings; s.lastEarnings = m.lastEarnings; }
+    }
+  }
 
   return {
     cfg,

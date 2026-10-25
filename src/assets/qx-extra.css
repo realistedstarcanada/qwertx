@@ -131,7 +131,7 @@ h3 { font-size: 20px; }
 
 /* Ranked list with dot meter */
 .v-rank { list-style: none; margin: 0; padding: 4px 0; }
-.v-rank li { display: grid; grid-template-columns: 30px 1fr auto; gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); }
+.v-rank li { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 12px; align-items: center; padding: 12px 0; border-top: 1px solid var(--line); }
 .v-rank li:first-child { border-top: 0; }
 .v-rank .n { font: 500 13px var(--font-mono); color: var(--faint); }
 .v-rank .nm { min-width: 0; }
@@ -421,7 +421,11 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
   .fp-stats span { font-size: 10px; }
 }
 @media (max-width: 420px) { .fp-stats { grid-template-columns: 1fr 1fr; } .fp-stats > div:last-child { grid-column: span 2; } }
-.row > [class*="col"] { min-width: 0; }
+/* Columns wrap at their minimum width, but never ask for more room than the screen has. */
+.row > .col-2 { min-width: min(280px, 100%); }
+.row > .col-3 { min-width: min(260px, 100%); }
+.row > .col-4 { min-width: min(220px, 100%); }
+.row > .col-5, .row > .col-7 { min-width: min(300px, 100%); }
 @media (max-width: 420px) { .v-rank .v-dots { display: none; } }
 .fp-recent-h { font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); margin-bottom: -8px; }
 .fp-mini { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
@@ -464,3 +468,9 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 .pro-plan h3 { font-family: var(--font-mono); font-size: 26px; font-weight: 500; }
 .pro-plan .btn { margin-top: auto; }
 @media (max-width: 640px) { .pro-plans { grid-template-columns: 1fr; } }
+.list-check li > span { min-width: 0; flex: 1 1 auto; overflow-wrap: anywhere; }
+/* Phone widths: let long names, chips and labels wrap inside cards instead of widening the page. */
+.card { min-width: 0; max-width: 100%; }
+.inv-top > div { min-width: 0; }
+.top3 { flex-wrap: wrap; }
+.card-label { flex-wrap: wrap; gap: 4px 10px; }
