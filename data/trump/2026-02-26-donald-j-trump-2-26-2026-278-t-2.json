@@ -16,7 +16,7 @@
   "from": "2026-01-02",
   "to": "2026-02-01",
   "mapped": 3,
-  "stocks": 4,
+  "stocks": 2,
   "untyped": 8,
   "transactions": [
     {
@@ -851,7 +851,7 @@
       "lo": 1000001,
       "hi": 5000000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "muni"
     },
     {
       "no": 74,
@@ -886,7 +886,7 @@
       "lo": 100001,
       "hi": 250000,
       "unverified": true,
-      "cls": "stock"
+      "cls": "corporate"
     },
     {
       "page": 4,

@@ -16,7 +16,7 @@
   "from": "2026-03-01",
   "to": "2026-03-31",
   "mapped": 5,
-  "stocks": 6,
+  "stocks": 5,
   "untyped": 0,
   "transactions": [
     {
@@ -335,7 +335,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "muni"
     },
     {
       "no": 28,

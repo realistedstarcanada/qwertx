@@ -16,7 +16,7 @@
   "from": "2025-11-14",
   "to": "2026-01-02",
   "mapped": 0,
-  "stocks": 6,
+  "stocks": 0,
   "untyped": 8,
   "transactions": [
     {
@@ -40,7 +40,7 @@
       "lo": 250001,
       "hi": 500000,
       "unverified": true,
-      "cls": "stock"
+      "cls": "muni"
     },
     {
       "no": 3,
@@ -1407,7 +1407,7 @@
       "lo": 250001,
       "hi": 500000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "muni"
     },
     {
       "no": 116,
@@ -1624,7 +1624,7 @@
       "lo": 250001,
       "hi": 500000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "muni"
     },
     {
       "no": 134,
@@ -1673,7 +1673,7 @@
       "lo": 250001,
       "hi": 500000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "muni"
     },
     {
       "page": 6,
@@ -1684,7 +1684,7 @@
       "lo": 250001,
       "hi": 500000,
       "unverified": true,
-      "cls": "stock"
+      "cls": "muni"
     },
     {
       "no": 138,
@@ -2212,7 +2212,7 @@
       "lo": 250001,
       "hi": 500000,
       "checked": 2,
-      "cls": "stock"
+      "cls": "corporate"
     },
     {
       "no": 183,

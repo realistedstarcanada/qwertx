@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T12:47:06.829Z",
+  "updatedAt": "2026-10-25T02:51:37.938Z",
   "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
   "annual": {
     "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
@@ -7,6 +7,174 @@
     "signed": "2026-06-30"
   },
   "filings": [
+    {
+      "id": "2025-08-12-donald-j-trump-08-12-2025-278t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/E9C024E25C9E4B2085258CEB006E7E23/$FILE/Donald-J-Trump-08.12.2025-278T.pdf",
+      "name": "Donald-J-Trump-08.12.2025-278T.pdf",
+      "signed": "2025-08-12",
+      "received": "2025-08-19",
+      "printedRows": 507,
+      "text": "ocr",
+      "check": {
+        "agreed": 437,
+        "resolved": 12,
+        "unresolved": 4,
+        "single": 11
+      },
+      "rows": 453,
+      "from": "2025-01-31",
+      "to": "2025-06-13",
+      "mapped": 0,
+      "stocks": 2,
+      "untyped": 0
+    },
+    {
+      "id": "2025-08-12-donald-j-trump-08-12-2025-278t-2-amended",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/024D876AAE518C5085258CEB006E7E2E/$FILE/Donald-J-Trump-08.12.2025-278T(2)%20AMENDED.pdf",
+      "name": "Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf",
+      "signed": "2025-08-12",
+      "received": "2025-08-19",
+      "printedRows": 145,
+      "text": "ocr",
+      "check": {
+        "agreed": 11,
+        "resolved": 0,
+        "unresolved": 91,
+        "single": 129
+      },
+      "rows": 140,
+      "from": "2025-07-02",
+      "to": "2025-07-22",
+      "mapped": 0,
+      "stocks": 0,
+      "untyped": 0
+    },
+    {
+      "id": "2025-08-12-donald-j-trump-08-12-2025-278t-3",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/5315A095A2EE1B9185258CEB006E7E36/$FILE/Donald-J-Trump-08.12.2025-278T(3).pdf",
+      "name": "Donald-J-Trump-08.12.2025-278T(3).pdf",
+      "signed": "2025-08-12",
+      "received": "2025-08-19",
+      "printedRows": 38,
+      "text": "ocr",
+      "check": {
+        "agreed": 3,
+        "resolved": 0,
+        "unresolved": 27,
+        "single": 33
+      },
+      "rows": 36,
+      "from": "2025-07-25",
+      "to": "2025-08-01",
+      "mapped": 0,
+      "stocks": 0,
+      "untyped": 1
+    },
+    {
+      "id": "2025-09-03-donald-j-trump-9-3-25-278-t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/322B8A28DB21CC9285258CFD002C0D0B/$FILE/Donald%20J.%20Trump%209.3.25%20278-T.pdf",
+      "name": "Donald J. Trump 9.3.25 278-T.pdf",
+      "signed": "2025-09-03",
+      "received": "2025-08-19",
+      "printedRows": 25,
+      "text": "ocr",
+      "check": {
+        "agreed": 18,
+        "resolved": 0,
+        "unresolved": 5,
+        "single": 6
+      },
+      "rows": 24,
+      "from": "2025-08-07",
+      "to": "2025-08-18",
+      "mapped": 0,
+      "stocks": 0,
+      "untyped": 0
+    },
+    {
+      "id": "2025-10-17-donald-j-trump-10-17-2025-278-t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/AA799A2729B4D1BE85258D430031A320/$FILE/Donald%20J.%20Trump%2010.17.2025%20278-T.pdf",
+      "name": "Donald J. Trump 10.17.2025 278-T.pdf",
+      "signed": "2025-10-17",
+      "received": "2025-10-28",
+      "printedRows": 39,
+      "text": "ocr",
+      "check": {
+        "agreed": 28,
+        "resolved": 5,
+        "unresolved": 4,
+        "single": 9
+      },
+      "rows": 37,
+      "from": "2025-08-28",
+      "to": "2025-09-03",
+      "mapped": 0,
+      "stocks": 0,
+      "untyped": 0
+    },
+    {
+      "id": "2025-10-20-donald-j-trump-10-20-2025-278-t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/2C89623DC721F62585258D430031A32A/$FILE/Donald%20J.%20Trump%2010.20.2025%20278-T.pdf",
+      "name": "Donald J. Trump 10.20.2025 278-T.pdf",
+      "signed": "2025-10-20",
+      "received": "2025-10-28",
+      "printedRows": 79,
+      "text": "ocr",
+      "check": {
+        "agreed": 31,
+        "resolved": 3,
+        "unresolved": 33,
+        "single": 42
+      },
+      "rows": 73,
+      "from": "2025-09-04",
+      "to": "2025-09-19",
+      "mapped": 0,
+      "stocks": 1,
+      "untyped": 0
+    },
+    {
+      "id": "2025-10-20-donald-j-trump-10-20-2025-278-t-2",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/18353894FE440B3685258D430031A337/$FILE/Donald%20J.%20Trump%2010.20.2025%20278-T%20(2).pdf",
+      "name": "Donald J. Trump 10.20.2025 278-T (2).pdf",
+      "signed": "2025-10-20",
+      "received": "2025-10-28",
+      "printedRows": 57,
+      "text": "ocr",
+      "check": {
+        "agreed": 23,
+        "resolved": 0,
+        "unresolved": 32,
+        "single": 32
+      },
+      "rows": 55,
+      "from": "2025-09-18",
+      "to": "2025-10-02",
+      "mapped": 1,
+      "stocks": 0,
+      "untyped": 0
+    },
+    {
+      "id": "2025-11-14-donald-j-trump-11-14-2025-278-t",
+      "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/903A217DC18563EC85258D4A0031B044/$FILE/Donald%20J.%20Trump%2011.14.2025%20278-T.pdf",
+      "name": "Donald J. Trump 11.14.2025 278-T.pdf",
+      "signed": "2025-11-14",
+      "received": "2025-11-17",
+      "printedRows": 31,
+      "text": "ocr",
+      "check": {
+        "agreed": 1,
+        "resolved": 0,
+        "unresolved": 28,
+        "single": 30
+      },
+      "rows": 31,
+      "from": "2025-10-02",
+      "to": "2025-10-18",
+      "mapped": 0,
+      "stocks": 0,
+      "untyped": 0
+    },
     {
       "id": "2025-12-18-donald-j-trump-12-18-2025-278-t",
       "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/87BFE542A2751E0285258D6600346FCD/$FILE/Donald%20J.%20Trump%2012.18.2025%20278-T.pdf",
@@ -25,7 +193,7 @@
       "from": "2025-10-20",
       "to": "2025-11-13",
       "mapped": 0,
-      "stocks": 6,
+      "stocks": 1,
       "untyped": 29
     },
     {
@@ -46,7 +214,7 @@
       "from": "2025-11-14",
       "to": "2026-01-02",
       "mapped": 0,
-      "stocks": 6,
+      "stocks": 0,
       "untyped": 8
     },
     {
@@ -88,7 +256,7 @@
       "from": "2026-01-02",
       "to": "2026-02-01",
       "mapped": 3,
-      "stocks": 4,
+      "stocks": 2,
       "untyped": 8
     },
     {
@@ -109,7 +277,7 @@
       "from": "2026-03-01",
       "to": "2026-03-31",
       "mapped": 5,
-      "stocks": 6,
+      "stocks": 5,
       "untyped": 0
     },
     {
