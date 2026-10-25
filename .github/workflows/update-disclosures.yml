@@ -19,6 +19,10 @@ on:
         description: 'Re-read every House and President filing with the current parsers'
         type: boolean
         default: false
+      reparse_house:
+        description: 'Re-read every House filing only (quick)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -41,7 +45,7 @@ jobs:
       - name: Install PDF text and OCR tools
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils tesseract-ocr python3-pil python3-numpy >/dev/null
       - name: Congressional trades (House + Senate)
-        run: node scripts/fetch-congress.mjs --max ${{ inputs.max || '400' }} ${{ inputs.debug && '--debug' || '' }} ${{ inputs.reprocess && '--reparse-house' || '' }}
+        run: node scripts/fetch-congress.mjs --max ${{ inputs.max || '400' }} ${{ inputs.debug && '--debug' || '' }} ${{ (inputs.reprocess || inputs.reparse_house) && '--reparse-house' || '' }}
       - name: Insider trades (SEC Form 4 quarterly data)
         run: node scripts/fetch-insiders.mjs
       - name: President Trump (OGE periodic transaction and annual reports)

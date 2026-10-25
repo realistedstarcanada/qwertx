@@ -195,3 +195,11 @@ test('OGE 278-T: lowercase yes/no notification column and row numbers', async ()
   assert.deepEqual(r.map((x) => x.no), [1, 2, 3]);
   assert.deepEqual([r[2].type, r[2].lo, r[2].late], ['S', 500001, true]);
 });
+
+test('OGE classifier: OCR-damaged municipal bonds and bank deposits are not stocks', async () => {
+  const { classify } = await import('../scripts/lib/oge278t.mjs');
+  assert.equal(classify('Dorchester Cnty SC Sch Dist No 004 Go Bds 2023a S.000%'), 'muni');
+  assert.equal(classify('NEW YORK NY CITY MUN WTR RN AUTH WTR & SWR SYS REV FORIS SUES DATED PRIOR TO'), 'muni');
+  assert.equal(classify('FIRST HORIZON BK MEMPHIS TENN OUE'), 'corporate');
+  for (const s of ['APPLE INC', 'FIFTH THIRD BANCORP', 'CITY HOLDING CO', 'PUBLIC STORAGE', 'STATE STREET CORP', 'FIRST CITIZENS BANCSHARES INC DEL CL A']) assert.equal(classify(s), 'stock', s);
+});

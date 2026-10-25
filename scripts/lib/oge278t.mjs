@@ -92,6 +92,11 @@ export function classify(desc) {
     return muni > corp ? 'muni' : 'corporate';
   }
   if (/\b(FUND|FD|PORTFOLIO|TRUST)\b/.test(u) && !/\b(INC|CORP|REIT|BANCORP)\b/.test(u)) return 'fund';
+  // Municipal bonds whose coupon or "Due" OCR'd badly ("S.000%", "BE/R/"): several municipal words, or one plus a state.
+  const muniWords = (u.match(MUNI_G) || []).length + (u.match(/\b(BDS|REVS|CNTY|UNIV|SYS|PROG|COLLEGE|SCH|DIST|FDG|VARATE|PUTBND|CALLABLE)\b/g) || []).length;
+  if (muniWords >= 3 || (muniWords >= 2 && (u.match(STATES) || []).length) || (muniWords >= 1 && /\d%/.test(u))) return 'muni';
+  // Coupons OCR'd with letters ("S.000%", "G.9B02%") and bank deposits ("FIRST HORIZON BK MEMPHIS TENN").
+  if (/[\dSOGB]\.[\dOSB]{2,4}\s*%/.test(u) || /\bBK\b.*\b(TENN|N\s?A|CD)\b|\bCERT(IFICATE)? OF DEP|\bCD\b/.test(u)) return 'corporate';
   return 'stock';
 }
 const MUNI_G = new RegExp(MUNI.source, 'g');

@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { cleanName, titleCase, quarterKey } from './format.mjs';
+import { classify } from '../../scripts/lib/oge278t.mjs';
 
 const CLASS = {
   stock: 'Individual stocks', fund: 'ETFs and funds', muni: 'Municipal bonds', corporate: 'Corporate bonds',
@@ -61,6 +62,8 @@ export function loadTrump(dataDir, { stockByTicker, sectors }) {
   };
   for (const r of rows) {
     r.desc = r.desc.replace(/[\s:;,.\-_|]+$/, '');
+    // Rows saved before the classifier learned OCR-damaged municipal bonds and bank deposits.
+    if (r.cls === 'stock' && !r.tk) r.cls = classify(r.desc);
     // An unconfirmed reading above $25M is more likely an OCR slip than a real trade: count it in the $5M-$25M band.
     if (r.unverified && r.lo > 25000000) { r.lo = 5000001; r.hi = 25000000; r.capped = true; }
     r.name = nameFor(r);
