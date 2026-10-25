@@ -8,17 +8,29 @@
   "text": "ocr",
   "check": {
     "agreed": 23,
-    "resolved": 0,
-    "unresolved": 32,
-    "single": 32
+    "resolved": 1,
+    "unresolved": 33,
+    "single": 33
   },
-  "rows": 55,
+  "rows": 57,
   "from": "2025-09-18",
   "to": "2025-10-02",
   "mapped": 1,
   "stocks": 0,
   "untyped": 0,
   "transactions": [
+    {
+      "no": 30,
+      "page": 2,
+      "desc": "OCCIDENTAL PETE SR DEBS-REG SENIOR NOTES DUE",
+      "type": "P",
+      "date": "2025-09-24",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "unverified": true,
+      "cls": "corporate"
+    },
     {
       "page": 2,
       "desc": "NETFLIX INC REG S DUE",
@@ -371,6 +383,18 @@
       "lo": 100001,
       "hi": 250000,
       "unverified": true,
+      "cls": "muni"
+    },
+    {
+      "no": 30,
+      "page": 3,
+      "desc": "MAINE ST HSG AUTH MTG PURCH SER B REV B/E 2.10 % Due Nov 15, 2026",
+      "type": "P",
+      "date": "2025-10-01",
+      "late": false,
+      "lo": 500001,
+      "hi": 1000000,
+      "checked": 3,
       "cls": "muni"
     },
     {

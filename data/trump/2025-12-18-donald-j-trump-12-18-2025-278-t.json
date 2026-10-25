@@ -9,15 +9,15 @@
   "check": {
     "agreed": 28,
     "resolved": 17,
-    "unresolved": 52,
-    "single": 63
+    "unresolved": 54,
+    "single": 65
   },
-  "rows": 101,
+  "rows": 103,
   "from": "2025-10-20",
   "to": "2025-11-13",
   "mapped": 0,
   "stocks": 1,
-  "untyped": 29,
+  "untyped": 30,
   "transactions": [
     {
       "no": 2,
@@ -307,6 +307,19 @@
       "lo": 100001,
       "hi": 250000,
       "checked": 2,
+      "cls": "corporate"
+    },
+    {
+      "no": 26,
+      "page": 3,
+      "desc": "OCCIDENTAL PETE SR DEBS-REG SENIOR NOTES DUE",
+      "type": "P",
+      "date": "2025-11-04",
+      "approx": true,
+      "late": false,
+      "lo": 100001,
+      "hi": 250000,
+      "unverified": true,
       "cls": "corporate"
     },
     {
@@ -990,6 +1003,16 @@
       "approx": true,
       "lo": 250001,
       "hi": 500000,
+      "unverified": true,
+      "cls": "muni"
+    },
+    {
+      "page": 5,
+      "desc": "No UNIONVILLE CHADDS FORD PA SCH DIST RFDG B/E PTC 4.00 % Due Jun 1, 2027",
+      "type": "",
+      "date": "2025-11-04",
+      "lo": 50001,
+      "hi": 100000,
       "unverified": true,
       "cls": "muni"
     },

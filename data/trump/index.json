@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T02:55:43.273Z",
+  "updatedAt": "2026-10-25T03:06:59.803Z",
   "source": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index?OpenView",
   "annual": {
     "url": "https://extapps2.oge.gov/201/Presiden.nsf/PAS+Index/69AEAA9D7455ACD585258E27002DDEE1/$FILE/Donald-J-Trump-2026-278ANNUAL.pdf",
@@ -16,13 +16,13 @@
       "printedRows": 507,
       "text": "ocr",
       "check": {
-        "agreed": 437,
-        "resolved": 12,
-        "unresolved": 4,
-        "single": 11
+        "agreed": 485,
+        "resolved": 16,
+        "unresolved": 3,
+        "single": 15
       },
-      "rows": 453,
-      "from": "2025-01-31",
+      "rows": 505,
+      "from": "2025-01-21",
       "to": "2025-06-13",
       "mapped": 0,
       "stocks": 2,
@@ -37,12 +37,12 @@
       "printedRows": 145,
       "text": "ocr",
       "check": {
-        "agreed": 11,
-        "resolved": 0,
+        "agreed": 13,
+        "resolved": 1,
         "unresolved": 91,
-        "single": 129
+        "single": 130
       },
-      "rows": 140,
+      "rows": 143,
       "from": "2025-07-02",
       "to": "2025-07-22",
       "mapped": 0,
@@ -79,10 +79,10 @@
       "printedRows": 25,
       "text": "ocr",
       "check": {
-        "agreed": 18,
+        "agreed": 23,
         "resolved": 0,
-        "unresolved": 5,
-        "single": 6
+        "unresolved": 1,
+        "single": 1
       },
       "rows": 24,
       "from": "2025-08-07",
@@ -102,10 +102,10 @@
       "check": {
         "agreed": 28,
         "resolved": 5,
-        "unresolved": 4,
+        "unresolved": 5,
         "single": 9
       },
-      "rows": 37,
+      "rows": 38,
       "from": "2025-08-28",
       "to": "2025-09-03",
       "mapped": 0,
@@ -119,18 +119,18 @@
       "signed": "2025-10-20",
       "received": "2025-10-28",
       "printedRows": 79,
-      "text": "ocr",
+      "text": "layer",
       "check": {
-        "agreed": 31,
-        "resolved": 3,
-        "unresolved": 33,
-        "single": 42
+        "agreed": 29,
+        "resolved": 10,
+        "unresolved": 35,
+        "single": 49
       },
-      "rows": 73,
+      "rows": 79,
       "from": "2025-09-04",
-      "to": "2025-09-19",
+      "to": "2025-09-18",
       "mapped": 0,
-      "stocks": 1,
+      "stocks": 0,
       "untyped": 0
     },
     {
@@ -143,11 +143,11 @@
       "text": "ocr",
       "check": {
         "agreed": 23,
-        "resolved": 0,
-        "unresolved": 32,
-        "single": 32
+        "resolved": 1,
+        "unresolved": 33,
+        "single": 33
       },
-      "rows": 55,
+      "rows": 57,
       "from": "2025-09-18",
       "to": "2025-10-02",
       "mapped": 1,
@@ -186,15 +186,15 @@
       "check": {
         "agreed": 28,
         "resolved": 17,
-        "unresolved": 52,
-        "single": 63
+        "unresolved": 54,
+        "single": 65
       },
-      "rows": 101,
+      "rows": 103,
       "from": "2025-10-20",
       "to": "2025-11-13",
       "mapped": 0,
       "stocks": 1,
-      "untyped": 29
+      "untyped": 30
     },
     {
       "id": "2026-01-14-donald-j-trump-1-14-2026-278t",

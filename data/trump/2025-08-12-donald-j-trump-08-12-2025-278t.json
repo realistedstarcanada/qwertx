@@ -7,22 +7,397 @@
   "printedRows": 507,
   "text": "ocr",
   "check": {
-    "agreed": 437,
-    "resolved": 12,
-    "unresolved": 4,
-    "single": 11
+    "agreed": 485,
+    "resolved": 16,
+    "unresolved": 3,
+    "single": 15
   },
-  "rows": 453,
-  "from": "2025-01-31",
+  "rows": 505,
+  "from": "2025-01-21",
   "to": "2025-06-13",
   "mapped": 0,
   "stocks": 2,
   "untyped": 0,
   "transactions": [
     {
+      "no": 1,
+      "page": 2,
+      "desc": "TRIBOROUGH BRDG & T 5% DUE ON",
+      "type": "P",
+      "date": "2025-01-21",
+      "lo": 500001,
+      "hi": 1000000,
+      "checked": 2,
+      "cls": "corporate"
+    },
+    {
+      "no": 2,
+      "page": 2,
+      "desc": "ALACHUA CNTY FL HLTH FAC REV RFDG SHANDS TEACHING HOSP & CLINICS B1 B/E 5.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 3,
+      "page": 2,
+      "desc": "LAKE CNTY OH HOSP FACS REV RFDG LK HOSP SYS INC B/E PTC 5.00 % Due Aug 15, 2028",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 4,
+      "page": 2,
+      "desc": "MASSACHUSETTS ST WTR RES AUTH REV SER C GREEN BD B/E ETM 5.00 % Due Aug 1, 2025",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 100001,
+      "hi": 250000,
+      "unverified": true,
+      "cls": "muni"
+    },
+    {
+      "no": 5,
+      "page": 2,
+      "desc": "MATANUSKA SUSITNA BORO AK TRANSN SYS SER C B/E 4.00 % Due Nov 1, 2025",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 6,
+      "page": 2,
+      "desc": "MICHIGAN PUB PWR AGY REV BELLE RVR PJ 2024 A B/E 5.00 % Due Jan 1, 2026",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 7,
+      "page": 2,
+      "desc": "MIDLOTHIAN TX CMNTY DEV CORP SALES TAX REV BAM B/E B/Q 4.00 % Due Sep 1, 2025",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 8,
+      "page": 2,
+      "desc": "RACINE WI RFDG B/E PTC 4.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 9,
+      "page": 2,
+      "desc": "E YES WICKLIFFE OH CITY SCH DIST FACS IMPT 2020 A B/E 5.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-28",
+      "lo": 500001,
+      "hi": 1000000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 10,
+      "page": 2,
+      "desc": "E YES : ATLANTA GA DEV AUTH REV.GA ST UNIV RESH FNDTN SCI PK PJ B/E PTC 4.00 % Due Jul 1, 2028 Purchase :",
+      "type": "P",
+      "date": "2025-01-28",
+      "approx": true,
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 11,
+      "page": 2,
+      "desc": "YES F so DANVILLE VA SCH 2022 B/E GUAR CR ENH 4.00 % Due Sep 1, 2025",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 12,
+      "page": 2,
+      "desc": "GARVIN CNTY OK EDL FACS AUTH LSE REV WYNNEWOOD PUB SCH PJ B/E 5.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 13,
+      "page": 2,
+      "desc": "GRAND RAPIDS MI PUD SCHS SCH BLDG & SITE RFDG AGM B/E 5.00 % Due May 1, 2041",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 14,
+      "page": 2,
+      "desc": "JOHNSON CNTY KS PK & REC DIST CTF PARTN REV SER A B/E B/Q 4.00 % Due Sep 1, 2025",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 15,
+      "page": 2,
+      "desc": "LOWER AL GAS DIST GAS GAS DIST PJ 2 REV B/E 4.00 % Due Dec 1, 2050 :",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 16,
+      "page": 2,
+      "desc": "MEMORIAL CITY REDEV AUTH TX TAX INCRMT CNTRCT REV RFDG AGM B/E 5.00 % Due Sep 1, 2025",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 17,
+      "page": 2,
+      "desc": "MIAMI DADE CNTY FL HLTH FACS HOSP RFDG NICKLAUS CHLDRNS HOSP A REV B/E 5.00 % Due Aug 1, 2025",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 18,
+      "page": 2,
+      "desc": "MILWAUKEE CNTY WI CORP PURP SER A B/E PTC 3.00 %-Due Oct 1, 2025",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 19,
+      "page": 2,
+      "desc": "PARIS TX WTR & SWR REV 2022 B/E CR ENH 5.00 % Due Jun 15, 2026",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 20,
+      "page": 2,
+      "desc": "POLK CNTY FL SCH BRD CTF PARTN RFDG SER B REV B/E 5.00 % Due Jan 1, 2026",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 21,
+      "page": 2,
+      "desc": "WHITEHALL OH CITY SCH DIST RFDG SER A B/E B/Q CR ENH CAB @76.261 2.75% 0.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-29",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 22,
+      "page": 2,
+      "desc": "ARIZONA ST CTF PARTN RFDG REV B/E 5.00 % Due Sep 1, 2026",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 23,
+      "page": 2,
+      "desc": "BATAVIA OH LOC SCH DIST IMPT SER B B/E 4.00 % Due Nov 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 24,
+      "page": 2,
+      "desc": "BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SER A 1 B/E VAR 4.00 % Due Dec 1, 2049",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 25,
+      "page": 2,
+      "desc": "COLORADO HLTH FACS AUTH REV COMMONSPIRIT HLTH SER A 1 B/E 5.00 % Due Aug 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 26,
+      "page": 2,
+      "desc": "DUBLIN OH VARIOUS PURP B/E 3.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 27,
+      "page": 2,
+      "desc": "YES : KENOSHA WI PROM NT B/E 4.00 % Due Sep 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 28,
+      "page": 3,
+      "desc": "LOWER AL GAS DIST GAS GAS DIST PJ 2 REV B/E 4.00 % Due Dec 1, 2050",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 29,
+      "page": 3,
+      "desc": "NORTHERN PALM BCH CNTY IMPT DIST FL WTR CTL RFDG REV BAM B/E 5.00 % Due Aug 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 30,
+      "page": 3,
+      "desc": "PHILADELPHIA PA WTR & WSTWTR REV SER B AGM B/E 5.00 % Due Sep 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 31,
+      "page": 3,
+      "desc": "SHARONVILLE OH SPL OBLIG REV B/E 4.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 32,
+      "page": 3,
+      "desc": "SOUTHCENTRAL PA GENL AUTH REV HANOVER HOSP B/E 5.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 33,
+      "page": 3,
+      "desc": "TEXAS ST COLL STDNT LN B/E AMT 5.00 % Due Aug 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 34,
+      "page": 3,
+      "desc": "Ke YES WASHINGTON ST VARIOUS PURP SER A B/E 5.00 % Due Aug 1, 2025",
+      "type": "P",
+      "date": "2025-01-30",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 35,
       "page": 3,
-      "desc": "YES AKRON OH RFDG VARIOUS PURP SER A B/E OID @97.485 3.26% 3.00 % Due Dec 1, 2025",
+      "desc": "AKRON OH RFDG VARIOUS PURP SER A B/E OID @97.485 3.26% 3.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-01-31",
       "lo": 50001,
@@ -33,7 +408,7 @@
     {
       "no": 36,
       "page": 3,
-      "desc": "YES CENTRAL PLAINS ENERGY PJ NE GAS SPPLY REV RFDG B/E 4.00 % Due Dec 1, 2049",
+      "desc": "CENTRAL PLAINS ENERGY PJ NE GAS SPPLY REV RFDG B/E 4.00 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-01-31",
       "lo": 100001,
@@ -44,7 +419,7 @@
     {
       "no": 37,
       "page": 3,
-      "desc": "YES CHILLICOTHE MO CTF PARTN REV B/E B/Q 4.00 % Due Feb 1, 2026",
+      "desc": "CHILLICOTHE MO CTF PARTN REV B/E B/Q 4.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-01-31",
       "lo": 50001,
@@ -55,7 +430,7 @@
     {
       "no": 38,
       "page": 3,
-      "desc": "YES DALTON WHITFIELD CNTY GA JT DEV AUTH REV HAMILTON HLTH CARE SYS INC B B/E 5.00 % Due Aug 15, 2025",
+      "desc": "DALTON WHITFIELD CNTY GA JT DEV AUTH REV HAMILTON HLTH CARE SYS INC B B/E 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-01-31",
       "lo": 100001,
@@ -66,7 +441,7 @@
     {
       "no": 39,
       "page": 3,
-      "desc": "YES JACKSON CNTY MI CAP IMPT B/E 467106 LTD TAX CAP IMPT 3.00 % Due Nov 1, 2025",
+      "desc": "JACKSON CNTY MI CAP IMPT B/E 467106 LTD TAX CAP IMPT 3.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-01-31",
       "lo": 50001,
@@ -77,7 +452,7 @@
     {
       "no": 40,
       "page": 3,
-      "desc": "YES MISSISSIPPI HM CORP SNGL FAM MTG REV SER F B/E AMT 3.00 % Due Dec 1, 2025",
+      "desc": "MISSISSIPPI HM CORP SNGL FAM MTG REV SER F B/E AMT 3.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-01-31",
       "lo": 100001,
@@ -88,7 +463,7 @@
     {
       "no": 41,
       "page": 3,
-      "desc": "YES ALASKA ST HSG FIN CORP CAP PJ II SER C REV B/E 5.00 % Due Dec 1, 2025",
+      "desc": "ALASKA ST HSG FIN CORP CAP PJ II SER C REV B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 250001,
@@ -99,7 +474,7 @@
     {
       "no": 42,
       "page": 3,
-      "desc": "YES ARLINGTON TX HIGH ED FIN ED REV TRINITY BASIN PREPARATORY B/E PSF GTD 5.00 % Due Aug 15, 2025",
+      "desc": "ARLINGTON TX HIGH ED FIN ED REV TRINITY BASIN PREPARATORY B/E PSF GTD 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 15001,
@@ -110,7 +485,7 @@
     {
       "no": 43,
       "page": 3,
-      "desc": "YES BURKE CNTY GA DEV AUTH POLLTN CTL REV GA PWR CO PLANT VOGTLE 1ST SER B/E 2.875 % Due Dec 1, 2049",
+      "desc": "BURKE CNTY GA DEV AUTH POLLTN CTL REV GA PWR CO PLANT VOGTLE 1ST SER B/E 2.875 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-02-04",
       "lo": 100001,
@@ -121,7 +496,7 @@
     {
       "no": 44,
       "page": 3,
-      "desc": "YES CENTRE CNTY PA HOSP AUTH MT NITTANY MED CTR SER A REV B/E PTC 5.00 % Due Nov 15, 2046",
+      "desc": "CENTRE CNTY PA HOSP AUTH MT NITTANY MED CTR SER A REV B/E PTC 5.00 % Due Nov 15, 2046",
       "type": "P",
       "date": "2025-02-04",
       "lo": 50001,
@@ -132,7 +507,7 @@
     {
       "no": 45,
       "page": 3,
-      "desc": "YES CLEVELAND CNTY OK EFA EDL FAC LSE LEXINGTON PUB SCHS PJ REV B/E 5.00 % Due Sep 1, 2025",
+      "desc": "CLEVELAND CNTY OK EFA EDL FAC LSE LEXINGTON PUB SCHS PJ REV B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 50001,
@@ -143,7 +518,7 @@
     {
       "no": 46,
       "page": 3,
-      "desc": "YES GARDEN CITY KS RFDG TAX INCRMT SER A DB B/E PTC 3.00 % Due Nov 1, 2025",
+      "desc": "GARDEN CITY KS RFDG TAX INCRMT SER A DB B/E PTC 3.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 50001,
@@ -154,7 +529,7 @@
     {
       "no": 47,
       "page": 3,
-      "desc": "YES HAWAII ST DEPT BUDGET & FIN SPL PURP REV RFDG HI PAC HLTH OBLIG GRP B B/E 5.00 % Due Jul 1, 2025",
+      "desc": "HAWAII ST DEPT BUDGET & FIN SPL PURP REV RFDG HI PAC HLTH OBLIG GRP B B/E 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 250001,
@@ -165,7 +540,7 @@
     {
       "no": 48,
       "page": 3,
-      "desc": "YES MERCER CNTY KY PUB PPTY CORP 1ST MTG REV RFDG JUDICIAL CTR PJ B/E B/Q 4.00 % Due Aug 1, 2025",
+      "desc": "MERCER CNTY KY PUB PPTY CORP 1ST MTG REV RFDG JUDICIAL CTR PJ B/E B/Q 4.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 50001,
@@ -176,7 +551,7 @@
     {
       "no": 49,
       "page": 3,
-      "desc": "YES : NEVADA SYS HIGH ED UNIV REV SER A B/E 5.00 % Due Jul 1, 2025",
+      "desc": "NEVADA SYS HIGH ED UNIV REV SER A B/E 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 100001,
@@ -187,7 +562,7 @@
     {
       "no": 50,
       "page": 3,
-      "desc": "YES NORTH DAKOTA ST HSG FIN AGY PG HM MTG PG 2017A PAC REV B/E 2.625 % Due Jul 1, 2025",
+      "desc": "NORTH DAKOTA ST HSG FIN AGY PG HM MTG PG 2017A PAC REV B/E 2.625 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 100001,
@@ -198,7 +573,7 @@
     {
       "no": 51,
       "page": 3,
-      "desc": "YES NORWIN PA SCH DIST AGM B/E ST INTRCPT 3.00 % Due Nov 15, 2025",
+      "desc": "NORWIN PA SCH DIST AGM B/E ST INTRCPT 3.00 % Due Nov 15, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 100001,
@@ -209,7 +584,7 @@
     {
       "no": 52,
       "page": 3,
-      "desc": "YES WELD CNTY CO SCH DIST RE 7 B/E ST INTRCPT 4.00 % Due Dec 1, 2025",
+      "desc": "WELD CNTY CO SCH DIST RE 7 B/E ST INTRCPT 4.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 50001,
@@ -220,7 +595,7 @@
     {
       "no": 53,
       "page": 3,
-      "desc": "YES WEST CARROLLTON OH CITY SCH DIST FACS CONSTR & IMPT B B/E B/Q CR ENH 4.00 % Due Dec 1, 2025",
+      "desc": "WEST CARROLLTON OH CITY SCH DIST FACS CONSTR & IMPT B B/E B/Q CR ENH 4.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-04",
       "lo": 100001,
@@ -229,9 +604,20 @@
       "cls": "muni"
     },
     {
+      "no": 54,
+      "page": 4,
+      "desc": "ADAMS CNTY CO SCH DIST 001 MAPLETON PUB SCHS B/E ST INTRCPT 4.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-02-05",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 55,
       "page": 4,
-      "desc": "YES LOUISIANA PUB FACS AUTH REV RFDG 19TH JUDICIAL DIST COURT BLDG AGM B/E 5.25 % Due Jun 1, 2051",
+      "desc": "LOUISIANA PUB FACS AUTH REV RFDG 19TH JUDICIAL DIST COURT BLDG AGM B/E 5.25 % Due Jun 1, 2051",
       "type": "P",
       "date": "2025-02-05",
       "lo": 50001,
@@ -242,7 +628,7 @@
     {
       "no": 56,
       "page": 4,
-      "desc": "YES LOWER AL GAS DIST GAS GAS DIST PJ 2 REV B/E 4.00 % Due Dec 1, 2050",
+      "desc": "LOWER AL GAS DIST GAS GAS DIST PJ 2 REV B/E 4.00 % Due Dec 1, 2050",
       "type": "P",
       "date": "2025-02-05",
       "lo": 50001,
@@ -253,7 +639,7 @@
     {
       "no": 57,
       "page": 4,
-      "desc": "YES SAN ANTONIO TX INDPT SCH DIST BLDG PSF GTD B/E 5.00 % Due Aug 15, 2025",
+      "desc": "SAN ANTONIO TX INDPT SCH DIST BLDG PSF GTD B/E 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-02-05",
       "lo": 50001,
@@ -264,7 +650,7 @@
     {
       "no": 58,
       "page": 4,
-      "desc": "YES ST LUCIE CNTY FL SCH DIST SALES TAX REV AGM B/E 5.00 % Due Oct 1, 2025",
+      "desc": "ST LUCIE CNTY FL SCH DIST SALES TAX REV AGM B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-05",
       "lo": 100001,
@@ -275,7 +661,7 @@
     {
       "no": 59,
       "page": 4,
-      "desc": "YES TEXAS MUN PWR AGY REV TRNSMSN SYS RFDG AGM B/E 3.00 % Due Sep 1, 2025",
+      "desc": "TEXAS MUN PWR AGY REV TRNSMSN SYS RFDG AGM B/E 3.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-05",
       "lo": 50001,
@@ -297,7 +683,7 @@
     {
       "no": 61,
       "page": 4,
-      "desc": "YES ALVIN TX WTRWKS & SWR REV SYS AGM B/E 5.00 % Due Feb 1, 2026",
+      "desc": "ALVIN TX WTRWKS & SWR REV SYS AGM B/E 5.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-02-05",
       "approx": true,
@@ -309,7 +695,7 @@
     {
       "no": 62,
       "page": 4,
-      "desc": "YES BURKE CNTY GA DEV AUTH POLLTN CTL REV GA PWR CO PLANT VOGTLE 1ST SER B/E 2.875 % Due Dec 1, 2049",
+      "desc": "BURKE CNTY GA DEV AUTH POLLTN CTL REV GA PWR CO PLANT VOGTLE 1ST SER B/E 2.875 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-02-06",
       "lo": 100001,
@@ -320,7 +706,7 @@
     {
       "no": 63,
       "page": 4,
-      "desc": "YES CENTRAL NE PLAINS ENERGY PJ GAS SPLY RFDG REV B/E 2.50 % Due Dec 1, 2049",
+      "desc": "CENTRAL NE PLAINS ENERGY PJ GAS SPLY RFDG REV B/E 2.50 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-02-06",
       "lo": 250001,
@@ -331,7 +717,7 @@
     {
       "no": 64,
       "page": 4,
-      "desc": "YES CROWLEY TX INDPT SCH DIST RFDG PSF GTD SER A B/E 5.00 % Due Aug 1, 2025",
+      "desc": "CROWLEY TX INDPT SCH DIST RFDG PSF GTD SER A B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -342,7 +728,7 @@
     {
       "no": 65,
       "page": 4,
-      "desc": "YES DISTRICT COLUMBIA HSG FIN AGY MLTIFAM HSG REV FAIRCLIFF PLAZA B/E PTC 5.00 % Due Dec 1, 2026",
+      "desc": "DISTRICT COLUMBIA HSG FIN AGY MLTIFAM HSG REV FAIRCLIFF PLAZA B/E PTC 5.00 % Due Dec 1, 2026",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -353,7 +739,7 @@
     {
       "no": 66,
       "page": 4,
-      "desc": "YES GREATER CLEVELAND OH REGL TRAN AUTH SALES TAX RFDG Cl REV B/E 5.00 % Due Dec 1, 2029",
+      "desc": "GREATER CLEVELAND OH REGL TRAN AUTH SALES TAX RFDG Cl REV B/E 5.00 % Due Dec 1, 2029",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -364,7 +750,7 @@
     {
       "no": 67,
       "page": 4,
-      "desc": "YES HAMILTON STHESTRN IN SCHS SER A B/E ST INTRCPT 5.00 % Due Jun 30, 2025",
+      "desc": "HAMILTON STHESTRN IN SCHS SER A B/E ST INTRCPT 5.00 % Due Jun 30, 2025",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -375,7 +761,7 @@
     {
       "no": 68,
       "page": 4,
-      "desc": "YES HARRIS CNTY TX MUD 459 AGM B/E 4.50 % Due Apr 1, 2026",
+      "desc": "HARRIS CNTY TX MUD 459 AGM B/E 4.50 % Due Apr 1, 2026",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -397,7 +783,7 @@
     {
       "no": 70,
       "page": 4,
-      "desc": "YES KOKOMO IN SCH CORP 2023 B/E B/Q CR ENH 5.00 % Due Jan 15, 2026",
+      "desc": "KOKOMO IN SCH CORP 2023 B/E B/Q CR ENH 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -408,7 +794,7 @@
     {
       "no": 71,
       "page": 4,
-      "desc": "YES LAKEWOOD OH RFDG VARIOUS PURP IMPT SER A B/E 5.00 % Due Dec 1, 2025",
+      "desc": "LAKEWOOD OH RFDG VARIOUS PURP IMPT SER A B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -419,7 +805,7 @@
     {
       "no": 72,
       "page": 4,
-      "desc": "YES LAKEWOOD WA WTR DIST WTR REV RFDG SER A B/E B/Q 3.00 % Due Dec 1, 2025",
+      "desc": "LAKEWOOD WA WTR DIST WTR REV RFDG SER A B/E B/Q 3.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-06",
       "lo": 100001,
@@ -441,7 +827,7 @@
     {
       "no": 74,
       "page": 4,
-      "desc": "YES ROUND ROCK TX INDPT SCH DIST RFDG B/E 5.00 % Due Aug 1, 2025",
+      "desc": "ROUND ROCK TX INDPT SCH DIST RFDG B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -452,7 +838,7 @@
     {
       "no": 75,
       "page": 4,
-      "desc": "YES SMITH CNTY TX B/E 4.00 % Due Feb 15, 2026",
+      "desc": "SMITH CNTY TX B/E 4.00 % Due Feb 15, 2026",
       "type": "P",
       "date": "2025-02-06",
       "lo": 100001,
@@ -463,7 +849,7 @@
     {
       "no": 76,
       "page": 4,
-      "desc": "YES WASHOE CNTY NV SCH DIST RFDG SCH IMPT SER A B/E 5.00 % Due Jun 1, 2025",
+      "desc": "WASHOE CNTY NV SCH DIST RFDG SCH IMPT SER A B/E 5.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-02-06",
       "lo": 100001,
@@ -474,7 +860,7 @@
     {
       "no": 77,
       "page": 4,
-      "desc": "YES WISCONSIN ST HLTH & EFA REV ADVOCATE AURORA HLTHCARE SER C 3 B/E 5.00 % Due Aug 15, 2054",
+      "desc": "WISCONSIN ST HLTH & EFA REV ADVOCATE AURORA HLTHCARE SER C 3 B/E 5.00 % Due Aug 15, 2054",
       "type": "P",
       "date": "2025-02-06",
       "lo": 50001,
@@ -485,7 +871,7 @@
     {
       "no": 78,
       "page": 4,
-      "desc": "YES ARLINGTON CNTY VA INDL DEV AUTH MLTIFAM REV HSG SHIRLINGTON APTS A B/E 5.00 % Due Jan 1, 2026",
+      "desc": "ARLINGTON CNTY VA INDL DEV AUTH MLTIFAM REV HSG SHIRLINGTON APTS A B/E 5.00 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -496,7 +882,18 @@
     {
       "no": 79,
       "page": 4,
-      "desc": "YES ARLINGTON TX HIGH ED FIN CORP UPLIFT ED SER A REV B/E PSF GTD 5.00 % Due Dec 1, 2025",
+      "desc": "ARLINGTON TX HIGH ED FIN CORP UPLIFT ED SER A REV B/E PSF GTD 5.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-02-10",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 80,
+      "page": 5,
+      "desc": "ARLINGTON TX HSG FIN CORP MLTIFAM HSG REV RESV MAYFIELD APTS B/E 3.50 % Due Nov 1, 2043",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -507,7 +904,7 @@
     {
       "no": 81,
       "page": 5,
-      "desc": "YES ATCHISON CNTY KS UNI SCH DIST 409 RFDG IMPT BAM B/E 5.00 % Due Sep 1, 2025",
+      "desc": "ATCHISON CNTY KS UNI SCH DIST 409 RFDG IMPT BAM B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -518,7 +915,7 @@
     {
       "no": 82,
       "page": 5,
-      "desc": "YES BARTOW CNTY GA DEV AUTH POLLUTN CTL REV GA PWR CO PLT BOWEN 1ST B/E 2.875 % Due Aug 1, 2043",
+      "desc": "BARTOW CNTY GA DEV AUTH POLLUTN CTL REV GA PWR CO PLT BOWEN 1ST B/E 2.875 % Due Aug 1, 2043",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -529,7 +926,7 @@
     {
       "no": 83,
       "page": 5,
-      "desc": "YES BIRMINGHAM AL CONV SER A11 B/E CAB @87.829 4.04% 5.00 % Due Mar 1, 2045",
+      "desc": "BIRMINGHAM AL CONV SER A11 B/E CAB @87.829 4.04% 5.00 % Due Mar 1, 2045",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -540,7 +937,7 @@
     {
       "no": 84,
       "page": 5,
-      "desc": "YES BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SER A 1 B/E VAR 4.00 % Due Dec 1, 2049",
+      "desc": "BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SER A 1 B/E VAR 4.00 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -551,7 +948,7 @@
     {
       "no": 85,
       "page": 5,
-      "desc": "YES CINCO TX MUD 1 CNTRCT REV 2019 A B/E CR ENH 4.00 % Due Dec 1, 2025",
+      "desc": "CINCO TX MUD 1 CNTRCT REV 2019 A B/E CR ENH 4.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -573,7 +970,7 @@
     {
       "no": 87,
       "page": 5,
-      "desc": "YES CLARK CNTY NV SCH DIST VARIOUS PURP MEDIUM TERM BD SER F B/E 3.00 % Due Jun 15, 2025",
+      "desc": "CLARK CNTY NV SCH DIST VARIOUS PURP MEDIUM TERM BD SER F B/E 3.00 % Due Jun 15, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 250001,
@@ -584,7 +981,7 @@
     {
       "no": 88,
       "page": 5,
-      "desc": "YES HUTTO TX INDPT SCH DIST BLDG PSF GTD B/E 5.00 % Due Aug 1, 2025",
+      "desc": "HUTTO TX INDPT SCH DIST BLDG PSF GTD B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -595,7 +992,7 @@
     {
       "no": 89,
       "page": 5,
-      "desc": "YES IOWA:ST UNIV SCI & TECH UNIV REV ATHLETIC FACS SER IS U B/E 3.00 % Due Jul 1, 2025",
+      "desc": "IOWA:ST UNIV SCI & TECH UNIV REV ATHLETIC FACS SER IS U B/E 3.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 15001,
@@ -606,7 +1003,7 @@
     {
       "no": 90,
       "page": 5,
-      "desc": "YES KANSAS ST DEV FIN AUTH REV RFDG KS ST PJ SER F B/E 5.00 % Due Nov 1, 2025",
+      "desc": "KANSAS ST DEV FIN AUTH REV RFDG KS ST PJ SER F B/E 5.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -617,7 +1014,7 @@
     {
       "no": 91,
       "page": 5,
-      "desc": "YES LOUISIANA LOC GOVT ENVMNTL FAC & CMNTY DEV AUTH INS ASSMT B REV B/E 5.00 % Due Aug 15, 2025",
+      "desc": "LOUISIANA LOC GOVT ENVMNTL FAC & CMNTY DEV AUTH INS ASSMT B REV B/E 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -628,7 +1025,7 @@
     {
       "no": 92,
       "page": 5,
-      "desc": "YES MASSACHUSETTS ST HSG FIN AGY HSG REV SER A3 GREEN BD B/E 2.95 % Due Dec 1, 2025",
+      "desc": "MASSACHUSETTS ST HSG FIN AGY HSG REV SER A3 GREEN BD B/E 2.95 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -639,7 +1036,7 @@
     {
       "no": 93,
       "page": 5,
-      "desc": "YES MEMPHIS SHELBY CNTY TN INDL DEV BRD ECON REV GRWTH RFDG B B/E 5.00 % Due Nov 1, 2025",
+      "desc": "MEMPHIS SHELBY CNTY TN INDL DEV BRD ECON REV GRWTH RFDG B B/E 5.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -650,7 +1047,7 @@
     {
       "no": 94,
       "page": 5,
-      "desc": "YES MIAMI CNTY KS PUB BLDG COMMN LSE REV B/E B/Q OID @97.858 3.4% 3.25 % Due Sep 1, 2035",
+      "desc": "MIAMI CNTY KS PUB BLDG COMMN LSE REV B/E B/Q OID @97.858 3.4% 3.25 % Due Sep 1, 2035",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -661,7 +1058,7 @@
     {
       "no": 95,
       "page": 5,
-      "desc": "YES MINNEAPOLIS & ST PAUL MN MET ARPTS COMMN ARPT REV SUB RFDG SER C B/E 5.00 % Due Jan 1, 2026",
+      "desc": "MINNEAPOLIS & ST PAUL MN MET ARPTS COMMN ARPT REV SUB RFDG SER C B/E 5.00 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-02-10",
       "lo": 250001,
@@ -672,7 +1069,7 @@
     {
       "no": 96,
       "page": 5,
-      "desc": "YES MORGAN STANLEY VAR 28 DUE",
+      "desc": "MORGAN STANLEY VAR 28 DUE",
       "type": "P",
       "date": "2025-02-10",
       "lo": 100001,
@@ -683,7 +1080,7 @@
     {
       "no": 97,
       "page": 5,
-      "desc": "YES ORANGE CNTY FL SCH BRD CTF PARTN RFDG SER C REV B/E 5.00 % Due Aug 1, 2031",
+      "desc": "ORANGE CNTY FL SCH BRD CTF PARTN RFDG SER C REV B/E 5.00 % Due Aug 1, 2031",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -694,7 +1091,7 @@
     {
       "no": 98,
       "page": 5,
-      "desc": "YES POLK CNTY FL SCH BRD CTF PARTN RFDG SER B REV B/E 5.00 % Due Jan 1, 2026",
+      "desc": "POLK CNTY FL SCH BRD CTF PARTN RFDG SER B REV B/E 5.00 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -705,7 +1102,7 @@
     {
       "no": 99,
       "page": 5,
-      "desc": "YES QUALCOMM INC 2.15%30 DUE",
+      "desc": "QUALCOMM INC 2.15%30 DUE",
       "type": "P",
       "date": "2025-02-10",
       "lo": 500001,
@@ -716,7 +1113,7 @@
     {
       "no": 100,
       "page": 5,
-      "desc": "YES ST MARYS CLLG MD REV RFDG ACADEMIC FEES & B/E OID @99.780 3.02% 3.00 % Due Sep 1, 2025",
+      "desc": "ST MARYS CLLG MD REV RFDG ACADEMIC FEES & B/E OID @99.780 3.02% 3.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-10",
       "lo": 50001,
@@ -727,7 +1124,7 @@
     {
       "no": 101,
       "page": 5,
-      "desc": "YES THE HOME DEPOT, 2.95%29 DUE",
+      "desc": "THE HOME DEPOT, 2.95%29 DUE",
       "type": "P",
       "date": "2025-02-10",
       "lo": 500001,
@@ -738,7 +1135,7 @@
     {
       "no": 102,
       "page": 5,
-      "desc": "YES T-MOBILE USA, | 3.375%29 DUE",
+      "desc": "T-MOBILE USA, | 3.375%29 DUE",
       "type": "P",
       "date": "2025-02-10",
       "lo": 500001,
@@ -749,7 +1146,7 @@
     {
       "no": 103,
       "page": 5,
-      "desc": "YES UNITEDHEALTH GROU 4.5%33 DUE",
+      "desc": "UNITEDHEALTH GROU 4.5%33 DUE",
       "type": "P",
       "date": "2025-02-10",
       "lo": 500001,
@@ -760,7 +1157,7 @@
     {
       "no": 104,
       "page": 5,
-      "desc": "YES WASHINGTON ST 5%37GO UTX DUE",
+      "desc": "WASHINGTON ST 5%37GO UTX DUE",
       "type": "P",
       "date": "2025-02-10",
       "lo": 500001,
@@ -780,9 +1177,20 @@
       "cls": "corporate"
     },
     {
+      "no": 106,
+      "page": 6,
+      "desc": "YES A WISCONSIN ST HLTH & EFA REV CHLDRNS HOSP OF WI 2017 B/E SBJ ST TAX 5.00 % Due Aug 15, 2025",
+      "type": "P",
+      "date": "2025-02-10",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 107,
       "page": 6,
-      "desc": "YES BAY CITY TX RFDG B/E 5.00 % Due Sep 1, 2025",
+      "desc": "BAY CITY TX RFDG B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 50001,
@@ -793,7 +1201,7 @@
     {
       "no": 108,
       "page": 6,
-      "desc": "YES BERMUDIAN SPRINGS PA SCH DIST NT ADAMS CNTY AGM B/E ST INTRCPT 4.00 % Due May 1, 2025",
+      "desc": "BERMUDIAN SPRINGS PA SCH DIST NT ADAMS CNTY AGM B/E ST INTRCPT 4.00 % Due May 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 50001,
@@ -804,7 +1212,7 @@
     {
       "no": 109,
       "page": 6,
-      "desc": "YES CENTRAL PLAINS ENERGY PJ NE GAS SPPLY REV RFDG B/E 4.00 % Due Dec 1, 2049",
+      "desc": "CENTRAL PLAINS ENERGY PJ NE GAS SPPLY REV RFDG B/E 4.00 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-02-11",
       "lo": 250001,
@@ -815,7 +1223,7 @@
     {
       "no": 110,
       "page": 6,
-      "desc": "YES EAST PIERCE WA FIRE & RESCUE B/E 5.00 % Due Dec 1, 2025",
+      "desc": "EAST PIERCE WA FIRE & RESCUE B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 100001,
@@ -826,7 +1234,7 @@
     {
       "no": 111,
       "page": 6,
-      "desc": "YES HAMPTON TWP PA SCH DIST SER A B/E 4.00 % Due Sep 1, 2025",
+      "desc": "HAMPTON TWP PA SCH DIST SER A B/E 4.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 100001,
@@ -837,7 +1245,7 @@
     {
       "no": 112,
       "page": 6,
-      "desc": "YES HARLANDALE TX INDPT SCH DIST RFDG SER A B/E PSF GTD 5.00 % Due Aug 15, 2028",
+      "desc": "HARLANDALE TX INDPT SCH DIST RFDG SER A B/E PSF GTD 5.00 % Due Aug 15, 2028",
       "type": "P",
       "date": "2025-02-11",
       "lo": 15001,
@@ -848,7 +1256,7 @@
     {
       "no": 113,
       "page": 6,
-      "desc": "YES HILLSBOROUGH CNTY FL CMNTY INVT TAX REV RFDG B/E 5.00 % Due Nov 1, 2025",
+      "desc": "HILLSBOROUGH CNTY FL CMNTY INVT TAX REV RFDG B/E 5.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 100001,
@@ -859,7 +1267,7 @@
     {
       "no": 114,
       "page": 6,
-      "desc": "YES INDIANAPOLIS IN WTR SYS REV RFDG 1ST LIEN SER A AGM B/E 5.00 % Due Oct 1, 2025",
+      "desc": "INDIANAPOLIS IN WTR SYS REV RFDG 1ST LIEN SER A AGM B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 100001,
@@ -881,7 +1289,7 @@
     {
       "no": 116,
       "page": 6,
-      "desc": "YES MIAMI DADE CNTY FL SCH BRD CTF PARTN SER A REV B/E 5.00 % Due May 1, 2028",
+      "desc": "MIAMI DADE CNTY FL SCH BRD CTF PARTN SER A REV B/E 5.00 % Due May 1, 2028",
       "type": "P",
       "date": "2025-02-11",
       "lo": 15001,
@@ -892,7 +1300,7 @@
     {
       "no": 117,
       "page": 6,
-      "desc": "YES MONTGOMERY CNTY PA HIGH ED & HLTH AUTH REV UNIV THOMAS JEFFERSON B/E 5.00 % Due Sep 1, 2025",
+      "desc": "MONTGOMERY CNTY PA HIGH ED & HLTH AUTH REV UNIV THOMAS JEFFERSON B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 50001,
@@ -914,7 +1322,7 @@
     {
       "no": 119,
       "page": 6,
-      "desc": "YES POTTAWATOMIE CNTY KS SER A DB B/E 4.00 % Due Oct 1, 2025",
+      "desc": "POTTAWATOMIE CNTY KS SER A DB B/E 4.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 50001,
@@ -925,7 +1333,7 @@
     {
       "no": 120,
       "page": 6,
-      "desc": "YES RACINE WI RFDG BVE 3.00 % Due Dec 1, 2025",
+      "desc": "RACINE WI RFDG BVE 3.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 250001,
@@ -936,7 +1344,7 @@
     {
       "no": 121,
       "page": 6,
-      "desc": "YES RHODE IS HLTH & EDL BLDG CORP PUB SCHS REV FING PG SER AAGM B/E 5.00 % Due May 15, 2025",
+      "desc": "RHODE IS HLTH & EDL BLDG CORP PUB SCHS REV FING PG SER AAGM B/E 5.00 % Due May 15, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 100001,
@@ -958,7 +1366,7 @@
     {
       "no": 123,
       "page": 6,
-      "desc": "YES SOUTHWEST TX HIGH ED AUTH INC STHRN METHODIST UNIV PJ A REV B/E 5.00 % Due Oct 1, 2025",
+      "desc": "SOUTHWEST TX HIGH ED AUTH INC STHRN METHODIST UNIV PJ A REV B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 50001,
@@ -969,7 +1377,7 @@
     {
       "no": 124,
       "page": 6,
-      "desc": "YES UNIVERSITY AL GENL REV SER A RFDG B/E 5.00 % Due Jul 1, 2025",
+      "desc": "UNIVERSITY AL GENL REV SER A RFDG B/E 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 50001,
@@ -980,7 +1388,7 @@
     {
       "no": 125,
       "page": 6,
-      "desc": "YES WESTON MUD TX RFDG HARRIS CNTY BAM B/E B/Q 4.00 % Due Aug 1, 2025",
+      "desc": "WESTON MUD TX RFDG HARRIS CNTY BAM B/E B/Q 4.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-11",
       "lo": 50001,
@@ -991,7 +1399,7 @@
     {
       "no": 126,
       "page": 6,
-      "desc": "YES ARLINGTON TEX INDPT 5%31GO UTX DUE",
+      "desc": "ARLINGTON TEX INDPT 5%31GO UTX DUE",
       "type": "P",
       "date": "2025-02-12",
       "lo": 500001,
@@ -1013,7 +1421,7 @@
     {
       "no": 128,
       "page": 6,
-      "desc": "YES HUTTO TEX 4.125% DUE ON",
+      "desc": "HUTTO TEX 4.125% DUE ON",
       "type": "P",
       "date": "2025-02-14",
       "lo": 500001,
@@ -1024,7 +1432,7 @@
     {
       "no": 129,
       "page": 6,
-      "desc": "YES TEXAS PRIVATE ACTIV 4% DUE ON",
+      "desc": "TEXAS PRIVATE ACTIV 4% DUE ON",
       "type": "P",
       "date": "2025-02-14",
       "lo": 500001,
@@ -1046,7 +1454,7 @@
     {
       "no": 131,
       "page": 6,
-      "desc": "YES ARLINGTON TEX HIGHE 4%",
+      "desc": "ARLINGTON TEX HIGHE 4%",
       "type": "P",
       "date": "2025-02-19",
       "lo": 500001,
@@ -1055,9 +1463,20 @@
       "cls": "stock"
     },
     {
+      "no": 132,
+      "page": 7,
+      "desc": "YES LIBERTY N Y DEV 5.25%",
+      "type": "P",
+      "date": "2025-02-19",
+      "lo": 500001,
+      "hi": 1000000,
+      "checked": 2,
+      "cls": "corporate"
+    },
+    {
       "no": 133,
       "page": 7,
-      "desc": "YES NORTH SPENCER CNTY 5% DUE ON",
+      "desc": "NORTH SPENCER CNTY 5% DUE ON",
       "type": "P",
       "date": "2025-02-19",
       "lo": 500001,
@@ -1068,7 +1487,7 @@
     {
       "no": 134,
       "page": 7,
-      "desc": "YES ALAMOGORDO NM MUN SCH DIST 1 B/E B/Q 4.00 % Due Aug 1, 2025",
+      "desc": "ALAMOGORDO NM MUN SCH DIST 1 B/E B/Q 4.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 100001,
@@ -1090,7 +1509,7 @@
     {
       "no": 136,
       "page": 7,
-      "desc": "YES CUYAHOGA OH MET HSG AUTH MLTIFAM HSG REV WADE PK LP B/E 4.75 % Due Dec 1, 2027",
+      "desc": "CUYAHOGA OH MET HSG AUTH MLTIFAM HSG REV WADE PK LP B/E 4.75 % Due Dec 1, 2027",
       "type": "P",
       "date": "2025-02-20",
       "lo": 100001,
@@ -1101,7 +1520,7 @@
     {
       "no": 137,
       "page": 7,
-      "desc": "YES EL PASO TX RFDG B/E 5.00 % Due Aug 15, 2025",
+      "desc": "EL PASO TX RFDG B/E 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 50001,
@@ -1112,7 +1531,7 @@
     {
       "no": 138,
       "page": 7,
-      "desc": "YES FLORIDA ST BRD ED PUB ED RFDG CAP OUTLAY SER F DB B/E PTC 5.00 % Due Jun 1, 2027",
+      "desc": "FLORIDA ST BRD ED PUB ED RFDG CAP OUTLAY SER F DB B/E PTC 5.00 % Due Jun 1, 2027",
       "type": "P",
       "date": "2025-02-20",
       "lo": 50001,
@@ -1123,7 +1542,7 @@
     {
       "no": 139,
       "page": 7,
-      "desc": "YES GREATER JASPER SCH BLDG CORP IN 1ST MTG REV B/E ST INTRCPT 5.00 % Due Jan 15, 2026",
+      "desc": "GREATER JASPER SCH BLDG CORP IN 1ST MTG REV B/E ST INTRCPT 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-02-20",
       "lo": 50001,
@@ -1134,7 +1553,7 @@
     {
       "no": 140,
       "page": 7,
-      "desc": "YES HARRIS CNTY TEX MET 5% DUE ON",
+      "desc": "HARRIS CNTY TEX MET 5% DUE ON",
       "type": "P",
       "date": "2025-02-20",
       "lo": 500001,
@@ -1145,7 +1564,7 @@
     {
       "no": 141,
       "page": 7,
-      "desc": "YES HARRISON CNTY KY SCH DIST FIN CORP SCH BLDG REV B/E ST INTRCPT 4.00 % Due Aug 1, 2025",
+      "desc": "HARRISON CNTY KY SCH DIST FIN CORP SCH BLDG REV B/E ST INTRCPT 4.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 100001,
@@ -1156,7 +1575,7 @@
     {
       "no": 142,
       "page": 7,
-      "desc": "YES KNOXVILLE TN ELEC SER GG REV B/E PTC 2.00 % Due Jul 1, 2025",
+      "desc": "KNOXVILLE TN ELEC SER GG REV B/E PTC 2.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 15001,
@@ -1167,7 +1586,7 @@
     {
       "no": 143,
       "page": 7,
-      "desc": "YES LINDALE TX RFDG SMITH CNTY B/E B/Q 4.00 % Due Aug 15, 2025",
+      "desc": "LINDALE TX RFDG SMITH CNTY B/E B/Q 4.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 50001,
@@ -1178,7 +1597,7 @@
     {
       "no": 144,
       "page": 7,
-      "desc": "YES MANHEIM TWP PA SCH DIST SER A B/E 5.00 % Due Feb 1, 2028",
+      "desc": "MANHEIM TWP PA SCH DIST SER A B/E 5.00 % Due Feb 1, 2028",
       "type": "P",
       "date": "2025-02-20",
       "lo": 50001,
@@ -1200,7 +1619,7 @@
     {
       "no": 146,
       "page": 7,
-      "desc": "YES NEW MEXICO ST HOSP EQUIP LN COUNCIL REV SER A PRESBYTERIAN HC SVCS B/E 5.00 % Due Aug 1, 2029",
+      "desc": "NEW MEXICO ST HOSP EQUIP LN COUNCIL REV SER A PRESBYTERIAN HC SVCS B/E 5.00 % Due Aug 1, 2029",
       "type": "P",
       "date": "2025-02-20",
       "lo": 250001,
@@ -1211,7 +1630,7 @@
     {
       "no": 147,
       "page": 7,
-      "desc": "YES PASCO CNTY FL SCH BRD CTF PARTN SER A REV BAM B/E 5.00 % Due Aug 1, 2025",
+      "desc": "PASCO CNTY FL SCH BRD CTF PARTN SER A REV BAM B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 15001,
@@ -1222,7 +1641,7 @@
     {
       "no": 148,
       "page": 7,
-      "desc": "YES PECULIAR MO COMB WTRWKS & SWR SYS REV RFDG IMPT 2020 BAM B/E B/Q CR ENH 5.00 % Due Feb 1, 2026",
+      "desc": "PECULIAR MO COMB WTRWKS & SWR SYS REV RFDG IMPT 2020 BAM B/E B/Q CR ENH 5.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-02-20",
       "lo": 100001,
@@ -1233,7 +1652,7 @@
     {
       "no": 149,
       "page": 7,
-      "desc": "YES PIKE CNTY KY SCH DIST FIN CORP SCH BLDG REV B/E ST INTRCPT 5.00 % Due Feb 1, 2026",
+      "desc": "PIKE CNTY KY SCH DIST FIN CORP SCH BLDG REV B/E ST INTRCPT 5.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-02-20",
       "lo": 100001,
@@ -1244,7 +1663,7 @@
     {
       "no": 150,
       "page": 7,
-      "desc": "YES RANDOLPH IN CENT SCH AD VALOREM PPTY TAX 1ST MTG RFDG IMPT REV B/E 4.00 % Due Jan 15, 2026",
+      "desc": "RANDOLPH IN CENT SCH AD VALOREM PPTY TAX 1ST MTG RFDG IMPT REV B/E 4.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-02-20",
       "lo": 100001,
@@ -1255,7 +1674,7 @@
     {
       "no": 151,
       "page": 7,
-      "desc": "YES TEXAS TRANSN COMMN 5% DUE ON",
+      "desc": "TEXAS TRANSN COMMN 5% DUE ON",
       "type": "P",
       "date": "2025-02-20",
       "lo": 500001,
@@ -1266,7 +1685,7 @@
     {
       "no": 152,
       "page": 7,
-      "desc": "YES TEXAS TRANSN COMMN 5%40TPK TRAN DUE 08/15/40XTRO",
+      "desc": "TEXAS TRANSN COMMN 5%40TPK TRAN DUE 08/15/40XTRO",
       "type": "P",
       "date": "2025-02-20",
       "lo": 500001,
@@ -1277,7 +1696,7 @@
     {
       "no": 153,
       "page": 7,
-      "desc": "YES VIA MET TRAN AUTH TX SALES TAX REV CONTRCTL OBLIG B/E 5.00 % Due Jul 15, 2025",
+      "desc": "VIA MET TRAN AUTH TX SALES TAX REV CONTRCTL OBLIG B/E 5.00 % Due Jul 15, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 50001,
@@ -1288,7 +1707,7 @@
     {
       "no": 154,
       "page": 7,
-      "desc": "YES WASHINGTON ST VARIOUS PURP SER A B/E 5.00 % Due Aug 1, 2025",
+      "desc": "WASHINGTON ST VARIOUS PURP SER A B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 15001,
@@ -1299,7 +1718,7 @@
     {
       "no": 155,
       "page": 7,
-      "desc": "YES WESTERN DUBUQUE CNTY IA CMNTY SCH DIST INFRA REV SALES SVCS BAM B/E 5.00 % Due Jun 1, 2025",
+      "desc": "WESTERN DUBUQUE CNTY IA CMNTY SCH DIST INFRA REV SALES SVCS BAM B/E 5.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-02-20",
       "lo": 100001,
@@ -1321,7 +1740,7 @@
     {
       "no": 157,
       "page": 7,
-      "desc": "YES COMMONWEALTH PA FING AUTH TOB MSTR SETTLMT PMT REV B/E 5.00 % Due Jun 1, 2025",
+      "desc": "COMMONWEALTH PA FING AUTH TOB MSTR SETTLMT PMT REV B/E 5.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-02-21",
       "lo": 50001,
@@ -1330,9 +1749,20 @@
       "cls": "muni"
     },
     {
+      "no": 158,
+      "page": 8,
+      "desc": "FRANKLIN CNTY MO PUB WTR SPLY DIST 3 WTRWKS RFDG SER AV REV B/E 4.00 % Due Dec 1, 2025",
+      "type": "P",
+      "date": "2025-02-21",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 159,
       "page": 8,
-      "desc": "YES HARRIS CNTY TX MUD 105 RFDG 2019 B/E CR ENH 3.00 % Due Mar 1, 2026",
+      "desc": "HARRIS CNTY TX MUD 105 RFDG 2019 B/E CR ENH 3.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-02-21",
       "lo": 500001,
@@ -1343,7 +1773,7 @@
     {
       "no": 160,
       "page": 8,
-      "desc": "YES LAFAYETTE LA COMMNS SYS REV RFDG AGM B/E 5.00 % Due Nov 1, 2025",
+      "desc": "LAFAYETTE LA COMMNS SYS REV RFDG AGM B/E 5.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-02-21",
       "lo": 1000001,
@@ -1354,7 +1784,7 @@
     {
       "no": 161,
       "page": 8,
-      "desc": "YES METROPOLITAN ATLANTA RAPID TRAN AUTH GA SALES REV RFDG NPFG B/E 5.25 % Due Jul 1, 2025",
+      "desc": "METROPOLITAN ATLANTA RAPID TRAN AUTH GA SALES REV RFDG NPFG B/E 5.25 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-21",
       "lo": 250001,
@@ -1365,7 +1795,7 @@
     {
       "no": 162,
       "page": 8,
-      "desc": "YES MIAMI TRACE OH LOC SCH DIST RFDG B/E B/Q 3.00 % Due Dec 1, 2025",
+      "desc": "MIAMI TRACE OH LOC SCH DIST RFDG B/E B/Q 3.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-21",
       "lo": 50001,
@@ -1387,7 +1817,7 @@
     {
       "no": 164,
       "page": 8,
-      "desc": "YES PORT ARANSAS TX COMB TAX LTD PLG REV CTF OBLIG 2025 DB B/E B/Q 5.00 % Due Feb 1, 2026",
+      "desc": "PORT ARANSAS TX COMB TAX LTD PLG REV CTF OBLIG 2025 DB B/E B/Q 5.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-02-21",
       "lo": 250001,
@@ -1398,7 +1828,7 @@
     {
       "no": 165,
       "page": 8,
-      "desc": "YES TEXAS ST UNIV SYS FING RFDG SER A REV B/E PTC 5.00 % Due Mar 15, 2026",
+      "desc": "TEXAS ST UNIV SYS FING RFDG SER A REV B/E PTC 5.00 % Due Mar 15, 2026",
       "type": "P",
       "date": "2025-02-21",
       "lo": 15001,
@@ -1407,19 +1837,20 @@
       "cls": "muni"
     },
     {
+      "no": 166,
       "page": 8,
       "desc": "YES AIR PRODUCTS AND 4.85%34 DUE",
       "type": "P",
       "date": "2025-02-24",
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "corporate"
     },
     {
       "no": 168,
       "page": 8,
-      "desc": "YES BERNALILLO NM MUN SCH DIST 1 2019 B/E B/Q CR ENH 4.00 % Due Aug 1, 2025",
+      "desc": "BERNALILLO NM MUN SCH DIST 1 2019 B/E B/Q CR ENH 4.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 100001,
@@ -1430,7 +1861,7 @@
     {
       "no": 169,
       "page": 8,
-      "desc": "YES BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SERA 1 B/E VAR 4.00 % Due Dec 1, 2049",
+      "desc": "BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SERA 1 B/E VAR 4.00 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-02-24",
       "lo": 250001,
@@ -1441,7 +1872,7 @@
     {
       "no": 170,
       "page": 8,
-      "desc": "YES BUCKS CNTY PA INDL DEV AUTH REV PENNSWOOD VLG PJ SER A B/E 5.00 % Due Oct 1, 2025",
+      "desc": "BUCKS CNTY PA INDL DEV AUTH REV PENNSWOOD VLG PJ SER A B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 100001,
@@ -1452,7 +1883,7 @@
     {
       "no": 171,
       "page": 8,
-      "desc": "YES CAPE CORAL FL WTR & SWR REV RFDG B/E 5.00 % Due Oct 1, 2025",
+      "desc": "CAPE CORAL FL WTR & SWR REV RFDG B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 100001,
@@ -1463,7 +1894,7 @@
     {
       "no": 172,
       "page": 8,
-      "desc": "YES COLORADO SCH MINES INSTL ENTRPRS REV BREV B B/E 5.00 % Due Dec 1, 2025",
+      "desc": "COLORADO SCH MINES INSTL ENTRPRS REV BREV B B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 50001,
@@ -1474,7 +1905,7 @@
     {
       "no": 173,
       "page": 8,
-      "desc": "YES FAYETTE CNTY KY SCH DIST FIN CORP SCH BLDG REV SER D B/E 5.00 % Due Aug 1, 2025",
+      "desc": "FAYETTE CNTY KY SCH DIST FIN CORP SCH BLDG REV SER D B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 100001,
@@ -1485,7 +1916,7 @@
     {
       "no": 174,
       "page": 8,
-      "desc": "YES IOWA CENT CMNTY CLLG DORM RFDG MERGED AREA V REV B/E B/Q 3.00 % Due Jun 1, 2025",
+      "desc": "IOWA CENT CMNTY CLLG DORM RFDG MERGED AREA V REV B/E B/Q 3.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 100001,
@@ -1496,7 +1927,7 @@
     {
       "no": 175,
       "page": 8,
-      "desc": "YES JEFFERSON CNTY CO SCH DIST R 1 CTF PARTN REV B/E 5.00 % Due Dec 15, 2025",
+      "desc": "JEFFERSON CNTY CO SCH DIST R 1 CTF PARTN REV B/E 5.00 % Due Dec 15, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 50001,
@@ -1507,7 +1938,7 @@
     {
       "no": 176,
       "page": 8,
-      "desc": "YES KANSAS CITY MO WTR REV SER A B/E 5.00 % Due Dec 1, 2025",
+      "desc": "KANSAS CITY MO WTR REV SER A B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 50001,
@@ -1518,7 +1949,7 @@
     {
       "no": 177,
       "page": 8,
-      "desc": "YES LOWER COLORADO RVR AUTH TX TRNSMSN CNTRCT REV RFDG LCRA SVCS B/E PTC 5.00 % Due May 15, 2032",
+      "desc": "LOWER COLORADO RVR AUTH TX TRNSMSN CNTRCT REV RFDG LCRA SVCS B/E PTC 5.00 % Due May 15, 2032",
       "type": "P",
       "date": "2025-02-24",
       "lo": 100001,
@@ -1529,7 +1960,7 @@
     {
       "no": 178,
       "page": 8,
-      "desc": "YES MIAMI DADE CNTY FL PUB FACS REV RFDG JACKSON HLTH SYS SER A B/E 5.00 % Due Jun 1, 2025",
+      "desc": "MIAMI DADE CNTY FL PUB FACS REV RFDG JACKSON HLTH SYS SER A B/E 5.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 100001,
@@ -1540,7 +1971,7 @@
     {
       "no": 179,
       "page": 8,
-      "desc": "YES PHILADELPHIA PA SCH DIST RFDG SER F BAM TCRS 5.00 % Due Sep 1, 2025",
+      "desc": "PHILADELPHIA PA SCH DIST RFDG SER F BAM TCRS 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 50001,
@@ -1551,7 +1982,7 @@
     {
       "no": 180,
       "page": 8,
-      "desc": "YES WARREN CNTY KY BRD ED B/E 5.00 % Due Dec 1, 2025",
+      "desc": "WARREN CNTY KY BRD ED B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-24",
       "lo": 250001,
@@ -1562,7 +1993,7 @@
     {
       "no": 181,
       "page": 8,
-      "desc": "YES WISCONSIN DELLS WI PROM NT SER B B/E 5.00 % Due Mar 1, 2026",
+      "desc": "WISCONSIN DELLS WI PROM NT SER B B/E 5.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-02-24",
       "lo": 15001,
@@ -1573,7 +2004,7 @@
     {
       "no": 182,
       "page": 8,
-      "desc": "YES CENTRAL PLAINS ENERGY PJ NE GAS SPPLY REV RFDG B/E 4.00 % Due Dec 1, 2049",
+      "desc": "CENTRAL PLAINS ENERGY PJ NE GAS SPPLY REV RFDG B/E 4.00 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-02-25",
       "lo": 250001,
@@ -1584,7 +2015,18 @@
     {
       "no": 183,
       "page": 8,
-      "desc": "YES GREATER CLARK BLDG CORP IN 1ST MTG SER B REV B/E ST INTRCPT 6.00 % Due Jan 15, 2026",
+      "desc": "GREATER CLARK BLDG CORP IN 1ST MTG SER B REV B/E ST INTRCPT 6.00 % Due Jan 15, 2026",
+      "type": "P",
+      "date": "2025-02-25",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
+      "no": 184,
+      "page": 9,
+      "desc": "LOWER AL GAS DIST PJ REV 2 SER A B/E 4.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-02-25",
       "lo": 250001,
@@ -1595,7 +2037,7 @@
     {
       "no": 185,
       "page": 9,
-      "desc": "YES AUSTIN TX REV RFDG SUB LIEN 1998 NPFG 5.25 % Due May 15, 2025",
+      "desc": "AUSTIN TX REV RFDG SUB LIEN 1998 NPFG 5.25 % Due May 15, 2025",
       "type": "P",
       "date": "2025-02-26",
       "lo": 250001,
@@ -1606,7 +2048,7 @@
     {
       "no": 186,
       "page": 9,
-      "desc": "YES CONNECTICUT ST HEALTH & EDL FACS AUTH REV LOOMIS CHAFFEE SCH F B/E AMBAC 5.25 % Due Jul 1, 2025",
+      "desc": "CONNECTICUT ST HEALTH & EDL FACS AUTH REV LOOMIS CHAFFEE SCH F B/E AMBAC 5.25 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-26",
       "lo": 250001,
@@ -1617,7 +2059,7 @@
     {
       "no": 187,
       "page": 9,
-      "desc": "YES KENTUCKY INTERLOCAL SCH TRANSN ASSN EQUIP LSE REV COP B/E ST INTRCPT 3.25 % Due Mar 1, 2026",
+      "desc": "KENTUCKY INTERLOCAL SCH TRANSN ASSN EQUIP LSE REV COP B/E ST INTRCPT 3.25 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-02-26",
       "lo": 500001,
@@ -1628,7 +2070,7 @@
     {
       "no": 188,
       "page": 9,
-      "desc": "YES META PLATFORMS, 4.75%34 DUE",
+      "desc": "META PLATFORMS, 4.75%34 DUE",
       "type": "P",
       "date": "2025-02-26",
       "lo": 250001,
@@ -1639,7 +2081,7 @@
     {
       "no": 189,
       "page": 9,
-      "desc": "YES METROPOLITAN ST LOUIS MO SWR DIST WSTWTR SYS REV RFDG & IMPT C B/E PTC 5.00 % Duo May 1, 2031",
+      "desc": "METROPOLITAN ST LOUIS MO SWR DIST WSTWTR SYS REV RFDG & IMPT C B/E PTC 5.00 % Duo May 1, 2031",
       "type": "P",
       "date": "2025-02-26",
       "lo": 250001,
@@ -1650,7 +2092,7 @@
     {
       "no": 190,
       "page": 9,
-      "desc": "YES NORTH TX MUN WTR DIST TX LOWER EAST FORK WSTWTR RFDG REV B/E 3.00 % Due Jun 1, 2025",
+      "desc": "NORTH TX MUN WTR DIST TX LOWER EAST FORK WSTWTR RFDG REV B/E 3.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-02-26",
       "lo": 50001,
@@ -1661,7 +2103,7 @@
     {
       "no": 191,
       "page": 9,
-      "desc": "YES SOUTH CAROLINA ST P 5% DUE ON",
+      "desc": "SOUTH CAROLINA ST P 5% DUE ON",
       "type": "P",
       "date": "2025-02-26",
       "lo": 500001,
@@ -1672,7 +2114,7 @@
     {
       "no": 192,
       "page": 9,
-      "desc": "YES PENNSYLVANIA ST TPK 5% DUE ON",
+      "desc": "PENNSYLVANIA ST TPK 5% DUE ON",
       "type": "P",
       "date": "2025-02-27",
       "lo": 500001,
@@ -1683,7 +2125,7 @@
     {
       "no": 193,
       "page": 9,
-      "desc": "YES BROWARD CNTY FL TOURIST DEV TAX REV CONVNTN CTR EXPN B/E 5.00 % Due Sep 1, 2025",
+      "desc": "BROWARD CNTY FL TOURIST DEV TAX REV CONVNTN CTR EXPN B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1705,7 +2147,7 @@
     {
       "no": 195,
       "page": 9,
-      "desc": "YES COLORADO HLTH FACS AUTH REV COMMONSPIRIT HLTH SER A 1 B/E 5.00 % Due Aug 1, 2025",
+      "desc": "COLORADO HLTH FACS AUTH REV COMMONSPIRIT HLTH SER A 1 B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1716,7 +2158,7 @@
     {
       "no": 196,
       "page": 9,
-      "desc": "YES CUYAHOGA OH MET HSG AUTH MLTIFAM HSG REV WADE PK LP B/E 4.75 % Due Dec 1, 2027",
+      "desc": "CUYAHOGA OH MET HSG AUTH MLTIFAM HSG REV WADE PK LP B/E 4.75 % Due Dec 1, 2027",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1727,7 +2169,7 @@
     {
       "no": 197,
       "page": 9,
-      "desc": "YES FAYETTE MO R III SCH DIST RFDG 2021 B/E B/Q MDDP 2.00 % Due Mar 1, 2026",
+      "desc": "FAYETTE MO R III SCH DIST RFDG 2021 B/E B/Q MDDP 2.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1738,7 +2180,7 @@
     {
       "no": 198,
       "page": 9,
-      "desc": "YES GALVESTON CNTY TX WTR CTL & IMPT DIST 1 B/E 5.00 % Due Mar 1, 2026",
+      "desc": "GALVESTON CNTY TX WTR CTL & IMPT DIST 1 B/E 5.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-02-28",
       "lo": 50001,
@@ -1749,7 +2191,7 @@
     {
       "no": 199,
       "page": 9,
-      "desc": "YES JACKSONVILLE FL SPL REV RFDG SER B B/E 5.00 % Due Oct 1, 2025",
+      "desc": "JACKSONVILLE FL SPL REV RFDG SER B B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1760,7 +2202,7 @@
     {
       "no": 200,
       "page": 9,
-      "desc": "YES JACKSONVILLE FL TRANSN AUTH LOC OPT GAS TAX REV SR LIEN B/E 5.00 % Due Aug 1, 2036",
+      "desc": "JACKSONVILLE FL TRANSN AUTH LOC OPT GAS TAX REV SR LIEN B/E 5.00 % Due Aug 1, 2036",
       "type": "P",
       "date": "2025-02-28",
       "lo": 250001,
@@ -1782,7 +2224,7 @@
     {
       "no": 202,
       "page": 9,
-      "desc": "YES LAKEVILLE MN HSG & REDEV AUTH LSE REV RFDG ICE ARENA PJ SER A B/E B/Q 4.00 % Due Feb 1, 2027",
+      "desc": "LAKEVILLE MN HSG & REDEV AUTH LSE REV RFDG ICE ARENA PJ SER A B/E B/Q 4.00 % Due Feb 1, 2027",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1793,7 +2235,7 @@
     {
       "no": 203,
       "page": 9,
-      "desc": "YES MISSOURI ST HLTH & EDL FACS AUTH BJC SYS SER B REV B/E 4.00 % Due May 1, 2051",
+      "desc": "MISSOURI ST HLTH & EDL FACS AUTH BJC SYS SER B REV B/E 4.00 % Due May 1, 2051",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1804,7 +2246,7 @@
     {
       "no": 204,
       "page": 9,
-      "desc": "YES NEW MELLE MO FIRE PROTN DIST BAM B/E B/Q 3.00 % Due Mar 1, 2026",
+      "desc": "NEW MELLE MO FIRE PROTN DIST BAM B/E B/Q 3.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-02-28",
       "lo": 250001,
@@ -1815,7 +2257,7 @@
     {
       "no": 205,
       "page": 9,
-      "desc": "YES NEW MEXICO ST HOSP EQUIP LN COUNCIL HOSP REV SYS SER A B/E PTC 5.00 % Due Aug 1, 2028",
+      "desc": "NEW MEXICO ST HOSP EQUIP LN COUNCIL HOSP REV SYS SER A B/E PTC 5.00 % Due Aug 1, 2028",
       "type": "P",
       "date": "2025-02-28",
       "lo": 500001,
@@ -1826,7 +2268,7 @@
     {
       "no": 206,
       "page": 9,
-      "desc": "YES ORANGE CNTY FL HLTH FACS AUTH REV HOSP RFDG ORLANDO HEALTH B B/E 5.00 % Due Oct 1, 2025",
+      "desc": "ORANGE CNTY FL HLTH FACS AUTH REV HOSP RFDG ORLANDO HEALTH B B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1837,7 +2279,7 @@
     {
       "no": 207,
       "page": 9,
-      "desc": "YES OSHKOSH WI WTR SYS REV SER C B/E 4.00 % Due Jan 1, 2029",
+      "desc": "OSHKOSH WI WTR SYS REV SER C B/E 4.00 % Due Jan 1, 2029",
       "type": "P",
       "date": "2025-02-28",
       "lo": 50001,
@@ -1848,7 +2290,7 @@
     {
       "no": 208,
       "page": 9,
-      "desc": "YES PENNSYLVANIA ST HIGH EDL FACS AUTH REV RFDG UNIV PA HLTH SYS SER B B/E 5.00 % Due Aug 15, 2025",
+      "desc": "PENNSYLVANIA ST HIGH EDL FACS AUTH REV RFDG UNIV PA HLTH SYS SER B B/E 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-02-28",
       "lo": 250001,
@@ -1859,7 +2301,7 @@
     {
       "no": 209,
       "page": 9,
-      "desc": "YES ST FRANCOIS CNTY MO CENT SCH DIST R III RFDG 2021 B/E B/Q MDDP 2.00 % Due Mar 1, 2026",
+      "desc": "ST FRANCOIS CNTY MO CENT SCH DIST R III RFDG 2021 B/E B/Q MDDP 2.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-02-28",
       "lo": 500001,
@@ -1868,9 +2310,20 @@
       "cls": "muni"
     },
     {
+      "no": 210,
+      "page": 10,
+      "desc": "TWIN LAKES IN SCH BLDG CORP 1ST MTG REV B/E ST INTRCPT 5.00 % Due Jul 15, 2025",
+      "type": "P",
+      "date": "2025-02-28",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 211,
       "page": 10,
-      "desc": "YES UNIVERSITY NE UNIV REV RFDG SER A B/E ETM 5.00 % Due Jul 1, 2025",
+      "desc": "UNIVERSITY NE UNIV REV RFDG SER A B/E ETM 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1881,7 +2334,7 @@
     {
       "no": 212,
       "page": 10,
-      "desc": "YES UNIVERSITY WEST FL FNDTN INC FL DORM REV RFDG SER A B/E 5.00 % Due Jun 1, 2026",
+      "desc": "UNIVERSITY WEST FL FNDTN INC FL DORM REV RFDG SER A B/E 5.00 % Due Jun 1, 2026",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1892,7 +2345,7 @@
     {
       "no": 213,
       "page": 10,
-      "desc": "YES WICHITA KS RFDG 2020 A B/E 3.00 % Due Jun 1, 2026",
+      "desc": "WICHITA KS RFDG 2020 A B/E 3.00 % Due Jun 1, 2026",
       "type": "P",
       "date": "2025-02-28",
       "lo": 100001,
@@ -1903,7 +2356,7 @@
     {
       "no": 214,
       "page": 10,
-      "desc": "YES ANKENY IA SER A B/E 5.00 % Due Jun 1, 2025",
+      "desc": "ANKENY IA SER A B/E 5.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-03-03",
       "lo": 100001,
@@ -1914,7 +2367,7 @@
     {
       "no": 215,
       "page": 10,
-      "desc": "YES DODGE CNTY WI RFDG 2017 A B/E B/Q 3.00 % Due Aug 1, 2025",
+      "desc": "DODGE CNTY WI RFDG 2017 A B/E B/Q 3.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-03-03",
       "lo": 100001,
@@ -1925,7 +2378,7 @@
     {
       "no": 216,
       "page": 10,
-      "desc": "YES EAST RIDGE TN RFDG 2021 A B/E B/Q 3.00 % Due Jun 1, 2026",
+      "desc": "EAST RIDGE TN RFDG 2021 A B/E B/Q 3.00 % Due Jun 1, 2026",
       "type": "P",
       "date": "2025-03-03",
       "lo": 100001,
@@ -1936,7 +2389,7 @@
     {
       "no": 217,
       "page": 10,
-      "desc": "YES INDIANA FIN AUTH HLTH SYS REV IN UNIV HLTH INC SER B B/E 2.25 % Due Dec 1, 2058",
+      "desc": "INDIANA FIN AUTH HLTH SYS REV IN UNIV HLTH INC SER B B/E 2.25 % Due Dec 1, 2058",
       "type": "P",
       "date": "2025-03-03",
       "lo": 1000001,
@@ -1947,7 +2400,7 @@
     {
       "no": 218,
       "page": 10,
-      "desc": "YES LYCOMING CNTY PA WTR & SWR AUTH REV GTD AGM B/E 3.00 % Due Nov 15, 2025",
+      "desc": "LYCOMING CNTY PA WTR & SWR AUTH REV GTD AGM B/E 3.00 % Due Nov 15, 2025",
       "type": "P",
       "date": "2025-03-03",
       "lo": 50001,
@@ -1958,7 +2411,7 @@
     {
       "no": 219,
       "page": 10,
-      "desc": "YES OHIO ST HSG FIN AGY RES MTG REV 2025A B/E GUAR CR ENH 6.00 % Due Mar 1, 2026",
+      "desc": "OHIO ST HSG FIN AGY RES MTG REV 2025A B/E GUAR CR ENH 6.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-03-03",
       "lo": 250001,
@@ -1969,7 +2422,7 @@
     {
       "no": 220,
       "page": 10,
-      "desc": "YES OKLAHOMA TRANSN AUTH OK F K A OK ST TPK AUTH 2ND SR REV SER A B/E 5.00 % Due Jan 1, 2038",
+      "desc": "OKLAHOMA TRANSN AUTH OK F K A OK ST TPK AUTH 2ND SR REV SER A B/E 5.00 % Due Jan 1, 2038",
       "type": "P",
       "date": "2025-03-03",
       "lo": 250001,
@@ -1980,7 +2433,7 @@
     {
       "no": 221,
       "page": 10,
-      "desc": "YES PENNSYLVANIA ECON DEV FING AUTH UPMC REV UNIV PITTSBURGH MED CTR A B/E 5.00 % Due Apr 15, 2026",
+      "desc": "PENNSYLVANIA ECON DEV FING AUTH UPMC REV UNIV PITTSBURGH MED CTR A B/E 5.00 % Due Apr 15, 2026",
       "type": "P",
       "date": "2025-03-03",
       "lo": 100001,
@@ -1991,7 +2444,7 @@
     {
       "no": 222,
       "page": 10,
-      "desc": "YES SOUTH DAKOTA BRD REGTS HSG & AUX FAC SYS REV B/E 5.00 % Due Apr 1, 2026",
+      "desc": "SOUTH DAKOTA BRD REGTS HSG & AUX FAC SYS REV B/E 5.00 % Due Apr 1, 2026",
       "type": "P",
       "date": "2025-03-03",
       "lo": 100001,
@@ -2002,7 +2455,7 @@
     {
       "no": 223,
       "page": 10,
-      "desc": "YES TENNESSEE HSG DEV AGY RES FIN PG REV SER 3A B/E 4.05 % Due Jan 1, 2026",
+      "desc": "TENNESSEE HSG DEV AGY RES FIN PG REV SER 3A B/E 4.05 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-03-03",
       "lo": 100001,
@@ -2013,7 +2466,7 @@
     {
       "no": 224,
       "page": 10,
-      "desc": "YES ALLEGHENY CNTY PA HOSP DEV AUTH REV SER A UNIV PITTSBURGH MED CTR B/E 5.00 % Due Jul 15, 2025",
+      "desc": "ALLEGHENY CNTY PA HOSP DEV AUTH REV SER A UNIV PITTSBURGH MED CTR B/E 5.00 % Due Jul 15, 2025",
       "type": "P",
       "date": "2025-03-04",
       "lo": 250001,
@@ -2024,7 +2477,7 @@
     {
       "no": 225,
       "page": 10,
-      "desc": "YES COOK CNTY ILL CM 4.25% DUE ON",
+      "desc": "COOK CNTY ILL CM 4.25% DUE ON",
       "type": "P",
       "date": "2025-03-04",
       "lo": 500001,
@@ -2035,7 +2488,7 @@
     {
       "no": 226,
       "page": 10,
-      "desc": "YES DALLAS TX HSG FIN CORP MULTI FAM HSG REV POSITANO APTS LLC B/E 5.00 % Due Sep 1, 2026",
+      "desc": "DALLAS TX HSG FIN CORP MULTI FAM HSG REV POSITANO APTS LLC B/E 5.00 % Due Sep 1, 2026",
       "type": "P",
       "date": "2025-03-04",
       "lo": 15001,
@@ -2046,7 +2499,7 @@
     {
       "no": 227,
       "page": 10,
-      "desc": "YES DISTRICT COLUMBIA HSG FIN AGY MLTIFAM HSG REV FAIRCLIFF PLAZA B/E PTC 5.00 % Due Dec 1, 2026",
+      "desc": "DISTRICT COLUMBIA HSG FIN AGY MLTIFAM HSG REV FAIRCLIFF PLAZA B/E PTC 5.00 % Due Dec 1, 2026",
       "type": "P",
       "date": "2025-03-04",
       "lo": 100001,
@@ -2057,7 +2510,7 @@
     {
       "no": 228,
       "page": 10,
-      "desc": "YES KENTUCKY INC KY PUB ENERGY AUTH GAS SPLY REV SER A B/E 4.00 % Due Dec 1, 2050",
+      "desc": "KENTUCKY INC KY PUB ENERGY AUTH GAS SPLY REV SER A B/E 4.00 % Due Dec 1, 2050",
       "type": "P",
       "date": "2025-03-04",
       "lo": 100001,
@@ -2068,7 +2521,7 @@
     {
       "no": 229,
       "page": 10,
-      "desc": "YES LAKEVIEW OH LOC SCH DIST CLSSRM FACS & SCH IMPT B/E CR ENH PTC 3.00 % Due Nov 1, 2025",
+      "desc": "LAKEVIEW OH LOC SCH DIST CLSSRM FACS & SCH IMPT B/E CR ENH PTC 3.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-03-04",
       "lo": 100001,
@@ -2079,7 +2532,7 @@
     {
       "no": 230,
       "page": 10,
-      "desc": "YES LAS CRUCES NM JT UTIL RFDG & IMPT REV SYS B/E 5.00 % Due Jun 1, 2025",
+      "desc": "LAS CRUCES NM JT UTIL RFDG & IMPT REV SYS B/E 5.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-03-04",
       "lo": 50001,
@@ -2090,7 +2543,7 @@
     {
       "no": 231,
       "page": 10,
-      "desc": "YES LOWER CO RIV AUTH TX TRNSMSN CNTRCT REV RFDG LCRA SVCS SER A B/E 5.00 % Due May 15, 2025",
+      "desc": "LOWER CO RIV AUTH TX TRNSMSN CNTRCT REV RFDG LCRA SVCS SER A B/E 5.00 % Due May 15, 2025",
       "type": "P",
       "date": "2025-03-04",
       "lo": 250001,
@@ -2101,7 +2554,7 @@
     {
       "no": 232,
       "page": 10,
-      "desc": "YES MARICOPA CNTY AZ INDL DEV AUTH BANNER HLTH SER D REV B/E 5.00 % Due Jan 1, 2046",
+      "desc": "MARICOPA CNTY AZ INDL DEV AUTH BANNER HLTH SER D REV B/E 5.00 % Due Jan 1, 2046",
       "type": "P",
       "date": "2025-03-04",
       "lo": 100001,
@@ -2112,7 +2565,7 @@
     {
       "no": 233,
       "page": 10,
-      "desc": "YES MARYLAND ST HEALTH 5% DUE ON",
+      "desc": "MARYLAND ST HEALTH 5% DUE ON",
       "type": "P",
       "date": "2025-03-04",
       "lo": 500001,
@@ -2123,7 +2576,7 @@
     {
       "no": 234,
       "page": 10,
-      "desc": "YES MINOT ND WTR & SWR UTIL RESV SER D DB B/E 3.00 % Due Oct 1, 2025",
+      "desc": "MINOT ND WTR & SWR UTIL RESV SER D DB B/E 3.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-03-04",
       "lo": 100001,
@@ -2134,7 +2587,7 @@
     {
       "no": 235,
       "page": 10,
-      "desc": "YES RHODE IS ST HEALTH 5% DUE ON",
+      "desc": "RHODE IS ST HEALTH 5% DUE ON",
       "type": "P",
       "date": "2025-03-04",
       "lo": 500001,
@@ -2143,9 +2596,20 @@
       "cls": "muni"
     },
     {
+      "no": 236,
+      "page": 11,
+      "desc": "ECTOR CNTY TX INDPT SCH DIST RFDG PSF GTD B/E 5.00 % Duo Aug 15, 2025",
+      "type": "P",
+      "date": "2025-03-05",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 237,
       "page": 11,
-      "desc": "YES ILLINOIS ST 5% DUE ON",
+      "desc": "ILLINOIS ST 5% DUE ON",
       "type": "P",
       "date": "2025-03-05",
       "lo": 500001,
@@ -2156,7 +2620,7 @@
     {
       "no": 238,
       "page": 11,
-      "desc": "YES KENTWOOD MI PUB SCHS SCH BLDG & SITE SER 2 B/E 4.00 % Due May 1, 2025",
+      "desc": "KENTWOOD MI PUB SCHS SCH BLDG & SITE SER 2 B/E 4.00 % Due May 1, 2025",
       "type": "P",
       "date": "2025-03-05",
       "lo": 100001,
@@ -2167,7 +2631,7 @@
     {
       "no": 239,
       "page": 11,
-      "desc": "YES LOWER AL GAS DIST GAS GAS DIST PJ 2 REV B/E 4.00 % Due Dec 1, 2050",
+      "desc": "LOWER AL GAS DIST GAS GAS DIST PJ 2 REV B/E 4.00 % Due Dec 1, 2050",
       "type": "P",
       "date": "2025-03-05",
       "lo": 100001,
@@ -2178,7 +2642,7 @@
     {
       "no": 240,
       "page": 11,
-      "desc": "YES LOWER CO RIV AUTH TX TRNSMSN CNTRCT REV RFDG LCRA TRNSMSN SVCS A B/E 5.00 % Due May 15, 2025",
+      "desc": "LOWER CO RIV AUTH TX TRNSMSN CNTRCT REV RFDG LCRA TRNSMSN SVCS A B/E 5.00 % Due May 15, 2025",
       "type": "P",
       "date": "2025-03-05",
       "lo": 100001,
@@ -2189,7 +2653,7 @@
     {
       "no": 241,
       "page": 11,
-      "desc": "YES MANATEE CNTY FLA SC 5% DUE ON",
+      "desc": "MANATEE CNTY FLA SC 5% DUE ON",
       "type": "P",
       "date": "2025-03-05",
       "lo": 500001,
@@ -2200,7 +2664,7 @@
     {
       "no": 242,
       "page": 11,
-      "desc": "YES MARYLAND ST STDM AUTH REV BALTIMORE CITY PUB SCHS CONSTR A B/E 5.00 % Due May 1, 2025",
+      "desc": "MARYLAND ST STDM AUTH REV BALTIMORE CITY PUB SCHS CONSTR A B/E 5.00 % Due May 1, 2025",
       "type": "P",
       "date": "2025-03-05",
       "lo": 100001,
@@ -2211,7 +2675,7 @@
     {
       "no": 243,
       "page": 11,
-      "desc": "YES MISSOURI ST HEALTH 4% DUE ON",
+      "desc": "MISSOURI ST HEALTH 4% DUE ON",
       "type": "P",
       "date": "2025-03-05",
       "lo": 500001,
@@ -2222,7 +2686,7 @@
     {
       "no": 244,
       "page": 11,
-      "desc": "YES MISSOURI ST HLTH & EDL FACS AUTH BJC SYS SER B REV B/E 4.00 % Due May 1, 2051",
+      "desc": "MISSOURI ST HLTH & EDL FACS AUTH BJC SYS SER B REV B/E 4.00 % Due May 1, 2051",
       "type": "P",
       "date": "2025-03-05",
       "lo": 100001,
@@ -2233,7 +2697,7 @@
     {
       "no": 245,
       "page": 11,
-      "desc": "YES NEWARK CULTURAL ED FACS FIN CORP TX REV RFDG KIMBELL ART FNDTN PJB/E 5.00 % Due Nov 15, 2025",
+      "desc": "NEWARK CULTURAL ED FACS FIN CORP TX REV RFDG KIMBELL ART FNDTN PJB/E 5.00 % Due Nov 15, 2025",
       "type": "P",
       "date": "2025-03-05",
       "lo": 50001,
@@ -2244,7 +2708,7 @@
     {
       "no": 246,
       "page": 11,
-      "desc": "YES PHILADELPHIA PA AUTH INDL DEV CITY SVC AGREEMT REV REBUILD B/E 5.00 % Due May 1, 2025",
+      "desc": "PHILADELPHIA PA AUTH INDL DEV CITY SVC AGREEMT REV REBUILD B/E 5.00 % Due May 1, 2025",
       "type": "P",
       "date": "2025-03-05",
       "lo": 100001,
@@ -2255,7 +2719,7 @@
     {
       "no": 247,
       "page": 11,
-      "desc": "YES RACINE WIS UNI SCH 5% DUE ON",
+      "desc": "RACINE WIS UNI SCH 5% DUE ON",
       "type": "P",
       "date": "2025-03-05",
       "lo": 500001,
@@ -2266,7 +2730,7 @@
     {
       "no": 248,
       "page": 11,
-      "desc": "YES SOMERVILLE MA MUN PURP LN B/E 5.00 % Due Jun 1, 2025",
+      "desc": "SOMERVILLE MA MUN PURP LN B/E 5.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-03-05",
       "lo": 250001,
@@ -2277,7 +2741,7 @@
     {
       "no": 249,
       "page": 11,
-      "desc": "YES KENTUCKY ST PPTY & 5% DUE ON",
+      "desc": "KENTUCKY ST PPTY & 5% DUE ON",
       "type": "P",
       "date": "2025-03-06",
       "lo": 500001,
@@ -2288,7 +2752,7 @@
     {
       "no": 250,
       "page": 11,
-      "desc": "YES KING CNTY WA HSG AUTH REV POOL RFDG B/E 3.00 % Due May 1, 2025",
+      "desc": "KING CNTY WA HSG AUTH REV POOL RFDG B/E 3.00 % Due May 1, 2025",
       "type": "P",
       "date": "2025-03-06",
       "lo": 50001,
@@ -2299,7 +2763,7 @@
     {
       "no": 251,
       "page": 11,
-      "desc": "YES LAKE WORTH BEACH FL NON AD VALOREM REV A BAM B/E 5.00 % Due Jul 1, 2025",
+      "desc": "LAKE WORTH BEACH FL NON AD VALOREM REV A BAM B/E 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-03-06",
       "lo": 100001,
@@ -2310,7 +2774,7 @@
     {
       "no": 252,
       "page": 11,
-      "desc": "YES MONROEVILLE PA FIN 5% DUE ON",
+      "desc": "MONROEVILLE PA FIN 5% DUE ON",
       "type": "P",
       "date": "2025-03-06",
       "lo": 500001,
@@ -2321,7 +2785,7 @@
     {
       "no": 253,
       "page": 11,
-      "desc": "YES OAK CREEK-FRANKLIN 4% DUE ON",
+      "desc": "OAK CREEK-FRANKLIN 4% DUE ON",
       "type": "P",
       "date": "2025-03-06",
       "lo": 500001,
@@ -2332,7 +2796,7 @@
     {
       "no": 254,
       "page": 11,
-      "desc": "YES OKLAHOMA CNTY OK INDPT SCH DIST 006 DEER CRK COMB PURP B/E 5.00 % Due Sep 1, 2025",
+      "desc": "OKLAHOMA CNTY OK INDPT SCH DIST 006 DEER CRK COMB PURP B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-03-06",
       "lo": 250001,
@@ -2343,7 +2807,7 @@
     {
       "no": 255,
       "page": 11,
-      "desc": "YES SOUTHFIELD MI WTR & SWR CAP IMPT B/E 3.00 % Due May 1, 2025",
+      "desc": "SOUTHFIELD MI WTR & SWR CAP IMPT B/E 3.00 % Due May 1, 2025",
       "type": "P",
       "date": "2025-03-06",
       "lo": 15001,
@@ -2354,7 +2818,7 @@
     {
       "no": 256,
       "page": 11,
-      "desc": "YES CHIPPEWA VLY MI SCHS RFDG SER A QSBLF B/E PTC 5.00 % Due May 1, 2026",
+      "desc": "CHIPPEWA VLY MI SCHS RFDG SER A QSBLF B/E PTC 5.00 % Due May 1, 2026",
       "type": "P",
       "date": "2025-03-07",
       "lo": 50001,
@@ -2365,7 +2829,7 @@
     {
       "no": 257,
       "page": 11,
-      "desc": "YES CONCORD IN CMNTY SCHS BLDG CORP RFDG 1ST MTG REV B/E ST INTRCPT 3.00 % Due Jul 15, 2025",
+      "desc": "CONCORD IN CMNTY SCHS BLDG CORP RFDG 1ST MTG REV B/E ST INTRCPT 3.00 % Due Jul 15, 2025",
       "type": "P",
       "date": "2025-03-07",
       "lo": 100001,
@@ -2376,7 +2840,7 @@
     {
       "no": 258,
       "page": 11,
-      "desc": "YES IDAHO HSG & FIN ASSN SNGL FAM MTG SER A REV B/E 2.90 % Due Jul 1, 2025",
+      "desc": "IDAHO HSG & FIN ASSN SNGL FAM MTG SER A REV B/E 2.90 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-03-07",
       "lo": 250001,
@@ -2387,7 +2851,7 @@
     {
       "no": 259,
       "page": 11,
-      "desc": "YES MADISON WI MET SCH DIST TAX REV ANTIC PROM NT 2024 B/E 4.00 % Due Sep 2, 2025",
+      "desc": "MADISON WI MET SCH DIST TAX REV ANTIC PROM NT 2024 B/E 4.00 % Due Sep 2, 2025",
       "type": "P",
       "date": "2025-03-07",
       "lo": 500001,
@@ -2398,7 +2862,7 @@
     {
       "no": 260,
       "page": 11,
-      "desc": "YES UPTON CNTY TX TAX NT AGM B/E 5.00 % Due Feb 15, 2026",
+      "desc": "UPTON CNTY TX TAX NT AGM B/E 5.00 % Due Feb 15, 2026",
       "type": "P",
       "date": "2025-03-07",
       "lo": 100001,
@@ -2409,7 +2873,7 @@
     {
       "no": 261,
       "page": 11,
-      "desc": "YES ARLINGTON TX PERM IMPT SER A B/E 5.00 % Due Aug 15, 2025",
+      "desc": "ARLINGTON TX PERM IMPT SER A B/E 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-03-10",
       "lo": 500001,
@@ -2418,9 +2882,20 @@
       "cls": "muni"
     },
     {
+      "no": 262,
+      "page": 12,
+      "desc": "CUYAHOGA OH MET HSG AUTH MLTIFAM HSG REV WADE PK LP B/E 4.75 % Due Dec 1, 2027",
+      "type": "P",
+      "date": "2025-03-10",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 263,
       "page": 12,
-      "desc": "YES DEARBORN MI CAP IMPT SER B B/E 3.00 % Due May 1, 2026",
+      "desc": "DEARBORN MI CAP IMPT SER B B/E 3.00 % Due May 1, 2026",
       "type": "P",
       "date": "2025-03-10",
       "lo": 50001,
@@ -2431,7 +2906,7 @@
     {
       "no": 264,
       "page": 12,
-      "desc": "YES DENTON CNTY TX FRESH WTR SPLY DIST 6 UTIL SYS RFDG BAM B/E B/Q 3.00 % Due Feb 15, 2026",
+      "desc": "DENTON CNTY TX FRESH WTR SPLY DIST 6 UTIL SYS RFDG BAM B/E B/Q 3.00 % Due Feb 15, 2026",
       "type": "P",
       "date": "2025-03-10",
       "lo": 50001,
@@ -2442,7 +2917,7 @@
     {
       "no": 265,
       "page": 12,
-      "desc": "YES DENTON CNTY TX PERM IMPT RFDG BYE 3.00 % Due Jul 15, 2025",
+      "desc": "DENTON CNTY TX PERM IMPT RFDG BYE 3.00 % Due Jul 15, 2025",
       "type": "P",
       "date": "2025-03-10",
       "lo": 50001,
@@ -2453,7 +2928,7 @@
     {
       "no": 266,
       "page": 12,
-      "desc": "YES GRUNDY CNTY IA 2025 B/E B/Q 4.00 % Due Jun 1, 2025",
+      "desc": "GRUNDY CNTY IA 2025 B/E B/Q 4.00 % Due Jun 1, 2025",
       "type": "P",
       "date": "2025-03-10",
       "lo": 100001,
@@ -2464,7 +2939,7 @@
     {
       "no": 267,
       "page": 12,
-      "desc": "YES INDIANA ST FIN AUTH ENVMNTL REV IMPT RFDG SER B B/E STHN IN G&E CO 3.45 % Due Jul 1, 2025",
+      "desc": "INDIANA ST FIN AUTH ENVMNTL REV IMPT RFDG SER B B/E STHN IN G&E CO 3.45 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-03-10",
       "lo": 250001,
@@ -2475,7 +2950,7 @@
     {
       "no": 268,
       "page": 12,
-      "desc": "YES MARICOPA CNTY AZ UNI SCH DIST 89 DYSART RFDG BAM B/E 3.00 % Due Jul 1, 2025",
+      "desc": "MARICOPA CNTY AZ UNI SCH DIST 89 DYSART RFDG BAM B/E 3.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-03-10",
       "lo": 100001,
@@ -2486,7 +2961,7 @@
     {
       "no": 269,
       "page": 12,
-      "desc": "YES PLEASANT HILLS BORO PA 2025 B/E B/Q 5.00 % Due Sep 1, 2025",
+      "desc": "PLEASANT HILLS BORO PA 2025 B/E B/Q 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-03-10",
       "lo": 50001,
@@ -2497,7 +2972,7 @@
     {
       "no": 270,
       "page": 12,
-      "desc": "YES SCOTTSDALE AZ MUN PPTY CORP EXCISE TAX REV RFDG B/E PTC 5.00 % Due Jul 1, 2033",
+      "desc": "SCOTTSDALE AZ MUN PPTY CORP EXCISE TAX REV RFDG B/E PTC 5.00 % Due Jul 1, 2033",
       "type": "P",
       "date": "2025-03-10",
       "lo": 50001,
@@ -2508,7 +2983,7 @@
     {
       "no": 271,
       "page": 12,
-      "desc": "YES TRADITION MUD 2B TX 2023 BAM B/E CR ENH 5.50 % Due Sep 1, 2025",
+      "desc": "TRADITION MUD 2B TX 2023 BAM B/E CR ENH 5.50 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-03-10",
       "lo": 100001,
@@ -2530,7 +3005,7 @@
     {
       "no": 273,
       "page": 12,
-      "desc": "YES UTAH ST B/E 2.00 % Due Jul 1, 2025 |",
+      "desc": "UTAH ST B/E 2.00 % Due Jul 1, 2025 |",
       "type": "P",
       "date": "2025-03-10",
       "lo": 100001,
@@ -2541,7 +3016,7 @@
     {
       "no": 274,
       "page": 12,
-      "desc": "YES WHITING IN SCH CITY BLDG CORP AD VALOREM 1ST MTG REV B/E B/Q ST INTRCPT 5.00 % Due Jan 15, 2026",
+      "desc": "WHITING IN SCH CITY BLDG CORP AD VALOREM 1ST MTG REV B/E B/Q ST INTRCPT 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-03-10",
       "lo": 50001,
@@ -2563,7 +3038,7 @@
     {
       "no": 276,
       "page": 12,
-      "desc": "YES CONNECTICUT ST HLTH & EDL FACS AUTH REV YAEL UNIV SER A B/E 2.80 % Due Jul 1, 2048",
+      "desc": "CONNECTICUT ST HLTH & EDL FACS AUTH REV YAEL UNIV SER A B/E 2.80 % Due Jul 1, 2048",
       "type": "P",
       "date": "2025-03-11",
       "lo": 500001,
@@ -2574,7 +3049,7 @@
     {
       "no": 277,
       "page": 12,
-      "desc": "YES FLORIDA ST TPK AUTH REV RFDG DEPT TRANSN SERB B/E PTC 5.00 % Due Jul 1, 2027",
+      "desc": "FLORIDA ST TPK AUTH REV RFDG DEPT TRANSN SERB B/E PTC 5.00 % Due Jul 1, 2027",
       "type": "P",
       "date": "2025-03-11",
       "lo": 250001,
@@ -2585,7 +3060,7 @@
     {
       "no": 278,
       "page": 12,
-      "desc": "YES FORT BEND CNTY TX MUD 134B AGM B/E 6.50 % Due Mar 1, 2026",
+      "desc": "FORT BEND CNTY TX MUD 134B AGM B/E 6.50 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-03-11",
       "lo": 50001,
@@ -2596,7 +3071,7 @@
     {
       "no": 279,
       "page": 12,
-      "desc": "YES GREATER ATTLEBORO TAUNTON REGL TRAN AUTH MA REV ANTIC NT B/E B/Q 4.00 % Due Aug 15, 2025",
+      "desc": "GREATER ATTLEBORO TAUNTON REGL TRAN AUTH MA REV ANTIC NT B/E B/Q 4.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-03-11",
       "lo": 250001,
@@ -2618,7 +3093,7 @@
     {
       "no": 281,
       "page": 12,
-      "desc": "YES MT VERNON IN SCH BLDG CORP 1ST MTG REV B/E ST INTRCPT 5.00 % Due Jan 15, 2026",
+      "desc": "MT VERNON IN SCH BLDG CORP 1ST MTG REV B/E ST INTRCPT 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-03-11",
       "lo": 250001,
@@ -2629,7 +3104,7 @@
     {
       "no": 282,
       "page": 12,
-      "desc": "YES NEW ORLEANS LA SEW SVC REV B/E PTC 5.00 % Due Jun 1, 2028",
+      "desc": "NEW ORLEANS LA SEW SVC REV B/E PTC 5.00 % Due Jun 1, 2028",
       "type": "P",
       "date": "2025-03-11",
       "lo": 15001,
@@ -2640,7 +3115,7 @@
     {
       "no": 283,
       "page": 12,
-      "desc": "YES PHOENIX AZ CIVIC IMPT CORP WTR SYS REV RFDG JR LIEN B/E 5.00 % Due Jul 1, 2025",
+      "desc": "PHOENIX AZ CIVIC IMPT CORP WTR SYS REV RFDG JR LIEN B/E 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-03-11",
       "lo": 250001,
@@ -2662,7 +3137,7 @@
     {
       "no": 285,
       "page": 12,
-      "desc": "YES CARSON CITY NV HWY IMPT REV RFDG 2015 B/E 5.00 % Duo Nov 1, 2025",
+      "desc": "CARSON CITY NV HWY IMPT REV RFDG 2015 B/E 5.00 % Duo Nov 1, 2025",
       "type": "P",
       "date": "2025-03-12",
       "lo": 50001,
@@ -2684,7 +3159,7 @@
     {
       "no": 287,
       "page": 12,
-      "desc": "YES DALLAS CNTY TX CTF OBLIG DB B/E 5.00 % Due Aug 15, 2025",
+      "desc": "DALLAS CNTY TX CTF OBLIG DB B/E 5.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-03-12",
       "lo": 50001,
@@ -2693,9 +3168,20 @@
       "cls": "muni"
     },
     {
+      "no": 288,
+      "page": 13,
+      "desc": "HARRIS CNTY TX IMPT DIST 18 AGM B/E OID @97.399 3.59% 3.375 % Due Sep 1, 2030",
+      "type": "P",
+      "date": "2025-03-12",
+      "lo": 15001,
+      "hi": 50000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 289,
       "page": 13,
-      "desc": "YES HARRIS CNTY TX MUD 1 B/E ASRD GTY 3.00 % Due Sep 1, 2025",
+      "desc": "HARRIS CNTY TX MUD 1 B/E ASRD GTY 3.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-03-12",
       "lo": 50001,
@@ -2706,7 +3192,7 @@
     {
       "no": 290,
       "page": 13,
-      "desc": "YES JOHNSON CNTY KS UNI SCH DIST 512 SHAWNEE MISSION RFDG&IMPT SER A B/E PTC 4.00 % Due Oct 1, 2035",
+      "desc": "JOHNSON CNTY KS UNI SCH DIST 512 SHAWNEE MISSION RFDG&IMPT SER A B/E PTC 4.00 % Due Oct 1, 2035",
       "type": "P",
       "date": "2025-03-12",
       "lo": 100001,
@@ -2717,7 +3203,7 @@
     {
       "no": 291,
       "page": 13,
-      "desc": "YES KENTUCKY ST PPTY & BLDGS COMMN REV RFDG AGY FD PJ 113 B/E 4.00 % Due Apr 1, 2026",
+      "desc": "KENTUCKY ST PPTY & BLDGS COMMN REV RFDG AGY FD PJ 113 B/E 4.00 % Due Apr 1, 2026",
       "type": "P",
       "date": "2025-03-12",
       "lo": 100001,
@@ -2728,7 +3214,7 @@
     {
       "no": 292,
       "page": 13,
-      "desc": "YES LITTLE ROCK AR SWR REV RFDG B/E OID @97.770 3.32% 3.125 % Due Oct 1, 2029",
+      "desc": "LITTLE ROCK AR SWR REV RFDG B/E OID @97.770 3.32% 3.125 % Due Oct 1, 2029",
       "type": "P",
       "date": "2025-03-12",
       "lo": 50001,
@@ -2739,7 +3225,7 @@
     {
       "no": 293,
       "page": 13,
-      "desc": "YES MARATHON CNTY WI BLDG HLTH CARE PJ 2022B B/E 3.00 % Due Feb 1, 2026",
+      "desc": "MARATHON CNTY WI BLDG HLTH CARE PJ 2022B B/E 3.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-03-12",
       "lo": 500001,
@@ -2750,7 +3236,7 @@
     {
       "no": 294,
       "page": 13,
-      "desc": "YES NEVADA ST RFDG SER H DB B/E PTC 3.00 % Due Aug 1, 2028",
+      "desc": "NEVADA ST RFDG SER H DB B/E PTC 3.00 % Due Aug 1, 2028",
       "type": "P",
       "date": "2025-03-12",
       "lo": 15001,
@@ -2761,7 +3247,7 @@
     {
       "no": 295,
       "page": 13,
-      "desc": "YES NORTHWEST HARRIS CNTY TX MUD 5 SER A BAM B/E PTC 3.00 % Due May 1, 2026",
+      "desc": "NORTHWEST HARRIS CNTY TX MUD 5 SER A BAM B/E PTC 3.00 % Due May 1, 2026",
       "type": "P",
       "date": "2025-03-12",
       "lo": 100001,
@@ -2772,7 +3258,7 @@
     {
       "no": 296,
       "page": 13,
-      "desc": "YES OTTUMWA IA RFDG CAP LN NT 2020 B/E CR ENH 4.00 % Due May 1, 2026",
+      "desc": "OTTUMWA IA RFDG CAP LN NT 2020 B/E CR ENH 4.00 % Due May 1, 2026",
       "type": "P",
       "date": "2025-03-12",
       "lo": 500001,
@@ -2783,7 +3269,7 @@
     {
       "no": 297,
       "page": 13,
-      "desc": "YES SOUTH LK MI SCHS BLDG SITE QSBLF B/E 6.00 % Due Nov 1, 2025",
+      "desc": "SOUTH LK MI SCHS BLDG SITE QSBLF B/E 6.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-03-12",
       "lo": 100001,
@@ -2794,7 +3280,7 @@
     {
       "no": 298,
       "page": 13,
-      "desc": "YES ST MARTIN PARISH LA SCH DIST PARISH WIDE SER A AGM B/E OID@98.001 3.3% 3.125 % Due Mar 1, 2030",
+      "desc": "ST MARTIN PARISH LA SCH DIST PARISH WIDE SER A AGM B/E OID@98.001 3.3% 3.125 % Due Mar 1, 2030",
       "type": "P",
       "date": "2025-03-12",
       "lo": 15001,
@@ -2805,7 +3291,7 @@
     {
       "no": 299,
       "page": 13,
-      "desc": "YES STATE UNIV IA UNIV REV UTIL SYS RFDG ST UNIV IA SER A B/E ETM 5.00 % Due Nov 1, 2025",
+      "desc": "STATE UNIV IA UNIV REV UTIL SYS RFDG ST UNIV IA SER A B/E ETM 5.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-03-12",
       "lo": 100001,
@@ -2816,7 +3302,7 @@
     {
       "no": 300,
       "page": 13,
-      "desc": "YES SWAN CREEK INTERCNTY DRAIN DIST MI DRAIN 2018 REV B/E B/Q 3.00 % Due Jun 1, 2026",
+      "desc": "SWAN CREEK INTERCNTY DRAIN DIST MI DRAIN 2018 REV B/E B/Q 3.00 % Due Jun 1, 2026",
       "type": "P",
       "date": "2025-03-12",
       "lo": 100001,
@@ -2827,7 +3313,7 @@
     {
       "no": 301,
       "page": 13,
-      "desc": "YES TULSA OK PUB FACS AUTH CAP IMPT REV B/E PTC 3.00 % Due Jun 1, 2026",
+      "desc": "TULSA OK PUB FACS AUTH CAP IMPT REV B/E PTC 3.00 % Due Jun 1, 2026",
       "type": "P",
       "date": "2025-03-12",
       "lo": 50001,
@@ -2838,7 +3324,7 @@
     {
       "no": 302,
       "page": 13,
-      "desc": "YES BUTLER CNTY KS UNI SCH DIST 385 ANDOVER RFDG & SCH BLDG B/E PTC 4.00 % Due Sep 1, 2028",
+      "desc": "BUTLER CNTY KS UNI SCH DIST 385 ANDOVER RFDG & SCH BLDG B/E PTC 4.00 % Due Sep 1, 2028",
       "type": "P",
       "date": "2025-03-13",
       "lo": 50001,
@@ -2849,7 +3335,7 @@
     {
       "no": 303,
       "page": 13,
-      "desc": "YES FLAGSTAFF AZ PLEDGED REV OBLIG RD REPAIR STR IMPT PJ B/E 4.00 % Due Jul 1, 2026",
+      "desc": "FLAGSTAFF AZ PLEDGED REV OBLIG RD REPAIR STR IMPT PJ B/E 4.00 % Due Jul 1, 2026",
       "type": "P",
       "date": "2025-03-13",
       "lo": 100001,
@@ -2860,7 +3346,7 @@
     {
       "no": 304,
       "page": 13,
-      "desc": "YES GILBERT AZ SUB LIEN PLEDGED REV OBLIGS B/E OID @97.655 3.45% 3.25 % Due Jul 1, 2030",
+      "desc": "GILBERT AZ SUB LIEN PLEDGED REV OBLIGS B/E OID @97.655 3.45% 3.25 % Due Jul 1, 2030",
       "type": "P",
       "date": "2025-03-13",
       "lo": 50001,
@@ -2871,7 +3357,7 @@
     {
       "no": 305,
       "page": 13,
-      "desc": "YES GREENE CNTY MO CTF PARTN REV SER A B/E 4.00 % Due Mar 1, 2026",
+      "desc": "GREENE CNTY MO CTF PARTN REV SER A B/E 4.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-03-13",
       "lo": 500001,
@@ -2882,7 +3368,7 @@
     {
       "no": 306,
       "page": 13,
-      "desc": "YES HIDALGO CNTY TX DRAIN DIST 1 IMPT B/E 5.00 % Due Sep 1, 2025",
+      "desc": "HIDALGO CNTY TX DRAIN DIST 1 IMPT B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-03-13",
       "lo": 500001,
@@ -2904,7 +3390,7 @@
     {
       "no": 308,
       "page": 13,
-      "desc": "YES KING CNTY WA SCH DIST 210 FEDL WAY RFDG 2015 B/E CR ENH 4.00 % Due Dec 1, 2027",
+      "desc": "KING CNTY WA SCH DIST 210 FEDL WAY RFDG 2015 B/E CR ENH 4.00 % Due Dec 1, 2027",
       "type": "P",
       "date": "2025-03-13",
       "lo": 50001,
@@ -2915,7 +3401,7 @@
     {
       "no": 309,
       "page": 13,
-      "desc": "YES KING CNTY WA SCH DIST 411 ISSAQUAH RFDG B/E PTC BD GTY PG 3.00 % Due Dec 1, 2027",
+      "desc": "KING CNTY WA SCH DIST 411 ISSAQUAH RFDG B/E PTC BD GTY PG 3.00 % Due Dec 1, 2027",
       "type": "P",
       "date": "2025-03-13",
       "lo": 50001,
@@ -2926,7 +3412,7 @@
     {
       "no": 310,
       "page": 13,
-      "desc": "YES MARATHON CNTY WI BLDG HLTH CARE PJ 2022B B/E 3.00 % Due Feb 1, 2027",
+      "desc": "MARATHON CNTY WI BLDG HLTH CARE PJ 2022B B/E 3.00 % Due Feb 1, 2027",
       "type": "P",
       "date": "2025-03-13",
       "lo": 500001,
@@ -2948,7 +3434,7 @@
     {
       "no": 312,
       "page": 13,
-      "desc": "YES NORTH ANDOVER MA MUN PURP LN B/E B/Q PTC 3.00 % Due Jun 15, 2029",
+      "desc": "NORTH ANDOVER MA MUN PURP LN B/E B/Q PTC 3.00 % Due Jun 15, 2029",
       "type": "P",
       "date": "2025-03-13",
       "lo": 50001,
@@ -2959,7 +3445,7 @@
     {
       "no": 313,
       "page": 13,
-      "desc": "YES NORTHEAST WI TECH CLLG DIST WI PROM NT SER B B/E 4.00 % Due Oct 1, 2030",
+      "desc": "NORTHEAST WI TECH CLLG DIST WI PROM NT SER B B/E 4.00 % Due Oct 1, 2030",
       "type": "P",
       "date": "2025-03-13",
       "lo": 100001,
@@ -2968,9 +3454,20 @@
       "cls": "muni"
     },
     {
+      "no": 314,
+      "page": 14,
+      "desc": "OKLAHOMA CNTY OK INDPT SCH DIST 89 OK COMB PURP SER A B/E 3.00 % Due Jul 1, 2025",
+      "type": "P",
+      "date": "2025-03-03",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 315,
       "page": 14,
-      "desc": "YES ST PAUL MN HSG & REDEV AUTH HOSP REV FAC A B/E PTC 5.00 % Due Nov 15, 2040",
+      "desc": "ST PAUL MN HSG & REDEV AUTH HOSP REV FAC A B/E PTC 5.00 % Due Nov 15, 2040",
       "type": "P",
       "date": "2025-03-13",
       "lo": 500001,
@@ -2981,7 +3478,7 @@
     {
       "no": 316,
       "page": 14,
-      "desc": "YES TRINITY RVR AUTH TX 10 MILE CREEK SYS REV RFDG & IMPT B/E 5.00 % Due Aug 1, 2025",
+      "desc": "TRINITY RVR AUTH TX 10 MILE CREEK SYS REV RFDG & IMPT B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-03-13",
       "lo": 100001,
@@ -2992,7 +3489,7 @@
     {
       "no": 317,
       "page": 14,
-      "desc": "YES TULSA OK SER A B/E 4.00 % Due Jan 1, ooad",
+      "desc": "TULSA OK SER A B/E 4.00 % Due Jan 1, ooad",
       "type": "P",
       "date": "2025-03-13",
       "lo": 100001,
@@ -3003,7 +3500,7 @@
     {
       "no": 318,
       "page": 14,
-      "desc": "YES WAUKESHA WI SWR SYS REV B/E PTC 4.00 % Due May 1, 2031",
+      "desc": "WAUKESHA WI SWR SYS REV B/E PTC 4.00 % Due May 1, 2031",
       "type": "P",
       "date": "2025-03-13",
       "lo": 50001,
@@ -3025,7 +3522,7 @@
     {
       "no": 320,
       "page": 14,
-      "desc": "YES GEORGETOWN CNTY SC SCH DIST B/E 4.00 % Due Mar 1, 2033",
+      "desc": "GEORGETOWN CNTY SC SCH DIST B/E 4.00 % Due Mar 1, 2033",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3036,7 +3533,7 @@
     {
       "no": 321,
       "page": 14,
-      "desc": "YES GRAND BLANC MI CMNTY SCHS BLDG SITE B/E QSBLF 5.00 % Due Nov 1, 2031",
+      "desc": "GRAND BLANC MI CMNTY SCHS BLDG SITE B/E QSBLF 5.00 % Due Nov 1, 2031",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3047,7 +3544,7 @@
     {
       "no": 322,
       "page": 14,
-      "desc": "YES KATY TX INDPT SCH DIST SCH BLDG SER A B/E PSF GTD PTC 4.00 % Duo Feb 15, 2032",
+      "desc": "KATY TX INDPT SCH DIST SCH BLDG SER A B/E PSF GTD PTC 4.00 % Duo Feb 15, 2032",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3069,7 +3566,7 @@
     {
       "no": 324,
       "page": 14,
-      "desc": "YES MIDVIEW OH LOC SCH DIST CTF PARTN RFDG REV BAM B/E 4.00 % Due Nov 1, 2027",
+      "desc": "MIDVIEW OH LOC SCH DIST CTF PARTN RFDG REV BAM B/E 4.00 % Due Nov 1, 2027",
       "type": "P",
       "date": "2025-03-14",
       "lo": 250001,
@@ -3080,7 +3577,7 @@
     {
       "no": 325,
       "page": 14,
-      "desc": "YES NORTH PUTNAM IN MID SCH BLDG CORP REV 1ST MTG B/E PTC ST INTRCPT 4.00 % Due Jan 15, 2031",
+      "desc": "NORTH PUTNAM IN MID SCH BLDG CORP REV 1ST MTG B/E PTC ST INTRCPT 4.00 % Due Jan 15, 2031",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3091,7 +3588,7 @@
     {
       "no": 326,
       "page": 14,
-      "desc": "YES NORTHWEST TX INDPT SCH DIST SCH BLDG B/E PSF GTD PTC 4.00 % Due Feb 15, 2033",
+      "desc": "NORTHWEST TX INDPT SCH DIST SCH BLDG B/E PSF GTD PTC 4.00 % Due Feb 15, 2033",
       "type": "P",
       "date": "2025-03-14",
       "lo": 100001,
@@ -3102,7 +3599,7 @@
     {
       "no": 327,
       "page": 14,
-      "desc": "YES ROUND ROCK TX INDPT SCH DIST BLDG RFDG PSF GTD SER A B/E 4.00 % Due Aug 1, 2032",
+      "desc": "ROUND ROCK TX INDPT SCH DIST BLDG RFDG PSF GTD SER A B/E 4.00 % Due Aug 1, 2032",
       "type": "P",
       "date": "2025-03-14",
       "lo": 100001,
@@ -3113,7 +3610,7 @@
     {
       "no": 328,
       "page": 14,
-      "desc": "YES SCOTT CNTY KY SCH DIST FIN CORP SCH BLDG RFDG REV B/E 4.00 % Due Feb 1, 2028",
+      "desc": "SCOTT CNTY KY SCH DIST FIN CORP SCH BLDG RFDG REV B/E 4.00 % Due Feb 1, 2028",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3124,7 +3621,7 @@
     {
       "no": 329,
       "page": 14,
-      "desc": "YES ST CHARLES PARISH LA SCH DIST 1 PARISH WIDE B/E 3.00 % Due Mar 1, 2027",
+      "desc": "ST CHARLES PARISH LA SCH DIST 1 PARISH WIDE B/E 3.00 % Due Mar 1, 2027",
       "type": "P",
       "date": "2025-03-14",
       "lo": 15001,
@@ -3135,7 +3632,7 @@
     {
       "no": 330,
       "page": 14,
-      "desc": "YES ST CHARLES PARISH LA SCH DIST 1 PARISH WIDE B/E OID @97.746 3.45% 3.25 % Due Mar 1, 2030",
+      "desc": "ST CHARLES PARISH LA SCH DIST 1 PARISH WIDE B/E OID @97.746 3.45% 3.25 % Due Mar 1, 2030",
       "type": "P",
       "date": "2025-03-14",
       "lo": 15001,
@@ -3146,7 +3643,7 @@
     {
       "no": 331,
       "page": 14,
-      "desc": "YES TAMPA BAY WTR FL A REGL WTR SPLY AUTH UTIL SYS REV RFDG SER A B/E 4.00 % Due Oct 1, 2032",
+      "desc": "TAMPA BAY WTR FL A REGL WTR SPLY AUTH UTIL SYS REV RFDG SER A B/E 4.00 % Due Oct 1, 2032",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3157,7 +3654,7 @@
     {
       "no": 332,
       "page": 14,
-      "desc": "YES TAYLOR MI DB BAM B/E 4.00 % Due Mar 1, 2028",
+      "desc": "TAYLOR MI DB BAM B/E 4.00 % Due Mar 1, 2028",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3168,7 +3665,7 @@
     {
       "no": 333,
       "page": 14,
-      "desc": "YES TEXAS ST WTR FINL ASSIST RFDG SER B DB B/E 4.00 % Due Aug 1, 2028",
+      "desc": "TEXAS ST WTR FINL ASSIST RFDG SER B DB B/E 4.00 % Due Aug 1, 2028",
       "type": "P",
       "date": "2025-03-14",
       "lo": 50001,
@@ -3179,7 +3676,7 @@
     {
       "no": 334,
       "page": 14,
-      "desc": "YES YORK CNTY SC SCH DIST 4 FORT MILL SER C B/E 3.20 % Due Mar 1, 2030",
+      "desc": "YORK CNTY SC SCH DIST 4 FORT MILL SER C B/E 3.20 % Due Mar 1, 2030",
       "type": "P",
       "date": "2025-03-14",
       "lo": 100001,
@@ -3190,7 +3687,7 @@
     {
       "no": 335,
       "page": 14,
-      "desc": "YES METROPOLITAN GOVT NASHVILLE & DAVIDSON CNTY TN RFDG B/E PTC 4.00 % Due Jan 1, 2030",
+      "desc": "METROPOLITAN GOVT NASHVILLE & DAVIDSON CNTY TN RFDG B/E PTC 4.00 % Due Jan 1, 2030",
       "type": "P",
       "date": "2025-03-17",
       "lo": 100001,
@@ -3201,7 +3698,7 @@
     {
       "no": 336,
       "page": 14,
-      "desc": "YES GALENA PK TX INDPT SCH DIST RFDG PSF GTD B/E 4.00 % Due Aug 15, 2032",
+      "desc": "GALENA PK TX INDPT SCH DIST RFDG PSF GTD B/E 4.00 % Due Aug 15, 2032",
       "type": "P",
       "date": "2025-03-18",
       "lo": 50001,
@@ -3212,7 +3709,7 @@
     {
       "no": 337,
       "page": 14,
-      "desc": "YES HOUSTON TX INDPT SCH DIST RFDG SCHLHSE B/E PTC PSF GTD 4.00 % Due Feb 15, 2032",
+      "desc": "HOUSTON TX INDPT SCH DIST RFDG SCHLHSE B/E PTC PSF GTD 4.00 % Due Feb 15, 2032",
       "type": "P",
       "date": "2025-03-18",
       "lo": 50001,
@@ -3223,7 +3720,7 @@
     {
       "no": 338,
       "page": 14,
-      "desc": "YES LAS VEGAS NV MEDIUM TERM TRANSN SER A B/E PTC 4.00 % Due Jun 1, 2033",
+      "desc": "LAS VEGAS NV MEDIUM TERM TRANSN SER A B/E PTC 4.00 % Due Jun 1, 2033",
       "type": "P",
       "date": "2025-03-18",
       "lo": 50001,
@@ -3234,7 +3731,7 @@
     {
       "no": 339,
       "page": 14,
-      "desc": "YES HENDERSON CNTY NC LTD OBLIG REV B/E 4.00 % Due Jun 1, 2033",
+      "desc": "HENDERSON CNTY NC LTD OBLIG REV B/E 4.00 % Due Jun 1, 2033",
       "type": "P",
       "date": "2025-03-19",
       "lo": 50001,
@@ -3243,9 +3740,20 @@
       "cls": "muni"
     },
     {
+      "no": 340,
+      "page": 15,
+      "desc": "HOUSTON TEX INDPT S 5% DUE ON",
+      "type": "P",
+      "date": "2025-03-19",
+      "lo": 500001,
+      "hi": 1000000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 341,
       "page": 15,
-      "desc": "YES MESA AZ UTIL SYS REV B/E 3.50 % Due Jul 1, 2029",
+      "desc": "MESA AZ UTIL SYS REV B/E 3.50 % Due Jul 1, 2029",
       "type": "P",
       "date": "2025-03-19",
       "lo": 50001,
@@ -3256,7 +3764,7 @@
     {
       "no": 342,
       "page": 15,
-      "desc": "YES ARAPAHOE CNTY CO SCH DIST 001 ENGLEWOOD B/E 4.00 % Due Dec 1, 2032",
+      "desc": "ARAPAHOE CNTY CO SCH DIST 001 ENGLEWOOD B/E 4.00 % Due Dec 1, 2032",
       "type": "P",
       "date": "2025-03-20",
       "lo": 50001,
@@ -3289,7 +3797,7 @@
     {
       "no": 345,
       "page": 15,
-      "desc": "YES METROPOLITAN GOVT NASHVILLE & DAVIDSON CNTY TN IMPT B/E 4.00 % Due Jul 1, 2033",
+      "desc": "METROPOLITAN GOVT NASHVILLE & DAVIDSON CNTY TN IMPT B/E 4.00 % Due Jul 1, 2033",
       "type": "P",
       "date": "2025-03-20",
       "lo": 100001,
@@ -3300,7 +3808,7 @@
     {
       "no": 346,
       "page": 15,
-      "desc": "YES COLUMBUS OH VARIOUS PURP SER A B/E PTC 3.00 % Due Aug 15, 2032",
+      "desc": "COLUMBUS OH VARIOUS PURP SER A B/E PTC 3.00 % Due Aug 15, 2032",
       "type": "P",
       "date": "2025-03-24",
       "lo": 50001,
@@ -3311,7 +3819,7 @@
     {
       "no": 347,
       "page": 15,
-      "desc": "YES CONROE TX CTF OBLIG DB B/E OID @98.465 3.15% 3.00 % Due Mar 1, 2028",
+      "desc": "CONROE TX CTF OBLIG DB B/E OID @98.465 3.15% 3.00 % Due Mar 1, 2028",
       "type": "P",
       "date": "2025-03-24",
       "lo": 50001,
@@ -3322,7 +3830,7 @@
     {
       "no": 348,
       "page": 15,
-      "desc": "YES EL PASO TX INDPT SCH DIST SCH BLDG B/E PSF GTD OID @98.254 3.16 3.00 % Due Aug 15, 2032",
+      "desc": "EL PASO TX INDPT SCH DIST SCH BLDG B/E PSF GTD OID @98.254 3.16 3.00 % Due Aug 15, 2032",
       "type": "P",
       "date": "2025-03-24",
       "lo": 15001,
@@ -3333,7 +3841,7 @@
     {
       "no": 349,
       "page": 15,
-      "desc": "YES HARTSVILLE S C COMB SYS IMPT REV 2018 BAM B/E B/Q CR ENH 4.00 % Due Jun 1, 2033",
+      "desc": "HARTSVILLE S C COMB SYS IMPT REV 2018 BAM B/E B/Q CR ENH 4.00 % Due Jun 1, 2033",
       "type": "P",
       "date": "2025-03-24",
       "lo": 100001,
@@ -3344,7 +3852,7 @@
     {
       "no": 350,
       "page": 15,
-      "desc": "YES JEFFERSON GA SCH DIST RFDG B/E PTC ST INTRCPT 4.00 % Due Feb 1, 2030",
+      "desc": "JEFFERSON GA SCH DIST RFDG B/E PTC ST INTRCPT 4.00 % Due Feb 1, 2030",
       "type": "P",
       "date": "2025-03-24",
       "lo": 100001,
@@ -3355,7 +3863,7 @@
     {
       "no": 351,
       "page": 15,
-      "desc": "YES MARICOPA CNTY AZ ELEM SCH DIST 25 LIBERTY SCH IMPT A AGM B/E PTC 4.00 % Due Jul 1, 2033",
+      "desc": "MARICOPA CNTY AZ ELEM SCH DIST 25 LIBERTY SCH IMPT A AGM B/E PTC 4.00 % Due Jul 1, 2033",
       "type": "P",
       "date": "2025-03-24",
       "lo": 50001,
@@ -3366,7 +3874,7 @@
     {
       "no": 352,
       "page": 15,
-      "desc": "YES MURFREESBORO TN B/E 3.05 % Due Jun 1, 2031",
+      "desc": "MURFREESBORO TN B/E 3.05 % Due Jun 1, 2031",
       "type": "P",
       "date": "2025-03-24",
       "lo": 100001,
@@ -3377,7 +3885,7 @@
     {
       "no": 353,
       "page": 15,
-      "desc": "YES NEWBURYPORT MA MUN PURP LN B/E 3.00 % Due Oct 15, 2032",
+      "desc": "NEWBURYPORT MA MUN PURP LN B/E 3.00 % Due Oct 15, 2032",
       "type": "P",
       "date": "2025-03-24",
       "lo": 15001,
@@ -3421,7 +3929,7 @@
     {
       "no": 357,
       "page": 15,
-      "desc": "YES DUCHESNE CNTY UT SCH DIST SCH BLDG UT SCH BD GTY PG B/E PTC 4.00 % Due Jun 1, 2030",
+      "desc": "DUCHESNE CNTY UT SCH DIST SCH BLDG UT SCH BD GTY PG B/E PTC 4.00 % Due Jun 1, 2030",
       "type": "P",
       "date": "2025-03-25",
       "lo": 50001,
@@ -3432,7 +3940,7 @@
     {
       "no": 358,
       "page": 15,
-      "desc": "YES HOUSTON TX INDPT SCH DIST RFDG SCHLHSE PSF GTD B/E PTC 4.00 % Due Feb 15, 2033",
+      "desc": "HOUSTON TX INDPT SCH DIST RFDG SCHLHSE PSF GTD B/E PTC 4.00 % Due Feb 15, 2033",
       "type": "P",
       "date": "2025-03-25",
       "lo": 250001,
@@ -3443,7 +3951,7 @@
     {
       "no": 359,
       "page": 15,
-      "desc": "YES JOHNSON CNTY MO SCH DIST R VI WARRENSBURG MDDP B/E 4.00 % Due Mar 1, 2032",
+      "desc": "JOHNSON CNTY MO SCH DIST R VI WARRENSBURG MDDP B/E 4.00 % Due Mar 1, 2032",
       "type": "P",
       "date": "2025-03-25",
       "lo": 50001,
@@ -3454,7 +3962,7 @@
     {
       "no": 360,
       "page": 15,
-      "desc": "YES KAUKAUNA WI SCH DIST PROM NT AGI B/E 4.00 % Due Mar 1, 2029",
+      "desc": "KAUKAUNA WI SCH DIST PROM NT AGI B/E 4.00 % Due Mar 1, 2029",
       "type": "P",
       "date": "2025-03-25",
       "lo": 50001,
@@ -3465,7 +3973,7 @@
     {
       "no": 361,
       "page": 15,
-      "desc": "YES KINGSPORT TN RFDG & IMPT SER A B/E PTC 3.00 % Due Mar 1, 2028",
+      "desc": "KINGSPORT TN RFDG & IMPT SER A B/E PTC 3.00 % Due Mar 1, 2028",
       "type": "P",
       "date": "2025-03-25",
       "lo": 15001,
@@ -3476,7 +3984,7 @@
     {
       "no": 362,
       "page": 15,
-      "desc": "YES LAWRENCE TWP IN SCH BLDG CORP 1ST MTG REV B/E PTC ST INTRCPT 3.00 % Due Jul 15, 2033",
+      "desc": "LAWRENCE TWP IN SCH BLDG CORP 1ST MTG REV B/E PTC ST INTRCPT 3.00 % Due Jul 15, 2033",
       "type": "P",
       "date": "2025-03-25",
       "lo": 100001,
@@ -3487,7 +3995,7 @@
     {
       "no": 363,
       "page": 15,
-      "desc": "YES MAPLEWOOD RICHMOND HTS MO SCH DIST IMPT RFDG SER A B/E PTC 3.00 % Due Mar 1, 2033",
+      "desc": "MAPLEWOOD RICHMOND HTS MO SCH DIST IMPT RFDG SER A B/E PTC 3.00 % Due Mar 1, 2033",
       "type": "P",
       "date": "2025-03-25",
       "lo": 50001,
@@ -3498,7 +4006,7 @@
     {
       "no": 364,
       "page": 15,
-      "desc": "YES TAMPA BAY WTR FL REGL WTR SPLY AUTH UTIL SYS REV RFDG SER A B/E 4.00 % Due Oct 1, 2030",
+      "desc": "TAMPA BAY WTR FL REGL WTR SPLY AUTH UTIL SYS REV RFDG SER A B/E 4.00 % Due Oct 1, 2030",
       "type": "P",
       "date": "2025-03-25",
       "lo": 100001,
@@ -3509,7 +4017,7 @@
     {
       "no": 365,
       "page": 15,
-      "desc": "YES WEST FARGO ND PUB SCH DIST 6 BLDG SER A B/E PTC 4.00 % Due May 1, 2031",
+      "desc": "WEST FARGO ND PUB SCH DIST 6 BLDG SER A B/E PTC 4.00 % Due May 1, 2031",
       "type": "P",
       "date": "2025-03-25",
       "lo": 50001,
@@ -3518,9 +4026,20 @@
       "cls": "muni"
     },
     {
+      "no": 366,
+      "page": 16,
+      "desc": "STERLING HEIGHTS MI CAP IMPT B/E 4.00 % Due Apr 1, 2029",
+      "type": "P",
+      "date": "2025-03-26",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 367,
       "page": 16,
-      "desc": "YES HAWKEYE CMNTY CLLG IA SCH 2025 B/E 4.00 % Due Jun 1, 2029",
+      "desc": "HAWKEYE CMNTY CLLG IA SCH 2025 B/E 4.00 % Due Jun 1, 2029",
       "type": "P",
       "date": "2025-03-27",
       "lo": 100001,
@@ -3531,7 +4050,7 @@
     {
       "no": 368,
       "page": 16,
-      "desc": "YES MARYLAND ST DPT TRANSN CONS TRANSN REV B/E 3.00 % Due Nov 1, 2028",
+      "desc": "MARYLAND ST DPT TRANSN CONS TRANSN REV B/E 3.00 % Due Nov 1, 2028",
       "type": "P",
       "date": "2025-03-27",
       "lo": 100001,
@@ -3542,7 +4061,7 @@
     {
       "no": 369,
       "page": 16,
-      "desc": "YES METROPOLITAN ATLANTA RAPID TRAN AUTH GA SALES TAX REV RFDG D B/E 4.00 % Due Jul 1, 2028",
+      "desc": "METROPOLITAN ATLANTA RAPID TRAN AUTH GA SALES TAX REV RFDG D B/E 4.00 % Due Jul 1, 2028",
       "type": "P",
       "date": "2025-03-27",
       "lo": 100001,
@@ -3553,7 +4072,7 @@
     {
       "no": 370,
       "page": 16,
-      "desc": "YES MISSOURI ST HSG DEV COMM SNGL FAM MTG REV SER C B/E GTD GNMA 3.70 % Due Nov 1, 2031",
+      "desc": "MISSOURI ST HSG DEV COMM SNGL FAM MTG REV SER C B/E GTD GNMA 3.70 % Due Nov 1, 2031",
       "type": "P",
       "date": "2025-03-27",
       "lo": 100001,
@@ -3564,7 +4083,7 @@
     {
       "no": 371,
       "page": 16,
-      "desc": "YES MISSOURI ST HSG DEV COMM SNGL FAM MTG REV SER C B/E GTD GNMA 3.75 % Due May 1, 2032",
+      "desc": "MISSOURI ST HSG DEV COMM SNGL FAM MTG REV SER C B/E GTD GNMA 3.75 % Due May 1, 2032",
       "type": "P",
       "date": "2025-03-27",
       "lo": 100001,
@@ -3575,7 +4094,7 @@
     {
       "no": 372,
       "page": 16,
-      "desc": "YES SNOHOMISH CNTY WA LTD TX 2018A B/E 4.00 % Due Dec 1, 2029",
+      "desc": "SNOHOMISH CNTY WA LTD TX 2018A B/E 4.00 % Due Dec 1, 2029",
       "type": "P",
       "date": "2025-03-27",
       "lo": 100001,
@@ -3586,7 +4105,7 @@
     {
       "no": 373,
       "page": 16,
-      "desc": "YES SNOHOMISH CNTY WA LTD TX 2018A B/E 4.00 % Due Dec 1, 2030",
+      "desc": "SNOHOMISH CNTY WA LTD TX 2018A B/E 4.00 % Due Dec 1, 2030",
       "type": "P",
       "date": "2025-03-27",
       "lo": 50001,
@@ -3597,7 +4116,7 @@
     {
       "no": 374,
       "page": 16,
-      "desc": "YES TEXAS ST WTR FINL ASSIST RFDG SER B DB B/E 4.00 % Due Aug 1, 2028",
+      "desc": "TEXAS ST WTR FINL ASSIST RFDG SER B DB B/E 4.00 % Due Aug 1, 2028",
       "type": "P",
       "date": "2025-03-27",
       "lo": 250001,
@@ -3608,7 +4127,7 @@
     {
       "no": 375,
       "page": 16,
-      "desc": "YES ALBUQUERQUE NM TRANSN INFRA GROSS RCPTS TAX IMPT REV B/E PTC 4.00 % Due Jul 1, 2031",
+      "desc": "ALBUQUERQUE NM TRANSN INFRA GROSS RCPTS TAX IMPT REV B/E PTC 4.00 % Due Jul 1, 2031",
       "type": "P",
       "date": "2025-04-03",
       "lo": 15001,
@@ -3619,7 +4138,7 @@
     {
       "no": 376,
       "page": 16,
-      "desc": "YES FLORIDA ST TPK AUTH REV RFDG SER A B/E 4.00 % Due Jul 1, 2032",
+      "desc": "FLORIDA ST TPK AUTH REV RFDG SER A B/E 4.00 % Due Jul 1, 2032",
       "type": "P",
       "date": "2025-04-03",
       "lo": 50001,
@@ -3630,7 +4149,7 @@
     {
       "no": 377,
       "page": 16,
-      "desc": "YES HARRIS CNTY TX MUD 106 RFDG 2015 B/E B/Q OID @97.304 3.35% 3.125 % Due Sep 1, 2030",
+      "desc": "HARRIS CNTY TX MUD 106 RFDG 2015 B/E B/Q OID @97.304 3.35% 3.125 % Due Sep 1, 2030",
       "type": "P",
       "date": "2025-04-03",
       "lo": 250001,
@@ -3641,7 +4160,7 @@
     {
       "no": 378,
       "page": 16,
-      "desc": "YES KIRTLAND MI CMNTY CLLG DIST CLLG FAC B/E B/Q 4.00 % Due May 1, 2032",
+      "desc": "KIRTLAND MI CMNTY CLLG DIST CLLG FAC B/E B/Q 4.00 % Due May 1, 2032",
       "type": "P",
       "date": "2025-04-03",
       "lo": 100001,
@@ -3652,7 +4171,7 @@
     {
       "no": 379,
       "page": 16,
-      "desc": "YES NEW BRAUNFELS TX INDPT SCH DIST BLDG RFDG B/E PSF GTD 4.00 % Due Feb 1, 2034",
+      "desc": "NEW BRAUNFELS TX INDPT SCH DIST BLDG RFDG B/E PSF GTD 4.00 % Due Feb 1, 2034",
       "type": "P",
       "date": "2025-04-03",
       "lo": 50001,
@@ -3663,7 +4182,7 @@
     {
       "no": 380,
       "page": 16,
-      "desc": "YES RALEIGH NC COMB ENTRPRS SYS REV COMB SER A B/E 4.00 % Due Dec 1, 2034",
+      "desc": "RALEIGH NC COMB ENTRPRS SYS REV COMB SER A B/E 4.00 % Due Dec 1, 2034",
       "type": "P",
       "date": "2025-04-03",
       "approx": true,
@@ -3675,7 +4194,7 @@
     {
       "no": 381,
       "page": 16,
-      "desc": "YES SABINE PASS TX INDPT SCH DIST RFDG PSF GTD B/E B/Q PTC 3.25 % Due Aug 15, 2032",
+      "desc": "SABINE PASS TX INDPT SCH DIST RFDG PSF GTD B/E B/Q PTC 3.25 % Due Aug 15, 2032",
       "type": "P",
       "date": "2025-04-03",
       "lo": 100001,
@@ -3686,7 +4205,7 @@
     {
       "no": 382,
       "page": 16,
-      "desc": "YES SPRINGFIELD MO PUB UTIL REV RFDG B/E PTC 3.25 % Due Aug 1, 2027",
+      "desc": "SPRINGFIELD MO PUB UTIL REV RFDG B/E PTC 3.25 % Due Aug 1, 2027",
       "type": "P",
       "date": "2025-04-03",
       "lo": 50001,
@@ -3697,7 +4216,7 @@
     {
       "no": 383,
       "page": 16,
-      "desc": "YES WASHOE CNTY NV SCH DIST SCH IMPT SER B B/E 4.00 % Due May 1, 2033",
+      "desc": "WASHOE CNTY NV SCH DIST SCH IMPT SER B B/E 4.00 % Due May 1, 2033",
       "type": "P",
       "date": "2025-04-03",
       "lo": 50001,
@@ -3708,7 +4227,7 @@
     {
       "no": 384,
       "page": 16,
-      "desc": "YES ERIE CO CTF PARTN REV B/E OID @97.499 3.7% 3.50 % Due Nov 1, 2031",
+      "desc": "ERIE CO CTF PARTN REV B/E OID @97.499 3.7% 3.50 % Due Nov 1, 2031",
       "type": "P",
       "date": "2025-04-04",
       "lo": 100001,
@@ -3724,13 +4243,12 @@
       "date": "2025-04-04",
       "lo": 15001,
       "hi": 50000,
-      "checked": 2,
       "cls": "muni"
     },
     {
       "no": 386,
       "page": 16,
-      "desc": "YES PORT ARTHUR TX INDPT SCH DIST RFDG SER B PSF GTD B/E PTC 4.00 % Due Feb 15, 2031",
+      "desc": "PORT ARTHUR TX INDPT SCH DIST RFDG SER B PSF GTD B/E PTC 4.00 % Due Feb 15, 2031",
       "type": "P",
       "date": "2025-04-04",
       "approx": true,
@@ -3742,7 +4260,7 @@
     {
       "no": 387,
       "page": 16,
-      "desc": "YES NEVADA ST HWY IMPT A REV B/E 4.00 % Due Dec 1, 2031",
+      "desc": "NEVADA ST HWY IMPT A REV B/E 4.00 % Due Dec 1, 2031",
       "type": "P",
       "date": "2025-04-04",
       "approx": true,
@@ -3754,7 +4272,7 @@
     {
       "no": 388,
       "page": 16,
-      "desc": "YES TEXAS WTR DEV BRD ST IMPLEMENTATION REV B/E 4.00 % Due Oct 15, 2031",
+      "desc": "TEXAS WTR DEV BRD ST IMPLEMENTATION REV B/E 4.00 % Due Oct 15, 2031",
       "type": "P",
       "date": "2025-04-04",
       "approx": true,
@@ -3766,7 +4284,7 @@
     {
       "no": 389,
       "page": 16,
-      "desc": "YES CENTRAL WA UNIV SYS REV RFDG AGM CR OID @98.994 3.45% 3.375 % Due May 1, 2031",
+      "desc": "CENTRAL WA UNIV SYS REV RFDG AGM CR OID @98.994 3.45% 3.375 % Due May 1, 2031",
       "type": "P",
       "date": "2025-04-08",
       "lo": 15001,
@@ -3777,7 +4295,7 @@
     {
       "no": 390,
       "page": 16,
-      "desc": "YES CINCINNATI OH VARIOUS PURP IMPT DB B/E 4.00 % Due Dec 1, 2031",
+      "desc": "CINCINNATI OH VARIOUS PURP IMPT DB B/E 4.00 % Due Dec 1, 2031",
       "type": "P",
       "date": "2025-04-08",
       "lo": 100001,
@@ -3788,7 +4306,7 @@
     {
       "no": 391,
       "page": 16,
-      "desc": "YES ELYRIA OH RFDG VARIOUS PURP IMPT AGM B/E OID @98.661 3.13% 3.00 % Due Dec 1, 2029",
+      "desc": "ELYRIA OH RFDG VARIOUS PURP IMPT AGM B/E OID @98.661 3.13% 3.00 % Due Dec 1, 2029",
       "type": "P",
       "date": "2025-04-08",
       "lo": 15001,
@@ -3797,9 +4315,20 @@
       "cls": "muni"
     },
     {
+      "no": 392,
+      "page": 17,
+      "desc": "FORT BEND CNTY TX MUD 25 AGM B/E B/Q OID @98.357 3.15% 3.00 % Due Oct 1, 2031",
+      "type": "P",
+      "date": "2025-04-08",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 393,
       "page": 17,
-      "desc": "YES GEORGETOWN TX COMB TAX & REV CTF OBLIG 2021 DB B/E 4.00 % Due Aug 15, 2029",
+      "desc": "GEORGETOWN TX COMB TAX & REV CTF OBLIG 2021 DB B/E 4.00 % Due Aug 15, 2029",
       "type": "P",
       "date": "2025-04-08",
       "lo": 15001,
@@ -3832,7 +4361,7 @@
     {
       "no": 396,
       "page": 17,
-      "desc": "YES NEW HAMPSHIRE ST HSG FIN AUTH SNGL FAM MTG REV ACQ 2023A B/E GUAR GNMA 3.00 % Due Jul 1, 2028",
+      "desc": "NEW HAMPSHIRE ST HSG FIN AUTH SNGL FAM MTG REV ACQ 2023A B/E GUAR GNMA 3.00 % Due Jul 1, 2028",
       "type": "P",
       "date": "2025-04-18",
       "lo": 50001,
@@ -3854,7 +4383,7 @@
     {
       "no": 398,
       "page": 17,
-      "desc": "YES COMMONWEALTH FING A 5% DUE ON",
+      "desc": "COMMONWEALTH FING A 5% DUE ON",
       "type": "P",
       "date": "2025-04-11",
       "lo": 1001,
@@ -3865,7 +4394,7 @@
     {
       "no": 399,
       "page": 17,
-      "desc": "YES ARLINGTON CNTY VA PUB IMPT B/E 5.00 % Due Jun 15, 2026",
+      "desc": "ARLINGTON CNTY VA PUB IMPT B/E 5.00 % Due Jun 15, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3876,7 +4405,7 @@
     {
       "no": 400,
       "page": 17,
-      "desc": "YES BROOKINGS SD SCH DIST 05 1 RFDG B/E 4.00 % Due Jul 1, 2026",
+      "desc": "BROOKINGS SD SCH DIST 05 1 RFDG B/E 4.00 % Due Jul 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3887,7 +4416,7 @@
     {
       "no": 401,
       "page": 17,
-      "desc": "YES BUFFALO MN TAX ABATEMT UTIL RFDG 2023 B DB B/E 5.00 % Due Feb 1, 2026",
+      "desc": "BUFFALO MN TAX ABATEMT UTIL RFDG 2023 B DB B/E 5.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3898,7 +4427,7 @@
     {
       "no": 402,
       "page": 17,
-      "desc": "YES CHARLOTTE MECKLENBURG HOSP AUTH NC HC SYS REV RFDG CAROLINAS HC A B/E 5.00 % Due Jan 15, 2026",
+      "desc": "CHARLOTTE MECKLENBURG HOSP AUTH NC HC SYS REV RFDG CAROLINAS HC A B/E 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3909,7 +4438,7 @@
     {
       "no": 403,
       "page": 17,
-      "desc": "YES CLARK CNTY WA PUD 001 WTR REV RFDG SYS B/E 5.00 % Due Jan 1, 2026",
+      "desc": "CLARK CNTY WA PUD 001 WTR REV RFDG SYS B/E 5.00 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3920,7 +4449,7 @@
     {
       "no": 404,
       "page": 17,
-      "desc": "YES CUYAHOGA CNTY OH ECON DEV REV RFDG SER D B/E 5.00 % Due Dec 1, 2025",
+      "desc": "CUYAHOGA CNTY OH ECON DEV REV RFDG SER D B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -3931,7 +4460,7 @@
     {
       "no": 405,
       "page": 17,
-      "desc": "YES CYPRESS FAIRBANKS TX INDPT SCH DIST RFDG SCH BLDG PSF GTD B/E 5.00 % Due Feb 15, 2026",
+      "desc": "CYPRESS FAIRBANKS TX INDPT SCH DIST RFDG SCH BLDG PSF GTD B/E 5.00 % Due Feb 15, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3942,7 +4471,7 @@
     {
       "no": 406,
       "page": 17,
-      "desc": "YES DAKOTA CNTY MN CMNTY DEV AGY GOVTL REV RFDG SER B B/E 5.00 % Due Jan 1, 2026",
+      "desc": "DAKOTA CNTY MN CMNTY DEV AGY GOVTL REV RFDG SER B B/E 5.00 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3953,7 +4482,7 @@
     {
       "no": 407,
       "page": 17,
-      "desc": "YES EL PASO TX WTR & SWR REV RFDG & IMPT B/E 5.00 % Due Mar 1, 2026",
+      "desc": "EL PASO TX WTR & SWR REV RFDG & IMPT B/E 5.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3964,7 +4493,7 @@
     {
       "no": 408,
       "page": 17,
-      "desc": "YES FORSYTH CNTY GA SCH DIST B/E 5.00 % Due Feb 1, 2026",
+      "desc": "FORSYTH CNTY GA SCH DIST B/E 5.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3975,7 +4504,7 @@
     {
       "no": 409,
       "page": 17,
-      "desc": "YES GREENE CNTY MO CTF PARTN CAP PJS SER A REV B/E 5.00 % Due Mar 1, 2026",
+      "desc": "GREENE CNTY MO CTF PARTN CAP PJS SER A REV B/E 5.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -3985,7 +4514,7 @@
     },
     {
       "page": 17,
-      "desc": "YES INDIANA FIN AUTH HOSP RFDG IN UNIV HLTH OBLIG GRP SER A REV B/E 5.00 % Due Dec 1, 2025",
+      "desc": "INDIANA FIN AUTH HOSP RFDG IN UNIV HLTH OBLIG GRP SER A REV B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -3996,7 +4525,7 @@
     {
       "no": 41,
       "page": 17,
-      "desc": "YES INDIANA ST FIN AUTH REV ST REVLVG FD PG SER A GREEN BD B/E 5.00 % Due Feb 1, 2026",
+      "desc": "INDIANA ST FIN AUTH REV ST REVLVG FD PG SER A GREEN BD B/E 5.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4007,7 +4536,7 @@
     {
       "no": 412,
       "page": 17,
-      "desc": "YES METROPOLITAN ATLANTA RAPID TRAN AUTH GA SALES TAX REV 3RD INDENT A B/E 5.00 % Due Jul 1, 2042",
+      "desc": "METROPOLITAN ATLANTA RAPID TRAN AUTH GA SALES TAX REV 3RD INDENT A B/E 5.00 % Due Jul 1, 2042",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -4018,7 +4547,7 @@
     {
       "no": 413,
       "page": 17,
-      "desc": "YES MUNSTER IN SCH BLDG CORP AD VALOREM PPTY TAX 1ST MTG REV B/E 5.00 % Due Jan 15, 2026",
+      "desc": "MUNSTER IN SCH BLDG CORP AD VALOREM PPTY TAX 1ST MTG REV B/E 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4029,7 +4558,7 @@
     {
       "no": 414,
       "page": 17,
-      "desc": "YES NEBRASKA ST PUB PWR DIST REV GENL SER A B/E 5.00 % Due Jan 1, 2026",
+      "desc": "NEBRASKA ST PUB PWR DIST REV GENL SER A B/E 5.00 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4040,7 +4569,7 @@
     {
       "no": 415,
       "page": 17,
-      "desc": "YES NORTH CHARLESTON SC LTD OBLIG TAX INCRMT PLG 2024 REV B/E 5.00 % Due Oct 1, 2025",
+      "desc": "NORTH CHARLESTON SC LTD OBLIG TAX INCRMT PLG 2024 REV B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -4051,7 +4580,7 @@
     {
       "no": 416,
       "page": 17,
-      "desc": "YES OHIO ST HOSP FAC RFDG CLEVELAND CLINIC HLTH SYS OBLIG GRP B REV B/E 5.00 % Due Jan 1, 2026",
+      "desc": "OHIO ST HOSP FAC RFDG CLEVELAND CLINIC HLTH SYS OBLIG GRP B REV B/E 5.00 % Due Jan 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4062,7 +4591,7 @@
     {
       "no": 417,
       "page": 17,
-      "desc": "YES OHIO ST HSG FIN AGY RESDNTL MTG REV SER A B/E 5.00 % Due Mar 1, 2026",
+      "desc": "OHIO ST HSG FIN AGY RESDNTL MTG REV SER A B/E 5.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 500001,
@@ -4071,9 +4600,20 @@
       "cls": "muni"
     },
     {
+      "no": 418,
+      "page": 18,
+      "desc": "ORANGE CNTY FL SCH BRD CTF PRTNRSHP RFDG SER C REV B/E PTC 5.00 % Due Aug 1, 2028",
+      "type": "P",
+      "date": "2025-05-05",
+      "lo": 100001,
+      "hi": 250000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 419,
       "page": 18,
-      "desc": "YES PENNSYLVANIA ST COMMN TPK REV SER B B/E 5.00 % Due Dec 1, 2025",
+      "desc": "PENNSYLVANIA ST COMMN TPK REV SER B B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4084,7 +4624,7 @@
     {
       "no": 420,
       "page": 18,
-      "desc": "YES PHILADELPHIA PA GAS WKS REV 1998 GENL ORDINANCE 15TH B/E 5.00 % Due Aug 1, 2026",
+      "desc": "PHILADELPHIA PA GAS WKS REV 1998 GENL ORDINANCE 15TH B/E 5.00 % Due Aug 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -4095,7 +4635,7 @@
     {
       "no": 421,
       "page": 18,
-      "desc": "YES RACINE WI RFDG SER B B/E 4.00 % Due Dec 1, 2025",
+      "desc": "RACINE WI RFDG SER B B/E 4.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4106,7 +4646,7 @@
     {
       "no": 422,
       "page": 18,
-      "desc": "YES RICHMOND VA PUB UTIL REV RFDG SER A B/E 5.00 % Due Jan 15, 2026",
+      "desc": "RICHMOND VA PUB UTIL REV RFDG SER A B/E 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4117,7 +4657,7 @@
     {
       "no": 423,
       "page": 18,
-      "desc": "YES ROANOKE VA PUB IMPT SER A B/E 5.00 % Due Apr 1, 2026",
+      "desc": "ROANOKE VA PUB IMPT SER A B/E 5.00 % Due Apr 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -4128,7 +4668,7 @@
     {
       "no": 424,
       "page": 18,
-      "desc": "YES SHELDON TX INDPT SCH DIST RFDG SCH BLDG PSF GTD B/E 5.00 % Due Feb 15, 2026",
+      "desc": "SHELDON TX INDPT SCH DIST RFDG SCH BLDG PSF GTD B/E 5.00 % Due Feb 15, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4139,7 +4679,7 @@
     {
       "no": 425,
       "page": 18,
-      "desc": "YES SPRINGFIELD MO SCH DIST R12 SCH RFDG SER B MDDP B/E 5.00 % Due Mar 1, 2026",
+      "desc": "SPRINGFIELD MO SCH DIST R12 SCH RFDG SER B MDDP B/E 5.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -4150,7 +4690,7 @@
     {
       "no": 426,
       "page": 18,
-      "desc": "YES TEXAS ST TRANSN COMMN HWY IMPT SER A B/E 5.00 % Due Apr 1, 2026",
+      "desc": "TEXAS ST TRANSN COMMN HWY IMPT SER A B/E 5.00 % Due Apr 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -4161,7 +4701,7 @@
     {
       "no": 427,
       "page": 18,
-      "desc": "YES THURSTON & PIERCE CNTYS WA CMNTY SCH YELM B/E 5.00 % Due Dec 1, 2025",
+      "desc": "THURSTON & PIERCE CNTYS WA CMNTY SCH YELM B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-05-05",
       "lo": 100001,
@@ -4172,7 +4712,7 @@
     {
       "no": 428,
       "page": 18,
-      "desc": "YES TRAVIS CNTY TX RFDG SER A B/E 5.00 % Due Mar 1, 2026",
+      "desc": "TRAVIS CNTY TX RFDG SER A B/E 5.00 % Due Mar 1, 2026",
       "type": "P",
       "date": "2025-05-05",
       "lo": 50001,
@@ -4183,7 +4723,7 @@
     {
       "no": 429,
       "page": 18,
-      "desc": "YES JEA FLA ELEC SYS REV SUB REV 5.0000%",
+      "desc": "JEA FLA ELEC SYS REV SUB REV 5.0000%",
       "type": "P",
       "date": "2025-05-06",
       "lo": 500001,
@@ -4194,7 +4734,7 @@
     {
       "no": 430,
       "page": 18,
-      "desc": "YES ALLEGHENY CNTY PA HOSP DEV AUTH REV SER A UNIV PITTSBURGH MED CTR B/E 5.00 % Due Jul 15, 2025",
+      "desc": "ALLEGHENY CNTY PA HOSP DEV AUTH REV SER A UNIV PITTSBURGH MED CTR B/E 5.00 % Due Jul 15, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4205,7 +4745,7 @@
     {
       "no": 431,
       "page": 18,
-      "desc": "YES ARIZONA BRD REGTS AZ ST UNIV SYS REV SPEED RFDG B/E 5.00 % Due Aug 1, 2025",
+      "desc": "ARIZONA BRD REGTS AZ ST UNIV SYS REV SPEED RFDG B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4216,7 +4756,7 @@
     {
       "no": 432,
       "page": 18,
-      "desc": "YES BROWARD CNTY FL HSG FIN AUTH MLTIFAM HSG REV ST JOSEPH MANOR II B/E 3.50 % Due Apr 1, 2041",
+      "desc": "BROWARD CNTY FL HSG FIN AUTH MLTIFAM HSG REV ST JOSEPH MANOR II B/E 3.50 % Due Apr 1, 2041",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4227,7 +4767,7 @@
     {
       "no": 433,
       "page": 18,
-      "desc": "YES BURKE CNTY GA DEV AUTH POLLTN CTL REV GA PWR PLT VOGTLE PJ 4TH 94 B/E 3.80 % Due Oct 1, 2032",
+      "desc": "BURKE CNTY GA DEV AUTH POLLTN CTL REV GA PWR PLT VOGTLE PJ 4TH 94 B/E 3.80 % Due Oct 1, 2032",
       "type": "P",
       "date": "2025-05-06",
       "lo": 250001,
@@ -4237,7 +4777,7 @@
     },
     {
       "page": 18,
-      "desc": "YES COLORADO SPRINGS CO UTIL REV RFDG SYS SER A 2 B/E 5.00 % Due Nov 15, 2025",
+      "desc": "COLORADO SPRINGS CO UTIL REV RFDG SYS SER A 2 B/E 5.00 % Due Nov 15, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4249,7 +4789,7 @@
     {
       "no": 435,
       "page": 18,
-      "desc": "YES CUYAHOGA OH MET HSG AUTH MLTIFAM HSG REV WADE PK LP B/E 4.75 % Due Dec 1, 2027",
+      "desc": "CUYAHOGA OH MET HSG AUTH MLTIFAM HSG REV WADE PK LP B/E 4.75 % Due Dec 1, 2027",
       "type": "P",
       "date": "2025-05-06",
       "lo": 100001,
@@ -4260,7 +4800,7 @@
     {
       "no": 436,
       "page": 18,
-      "desc": "YES DICKINSON CNTY KS UNI SCH DIST 435 ABILENE AGM B/E B/Q 5.00 % Due Sep 1, 2025",
+      "desc": "DICKINSON CNTY KS UNI SCH DIST 435 ABILENE AGM B/E B/Q 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4271,7 +4811,7 @@
     {
       "no": 437,
       "page": 18,
-      "desc": "YES DUBUQUE IA CMNTY SCH DIST INFRA SALES SVCS & USE TAX REV BAM B/E 5.00 % Due Jul 1, 2025",
+      "desc": "DUBUQUE IA CMNTY SCH DIST INFRA SALES SVCS & USE TAX REV BAM B/E 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4282,7 +4822,7 @@
     {
       "no": 438,
       "page": 18,
-      "desc": "YES KNOXVILLE TN CMNTY DEV CORP MLTIFAM REV COLL HSG WILLOW PJ B/E 3.75 % Due Dec 1, 2027",
+      "desc": "KNOXVILLE TN CMNTY DEV CORP MLTIFAM REV COLL HSG WILLOW PJ B/E 3.75 % Due Dec 1, 2027",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4293,7 +4833,7 @@
     {
       "no": 439,
       "page": 18,
-      "desc": "YES LEXINGTON CNTY SC HLTH HLTH SVCS DIST INC HOSP RFDG MED CTR REV B/E 5.00 % Due Nov 1, 2025",
+      "desc": "LEXINGTON CNTY SC HLTH HLTH SVCS DIST INC HOSP RFDG MED CTR REV B/E 5.00 % Due Nov 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4304,7 +4844,7 @@
     {
       "no": 440,
       "page": 18,
-      "desc": "YES NEWARK HIGH ED FIN CORP TX ED REV THE HUGHEN CTR INC 2021 A B/E PSF GTD 4.00 % Due Aug 15, 2025",
+      "desc": "NEWARK HIGH ED FIN CORP TX ED REV THE HUGHEN CTR INC 2021 A B/E PSF GTD 4.00 % Due Aug 15, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 100001,
@@ -4315,7 +4855,7 @@
     {
       "no": 441,
       "page": 18,
-      "desc": "YES NUECES RIV AUTH TX WTR SUPPLY REV RFDG CORPUS CHRISTI LK TEXANA PJ B/E 5.00 % Due Jul 15, 2025",
+      "desc": "NUECES RIV AUTH TX WTR SUPPLY REV RFDG CORPUS CHRISTI LK TEXANA PJ B/E 5.00 % Due Jul 15, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4326,7 +4866,7 @@
     {
       "no": 442,
       "page": 18,
-      "desc": "YES OHIO ST WTR DEV AUTH POLLTN CTL FACS REV FD BD SER A B/E 5.00 % Due Dec 1, 2025",
+      "desc": "OHIO ST WTR DEV AUTH POLLTN CTL FACS REV FD BD SER A B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4337,7 +4877,7 @@
     {
       "no": 443,
       "page": 18,
-      "desc": "YES PIERCE CNTY WA SCH DIST 010 TACOMA RFDG B/E 5.00 % Due Dac 1, 2032",
+      "desc": "PIERCE CNTY WA SCH DIST 010 TACOMA RFDG B/E 5.00 % Due Dac 1, 2032",
       "type": "P",
       "date": "2025-05-06",
       "lo": 250001,
@@ -4346,9 +4886,20 @@
       "cls": "muni"
     },
     {
+      "no": 444,
+      "page": 19,
+      "desc": "TEXAS CITY TX INDPT SCH DIST B/E PSF GTD 5.00 % Due Aug 15, 2025",
+      "type": "P",
+      "date": "2025-05-06",
+      "lo": 50001,
+      "hi": 100000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 445,
       "page": 19,
-      "desc": "YES TEXAS WOMANS UNIV REV FING SYS SER A B/E 5.00 % Due Jul 1, 2025",
+      "desc": "TEXAS WOMANS UNIV REV FING SYS SER A B/E 5.00 % Due Jul 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 15001,
@@ -4359,7 +4910,7 @@
     {
       "no": 446,
       "page": 19,
-      "desc": "YES UNIVERSITY CO ENTRPRS SYS REV SER A B/E 5.00 % Due Jun 1, 2026",
+      "desc": "UNIVERSITY CO ENTRPRS SYS REV SER A B/E 5.00 % Due Jun 1, 2026",
       "type": "P",
       "date": "2025-05-06",
       "lo": 100001,
@@ -4370,7 +4921,7 @@
     {
       "no": 447,
       "page": 19,
-      "desc": "YES UNIVERSITY MN SPL PURP REV RFDG SER A B/E 5.00 % Due Aug 1, 2025",
+      "desc": "UNIVERSITY MN SPL PURP REV RFDG SER A B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 50001,
@@ -4381,7 +4932,7 @@
     {
       "no": 448,
       "page": 19,
-      "desc": "YES WATERTOWN S D SALES TAX REV RFDG 2020 SD B/E 4.00 % Due Dec 1, 2025",
+      "desc": "WATERTOWN S D SALES TAX REV RFDG 2020 SD B/E 4.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-05-06",
       "lo": 100001,
@@ -4392,7 +4943,7 @@
     {
       "no": 449,
       "page": 19,
-      "desc": "YES PALM BEACH CNTY FLA SCH BRD 5.0000%",
+      "desc": "PALM BEACH CNTY FLA SCH BRD 5.0000%",
       "type": "P",
       "date": "2025-05-07",
       "lo": 500001,
@@ -4403,7 +4954,7 @@
     {
       "no": 450,
       "page": 19,
-      "desc": "YES DUVAL CNTY FLA SCH BRD CTFS 5.0000%",
+      "desc": "DUVAL CNTY FLA SCH BRD CTFS 5.0000%",
       "type": "P",
       "date": "2025-05-08",
       "lo": 500001,
@@ -4414,7 +4965,7 @@
     {
       "no": 451,
       "page": 19,
-      "desc": "YES CONNECTICUT ST HEALTH & EDL 5.0000%",
+      "desc": "CONNECTICUT ST HEALTH & EDL 5.0000%",
       "type": "P",
       "date": "2025-05-09",
       "lo": 500001,
@@ -4425,7 +4976,7 @@
     {
       "no": 452,
       "page": 19,
-      "desc": "YES KANSAS ST DEPT TRANSN HWY RE 5.0000%",
+      "desc": "KANSAS ST DEPT TRANSN HWY RE 5.0000%",
       "type": "P",
       "date": "2025-05-22",
       "lo": 500001,
@@ -4436,7 +4987,7 @@
     {
       "no": 453,
       "page": 19,
-      "desc": "YES MIAMI-DADE CNTY 5.25% DUE ON",
+      "desc": "MIAMI-DADE CNTY 5.25% DUE ON",
       "type": "P",
       "date": "2025-05-27",
       "lo": 500001,
@@ -4447,7 +4998,7 @@
     {
       "no": 454,
       "page": 19,
-      "desc": "YES NEW HAMPSHIRE HEALT 5% DUE ON",
+      "desc": "NEW HAMPSHIRE HEALT 5% DUE ON",
       "type": "P",
       "date": "2025-05-27",
       "lo": 500001,
@@ -4458,7 +5009,7 @@
     {
       "no": 455,
       "page": 19,
-      "desc": "YES CHICAGO ILL O HA 5.25% DUE ON",
+      "desc": "CHICAGO ILL O HA 5.25% DUE ON",
       "type": "P",
       "date": "2025-05-28",
       "lo": 500001,
@@ -4469,7 +5020,7 @@
     {
       "no": 456,
       "page": 19,
-      "desc": "YES KENTUCKY ST PPTY & BLDGS COMMN REV PJ 108 SER A B/E PTC 5.00 % Due Aug 1, 2032",
+      "desc": "KENTUCKY ST PPTY & BLDGS COMMN REV PJ 108 SER A B/E PTC 5.00 % Due Aug 1, 2032",
       "type": "P",
       "date": "2025-05-29",
       "lo": 500001,
@@ -4480,7 +5031,7 @@
     {
       "no": 457,
       "page": 19,
-      "desc": "YES KENTUCKY ST PPTY & BLDGS COMMN REV RFDG PJ 110 B/E PTC 5.00 % Due Aug 1, 2035",
+      "desc": "KENTUCKY ST PPTY & BLDGS COMMN REV RFDG PJ 110 B/E PTC 5.00 % Due Aug 1, 2035",
       "type": "P",
       "date": "2025-05-29",
       "lo": 500001,
@@ -4491,7 +5042,7 @@
     {
       "no": 458,
       "page": 19,
-      "desc": "YES SAN ANTONIO TEX WTR REV SYS 5.0000%",
+      "desc": "SAN ANTONIO TEX WTR REV SYS 5.0000%",
       "type": "P",
       "date": "2025-05-29",
       "lo": 500001,
@@ -4500,19 +5051,20 @@
       "cls": "muni"
     },
     {
+      "no": 460,
       "page": 19,
       "desc": "GREATER CLARK BLDG 5% DUE ON",
       "type": "P",
       "date": "2025-06-02",
       "lo": 500001,
       "hi": 1000000,
-      "unverified": true,
+      "checked": 2,
       "cls": "muni"
     },
     {
       "no": 461,
       "page": 19,
-      "desc": "YES HOUSTON TX ARPT SYS REV RFDG SUB LIEN SER B B/E 5.00 % Due Jul 1, 2026",
+      "desc": "HOUSTON TX ARPT SYS REV RFDG SUB LIEN SER B B/E 5.00 % Due Jul 1, 2026",
       "type": "P",
       "date": "2025-06-02",
       "lo": 100001,
@@ -4523,7 +5075,7 @@
     {
       "no": 462,
       "page": 19,
-      "desc": "YES MICHIGAN ST HOSP FIN AUTH REV ASCENSION HLTH SR CR GRP 2010F 6 B/E 4.00 % Due Nov 15, 2047",
+      "desc": "MICHIGAN ST HOSP FIN AUTH REV ASCENSION HLTH SR CR GRP 2010F 6 B/E 4.00 % Due Nov 15, 2047",
       "type": "P",
       "date": "2025-06-02",
       "lo": 500001,
@@ -4545,7 +5097,7 @@
     {
       "no": 464,
       "page": 19,
-      "desc": "YES NORTH SUMTER CNTY UTIL DEPENDENT DIST FL UTIL REV RFDG 2020 B/E 5.00 % Due Oct 1, 2026",
+      "desc": "NORTH SUMTER CNTY UTIL DEPENDENT DIST FL UTIL REV RFDG 2020 B/E 5.00 % Due Oct 1, 2026",
       "type": "P",
       "date": "2025-06-02",
       "lo": 1000001,
@@ -4556,7 +5108,7 @@
     {
       "no": 465,
       "page": 19,
-      "desc": "YES : KENTUCKY INC KY PUB ENERGY AUTH GAS SPLY REV SER A B/E 4.00 % Due Dec 1, 2050",
+      "desc": "KENTUCKY INC KY PUB ENERGY AUTH GAS SPLY REV SER A B/E 4.00 % Due Dec 1, 2050",
       "type": "P",
       "date": "2025-06-03",
       "lo": 50001,
@@ -4567,7 +5119,7 @@
     {
       "no": 466,
       "page": 19,
-      "desc": "YES MILL CREEK IN CMNTY SCH BLDG AD VALOREM PPTY TAX 1ST MTG REV B/E B/Q 5.00 % Due Jan 15, 2026",
+      "desc": "MILL CREEK IN CMNTY SCH BLDG AD VALOREM PPTY TAX 1ST MTG REV B/E B/Q 5.00 % Due Jan 15, 2026",
       "type": "P",
       "date": "2025-06-04",
       "lo": 100001,
@@ -4578,7 +5130,7 @@
     {
       "no": 467,
       "page": 19,
-      "desc": "YES NEW YORK N Y CITY HSG DEV CO 3.7500%",
+      "desc": "NEW YORK N Y CITY HSG DEV CO 3.7500%",
       "type": "P",
       "date": "2025-06-05",
       "lo": 500001,
@@ -4589,7 +5141,7 @@
     {
       "no": 468,
       "page": 19,
-      "desc": "YES COLORADO HEALTH FACS AUTH RE 5.0000%",
+      "desc": "COLORADO HEALTH FACS AUTH RE 5.0000%",
       "type": "P",
       "date": "2025-06-05",
       "lo": 500001,
@@ -4600,7 +5152,7 @@
     {
       "no": 469,
       "page": 19,
-      "desc": "YES PEFA INC IOWA GAS PROJ REV B 5.0000%",
+      "desc": "PEFA INC IOWA GAS PROJ REV B 5.0000%",
       "type": "P",
       "date": "2025-06-05",
       "lo": 500001,
@@ -4609,9 +5161,20 @@
       "cls": "corporate"
     },
     {
+      "no": 470,
+      "page": 20,
+      "desc": "INDIANA FIN AUTH HEALTH SYS 5.0000%",
+      "type": "P",
+      "date": "2025-06-05",
+      "lo": 500001,
+      "hi": 1000000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 471,
       "page": 20,
-      "desc": "YES EAST LANSING MI SCH DIST RFDG B/E QSBLF 5.00 % Due May 1, 2029",
+      "desc": "EAST LANSING MI SCH DIST RFDG B/E QSBLF 5.00 % Due May 1, 2029",
       "type": "P",
       "date": "2025-06-05",
       "lo": 250001,
@@ -4622,7 +5185,7 @@
     {
       "no": 472,
       "page": 20,
-      "desc": "YES RHODE ISLAND HSG & MTG FIN CORP REV MLTI FAM DEV SUSTAIN SER 1 B B/E 1.90 % Due Oct 1, 2026",
+      "desc": "RHODE ISLAND HSG & MTG FIN CORP REV MLTI FAM DEV SUSTAIN SER 1 B B/E 1.90 % Due Oct 1, 2026",
       "type": "P",
       "date": "2025-06-05",
       "lo": 15001,
@@ -4633,7 +5196,7 @@
     {
       "no": 473,
       "page": 20,
-      "desc": "YES ALLEN CNTY KS PUB BLDG COMMN REV RFDG SER A B/E 5.00 % Due Dec 1, 2025",
+      "desc": "ALLEN CNTY KS PUB BLDG COMMN REV RFDG SER A B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-06-05",
       "lo": 250001,
@@ -4644,7 +5207,7 @@
     {
       "no": 474,
       "page": 20,
-      "desc": "YES OKLAHOMA ST TPK AUTH REV 2ND SR SER A B/E PTC 5.00 % Due Jan 1, 2042",
+      "desc": "OKLAHOMA ST TPK AUTH REV 2ND SR SER A B/E PTC 5.00 % Due Jan 1, 2042",
       "type": "P",
       "date": "2025-06-05",
       "lo": 100001,
@@ -4655,7 +5218,7 @@
     {
       "no": 475,
       "page": 20,
-      "desc": "YES UPPER DAUPHIN PA AREA SCH DIST BAM B/E B/Q OID @99.490 2.2% 2.125 % Due Sep 1, 2026",
+      "desc": "UPPER DAUPHIN PA AREA SCH DIST BAM B/E B/Q OID @99.490 2.2% 2.125 % Due Sep 1, 2026",
       "type": "P",
       "date": "2025-06-05",
       "lo": 15001,
@@ -4666,7 +5229,7 @@
     {
       "no": 476,
       "page": 20,
-      "desc": "YES PEFA INC IA GAS PJ REV B/E 5.00 % Due Sep 1, 2049",
+      "desc": "PEFA INC IA GAS PJ REV B/E 5.00 % Due Sep 1, 2049",
       "type": "P",
       "date": "2025-06-05",
       "lo": 1000001,
@@ -4677,7 +5240,7 @@
     {
       "no": 477,
       "page": 20,
-      "desc": "YES COLORADO HLTH FACS AUTH REV INTERMTN HLTHCARE INC SER B B/E 5.00 % Due May 15, 2062",
+      "desc": "COLORADO HLTH FACS AUTH REV INTERMTN HLTHCARE INC SER B B/E 5.00 % Due May 15, 2062",
       "type": "P",
       "date": "2025-06-05",
       "lo": 50001,
@@ -4688,7 +5251,7 @@
     {
       "no": 478,
       "page": 20,
-      "desc": "YES BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SER A 1 B/E VAR 4.00 % Due Dec 1, 2049",
+      "desc": "BLACK BELT ENERGY GAS DIST AL GAS PREPAY REV PJ 4 SER A 1 B/E VAR 4.00 % Due Dec 1, 2049",
       "type": "P",
       "date": "2025-06-06",
       "lo": 500001,
@@ -4699,7 +5262,7 @@
     {
       "no": 479,
       "page": 20,
-      "desc": "YES MICHIGAN ST HOSP FIN AUTH REV ASCENSION HLTH SR CR GRP 2010F 6 B/E 4.00 % Due Nov 15, 2047",
+      "desc": "MICHIGAN ST HOSP FIN AUTH REV ASCENSION HLTH SR CR GRP 2010F 6 B/E 4.00 % Due Nov 15, 2047",
       "type": "P",
       "date": "2025-06-06",
       "lo": 250001,
@@ -4710,7 +5273,7 @@
     {
       "no": 480,
       "page": 20,
-      "desc": "YES MAINE ST HSG AUTH MTG PURCH REV SER F B/E 3.25 % Due Nov 15, 2026",
+      "desc": "MAINE ST HSG AUTH MTG PURCH REV SER F B/E 3.25 % Due Nov 15, 2026",
       "type": "P",
       "date": "2025-06-06",
       "lo": 15001,
@@ -4721,7 +5284,7 @@
     {
       "no": 481,
       "page": 20,
-      "desc": "YES CORBIN KY INDPT SCH DIST FIN CORP BLDG REV B/E 3.00 % Due Feb 1, 2026",
+      "desc": "CORBIN KY INDPT SCH DIST FIN CORP BLDG REV B/E 3.00 % Due Feb 1, 2026",
       "type": "P",
       "date": "2025-06-06",
       "lo": 250001,
@@ -4732,7 +5295,7 @@
     {
       "no": 482,
       "page": 20,
-      "desc": "YES WISCONSIN ST HLTH & EFA ADVOCATE HLTH & HOSP CORP REV SER C1 B/E 5.00 % Due Aug 15, 2054",
+      "desc": "WISCONSIN ST HLTH & EFA ADVOCATE HLTH & HOSP CORP REV SER C1 B/E 5.00 % Due Aug 15, 2054",
       "type": "P",
       "date": "2025-06-06",
       "lo": 50001,
@@ -4743,7 +5306,7 @@
     {
       "no": 483,
       "page": 20,
-      "desc": "YES ST LOUIS MO MUN FIN CORP LSEHLD RFDG REFUSE FAC & GARAGE PJ SER A B/E REV 5.00 % Due Apr 15, 2026",
+      "desc": "ST LOUIS MO MUN FIN CORP LSEHLD RFDG REFUSE FAC & GARAGE PJ SER A B/E REV 5.00 % Due Apr 15, 2026",
       "type": "P",
       "date": "2025-06-06",
       "lo": 15001,
@@ -4754,7 +5317,7 @@
     {
       "no": 484,
       "page": 20,
-      "desc": "YES NORTH CAROLINA HSG FIN AGY HMOWNRSHP REV SER 55C B/E 3.20 % Due Jul 1, 2056",
+      "desc": "NORTH CAROLINA HSG FIN AGY HMOWNRSHP REV SER 55C B/E 3.20 % Due Jul 1, 2056",
       "type": "P",
       "date": "2025-06-06",
       "lo": 100001,
@@ -4765,7 +5328,7 @@
     {
       "no": 485,
       "page": 20,
-      "desc": "YES CENTRAL PLAINS ENERGY PROJ N 5.0000%",
+      "desc": "CENTRAL PLAINS ENERGY PROJ N 5.0000%",
       "type": "P",
       "date": "2025-06-11",
       "lo": 500001,
@@ -4776,7 +5339,7 @@
     {
       "no": 486,
       "page": 20,
-      "desc": "YES LOWER COLO RIV AUTH TEX REV 5.0000%",
+      "desc": "LOWER COLO RIV AUTH TEX REV 5.0000%",
       "type": "P",
       "date": "2025-06-11",
       "lo": 500001,
@@ -4787,7 +5350,7 @@
     {
       "no": 487,
       "page": 20,
-      "desc": "YES NORTH CHARLESTON SC LTD OBLIG TAX INCRMT PLG 2024 REV B/E 5.00 % Due Oct 1, 2025",
+      "desc": "NORTH CHARLESTON SC LTD OBLIG TAX INCRMT PLG 2024 REV B/E 5.00 % Due Oct 1, 2025",
       "type": "P",
       "date": "2025-06-12",
       "lo": 100001,
@@ -4798,7 +5361,7 @@
     {
       "no": 488,
       "page": 20,
-      "desc": "YES PEFA INC IA GAS PJ REV B/E 5.00 % Due Sep 1, 2049",
+      "desc": "PEFA INC IA GAS PJ REV B/E 5.00 % Due Sep 1, 2049",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4809,7 +5372,7 @@
     {
       "no": 489,
       "page": 20,
-      "desc": "YES TEXAS WTR DEV BRD ST REVLVG FD REV B/E 5.00 % Due Aug 1, 2025",
+      "desc": "TEXAS WTR DEV BRD ST REVLVG FD REV B/E 5.00 % Due Aug 1, 2025",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4820,7 +5383,7 @@
     {
       "no": 490,
       "page": 20,
-      "desc": "YES INTERMOUNTAIN PWR AGY UT PWR SPLY REV SER A B/E 5.00 % Due Jul 1, 2026",
+      "desc": "INTERMOUNTAIN PWR AGY UT PWR SPLY REV SER A B/E 5.00 % Due Jul 1, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4842,7 +5405,7 @@
     {
       "no": 492,
       "page": 20,
-      "desc": "YES DALLAS TX RFDG 2024A B/E 5.00 % Due Feb 15, 2026",
+      "desc": "DALLAS TX RFDG 2024A B/E 5.00 % Due Feb 15, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4853,7 +5416,7 @@
     {
       "no": 493,
       "page": 20,
-      "desc": "YES KENTUCKY HSG CORP MLTIFAM HSG REV BEECHER TERRACE PHASE IV PJ B/E 5.00 % Due Sep 1, 2043",
+      "desc": "KENTUCKY HSG CORP MLTIFAM HSG REV BEECHER TERRACE PHASE IV PJ B/E 5.00 % Due Sep 1, 2043",
       "type": "P",
       "date": "2025-06-12",
       "lo": 100001,
@@ -4864,7 +5427,7 @@
     {
       "no": 494,
       "page": 20,
-      "desc": "YES MICHIGAN FIN AUTH REV TOB SETTLMT ABS SER A CL 1 B/E 5.00 % Due Jun 1, 2026",
+      "desc": "MICHIGAN FIN AUTH REV TOB SETTLMT ABS SER A CL 1 B/E 5.00 % Due Jun 1, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 250001,
@@ -4875,7 +5438,7 @@
     {
       "no": 495,
       "page": 20,
-      "desc": "YES HARRIS CNTY TX MUD 109 NPFG B/E PTC 3.00 % Due Oct 1, 2026",
+      "desc": "HARRIS CNTY TX MUD 109 NPFG B/E PTC 3.00 % Due Oct 1, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4884,9 +5447,20 @@
       "cls": "muni"
     },
     {
+      "no": 496,
+      "page": 21,
+      "desc": "KENTUCKY ASSET LIABILITY COMMN AGY FD REV FDL HWY TR 1ST RFDG SER A B/E 5.00 % Due Sep 1, 2025",
+      "type": "P",
+      "date": "2025-06-12",
+      "lo": 250001,
+      "hi": 500000,
+      "checked": 2,
+      "cls": "muni"
+    },
+    {
       "no": 497,
       "page": 21,
-      "desc": "YES SNOHOMISH CNTY WA SCH DIST 306 LAKEWOOD GENL RFDG OBLIG A B/E 5.00 % Due Dec 1, 2025",
+      "desc": "SNOHOMISH CNTY WA SCH DIST 306 LAKEWOOD GENL RFDG OBLIG A B/E 5.00 % Due Dec 1, 2025",
       "type": "P",
       "date": "2025-06-12",
       "lo": 100001,
@@ -4897,7 +5471,7 @@
     {
       "no": 498,
       "page": 21,
-      "desc": "YES METROPOLITAN ST LOUIS MO SWR DIST WSTWTR SYS REV RFDG & IMPT C B/E PTC 5.00 % Duo May 1, 2046",
+      "desc": "METROPOLITAN ST LOUIS MO SWR DIST WSTWTR SYS REV RFDG & IMPT C B/E PTC 5.00 % Duo May 1, 2046",
       "type": "P",
       "date": "2025-06-12",
       "lo": 500001,
@@ -4908,7 +5482,7 @@
     {
       "no": 499,
       "page": 21,
-      "desc": "YES OWENSBORO KY WTR REV RFDG & IMPT BAM B/E 5.00 % Due Sep 15, 2026",
+      "desc": "OWENSBORO KY WTR REV RFDG & IMPT BAM B/E 5.00 % Due Sep 15, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 100001,
@@ -4919,7 +5493,7 @@
     {
       "no": 500,
       "page": 21,
-      "desc": "YES METROPOLITAN UTILS DIST OMAHA NE WTR REV RFDG SYS IMPT B/E 2.85 % Due Dec 1, 2026",
+      "desc": "METROPOLITAN UTILS DIST OMAHA NE WTR REV RFDG SYS IMPT B/E 2.85 % Due Dec 1, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 250001,
@@ -4930,7 +5504,7 @@
     {
       "no": 501,
       "page": 21,
-      "desc": "YES FLORIDA INS ASSIST INTERLOCAL AGY FL INS ASSMT REV SER A 1 B/E 5.00 % Due Sep 1, 2026",
+      "desc": "FLORIDA INS ASSIST INTERLOCAL AGY FL INS ASSMT REV SER A 1 B/E 5.00 % Due Sep 1, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 250001,
@@ -4941,7 +5515,7 @@
     {
       "no": 502,
       "page": 21,
-      "desc": "YES WELLBORN SPL UTIL DIST TX WTR SYS REV BAM B/E B/Q 3.50 % Due Jul 15, 2026",
+      "desc": "WELLBORN SPL UTIL DIST TX WTR SYS REV BAM B/E B/Q 3.50 % Due Jul 15, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4952,7 +5526,7 @@
     {
       "no": 503,
       "page": 21,
-      "desc": "YES KENTUCKY ST PPTY & BLDGS COMMN REV PJ 108 SER A B/E PTC 5.00 % Due Aug 1, 2028",
+      "desc": "KENTUCKY ST PPTY & BLDGS COMMN REV PJ 108 SER A B/E PTC 5.00 % Due Aug 1, 2028",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4963,7 +5537,7 @@
     {
       "no": 504,
       "page": 21,
-      "desc": "YES , ALLEN TX ECON DEV CORP SALES TAX REV RFDG A B/E 5.00 % Due Sep 1, 2025",
+      "desc": "ALLEN TX ECON DEV CORP SALES TAX REV RFDG A B/E 5.00 % Due Sep 1, 2025",
       "type": "P",
       "date": "2025-06-12",
       "lo": 100001,
@@ -4974,7 +5548,7 @@
     {
       "no": 505,
       "page": 21,
-      "desc": "YES GENOA OCEOLA SWR & WTR AUTH MI SWR SYS IMPT REV 2018 B/E B/Q 3.25 % Due Sep 1, 2026",
+      "desc": "GENOA OCEOLA SWR & WTR AUTH MI SWR SYS IMPT REV 2018 B/E B/Q 3.25 % Due Sep 1, 2026",
       "type": "P",
       "date": "2025-06-12",
       "lo": 50001,
@@ -4985,7 +5559,7 @@
     {
       "no": 506,
       "page": 21,
-      "desc": "YES METROPOLITAN GOVT NASHVILLE 5.0000%",
+      "desc": "METROPOLITAN GOVT NASHVILLE 5.0000%",
       "type": "P",
       "date": "2025-06-13",
       "lo": 500001,

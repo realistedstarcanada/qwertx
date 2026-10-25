@@ -4,23 +4,33 @@ list 2: 73 Trump links
 PDF links: 22
 skip grs02-8.pdf
 SEC tickers 10429
-  checks: 437 rows agree in two readings, 12 settled by a third reading (9 pages), 4 unresolved, 11 read once
-Donald-J-Trump-08.12.2025-278T.pdf: ocr 453 rows/448 clean, layer 452 rows/442 clean; printed 507; using ocr
-  checks: 31 rows agree in two readings, 3 settled by a third reading (3 pages), 33 unresolved, 42 read once
-Donald J. Trump 10.20.2025 278-T.pdf: ocr 73 rows/70 clean, layer 77 rows/72 clean; printed 86; using ocr
-  checks: 23 rows agree in two readings, 0 settled by a third reading (1 pages), 32 unresolved, 32 read once
-Donald J. Trump 10.20.2025 278-T (2).pdf: ocr 55 rows/52 clean, layer 54 rows/54 clean; printed 50; using ocr
+  checks: 485 rows agree in two readings, 16 settled by a third reading (12 pages), 3 unresolved, 15 read once
+Donald-J-Trump-08.12.2025-278T.pdf: ocr 505 rows/499 clean, layer 503 rows/491 clean; printed 507; using ocr
+  checks: 13 rows agree in two readings, 1 settled by a third reading (4 pages), 91 unresolved, 130 read once
+Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: ocr 143 rows/94 clean, layer 0 rows/0 clean, ocr2 142 rows/114 clean; printed 108; using ocr
+  checks: 3 rows agree in two readings, 0 settled by a third reading (1 pages), 27 unresolved, 33 read once
+Donald-J-Trump-08.12.2025-278T(3).pdf: ocr 36 rows/35 clean, layer 37 rows/37 clean; printed 38; using ocr
+  checks: 23 rows agree in two readings, 0 settled by a third reading (1 pages), 1 unresolved, 1 read once
+Donald J. Trump 9.3.25 278-T.pdf: ocr 24 rows/24 clean, layer 25 rows/25 clean; printed 10; using ocr
+  checks: 28 rows agree in two readings, 5 settled by a third reading (2 pages), 5 unresolved, 9 read once
+Donald J. Trump 10.17.2025 278-T.pdf: ocr 38 rows/38 clean, layer 35 rows/35 clean; printed 39; using ocr
+  checks: 29 rows agree in two readings, 10 settled by a third reading (3 pages), 35 unresolved, 49 read once
+Donald J. Trump 10.20.2025 278-T.pdf: ocr 75 rows/72 clean, layer 79 rows/74 clean; printed 79; using layer
+  checks: 23 rows agree in two readings, 1 settled by a third reading (2 pages), 33 unresolved, 33 read once
+Donald J. Trump 10.20.2025 278-T (2).pdf: ocr 57 rows/54 clean, layer 55 rows/55 clean; printed 50; using ocr
   checks: 1 rows agree in two readings, 0 settled by a third reading (1 pages), 28 unresolved, 30 read once
-Donald J. Trump 11.14.2025 278-T.pdf: ocr 31 rows/29 clean, layer 30 rows/30 clean; printed 1; using ocr
-Donald-J-Trump-08.12.2025-278T.pdf: 453 rows, 0/2 stocks mapped, 0 untyped, 2025-01-31..2025-06-13
-Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: 140 rows, 0/0 stocks mapped, 0 untyped, 2025-07-02..2025-07-22
+Donald J. Trump 11.14.2025 278-T.pdf: ocr 31 rows/29 clean, layer 31 rows/31 clean; printed 1; using ocr
+  checks: 28 rows agree in two readings, 17 settled by a third reading (4 pages), 54 unresolved, 65 read once
+Donald J. Trump 12.18.2025 278-T.pdf: ocr 103 rows/60 clean, layer 95 rows/68 clean; printed 107; using ocr
+Donald-J-Trump-08.12.2025-278T.pdf: 505 rows, 0/2 stocks mapped, 0 untyped, 2025-01-21..2025-06-13
+Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: 143 rows, 0/0 stocks mapped, 0 untyped, 2025-07-02..2025-07-22
 Donald-J-Trump-08.12.2025-278T(3).pdf: 36 rows, 0/0 stocks mapped, 1 untyped, 2025-07-25..2025-08-01
 Donald J. Trump 9.3.25 278-T.pdf: 24 rows, 0/0 stocks mapped, 0 untyped, 2025-08-07..2025-08-18
-Donald J. Trump 10.17.2025 278-T.pdf: 37 rows, 0/0 stocks mapped, 0 untyped, 2025-08-28..2025-09-03
-Donald J. Trump 10.20.2025 278-T.pdf: 73 rows, 0/1 stocks mapped, 0 untyped, 2025-09-04..2025-09-19
-Donald J. Trump 10.20.2025 278-T (2).pdf: 55 rows, 1/0 stocks mapped, 0 untyped, 2025-09-18..2025-10-02
+Donald J. Trump 10.17.2025 278-T.pdf: 38 rows, 0/0 stocks mapped, 0 untyped, 2025-08-28..2025-09-03
+Donald J. Trump 10.20.2025 278-T.pdf: 79 rows, 0/0 stocks mapped, 0 untyped, 2025-09-04..2025-09-18
+Donald J. Trump 10.20.2025 278-T (2).pdf: 57 rows, 1/0 stocks mapped, 0 untyped, 2025-09-18..2025-10-02
 Donald J. Trump 11.14.2025 278-T.pdf: 31 rows, 0/0 stocks mapped, 0 untyped, 2025-10-02..2025-10-18
-Donald J. Trump 12.18.2025 278-T.pdf: 101 rows, 0/1 stocks mapped, 29 untyped, 2025-10-20..2025-11-13
+Donald J. Trump 12.18.2025 278-T.pdf: 103 rows, 0/1 stocks mapped, 30 untyped, 2025-10-20..2025-11-13
 Donald-J-Trump 1.14.2026-278T.pdf: 191 rows, 0/0 stocks mapped, 8 untyped, 2025-11-14..2026-01-02
 Donald J. Trump 2.26.2026 278-T (1).pdf: 166 rows, 14/13 stocks mapped, 30 untyped, 2025-09-09..2025-11-17
 Donald J. Trump 2.26.2026 278-T (2).pdf: 78 rows, 3/2 stocks mapped, 8 untyped, 2026-01-02..2026-02-01
