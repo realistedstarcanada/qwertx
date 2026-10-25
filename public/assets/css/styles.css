@@ -373,6 +373,9 @@ textarea.input { min-height: 140px; resize: vertical; }
 .form-note { font-size: 13px; color: var(--muted); margin: 0; }
 .form-success { display: none; align-items: center; gap: 12px; background: color-mix(in srgb, var(--teal) 10%, var(--surface)); border: 1px solid color-mix(in srgb, var(--teal) 40%, transparent); color: var(--text); border-radius: 12px; padding: 16px 18px; }
 .form-success.show { display: flex; }
+.form-send-error { flex-basis: 100%; margin: 4px 0 0; font-size: 14px; color: var(--coral); }
+.form-send-error:empty { display: none; }
+.form-send-error a { color: inherit; text-decoration: underline; }
 .form-success i { color: var(--teal); font-size: 20px; }
 .inline-form { display: flex; flex-wrap: wrap; gap: 12px; }
 .inline-form .input { flex: 1 1 260px; }

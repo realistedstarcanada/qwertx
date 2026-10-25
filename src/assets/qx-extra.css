@@ -352,7 +352,7 @@ a.earn-pill:hover { border-color: var(--gold); }
 .earn-pill span { font-size: 11.5px; color: var(--muted); }
 .earn-chip { display: inline-flex; align-items: center; gap: 8px; margin-top: 18px; padding: 8px 14px; border-radius: 999px; background: var(--gold-soft); color: var(--text-2); font-size: 14px; text-decoration: none; border: 1px solid transparent; }
 a.earn-chip:hover { border-color: var(--gold); }
-span.earn-chip { background: var(--surface-2, rgba(127,127,127,.08)); }
+span.earn-chip { background: var(--surface); border-color: var(--line); }
 .earn-chip + .earn-chip { margin-left: 6px; }
 .earn-chip .up, .earn-chip .down { font-weight: 600; }
 .earn-chip i { color: var(--gold); }

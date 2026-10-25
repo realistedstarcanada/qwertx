@@ -91,9 +91,15 @@
       counters.forEach(function (c) { co.observe(c); });
     }
 
-    /* ---- Forms: validate, then show the success state (connect to Elementor Forms / Mailchimp on WordPress) ---- */
+    /* ---- Forms: validate, send to /api/form, and show the success state only once it is saved ---- */
     document.querySelectorAll('form[data-form]').forEach(function (form) {
       form.setAttribute('novalidate', '');
+      var loadedAt = Date.now();
+      // A field people never see; bots that fill every input give themselves away.
+      var hp = document.createElement('input');
+      hp.type = 'text'; hp.name = 'website'; hp.tabIndex = -1; hp.autocomplete = 'off'; hp.setAttribute('aria-hidden', 'true');
+      hp.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0';
+      form.appendChild(hp);
       form.querySelectorAll('.input').forEach(function (inp) {
         inp.addEventListener('input', function () { inp.removeAttribute('aria-invalid'); var er = document.getElementById(inp.id + '-error'); if (er) er.classList.remove('show'); });
       });
@@ -107,9 +113,28 @@
           if (bad) { ok = false; inp.setAttribute('aria-invalid', 'true'); if (er) er.classList.add('show'); if (!first) first = inp; }
         });
         if (!ok) { first.focus(); return; }
-        var success = form.querySelector('.form-success');
-        form.querySelectorAll('.form-fields').forEach(function (f) { f.style.display = 'none'; });
-        if (success) { success.classList.add('show'); success.focus && success.focus(); }
+        var btn = form.querySelector('button[type="submit"]');
+        var errBox = form.querySelector('.form-send-error');
+        if (!errBox) { errBox = document.createElement('p'); errBox.className = 'form-send-error'; errBox.setAttribute('role', 'alert'); (form.querySelector('.form-fields') || form).appendChild(errBox); }
+        errBox.textContent = '';
+        var body = { kind: form.getAttribute('data-form'), page: location.pathname, t: loadedAt, website: hp.value };
+        form.querySelectorAll('input[name], select[name], textarea[name]').forEach(function (inp) { if (inp !== hp) body[inp.name] = inp.value; });
+        if (btn) { btn.disabled = true; btn.setAttribute('aria-busy', 'true'); }
+        fetch('/api/form', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+          .then(function (r) { return r.json().catch(function () { return { ok: false }; }).then(function (j) { return { status: r.status, j: j }; }); })
+          .then(function (res) {
+            if (!res.j.ok) throw res;
+            var success = form.querySelector('.form-success');
+            form.querySelectorAll('.form-fields').forEach(function (f) { f.style.display = 'none'; });
+            if (success) { success.classList.add('show'); success.focus && success.focus(); }
+          })
+          .catch(function (res) {
+            var mail = 'support@qwertx.com';
+            if (res && res.j && res.j.error === 'email') errBox.textContent = 'That email address doesn’t look right. Please check it and try again.';
+            else if (body.kind === 'contact') errBox.innerHTML = 'Sorry, we couldn’t send that just now. Please email us at <a href="mailto:' + mail + '?subject=' + encodeURIComponent((body.topic || 'Question') + ' from ' + (body.name || '')) + '&body=' + encodeURIComponent(body.message || '') + '">' + mail + '</a>.';
+            else errBox.innerHTML = 'Sorry, we couldn’t save that just now. Please try again in a minute, or email <a href="mailto:' + mail + '?subject=Subscribe">' + mail + '</a>.';
+          })
+          .then(function () { if (btn) { btn.disabled = false; btn.removeAttribute('aria-busy'); } });
       });
     });
 
