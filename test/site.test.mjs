@@ -214,3 +214,15 @@ test('form API saves sign-ups, rejects bad email and says when storage is missin
   assert.equal((await onRequestPost({ request: req({ kind: 'newsletter', email: 'nope' }), env: { DB } })).status, 422);
   assert.equal((await onRequestPost({ request: req({ kind: 'contact', email: 'a@b.co', name: 'A', message: 'hi' }), env: {} })).status, 503);
 });
+
+test('OGE 278-T: heading fragments do not swallow the first row of a page', async () => {
+  const { parse278T } = await import('../scripts/lib/oge278t.mjs');
+  const text = ['Transactions', '#      Description', 'Received Over 30', 'Days Ago', '28', 'LOWER AL GAS DIST PJ 2 REV B/E 4.00 % Due Dec 1, 2050      Purchase      1/30/2025      $50,001 - $100,000',
+    '29      YES', 'NORTHERN PALM BCH CNTY IMPT DIST FL 5.00 % Due Aug 1, 2025      Purchase      1/30/2025      $100,001 - $250,000'].join('\n');
+  const rows = parse278T(text, { year: 2025, minDate: '2025-01-20', maxDate: '2025-08-19' });
+  assert.equal(rows.length, 2);
+  assert.equal(rows[0].no, 28);
+  assert.match(rows[0].desc, /^LOWER AL GAS/);
+  assert.equal(rows[1].no, 29);
+  assert.match(rows[1].desc, /^NORTHERN PALM/);
+});

@@ -126,6 +126,11 @@ export function parse278T(text, ctx = {}) {
     if (!am || !/\d{3}/.test(am[1].replace(/\s/g, ''))) {
       const t = line.trim();
       if (/^\d{1,4}$/.test(t)) { loneNo = Number(t); continue; }
+      // Column-heading fragments ("Days Ago", "Over 30") would otherwise glue onto the first row of each page.
+      if (/^(Da[vy][as]?\s?A[gq][oe0]|(Received\s+)?Over\s?30(\s+Days)?|Days\s+Ago)\.?$/i.test(t)) continue;
+      // "2 YES" on its own line: the row number with the notification column of an older layout.
+      const ny = /^(\d{1,4})\s{2,}(YES|NO|Yes|No)$/.exec(t);
+      if (ny) { loneNo = Number(ny[1]); continue; }
       if (t.length > 2) buf.push(t);
       if (buf.length > 3) buf.shift();
       continue;
@@ -176,6 +181,7 @@ export function parse278T(text, ctx = {}) {
       const g = /\s((?=\S*[a-z:•■\-])\S{1,10}|IOU|IO U|DU|PUICNISO|DUICNISO)(?:\s+\S{1,10})?\s*$/.exec(desc);
       if (g && !/^(Inc|Corp|Co|Ltd|Plc|Com|Group|Trust|Holdings|Hldgs)\.?,?$/i.test(g[1]) && !/^[A-Z][a-z]+$/.test(g[1]) && !/sa[l1i]/i.test(g[1])) { typ2 = 'P'; desc = desc.slice(0, g.index); }
     }
+    desc = desc.replace(/^(?:\S*\s)?\S*[Dd0O]?ays\s?A[gq][oe0]\S*\s+/, '');
     desc = cleanDesc(desc);
     if (!date || !/[A-Za-z]{3,}/.test(desc) || NOISE_ROW.test(desc)) continue;
     rows.push({ no: no || undefined, page, desc, type: typ2, date, approx: approx || undefined, late, lo: amount[0], hi: amount[1] });

@@ -184,11 +184,13 @@ async function main() {
     const recIso = received ? new Date(received).toISOString().slice(0, 10) : null;
     const end = recIso || f.signed;
     const year = Number((end || '2026').slice(0, 4));
-    const minDate = new Date(Date.parse(end) - 200 * 864e5).toISOString().slice(0, 10);
+    // Late filings can cover more than six months (the first 2025 report spans Jan 21 to Aug 1), but never before the term began.
+    const minDate = [new Date(Date.parse(end) - 400 * 864e5).toISOString().slice(0, 10), '2025-01-20'].sort().at(-1);
     const tries = texts.map(([how, text]) => ({ how, text, rows: parse278T(text, { year, minDate, maxDate: end }) }));
     // Our Tesseract pass reads amounts more reliably than the scan's own OCR layer; use it unless it lost rows.
     const ocr = tries.find((t) => t.how === 'ocr'), layer = tries.find((t) => t.how === 'layer'), ocr2 = tries.find((t) => t.how === 'ocr2');
-    const pick = ocr && (!layer || ocr.rows.length >= layer.rows.length * 0.9) ? ocr : tries.sort((a, b) => quality(b.rows) - quality(a.rows))[0];
+    // Prefer our OCR, unless the scan's own text layer found clearly more rows (3+).
+    const pick = ocr && (!layer || ocr.rows.length >= layer.rows.length - 2) ? ocr : tries.slice().sort((a, b) => quality(b.rows) - quality(a.rows))[0];
     const other = pick === ocr && ocr2 ? ocr2 : tries.find((t) => t !== pick && t.how !== 'ocr2') || tries.find((t) => t !== pick);
     const { how, text, rows } = pick;
     // Double check: line up the two readings by printed row number and compare amount and type.
