@@ -72,10 +72,14 @@ async function symbolDate(t) {
   const j = await fetchRetry(`https://api.nasdaq.com/api/analyst/${encodeURIComponent(t.replace('.', '/'))}/earnings-date`, {
     headers: { 'User-Agent': UA, Accept: 'application/json, text/plain, */*', Origin: 'https://www.nasdaq.com', Referer: 'https://www.nasdaq.com/', 'Accept-Language': 'en-US,en;q=0.9' },
   }, { type: 'json', tries: 2 });
-  const text = `${j?.data?.announcement || ''} ${j?.data?.reportText || ''}`;
-  const m = /:\s*([A-Z][a-z]{2})\w*\s+(\d{1,2}),\s*(20\d\d)/.exec(text);
-  if (!m || !MON[m[1]]) return null;
-  return { date: `${m[3]}-${String(MON[m[1]]).padStart(2, '0')}-${m[2].padStart(2, '0')}`, estimated: /estimat|projected|\*/i.test(text) && !/confirmed/i.test(text) };
+  const text = `${j?.data?.announcement || ''} ${j?.data?.reportText || ''}`.replace(/<[^>]+>/g, ' ');
+  const estimated = /estimat|projected|expected/i.test(text) && !/confirmed|scheduled/i.test(text);
+  // "...: Jan 29, 2027" or "...report earnings on 01/29/2027".
+  const dates = [];
+  for (const m of text.matchAll(/\b([A-Z][a-z]{2})[a-z]*\.?\s+(\d{1,2}),?\s*(20\d\d)\b/g)) if (MON[m[1]]) dates.push(`${m[3]}-${String(MON[m[1]]).padStart(2, '0')}-${m[2].padStart(2, '0')}`);
+  for (const m of text.matchAll(/\b(\d{1,2})\/(\d{1,2})\/(20\d\d)\b/g)) dates.push(`${m[3]}-${m[1].padStart(2, '0')}-${m[2].padStart(2, '0')}`);
+  if (!dates.length) return { date: null, raw: text.trim().slice(0, 200) || JSON.stringify(j).slice(0, 200) };
+  return { date: dates.sort().at(-1), estimated };
 }
 
 async function main() {
@@ -109,14 +113,15 @@ async function main() {
   const today = iso(now);
   const haveNext = new Set(out.earnings.filter((r) => r.date >= today).map((r) => r.ticker));
   for (const [t, x] of Object.entries(out.symbolDates)) if (!tracked.has(t) || (x.date && x.date < today && Date.parse(x.checked) < +now - 20 * 3600e3)) delete out.symbolDates[t];
-  const todo = stocks.map((s) => s.ticker).filter((t) => !haveNext.has(t) && !(out.symbolDates[t] && Date.parse(out.symbolDates[t].checked) > +now - 20 * 3600e3));
+  const fresh = (x) => x && x.checked && Date.parse(x.checked) > +now - 20 * 3600e3 && (x.date || 'raw' in x);
+  const todo = stocks.map((s) => s.ticker).filter((t) => !haveNext.has(t) && !fresh(out.symbolDates[t]));
   let got = 0, miss = 0, err = 0;
   const limit = Number(process.env.SYMBOL_LIMIT || 450);
   for (const t of todo.slice(0, limit)) {
     try {
       const r = await symbolDate(t);
-      out.symbolDates[t] = { ...(r || { date: null }), checked: now.toISOString() };
-      if (r && r.date >= today) got++; else miss++;
+      out.symbolDates[t] = { ...r, checked: now.toISOString() };
+      if (r.date && r.date >= today) got++; else miss++;
     } catch (e) { err++; if (err >= 25) { console.error('per-company lookups failing, stopping:', e.message); break; } }
     await sleep(250);
   }
