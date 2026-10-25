@@ -1,55 +1,60 @@
 {
   "_note": "Weekly editorial. Update every week: \"moving\" = 3-4 stories moving markets, \"trending\" = 4 stocks explained. Owners, politician and insider activity are added automatically from the data.",
-  "weekLabel": "Week ending 16 October 2026",
+  "weekLabel": "Week ending 23 October 2026",
   "moving": [
     {
       "icon": "fa-microchip",
-      "title": "AI stocks lead a sell-off",
-      "text": "The Nasdaq fell 2.1% on Friday and 4.5% for the week, ending a four-week winning streak. Chip, memory and AI-infrastructure stocks led the decline as investors questioned how AI spending gets financed."
-    },
-    {
-      "icon": "fa-fire-flame-curved",
-      "title": "Hot inflation, higher yields",
-      "text": "Hotter-than-expected CPI and PPI readings pushed the 10-year Treasury yield above 5%. Futures markets price a high chance of a Fed rate hike by December."
+      "title": "AI spending worries hit Big Tech again",
+      "text": "The Nasdaq fell 2.6% on Thursday, its biggest one-day drop since June, after Meta’s results showed AI spending pushing its free cash flow negative. Chip-equipment stocks fell with it. For the week the S&P 500 and Nasdaq slipped, while the Dow and small caps finished higher."
     },
     {
       "icon": "fa-oil-well",
-      "title": "Oil back above $100",
-      "text": "WTI crude rose 3.4% to about $101 a barrel, and Brent to about $110, on Middle East supply risks. Energy was the best-performing sector."
+      "title": "Oil climbs on Middle East attacks",
+      "text": "Brent crude rose to its highest level since late April after attacks in Saudi Arabia raised fears of more supply disruption. Energy stocks hit a record high on Friday, and the 10-year Treasury yield stayed near 5%."
+    },
+    {
+      "icon": "fa-tower-cell",
+      "title": "SpaceX shakes up wireless stocks",
+      "text": "AT&T and T-Mobile each fell more than 6% on Friday after a report that SpaceX is seeking thousands of cell sites for a fourth US wireless carrier. Tower owners rose instead: Crown Castle gained 10% and American Tower 3.7%."
+    },
+    {
+      "icon": "fa-building-columns",
+      "title": "Next week: the Fed and three tech giants",
+      "text": "The Federal Reserve announces its rate decision on Wednesday and is expected to hold. Microsoft and Alphabet report the same afternoon and Amazon on Thursday, a big test of whether AI spending is paying off."
     }
   ],
   "trending": [
     {
-      "ticker": "CRWV",
-      "date": "16 Oct 2026",
-      "title": "CoreWeave slides on AI-debt worries",
-      "happened": "CoreWeave fell about 12% on Friday, its second big drop in three days, as investors focused on the AI cloud provider’s roughly $50 billion of debt.",
-      "means": "Companies that borrow to build AI data centres now trade like rate-sensitive stocks. With 10-year yields above 5%, financing costs matter as much as demand. Expect volatility until earnings show cash flow catching up with spending.",
-      "note": "David Tepper’s Appaloosa opened a new position in Q2 2026, before this sell-off."
-    },
-    {
       "ticker": "META",
-      "date": "16 Oct 2026",
-      "title": "Meta falls 4% ahead of earnings",
-      "happened": "Meta dropped nearly 4% on Friday as the AI sell-off hit the biggest spenders on AI infrastructure.",
-      "means": "Upcoming Big Tech earnings must show AI investment turning into revenue and cash flow. Meta’s ad business funds its spending, which separates it from borrowers, but the market wants proof.",
-      "note": "One of the most widely held stocks among our super investors."
+      "date": "22 Oct 2026",
+      "title": "Meta drops nearly 7% after earnings",
+      "happened": "Meta fell about 7% on Thursday, closing near $649, after its third-quarter report. Revenue grew about 26% to roughly $64.6 billion, but heavy spending on AI data centres pushed free cash flow negative, and profit included a large one-time legal charge.",
+      "means": "Investors now want proof that AI spending turns into cash, not just revenue growth. Meta’s ad business is still growing fast, so the debate is about how much it spends, not whether the business works.",
+      "note": "Bill Ackman (about 9% of his portfolio) and Chase Coleman (about 7%) are among the 7 fund managers we track who own Meta."
     },
     {
-      "ticker": "NFLX",
-      "date": "16 Oct 2026",
-      "title": "Netflix reports earnings on 20 October",
-      "happened": "Netflix reports third-quarter results on Tuesday, 20 October, at the start of a heavy week of earnings.",
-      "means": "Subscriber growth, ad-tier revenue and margins will set the tone. A streaming business is less exposed to AI financing fears, which may help it stand out in a jittery tape.",
-      "note": "Bill Ackman’s Pershing Square opened a new position worth about $934 million in Q2 2026."
+      "ticker": "IBM",
+      "date": "21 Oct 2026",
+      "title": "IBM rises as delayed deals close",
+      "happened": "IBM’s third-quarter revenue rose 4.7% to $17.1 billion, ahead of estimates, and it raised its software growth outlook to about 7% to 8%. Software deals delayed last quarter started to close. Shares rose about 4% in after-hours trading.",
+      "means": "It suggests big companies are still buying software, even while investors worry about AI spending elsewhere. Steady, cash-generating tech looked more attractive than heavy spenders this week.",
+      "note": "None of the 22 fund managers we track own IBM in their latest 13F filings."
     },
     {
-      "ticker": "OXY",
-      "date": "16 Oct 2026",
-      "title": "Oil above $100 lifts energy stocks",
-      "happened": "Energy was the best sector on Friday (up about 2.5%) as WTI crude climbed above $101 a barrel on Middle East supply risks.",
-      "means": "Producers like Occidental earn much more cash at these prices, which supports buybacks and debt paydown. The risk is that oil prices fall back quickly if supply eases.",
-      "note": "Berkshire Hathaway owns about 265 million Occidental shares, one of its largest positions."
+      "ticker": "T",
+      "date": "23 Oct 2026",
+      "title": "AT&T falls on SpaceX wireless report",
+      "happened": "AT&T and T-Mobile each fell more than 6% on Friday and Verizon fell 1.6%, after a report that SpaceX is looking for thousands of cell sites to launch a fourth wireless carrier.",
+      "means": "Wireless is a mature business where three carriers share most customers. A well-funded new rival could mean price cuts. Tower companies could gain, since a new carrier would rent space on their towers.",
+      "note": "None of the 22 fund managers we track own AT&T in their latest 13F filings."
+    },
+    {
+      "ticker": "MSFT",
+      "date": "23 Oct 2026",
+      "title": "Microsoft, Alphabet and Amazon report next week",
+      "happened": "Microsoft and Alphabet report third-quarter results after the close on Wednesday, 28 October, and Amazon on Thursday, 29 October. Analysts expect Microsoft to earn about $4.71 a share.",
+      "means": "After Meta’s drop, investors will focus on cloud growth and how much each company plans to spend on AI next year. Strong cloud sales could ease worries; bigger spending plans without matching revenue could add to them.",
+      "note": "6 of the fund managers we track own Microsoft, including Bill Ackman, for whom it is about 12% of the portfolio."
     }
   ]
 }
