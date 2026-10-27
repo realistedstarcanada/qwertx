@@ -20,7 +20,7 @@ const TRADE_VIEW_DAYS = 180;
 const RECENT_EVENT_DAYS = 21;
 const TICKER = /^[A-Z][A-Z0-9.\-]{0,9}$/;
 
-export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
+export function buildProData(d, { now = Date.now(), aliases = {}, filings8k = null, etfCfg = null, etfData = {}, vendor = null } = {}) {
   const managers = {};
   const institutions = d.institutions || [];
   for (const inv of [...d.live, ...institutions]) {
@@ -54,7 +54,7 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
     // Sold out = no longer holds any share class of the company.
     const still = new Set(o.h.map((x) => x[0]));
     o.x = [...new Set((s.sellers || []).map((x) => x.inv.slug))].filter((m) => !still.has(m));
-    if (s.nextEarnings) o.e = { d: s.nextEarnings.date, l: s.nextEarnings.label, t: s.nextEarnings.time || '', est: !!s.nextEarnings.estimated };
+    if (s.nextEarnings) o.e = { d: s.nextEarnings.date, l: s.nextEarnings.label, t: s.nextEarnings.time || '', est: !!s.nextEarnings.estimated, eps: s.nextEarnings.epsForecast ?? null };
   }
 
   // ---- Other share classes (GOOG for GOOGL, BRK.A for BRK.B) show the same company's owners ----
@@ -137,6 +137,50 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
   }
   for (const o of Object.values(stocks)) if (o.px) delete o.px.v;
 
+  // ---- Earnings (next date and the latest result, from the earnings calendar) ----
+  for (const s of d.stockByTicker.values()) {
+    const o = s.ticker && stocks[s.ticker];
+    if (!o) continue;
+    if (s.nextEarnings && !o.e) o.e = { d: s.nextEarnings.date, l: s.nextEarnings.label, t: s.nextEarnings.time || '', est: !!s.nextEarnings.estimated, eps: s.nextEarnings.epsForecast ?? null };
+    if (s.lastEarnings?.eps != null) o.le = { d: s.lastEarnings.date, l: s.lastEarnings.label, q: s.lastEarnings.quarter || null, eps: s.lastEarnings.eps, est: s.lastEarnings.epsForecast ?? null };
+  }
+
+  // ---- Major company events (SEC 8-K) ----
+  for (const [t, list] of Object.entries(filings8k?.byTicker || {})) {
+    const o = stocks[t];
+    if (o && list?.length) o.k8 = list.map((x) => ({ d: x.d, i: x.items, a: x.amend || undefined, u: x.url }));
+  }
+
+  // ---- ETFs: what's inside (SEC N-PORT), Canadian ETFs through a same-index US proxy ----
+  const etfs = {};
+  const etfEntry = (t, meta, ca) => {
+    const proxy = meta.proxy && etfData[meta.proxy];
+    const own = !ca && etfData[t];
+    const src = own || proxy || null;
+    stocks[t] = {
+      n: meta.name, s: null, sec: 'ETF', h: [], x: [], cg: [],
+      etf: {
+        kind: meta.kind, index: meta.index || null, ca: !!ca, proxy: proxy ? meta.proxy : null,
+        ...(src ? { period: src.period, filed: src.filed, url: src.url, count: src.count, top10: src.top10, top: src.top.slice(0, 25), countries: src.countries, sectors: src.sectors, netAssets: own ? src.netAssets : null } : {}),
+      },
+    };
+    etfs[t] = { n: meta.name, kind: meta.kind, ca: !!ca, has: !!src };
+  };
+  for (const [t, meta] of Object.entries(etfCfg?.us || {})) etfEntry(t, meta, false);
+  for (const [t, meta] of Object.entries(etfCfg?.ca || {})) etfEntry(`${t}.TO`, meta, true);
+
+  // ---- Licensed vendor data (prices, analyst targets, earnings history): only when switched on ----
+  if (vendor) {
+    for (const [t, v] of Object.entries(vendor)) {
+      const o = stocks[t];
+      if (!o) continue;
+      if (v.q) o.q = v.q;
+      if (v.hist?.length) o.hist = v.hist;
+      if (v.an) o.an = v.an;
+      if (v.er?.length) o.er = v.er;
+    }
+  }
+
   // Drop empty trade lists to keep the file small.
   for (const o of Object.values(stocks)) {
     if (!o.cg.length) delete o.cg;
@@ -155,7 +199,7 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
     const h = o.h || [];
     tickers[t] = [o.n, h.length, h.filter((x) => x[2] === 'New' || x[2] === 'Add').length, h.filter((x) => x[2] === 'Trim').length, (o.x || []).length, o.s, h.map((x) => pos.get(x[0])), o.e?.d || null];
   }
-  const index = { generatedAt, insiderQuarter, managers, managerOrder, aliases, tickers };
+  const index = { generatedAt, insiderQuarter, managers, managerOrder, aliases, tickers, etfs, vendor: !!vendor, k8: filings8k?.through || filings8k?.updatedAt || null };
   const events = buildEvents(d, { now });
   const recentEvents = events.filter((e) => daysAgo(e.at, now) <= RECENT_EVENT_DAYS);
   return { ownership, index, events, recentEvents };

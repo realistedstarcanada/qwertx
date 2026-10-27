@@ -1,6 +1,11 @@
 // QWERTx Pro rules: who counts as Pro, watchlist limits, alert preferences and ticker clean-up.
 import pro from '../config/pro.json';
 import aliasCfg from '../config/ticker-aliases.json';
+import etfCfg from '../config/etfs.json';
+
+// Canadian ETFs QWERTx explains (VEQT, XEQT, VFV…): typed with or without .TO, stored as VEQT.TO.
+export const CA_ETFS = new Set(Object.keys(etfCfg.ca || {}));
+export const isAdmin = (env, u) => !!u && String(env.ADMIN_EMAILS || '').toLowerCase().split(/[\s,;]+/).filter(Boolean).includes(String(u.email).toLowerCase());
 
 export const LIMITS = pro.limits;
 export const ACTIVE = new Set(['active', 'trialing', 'past_due']); // past_due: Stripe is retrying the card
@@ -74,7 +79,7 @@ export const isSnoozed = (prefs, now = Date.now()) => !!prefs.snoozeUntil && Dat
  *   "aapl" -> AAPL · "BRK-B" / "BRK/B" -> BRK.B · "RY.TO" / "TSX:RY" / "RY:CA" -> RY (US listing)
  * Returns { ticker } or { error: 'invalid' | 'not_covered', input }.
  */
-export function normalizeTicker(raw, aliases = aliasCfg.aliases) {
+export function normalizeTicker(raw, aliases = aliasCfg.aliases, caEtfs = CA_ETFS) {
   const input = String(raw || '').trim().toUpperCase().replace(/^\$/, '');
   if (!input || input.length > 16) return { error: 'invalid', input };
   let tsx = null;
@@ -84,9 +89,12 @@ export function normalizeTicker(raw, aliases = aliasCfg.aliases) {
   if (tsx) {
     const key = tsx.replace(/[./]/g, '-') + '.TO'; // TECK.B -> TECK-B.TO, BIP.UN -> BIP-UN.TO
     const us = aliases[key] || aliases[tsx + '.TO'];
-    return us ? { ticker: us, from: input } : { error: 'not_covered', input };
+    if (us) return { ticker: us, from: input };
+    if (caEtfs.has(tsx)) return { ticker: `${tsx}.TO` };
+    return { error: 'not_covered', input };
   }
   const t = input.replace(/[\/-]([A-Z])$/, '.$1').replace(/\s+/g, '');
+  if (caEtfs.has(t)) return { ticker: `${t}.TO` };
   if (!/^[A-Z][A-Z0-9]{0,6}(\.[A-Z])?$/.test(t)) return { error: 'invalid', input };
   return { ticker: t };
 }

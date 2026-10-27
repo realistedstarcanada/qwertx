@@ -134,7 +134,9 @@ export function alertEmail(env, { site, user, events, managers, daily }) {
  * Friday digest. snapshot = [{ t, name, owners, bought, trimmed, exited, earnings }] for the member's stocks.
  * Sent even when nothing happened, so a quiet week still tells them where things stand.
  */
-export function weeklyEmail(env, { site, user, events, managers, snapshot, pro, limit }) {
+const briefTeaser = (body) => String(body || '').split(/\n\s*\n/).map((p) => p.trim()).filter((p) => p && !p.startsWith('## '))[0] || '';
+
+export function weeklyEmail(env, { site, user, events, managers, snapshot, pro, limit, brief }) {
   const managersTotal = new Set(snapshot.flatMap((s) => s.holders || [])).size;
   const quiet = events.length === 0;
   const unsubscribe = `${site}/api/unsubscribe?u=${encodeURIComponent(user.unsub_token)}`;
@@ -157,10 +159,10 @@ export function weeklyEmail(env, { site, user, events, managers, snapshot, pro, 
     to: user.email,
     subject,
     unsubscribe,
-    text: `Your QWERTx week\n\n${quiet ? 'No new filings touched your stocks this week. Here is where they stand:' : eventText(events, managers)}\n\n${lines.map((l) => `${l.t} (${l.name}): ${l.text}`).join('\n')}\n\n${pro ? '' : `${managersTotal} smart-money investors own your stocks. QWERTx Pro: ${site}/pro.html\n\n`}See your watchlist: ${site}/account.html\nUnsubscribe: ${unsubscribe}\n\n${DISCLAIMER}`,
+    text: `Your QWERTx week\n\n${brief ? `THE QWERTx BRIEF: ${brief.title}\n${briefTeaser(brief.body)}\n${pro ? `Read it: ${site}/account.html#brief` : `Pro members get the full Brief: ${site}/pro.html`}\n\n` : ''}${quiet ? 'No new filings touched your stocks this week. Here is where they stand:' : eventText(events, managers)}\n\n${lines.map((l) => `${l.t} (${l.name}): ${l.text}`).join('\n')}\n\n${pro ? '' : `${managersTotal} smart-money investors own your stocks. QWERTx Pro: ${site}/pro.html\n\n`}See your watchlist: ${site}/account.html\nUnsubscribe: ${unsubscribe}\n\n${DISCLAIMER}`,
     html: frame(env, {
       preheader: quiet ? 'A quiet week. Here is where your stocks stand.' : `${events.length} new disclosures on your stocks`,
-      body: `<h1 style="font-family:Georgia,serif;font-weight:500;font-size:22px;margin:0 0 6px">Your stocks this week</h1>
+      body: `${brief ? `<div style="border:1px solid #F1D9A6;background:#FFF7E6;border-radius:10px;padding:16px;margin-bottom:22px"><div style="font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#B9781A;font-weight:600">The QWERTx Brief</div><div style="font-family:Georgia,serif;font-size:20px;margin:6px 0">${esc(brief.title)}</div><p style="margin:0 0 12px;line-height:1.6">${esc(briefTeaser(brief.body))}</p>${button(pro ? `${site}/account.html#brief` : `${site}/pro.html`, pro ? 'Read the full Brief' : 'Get the full Brief with Pro')}</div>` : ''}<h1 style="font-family:Georgia,serif;font-weight:500;font-size:22px;margin:0 0 6px">Your stocks this week</h1>
 <p style="margin:0 0 12px;color:#5B6478;font-size:14px">${quiet ? 'No new filings touched your stocks this week. That’s normal: fund managers file once a quarter. Here is where things stand.' : `${events.length} new disclosure${events.length > 1 ? 's' : ''} touched your stocks this week.`}</p>
 ${quiet ? '' : `<table role="presentation" width="100%" cellpadding="0" cellspacing="0">${eventRows(pro ? events : events.slice(0, 3), managers, site)}</table>${!pro && events.length > 3 ? `<p style="font-size:13px;color:#5B6478">+ ${events.length - 3} more with Pro.</p>` : ''}`}
 <h2 style="font-size:15px;margin:22px 0 6px">Where your ${snapshot.length} stock${snapshot.length > 1 ? 's' : ''} stand${snapshot.length > 1 ? '' : 's'}</h2>

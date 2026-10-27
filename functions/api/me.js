@@ -10,5 +10,5 @@ export const onRequestGet = route(async ({ request, env }) => {
   if (!env.DB) return json({ signedIn: false, configured: false, ...base });
   const user = await currentUser(request, env);
   if (!user) return json({ signedIn: false, configured: true, ...base });
-  return json({ ...base, ...(await accountView(await db(env), user)) });
+  return json({ ...base, ...(await accountView(await db(env), user, env)) });
 });

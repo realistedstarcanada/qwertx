@@ -20,6 +20,7 @@ import { proPages } from './src/pages/pro-pages.mjs';
 import { accountPage } from './src/pages/account.mjs';
 import { staticPages } from './src/pages/static.mjs';
 import { buildProData } from './src/lib/pro-data.mjs';
+import { buildWeather } from './src/lib/weather.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(ROOT, 'dist');
@@ -108,7 +109,20 @@ fs.writeFileSync(path.join(OUT, 'search-index.json'), JSON.stringify(searchIndex
 
 // QWERTx Pro: small static files the watchlist page and the alert functions read (see src/lib/pro-data.mjs).
 const readJSON = (f) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, f), 'utf8')); } catch { return null; } };
-const pro = buildProData(d, { aliases: readJSON('config/ticker-aliases.json')?.aliases || {} });
+const readDir = (dir) => {
+  const out = {};
+  try { for (const f of fs.readdirSync(path.join(ROOT, dir))) if (f.endsWith('.json')) out[f.slice(0, -5)] = readJSON(`${dir}/${f}`); } catch {}
+  return out;
+};
+const proCfg = readJSON('config/pro.json') || {};
+const vendorOn = !!(proCfg.vendor?.enabled && proCfg.vendor?.displayLicence);
+const pro = buildProData(d, {
+  aliases: readJSON('config/ticker-aliases.json')?.aliases || {},
+  filings8k: readJSON('data/filings/8k.json'),
+  etfCfg: readJSON('config/etfs.json'),
+  etfData: readDir('data/etfs'),
+  vendor: vendorOn ? readDir('data/vendor') : null,
+});
 // Space-separated list of every ticker we accept on a watchlist (catches typos without parsing JSON).
 const secTickers = readJSON('data/sec-tickers.json');
 if (secTickers) {
@@ -119,6 +133,7 @@ if (secTickers) {
 fs.mkdirSync(path.join(OUT, 'pro/t'), { recursive: true });
 for (const [t, o] of Object.entries(pro.ownership.stocks)) fs.writeFileSync(path.join(OUT, 'pro/t', `${t}.json`), JSON.stringify(o));
 fs.writeFileSync(path.join(OUT, 'pro/index.json'), JSON.stringify(pro.index));
+fs.writeFileSync(path.join(OUT, 'pro/weather.json'), JSON.stringify(buildWeather({ macro: readJSON('data/macro.json'), market: d.market, insiders: d.insiders, politics: d.politics, live: d.live })));
 fs.writeFileSync(path.join(OUT, 'pro/events-recent.json'), JSON.stringify({ generatedAt: pro.ownership.generatedAt, events: pro.recentEvents }));
 
 // Fear & Greed snapshot for the live gauge's fallback, sitemap, robots.

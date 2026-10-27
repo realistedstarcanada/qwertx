@@ -12,7 +12,7 @@ on:
         default: false
   push:
     branches: [main]
-    paths: ['config/investors.json']
+    paths: ['config/investors.json', 'config/etfs.json']
 
 permissions:
   contents: write
@@ -37,6 +37,11 @@ jobs:
           OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
       - name: US ticker list for the Pro watchlist
         run: node scripts/fetch-tickers.mjs
+        continue-on-error: true
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
+      - name: What's inside US ETFs (SEC N-PORT)
+        run: node scripts/fetch-etfs.mjs
         continue-on-error: true
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}

@@ -14,5 +14,5 @@ export const onRequestPost = route(async ({ request, env }) => {
   const DB = await db(env);
   const name = 'name' in body ? String(body.name || '').replace(/[<>]/g, '').trim().slice(0, 80) || null : user.name ?? null;
   await DB.prepare(`UPDATE users SET prefs = ?, name = ? WHERE id = ?`).bind(JSON.stringify(next), name, user.id).run();
-  return json({ ok: true, ...(await accountView(DB, { ...user, name, prefs: JSON.stringify(next) })) });
+  return json({ ok: true, ...(await accountView(DB, { ...user, name, prefs: JSON.stringify(next) }, env)) });
 });

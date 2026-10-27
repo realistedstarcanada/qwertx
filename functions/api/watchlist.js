@@ -47,9 +47,14 @@ export const onRequestPost = route(async ({ request, env }) => {
   }
   if (add.length) {
     const now = nowIso();
-    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at, shares, amount) VALUES (?, ?, ?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString(), n.shares ?? null, n.amount ?? null)));
+    // With licensed prices switched on, remember today's price so performance since adding can be shown.
+    const idx = await asset(env, request, '/pro/index.json');
+    if (idx?.vendor) {
+      await Promise.all(add.map(async (n) => { const t = await asset(env, request, `/pro/t/${encodeURIComponent(n.ticker)}.json`); n.price = t?.q?.p ?? null; }));
+    }
+    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at, shares, amount, added_price) VALUES (?, ?, ?, ?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString(), n.shares ?? null, n.amount ?? null, n.price ?? null)));
   }
-  return json({ ok: true, results, ...(await accountView(DB, user)) });
+  return json({ ok: true, results, ...(await accountView(DB, user, env)) });
 });
 
 export const onRequestPatch = route(async ({ request, env }) => {
@@ -60,7 +65,7 @@ export const onRequestPatch = route(async ({ request, env }) => {
   const sz = size(body);
   const res = await DB.prepare(`UPDATE watchlist SET shares = ?, amount = ? WHERE user_id = ? AND ticker = ?`).bind(sz.shares ?? null, sz.amount ?? null, user.id, ticker).run();
   if (!res.meta?.changes) throw fail(404, 'That stock is not on your list.');
-  return json({ ok: true, ...(await accountView(DB, user)) });
+  return json({ ok: true, ...(await accountView(DB, user, env)) });
 });
 
 /** Optional position size: shares wins if both are given; anything not a sensible positive number is dropped. */
@@ -81,5 +86,5 @@ export const onRequestDelete = route(async ({ request, env }) => {
   const DB = await db(env);
   if (ticker === '*') await DB.prepare(`DELETE FROM watchlist WHERE user_id = ?`).bind(user.id).run();
   else await DB.prepare(`DELETE FROM watchlist WHERE user_id = ? AND ticker = ?`).bind(user.id, ticker).run();
-  return json({ ok: true, ...(await accountView(DB, user)) });
+  return json({ ok: true, ...(await accountView(DB, user, env)) });
 });

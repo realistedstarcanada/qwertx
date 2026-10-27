@@ -126,6 +126,11 @@ export const isoWeek = (d = new Date()) => {
  */
 export async function weekly({ DB, env, site, index, after = 0, pageSize = 60, now = new Date() }) {
   const period = isoWeek(now);
+  // This week's QWERTx Brief, if one was published in the last 8 days, leads every digest.
+  let brief = null;
+  try {
+    brief = await DB.prepare(`SELECT id, title, body FROM briefs WHERE status = 'published' AND published_at > ? ORDER BY published_at DESC LIMIT 1`).bind(new Date(now - 8 * 864e5).toISOString()).first();
+  } catch {}
   const { results: users = [] } = await DB.prepare(
     `SELECT u.* FROM users u WHERE u.id > ? AND EXISTS (SELECT 1 FROM watchlist w WHERE w.user_id = u.id)
      AND NOT EXISTS (SELECT 1 FROM digests d WHERE d.user_id = u.id AND d.kind = 'weekly' AND d.period = ?) ORDER BY u.id LIMIT ?`,
@@ -155,7 +160,7 @@ export async function weekly({ DB, env, site, index, after = 0, pageSize = 60, n
       return { t, name: x[0], owners: x[1], bought: x[2], trimmed: x[3], exited: x[4], holders: (x[6] || []).map((i) => order[i]), earnings: e ? fmtShort(e) : null };
     });
     const events = al.filter((r) => r.user_id === user.id).map((r) => JSON.parse(r.event)).filter((e) => tickers.includes(e.t));
-    msgs.push(weeklyEmail(env, { site, user, events, managers: index.managers, snapshot, pro }));
+    msgs.push(weeklyEmail(env, { site, user, events, managers: index.managers, snapshot, pro, brief }));
     sentIds.push(user.id);
   }
   const sent = msgs.length ? await sendBatch(env, msgs) : 0;

@@ -54,6 +54,23 @@ jobs:
       - name: Featured members of Congress (full holdings and trades)
         run: node scripts/fetch-featured.mjs ${{ inputs.reprocess && '--force' || '' }}
         continue-on-error: true
+      - name: Build site data (needed for the 8-K ticker list)
+        run: node build.mjs
+      - name: Company events (SEC 8-K)
+        run: node scripts/fetch-8k.mjs
+        continue-on-error: true
+      - name: Economic data for Market Weather (FRED, Bank of Canada, Statistics Canada)
+        run: node scripts/fetch-macro.mjs
+        continue-on-error: true
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      - name: Licensed prices and analyst data (does nothing until switched on in config/pro.json)
+        run: node scripts/fetch-fmp.mjs
+        continue-on-error: true
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          PRO_SITE_URL: ${{ secrets.PRO_SITE_URL }}
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
       - name: Commit updated data
         run: |
           git config user.name "qwertx-bot"

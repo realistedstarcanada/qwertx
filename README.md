@@ -13,6 +13,10 @@ zero npm dependencies, hosted free on Cloudflare Pages and kept fresh by GitHub 
 | VIX history, index closes, yields, oil, gold, CNN Fear & Greed | `scripts/fetch-market.mjs` | Cboe, Yahoo Finance (FRED/Stooq fallback), CNN | Same as news |
 | Politician trades | `scripts/fetch-congress.mjs` | House Clerk PTRs + Senate eFD, congress-legislators | Daily 08:15 (`update-disclosures.yml`) |
 | Insider trades (quarterly) | `scripts/fetch-insiders.mjs` | SEC Insider Transactions Data Sets (Form 4) | Daily check; processes each new quarter once |
+| Company events (8-K item numbers) for every stock on the site | `scripts/fetch-8k.mjs` | SEC EDGAR daily index + submissions | Same as politician trades |
+| Economy and rates for Market Weather (US + Canada) | `scripts/fetch-macro.mjs` | FRED (public-domain series only), Bank of Canada Valet, Statistics Canada | Same as politician trades; FRED needs `FRED_API_KEY` |
+| What's inside US ETFs (`config/etfs.json`; Canadian ETFs borrow a same-index US fund) | `scripts/fetch-etfs.mjs` | SEC Form N-PORT | Same as portfolios |
+| Licensed prices, analyst targets, earnings history (off until licensed) | `scripts/fetch-fmp.mjs` | Financial Modeling Prep | Same as politician trades, only when `vendor.enabled` |
 | Live Fear & Greed on the page | `functions/api/market-mood.js` | CNN, cached 15 min at the edge | On page view |
 
 Every data commit triggers a Cloudflare rebuild (`npm run build` → `dist/`).
@@ -30,6 +34,8 @@ Every data commit triggers a Cloudflare rebuild (`npm run build` → `dist/`).
 
 - `SEC_USER_AGENT` = `QWERTx yourname@yourdomain.com` (recommended; SEC asks bots to identify themselves)
 - `OPENFIGI_API_KEY` (optional, faster ticker lookups)
+- `FRED_API_KEY` (free at fred.stlouisfed.org; fills the US half of Market Weather)
+- `FMP_API_KEY` (only once a Financial Modeling Prep plan and display licence are in place)
 
 ## Cloudflare Pages
 
@@ -51,6 +57,14 @@ alerts; everyone with a watchlist gets a Friday digest.
 | Dashboard page | `src/pages/account.mjs` + `src/assets/qx-pro.js` |
 | Plans and prices | `config/pro.json` (prices are created in Stripe from `amount` + `lookupKey`) |
 | Toronto → New York tickers | `config/ticker-aliases.json` |
+| Canadian ETFs (VEQT, XEQT, VFV…) kept as `.TO` | `config/etfs.json` |
+| Market Weather | `src/lib/weather.mjs` → `dist/pro/weather.json` |
+| The weekly QWERTx Brief | `functions/api/{brief,brief-vote}.js`, written on the QWERTx Brief tab by admins |
+
+The Pro page has six tabs: My Portfolio (value, health cards, what you really own through ETFs, ETF scorecard),
+Smart Money, Analyst Targets, Earnings & News, Market Weather and the QWERTx Brief. Anything that needs licensed
+data (live prices, analyst targets, ETF returns) says "coming soon" until `vendor.enabled` is `true` in
+`config/pro.json`. Turn it on only after the vendor's display licence is signed.
 
 ### Setup checklist
 
@@ -60,6 +74,8 @@ Cloudflare Pages → Settings → (Production and Preview):
 - **Variables:** `MAIL_FROM` = `QWERTx <alerts@qwertx.com>` (domain verified in Resend), `SITE_URL` = `https://qwertx.com`
   (or the pages.dev URL until the domain points here), optional `MAIL_POSTAL_ADDRESS` (CASL wants a mailing address in emails),
   optional `MAIL_REPLY_TO`.
+- **Variable** `ADMIN_EMAILS` = comma-separated emails allowed to write and publish the QWERTx Brief.
+- Preview only, for testing: `DEV_SHOW_LINK` = `1` shows the sign-in link on screen. Never set it on Production.
 
 Stripe (test mode first, then again in live mode):
 - Developers → Webhooks → add `https://<site>/api/stripe-webhook` with `checkout.session.completed`,
