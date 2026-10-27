@@ -520,9 +520,11 @@
       var pres = {};
       (d.cg || []).forEach(function (x) {
         if (x.ch === 'President') { var g = pres[x.f] = pres[x.f] || { b: 0, s: 0, f: x.f, u: x.u, from: x.d, to: x.d }; if (x.a === 'buy') g.b++; else g.s++; if (x.d < g.from) g.from = x.d; if (x.d > g.to) g.to = x.d; return; }
-        out.push({ k: 'pol', sort: x.f || x.d, date: fmtShort(x.f || x.d), tag: x.ch === 'President' ? 'President' : 'Congress', t: t, buy: x.a === 'buy',
-          text: (x.ch === 'President' ? 'President Trump' : (x.ch === 'Senate' ? 'Sen. ' : 'Rep. ') + x.who + (x.p ? ' (' + x.p + ')' : '')) + ' ' + (x.a === 'buy' ? 'bought' : 'sold') + (x.amt ? ' ' + x.amt : ''),
-          detail: 'Traded ' + fmtShort(x.d) + ' · disclosed ' + fmtDate(x.f), u: x.u });
+        var key = x.who + '|' + x.a + '|' + x.d + '|' + x.f + '|' + x.amt, prev = out.filter(function (e) { return e.key === key && e.t === t; })[0];
+        if (prev) { prev.n++; prev.text = prev.base + ' (' + prev.n + ' trades, each ' + x.amt + ')'; return; }
+        var base = (x.ch === 'Senate' ? 'Sen. ' : 'Rep. ') + x.who + (x.p ? ' (' + x.p + ')' : '') + ' ' + (x.a === 'buy' ? 'bought' : 'sold');
+        out.push({ k: 'pol', key: key, n: 1, base: base, sort: x.f || x.d, date: fmtShort(x.f || x.d), tag: 'Congress', t: t, buy: x.a === 'buy',
+          text: base + (x.amt ? ' ' + x.amt : ''), detail: 'Traded ' + fmtShort(x.d) + ' · disclosed ' + fmtDate(x.f), u: x.u });
       });
       Object.keys(pres).forEach(function (f) {
         var g = pres[f], parts = [];
