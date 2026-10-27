@@ -24,3 +24,6 @@ CREATE TABLE IF NOT EXISTS alerts (user_id INTEGER NOT NULL, event_id TEXT NOT N
 CREATE INDEX IF NOT EXISTS alerts_pending ON alerts(emailed_at, created_at);
 CREATE TABLE IF NOT EXISTS digests (user_id INTEGER NOT NULL, kind TEXT NOT NULL, period TEXT NOT NULL, sent_at TEXT NOT NULL, PRIMARY KEY (user_id, kind, period));
 CREATE TABLE IF NOT EXISTS stripe_events (id TEXT PRIMARY KEY, type TEXT, received_at TEXT NOT NULL);
+ALTER TABLE users ADD COLUMN name TEXT;
+ALTER TABLE watchlist ADD COLUMN shares REAL;
+ALTER TABLE watchlist ADD COLUMN amount REAL;
