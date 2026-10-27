@@ -50,9 +50,24 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
     const o = get(s);
     if (!o) continue;
     // [manager slug, portfolio weight %, action, % change in shares, value $]
-    o.h = (s.holders || []).map((x) => [x.inv.slug, r2(x.w), x.act, x.line?.sharesChangePct != null && x.act !== 'New' ? Math.round(x.line.sharesChangePct * 100) : null, Math.round(x.value)]);
-    o.x = [...new Set((s.sellers || []).map((x) => x.inv.slug))];
+    o.h = (s.holders || []).map((x) => [x.inv.slug, r2(x.w), x.act, x.act === 'New' ? null : shareChange(x.inv, s.issuer), Math.round(x.value)]);
+    // Sold out = no longer holds any share class of the company.
+    const still = new Set(o.h.map((x) => x[0]));
+    o.x = [...new Set((s.sellers || []).map((x) => x.inv.slug))].filter((m) => !still.has(m));
     if (s.nextEarnings) o.e = { d: s.nextEarnings.date, l: s.nextEarnings.label, t: s.nextEarnings.time || '', est: !!s.nextEarnings.estimated };
+  }
+
+  // ---- Other share classes (GOOG for GOOGL, BRK.A for BRK.B) show the same company's owners ----
+  for (const s of d.stockByTicker.values()) {
+    if (!s.ticker || !stocks[s.ticker] || !s.classes) continue;
+    for (const cls of s.classes.keys()) {
+      if (cls === s.ticker || !TICKER.test(cls)) continue;
+      const o = get(null, cls);
+      if (!o) continue;
+      const p = stocks[s.ticker];
+      o.n = p.n; o.s = p.s; o.sec = p.sec; o.h = p.h; o.x = p.x; o.co = s.ticker;
+      if (p.e) o.e = p.e;
+    }
   }
 
   // ---- Institutions (pension funds, large asset managers): kept apart from the super investor counts ----
@@ -111,6 +126,17 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
     }
   }
 
+  // Approximate price per share at the latest quarter end (13F value / shares), so positions entered as a
+  // number of shares can be weighed. Clearly labelled as a quarter-end price wherever it is shown.
+  for (const inv of [...d.live, ...institutions]) {
+    for (const h of inv.p.holdings) {
+      if (!TICKER.test(h.ticker || '') || h.putCall || h.shType !== 'SH' || !h.shares || !stocks[h.ticker]) continue;
+      const o = stocks[h.ticker];
+      if (!o.px || inv.p.period > o.px.d || (inv.p.period === o.px.d && h.value > o.px.v)) o.px = { p: r2(h.value / h.shares), d: inv.p.period, v: h.value };
+    }
+  }
+  for (const o of Object.values(stocks)) if (o.px) delete o.px.v;
+
   // Drop empty trade lists to keep the file small.
   for (const o of Object.values(stocks)) {
     if (!o.cg.length) delete o.cg;
@@ -133,6 +159,18 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
   const events = buildEvents(d, { now });
   const recentEvents = events.filter((e) => daysAgo(e.at, now) <= RECENT_EVENT_DAYS);
   return { ownership, index, events, recentEvents };
+}
+
+/** % change in shares across every share class of one company (GOOG + GOOGL), rounded. */
+function shareChange(inv, issuer) {
+  let now = 0, before = 0;
+  for (const h of inv.p.holdings) {
+    if (h.issuer !== issuer || h.putCall || h.shType === 'PRN') continue;
+    now += h.shares || 0;
+    before += h.prevShares ?? h.shares ?? 0;
+  }
+  for (const h of inv.p.sold || []) if (h.issuer === issuer && !h.putCall && h.shType !== 'PRN') before += h.prevShares || 0;
+  return before ? Math.round(((now - before) / before) * 100) : null;
 }
 
 function rangeLabel(lo, hi) {

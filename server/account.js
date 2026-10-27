@@ -2,11 +2,12 @@
 import { isPro, limitFor, prefsOf } from './pro.js';
 
 export async function accountView(DB, user) {
-  const { results = [] } = await DB.prepare(`SELECT ticker, input, added_at FROM watchlist WHERE user_id = ? ORDER BY added_at, ticker`).bind(user.id).all();
+  const { results = [] } = await DB.prepare(`SELECT ticker, input, added_at, shares, amount FROM watchlist WHERE user_id = ? ORDER BY added_at, ticker`).bind(user.id).all();
   const limit = limitFor(user);
   return {
     signedIn: true,
     email: user.email,
+    name: user.name || null,
     pro: isPro(user),
     status: user.sub_status || null,
     plan: user.sub_plan || null,
@@ -17,6 +18,6 @@ export async function accountView(DB, user) {
     limit,
     prefs: prefsOf(user),
     // Stocks beyond the plan's limit (after a Pro plan ends) are kept but paused, oldest first stay active.
-    watchlist: results.map((r, i) => ({ ticker: r.ticker, input: r.input, addedAt: r.added_at, active: i < limit })),
+    watchlist: results.map((r, i) => ({ ticker: r.ticker, input: r.input, addedAt: r.added_at, shares: r.shares ?? null, amount: r.amount ?? null, active: i < limit })),
   };
 }

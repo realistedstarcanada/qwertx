@@ -1,5 +1,8 @@
-// POST   /api/watchlist { tickers: ["AAPL", "RY.TO", ...] } — add stocks (typed or from a CSV)
-// DELETE /api/watchlist?ticker=AAPL                         — remove one stock
+// POST   /api/watchlist { tickers: ["AAPL", "RY.TO", ...] }               — add stocks (typed)
+//        /api/watchlist { items: [{ ticker, shares?, amount? }, ...] }     — add stocks with sizes (CSV)
+// PATCH  /api/watchlist { ticker, shares?, amount? }                       — set or clear a position size
+// DELETE /api/watchlist?ticker=AAPL                                       — remove one stock
+// A position size is optional and is either a number of shares or a dollar amount, never both.
 // Both return the updated account view plus, for adds, what happened to each input.
 import { db } from '../../server/db.js';
 import { currentUser } from '../../server/auth.js';
@@ -17,8 +20,11 @@ async function signedIn(request, env) {
 export const onRequestPost = route(async ({ request, env }) => {
   const user = await signedIn(request, env);
   const body = await readBody(request);
-  const raw = Array.isArray(body.tickers) ? body.tickers : String(body.tickers || body.ticker || '').split(/[\s,;]+/);
-  const inputs = [...new Set(raw.map((x) => String(x).trim()).filter(Boolean))].slice(0, 100);
+  const items = Array.isArray(body.items)
+    ? body.items.map((x) => ({ input: String(x.ticker || '').trim(), ...size(x) }))
+    : (Array.isArray(body.tickers) ? body.tickers : String(body.tickers || body.ticker || '').split(/[\s,;]+/)).map((x) => ({ input: String(x).trim() }));
+  const sizes = new Map(items.filter((x) => x.input).map((x) => [x.input, x]));
+  const inputs = [...sizes.keys()].slice(0, 100);
   if (!inputs.length) throw fail(422, 'Type at least one ticker, for example AAPL.');
 
   const DB = await db(env);
@@ -36,15 +42,38 @@ export const onRequestPost = route(async ({ request, env }) => {
     if (owned.has(n.ticker)) { results.push({ input, ticker: n.ticker, status: 'duplicate' }); continue; }
     if (owned.size >= limit) { results.push({ input, ticker: n.ticker, status: 'limit' }); continue; }
     owned.add(n.ticker);
-    add.push(n);
+    add.push({ ...n, ...sizes.get(input) });
     results.push({ input, ticker: n.ticker, status: n.from ? 'mapped' : 'added' });
   }
   if (add.length) {
     const now = nowIso();
-    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at) VALUES (?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString())));
+    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at, shares, amount) VALUES (?, ?, ?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString(), n.shares ?? null, n.amount ?? null)));
   }
   return json({ ok: true, results, ...(await accountView(DB, user)) });
 });
+
+export const onRequestPatch = route(async ({ request, env }) => {
+  const user = await signedIn(request, env);
+  const body = await readBody(request);
+  const ticker = String(body.ticker || '').toUpperCase();
+  const DB = await db(env);
+  const sz = size(body);
+  const res = await DB.prepare(`UPDATE watchlist SET shares = ?, amount = ? WHERE user_id = ? AND ticker = ?`).bind(sz.shares ?? null, sz.amount ?? null, user.id, ticker).run();
+  if (!res.meta?.changes) throw fail(404, 'That stock is not on your list.');
+  return json({ ok: true, ...(await accountView(DB, user)) });
+});
+
+/** Optional position size: shares wins if both are given; anything not a sensible positive number is dropped. */
+export function size(x) {
+  const num = (v) => {
+    const n = Number(String(v ?? '').replace(/[$,\s]/g, ''));
+    return Number.isFinite(n) && n > 0 && n < 1e12 ? Math.round(n * 10000) / 10000 : null;
+  };
+  const shares = num(x.shares);
+  if (shares) return { shares, amount: null };
+  const amount = num(x.amount);
+  return amount ? { shares: null, amount: Math.round(amount * 100) / 100 } : {};
+}
 
 export const onRequestDelete = route(async ({ request, env }) => {
   const user = await signedIn(request, env);

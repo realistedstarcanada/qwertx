@@ -1,6 +1,7 @@
 // D1 schema for QWERTx Pro. Tables are created on first use, so binding an empty D1 database as DB is
 // the only setup. The same statements live in server/schema.sql for anyone who prefers migrations.
-// Privacy: a watchlist is only ticker symbols. No share counts, cost basis or brokerage details are stored.
+// Privacy: a watchlist is ticker symbols plus an optional position size the member types in (shares or a
+// dollar amount). No account numbers, cost basis or brokerage logins are ever stored.
 
 const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS users (
@@ -30,14 +31,29 @@ const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS stripe_events (id TEXT PRIMARY KEY, type TEXT, received_at TEXT NOT NULL)`,
 ];
 
+// Columns added after the first release. ALTER TABLE fails harmlessly when the column already exists.
+const ADDED_COLUMNS = [
+  `ALTER TABLE users ADD COLUMN name TEXT`,
+  // Optional position size: either a number of shares or a dollar amount, whichever the member entered.
+  `ALTER TABLE watchlist ADD COLUMN shares REAL`,
+  `ALTER TABLE watchlist ADD COLUMN amount REAL`,
+];
+
 let ready = false;
 export async function db(env) {
   if (!env.DB) throw Object.assign(new Error('Database not configured'), { status: 503 });
   if (!ready) {
     await env.DB.batch(SCHEMA.map((s) => env.DB.prepare(s)));
+    for (const sql of ADDED_COLUMNS) {
+      try {
+        await env.DB.prepare(sql).run();
+      } catch (e) {
+        if (!/duplicate column/i.test(String(e.message || e))) throw e;
+      }
+    }
     ready = true;
   }
   return env.DB;
 }
 
-export const SCHEMA_SQL = SCHEMA.map((s) => s + ';').join('\n');
+export const SCHEMA_SQL = [...SCHEMA, ...ADDED_COLUMNS].map((s) => s + ';').join('\n');

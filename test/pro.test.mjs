@@ -189,6 +189,35 @@ test('Pro watchlist goes past 3 and keeps settings', async () => {
   assert.deepEqual(r.json.prefs.managers, ['warren-buffett']);
 });
 
+test('optional position sizes and a display name', async () => {
+  let r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'AAPL', amount: '$10,000' } });
+  assert.equal(r.status, 200, r.text);
+  assert.deepEqual(r.json.watchlist.find((w) => w.ticker === 'AAPL'), { ...r.json.watchlist.find((w) => w.ticker === 'AAPL'), amount: 10000, shares: null });
+  r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'AAPL', shares: '12.5', amount: 5 } });
+  const aapl = r.json.watchlist.find((w) => w.ticker === 'AAPL');
+  assert.equal(aapl.shares, 12.5, 'shares win when both are sent');
+  assert.equal(aapl.amount, null);
+  r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'AAPL', shares: '-3' } });
+  assert.equal(r.json.watchlist.find((w) => w.ticker === 'AAPL').shares, null, 'nonsense clears the size');
+  r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'ZZZZ', shares: 1 } });
+  assert.equal(r.status, 404);
+  r = await web.req('POST', '/api/watchlist', { body: { items: [{ ticker: 'GOOG', amount: '8,000' }, { ticker: 'AMZN', shares: 10 }] } });
+  assert.equal(r.json.watchlist.find((w) => w.ticker === 'GOOG').amount, 8000);
+  assert.equal(r.json.watchlist.find((w) => w.ticker === 'AMZN').shares, 10);
+  r = await web.req('POST', '/api/prefs', { body: { name: '  Harman <b>Gill</b> ' } });
+  assert.equal(r.json.name, 'Harman bGill/b');
+  await web.req('DELETE', '/api/watchlist?ticker=GOOG');
+  await web.req('DELETE', '/api/watchlist?ticker=AMZN');
+});
+
+test('other share classes show the same company owners', () => {
+  const goog = JSON.parse(fs.readFileSync('dist/pro/t/GOOG.json', 'utf8'));
+  const googl = JSON.parse(fs.readFileSync('dist/pro/t/GOOGL.json', 'utf8'));
+  assert.equal(goog.h.length, googl.h.length);
+  assert.equal(goog.co, 'GOOGL');
+  assert.ok(googl.px.p > 0, 'quarter-end price for valuing share counts');
+});
+
 test('alerts: baseline first, then only fresh events, emailed once', async () => {
   assert.equal((await handle(new Request('https://qwertx.test/api/internal/dispatch', { method: 'POST' }), env)).status, 401);
   const base = await cron('/api/internal/dispatch');

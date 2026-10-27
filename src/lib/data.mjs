@@ -202,7 +202,15 @@ export function loadData({ root, dataDir, configPath }) {
       if (!stocks.has(k)) stocks.set(k, { issuer: k, classes: new Map(), holders: [], sellers: [], value: 0 });
       const s = stocks.get(k);
       for (const h of x.lines) s.classes.set(h.ticker || h.cusip, (s.classes.get(h.ticker || h.cusip) || 0) + h.value);
-      const act = x.acts.has('New') ? 'New' : x.acts.has('Add') ? 'Add' : x.acts.has('Trim') ? 'Trim' : 'Hold';
+      // Net across share classes: adding GOOG while trimming more GOOGL is a trim, not an add.
+      let act;
+      if (x.lines.every((l) => l.act === 'New')) act = 'New';
+      else if (x.acts.size === 1) act = [...x.acts][0];
+      else {
+        const before = x.lines.reduce((a, l) => a + (l.act === 'New' ? 0 : l.prevShares ?? l.shares), 0);
+        const net = x.lines.reduce((a, l) => a + l.shares, 0) - before;
+        act = net > 0 ? 'Add' : net < 0 ? 'Trim' : 'Hold';
+      }
       s.holders.push({ inv, w: x.w, value: x.value, shares: x.shares, act, line: x.lines[0] });
       s.value += x.value;
       if (!s.sample || x.value > s.sampleValue) {

@@ -579,3 +579,12 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 .mt-auto { margin-top: auto; }
 .mb-24 { margin-bottom: 24px; }
 .tier .btn[aria-disabled="true"] { opacity: .55; pointer-events: none; }
+.wl-name { color: var(--text); margin-left: 8px; }
+.wl-pos { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; padding: 10px 12px; border: 1px dashed var(--line-2); border-radius: 10px; font-size: 14px; color: var(--text-2); }
+.wl-pos-v .k { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.wl-pos-v b { color: var(--text); }
+.wl-pos-form { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; width: 100%; }
+.wl-pos-form[hidden] { display: none; }
+.wl-pos-form .input { width: 130px; }
+.wl-compare { margin: 0; font-size: 14px; color: var(--text-2); }
+.wl-compare b { color: var(--text); }

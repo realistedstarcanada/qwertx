@@ -82,7 +82,7 @@
       '<li><b>See the smart money instantly.</b> Which of the ' + Object.keys((S.index && S.index.managers) || {}).length + ' tracked fund managers own them, who just bought or sold, and what politicians and insiders disclosed.</li>' +
       '<li><b>Get told when it changes.</b> An email the day a new filing touches your stocks, with the filing date and a link to the source.</li>' +
       '</ol>' +
-      '<p class="form-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> We store ticker symbols only: no share counts, no account numbers, no brokerage login. Delete everything with one click.</p>' +
+      '<p class="form-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> Position sizes are optional. We never ask for account numbers or a brokerage login. Delete everything with one click.</p>' +
       '</div></div></div>';
     var form = document.getElementById('wl-login');
     if (!form) { var d = root.querySelector('.wl-done'); if (d) d.focus(); return; }
@@ -117,9 +117,10 @@
 
   // ---------- signed in ----------
   function addTickers(list) {
-    list = list.map(function (x) { return String(x).trim(); }).filter(Boolean);
+    // list: tickers, or { ticker, shares?, amount? } objects from a CSV
+    list = list.map(function (x) { return typeof x === 'object' ? x : { ticker: String(x).trim() }; }).filter(function (x) { return x.ticker; });
     if (!list.length) return Promise.resolve();
-    return api('POST', '/api/watchlist', { tickers: list }).then(function (j) {
+    return api('POST', '/api/watchlist', { items: list }).then(function (j) {
       if (!j.ok) { S.results = [{ status: 'error', input: j.message }]; return render(); }
       S.me = Object.assign(S.me, j);
       S.results = j.results;
@@ -133,7 +134,7 @@
     var wl = me.watchlist || [];
     var planLabel = pro ? (me.founding ? 'Pro · Founding member' : 'Pro') : 'Free';
     var html = '';
-    html += '<div class="wl-bar"><div><span class="wl-plan' + (pro ? ' pro' : '') + '">' + esc(planLabel) + '</span> <span class="wl-email">' + esc(me.email) + '</span></div>' +
+    html += '<div class="wl-bar"><div><span class="wl-plan' + (pro ? ' pro' : '') + '">' + esc(planLabel) + '</span>' + (me.name ? ' <b class="wl-name">' + esc(me.name) + '</b>' : '') + ' <span class="wl-email">' + esc(me.email) + '</span></div>' +
       '<nav class="wl-links" aria-label="Account"><a href="#alerts">Alert settings</a><a href="#membership">Membership</a><button type="button" class="linklike" data-act="logout">Sign out</button></nav></div>';
     if (S.notice) html += '<div class="wl-notice ' + S.notice.tone + '">' + S.notice.html + '</div>';
 
@@ -142,7 +143,7 @@
     html += '<div class="card wl-add"><div class="wl-add-head"><h2>Add your stocks</h2><span class="form-note">' + used + ' of ' + limit + ' used' + (pro ? '' : ' · <a href="#membership">Pro watches 50</a>') + '</span></div>' +
       '<form id="wl-add-form" class="wl-add-form"><label class="sr-only" for="wl-input">Tickers</label><input class="input" id="wl-input" name="tickers" placeholder="AAPL, MSFT, RY.TO" autocomplete="off" autocapitalize="characters" spellcheck="false"' + (used >= limit ? ' disabled' : '') + '>' +
       '<button class="btn btn-gold" type="submit"' + (used >= limit ? ' disabled' : '') + '>Add</button></form>' +
-      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (we read the Symbol or Ticker column) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
+      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (we read the Symbol or Ticker column, plus Shares or Amount if present) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
       resultsHtml() + '</div>';
 
     if (!wl.length) {
@@ -177,6 +178,20 @@
     }).join('') + '</ul>';
   }
 
+  // ---------- positions (optional: dollar amount, or shares valued at the latest quarter-end price) ----------
+  function posValue(w) {
+    if (w.amount) return { v: w.amount, exact: true };
+    var d = S.data[w.ticker];
+    if (w.shares && d && d.px) return { v: w.shares * d.px.p, exact: false, px: d.px };
+    return null;
+  }
+  function portfolio() {
+    var total = 0, sized = 0;
+    (S.me.watchlist || []).forEach(function (w) { var pv = posValue(w); if (pv) { total += pv.v; sized++; } });
+    return { total: total, sized: sized };
+  }
+  function usd(v) { return '$' + Math.round(v).toLocaleString('en-US'); }
+
   function summaryHtml(wl, pro) {
     var owned = 0, managers = {}, bought = 0, trimmed = 0, exited = 0, cg = 0;
     wl.forEach(function (w) {
@@ -189,9 +204,14 @@
     });
     var nm = Object.keys(managers).length;
     var lead = nm ? '<b>' + plural(nm, 'smart-money investor') + ' own' + (nm === 1 ? 's' : '') + ' your stocks.</b>' : '<b>None of the tracked fund managers own your stocks right now.</b>';
-    return '<p class="wl-lead">' + lead + ' Last quarter they bought ' + plural(bought, 'time') + ', trimmed ' + plural(trimmed, 'time') + ' and sold out ' + plural(exited, 'time') + '.</p>' +
+    var pf = portfolio();
+    // Share of the member's own money that sits in stocks smart money also owns.
+    var inSmart = 0;
+    wl.forEach(function (w) { var pv = posValue(w), d = S.data[w.ticker]; if (pv && d && d.h && d.h.length) inSmart += pv.v; });
+    return '<p class="wl-lead">' + lead + ' Last quarter they bought ' + plural(bought, 'time') + ', trimmed ' + plural(trimmed, 'time') + ' and sold out ' + plural(exited, 'time') + '.' +
+      (pf.total ? ' <b>' + Math.round(inSmart / pf.total * 100) + '% of your money</b> is in stocks at least one tracked manager also owns.' : '') + '</p>' +
       '<div class="kpis">' +
-      kpi('Stocks watched', wl.length, 'of ' + S.me.limit + ' on your plan') +
+      (pf.total ? kpi('Your portfolio', '≈ ' + usd(pf.total), plural(pf.sized, 'position') + ' with a size entered') : kpi('Stocks watched', wl.length, 'of ' + S.me.limit + ' on your plan')) +
       kpi('Owned by smart money', owned + ' / ' + wl.length, 'held by a tracked fund manager') +
       kpi('Investors involved', nm, 'of ' + (S.index.managerOrder || []).length + ' tracked managers') +
       kpi('Politician trades', cg, 'disclosed in the last 6 months') +
@@ -240,10 +260,17 @@
       (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') +
       (w.active ? '' : ' <span class="tag tag-gold" title="Over your plan’s limit">Paused</span>') +
       '</div><button class="icon-btn wl-remove" type="button" data-remove="' + esc(t) + '" aria-label="Remove ' + esc(t) + '"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></header>';
+    var pos = posHtml(w);
     if (!d) {
-      return '<article class="card wl-card">' + head + '<p class="wl-story muted">No tracked fund manager, politician or insider has disclosed a trade in ' + esc(t) + ' recently. We’ll email you if that changes.</p></article>';
+      return '<article class="card wl-card">' + head + pos + '<p class="wl-story muted">No tracked fund manager, politician or insider has disclosed a trade in ' + esc(t) + ' recently. We’ll email you if that changes.</p></article>';
     }
-    var body = '';
+    var body = pos;
+    var mine = posValue(w), pf = portfolio();
+    if (mine && pf.total && d.h && d.h.length) {
+      var avg = d.h.reduce(function (a, x) { return a + x[1]; }, 0) / d.h.length;
+      var yours = mine.v / pf.total * 100;
+      body += '<p class="wl-compare">It’s <b>' + yours.toFixed(1) + '%</b> of your portfolio. The ' + plural(d.h.length, 'manager') + ' who own it hold it at <b>' + avg.toFixed(1) + '%</b> of theirs on average' + (yours > avg * 2 ? ', so it’s a much bigger bet for you than for them.' : yours < avg / 2 ? ', a bigger bet than yours.' : '.') + '</p>';
+    }
     var st = story(t, d);
     if (st) body += '<p class="wl-story">' + esc(st) + '</p>';
     body += agreeBar(d);
@@ -289,6 +316,24 @@
       body += '<p class="form-note wl-lag"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i> Fund holdings as of ' + fmtDate(period) + ', from 13F filings made by ' + fmtDate(last) + '. Managers have 45 days after each quarter to file, so these show where they stood, not what they hold today.</p>';
     }
     return '<article class="card wl-card' + (w.active ? '' : ' paused') + '">' + head + body + '</article>';
+  }
+
+  function posHtml(w) {
+    var pv = posValue(w), pf = portfolio(), t = esc(w.ticker);
+    var view = pv
+      ? '<span class="wl-pos-v"><span class="k">Your position</span> <b>' + (w.amount ? usd(w.amount) : w.shares.toLocaleString('en-US') + ' shares') + '</b>' +
+        (w.amount ? '' : ' <span class="form-note">≈ ' + usd(pv.v) + ' at the ' + fmtShort(pv.px.d) + ' quarter-end price</span>') +
+        (pf.total ? ' · ' + (pv.v / pf.total * 100).toFixed(1) + '% of your portfolio' : '') + '</span>'
+      : w.shares
+        ? '<span class="wl-pos-v"><span class="k">Your position</span> <b>' + w.shares.toLocaleString('en-US') + ' shares</b> <span class="form-note">(no recent price to value them)</span></span>'
+        : '<span class="wl-pos-v form-note">Add how much you own (optional) to see your weights.</span>';
+    var unit = w.shares ? 'shares' : 'amount';
+    var val = w.shares || w.amount || '';
+    return '<div class="wl-pos">' + view + ' <button type="button" class="linklike" data-edit="' + t + '">' + (w.shares || w.amount ? 'Edit' : 'Add') + '</button>' +
+      '<form class="wl-pos-form" data-pos="' + t + '" hidden><label class="sr-only" for="pos-' + t + '">Position size for ' + t + '</label>' +
+      '<input class="input input-sm" id="pos-' + t + '" name="n" inputmode="decimal" placeholder="10,000" value="' + esc(val) + '">' +
+      '<select class="input input-sm" name="unit" aria-label="Unit"><option value="amount"' + (unit === 'amount' ? ' selected' : '') + '>US$ amount</option><option value="shares"' + (unit === 'shares' ? ' selected' : '') + '>shares</option></select>' +
+      '<button class="btn btn-sm btn-gold" type="submit">Save</button>' + (w.shares || w.amount ? '<button class="linklike" type="button" data-clear="' + t + '">Remove size</button>' : '') + '</form></div>';
   }
 
   // ---------- alerts ----------
@@ -373,6 +418,18 @@
         addTickers(t);
       });
     });
+    root.querySelectorAll('[data-edit]').forEach(function (b) {
+      b.addEventListener('click', function () { var f = root.querySelector('form[data-pos="' + b.getAttribute('data-edit') + '"]'); f.hidden = !f.hidden; if (!f.hidden) f.n.focus(); });
+    });
+    root.querySelectorAll('form[data-pos]').forEach(function (f) {
+      f.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var body = { ticker: f.getAttribute('data-pos') };
+        body[f.unit.value] = f.n.value;
+        savePos(body);
+      });
+    });
+    root.querySelectorAll('[data-clear]').forEach(function (b) { b.addEventListener('click', function () { savePos({ ticker: b.getAttribute('data-clear') }); }); });
     root.querySelectorAll('[data-add]').forEach(function (b) { b.addEventListener('click', function () { addTickers([b.getAttribute('data-add')]); }); });
     root.querySelectorAll('[data-remove]').forEach(function (b) {
       b.addEventListener('click', function () {
@@ -413,6 +470,10 @@
     });
   }
 
+  function savePos(body) {
+    api('PATCH', '/api/watchlist', body).then(function (j) { if (j.ok) { S.me = Object.assign(S.me, j); S.results = null; render(); } else alert(j.message); });
+  }
+
   function savePrefs(form, extra, quiet) {
     var g = function (n) { return form.elements[n]; };
     var body = {
@@ -442,13 +503,25 @@
     var delim = [',', ';', '\t'].sort(function (a, b) { return lines[0].split(b).length - lines[0].split(a).length; })[0];
     var split = function (l) { var out = [], cur = '', q = false; for (var i = 0; i < l.length; i++) { var c = l[i]; if (c === '"') q = !q; else if (c === delim && !q) { out.push(cur); cur = ''; } else cur += c; } out.push(cur); return out.map(function (x) { return x.trim(); }); };
     var rows = lines.map(split);
-    var hi = -1, col = 0;
+    var hi = -1, col = 0, qcol = -1, acol = -1;
     for (var r = 0; r < Math.min(rows.length, 15) && hi < 0; r++) {
       for (var c = 0; c < rows[r].length; c++) if (/^(symbol|ticker|ticker symbol|security symbol|stock symbol|code)$/i.test(rows[r][c])) { hi = r; col = c; break; }
     }
+    if (hi >= 0) rows[hi].forEach(function (h, c) {
+      if (qcol < 0 && /^(shares|quantity|qty|units|number of shares)$/i.test(h)) qcol = c;
+      if (acol < 0 && /^(amount|market value|value|total value|position value)( \((us\$|usd)\))?$/i.test(h)) acol = c;
+    });
     var data = hi >= 0 ? rows.slice(hi + 1) : rows;
-    var out = [];
-    data.forEach(function (row) { var v = (row[col] || '').trim(); if (/^[A-Za-z$][A-Za-z0-9.\-:\/ ]{0,15}$/.test(v) && out.indexOf(v.toUpperCase()) < 0) out.push(v.toUpperCase()); });
+    var out = [], seen = {};
+    data.forEach(function (row) {
+      var v = (row[col] || '').trim().toUpperCase();
+      if (!/^[A-Z$][A-Z0-9.\-:\/ ]{0,15}$/.test(v) || seen[v]) return;
+      seen[v] = 1;
+      var item = { ticker: v };
+      if (qcol >= 0 && row[qcol]) item.shares = row[qcol];
+      else if (acol >= 0 && row[acol]) item.amount = row[acol];
+      out.push(item);
+    });
     return out.slice(0, 100);
   }
 })();
