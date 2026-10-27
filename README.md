@@ -36,11 +36,47 @@ Every data commit triggers a Cloudflare rebuild (`npm run build` → `dist/`).
 Framework preset *None* · build command `npm run build` · output directory `dist`.
 Optional env var `CF_ANALYTICS_TOKEN` for Cloudflare Web Analytics.
 
+## QWERTx Pro ("Your stocks, watched for you")
+
+Members sign in with an emailed link at `/account.html`, add tickers (free: 3, Pro: 50), and see which tracked
+managers own them, who bought or sold, and what politicians and insiders disclosed. New filings become email
+alerts; everyone with a watchlist gets a Friday digest.
+
+| Piece | Where |
+|---|---|
+| Ownership + alert data (built with the site) | `src/lib/pro-data.mjs` → `dist/pro/t/<TICKER>.json`, `index.json`, `events-recent.json` |
+| Accounts, watchlist, settings, billing | `functions/api/{auth/*,me,watchlist,prefs,account,checkout,billing-portal,stripe-webhook,unsubscribe}.js` |
+| Alerts and digests | `functions/api/internal/{dispatch,digest}.js`, called by `.github/workflows/pro-alerts.yml` |
+| Shared server code | `server/` (D1 schema in `server/schema.sql`, created automatically) |
+| Dashboard page | `src/pages/account.mjs` + `src/assets/qx-pro.js` |
+| Plans and prices | `config/pro.json` (prices are created in Stripe from `amount` + `lookupKey`) |
+| Toronto → New York tickers | `config/ticker-aliases.json` |
+
+### Setup checklist
+
+Cloudflare Pages → Settings → (Production and Preview):
+- **D1 binding** `DB` → any empty D1 database (tables create themselves).
+- **Secrets:** `STRIPE_SECRET_KEY` (test key first), `STRIPE_WEBHOOK_SECRET`, `RESEND_API_KEY`, `CRON_SECRET` (any long random string).
+- **Variables:** `MAIL_FROM` = `QWERTx <alerts@qwertx.com>` (domain verified in Resend), `SITE_URL` = `https://qwertx.com`
+  (or the pages.dev URL until the domain points here), optional `MAIL_POSTAL_ADDRESS` (CASL wants a mailing address in emails),
+  optional `MAIL_REPLY_TO`.
+
+Stripe (test mode first, then again in live mode):
+- Developers → Webhooks → add `https://<site>/api/stripe-webhook` with `checkout.session.completed`,
+  `customer.subscription.created`, `customer.subscription.updated`, `customer.subscription.deleted`.
+- Settings → Billing → Customer portal → Save (needed for “Manage billing”).
+
+GitHub → repo secrets: `PRO_SITE_URL` (same as `SITE_URL`) and `CRON_SECRET` (same value as Cloudflare).
+
+Testing checkout before launch: `/account.html?checkout=test` or `/pro.html?checkout=test` show the buy buttons
+while `checkoutOpen` is `false`. Card 4242 4242 4242 4242. Going live: switch to live Stripe keys, set
+`"mode": "live"` and `"checkoutOpen": true` in `config/pro.json`.
+
 ## Local
 
 ```bash
 npm run dev    # build + preview at http://localhost:4321
-npm test       # parser and formatting tests
+npm test       # parsers, formatting and the full Pro flow (fake Stripe and email, SQLite in place of D1)
 ```
 
 ## Data notes

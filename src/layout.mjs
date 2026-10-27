@@ -44,7 +44,7 @@ function tapeFallback(m) {
   return parts.join('');
 }
 
-export function layout({ site, d, page, title, description, path, body, jsonLd, noindex, charts }) {
+export function layout({ site, d, page, title, description, path, body, jsonLd, noindex, charts, pro }) {
   const fullTitle = path === '/' ? `${site.name} | Super Investor Portfolios, 13F Tracker and Market Mood` : `${title} | ${site.name}`;
   const canonical = site.url + (path === '/' ? '/' : path.replace(/\.html$/, '').replace(/\/index$/, '/'));
   const og = `${site.url}/assets/img/og-image.jpg`;
@@ -98,12 +98,12 @@ ${JSON.stringify({ symbols: TAPE_SYMBOLS.map(([proName, t]) => ({ proName, title
     <nav class="nav" aria-label="Main">${NAV.map(([h, l, k]) => `<a href="${h}"${k === page ? ' aria-current="page"' : ''}>${l}</a>`).join('')}</nav>
     <div class="header-actions">
       <button class="icon-btn" type="button" data-theme-toggle aria-label="Switch to light mode"><i class="fa-solid fa-sun" aria-hidden="true"></i></button>
-      <a class="btn btn-gold btn-sm" href="/pro.html#waitlist">Pro early access</a>
+      <a class="btn btn-gold btn-sm" href="/account.html"><i class="fa-solid fa-binoculars" aria-hidden="true"></i> My stocks</a>
       <button class="icon-btn menu-toggle" type="button" aria-controls="mobile-nav" aria-expanded="false" aria-label="Open menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
     </div>
   </div>
 </header>
-<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">${MOBILE.map(([h, l], i) => `<a class="m-link" href="${h}">${l}<span>${String(i + 1).padStart(2, '0')}</span></a>`).join('')}<a class="btn btn-gold" href="/pro.html#waitlist">Join the Pro waitlist</a></nav>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile">${MOBILE.map(([h, l], i) => `<a class="m-link" href="${h}">${l}<span>${String(i + 1).padStart(2, '0')}</span></a>`).join('')}<a class="btn btn-gold" href="/account.html">Watch my stocks</a></nav>
 <main id="main">
 ${body}
 </main>
@@ -159,7 +159,7 @@ ${body}
 </footer>
 ${charts ? '<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js" defer></script>\n<script src="' + site.assets.charts + '" defer></script>' : ''}
 <script src="${site.assets.main}"></script>
-<script src="${site.assets.live}" defer></script>
+<script src="${site.assets.live}" defer></script>${pro ? `\n<script src="${site.assets.pro}" defer></script>` : ''}
 </body>
 </html>`;
 }

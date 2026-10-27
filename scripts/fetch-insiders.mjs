@@ -153,6 +153,38 @@ export function summarize(dir, quarter) {
     });
   };
 
+  // QWERTx Pro alert rule: 3+ distinct officers or directors (not 10% owners) buying on the open market
+  // within any 30-day window. Grants and option exercises never reach here (codes P and S only).
+  const clusters30 = (() => {
+    const by = new Map();
+    for (const t of buys.filter(isExec)) {
+      if (!t.ticker || !t.date) continue;
+      if (!by.has(t.ticker)) by.set(t.ticker, []);
+      by.get(t.ticker).push(t);
+    }
+    const out = [];
+    for (const [ticker, list] of by) {
+      list.sort((a, b) => a.date.localeCompare(b.date));
+      let best = null;
+      for (let i = 0; i < list.length; i++) {
+        const end = Date.parse(list[i].date) + 30 * 864e5;
+        const win = list.filter((t, j) => j >= i && Date.parse(t.date) <= end);
+        const who = new Set(win.map((t) => t.ownerCik || t.owner));
+        if (who.size >= 3 && (!best || who.size > best.insiders)) {
+          best = {
+            ticker, company: list[i].company, insiders: who.size, trades: win.length,
+            value: Math.round(win.reduce((a, t) => a + t.value, 0)),
+            start: win[0].date, end: win.at(-1).date,
+            filed: win.map((t) => t.filed).filter(Boolean).sort().at(-1) || null,
+            issuerCik: list[i].issuerCik || null,
+          };
+        }
+      }
+      if (best) out.push(best);
+    }
+    return out.sort((a, b) => b.insiders - a.insiders || b.value - a.value);
+  })();
+
   const monthly = {};
   for (const t of trades) {
     const k = (t.date || '').slice(0, 7);
@@ -180,6 +212,7 @@ export function summarize(dir, quarter) {
     topExecBuys: uniq(buys.filter(isExec).sort((a, b) => b.value - a.value)).slice(0, 40).map(slim),
     topExecSells: uniq(sells.filter(isExec).sort((a, b) => b.value - a.value)).slice(0, 40).map(slim),
     topSells: uniq(sells.sort((a, b) => b.value - a.value)).slice(0, 40).map(slim),
+    clusters30,
     clusterBuys: byCompany(buys.filter(isExec)).filter((c) => c.insiders >= 3).sort((a, b) => b.insiders - a.insiders || b.value - a.value).slice(0, 30),
     topBuyCompanies: buyCos.sort((a, b) => b.value - a.value).slice(0, 30),
     topSellCompanies: sellCos.sort((a, b) => b.value - a.value).slice(0, 30),

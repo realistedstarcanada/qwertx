@@ -1,0 +1,48 @@
+name: Pro alerts and digests
+
+# Pokes the site's own alert endpoints on a schedule. The work happens on Cloudflare; this only knocks.
+# Needs repo secrets PRO_SITE_URL (e.g. https://qwertx.com) and CRON_SECRET (same value as in Cloudflare).
+# Until both exist the jobs exit quietly.
+
+on:
+  schedule:
+    - cron: '17 * * * *'       # hourly: new disclosures -> instant alerts
+    - cron: '41 11 * * *'      # daily 07:41 Toronto (EDT): daily summaries
+    - cron: '41 21 * * 5'      # Fridays 17:41 Toronto (EDT): weekly digest
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'Which job to run'
+        type: choice
+        options: [dispatch, daily, weekly]
+        default: dispatch
+
+concurrency:
+  group: pro-alerts
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SITE: ${{ secrets.PRO_SITE_URL }}
+      CRON_SECRET: ${{ secrets.CRON_SECRET }}
+      JOB: ${{ inputs.job || (github.event.schedule == '41 11 * * *' && 'daily') || (github.event.schedule == '41 21 * * 5' && 'weekly') || 'dispatch' }}
+    steps:
+      - name: Call the site
+        run: |
+          if [ -z "$SITE" ] || [ -z "$CRON_SECRET" ]; then echo "PRO_SITE_URL or CRON_SECRET not set; skipping"; exit 0; fi
+          call() { curl -sS --fail-with-body -X POST -H "Authorization: Bearer $CRON_SECRET" "$SITE$1"; echo; }
+          case "$JOB" in
+            dispatch) call /api/internal/dispatch ;;
+            daily)    call "/api/internal/digest?kind=daily" ;;
+            weekly)
+              after=0
+              for i in $(seq 1 200); do
+                out=$(call "/api/internal/digest?kind=weekly&after=$after") || { echo "$out"; exit 1; }
+                echo "$out"
+                after=$(echo "$out" | jq -r '.next // empty')
+                [ -z "$after" ] && break
+              done ;;
+          esac

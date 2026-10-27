@@ -173,15 +173,22 @@ export const proCta = `<section class="section">
   <div class="container">
     <div class="cta-band row row-wide center reveal">
       <div class="col-7">
-        <div class="eyebrow">Launching soon · QWERTx Pro</div>
-        <h2>Know when smart money moves your stocks.</h2>
-        <p class="lead">QWERTx Pro alerts you when super investors, politicians or insiders trade the stocks on your watchlist, scores every stock on smart money activity and sends you a five-minute Friday brief. Get early access and the founding-member offer.</p>
-        <div class="btn-row mt-32"><a class="btn btn-gold" href="/pro.html#waitlist">Get early access <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="/pro.html">See what Pro includes</a></div>
+        <div class="eyebrow">Your stocks, watched for you</div>
+        <h2>Add your stocks and see who owns what you own.</h2>
+        <p class="lead">Type the tickers you own. In seconds you’ll see which tracked fund managers hold them, who just bought or sold, and what politicians and insiders disclosed. Free for 3 stocks; QWERTx Pro watches 50 and emails you the day a filing lands.</p>
+        <form class="cta-watch" action="/account.html" method="get"><label class="sr-only" for="cta-add">Tickers you own</label><input class="input" id="cta-add" name="add" placeholder="AAPL, MSFT, RY.TO" autocomplete="off" autocapitalize="characters" spellcheck="false"><button class="btn btn-gold" type="submit">See who owns them <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></form>
+        <p class="form-note" style="margin-top:12px"><a href="/pro.html">What QWERTx Pro adds</a> · Founding offer: US$99/year for the first 500 members</p>
       </div>
       <div class="col-5"><img src="/assets/img/pro-hero-sm.jpg" alt="Glass panels of rising height lit in gold and teal" width="800" height="450" loading="lazy" style="border-radius:16px;border:1px solid var(--line)"></div>
     </div>
   </div>
 </section>`;
+
+/** "Own AAPL? Watch it" strip for stock pages. */
+export const watchStrip = (ticker) =>
+  ticker
+    ? `<div class="watch-strip"><p><b style="color:var(--text)">Own ${esc(ticker)}?</b> Watch it and get an email when a fund manager, politician or insider discloses a trade.</p><a class="btn btn-gold btn-sm" href="/account.html?add=${encodeURIComponent(ticker)}"><i class="fa-solid fa-binoculars" aria-hidden="true"></i> Watch ${esc(ticker)}</a></div>`
+    : '';
 
 export const pageHero = ({ crumbs, eyebrow, h1, lead, img, imgAlt, extra = '' }) => `<section class="page-hero">
   <div class="hero-bg grid">${img ? `<img src="/assets/img/${img}" alt="${esc(imgAlt || '')}" width="1672" height="941" fetchpriority="high">` : ''}</div>

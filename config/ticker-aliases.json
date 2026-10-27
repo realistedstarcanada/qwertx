@@ -1,0 +1,13 @@
+{
+  "_note": "Toronto (TSX) listings that also trade in New York. 13F filings only cover US-listed securities, so a TSX ticker is matched to its US listing. Keys are written SYMBOL.TO (class shares with a dash: TECK-B.TO). Anything not listed here is shown as 'not covered' rather than guessed, because many TSX symbols belong to different companies in the US (T.TO is Telus, T is AT&T).",
+  "aliases": {
+    "RY.TO": "RY", "TD.TO": "TD", "BNS.TO": "BNS", "BMO.TO": "BMO", "CM.TO": "CM",
+    "MFC.TO": "MFC", "SLF.TO": "SLF", "BN.TO": "BN", "BAM.TO": "BAM", "BIP-UN.TO": "BIP", "BEP-UN.TO": "BEP",
+    "ENB.TO": "ENB", "TRP.TO": "TRP", "PPL.TO": "PBA", "CNQ.TO": "CNQ", "SU.TO": "SU", "CVE.TO": "CVE", "IMO.TO": "IMO",
+    "CNR.TO": "CNI", "CP.TO": "CP", "TFII.TO": "TFII", "WCN.TO": "WCN", "GFL.TO": "GFL", "CAE.TO": "CAE",
+    "SHOP.TO": "SHOP", "OTEX.TO": "OTEX", "LSPD.TO": "LSPD", "CLS.TO": "CLS", "GIB-A.TO": "GIB", "TRI.TO": "TRI",
+    "BCE.TO": "BCE", "T.TO": "TU", "RCI-B.TO": "RCI",
+    "NTR.TO": "NTR", "CCO.TO": "CCJ", "TECK-B.TO": "TECK", "K.TO": "KGC", "AEM.TO": "AEM", "WPM.TO": "WPM", "FNV.TO": "FNV",
+    "FTS.TO": "FTS", "AQN.TO": "AQN", "MG.TO": "MGA", "QSR.TO": "QSR", "DOO.TO": "DOOO"
+  }
+}

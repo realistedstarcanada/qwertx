@@ -18,6 +18,6 @@
     "data:calendar": "node scripts/fetch-calendar.mjs",
     "data:trump": "node scripts/fetch-trump.mjs",
     "data:featured": "node scripts/fetch-featured.mjs",
-    "test": "node --test test/*.test.mjs"
+    "test": "node --no-warnings --import ./test/harness/json-hook.mjs --test test/*.test.mjs"
   }
 }

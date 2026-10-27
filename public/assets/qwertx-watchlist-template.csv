@@ -1,0 +1,5 @@
+Ticker,Notes (optional; QWERTx only reads the Ticker column)
+AAPL,
+MSFT,
+BRK.B,
+RY.TO,Toronto listings are matched to their New York listing when there is one

@@ -17,7 +17,9 @@ import { market } from './src/pages/market.mjs';
 import { calendarPage } from './src/pages/calendar.mjs';
 import { personPage } from './src/pages/people.mjs';
 import { proPages } from './src/pages/pro-pages.mjs';
+import { accountPage } from './src/pages/account.mjs';
 import { staticPages } from './src/pages/static.mjs';
+import { buildProData } from './src/lib/pro-data.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(ROOT, 'dist');
@@ -38,6 +40,7 @@ const fp = (rel) => {
 };
 fs.copyFileSync(path.join(ROOT, 'src/assets/qx-extra.css'), path.join(OUT, 'assets/css/qx-extra.css'));
 fs.copyFileSync(path.join(ROOT, 'src/assets/qx-live.js'), path.join(OUT, 'assets/js/qx-live.js'));
+fs.copyFileSync(path.join(ROOT, 'src/assets/qx-pro.js'), path.join(OUT, 'assets/js/qx-pro.js'));
 
 const site = {
   name: 'QWERTx',
@@ -49,6 +52,7 @@ const site = {
     main: fp('assets/js/main.js'),
     charts: fp('assets/js/charts.js'),
     live: fp('assets/js/qx-live.js'),
+    pro: fp('assets/js/qx-pro.js'),
   },
 };
 
@@ -71,6 +75,7 @@ const pages = [
   market(d),
   calendarPage(d),
   ...proPages(ROOT),
+  accountPage(),
   ...staticPages(ROOT),
 ];
 const notFound = {
@@ -100,6 +105,21 @@ const searchIndex = [...d.stocks, ...d.extraStocks]
   .filter((s) => s.hasPage && (s.ticker || s.label))
   .map((s) => ({ t: s.ticker || s.label, n: s.name, s: s.slug, o: s.owners || 0, c: s.ticker ? (d.politics.byTicker.get(s.ticker) || []).length : 0, b: s.ticker && d.insiders?.buyTickers?.[s.ticker] ? 1 : 0 }));
 fs.writeFileSync(path.join(OUT, 'search-index.json'), JSON.stringify(searchIndex));
+
+// QWERTx Pro: small static files the watchlist page and the alert functions read (see src/lib/pro-data.mjs).
+const readJSON = (f) => { try { return JSON.parse(fs.readFileSync(path.join(ROOT, f), 'utf8')); } catch { return null; } };
+const pro = buildProData(d, { aliases: readJSON('config/ticker-aliases.json')?.aliases || {} });
+// Space-separated list of every ticker we accept on a watchlist (catches typos without parsing JSON).
+const secTickers = readJSON('data/sec-tickers.json');
+if (secTickers) {
+  const known = new Set([...Object.keys(secTickers), ...Object.keys(pro.index.tickers), ...Object.values(pro.index.aliases)]);
+  fs.mkdirSync(path.join(OUT, 'pro'), { recursive: true });
+  fs.writeFileSync(path.join(OUT, 'pro/known.txt'), ` ${[...known].sort().join(' ')} `);
+}
+fs.mkdirSync(path.join(OUT, 'pro/t'), { recursive: true });
+for (const [t, o] of Object.entries(pro.ownership.stocks)) fs.writeFileSync(path.join(OUT, 'pro/t', `${t}.json`), JSON.stringify(o));
+fs.writeFileSync(path.join(OUT, 'pro/index.json'), JSON.stringify(pro.index));
+fs.writeFileSync(path.join(OUT, 'pro/events-recent.json'), JSON.stringify({ generatedAt: pro.ownership.generatedAt, events: pro.recentEvents }));
 
 // Fear & Greed snapshot for the live gauge's fallback, sitemap, robots.
 if (d.market?.fearGreed) fs.writeFileSync(path.join(OUT, 'market-snapshot.json'), JSON.stringify(d.market.fearGreed));
