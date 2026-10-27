@@ -149,18 +149,23 @@ export function loadData({ root, dataDir, configPath }) {
       },
     };
   });
-  const live = investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue);
+  // Super investors drive the cross-investor views (Top Stocks, owner counts, heatmap). Large institutions
+  // (pension funds, big asset managers: group "institution" in config) get their own pages and appear in
+  // Pro watchlists, but don't swamp the "most owned" rankings with index-like books.
+  const withData = investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue);
+  const live = withData.filter((i) => i.group !== 'institution');
+  const institutions = withData.filter((i) => i.group === 'institution');
 
   // ---------- Similarity (cosine on issuer-level weights) ----------
-  const vec = new Map(live.map((i) => {
+  const vec = new Map(withData.map((i) => {
     const m = new Map();
     for (const h of i.p.holdings) if (!h.putCall && h.shType !== 'PRN') m.set(h.issuer, (m.get(h.issuer) || 0) + h.weight);
     return [i.slug, m];
   }));
   const norm = (m) => Math.sqrt([...m.values()].reduce((a, v) => a + v * v, 0));
-  for (const a of live) {
+  for (const a of withData) {
     const va = vec.get(a.slug);
-    a.p.similar = live
+    a.p.similar = withData
       .filter((b) => b.slug !== a.slug)
       .map((b) => {
         const vb = vec.get(b.slug);
@@ -234,8 +239,8 @@ export function loadData({ root, dataDir, configPath }) {
     if (s.ticker) stockByTicker.set(s.ticker, s);
   }
   // Make every holding know its stock page
-  for (const inv of live) for (const h of [...inv.p.holdings, ...inv.p.sold]) {
-    const s = stocks.get(h.issuer);
+  for (const inv of withData) for (const h of [...inv.p.holdings, ...inv.p.sold]) {
+    const s = stocks.get(h.issuer) || (h.ticker ? stockByTicker.get(h.ticker) : null);
     h.stockSlug = s && s.hasPage ? s.slug : null;
   }
 
@@ -412,6 +417,7 @@ export function loadData({ root, dataDir, configPath }) {
     extraStocks,
     investors,
     live,
+    institutions,
     stocks: stockList,
     stockByTicker,
     smart,

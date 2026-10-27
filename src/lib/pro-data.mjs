@@ -22,8 +22,10 @@ const TICKER = /^[A-Z][A-Z0-9.\-]{0,9}$/;
 
 export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
   const managers = {};
-  for (const inv of d.live) {
+  const institutions = d.institutions || [];
+  for (const inv of [...d.live, ...institutions]) {
     managers[inv.slug] = {
+      ...(inv.group === 'institution' ? { g: 'i' } : {}),
       n: inv.manager,
       f: inv.firm,
       period: inv.p.period,
@@ -51,6 +53,23 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
     o.h = (s.holders || []).map((x) => [x.inv.slug, r2(x.w), x.act, x.line?.sharesChangePct != null && x.act !== 'New' ? Math.round(x.line.sharesChangePct * 100) : null, Math.round(x.value)]);
     o.x = [...new Set((s.sellers || []).map((x) => x.inv.slug))];
     if (s.nextEarnings) o.e = { d: s.nextEarnings.date, l: s.nextEarnings.label, t: s.nextEarnings.time || '', est: !!s.nextEarnings.estimated };
+  }
+
+  // ---- Institutions (pension funds, large asset managers): kept apart from the super investor counts ----
+  for (const inv of institutions) {
+    const per = new Map();
+    for (const h of inv.p.holdings) {
+      if (!TICKER.test(h.ticker || '') || h.putCall || h.shType === 'PRN') continue;
+      const x = per.get(h.ticker) || { w: 0, v: 0, act: h.act, chg: h.sharesChangePct };
+      x.w += h.w;
+      x.v += h.value;
+      per.set(h.ticker, x);
+    }
+    for (const [t, x] of per) {
+      const o = get(d.stockByTicker.get(t), t);
+      if (!o) continue;
+      (o.ih ||= []).push([inv.slug, r2(x.w), x.act, x.chg != null && x.act !== 'New' ? Math.round(x.chg * 100) : null, Math.round(x.v)]);
+    }
   }
 
   // ---- Congress ----
@@ -103,7 +122,7 @@ export function buildProData(d, { now = Date.now(), aliases = {} } = {}) {
   const ownership = { generatedAt, insiderQuarter, managers, stocks };
   // [name, managers holding, bought (new or added), trimmed, exited, stock page slug,
   //  holders as positions in managerOrder, next earnings date or null]
-  const managerOrder = Object.keys(managers);
+  const managerOrder = Object.keys(managers).filter((m) => !managers[m].g);
   const pos = new Map(managerOrder.map((m, i) => [m, i]));
   const tickers = {};
   for (const [t, o] of Object.entries(stocks)) {
@@ -134,7 +153,7 @@ export function buildEvents(d, { now = Date.now() } = {}) {
   const recent = (iso) => iso && daysAgo(iso, now) <= EVENT_WINDOW_DAYS;
 
   // 13F: new positions, changes in shares and full exits, one event per manager per company per filing.
-  for (const inv of d.live) {
+  for (const inv of [...d.live, ...(d.institutions || [])]) {
     const p = inv.p;
     if (!recent(p.filingDate)) continue;
     const seen = new Set();

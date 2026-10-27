@@ -8,7 +8,7 @@ zero npm dependencies, hosted free on Cloudflare Pages and kept fresh by GitHub 
 
 | Data | Script | Source | Schedule (workflow) |
 |---|---|---|---|
-| 22 super investor portfolios, 9 quarters of history, sectors | `scripts/fetch-13f.mjs` | SEC EDGAR 13F-HR, OpenFIGI, SEC company data | 1st of each month + the day after each 13F deadline (`update-portfolios.yml`) |
+| Super investor and institution portfolios (`config/investors.json`; `"group": "institution"` keeps big diversified books out of the Top Stocks rankings), 9 quarters of history, sectors | `scripts/fetch-13f.mjs` | SEC EDGAR 13F-HR, OpenFIGI, SEC company data | 1st of each month + the day after each 13F deadline (`update-portfolios.yml`) |
 | Headlines | `scripts/fetch-news.mjs` | RSS feeds in `config/news-feeds.json` | Daily 07:00 and weekdays 17:30 Toronto (`update-news.yml`) |
 | VIX history, index closes, yields, oil, gold, CNN Fear & Greed | `scripts/fetch-market.mjs` | Cboe, Yahoo Finance (FRED/Stooq fallback), CNN | Same as news |
 | Politician trades | `scripts/fetch-congress.mjs` | House Clerk PTRs + Senate eFD, congress-legislators | Daily 08:15 (`update-disclosures.yml`) |

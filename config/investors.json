@@ -446,6 +446,211 @@
       "previousCiks": [
         "0001079114"
       ]
+    },
+    {
+      "slug": "cathie-wood",
+      "manager": "Cathie Wood",
+      "firm": "ARK Invest",
+      "cik": "0001697748",
+      "expect": "ARK INVEST",
+      "avatar": "CW",
+      "tags": [
+        "Growth",
+        "Disruptive innovation",
+        "High conviction"
+      ],
+      "meta": "ARK Investment Management · St. Petersburg, Florida · since 2014",
+      "about": "Cathie Wood founded ARK Invest in 2014 to invest in disruptive innovation: artificial intelligence, robotics, genomics, fintech and blockchain. Her flagship ARK Innovation ETF (ARKK) became one of the best-known actively managed funds in the world, famous for big swings in both directions. This page shows ARK’s quarterly 13F; ARK also publishes its ETF holdings every trading day.",
+      "philosophy": [
+        "Invest in innovation platforms that can change how the world works.",
+        "Think in five-year time frames, not quarters.",
+        "Concentrate in high-conviction ideas and lean in when they are out of favour."
+      ]
+    },
+    {
+      "slug": "tom-russo",
+      "manager": "Tom Russo",
+      "firm": "Gardner Russo & Quinn",
+      "cik": "0000860643",
+      "expect": "GARDNER RUSSO",
+      "avatar": "TR",
+      "tags": [
+        "Value",
+        "Global brands",
+        "Long-term"
+      ],
+      "meta": "Gardner Russo & Quinn · Lancaster, Pennsylvania",
+      "about": "Tom Russo runs a concentrated portfolio of global consumer brands, often family-controlled companies like brewers, spirits makers and food businesses. He holds them for many years and looks for management willing to invest heavily today for growth years from now.",
+      "philosophy": [
+        "Own brands that travel well into fast-growing markets.",
+        "Back managers with the “capacity to suffer”: reinvesting even when it hurts short-term profits.",
+        "Hold for decades and let compounding do the work."
+      ]
+    },
+    {
+      "slug": "guy-spier",
+      "manager": "Guy Spier",
+      "firm": "Aquamarine Capital",
+      "cik": "0001404599",
+      "expect": "AQUAMARINE",
+      "avatar": "GS",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Buffett school"
+      ],
+      "meta": "Aquamarine Capital Management · Zurich · since 1997",
+      "about": "Guy Spier runs Aquamarine, a concentrated value fund modelled on Warren Buffett’s early partnerships. He is the author of The Education of a Value Investor and, with Mohnish Pabrai, bid for a charity lunch with Buffett in 2008.",
+      "philosophy": [
+        "Own a few great businesses and trade very rarely.",
+        "Design your environment to avoid bad decisions: fewer screens, fewer meetings.",
+        "Use checklists to catch mistakes before they cost money."
+      ]
+    },
+    {
+      "slug": "bruce-berkowitz",
+      "manager": "Bruce Berkowitz",
+      "firm": "Fairholme Capital Management",
+      "cik": "0001056831",
+      "expect": "FAIRHOLME",
+      "avatar": "BB",
+      "tags": [
+        "Value",
+        "Very concentrated",
+        "Contrarian"
+      ],
+      "meta": "Fairholme Capital Management · Miami · since 1997",
+      "about": "Bruce Berkowitz founded Fairholme and is known for extremely concentrated, contrarian bets, often holding a handful of companies for years. Real estate developer St. Joe has been his signature holding.",
+      "philosophy": [
+        "Concentrate in the few ideas you know best.",
+        "Buy what others are afraid of, with a wide margin of safety.",
+        "Judge companies by the cash they generate, not reported earnings."
+      ]
+    },
+    {
+      "slug": "joel-greenblatt",
+      "manager": "Joel Greenblatt",
+      "firm": "Gotham Asset Management",
+      "cik": "0001279148",
+      "expect": "GOTHAM ASSET",
+      "avatar": "JG",
+      "tags": [
+        "Value",
+        "Systematic",
+        "Magic Formula"
+      ],
+      "meta": "Gotham Asset Management · New York · since 1985",
+      "about": "Joel Greenblatt founded Gotham Capital in 1985, wrote The Little Book That Beats the Market (the “Magic Formula”) and has taught value investing at Columbia Business School. Gotham now runs systematic portfolios, so its 13F holds many stocks at small weights; look at the biggest positions and the changes.",
+      "philosophy": [
+        "Buy good businesses (high return on capital) at bargain prices (high earnings yield).",
+        "Stick with a sound process through long stretches when it lags.",
+        "Value is about what a business is worth, not what the stock did lately."
+      ]
+    },
+    {
+      "slug": "cpp-investments",
+      "manager": "CPP Investments",
+      "firm": "Canada Pension Plan Investment Board",
+      "cik": "0001283718",
+      "expect": "CANADA PENSION",
+      "avatar": "CPP",
+      "group": "institution",
+      "tags": [
+        "Canadian",
+        "Pension fund",
+        "Long-term"
+      ],
+      "meta": "CPP Investments · Toronto · since 1997",
+      "about": "CPP Investments invests the Canada Pension Plan fund on behalf of Canadian workers and retirees, and is one of the largest pension investors in the world. Its 13F shows only its US-listed stocks, a small slice of a portfolio that also holds private equity, real estate, infrastructure, bonds and non-US shares.",
+      "philosophy": [
+        "Invest for generations, not for the next quarter.",
+        "Diversify across assets, regions and strategies.",
+        "Use long horizons and scale as advantages."
+      ]
+    },
+    {
+      "slug": "fiera-capital",
+      "manager": "Fiera Capital",
+      "firm": "Fiera Capital Corporation",
+      "cik": "0001505817",
+      "expect": "FIERA",
+      "avatar": "FC",
+      "group": "institution",
+      "tags": [
+        "Canadian",
+        "Asset manager",
+        "Multi-strategy"
+      ],
+      "meta": "Fiera Capital · Montreal · since 2003",
+      "about": "Fiera Capital is an independent Canadian asset manager listed on the Toronto Stock Exchange (FSZ), running public and private market strategies for institutions and individuals. Its 13F combines the US-listed holdings of all its strategies.",
+      "philosophy": [
+        "Combine public and private market strategies.",
+        "Focus on quality companies with durable growth.",
+        "Manage risk across many separate mandates."
+      ]
+    },
+    {
+      "slug": "jarislowsky-fraser",
+      "manager": "Jarislowsky Fraser",
+      "firm": "Jarislowsky, Fraser Limited",
+      "cik": "0001123778",
+      "expect": "JARISLOWSKY",
+      "avatar": "JF",
+      "group": "institution",
+      "tags": [
+        "Canadian",
+        "Quality",
+        "Long-term"
+      ],
+      "meta": "Jarislowsky Fraser · Montreal · since 1955",
+      "about": "Founded by Stephen Jarislowsky in 1955, Jarislowsky Fraser is one of Canada’s best-known long-term investment firms and has been part of Scotiabank since 2018. It favours high-quality companies bought at sensible prices and held for years. The 13F shows its US-listed holdings only.",
+      "philosophy": [
+        "Own quality companies with sustainable growth.",
+        "Pay a reasonable price and hold for the long term.",
+        "Avoid excessive debt and weak governance."
+      ]
+    },
+    {
+      "slug": "mawer",
+      "manager": "Mawer Investment Management",
+      "firm": "Mawer Investment Management",
+      "cik": "0001538449",
+      "expect": "MAWER",
+      "avatar": "MW",
+      "group": "institution",
+      "tags": [
+        "Canadian",
+        "Quality",
+        "Employee-owned"
+      ],
+      "meta": "Mawer · Calgary · since 1974",
+      "about": "Calgary-based Mawer is an independent, employee-owned Canadian manager known for its motto “be boring, make money”. It looks for wealth-creating businesses run by excellent managers, bought below their intrinsic value. The 13F shows its US-listed holdings only.",
+      "philosophy": [
+        "Buy wealth-creating companies with excellent management at discounts to intrinsic value.",
+        "Be boring: patience and discipline over prediction.",
+        "Diversify thoughtfully and stay invested."
+      ]
+    },
+    {
+      "slug": "beutel-goodman",
+      "manager": "Beutel Goodman",
+      "firm": "Beutel, Goodman & Company",
+      "cik": "0001361974",
+      "expect": "BEUTEL",
+      "avatar": "BG",
+      "group": "institution",
+      "tags": [
+        "Canadian",
+        "Value",
+        "Employee-owned"
+      ],
+      "meta": "Beutel Goodman · Toronto · since 1967",
+      "about": "Toronto-based Beutel Goodman is an employee-owned value manager. It buys companies trading at a discount to their business value, with a focus on free cash flow and balance-sheet strength. The 13F shows its US-listed holdings only.",
+      "philosophy": [
+        "Buy at a discount to business value.",
+        "Focus on free cash flow and strong balance sheets.",
+        "Sell when prices reach business value; stay disciplined."
+      ]
     }
   ]
 }

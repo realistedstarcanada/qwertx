@@ -261,6 +261,12 @@
         '</tbody></table>';
     }
     var meta = [];
+    if (d.ih && d.ih.length) {
+      var ih = d.ih.slice().sort(function (a, b) { return b[4] - a[4]; });
+      meta.push('<div class="wl-meta-block"><i class="fa-solid fa-building-columns" aria-hidden="true"></i> ' + (pro
+        ? 'Also held by ' + ih.map(function (x) { var a = ACT[x[2]] || ACT.Hold; return '<a href="/investors/' + esc(x[0]) + '.html">' + esc(mname(x[0])) + '</a> (' + x[1].toFixed(x[1] < 1 ? 2 : 1) + '%' + (x[2] !== 'Hold' ? ', ' + a[1].toLowerCase() + (x[3] ? ' ' + (x[3] > 0 ? '+' : '') + x[3] + '%' : '') : '') + ')'; }).join(', ') + '.'
+        : 'Also held by ' + plural(ih.length, 'pension fund or large asset manager', 'pension funds and large asset managers') + '. <a href="#membership">See which with Pro</a>') + '</div>');
+    }
     if (d.cg && d.cg.length) {
       var buys = d.cg.filter(function (x) { return x.a === 'buy'; }).length;
       if (pro) {
@@ -293,7 +299,7 @@
     var snoozed = p.snoozeUntil && Date.parse(p.snoozeUntil) > Date.now();
     var hours = []; for (var i = 0; i < 24; i++) hours.push(i);
     var hourOpts = function (sel) { return hours.map(function (h) { return '<option value="' + h + '"' + (h === sel ? ' selected' : '') + '>' + (h === 0 ? '12 am' : h < 12 ? h + ' am' : h === 12 ? '12 pm' : (h - 12) + ' pm') + '</option>'; }).join(''); };
-    var mgrs = (S.index.managerOrder || []).map(function (slug) { return '<label class="wl-check"><input type="checkbox" name="mgr" value="' + esc(slug) + '"' + ((p.managers || []).indexOf(slug) >= 0 ? ' checked' : '') + lock + '> ' + esc(mname(slug)) + '</label>'; }).join('');
+    var mgrs = Object.keys(S.index.managers || {}).map(function (slug) { return '<label class="wl-check"><input type="checkbox" name="mgr" value="' + esc(slug) + '"' + ((p.managers || []).indexOf(slug) >= 0 ? ' checked' : '') + lock + '> ' + esc(mname(slug)) + '</label>'; }).join('');
     return '<section class="wl-section" id="alerts" aria-labelledby="alerts-h"><div class="section-head"><div><div class="eyebrow">Alerts</div><h2 id="alerts-h">How we tell you</h2></div>' +
       '<p>' + (pro ? 'Instant alerts go out within about an hour of a filing appearing. You also get a Friday digest, even in quiet weeks.' : 'Free accounts get a Friday digest of everything that touched their stocks. Pro adds instant alerts and controls.') + '</p></div>' +
       '<form id="wl-prefs" class="card wl-prefs">' +

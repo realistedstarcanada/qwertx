@@ -13,9 +13,15 @@ export function investorsIndex(d) {
 <section class="section">
   <div class="container">
     <div class="row between center mb-32 reveal"><p class="mb-0" style="color:var(--muted)">Showing <b style="color:var(--text)">${d.live.length}</b> investors · <b style="color:var(--text)">${money(d.smart.value)}</b> in reported holdings</p>${sourceChip('Source: SEC EDGAR Form 13F-HR')}</div>
-    <div class="v-grid">${d.investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue).map(vCard).join('')}${d.investors.filter((i) => !i.p).map(vCard).join('')}</div>
+    <div class="v-grid">${d.live.map(vCard).join('')}</div>
   </div>
 </section>
+${d.institutions?.length ? `<section class="section-sm" id="institutions">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:24px"><div><div class="card-label" style="margin:0"><span>Canadian &amp; institutional money</span></div><h2 style="font-size:32px;margin:6px 0 0">Pension funds and large asset managers</h2></div><p>Big, diversified books, so they are kept out of the super investor rankings above. Their 13F filings show US-listed holdings only, which for Canadian managers is just part of what they own.</p></div>
+    <div class="v-grid">${d.institutions.map(vCard).join('')}</div>
+  </div>
+</section>` : ''}
 <section class="section-sm">
   <div class="container">
     <div class="row between center reveal" style="margin-bottom:20px"><div><div class="card-label" style="margin:0"><span>Compare</span></div><h2 style="font-size:32px;margin:6px 0 0">All portfolios side by side</h2></div>${sourceChip('Click a column to sort', 'fa-arrow-down-wide-short')}</div>
