@@ -142,13 +142,16 @@
       S.me = Object.assign(S.me, j);
       S.results = j.results;
       S.tab = 'portfolio';
-      return loadStocks().then(render);
+      var fresh = (j.results || []).filter(function (r) { return r.status === 'added' || r.status === 'mapped'; });
+      var sizeless = fresh.filter(function (r) { var w = (S.me.watchlist || []).filter(function (x) { return x.ticker === r.ticker; })[0]; return w && !w.shares && !w.amount; });
+      S.openPos = sizeless.length === 1 ? sizeless[0].ticker : null;
+      return loadStocks().then(function () { render(); if (S.openPos) { var f = root.querySelector('form[data-pos="' + S.openPos + '"]'); if (f) { f.scrollIntoView({ behavior: 'smooth', block: 'center' }); f.n.focus({ preventScroll: true }); } } });
     });
   }
 
   /** What a position is worth. kind: live (licensed price), quarter (13F quarter-end price), entered (dollar amount as typed). */
-  /** What a position is worth. kind: live (licensed price), paid (the price the member paid), quarter (latest 13F
-      quarter-end price, only when nothing better is known), entered (dollar amount as typed). */
+  /** What a position is worth. kind: live (licensed price), paid (shares × the member's average price),
+      entered (dollar amount as typed). Shares without an average price have no value until one is added. */
   function value(w) {
     var d = S.data[w.ticker] || {}, live = d.q && d.q.p;
     var sh = w.shares || (w.amount && w.paid ? w.amount / w.paid : null);
@@ -158,7 +161,6 @@
     }
     if (w.amount) return { now: w.amount, invested: w.amount, kind: 'entered' };
     if (w.shares && w.paid) return { now: w.shares * w.paid, invested: w.shares * w.paid, kind: 'paid' };
-    if (w.shares && d.px) return { now: w.shares * d.px.p, invested: null, kind: 'quarter', asOf: d.px.d };
     return null;
   }
 
@@ -252,19 +254,18 @@
 
     // Hero: value + chart (live prices) or an honest note
     var kinds = {}; M.sized.forEach(function (r) { kinds[r.v.kind] = 1; });
-    var qd = M.sized.filter(function (r) { return r.v.kind === 'quarter'; }).map(function (r) { return r.v.asOf; }).sort().pop();
     var bits = [];
     if (kinds.live) bits.push('live prices');
     if (kinds.entered) bits.push('the amounts you entered');
-    if (kinds.paid) bits.push('the prices you paid');
-    if (kinds.quarter) bits.push(fmtDate(qd) + ' prices for shares with no price paid');
+    if (kinds.paid) bits.push('your average prices');
     var basis = bits.length > 1 ? bits.slice(0, -1).join(', ') + ' and ' + bits[bits.length - 1] : bits[0];
     var gain = M.allLive && M.invested ? M.total - M.invested : null;
     html += '<div class="px-grid2">';
     html += '<section class="card px-hero" aria-label="Portfolio value">' + label('Portfolio value') +
       (M.sized.length ? '<div class="px-big">' + usd(M.total) + '</div>' +
         (gain != null ? '<div class="px-gain ' + (gain >= 0 ? 'up' : 'down') + '">' + (gain >= 0 ? '+' : '−') + usd(Math.abs(gain)) + ' (' + pct(gain / M.invested * 100) + ') since you added them</div>' : '') +
-        '<p class="form-note">From ' + basis + '. ' + plural(M.sized.length, 'position') + ' with a size' + (M.rows.length > M.sized.length ? ', ' + (M.rows.length - M.sized.length) + ' without' : '') + '.</p>'
+        '<p class="form-note">From ' + basis + '. ' + plural(M.sized.length, 'position') + ' with a size' + (M.rows.length > M.sized.length ? ', ' + (M.rows.length - M.sized.length) + ' without' : '') + '.' +
+          (M.rows.some(function (r) { return r.w.shares && !r.v; }) ? ' Holdings in shares count once you add their average price.' : '') + '</p>'
         : '<div class="px-big muted">—</div><p class="form-note">Add how much you own on each holding (optional) to see your total, your weights and what you really own.</p>') +
       (M.sized.some(function (r) { return r.d && r.d.hist && r.d.q; }) ? perfChart(M) : soon('Performance tracking starts with live prices', 'Once live price data is switched on, this charts how your current holdings have moved over the past year.')) +
       '</section>';
@@ -369,23 +370,23 @@
       else if (d.e && d.e.d >= today()) er = chip(fmtShort(d.e.d), '');
     }
     var pos = w.amount ? usd(w.amount) : w.shares ? (+w.shares).toLocaleString('en-US') + ' shares' : '<span class="muted">—</span>';
-    if (w.paid) pos += '<div class="tkr-name">paid $' + (+w.paid).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' a share</div>';
+    if (w.paid && w.shares) pos += '<div class="tkr-name">avg. $' + (+w.paid).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' a share</div>';
     return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkr(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div></td>' +
       '<td>' + pos + ' <button type="button" class="linklike" data-edit="' + esc(t) + '">' + (w.amount || w.shares ? 'Edit' : 'Add size') + '</button>' + posForm(w) + '</td>' +
       '<td>' + (weight != null ? '<div class="px-wbar"><span style="width:' + Math.min(100, weight * 2.5).toFixed(0) + '%"></span></div><span class="mono">' + weight.toFixed(1) + '%</span>' : '<span class="muted">—</span>') + '</td>' +
-      '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'quarter' ? '<div class="tkr-name">at ' + fmtShort(v.asOf) + ' price · <button type="button" class="linklike" data-edit="' + esc(t) + '">add what you paid</button></div>' : v.kind === 'paid' ? '<div class="tkr-name">at the price you paid</div>' : '') : '<span class="muted">—</span>') + '</td>' +
+      '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'paid' ? '<div class="tkr-name">at your average price</div>' : '') : w.shares ? '<button type="button" class="linklike" data-edit="' + esc(t) + '">Add average price</button>' : '<span class="muted">—</span>') + '</td>' +
       '<td>' + sm + '</td><td>' + er + '</td>' +
       '<td><button class="icon-btn wl-remove" type="button" data-remove="' + esc(t) + '" aria-label="Remove ' + esc(t) + '"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></td></tr>';
   }
   function addDays(n) { return new Date(Date.now() + n * 864e5).toISOString().slice(0, 10); }
   function posForm(w) {
-    var t = esc(w.ticker), unit = w.shares ? 'shares' : 'amount';
-    return '<form class="wl-pos-form" data-pos="' + t + '" hidden>' +
-      '<label class="px-pf"><span>You own</span><span class="px-pf-row"><input class="input input-sm" name="n" inputmode="decimal" placeholder="10" value="' + esc(w.shares || w.amount || '') + '" aria-label="How much of ' + t + ' you own">' +
-      '<select class="input input-sm" name="unit" aria-label="Unit"><option value="shares"' + (unit === 'shares' ? ' selected' : '') + '>shares</option><option value="amount"' + (unit === 'amount' ? ' selected' : '') + '>$ invested</option></select></span></label>' +
-      '<label class="px-pf"><span>Price you paid per share <i class="muted">(optional)</i></span><input class="input input-sm" name="paid" inputmode="decimal" placeholder="$150.00" value="' + esc(w.paid || '') + '" aria-label="Price you paid per share of ' + t + '"></label>' +
-      '<span class="px-pf-act"><button class="btn btn-sm btn-gold" type="submit">Save</button>' + (w.shares || w.amount ? '<button class="linklike" type="button" data-clear="' + t + '">Remove size</button>' : '') + '</span>' +
-      '<p class="form-note">Your average cost from your broker works best. With it we can show gains once live prices are on.</p></form>';
+    var t = esc(w.ticker), unit = w.amount ? 'amount' : 'shares', open = S.openPos === w.ticker;
+    return '<form class="wl-pos-form" data-pos="' + t + '" novalidate' + (open ? '' : ' hidden') + '>' +
+      '<label class="px-pf"><span>You own</span><span class="px-pf-row"><input class="input input-sm" name="n" inputmode="decimal" placeholder="' + (unit === 'shares' ? '10' : '10,000') + '" value="' + esc(w.shares || w.amount || '') + '" aria-label="How much of ' + t + ' you own">' +
+      '<select class="input input-sm" name="unit" aria-label="Shares or dollars"><option value="shares"' + (unit === 'shares' ? ' selected' : '') + '>shares</option><option value="amount"' + (unit === 'amount' ? ' selected' : '') + '>$ invested</option></select></span></label>' +
+      '<label class="px-pf px-pf-paid"' + (unit === 'shares' ? '' : ' hidden') + '><span>Average price per share</span><input class="input input-sm" name="paid" inputmode="decimal" placeholder="$150.00" value="' + esc(w.shares && w.paid ? w.paid : '') + '" aria-label="Average price you paid per share of ' + t + '"></label>' +
+      '<span class="px-pf-act"><button class="btn btn-sm btn-gold" type="submit">Save</button>' + (w.shares || w.amount ? '<button class="linklike" type="button" data-clear="' + t + '">Remove size</button>' : '<button class="linklike" type="button" data-edit="' + t + '">Later</button>') + '</span>' +
+      '<p class="form-note px-pf-note" role="status">' + (unit === 'shares' ? 'Your broker shows it as “average cost” or “book cost per share”.' : 'The dollar amount you put in.') + '</p></form>';
   }
   function resultsHtml() {
     if (!S.results || !S.results.length) return '';
@@ -904,8 +905,25 @@
         addTickers(t);
       });
     });
-    on('[data-edit]', 'click', function (e, b) { var f = root.querySelector('form[data-pos="' + b.getAttribute('data-edit') + '"]'); var wantPaid = /paid/.test(b.textContent); f.hidden = wantPaid ? false : !f.hidden; if (!f.hidden) (wantPaid ? f.paid : f.n).focus(); });
-    on('form[data-pos]', 'submit', function (e, f) { e.preventDefault(); var body = { ticker: f.getAttribute('data-pos'), paid: f.paid.value }; body[f.unit.value] = f.n.value; savePos(body); });
+    on('[data-edit]', 'click', function (e, b) { var f = root.querySelector('form[data-pos="' + b.getAttribute('data-edit') + '"]'); var wantPaid = /average price/i.test(b.textContent); f.hidden = wantPaid ? false : !f.hidden; S.openPos = f.hidden ? null : b.getAttribute('data-edit'); if (!f.hidden) { if (wantPaid) { f.unit.value = 'shares'; f.querySelector('.px-pf-paid').hidden = false; } (wantPaid ? f.paid : f.n).focus(); } });
+    on('form[data-pos]', 'submit', function (e, f) {
+      e.preventDefault();
+      var num = function (v) { var n = Number(String(v).replace(/[$,\s]/g, '')); return n > 0 ? n : null; };
+      var note = f.querySelector('.px-pf-note'), shares = f.unit.value === 'shares';
+      if (!num(f.n.value)) { note.textContent = shares ? 'Enter how many shares you own.' : 'Enter the dollar amount you put in.'; f.n.focus(); return; }
+      if (shares && !num(f.paid.value)) { note.textContent = 'Enter your average price per share. Your broker shows it as “average cost”.'; f.paid.setAttribute('aria-invalid', 'true'); f.paid.focus(); return; }
+      var body = { ticker: f.getAttribute('data-pos') };
+      body[f.unit.value] = f.n.value;
+      if (shares) body.paid = f.paid.value;
+      S.openPos = null;
+      savePos(body);
+    });
+    on('form[data-pos] select[name="unit"]', 'change', function (e, sel) {
+      var f = sel.form, shares = sel.value === 'shares';
+      f.querySelector('.px-pf-paid').hidden = !shares;
+      f.n.placeholder = shares ? '10' : '10,000';
+      f.querySelector('.px-pf-note').textContent = shares ? 'Your broker shows it as “average cost” or “book cost per share”.' : 'The dollar amount you put in.';
+    });
     on('[data-clear]', 'click', function (e, b) { savePos({ ticker: b.getAttribute('data-clear') }); });
     on('[data-add]', 'click', function (e, b) { addTickers([b.getAttribute('data-add')]); });
     on('[data-remove]', 'click', function (e, b) {
