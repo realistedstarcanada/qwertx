@@ -131,6 +131,10 @@ export function buildWeather({ macro, market, insiders, politics, live }) {
   // ---------- United States ----------
   const us = { economy: [], valuation: [], money: [] };
   let econScore = null, valScore = null, moneyParts = [];
+  // "Is money tight?" scores rates on fixed scales, not against post-2008 history (a decade near zero would
+  // make any normal rate look tight). Policy rate: 0.5% = 0, 5% = 100. 10-year yield: 1% = 0, 6% = 100.
+  const policyScore = (v) => clamp(((v - 0.5) / 4.5) * 100);
+  const longScore = (v) => clamp(((v - 1) / 5) * 100);
   if (has('us_gdp')) {
     const [d, v] = last('us_gdp');
     us.economy.push(card('us_gdp', { name: 'Real GDP growth (annualised)', value: v, unit: '%', date: d, freq: 'q', source: S.us_gdp.source, obs: S.us_gdp.obs,
@@ -182,7 +186,7 @@ export function buildWeather({ macro, market, insiders, politics, live }) {
     us.money.push(card('us_10y', { name: '10-year Treasury yield', value: tenY.v, unit: '%', digits: 2, date: tenY.d, freq: tenY.obs ? 'm' : 'd', source: tenY.src, obs: tenY.obs,
       status: tenY.v > 4.5 ? 'High' : tenY.v >= 3 ? 'Moderate' : 'Low', tone: tenY.v > 4.5 ? 'mid' : 'good',
       meaning: 'Sets the price of mortgages and loans. Higher yields make stocks and homes harder to justify.' }));
-    if (tenY.obs) moneyParts.push(percentile(tenY.obs, tenY.v));
+    moneyParts.push(longScore(tenY.v));
   }
   if (has('us_curve')) {
     const [d, v] = last('us_curve');
@@ -195,7 +199,7 @@ export function buildWeather({ macro, market, insiders, politics, live }) {
     us.money.push(card('us_fed', { name: 'Fed policy rate (upper bound)', value: v, unit: '%', digits: 2, date: d, freq: 'm', source: S.us_fed.source, obs: S.us_fed.obs,
       status: v >= 4 ? 'Restrictive' : v >= 2.5 ? 'Neutral' : 'Easy', tone: v >= 4 ? 'mid' : 'good',
       meaning: v >= 4 ? 'The Fed is holding rates high to cool inflation.' : 'Rates are close to or below neutral, which supports borrowing and spending.' }));
-    moneyParts.push(percentile(S.us_fed.obs, v));
+    moneyParts.push(policyScore(v));
   }
   if (has('us_nfci')) {
     const [d, v] = last('us_nfci');
@@ -258,13 +262,13 @@ export function buildWeather({ macro, market, insiders, politics, live }) {
     ca.money.push(card('ca_policy', { name: 'Bank of Canada policy rate', value: v, unit: '%', digits: 2, date: d, freq: 'm', source: S.ca_policy.source, obs: S.ca_policy.obs,
       status: v >= 4 ? 'Restrictive' : v >= 2.25 ? 'Neutral' : 'Easy', tone: v >= 4 ? 'mid' : 'good',
       meaning: has('us_fed') ? `${v < last('us_fed')[1] ? 'Below' : 'Above'} the US Fed’s ${last('us_fed')[1].toFixed(2)}%, which ${v < last('us_fed')[1] ? 'tends to weaken' : 'tends to support'} the Canadian dollar.` : 'The Bank of Canada’s overnight rate target.' }));
-    caMoneyParts.push(percentile(S.ca_policy.obs, v));
+    caMoneyParts.push(policyScore(v));
   }
   if (has('ca_10y')) {
     const [d, v] = last('ca_10y');
     ca.money.push(card('ca_10y', { name: '10-year Government of Canada yield', value: v, unit: '%', digits: 2, date: d, freq: 'm', source: S.ca_10y.source, obs: S.ca_10y.obs,
       status: v > 4 ? 'High' : v >= 2.5 ? 'Moderate' : 'Low', tone: v > 4 ? 'mid' : 'good', meaning: 'Drives five-year fixed mortgage rates in Canada.' }));
-    caMoneyParts.push(percentile(S.ca_10y.obs, v));
+    caMoneyParts.push(longScore(v));
     if (has('ca_2y')) {
       const two = new Map(S.ca_2y.obs.map(([dd, vv]) => [dd.slice(0, 7), vv]));
       const curve = S.ca_10y.obs.map(([dd, vv]) => (two.has(dd.slice(0, 7)) ? [dd, vv - two.get(dd.slice(0, 7))] : null)).filter(Boolean);
