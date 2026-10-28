@@ -16,9 +16,9 @@ export function proPages(root) {
     body: `${pageHero({ crumbs: [['Pro', '/pro.html'], ['Checkout test']], eyebrow: test ? 'Test mode · not public' : 'Checkout', h1: 'QWERTx Pro <span class="accent">checkout</span>', lead: test ? 'This page is for testing payments before launch. Use Stripe’s test card 4242 4242 4242 4242, any future expiry date and any 3-digit CVC. No real money moves.' : 'Choose a plan.' })}
 <section class="section-sm"><div class="container"><div class="pro-plans">
 ${plans.map(([k, p]) => `<form class="card pro-plan" method="post" action="/api/checkout?plan=${esc(k)}">
-  <div class="card-label"><span>${esc(p.label)}</span>${k === 'yearly' ? '<span>Best value</span>' : ''}</div>
+  <div class="card-label"><span>${esc(p.label)}</span>${k === 'founding' ? `<span>First ${esc(p.seats)}</span>` : ''}</div>
   <h3>${esc(p.price)}</h3>
-  ${k === 'yearly' && pro.promoCode ? `<p class="form-note">Founding members: enter code <b>${esc(pro.promoCode)}</b> at checkout.</p>` : '<p class="form-note">Cancel anytime.</p>'}
+  <p class="form-note">${k === 'founding' ? 'Price kept while the subscription stays active.' : 'Cancel anytime.'}</p>
   <button class="btn btn-primary" type="submit">Continue to secure checkout</button>
 </form>`).join('')}
 </div>
@@ -38,8 +38,8 @@ ${plans.map(([k, p]) => `<form class="card pro-plan" method="post" action="/api/
   if (!id) { lead.textContent = 'No checkout found.'; return; }
   fetch('/api/checkout-status?session_id=' + encodeURIComponent(id)).then(function (r) { return r.json(); }).then(function (s) {
     if (!s.ok) { lead.textContent = 'We could not confirm this checkout yet.'; box.innerHTML = '<p>If you were charged, email support and we will sort it out right away.</p>'; return; }
-    lead.textContent = 'Thank you' + (s.email ? ', ' + s.email : '') + '. Your membership is active.' + (s.test ? ' (test mode)' : '');
-    box.innerHTML = '<h3>What happens next</h3><ul class="rank-list"><li><span class="t">We will email you a sign-in link to set up your watchlist.</span></li><li><span class="t">Alerts start the day you add your first stock.</span></li><li><span class="t">Manage or cancel any time from your account page.</span></li></ul>';
+    lead.textContent = 'Thank you. Your QWERTx Pro membership is active.' + (s.test ? ' (test mode)' : '');
+    box.innerHTML = '<h3>What happens next</h3><ul class="rank-list"><li><span class="t">We emailed ' + (s.email ? s.email.replace(/[<>&"]/g, '') : 'you') + ' a sign-in link. Open it to set up your watchlist (it may take a minute to arrive).</span></li><li><span class="t">Add up to 50 stocks and you will see straight away who owns them.</span></li><li><span class="t">Alerts start as soon as a new filing touches one of your stocks.</span></li></ul><div class="btn-row mt-32"><a class="btn btn-gold" href="/account.html">Go to My stocks</a></div><p class="form-note" style="margin-top:12px">Already signed in on this device? The button takes you straight there.</p>';
   }).catch(function () { lead.textContent = 'We could not confirm this checkout yet.'; });
 })();
 </script>`,

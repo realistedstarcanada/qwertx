@@ -1,6 +1,6 @@
 import { esc, money, int, pct, date, quarter } from '../lib/format.mjs';
 import { tvWidget } from '../layout.mjs';
-import { tkr, actBadge, wbar, sourceChip, kpi, pageHero, proCta, partyChip, tip } from '../parts.mjs';
+import { tkr, actBadge, wbar, sourceChip, kpi, pageHero, proCta, partyChip, tip, watchStrip } from '../parts.mjs';
 import { titleish } from './home.mjs';
 
 /** "Next earnings: Wed Oct 21 · after close · EPS est. $6.54" */
@@ -68,7 +68,7 @@ export function stockPage(d, s) {
     crumbs: [['Top Stocks', '/smart-money.html'], [s.label]],
     eyebrow: `${esc(s.sector)} · owned by ${s.owners} fund manager${s.owners > 1 ? 's' : ''}`,
     h1: `Who owns ${esc(label)}?`,
-    extra: earningsChip(s),
+    extra: earningsChip(s) + watchStrip(s.ticker),
     lead: `${s.owners} of the ${N} fund managers we track hold ${esc(s.name)}, worth ${money(s.value)} combined as of ${quarter(d.latestPeriod)}. ${esc(top.inv.manager)} has the biggest bet at ${pct(top.w)} of the portfolio.`,
   })}
 <section class="section-sm">
@@ -130,7 +130,7 @@ function tradedStockPage(d, s) {
     crumbs: [['Top Stocks', '/smart-money.html'], [s.label]],
     eyebrow: `${s.sector ? esc(s.sector) + ' · ' : ''}not held by our fund managers`,
     h1: `Who’s trading ${esc(label)}?`,
-    extra: earningsChip(s),
+    extra: earningsChip(s) + watchStrip(s.ticker),
     lead: `None of the ${N} fund managers we track own ${esc(s.name)} in their latest 13F filing${s.sellers.length ? ` (${s.sellers.length} sold out last quarter)` : ''}. Here is what politicians and company insiders did.`,
   })}
 <section class="section-sm">

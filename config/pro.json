@@ -1,9 +1,44 @@
 {
-  "_note": "Stripe products for QWERTx Pro. Product IDs are not secret. The secret key lives in Cloudflare as STRIPE_SECRET_KEY. Test mode until launch.",
+  "_note": "QWERTx Pro plans. Product IDs are not secret; the Stripe secret key lives in Cloudflare as STRIPE_SECRET_KEY. Prices are created in Stripe automatically from 'amount' (in cents) under 'lookupKey' the first time someone checks out, so changing a price here means changing amount AND giving it a new lookupKey. Subscribers keep the price they signed up at. Set checkoutOpen to true to put live checkout buttons on the public Pro page. 'vendor' turns on prices, analyst targets and earnings history. While the site is used internally it is 'yahoo' with internalTest true (scripts/fetch-yahoo.mjs, Yahoo Finance's public pages, not licensed for public display). BEFORE PUBLIC LAUNCH switch to 'fmp' (scripts/fetch-fmp.mjs) with a paid plan and data display licence, or set enabled false.",
   "mode": "test",
-  "plans": {
-    "monthly": { "product": "prod_VTfVgVp2U9qR5k", "label": "Monthly", "price": "US$12 / month" },
-    "yearly": { "product": "prod_VTfWfjcINvpbjI", "label": "Yearly", "price": "US$98 / year" }
+  "checkoutOpen": false,
+  "currency": "usd",
+  "limits": {
+    "free": 3,
+    "pro": 50
   },
-  "promoCode": "AFTERHOURS"
+  "plans": {
+    "monthly": {
+      "product": "prod_VTfVgVp2U9qR5k",
+      "label": "Monthly",
+      "amount": 1500,
+      "interval": "month",
+      "lookupKey": "qx_pro_monthly_usd_1500",
+      "price": "US$15 / month"
+    },
+    "yearly": {
+      "product": "prod_VTfWfjcINvpbjI",
+      "label": "Yearly",
+      "amount": 14400,
+      "interval": "year",
+      "lookupKey": "qx_pro_yearly_usd_14400",
+      "price": "US$144 / year"
+    },
+    "founding": {
+      "product": "prod_VTfWfjcINvpbjI",
+      "label": "Founding member",
+      "amount": 9900,
+      "interval": "year",
+      "lookupKey": "qx_pro_founding_usd_9900",
+      "price": "US$99 / year",
+      "seats": 500
+    }
+  },
+  "vendor": {
+    "name": "yahoo",
+    "enabled": true,
+    "displayLicence": false,
+    "internalTest": true,
+    "label": "Yahoo Finance"
+  }
 }

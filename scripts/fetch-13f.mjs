@@ -138,6 +138,9 @@ async function run() {
       const [cur, prev] = filings;
       const ageDays = (Date.now() - Date.parse(cur.period)) / 864e5;
       if (ageDays > 200) console.warn(`  ⚠ latest 13F is for ${cur.period}; this filer may have stopped filing or moved to a new CIK`);
+      // A newly added manager whose last 13F is over ~9 months old has stopped filing: don't publish a stale
+      // portfolio as if it were current (existing managers keep their last data and the warning above).
+      if (ageDays > 300 && !readJSON(outFile)) throw new Error(`latest 13F is for ${cur.period}, too old to publish. Remove this manager or find their current CIK.`);
 
       const existing = readJSON(outFile);
       const haveHist = new Map((existing?.history || []).map((h) => [h.acc, h]));
