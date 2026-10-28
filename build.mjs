@@ -115,13 +115,15 @@ const readDir = (dir) => {
   return out;
 };
 const proCfg = readJSON('config/pro.json') || {};
-const vendorOn = !!(proCfg.vendor?.enabled && proCfg.vendor?.displayLicence);
+// Prices, analyst targets and earnings history: a licensed feed, or Yahoo while the site is internal-only.
+const vendorOn = !!(proCfg.vendor?.enabled && (proCfg.vendor?.displayLicence || proCfg.vendor?.internalTest));
 const pro = buildProData(d, {
   aliases: readJSON('config/ticker-aliases.json')?.aliases || {},
   filings8k: readJSON('data/filings/8k.json'),
   etfCfg: readJSON('config/etfs.json'),
   etfData: readDir('data/etfs'),
   vendor: vendorOn ? readDir('data/vendor') : null,
+  vendorLabel: vendorOn ? proCfg.vendor.label || proCfg.vendor.name : null,
 });
 // Space-separated list of every ticker we accept on a watchlist (catches typos without parsing JSON).
 const secTickers = readJSON('data/sec-tickers.json');

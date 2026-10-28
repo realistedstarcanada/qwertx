@@ -220,3 +220,24 @@ test('TSX directory: every listing and share class, written as SYMBOL.TO', () =>
   assert.deepEqual(list, { 'CGL.TO': 'iShares Gold Bullion ETF', 'CGL-C.TO': 'iShares Gold Bullion ETF (non-hedged)', 'BIP-UN.TO': 'Brookfield Infrastructure Partners L.P.' });
   assert.deepEqual(parseDirectory(null), {});
 });
+
+test('Yahoo test feed: quoteSummary and chart responses become the vendor shape', async () => {
+  const { shapeYahoo, chartCloses, yahooSymbol } = await import('../scripts/fetch-yahoo.mjs');
+  assert.equal(yahooSymbol('BRK.B'), 'BRK-B');
+  assert.equal(yahooSymbol('BIP-UN.TO'), 'BIP-UN.TO');
+  const closes = chartCloses({ chart: { result: [{ timestamp: [1760000000, 1760600000, 1761200000], indicators: { quote: [{ close: [180.1, null, 190.5] }] } }] } });
+  assert.equal(closes.length, 2, 'missing closes dropped');
+  const out = shapeYahoo({
+    price: { regularMarketPrice: { raw: 190.5, fmt: '190.50' }, regularMarketChangePercent: { raw: 0.0123, fmt: '1.23%' }, currency: 'USD', regularMarketTime: { raw: 1761595200 }, longName: 'NVIDIA Corporation' },
+    financialData: { targetLowPrice: { raw: 140 }, targetHighPrice: { raw: 300 }, targetMeanPrice: { raw: 235.2 }, targetMedianPrice: { raw: 240 }, numberOfAnalystOpinions: { raw: 55 }, recommendationKey: 'strong_buy' },
+    recommendationTrend: { trend: [{ period: '0m', strongBuy: 20, buy: 25, hold: 8, sell: 2, strongSell: 0 }, { period: '-1m', strongBuy: 1 }] },
+    earningsHistory: { history: [{ quarter: { raw: 1751241600, fmt: '2025-06-30' }, epsActual: { raw: 1.05 }, epsEstimate: { raw: 1.01 } }, { quarter: { fmt: '2025-09-30' }, epsActual: {} }] },
+  }, closes);
+  assert.equal(out.n, 'NVIDIA Corporation');
+  assert.deepEqual(out.q, { p: 190.5, chg: 1.23, d: '2025-10-27', cur: 'USD' });
+  assert.equal(out.an.avg, 235.2);
+  assert.equal(out.an.sb + out.an.b + out.an.h + out.an.s, 55);
+  assert.deepEqual(out.er, [{ d: '2025-06-30', a: 1.05, e: 1.01 }]);
+  assert.equal(shapeYahoo(null).q, null);
+  assert.equal(shapeYahoo({ price: { regularMarketPrice: 10 }, financialData: { targetMeanPrice: { raw: 12 } } }).an, null, 'no analysts, no targets');
+});

@@ -265,11 +265,13 @@
     if (kinds.entered) bits.push('the amounts you entered');
     if (kinds.paid) bits.push('your average prices');
     var basis = bits.length > 1 ? bits.slice(0, -1).join(', ') + ' and ' + bits[bits.length - 1] : bits[0];
-    var gain = M.allLive && M.invested ? M.total - M.invested : null;
+    var gl = M.sized.filter(function (r) { return r.v.kind === 'live' && r.v.invested; });
+    var glNow = gl.reduce(function (a, r) { return a + r.v.now; }, 0), glIn = gl.reduce(function (a, r) { return a + r.v.invested; }, 0);
+    var gain = gl.length ? glNow - glIn : null;
     html += '<div class="px-grid2">';
     html += '<section class="card px-hero" aria-label="Portfolio value">' + label('Portfolio value') +
       (M.sized.length ? '<div class="px-big">' + usd(M.total) + '</div>' +
-        (gain != null ? '<div class="px-gain ' + (gain >= 0 ? 'up' : 'down') + '">' + (gain >= 0 ? '+' : '−') + usd(Math.abs(gain)) + ' (' + pct(gain / M.invested * 100) + ') since you added them</div>' : '') +
+        (gain != null ? '<div class="px-gain ' + (gain >= 0 ? 'up' : 'down') + '">' + (gain >= 0 ? '+' : '−') + usd(Math.abs(gain)) + ' (' + pct(gain / glIn * 100) + ') ' + (gl.length === M.sized.length ? 'on what you paid' : 'on the ' + plural(gl.length, 'holding') + ' with an average price') + '</div>' : '') +
         '<p class="form-note">From ' + basis + '. ' + plural(M.sized.length, 'position') + ' with a size' + (M.rows.length > M.sized.length ? ', ' + (M.rows.length - M.sized.length) + ' without' : '') + '.' +
           (M.rows.some(function (r) { return r.w.shares && !r.v; }) ? ' Holdings in shares count once you add their average price.' : '') + '</p>'
         : '<div class="px-big muted">—</div><p class="form-note">Add how much you own on each holding (optional) to see your total, your weights and what you really own.</p>') +
@@ -380,10 +382,10 @@
     }
     var pos = w.amount ? usd(w.amount) : w.shares ? (+w.shares).toLocaleString('en-US') + ' shares' : '<span class="muted">—</span>';
     if (w.paid && w.shares) pos += '<div class="tkr-name">avg. $' + (+w.paid).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' a share</div>';
-    return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkr(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div></td>' +
+    return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkr(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div>' + (d && d.q && d.q.p ? '<div class="tkr-name mono">' + (d.q.cur && d.q.cur !== 'USD' ? d.q.cur + ' ' : '$') + d.q.p.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + (d.q.chg != null ? ' <span class="' + (d.q.chg >= 0 ? 'up' : 'down') + '">' + pct(d.q.chg, 2) + '</span>' : '') + '</div>' : '') + '</td>' +
       '<td>' + pos + ' <button type="button" class="linklike" data-edit="' + esc(t) + '">' + (w.amount || w.shares ? 'Edit' : 'Add size') + '</button>' + posForm(w) + '</td>' +
       '<td>' + (weight != null ? '<div class="px-wbar"><span style="width:' + Math.min(100, weight * 2.5).toFixed(0) + '%"></span></div><span class="mono">' + weight.toFixed(1) + '%</span>' : '<span class="muted">—</span>') + '</td>' +
-      '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'paid' ? '<div class="tkr-name">at your average price</div>' : '') : w.shares ? '<button type="button" class="linklike" data-edit="' + esc(t) + '">Add average price</button>' : '<span class="muted">—</span>') + '</td>' +
+      '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'paid' ? '<div class="tkr-name">at your average price</div>' : '') + (v.kind === 'live' && v.invested ? '<div class="tkr-name ' + (v.now >= v.invested ? 'up' : 'down') + '">' + (v.now >= v.invested ? '+' : '−') + usd(Math.abs(v.now - v.invested)) + ' (' + pct((v.now / v.invested - 1) * 100) + ')</div>' : '') : w.shares ? '<button type="button" class="linklike" data-edit="' + esc(t) + '">Add average price</button>' : '<span class="muted">—</span>') + '</td>' +
       '<td>' + sm + '</td><td>' + er + '</td>' +
       '<td><button class="icon-btn wl-remove" type="button" data-remove="' + esc(t) + '" aria-label="Remove ' + esc(t) + '"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></td></tr>';
   }
@@ -590,7 +592,7 @@
     var withAn = stocks.filter(function (w) { var d = S.data[w.ticker]; return d && d.an && d.q && d.q.p; });
     if (!S.index.vendor || !withAn.length) {
       return '<section class="card px-analyst-empty"><h2 class="px-h2">What Wall Street expects from your stocks</h2>' +
-        soon('Analyst targets are coming soon', 'Analyst price targets and ratings are licensed data. Once QWERTx’s data licence is in place, this tab shows for each of your stocks the lowest, average and highest 12-month target next to today’s price, the buy/hold/sell split, and what your own positions would be worth if the targets are right.') +
+        soon('Analyst targets are coming soon', (S.index.vendor ? 'None of your stocks has analyst coverage in the latest data update yet. Once it does, this tab shows' : 'Analyst price targets and ratings are licensed data. Once QWERTx’s data licence is in place, this tab shows') + ' for each of your stocks the lowest, average and highest 12-month target next to today’s price, the buy/hold/sell split, and what your own positions would be worth if the targets are right.') +
         '<p class="form-note">Until then, the <a href="#" data-tab-go="earnings">Earnings &amp; News</a> tab shows whether your companies beat analysts’ expectations, from the official earnings calendar.</p></section>';
     }
     if (!pro) return '<section class="card"><h2 class="px-h2">What Wall Street expects from your stocks</h2>' + lock('Analyst targets and your personal scenarios are part of QWERTx Pro.') + '</section>';
@@ -605,7 +607,7 @@
     var sized = info.filter(function (x) { return x.v; });
     var now = sized.reduce(function (a, x) { return a + x.v.now; }, 0);
     var at = function (k) { return sized.reduce(function (a, x) { return a + x.v.now * x.a[k] / x.p; }, 0); };
-    var html = '<div class="px-h2row"><h2 class="px-h2 big">What Wall Street expects from your stocks</h2><span class="form-note">12-month analyst price targets · ' + esc(S.data[sel.t].an ? 'licensed data' : '') + '</span></div><div class="px-grid2">';
+    var html = '<div class="px-h2row"><h2 class="px-h2 big">What Wall Street expects from your stocks</h2><span class="form-note">12-month analyst price targets · ' + esc(S.index.vendorLabel || 'licensed data') + '</span></div><div class="px-grid2">';
     if (sized.length) {
       var avg = at('avg'), lo = at('low'), hi = at('high');
       var X = function (v) { return (10 + (v - Math.min(lo, now) * 0.97) / (hi * 1.02 - Math.min(lo, now) * 0.97) * 500).toFixed(1); };

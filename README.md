@@ -16,6 +16,7 @@ zero npm dependencies, hosted free on Cloudflare Pages and kept fresh by GitHub 
 | Company events (8-K item numbers) for every stock on the site | `scripts/fetch-8k.mjs` | SEC EDGAR daily index + submissions | Same as politician trades |
 | Economy and rates for Market Weather (US + Canada) | `scripts/fetch-macro.mjs` | FRED (public-domain series only), Bank of Canada Valet, Statistics Canada | Same as politician trades; FRED needs `FRED_API_KEY` |
 | What's inside US ETFs (`config/etfs.json`; Canadian ETFs borrow a same-index US fund) | `scripts/fetch-etfs.mjs` | SEC Form N-PORT | Same as portfolios |
+| Prices, analyst targets, earnings history — **internal testing** | `scripts/fetch-yahoo.mjs` | Yahoo Finance public pages (not licensed for public display) | Weekdays 18:30 Toronto (`update-prices.yml`), while `vendor.name` is `yahoo` |
 | Licensed prices, analyst targets, earnings history (off until licensed) | `scripts/fetch-fmp.mjs` | Financial Modeling Prep | Same as politician trades, only when `vendor.enabled` |
 | Live Fear & Greed on the page | `functions/api/market-mood.js` | CNN, cached 15 min at the edge | On page view |
 
@@ -63,8 +64,9 @@ alerts; everyone with a watchlist gets a Friday digest.
 
 The Pro page has six tabs: My Portfolio (value, health cards, what you really own through ETFs, ETF scorecard),
 Smart Money, Analyst Targets, Earnings & News, Market Weather and the QWERTx Brief. Anything that needs licensed
-data (live prices, analyst targets, ETF returns) says "coming soon" until `vendor.enabled` is `true` in
-`config/pro.json`. Turn it on only after the vendor's display licence is signed.
+data (live prices, analyst targets, ETF returns) comes from `config/pro.json` → `vendor`. While the site is
+internal-only it is Yahoo Finance (`internalTest: true`). **Before public launch** switch to the licensed feed
+(`"name": "fmp"`, `displayLicence: true` once signed) or set `enabled` to `false`.
 
 ### Setup checklist
 

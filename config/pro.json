@@ -1,5 +1,5 @@
 {
-  "_note": "QWERTx Pro plans. Product IDs are not secret; the Stripe secret key lives in Cloudflare as STRIPE_SECRET_KEY. Prices are created in Stripe automatically from 'amount' (in cents) under 'lookupKey' the first time someone checks out, so changing a price here means changing amount AND giving it a new lookupKey. Subscribers keep the price they signed up at. Set checkoutOpen to true to put live checkout buttons on the public Pro page. 'vendor' turns on licensed prices, analyst targets and earnings history (scripts/fetch-fmp.mjs): keep enabled false until there is a paid plan AND a data display licence.",
+  "_note": "QWERTx Pro plans. Product IDs are not secret; the Stripe secret key lives in Cloudflare as STRIPE_SECRET_KEY. Prices are created in Stripe automatically from 'amount' (in cents) under 'lookupKey' the first time someone checks out, so changing a price here means changing amount AND giving it a new lookupKey. Subscribers keep the price they signed up at. Set checkoutOpen to true to put live checkout buttons on the public Pro page. 'vendor' turns on prices, analyst targets and earnings history. While the site is used internally it is 'yahoo' with internalTest true (scripts/fetch-yahoo.mjs, Yahoo Finance's public pages, not licensed for public display). BEFORE PUBLIC LAUNCH switch to 'fmp' (scripts/fetch-fmp.mjs) with a paid plan and data display licence, or set enabled false.",
   "mode": "test",
   "checkoutOpen": false,
   "currency": "usd",
@@ -35,8 +35,10 @@
     }
   },
   "vendor": {
-    "name": "fmp",
-    "enabled": false,
-    "displayLicence": false
+    "name": "yahoo",
+    "enabled": true,
+    "displayLicence": false,
+    "internalTest": true,
+    "label": "Yahoo Finance"
   }
 }

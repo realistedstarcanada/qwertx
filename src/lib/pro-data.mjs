@@ -20,7 +20,7 @@ const TRADE_VIEW_DAYS = 180;
 const RECENT_EVENT_DAYS = 21;
 const TICKER = /^[A-Z][A-Z0-9.\-]{0,9}$/;
 
-export function buildProData(d, { now = Date.now(), aliases = {}, filings8k = null, etfCfg = null, etfData = {}, vendor = null } = {}) {
+export function buildProData(d, { now = Date.now(), aliases = {}, filings8k = null, etfCfg = null, etfData = {}, vendor = null, vendorLabel = null } = {}) {
   const managers = {};
   const institutions = d.institutions || [];
   for (const inv of [...d.live, ...institutions]) {
@@ -172,6 +172,8 @@ export function buildProData(d, { now = Date.now(), aliases = {}, filings8k = nu
   // ---- Licensed vendor data (prices, analyst targets, earnings history): only when switched on ----
   if (vendor) {
     for (const [t, v] of Object.entries(vendor)) {
+      // Holdings no fund manager owns (a Toronto-only stock, a small US company) still get prices and targets.
+      if (!stocks[t] && v.q) stocks[t] = { n: v.n || t, s: null, sec: null, h: [], x: [], cg: [] };
       const o = stocks[t];
       if (!o) continue;
       if (v.q) o.q = v.q;
@@ -199,7 +201,7 @@ export function buildProData(d, { now = Date.now(), aliases = {}, filings8k = nu
     const h = o.h || [];
     tickers[t] = [o.n, h.length, h.filter((x) => x[2] === 'New' || x[2] === 'Add').length, h.filter((x) => x[2] === 'Trim').length, (o.x || []).length, o.s, h.map((x) => pos.get(x[0])), o.e?.d || null];
   }
-  const index = { generatedAt, insiderQuarter, managers, managerOrder, aliases, tickers, etfs, vendor: !!vendor, k8: filings8k?.through || filings8k?.updatedAt || null };
+  const index = { generatedAt, insiderQuarter, managers, managerOrder, aliases, tickers, etfs, vendor: !!vendor, vendorLabel: vendor ? vendorLabel : null, k8: filings8k?.through || filings8k?.updatedAt || null };
   const events = buildEvents(d, { now });
   const recentEvents = events.filter((e) => daysAgo(e.at, now) <= RECENT_EVENT_DAYS);
   return { ownership, index, events, recentEvents };
