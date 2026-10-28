@@ -1,0 +1,365 @@
+{
+  "t": "BND",
+  "name": "Vanguard Total Bond Market ETF",
+  "index": "Bloomberg US Aggregate Float Adjusted",
+  "series": "S000002564",
+  "cik": "0000794105",
+  "acc": "0000794105-26-000276",
+  "filed": "2026-08-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/794105/000079410526000276/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 397107296566.89,
+  "count": 17397,
+  "top": [
+    [
+      "Vanguard Cmt Funds-Vanguard Market Liqui",
+      0.9,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.47,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.41,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.41,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.41,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.41,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.41,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.41,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.4,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.39,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.39,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.36,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.36,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.35,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.35,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.34,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.34,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.34,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.33,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.32,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.32,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.32,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.32,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.32,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.31,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.31,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.3,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.29,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.28,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.27,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.27,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.25,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.25,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.25,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.25,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.24,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.24,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.23,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ],
+    [
+      "United States Treasury Note/Bond",
+      0.22,
+      "US"
+    ]
+  ],
+  "top10": 4.6,
+  "countries": {
+    "US": 93.2,
+    "N/A": 1.4,
+    "CA": 1.1,
+    "GB": 0.8,
+    "JP": 0.5,
+    "MX": 0.4,
+    "DE": 0.3,
+    "NL": 0.2,
+    "AU": 0.2,
+    "IE": 0.2,
+    "PH": 0.1,
+    "ES": 0.1,
+    "ID": 0.1,
+    "KR": 0.1,
+    "IL": 0.1,
+    "SG": 0.1,
+    "PA": 0.1,
+    "KY": 0.1,
+    "PL": 0.1,
+    "CL": 0.1,
+    "FR": 0.1,
+    "PE": 0.1,
+    "LU": 0.1,
+    "AT": 0.1,
+    "UY": 0,
+    "NO": 0,
+    "CH": 0,
+    "SE": 0,
+    "IT": 0,
+    "BM": 0,
+    "LR": 0,
+    "HU": 0,
+    "VG": 0,
+    "BR": 0,
+    "JE": 0,
+    "HK": 0,
+    "FI": 0,
+    "CN": 0,
+    "GG": 0,
+    "IM": 0
+  },
+  "sectors": {
+    "Bonds": 77.8,
+    "Other": 21.2,
+    "Cash & other": 0.9
+  },
+  "covered": 99.9
+}

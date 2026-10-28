@@ -1,0 +1,160 @@
+{
+  "t": "SMH",
+  "name": "VanEck Semiconductor ETF",
+  "index": "MVIS US Listed Semiconductor 25",
+  "series": "S000034411",
+  "cik": "0001137360",
+  "acc": "0001410368-26-086937",
+  "filed": "2026-08-26",
+  "url": "https://www.sec.gov/Archives/edgar/data/1137360/000141036826086937/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 77198271229.21,
+  "count": 26,
+  "top": [
+    [
+      "NVDA",
+      17.55,
+      "US"
+    ],
+    [
+      "TSM",
+      9.29,
+      "TW"
+    ],
+    [
+      "AMAT",
+      5.74,
+      "US"
+    ],
+    [
+      "MU",
+      5.67,
+      "US"
+    ],
+    [
+      "AMD",
+      5.63,
+      "US"
+    ],
+    [
+      "KLAC",
+      5.57,
+      "US"
+    ],
+    [
+      "LRCX",
+      5.31,
+      "US"
+    ],
+    [
+      "AVGO",
+      5.28,
+      "US"
+    ],
+    [
+      "INTC",
+      5.15,
+      "US"
+    ],
+    [
+      "ASML Holding NV",
+      5.04,
+      "NL"
+    ],
+    [
+      "MRVL",
+      4.66,
+      "US"
+    ],
+    [
+      "TXN",
+      4.17,
+      "US"
+    ],
+    [
+      "ADI",
+      4,
+      "US"
+    ],
+    [
+      "QCOM",
+      3.74,
+      "US"
+    ],
+    [
+      "CDNS",
+      2.15,
+      "US"
+    ],
+    [
+      "SNPS",
+      1.79,
+      "US"
+    ],
+    [
+      "TER",
+      1.5,
+      "US"
+    ],
+    [
+      "ALAB",
+      1.27,
+      "US"
+    ],
+    [
+      "STM",
+      1.26,
+      "NL"
+    ],
+    [
+      "MPWR",
+      1.22,
+      "US"
+    ],
+    [
+      "ARM",
+      1.17,
+      "GB"
+    ],
+    [
+      "NXP Semiconductors NV",
+      1.15,
+      "NL"
+    ],
+    [
+      "MCHP",
+      0.9,
+      "US"
+    ],
+    [
+      "ON",
+      0.58,
+      "US"
+    ],
+    [
+      "SWKS",
+      0.16,
+      "US"
+    ],
+    [
+      "State Street Global Advisors",
+      0,
+      "US"
+    ]
+  ],
+  "top10": 70.2,
+  "countries": {
+    "US": 82,
+    "TW": 9.3,
+    "NL": 7.4,
+    "GB": 1.2
+  },
+  "sectors": {
+    "Technology": 88.4,
+    "Other": 6.2,
+    "Industrials": 5.3,
+    "Cash & other": 0
+  },
+  "covered": 100
+}

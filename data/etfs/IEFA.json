@@ -1,0 +1,365 @@
+{
+  "t": "IEFA",
+  "name": "iShares Core MSCI EAFE ETF",
+  "index": "MSCI EAFE IMI",
+  "series": "S000038930",
+  "cik": "0001100663",
+  "acc": "0001004726-26-008816",
+  "filed": "2026-09-23",
+  "url": "https://www.sec.gov/Archives/edgar/data/1100663/000100472626008816/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-07-31",
+  "netAssets": 190108829962.05,
+  "count": 2631,
+  "top": [
+    [
+      "ASML Holding N.V.",
+      2.5,
+      "NL"
+    ],
+    [
+      "HSBC HOLDINGS PLC",
+      1.42,
+      "GB"
+    ],
+    [
+      "Roche Holding AG",
+      1.2,
+      "CH"
+    ],
+    [
+      "Novartis AG",
+      1.12,
+      "CH"
+    ],
+    [
+      "BlackRock Funds III: BlackRock Cash Fund",
+      1.02,
+      "US"
+    ],
+    [
+      "Nestle S.A.",
+      1,
+      "CH"
+    ],
+    [
+      "ASTRAZENECA PLC",
+      1,
+      "GB"
+    ],
+    [
+      "SHELL PLC",
+      1,
+      "GB"
+    ],
+    [
+      "Siemens Aktiengesellschaft",
+      0.95,
+      "DE"
+    ],
+    [
+      "Mitsubishi UFJ Financial Group, Inc.",
+      0.93,
+      "JP"
+    ],
+    [
+      "BHP GROUP LIMITED",
+      0.83,
+      "AU"
+    ],
+    [
+      "COMMONWEALTH BANK OF AUSTRALIA",
+      0.82,
+      "AU"
+    ],
+    [
+      "Banco Santander, S.A.",
+      0.79,
+      "ES"
+    ],
+    [
+      "SAP SE",
+      0.74,
+      "DE"
+    ],
+    [
+      "Allianz SE",
+      0.74,
+      "DE"
+    ],
+    [
+      "SCHNEIDER ELECTRIC SE",
+      0.72,
+      "FR"
+    ],
+    [
+      "TOYOTA MOTOR CORPORATION",
+      0.7,
+      "JP"
+    ],
+    [
+      "TOTALENERGIES SE",
+      0.67,
+      "FR"
+    ],
+    [
+      "UBS Group AG",
+      0.65,
+      "CH"
+    ],
+    [
+      "ROLLS-ROYCE HOLDINGS PLC",
+      0.65,
+      "GB"
+    ],
+    [
+      "Banco Bilbao Vizcaya Argentaria, S.A.",
+      0.61,
+      "ES"
+    ],
+    [
+      "Sumitomo Mitsui Financial Group, Inc.",
+      0.61,
+      "JP"
+    ],
+    [
+      "ABB Ltd",
+      0.6,
+      "CH"
+    ],
+    [
+      "NOVO NORDISK A/S",
+      0.59,
+      "DK"
+    ],
+    [
+      "Tokyo Electron Limited",
+      0.58,
+      "JP"
+    ],
+    [
+      "Iberdrola, S.A.",
+      0.58,
+      "ES"
+    ],
+    [
+      "ADVANTEST CORPORATION",
+      0.56,
+      "JP"
+    ],
+    [
+      "Hitachi, Ltd.",
+      0.56,
+      "JP"
+    ],
+    [
+      "Airbus SE",
+      0.54,
+      "NL"
+    ],
+    [
+      "UNILEVER PLC",
+      0.54,
+      "GB"
+    ],
+    [
+      "Sony Group Corporation",
+      0.53,
+      "JP"
+    ],
+    [
+      "LVMH MOET HENNESSY LOUIS VUITTON SE",
+      0.53,
+      "FR"
+    ],
+    [
+      "SAFRAN SA",
+      0.53,
+      "FR"
+    ],
+    [
+      "Siemens Energy AG",
+      0.52,
+      "DE"
+    ],
+    [
+      "UNICREDIT, SOCIETA PER AZIONI",
+      0.5,
+      "IT"
+    ],
+    [
+      "COMPAGNIE FINANCIERE RICHEMONT SA",
+      0.49,
+      "CH"
+    ],
+    [
+      "BNP PARIBAS SA",
+      0.49,
+      "FR"
+    ],
+    [
+      "L'AIR LIQUIDE SOCIETE ANONYME POUR L'ETU",
+      0.49,
+      "FR"
+    ],
+    [
+      "BRITISH AMERICAN TOBACCO P.L.C.",
+      0.48,
+      "GB"
+    ],
+    [
+      "Mizuho Financial Group, Inc.",
+      0.48,
+      "JP"
+    ],
+    [
+      "DBS GROUP HOLDINGS LTD",
+      0.46,
+      "SG"
+    ],
+    [
+      "BP P.L.C.",
+      0.46,
+      "GB"
+    ],
+    [
+      "SoftBank Group Corp.",
+      0.45,
+      "JP"
+    ],
+    [
+      "Zurich Insurance Group AG",
+      0.44,
+      "CH"
+    ],
+    [
+      "L'OREAL SA",
+      0.41,
+      "FR"
+    ],
+    [
+      "Deutsche Telekom AG",
+      0.41,
+      "DE"
+    ],
+    [
+      "AIA Group Limited",
+      0.41,
+      "HK"
+    ],
+    [
+      "GSK PLC",
+      0.41,
+      "GB"
+    ],
+    [
+      "Recruit Holdings Co.,Ltd.",
+      0.41,
+      "JP"
+    ],
+    [
+      "INTESA SANPAOLO SPA",
+      0.41,
+      "IT"
+    ],
+    [
+      "ING Groep N.V.",
+      0.4,
+      "NL"
+    ],
+    [
+      "RIO TINTO PLC",
+      0.4,
+      "GB"
+    ],
+    [
+      "KEYENCE CORPORATION",
+      0.37,
+      "JP"
+    ],
+    [
+      "Infineon Technologies AG",
+      0.37,
+      "DE"
+    ],
+    [
+      "BARCLAYS PLC",
+      0.37,
+      "GB"
+    ],
+    [
+      "SANOFI SA",
+      0.36,
+      "FR"
+    ],
+    [
+      "FAST RETAILING CO., LTD.",
+      0.36,
+      "JP"
+    ],
+    [
+      "Tokio Marine Holdings, Inc.",
+      0.36,
+      "JP"
+    ],
+    [
+      "WESTPAC BANKING CORPORATION",
+      0.35,
+      "AU"
+    ],
+    [
+      "Mitsubishi Corporation",
+      0.35,
+      "JP"
+    ]
+  ],
+  "top10": 12.1,
+  "countries": {
+    "JP": 24.9,
+    "GB": 13.8,
+    "CH": 8.8,
+    "FR": 8.2,
+    "DE": 8.1,
+    "AU": 7.1,
+    "NL": 6.3,
+    "ES": 3.6,
+    "SE": 3.4,
+    "IT": 2.9,
+    "DK": 1.7,
+    "SG": 1.7,
+    "IL": 1.6,
+    "HK": 1.3,
+    "US": 1.1,
+    "FI": 1.1,
+    "BE": 1,
+    "NO": 0.8,
+    "LU": 0.6,
+    "KY": 0.6,
+    "JE": 0.6,
+    "AT": 0.4,
+    "IE": 0.4,
+    "BM": 0.3,
+    "NZ": 0.2,
+    "PT": 0.2,
+    "XX": 0.1,
+    "CY": 0,
+    "IM": 0,
+    "GG": 0,
+    "FO": 0,
+    "VG": 0,
+    "MU": 0,
+    "CN": 0,
+    "AE": 0
+  },
+  "sectors": {
+    "Other": 99,
+    "Cash & other": 1,
+    "Communication": 0.3,
+    "Industrials": 0.3,
+    "Technology": 0.2,
+    "Financials": 0,
+    "Health Care": 0,
+    "Consumer Staples": 0
+  },
+  "covered": 100.8
+}

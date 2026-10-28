@@ -1,0 +1,337 @@
+{
+  "t": "VUG",
+  "name": "Vanguard Growth ETF",
+  "index": "CRSP US Large Cap Growth",
+  "series": "S000002842",
+  "cik": "0000036405",
+  "acc": "0000036405-26-000474",
+  "filed": "2026-08-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/36405/000003640526000474/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 379290306499.55,
+  "count": 152,
+  "top": [
+    [
+      "NVDA",
+      12.63,
+      "US"
+    ],
+    [
+      "AAPL",
+      11.67,
+      "US"
+    ],
+    [
+      "MSFT",
+      7.61,
+      "US"
+    ],
+    [
+      "GOOGL",
+      5.76,
+      "US"
+    ],
+    [
+      "GOOG",
+      4.53,
+      "US"
+    ],
+    [
+      "AMZN",
+      4.47,
+      "US"
+    ],
+    [
+      "AVGO",
+      4.28,
+      "US"
+    ],
+    [
+      "META",
+      3.41,
+      "US"
+    ],
+    [
+      "TSLA",
+      3.27,
+      "US"
+    ],
+    [
+      "LLY",
+      2.81,
+      "US"
+    ],
+    [
+      "AMD",
+      2.62,
+      "US"
+    ],
+    [
+      "AMAT",
+      1.6,
+      "US"
+    ],
+    [
+      "V",
+      1.54,
+      "US"
+    ],
+    [
+      "LRCX",
+      1.51,
+      "US"
+    ],
+    [
+      "COST",
+      1.15,
+      "US"
+    ],
+    [
+      "MA",
+      1.13,
+      "US"
+    ],
+    [
+      "KLAC",
+      1.1,
+      "US"
+    ],
+    [
+      "SNDK",
+      0.94,
+      "US"
+    ],
+    [
+      "GEV",
+      0.89,
+      "US"
+    ],
+    [
+      "NFLX",
+      0.84,
+      "US"
+    ],
+    [
+      "INTC",
+      0.79,
+      "US"
+    ],
+    [
+      "PANW",
+      0.78,
+      "US"
+    ],
+    [
+      "MRVL",
+      0.75,
+      "US"
+    ],
+    [
+      "PLTR",
+      0.71,
+      "US"
+    ],
+    [
+      "ORCL",
+      0.71,
+      "US"
+    ],
+    [
+      "WDC",
+      0.62,
+      "US"
+    ],
+    [
+      "APH",
+      0.61,
+      "US"
+    ],
+    [
+      "STX",
+      0.61,
+      "US"
+    ],
+    [
+      "GE",
+      0.55,
+      "US"
+    ],
+    [
+      "MCD",
+      0.54,
+      "US"
+    ],
+    [
+      "CRWD",
+      0.53,
+      "US"
+    ],
+    [
+      "ANET",
+      0.52,
+      "US"
+    ],
+    [
+      "BA",
+      0.48,
+      "US"
+    ],
+    [
+      "TJX",
+      0.48,
+      "US"
+    ],
+    [
+      "WELL",
+      0.46,
+      "US"
+    ],
+    [
+      "APP",
+      0.41,
+      "US"
+    ],
+    [
+      "ISRG",
+      0.4,
+      "US"
+    ],
+    [
+      "BKNG",
+      0.4,
+      "US"
+    ],
+    [
+      "TXN",
+      0.39,
+      "US"
+    ],
+    [
+      "VRT",
+      0.37,
+      "US"
+    ],
+    [
+      "VRTX",
+      0.36,
+      "US"
+    ],
+    [
+      "SBUX",
+      0.34,
+      "US"
+    ],
+    [
+      "PWR",
+      0.31,
+      "US"
+    ],
+    [
+      "HWM",
+      0.31,
+      "US"
+    ],
+    [
+      "CDNS",
+      0.3,
+      "US"
+    ],
+    [
+      "NOW",
+      0.3,
+      "US"
+    ],
+    [
+      "EQIX",
+      0.3,
+      "US"
+    ],
+    [
+      "GLW",
+      0.3,
+      "US"
+    ],
+    [
+      "SPCX",
+      0.29,
+      "US"
+    ],
+    [
+      "FTNT",
+      0.28,
+      "US"
+    ],
+    [
+      "DDOG",
+      0.26,
+      "US"
+    ],
+    [
+      "SNPS",
+      0.25,
+      "US"
+    ],
+    [
+      "SNOW",
+      0.25,
+      "US"
+    ],
+    [
+      "BE",
+      0.24,
+      "US"
+    ],
+    [
+      "HOOD",
+      0.23,
+      "US"
+    ],
+    [
+      "NET",
+      0.23,
+      "US"
+    ],
+    [
+      "MAR",
+      0.23,
+      "US"
+    ],
+    [
+      "COHR",
+      0.23,
+      "US"
+    ],
+    [
+      "TER",
+      0.23,
+      "US"
+    ],
+    [
+      "ORLY",
+      0.23,
+      "US"
+    ]
+  ],
+  "top10": 60.4,
+  "countries": {
+    "US": 100.3,
+    "N/A": 0
+  },
+  "sectors": {
+    "Technology": 57.1,
+    "Communication": 14.8,
+    "Consumer Discretionary": 11.5,
+    "Health Care": 4.6,
+    "Industrials": 4.2,
+    "Financials": 3.8,
+    "Consumer Staples": 1.6,
+    "Real Estate": 0.9,
+    "Materials": 0.8,
+    "Cash & other": 0.3,
+    "Energy": 0.2,
+    "Other": 0.2,
+    "Utilities": 0.2
+  },
+  "covered": 100.3
+}

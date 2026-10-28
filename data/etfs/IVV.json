@@ -1,0 +1,344 @@
+{
+  "t": "IVV",
+  "name": "iShares Core S&P 500 ETF",
+  "index": "S&P 500",
+  "series": "S000004310",
+  "cik": "0001100663",
+  "acc": "0002071691-26-019760",
+  "filed": "2026-08-25",
+  "url": "https://www.sec.gov/Archives/edgar/data/1100663/000207169126019760/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 888128937468.17,
+  "count": 508,
+  "top": [
+    [
+      "NVDA",
+      7.51,
+      "US"
+    ],
+    [
+      "AAPL",
+      6.58,
+      "US"
+    ],
+    [
+      "MSFT",
+      4.29,
+      "US"
+    ],
+    [
+      "AMZN",
+      3.61,
+      "US"
+    ],
+    [
+      "GOOGL",
+      3.25,
+      "US"
+    ],
+    [
+      "AVGO",
+      2.77,
+      "US"
+    ],
+    [
+      "GOOG",
+      2.59,
+      "US"
+    ],
+    [
+      "MU",
+      2.02,
+      "US"
+    ],
+    [
+      "META",
+      1.92,
+      "US"
+    ],
+    [
+      "TSLA",
+      1.83,
+      "US"
+    ],
+    [
+      "LLY",
+      1.47,
+      "US"
+    ],
+    [
+      "AMD",
+      1.47,
+      "US"
+    ],
+    [
+      "BRK.B",
+      1.42,
+      "US"
+    ],
+    [
+      "JPM",
+      1.36,
+      "US"
+    ],
+    [
+      "INTC",
+      1.02,
+      "US"
+    ],
+    [
+      "JNJ",
+      0.95,
+      "US"
+    ],
+    [
+      "AMAT",
+      0.89,
+      "US"
+    ],
+    [
+      "V",
+      0.88,
+      "US"
+    ],
+    [
+      "Exxon Mobil Corp.",
+      0.88,
+      "US"
+    ],
+    [
+      "LRCX",
+      0.84,
+      "US"
+    ],
+    [
+      "WMT",
+      0.77,
+      "US"
+    ],
+    [
+      "CAT",
+      0.76,
+      "US"
+    ],
+    [
+      "CSCO",
+      0.72,
+      "US"
+    ],
+    [
+      "ABBV",
+      0.69,
+      "US"
+    ],
+    [
+      "COST",
+      0.64,
+      "US"
+    ],
+    [
+      "MA",
+      0.64,
+      "US"
+    ],
+    [
+      "KLAC",
+      0.61,
+      "US"
+    ],
+    [
+      "GE",
+      0.6,
+      "US"
+    ],
+    [
+      "UNH",
+      0.58,
+      "US"
+    ],
+    [
+      "BAC",
+      0.58,
+      "US"
+    ],
+    [
+      "HD",
+      0.54,
+      "US"
+    ],
+    [
+      "PG",
+      0.53,
+      "US"
+    ],
+    [
+      "SNDK",
+      0.52,
+      "US"
+    ],
+    [
+      "MRK",
+      0.49,
+      "US"
+    ],
+    [
+      "GEV",
+      0.49,
+      "US"
+    ],
+    [
+      "KO",
+      0.49,
+      "US"
+    ],
+    [
+      "CVX",
+      0.48,
+      "US"
+    ],
+    [
+      "NFLX",
+      0.47,
+      "US"
+    ],
+    [
+      "GS",
+      0.46,
+      "US"
+    ],
+    [
+      "PM",
+      0.44,
+      "US"
+    ],
+    [
+      "PANW",
+      0.43,
+      "US"
+    ],
+    [
+      "TXN",
+      0.42,
+      "US"
+    ],
+    [
+      "PLTR",
+      0.41,
+      "US"
+    ],
+    [
+      "IBM",
+      0.41,
+      "US"
+    ],
+    [
+      "MRVL",
+      0.4,
+      "US"
+    ],
+    [
+      "RTX",
+      0.4,
+      "US"
+    ],
+    [
+      "WFC",
+      0.39,
+      "US"
+    ],
+    [
+      "MS",
+      0.39,
+      "US"
+    ],
+    [
+      "ORCL",
+      0.39,
+      "US"
+    ],
+    [
+      "Linde plc",
+      0.37,
+      "IE"
+    ],
+    [
+      "C",
+      0.37,
+      "US"
+    ],
+    [
+      "WDC",
+      0.34,
+      "US"
+    ],
+    [
+      "APH",
+      0.34,
+      "US"
+    ],
+    [
+      "Seagate Technology Holdings plc",
+      0.34,
+      "IE"
+    ],
+    [
+      "GLW",
+      0.31,
+      "US"
+    ],
+    [
+      "AMGN",
+      0.3,
+      "US"
+    ],
+    [
+      "QCOM",
+      0.3,
+      "US"
+    ],
+    [
+      "CRWD",
+      0.3,
+      "US"
+    ],
+    [
+      "ADI",
+      0.3,
+      "US"
+    ],
+    [
+      "MCD",
+      0.3,
+      "US"
+    ]
+  ],
+  "top10": 36.4,
+  "countries": {
+    "US": 97.2,
+    "IE": 2,
+    "CH": 0.3,
+    "BM": 0.2,
+    "NL": 0.1,
+    "LR": 0.1,
+    "CW": 0.1,
+    "SG": 0.1,
+    "JE": 0.1
+  },
+  "sectors": {
+    "Technology": 38.7,
+    "Financials": 12.1,
+    "Communication": 9.5,
+    "Consumer Discretionary": 9.1,
+    "Health Care": 7,
+    "Industrials": 6.9,
+    "Consumer Staples": 4.9,
+    "Other": 4.3,
+    "Utilities": 2.3,
+    "Energy": 1.8,
+    "Real Estate": 1.7,
+    "Materials": 1.5,
+    "Cash & other": 0.3
+  },
+  "covered": 100.1
+}

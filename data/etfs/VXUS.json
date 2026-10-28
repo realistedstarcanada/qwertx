@@ -1,0 +1,388 @@
+{
+  "t": "VXUS",
+  "name": "Vanguard Total International Stock ETF",
+  "index": "FTSE Global All Cap ex US",
+  "series": "S000002932",
+  "cik": "0000736054",
+  "acc": "0000736054-26-000275",
+  "filed": "2026-09-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/736054/000073605426000275/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-07-31",
+  "netAssets": 645863445397.66,
+  "count": 8833,
+  "top": [
+    [
+      "Taiwan Semiconductor Manufacturing Co Lt",
+      4.1,
+      "TW"
+    ],
+    [
+      "Samsung Electronics Co Ltd",
+      1.83,
+      "KR"
+    ],
+    [
+      "Vanguard Cmt Funds-Vanguard Market Liqui",
+      1.66,
+      "US"
+    ],
+    [
+      "ASML Holding NV",
+      1.45,
+      "NL"
+    ],
+    [
+      "SK hynix Inc",
+      1.43,
+      "KR"
+    ],
+    [
+      "Tencent Holdings Ltd",
+      0.87,
+      "HK"
+    ],
+    [
+      "HSBC Holdings PLC",
+      0.83,
+      "GB"
+    ],
+    [
+      "Vanguard Cmt Funds-Vanguard Market Liqui",
+      0.74,
+      "US"
+    ],
+    [
+      "Roche Holding AG",
+      0.7,
+      "CH"
+    ],
+    [
+      "RY",
+      0.67,
+      "CA"
+    ],
+    [
+      "Novartis AG",
+      0.66,
+      "CH"
+    ],
+    [
+      "Alibaba Group Holding Ltd",
+      0.63,
+      "HK"
+    ],
+    [
+      "Nestle SA",
+      0.59,
+      "CH"
+    ],
+    [
+      "Shell PLC",
+      0.58,
+      "GB"
+    ],
+    [
+      "AstraZeneca PLC",
+      0.58,
+      "GB"
+    ],
+    [
+      "Mitsubishi UFJ Financial Group Inc",
+      0.55,
+      "JP"
+    ],
+    [
+      "Siemens AG",
+      0.55,
+      "DE"
+    ],
+    [
+      "Commonwealth Bank of Australia",
+      0.48,
+      "AU"
+    ],
+    [
+      "Banco Santander SA",
+      0.47,
+      "ES"
+    ],
+    [
+      "Toyota Motor Corp",
+      0.46,
+      "JP"
+    ],
+    [
+      "TD",
+      0.46,
+      "CA"
+    ],
+    [
+      "Allianz SE",
+      0.43,
+      "DE"
+    ],
+    [
+      "SAP SE",
+      0.43,
+      "DE"
+    ],
+    [
+      "Schneider Electric SE",
+      0.42,
+      "FR"
+    ],
+    [
+      "TotalEnergies SE",
+      0.39,
+      "FR"
+    ],
+    [
+      "Rolls-Royce Holdings PLC",
+      0.38,
+      "GB"
+    ],
+    [
+      "UBS Group AG",
+      0.38,
+      "CH"
+    ],
+    [
+      "Iberdrola SA",
+      0.37,
+      "ES"
+    ],
+    [
+      "Banco Bilbao Vizcaya Argentaria SA",
+      0.36,
+      "ES"
+    ],
+    [
+      "MediaTek Inc",
+      0.36,
+      "TW"
+    ],
+    [
+      "Sumitomo Mitsui Financial Group Inc",
+      0.35,
+      "JP"
+    ],
+    [
+      "ABB Ltd",
+      0.35,
+      "CH"
+    ],
+    [
+      "Novo Nordisk A/S",
+      0.34,
+      "DK"
+    ],
+    [
+      "Tokyo Electron Ltd",
+      0.33,
+      "JP"
+    ],
+    [
+      "Hitachi Ltd",
+      0.33,
+      "JP"
+    ],
+    [
+      "SHOP",
+      0.33,
+      "CA"
+    ],
+    [
+      "Advantest Corp",
+      0.33,
+      "JP"
+    ],
+    [
+      "UniCredit SpA",
+      0.32,
+      "IT"
+    ],
+    [
+      "Sony Group Corp",
+      0.32,
+      "JP"
+    ],
+    [
+      "Airbus SE",
+      0.31,
+      "FR"
+    ],
+    [
+      "BHP Group Ltd",
+      0.31,
+      "AU"
+    ],
+    [
+      "LVMH Moet Hennessy Louis Vuitton SE",
+      0.31,
+      "FR"
+    ],
+    [
+      "Safran SA",
+      0.31,
+      "FR"
+    ],
+    [
+      "Unilever PLC",
+      0.31,
+      "GB"
+    ],
+    [
+      "Siemens Energy AG",
+      0.29,
+      "DE"
+    ],
+    [
+      "BMO",
+      0.29,
+      "CA"
+    ],
+    [
+      "Cie Financiere Richemont SA",
+      0.29,
+      "CH"
+    ],
+    [
+      "BNP Paribas SA",
+      0.28,
+      "FR"
+    ],
+    [
+      "British American Tobacco PLC",
+      0.28,
+      "GB"
+    ],
+    [
+      "Mizuho Financial Group Inc",
+      0.28,
+      "JP"
+    ],
+    [
+      "ENB",
+      0.27,
+      "CA"
+    ],
+    [
+      "BP PLC",
+      0.27,
+      "GB"
+    ],
+    [
+      "SoftBank Group Corp",
+      0.27,
+      "JP"
+    ],
+    [
+      "DBS Group Holdings Ltd",
+      0.27,
+      "SG"
+    ],
+    [
+      "Intesa Sanpaolo SpA",
+      0.26,
+      "IT"
+    ],
+    [
+      "Zurich Insurance Group AG",
+      0.26,
+      "CH"
+    ],
+    [
+      "CM",
+      0.25,
+      "CA"
+    ],
+    [
+      "BNS",
+      0.25,
+      "CA"
+    ],
+    [
+      "Recruit Holdings Co Ltd",
+      0.24,
+      "JP"
+    ],
+    [
+      "AIA Group Ltd",
+      0.24,
+      "HK"
+    ]
+  ],
+  "top10": 14.3,
+  "countries": {
+    "JP": 15.2,
+    "GB": 8.7,
+    "TW": 8,
+    "CA": 7.9,
+    "HK": 6.4,
+    "KR": 5.8,
+    "FR": 5.2,
+    "CH": 5.1,
+    "DE": 4.8,
+    "IN": 4.4,
+    "AU": 4.1,
+    "NL": 2.8,
+    "US": 2.8,
+    "ES": 2.2,
+    "IT": 2.1,
+    "SE": 2,
+    "CN": 1.6,
+    "BR": 1.1,
+    "SG": 1,
+    "DK": 1,
+    "ZA": 0.9,
+    "IL": 0.8,
+    "SA": 0.8,
+    "BE": 0.7,
+    "FI": 0.6,
+    "MX": 0.6,
+    "NO": 0.5,
+    "MY": 0.5,
+    "TH": 0.4,
+    "AE": 0.4,
+    "PL": 0.4,
+    "AT": 0.3,
+    "TR": 0.3,
+    "GR": 0.2,
+    "IE": 0.2,
+    "ID": 0.2,
+    "KW": 0.2,
+    "CL": 0.2,
+    "QA": 0.2,
+    "NZ": 0.1,
+    "PT": 0.1,
+    "PH": 0.1,
+    "HU": 0.1,
+    "CO": 0.1,
+    "RO": 0,
+    "CZ": 0,
+    "EG": 0,
+    "IS": 0,
+    "N/A": 0,
+    "VN": 0,
+    "AR": 0,
+    "RU": 0
+  },
+  "sectors": {
+    "Other": 92.8,
+    "Cash & other": 2.4,
+    "Financials": 2.2,
+    "Energy": 1.1,
+    "Materials": 1,
+    "Industrials": 0.6,
+    "Technology": 0.5,
+    "Utilities": 0.3,
+    "Real Estate": 0.2,
+    "Consumer Discretionary": 0.1,
+    "Funds & other": 0.1,
+    "Communication": 0.1,
+    "Health Care": 0,
+    "Bonds": 0
+  },
+  "covered": 101.3
+}

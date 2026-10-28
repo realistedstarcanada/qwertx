@@ -1,0 +1,337 @@
+{
+  "t": "SCHD",
+  "name": "Schwab U.S. Dividend Equity ETF",
+  "index": "Dow Jones U.S. Dividend 100",
+  "series": "S000034163",
+  "cik": "0001454889",
+  "acc": "0001410368-26-108609",
+  "filed": "2026-10-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/1454889/000141036826108609/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-08-31",
+  "netAssets": 112337237207.35,
+  "count": 100,
+  "top": [
+    [
+      "MRK",
+      4.76,
+      "US"
+    ],
+    [
+      "AMGN",
+      4.7,
+      "US"
+    ],
+    [
+      "ABT",
+      4.68,
+      "US"
+    ],
+    [
+      "KO",
+      4.16,
+      "US"
+    ],
+    [
+      "CVX",
+      4.01,
+      "US"
+    ],
+    [
+      "VZ",
+      3.96,
+      "US"
+    ],
+    [
+      "COP",
+      3.93,
+      "US"
+    ],
+    [
+      "HD",
+      3.87,
+      "US"
+    ],
+    [
+      "PG",
+      3.82,
+      "US"
+    ],
+    [
+      "UNH",
+      3.82,
+      "US"
+    ],
+    [
+      "PEP",
+      3.64,
+      "US"
+    ],
+    [
+      "BMY",
+      3.32,
+      "US"
+    ],
+    [
+      "TXN",
+      3.12,
+      "US"
+    ],
+    [
+      "Accenture PLC",
+      2.84,
+      "IE"
+    ],
+    [
+      "ADP",
+      2.78,
+      "US"
+    ],
+    [
+      "MO",
+      2.78,
+      "US"
+    ],
+    [
+      "LMT",
+      2.77,
+      "US"
+    ],
+    [
+      "BX",
+      2.59,
+      "US"
+    ],
+    [
+      "QCOM",
+      2.52,
+      "US"
+    ],
+    [
+      "CMCSA",
+      2.31,
+      "US"
+    ],
+    [
+      "SLB",
+      2.19,
+      "CW"
+    ],
+    [
+      "UPS",
+      1.89,
+      "US"
+    ],
+    [
+      "EOG",
+      1.88,
+      "US"
+    ],
+    [
+      "TGT",
+      1.78,
+      "US"
+    ],
+    [
+      "OKE",
+      1.47,
+      "US"
+    ],
+    [
+      "FAST",
+      1.38,
+      "US"
+    ],
+    [
+      "DVN",
+      1.36,
+      "US"
+    ],
+    [
+      "F",
+      1.33,
+      "US"
+    ],
+    [
+      "FITB",
+      1.19,
+      "US"
+    ],
+    [
+      "PAYX",
+      1,
+      "US"
+    ],
+    [
+      "ADM",
+      0.95,
+      "US"
+    ],
+    [
+      "KMB",
+      0.87,
+      "US"
+    ],
+    [
+      "ARES",
+      0.74,
+      "US"
+    ],
+    [
+      "CINF",
+      0.64,
+      "US"
+    ],
+    [
+      "HSY",
+      0.64,
+      "US"
+    ],
+    [
+      "RF",
+      0.62,
+      "US"
+    ],
+    [
+      "DRI",
+      0.6,
+      "US"
+    ],
+    [
+      "TROW",
+      0.58,
+      "US"
+    ],
+    [
+      "GIS",
+      0.54,
+      "US"
+    ],
+    [
+      "PFG",
+      0.53,
+      "US"
+    ],
+    [
+      "BR",
+      0.51,
+      "US"
+    ],
+    [
+      "SNA",
+      0.49,
+      "US"
+    ],
+    [
+      "EWBC",
+      0.42,
+      "US"
+    ],
+    [
+      "BBY",
+      0.38,
+      "US"
+    ],
+    [
+      "DINO",
+      0.38,
+      "US"
+    ],
+    [
+      "APA",
+      0.37,
+      "US"
+    ],
+    [
+      "FNF",
+      0.29,
+      "US"
+    ],
+    [
+      "WSO",
+      0.26,
+      "US"
+    ],
+    [
+      "SWKS",
+      0.25,
+      "US"
+    ],
+    [
+      "AFG",
+      0.24,
+      "US"
+    ],
+    [
+      "ORI",
+      0.23,
+      "US"
+    ],
+    [
+      "BAH",
+      0.22,
+      "US"
+    ],
+    [
+      "Columbia Banking System Inc",
+      0.21,
+      "US"
+    ],
+    [
+      "ALV",
+      0.2,
+      "US"
+    ],
+    [
+      "ERIE",
+      0.16,
+      "US"
+    ],
+    [
+      "M",
+      0.14,
+      "US"
+    ],
+    [
+      "MSC Industrial Direct Co Inc",
+      0.13,
+      "US"
+    ],
+    [
+      "NXST",
+      0.13,
+      "US"
+    ],
+    [
+      "MC",
+      0.12,
+      "US"
+    ],
+    [
+      "OZK",
+      0.12,
+      "US"
+    ]
+  ],
+  "top10": 41.7,
+  "countries": {
+    "US": 94.7,
+    "IE": 2.8,
+    "CW": 2.2,
+    "PR": 0.1
+  },
+  "sectors": {
+    "Consumer Staples": 18.5,
+    "Health Care": 17.5,
+    "Energy": 15.7,
+    "Financials": 12.8,
+    "Technology": 8.7,
+    "Consumer Discretionary": 8.1,
+    "Industrials": 7.4,
+    "Communication": 6.4,
+    "Other": 3.9,
+    "Materials": 0.9,
+    "Cash & other": 0.1
+  },
+  "covered": 99.8
+}

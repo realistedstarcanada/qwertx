@@ -1,0 +1,339 @@
+{
+  "t": "VTI",
+  "name": "Vanguard Total Stock Market ETF",
+  "index": "CRSP US Total Market",
+  "series": "S000002848",
+  "cik": "0000036405",
+  "acc": "0000036405-26-000480",
+  "filed": "2026-08-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/36405/000003640526000480/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 2297839156547.89,
+  "count": 3540,
+  "top": [
+    [
+      "NVDA",
+      6.36,
+      "US"
+    ],
+    [
+      "AAPL",
+      5.87,
+      "US"
+    ],
+    [
+      "MSFT",
+      3.83,
+      "US"
+    ],
+    [
+      "AMZN",
+      3.19,
+      "US"
+    ],
+    [
+      "GOOGL",
+      2.9,
+      "US"
+    ],
+    [
+      "AVGO",
+      2.47,
+      "US"
+    ],
+    [
+      "GOOG",
+      2.28,
+      "US"
+    ],
+    [
+      "MU",
+      1.8,
+      "US"
+    ],
+    [
+      "META",
+      1.71,
+      "US"
+    ],
+    [
+      "TSLA",
+      1.64,
+      "US"
+    ],
+    [
+      "LLY",
+      1.4,
+      "US"
+    ],
+    [
+      "AMD",
+      1.31,
+      "US"
+    ],
+    [
+      "BRK.B",
+      1.24,
+      "US"
+    ],
+    [
+      "JPM",
+      1.12,
+      "US"
+    ],
+    [
+      "JNJ",
+      0.84,
+      "US"
+    ],
+    [
+      "AMAT",
+      0.79,
+      "US"
+    ],
+    [
+      "Exxon Mobil Corp",
+      0.78,
+      "US"
+    ],
+    [
+      "INTC",
+      0.78,
+      "US"
+    ],
+    [
+      "V",
+      0.77,
+      "US"
+    ],
+    [
+      "LRCX",
+      0.75,
+      "US"
+    ],
+    [
+      "WMT",
+      0.69,
+      "US"
+    ],
+    [
+      "CAT",
+      0.68,
+      "US"
+    ],
+    [
+      "ABBV",
+      0.61,
+      "US"
+    ],
+    [
+      "CSCO",
+      0.58,
+      "US"
+    ],
+    [
+      "COST",
+      0.57,
+      "US"
+    ],
+    [
+      "MA",
+      0.56,
+      "US"
+    ],
+    [
+      "KLAC",
+      0.54,
+      "US"
+    ],
+    [
+      "GE",
+      0.54,
+      "US"
+    ],
+    [
+      "UNH",
+      0.52,
+      "US"
+    ],
+    [
+      "BAC",
+      0.5,
+      "US"
+    ],
+    [
+      "HD",
+      0.49,
+      "US"
+    ],
+    [
+      "PG",
+      0.47,
+      "US"
+    ],
+    [
+      "SNDK",
+      0.47,
+      "US"
+    ],
+    [
+      "MRK",
+      0.44,
+      "US"
+    ],
+    [
+      "GEV",
+      0.44,
+      "US"
+    ],
+    [
+      "Vanguard Cmt Funds-Vanguard Market Liqui",
+      0.43,
+      "US"
+    ],
+    [
+      "CVX",
+      0.43,
+      "US"
+    ],
+    [
+      "NFLX",
+      0.42,
+      "US"
+    ],
+    [
+      "PM",
+      0.39,
+      "US"
+    ],
+    [
+      "KO",
+      0.39,
+      "US"
+    ],
+    [
+      "PANW",
+      0.38,
+      "US"
+    ],
+    [
+      "GS",
+      0.38,
+      "US"
+    ],
+    [
+      "TXN",
+      0.37,
+      "US"
+    ],
+    [
+      "MRVL",
+      0.37,
+      "US"
+    ],
+    [
+      "IBM",
+      0.37,
+      "US"
+    ],
+    [
+      "RTX",
+      0.35,
+      "US"
+    ],
+    [
+      "PLTR",
+      0.35,
+      "US"
+    ],
+    [
+      "ORCL",
+      0.35,
+      "US"
+    ],
+    [
+      "WFC",
+      0.35,
+      "US"
+    ],
+    [
+      "MS",
+      0.34,
+      "US"
+    ],
+    [
+      "LIN",
+      0.33,
+      "US"
+    ],
+    [
+      "WDC",
+      0.3,
+      "US"
+    ],
+    [
+      "C",
+      0.3,
+      "US"
+    ],
+    [
+      "APH",
+      0.3,
+      "US"
+    ],
+    [
+      "STX",
+      0.3,
+      "US"
+    ],
+    [
+      "GLW",
+      0.27,
+      "US"
+    ],
+    [
+      "AMGN",
+      0.27,
+      "US"
+    ],
+    [
+      "QCOM",
+      0.27,
+      "US"
+    ],
+    [
+      "ADI",
+      0.27,
+      "US"
+    ],
+    [
+      "Vanguard Cmt Funds-Vanguard Market Liqui",
+      0.27,
+      "US"
+    ]
+  ],
+  "top10": 32,
+  "countries": {
+    "US": 100.5,
+    "N/A": 0,
+    "DK": 0
+  },
+  "sectors": {
+    "Technology": 36.9,
+    "Financials": 12.1,
+    "Consumer Discretionary": 8.9,
+    "Communication": 8.6,
+    "Industrials": 8.3,
+    "Health Care": 7.7,
+    "Consumer Staples": 4.5,
+    "Other": 4.4,
+    "Materials": 2.3,
+    "Utilities": 2.3,
+    "Real Estate": 1.9,
+    "Energy": 1.9,
+    "Cash & other": 0.7,
+    "Funds & other": 0
+  },
+  "covered": 100.5
+}

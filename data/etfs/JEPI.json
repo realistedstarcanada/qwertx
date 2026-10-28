@@ -1,0 +1,341 @@
+{
+  "t": "JEPI",
+  "name": "JPMorgan Equity Premium Income ETF",
+  "index": "Actively managed",
+  "series": "S000068402",
+  "cik": "0001485894",
+  "acc": "0002071691-26-021114",
+  "filed": "2026-08-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/1485894/000207169126021114/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 44746089285.72,
+  "count": 129,
+  "top": [
+    [
+      "ABBV",
+      1.72,
+      "US"
+    ],
+    [
+      "HWM",
+      1.68,
+      "US"
+    ],
+    [
+      "JNJ",
+      1.66,
+      "US"
+    ],
+    [
+      "Eaton Corp. plc",
+      1.62,
+      "IE"
+    ],
+    [
+      "Trane Technologies plc",
+      1.6,
+      "IE"
+    ],
+    [
+      "LRCX",
+      1.56,
+      "US"
+    ],
+    [
+      "NVDA",
+      1.52,
+      "US"
+    ],
+    [
+      "AAPL",
+      1.52,
+      "US"
+    ],
+    [
+      "ROST",
+      1.51,
+      "US"
+    ],
+    [
+      "GOOGL",
+      1.5,
+      "US"
+    ],
+    [
+      "NEE",
+      1.48,
+      "US"
+    ],
+    [
+      "VRTX",
+      1.46,
+      "US"
+    ],
+    [
+      "AMZN",
+      1.46,
+      "US"
+    ],
+    [
+      "EOG",
+      1.45,
+      "US"
+    ],
+    [
+      "MMM",
+      1.42,
+      "US"
+    ],
+    [
+      "RTX",
+      1.42,
+      "US"
+    ],
+    [
+      "V",
+      1.41,
+      "US"
+    ],
+    [
+      "AXP",
+      1.39,
+      "US"
+    ],
+    [
+      "YUM",
+      1.38,
+      "US"
+    ],
+    [
+      "PM",
+      1.34,
+      "US"
+    ],
+    [
+      "LOW",
+      1.33,
+      "US"
+    ],
+    [
+      "MA",
+      1.33,
+      "US"
+    ],
+    [
+      "AVGO",
+      1.32,
+      "US"
+    ],
+    [
+      "CDNS",
+      1.29,
+      "US"
+    ],
+    [
+      "MSFT",
+      1.28,
+      "US"
+    ],
+    [
+      "ECL",
+      1.27,
+      "US"
+    ],
+    [
+      "MDLZ",
+      1.23,
+      "US"
+    ],
+    [
+      "BMY",
+      1.23,
+      "US"
+    ],
+    [
+      "DIS",
+      1.22,
+      "US"
+    ],
+    [
+      "SYK",
+      1.22,
+      "US"
+    ],
+    [
+      "MCD",
+      1.21,
+      "US"
+    ],
+    [
+      "META",
+      1.21,
+      "US"
+    ],
+    [
+      "PEP",
+      1.19,
+      "US"
+    ],
+    [
+      "EMR",
+      1.18,
+      "US"
+    ],
+    [
+      "COST",
+      1.11,
+      "US"
+    ],
+    [
+      "ADI",
+      1.1,
+      "US"
+    ],
+    [
+      "APH",
+      1.08,
+      "US"
+    ],
+    [
+      "ETR",
+      1.07,
+      "US"
+    ],
+    [
+      "REGN",
+      1.05,
+      "US"
+    ],
+    [
+      "LLY",
+      1.04,
+      "US"
+    ],
+    [
+      "CMG",
+      1.02,
+      "US"
+    ],
+    [
+      "SRE",
+      0.98,
+      "US"
+    ],
+    [
+      "EQIX",
+      0.98,
+      "US"
+    ],
+    [
+      "BNP Paribas Issuance BV",
+      0.96,
+      "NL"
+    ],
+    [
+      "BNP Paribas Issuance BV",
+      0.95,
+      "NL"
+    ],
+    [
+      "VRT",
+      0.95,
+      "US"
+    ],
+    [
+      "Barclays Bank plc",
+      0.94,
+      "GB"
+    ],
+    [
+      "National Bank of Canada",
+      0.94,
+      "CA"
+    ],
+    [
+      "BNP Paribas Issuance BV",
+      0.93,
+      "NL"
+    ],
+    [
+      "Citigroup Global Markets Holdings, Inc.",
+      0.93,
+      "US"
+    ],
+    [
+      "BofA Finance LLC",
+      0.91,
+      "US"
+    ],
+    [
+      "Royal Bank of Canada",
+      0.91,
+      "CA"
+    ],
+    [
+      "National Bank of Canada",
+      0.91,
+      "CA"
+    ],
+    [
+      "WMT",
+      0.91,
+      "US"
+    ],
+    [
+      "Barclays Bank plc",
+      0.89,
+      "GB"
+    ],
+    [
+      "Royal Bank of Canada",
+      0.88,
+      "CA"
+    ],
+    [
+      "GS Finance Corp.",
+      0.88,
+      "US"
+    ],
+    [
+      "Barclays Bank plc",
+      0.88,
+      "GB"
+    ],
+    [
+      "GS Finance Corp.",
+      0.88,
+      "US"
+    ],
+    [
+      "BNP Paribas Issuance BV",
+      0.88,
+      "NL"
+    ]
+  ],
+  "top10": 15.9,
+  "countries": {
+    "US": 83.8,
+    "IE": 5.1,
+    "NL": 4.2,
+    "CA": 3.6,
+    "GB": 2.7,
+    "CH": 0.4
+  },
+  "sectors": {
+    "Other": 20,
+    "Technology": 15,
+    "Health Care": 12.9,
+    "Consumer Discretionary": 9.7,
+    "Consumer Staples": 8.9,
+    "Financials": 7.7,
+    "Industrials": 7.2,
+    "Communication": 5.4,
+    "Utilities": 4.8,
+    "Real Estate": 2.7,
+    "Materials": 2.7,
+    "Energy": 1.8,
+    "Cash & other": 0.8
+  },
+  "covered": 99.8
+}

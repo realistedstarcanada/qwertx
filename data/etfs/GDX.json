@@ -1,0 +1,337 @@
+{
+  "t": "GDX",
+  "name": "VanEck Gold Miners ETF",
+  "index": "NYSE Arca Gold Miners",
+  "series": "S000009191",
+  "cik": "0001137360",
+  "acc": "0001410368-26-086986",
+  "filed": "2026-08-26",
+  "url": "https://www.sec.gov/Archives/edgar/data/1137360/000141036826086986/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 22753127495.38,
+  "count": 62,
+  "top": [
+    [
+      "AEM",
+      10.67,
+      "CA"
+    ],
+    [
+      "NEM",
+      10.41,
+      "US"
+    ],
+    [
+      "B",
+      7.95,
+      "CA"
+    ],
+    [
+      "WPM",
+      5.6,
+      "CA"
+    ],
+    [
+      "Anglogold Ashanti Plc",
+      5.04,
+      "GB"
+    ],
+    [
+      "FNV",
+      4.89,
+      "CA"
+    ],
+    [
+      "KGC",
+      4.39,
+      "CA"
+    ],
+    [
+      "Gold Fields Ltd",
+      4.07,
+      "ZA"
+    ],
+    [
+      "PAAS",
+      2.97,
+      "CA"
+    ],
+    [
+      "Northern Star Resources Ltd",
+      2.63,
+      "AU"
+    ],
+    [
+      "CDE",
+      2.38,
+      "US"
+    ],
+    [
+      "Royal Gold Inc",
+      1.95,
+      "US"
+    ],
+    [
+      "AGI",
+      1.89,
+      "CA"
+    ],
+    [
+      "Evolution Mining Ltd",
+      1.65,
+      "AU"
+    ],
+    [
+      "Industrias Penoles SAB de CV",
+      1.52,
+      "MX"
+    ],
+    [
+      "AG",
+      1.43,
+      "CA"
+    ],
+    [
+      "Endeavour Mining PLC",
+      1.39,
+      "GB"
+    ],
+    [
+      "HL",
+      1.38,
+      "US"
+    ],
+    [
+      "IAG",
+      1.37,
+      "CA"
+    ],
+    [
+      "EGO",
+      1.31,
+      "CA"
+    ],
+    [
+      "Equinox Gold Corp",
+      1.27,
+      "CA"
+    ],
+    [
+      "Fresnillo PLC",
+      1.24,
+      "GB"
+    ],
+    [
+      "Harmony Gold Mining Co Ltd",
+      1.08,
+      "ZA"
+    ],
+    [
+      "Lundin Gold Inc",
+      1.02,
+      "CA"
+    ],
+    [
+      "OGC",
+      0.95,
+      "CA"
+    ],
+    [
+      "DPM Metals Inc",
+      0.92,
+      "CA"
+    ],
+    [
+      "G Mining Ventures Corp",
+      0.88,
+      "CA"
+    ],
+    [
+      "SSRM",
+      0.84,
+      "CA"
+    ],
+    [
+      "BTG",
+      0.8,
+      "CA"
+    ],
+    [
+      "Zijin Gold International Co Ltd",
+      0.79,
+      "HK"
+    ],
+    [
+      "Cia de Minas Buenaventura SAA",
+      0.79,
+      "PE"
+    ],
+    [
+      "Discovery Silver Corp",
+      0.75,
+      "CA"
+    ],
+    [
+      "OR",
+      0.73,
+      "CA"
+    ],
+    [
+      "Greatland Resources Ltd",
+      0.66,
+      "AU"
+    ],
+    [
+      "Zhaojin Mining Industry Co Ltd",
+      0.64,
+      "CN"
+    ],
+    [
+      "Perseus Mining Ltd",
+      0.62,
+      "AU"
+    ],
+    [
+      "Montage Gold Corp",
+      0.6,
+      "CA"
+    ],
+    [
+      "Ramelius Resources Ltd",
+      0.57,
+      "AU"
+    ],
+    [
+      "Artemis Gold Inc",
+      0.56,
+      "CA"
+    ],
+    [
+      "K92 Mining Inc",
+      0.56,
+      "CA"
+    ],
+    [
+      "Aris Mining Corp",
+      0.53,
+      "CA"
+    ],
+    [
+      "Capricorn Metals Ltd",
+      0.52,
+      "AU"
+    ],
+    [
+      "Torex Gold Resources Inc",
+      0.51,
+      "CA"
+    ],
+    [
+      "Genesis Minerals Ltd",
+      0.5,
+      "AU"
+    ],
+    [
+      "Amman Mineral Internasional PT",
+      0.5,
+      "ID"
+    ],
+    [
+      "SKE",
+      0.47,
+      "CA"
+    ],
+    [
+      "Centerra Gold Inc",
+      0.46,
+      "CA"
+    ],
+    [
+      "Aya Gold & Silver Inc",
+      0.45,
+      "CA"
+    ],
+    [
+      "Aura Minerals Inc",
+      0.45,
+      "VG"
+    ],
+    [
+      "Regis Resources Ltd",
+      0.44,
+      "AU"
+    ],
+    [
+      "Vault Minerals Ltd",
+      0.43,
+      "AU"
+    ],
+    [
+      "Wesdome Gold Mines Ltd",
+      0.42,
+      "CA"
+    ],
+    [
+      "State Street Global Advisors",
+      0.42,
+      "US"
+    ],
+    [
+      "Fortuna Mining Corp",
+      0.41,
+      "CA"
+    ],
+    [
+      "Orla Mining Ltd",
+      0.41,
+      "CA"
+    ],
+    [
+      "Seabridge Gold Inc",
+      0.4,
+      "CA"
+    ],
+    [
+      "Endeavour Silver Corp",
+      0.39,
+      "CA"
+    ],
+    [
+      "Westgold Resources Ltd",
+      0.38,
+      "AU"
+    ],
+    [
+      "Silvercorp Metals Inc",
+      0.38,
+      "CA"
+    ],
+    [
+      "Bumi Resources Minerals Tbk PT",
+      0.36,
+      "ID"
+    ]
+  ],
+  "top10": 58.6,
+  "countries": {
+    "CA": 57.2,
+    "US": 16.5,
+    "AU": 8.4,
+    "GB": 8,
+    "ZA": 5.1,
+    "MX": 1.5,
+    "ID": 0.9,
+    "HK": 0.8,
+    "PE": 0.8,
+    "CN": 0.6,
+    "VG": 0.4
+  },
+  "sectors": {
+    "Materials": 59.6,
+    "Other": 39.5,
+    "Financials": 0.8,
+    "Cash & other": 0.4
+  },
+  "covered": 100.4
+}

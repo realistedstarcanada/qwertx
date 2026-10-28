@@ -1,0 +1,271 @@
+{
+  "t": "ARKK",
+  "name": "ARK Innovation ETF",
+  "index": "Actively managed",
+  "series": "S000042977",
+  "cik": "0001579982",
+  "acc": "0000940400-26-037955",
+  "filed": "2026-09-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/1579982/000094040026037955/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-07-31",
+  "netAssets": 5562264980.05,
+  "count": 47,
+  "top": [
+    [
+      "TSLA",
+      9.74,
+      "US"
+    ],
+    [
+      "TEM",
+      4.89,
+      "US"
+    ],
+    [
+      "SPCX",
+      4.87,
+      "US"
+    ],
+    [
+      "CRSP",
+      4.73,
+      "CH"
+    ],
+    [
+      "SHOP",
+      4.36,
+      "CA"
+    ],
+    [
+      "COIN",
+      4.17,
+      "US"
+    ],
+    [
+      "AMD",
+      3.98,
+      "US"
+    ],
+    [
+      "CRCL",
+      3.9,
+      "US"
+    ],
+    [
+      "HOOD",
+      3.64,
+      "US"
+    ],
+    [
+      "TWST",
+      3.31,
+      "US"
+    ],
+    [
+      "TXG",
+      3.3,
+      "US"
+    ],
+    [
+      "PLTR",
+      3.11,
+      "US"
+    ],
+    [
+      "OPENAI GROUP PBC SERIES C",
+      3.1,
+      "US"
+    ],
+    [
+      "AMZN",
+      2.95,
+      "US"
+    ],
+    [
+      "BEAM",
+      2.79,
+      "US"
+    ],
+    [
+      "RBLX",
+      2.39,
+      "US"
+    ],
+    [
+      "CRWV",
+      2.38,
+      "US"
+    ],
+    [
+      "XYZ",
+      2.13,
+      "US"
+    ],
+    [
+      "GOOG",
+      2.13,
+      "US"
+    ],
+    [
+      "NVDA",
+      1.94,
+      "US"
+    ],
+    [
+      "NTLA",
+      1.92,
+      "US"
+    ],
+    [
+      "CBRS",
+      1.79,
+      "US"
+    ],
+    [
+      "BMNR",
+      1.67,
+      "US"
+    ],
+    [
+      "BLSH",
+      1.64,
+      "KY"
+    ],
+    [
+      "META",
+      1.56,
+      "US"
+    ],
+    [
+      "ILMN",
+      1.45,
+      "US"
+    ],
+    [
+      "XE",
+      1.35,
+      "US"
+    ],
+    [
+      "AVGO",
+      1.24,
+      "US"
+    ],
+    [
+      "NTRA",
+      1.24,
+      "US"
+    ],
+    [
+      "ACHR",
+      1.17,
+      "US"
+    ],
+    [
+      "KTOS",
+      1.16,
+      "US"
+    ],
+    [
+      "TSM",
+      1.13,
+      "TW"
+    ],
+    [
+      "RXRX",
+      1.09,
+      "US"
+    ],
+    [
+      "WGS",
+      1.03,
+      "US"
+    ],
+    [
+      "DE",
+      0.97,
+      "US"
+    ],
+    [
+      "TER",
+      0.96,
+      "US"
+    ],
+    [
+      "BWXT",
+      0.88,
+      "US"
+    ],
+    [
+      "VCYT",
+      0.85,
+      "US"
+    ],
+    [
+      "SOFI",
+      0.65,
+      "US"
+    ],
+    [
+      "SNOW",
+      0.64,
+      "US"
+    ],
+    [
+      "LLY",
+      0.59,
+      "US"
+    ],
+    [
+      "GOOGL",
+      0.49,
+      "US"
+    ],
+    [
+      "PACB",
+      0.32,
+      "US"
+    ],
+    [
+      "CERS",
+      0.32,
+      "US"
+    ],
+    [
+      "FTOXX",
+      0.16,
+      "US"
+    ],
+    [
+      "SLMT",
+      0.02,
+      "IE"
+    ],
+    [
+      "BRERA HOLDINGS PLC WTS",
+      0.01,
+      "US"
+    ]
+  ],
+  "top10": 47.6,
+  "countries": {
+    "US": 88.3,
+    "CH": 4.7,
+    "CA": 4.4,
+    "KY": 1.6,
+    "TW": 1.1,
+    "IE": 0
+  },
+  "sectors": {
+    "Technology": 35.8,
+    "Health Care": 22.9,
+    "Financials": 15.7,
+    "Consumer Discretionary": 12.7,
+    "Industrials": 5.5,
+    "Communication": 4.2,
+    "Other": 3.1,
+    "Cash & other": 0.2
+  },
+  "covered": 100.1
+}

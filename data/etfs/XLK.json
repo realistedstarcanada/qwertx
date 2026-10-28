@@ -1,0 +1,332 @@
+{
+  "t": "XLK",
+  "name": "Technology Select Sector SPDR Fund",
+  "index": "Technology Select Sector",
+  "series": "S000006415",
+  "cik": "0001064641",
+  "acc": "0001410368-26-089672",
+  "filed": "2026-08-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/1064641/000141036826089672/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 123912575222.02,
+  "count": 78,
+  "top": [
+    [
+      "NVDA",
+      14.65,
+      "US"
+    ],
+    [
+      "AAPL",
+      12.85,
+      "US"
+    ],
+    [
+      "MSFT",
+      8.38,
+      "US"
+    ],
+    [
+      "MU",
+      5.42,
+      "US"
+    ],
+    [
+      "AVGO",
+      5.41,
+      "US"
+    ],
+    [
+      "AMD",
+      5.28,
+      "US"
+    ],
+    [
+      "INTC",
+      3.68,
+      "US"
+    ],
+    [
+      "AMAT",
+      3.2,
+      "US"
+    ],
+    [
+      "LRCX",
+      3.02,
+      "US"
+    ],
+    [
+      "CSCO",
+      2.58,
+      "US"
+    ],
+    [
+      "KLAC",
+      2.2,
+      "US"
+    ],
+    [
+      "SNDK",
+      1.88,
+      "US"
+    ],
+    [
+      "PANW",
+      1.54,
+      "US"
+    ],
+    [
+      "TXN",
+      1.51,
+      "US"
+    ],
+    [
+      "PLTR",
+      1.49,
+      "US"
+    ],
+    [
+      "IBM",
+      1.47,
+      "US"
+    ],
+    [
+      "MRVL",
+      1.45,
+      "US"
+    ],
+    [
+      "ORCL",
+      1.39,
+      "US"
+    ],
+    [
+      "WDC",
+      1.23,
+      "US"
+    ],
+    [
+      "APH",
+      1.21,
+      "US"
+    ],
+    [
+      "Seagate Technology Holdings PLC",
+      1.21,
+      "IE"
+    ],
+    [
+      "GLW",
+      1.11,
+      "US"
+    ],
+    [
+      "QCOM",
+      1.09,
+      "US"
+    ],
+    [
+      "CRWD",
+      1.08,
+      "US"
+    ],
+    [
+      "ADI",
+      1.08,
+      "US"
+    ],
+    [
+      "ANET",
+      0.98,
+      "US"
+    ],
+    [
+      "APP",
+      0.77,
+      "US"
+    ],
+    [
+      "CRM",
+      0.71,
+      "US"
+    ],
+    [
+      "DELL",
+      0.7,
+      "US"
+    ],
+    [
+      "CDNS",
+      0.58,
+      "US"
+    ],
+    [
+      "NOW",
+      0.57,
+      "US"
+    ],
+    [
+      "FTNT",
+      0.53,
+      "US"
+    ],
+    [
+      "DDOG",
+      0.48,
+      "US"
+    ],
+    [
+      "SNPS",
+      0.48,
+      "US"
+    ],
+    [
+      "ADBE",
+      0.46,
+      "US"
+    ],
+    [
+      "COHR",
+      0.43,
+      "US"
+    ],
+    [
+      "Accenture PLC",
+      0.43,
+      "IE"
+    ],
+    [
+      "TER",
+      0.42,
+      "US"
+    ],
+    [
+      "INTU",
+      0.4,
+      "US"
+    ],
+    [
+      "NXP Semiconductors NV",
+      0.4,
+      "NL"
+    ],
+    [
+      "CIEN",
+      0.39,
+      "US"
+    ],
+    [
+      "MSI",
+      0.38,
+      "US"
+    ],
+    [
+      "MPWR",
+      0.38,
+      "US"
+    ],
+    [
+      "LITE",
+      0.37,
+      "US"
+    ],
+    [
+      "KEYS",
+      0.33,
+      "US"
+    ],
+    [
+      "HPE",
+      0.33,
+      "US"
+    ],
+    [
+      "Flex Ltd",
+      0.33,
+      "SG"
+    ],
+    [
+      "TE Connectivity PLC",
+      0.33,
+      "IE"
+    ],
+    [
+      "MCHP",
+      0.27,
+      "US"
+    ],
+    [
+      "ADSK",
+      0.23,
+      "US"
+    ],
+    [
+      "JBL",
+      0.23,
+      "US"
+    ],
+    [
+      "ON",
+      0.21,
+      "US"
+    ],
+    [
+      "Q",
+      0.19,
+      "US"
+    ],
+    [
+      "ROP",
+      0.19,
+      "US"
+    ],
+    [
+      "TDY",
+      0.17,
+      "US"
+    ],
+    [
+      "NTAP",
+      0.17,
+      "US"
+    ],
+    [
+      "FICO",
+      0.15,
+      "US"
+    ],
+    [
+      "State Street Global Advisors",
+      0.14,
+      "US"
+    ],
+    [
+      "FSLR",
+      0.14,
+      "US"
+    ],
+    [
+      "WDAY",
+      0.14,
+      "US"
+    ]
+  ],
+  "top10": 64.5,
+  "countries": {
+    "US": 97.4,
+    "IE": 2,
+    "NL": 0.4,
+    "SG": 0.3
+  },
+  "sectors": {
+    "Technology": 92.6,
+    "Industrials": 3.4,
+    "Other": 2.7,
+    "Materials": 1.1,
+    "Cash & other": 0.2,
+    "Consumer Discretionary": 0.1
+  },
+  "covered": 100.1
+}

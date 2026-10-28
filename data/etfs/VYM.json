@@ -1,0 +1,337 @@
+{
+  "t": "VYM",
+  "name": "Vanguard High Dividend Yield ETF",
+  "index": "FTSE High Dividend Yield",
+  "series": "S000014011",
+  "cik": "0001004655",
+  "acc": "0001004655-26-000453",
+  "filed": "2026-09-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/1004655/000100465526000453/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-07-31",
+  "netAssets": 99194157093.32,
+  "count": 610,
+  "top": [
+    [
+      "AVGO",
+      7.35,
+      "US"
+    ],
+    [
+      "JPM",
+      3.82,
+      "US"
+    ],
+    [
+      "XOM",
+      2.63,
+      "US"
+    ],
+    [
+      "JNJ",
+      2.51,
+      "US"
+    ],
+    [
+      "CSCO",
+      1.86,
+      "US"
+    ],
+    [
+      "ABBV",
+      1.8,
+      "US"
+    ],
+    [
+      "BAC",
+      1.66,
+      "US"
+    ],
+    [
+      "UNH",
+      1.52,
+      "US"
+    ],
+    [
+      "CAT",
+      1.5,
+      "US"
+    ],
+    [
+      "CVX",
+      1.48,
+      "US"
+    ],
+    [
+      "KO",
+      1.38,
+      "US"
+    ],
+    [
+      "PG",
+      1.37,
+      "US"
+    ],
+    [
+      "HD",
+      1.34,
+      "US"
+    ],
+    [
+      "MRK",
+      1.31,
+      "US"
+    ],
+    [
+      "PM",
+      1.21,
+      "US"
+    ],
+    [
+      "RTX",
+      1.18,
+      "US"
+    ],
+    [
+      "GS",
+      1.13,
+      "US"
+    ],
+    [
+      "WFC",
+      1.07,
+      "US"
+    ],
+    [
+      "TXN",
+      1.02,
+      "US"
+    ],
+    [
+      "MS",
+      0.96,
+      "US"
+    ],
+    [
+      "ORCL",
+      0.9,
+      "US"
+    ],
+    [
+      "LIN",
+      0.9,
+      "US"
+    ],
+    [
+      "C",
+      0.89,
+      "US"
+    ],
+    [
+      "IBM",
+      0.85,
+      "US"
+    ],
+    [
+      "VZ",
+      0.8,
+      "US"
+    ],
+    [
+      "MCD",
+      0.78,
+      "US"
+    ],
+    [
+      "AMGN",
+      0.78,
+      "US"
+    ],
+    [
+      "PEP",
+      0.77,
+      "US"
+    ],
+    [
+      "ABT",
+      0.74,
+      "US"
+    ],
+    [
+      "NEE",
+      0.74,
+      "US"
+    ],
+    [
+      "ADI",
+      0.73,
+      "US"
+    ],
+    [
+      "UNP",
+      0.7,
+      "US"
+    ],
+    [
+      "DIS",
+      0.69,
+      "US"
+    ],
+    [
+      "BLK",
+      0.68,
+      "US"
+    ],
+    [
+      "GILD",
+      0.66,
+      "US"
+    ],
+    [
+      "ETN",
+      0.65,
+      "US"
+    ],
+    [
+      "T",
+      0.64,
+      "US"
+    ],
+    [
+      "QCOM",
+      0.63,
+      "US"
+    ],
+    [
+      "COP",
+      0.6,
+      "US"
+    ],
+    [
+      "PFE",
+      0.58,
+      "US"
+    ],
+    [
+      "CVS",
+      0.54,
+      "US"
+    ],
+    [
+      "BMY",
+      0.54,
+      "US"
+    ],
+    [
+      "COF",
+      0.53,
+      "US"
+    ],
+    [
+      "PGR",
+      0.5,
+      "US"
+    ],
+    [
+      "CB",
+      0.5,
+      "US"
+    ],
+    [
+      "DELL",
+      0.5,
+      "US"
+    ],
+    [
+      "SBUX",
+      0.49,
+      "US"
+    ],
+    [
+      "LMT",
+      0.48,
+      "US"
+    ],
+    [
+      "LOW",
+      0.47,
+      "US"
+    ],
+    [
+      "MO",
+      0.46,
+      "US"
+    ],
+    [
+      "MDT",
+      0.44,
+      "US"
+    ],
+    [
+      "BNY",
+      0.44,
+      "US"
+    ],
+    [
+      "ADP",
+      0.43,
+      "US"
+    ],
+    [
+      "SO",
+      0.43,
+      "US"
+    ],
+    [
+      "Accenture PLC",
+      0.41,
+      "US"
+    ],
+    [
+      "PNC",
+      0.41,
+      "US"
+    ],
+    [
+      "NEM",
+      0.41,
+      "US"
+    ],
+    [
+      "GD",
+      0.4,
+      "US"
+    ],
+    [
+      "USB",
+      0.4,
+      "US"
+    ],
+    [
+      "DUK",
+      0.4,
+      "US"
+    ]
+  ],
+  "top10": 26.1,
+  "countries": {
+    "US": 99.9,
+    "N/A": 0
+  },
+  "sectors": {
+    "Financials": 23.3,
+    "Technology": 17.3,
+    "Health Care": 10.6,
+    "Industrials": 10.3,
+    "Energy": 8.7,
+    "Consumer Staples": 8.5,
+    "Consumer Discretionary": 5.3,
+    "Utilities": 5.1,
+    "Other": 4.2,
+    "Materials": 3.5,
+    "Communication": 3,
+    "Cash & other": 0.2,
+    "Real Estate": 0
+  },
+  "covered": 99.9
+}

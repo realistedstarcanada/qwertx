@@ -1,0 +1,358 @@
+{
+  "t": "IWM",
+  "name": "iShares Russell 2000 ETF",
+  "index": "Russell 2000",
+  "series": "S000004344",
+  "cik": "0001100663",
+  "acc": "0002071691-26-019749",
+  "filed": "2026-08-25",
+  "url": "https://www.sec.gov/Archives/edgar/data/1100663/000207169126019749/",
+  "source": "SEC Form N-PORT",
+  "period": "2026-06-30",
+  "netAssets": 82970351735.73,
+  "count": 2017,
+  "top": [
+    [
+      "BlackRock Funds III",
+      17.02,
+      "US"
+    ],
+    [
+      "MOG.A",
+      0.38,
+      "US"
+    ],
+    [
+      "HUT",
+      0.37,
+      "US"
+    ],
+    [
+      "VSAT",
+      0.35,
+      "US"
+    ],
+    [
+      "BTSG",
+      0.35,
+      "US"
+    ],
+    [
+      "CYTK",
+      0.35,
+      "US"
+    ],
+    [
+      "MXL",
+      0.34,
+      "US"
+    ],
+    [
+      "AGX",
+      0.34,
+      "US"
+    ],
+    [
+      "UMBF",
+      0.33,
+      "US"
+    ],
+    [
+      "JFrog Ltd.",
+      0.31,
+      "IL"
+    ],
+    [
+      "RIOT",
+      0.3,
+      "US"
+    ],
+    [
+      "KRYS",
+      0.3,
+      "US"
+    ],
+    [
+      "ESCO Technologies, Inc.",
+      0.29,
+      "US"
+    ],
+    [
+      "CareTrust REIT, Inc.",
+      0.28,
+      "US"
+    ],
+    [
+      "Old National Bancorp",
+      0.28,
+      "US"
+    ],
+    [
+      "FirstCash Holdings, Inc.",
+      0.28,
+      "US"
+    ],
+    [
+      "COMP",
+      0.27,
+      "US"
+    ],
+    [
+      "D-Wave Quantum, Inc.",
+      0.27,
+      "US"
+    ],
+    [
+      "Alkermes plc",
+      0.27,
+      "IE"
+    ],
+    [
+      "EnerSys",
+      0.27,
+      "US"
+    ],
+    [
+      "SNEX",
+      0.27,
+      "US"
+    ],
+    [
+      "PRAX",
+      0.26,
+      "US"
+    ],
+    [
+      "Terex Corp.",
+      0.26,
+      "US"
+    ],
+    [
+      "CIFR",
+      0.26,
+      "US"
+    ],
+    [
+      "PLXS",
+      0.25,
+      "US"
+    ],
+    [
+      "NPO",
+      0.25,
+      "US"
+    ],
+    [
+      "Ryman Hospitality Properties, Inc.",
+      0.25,
+      "US"
+    ],
+    [
+      "GKOS",
+      0.25,
+      "US"
+    ],
+    [
+      "CORZ",
+      0.25,
+      "US"
+    ],
+    [
+      "TGTX",
+      0.25,
+      "US"
+    ],
+    [
+      "Federal Signal Corp.",
+      0.24,
+      "US"
+    ],
+    [
+      "MYRG",
+      0.24,
+      "US"
+    ],
+    [
+      "JBTM",
+      0.24,
+      "US"
+    ],
+    [
+      "PCVX",
+      0.24,
+      "US"
+    ],
+    [
+      "HQY",
+      0.24,
+      "US"
+    ],
+    [
+      "ZWS",
+      0.24,
+      "US"
+    ],
+    [
+      "KGS",
+      0.23,
+      "US"
+    ],
+    [
+      "PTGX",
+      0.23,
+      "US"
+    ],
+    [
+      "FLR",
+      0.23,
+      "US"
+    ],
+    [
+      "Hims & Hers Health, Inc.",
+      0.23,
+      "US"
+    ],
+    [
+      "LUMN",
+      0.23,
+      "US"
+    ],
+    [
+      "IDCC",
+      0.23,
+      "US"
+    ],
+    [
+      "EAT",
+      0.23,
+      "US"
+    ],
+    [
+      "SLAB",
+      0.22,
+      "US"
+    ],
+    [
+      "Lantheus Holdings, Inc.",
+      0.22,
+      "US"
+    ],
+    [
+      "Arcosa, Inc.",
+      0.22,
+      "US"
+    ],
+    [
+      "Kymera Therapeutics, Inc.",
+      0.22,
+      "US"
+    ],
+    [
+      "VLY",
+      0.22,
+      "US"
+    ],
+    [
+      "AROC",
+      0.22,
+      "US"
+    ],
+    [
+      "CMC",
+      0.22,
+      "US"
+    ],
+    [
+      "GVA",
+      0.22,
+      "US"
+    ],
+    [
+      "MAC",
+      0.22,
+      "US"
+    ],
+    [
+      "KLIC",
+      0.21,
+      "US"
+    ],
+    [
+      "Terreno Realty Corp.",
+      0.21,
+      "US"
+    ],
+    [
+      "Mercury Systems, Inc.",
+      0.21,
+      "US"
+    ],
+    [
+      "OSCR",
+      0.21,
+      "US"
+    ],
+    [
+      "Glacier Bancorp, Inc.",
+      0.21,
+      "US"
+    ],
+    [
+      "ORA",
+      0.21,
+      "US"
+    ],
+    [
+      "ACM Research, Inc.",
+      0.21,
+      "US"
+    ],
+    [
+      "Taylor Morrison Home Corp.",
+      0.21,
+      "US"
+    ]
+  ],
+  "top10": 20.1,
+  "countries": {
+    "US": 109.5,
+    "CA": 1.6,
+    "BM": 1.3,
+    "KY": 0.9,
+    "GB": 0.6,
+    "IE": 0.5,
+    "IL": 0.4,
+    "MH": 0.4,
+    "CH": 0.3,
+    "VG": 0.3,
+    "PR": 0.2,
+    "JE": 0.2,
+    "GG": 0.1,
+    "FR": 0.1,
+    "BS": 0.1,
+    "LU": 0.1,
+    "PA": 0.1,
+    "NL": 0.1,
+    "SG": 0,
+    "BE": 0,
+    "IM": 0,
+    "GI": 0
+  },
+  "sectors": {
+    "Other": 41.1,
+    "Cash & other": 17,
+    "Health Care": 11.3,
+    "Financials": 10.6,
+    "Industrials": 9.1,
+    "Technology": 8.8,
+    "Consumer Discretionary": 7,
+    "Materials": 3.9,
+    "Energy": 2.6,
+    "Real Estate": 2.5,
+    "Communication": 1.2,
+    "Utilities": 1,
+    "Consumer Staples": 0.8,
+    "Funds & other": 0
+  },
+  "covered": 116.8
+}
