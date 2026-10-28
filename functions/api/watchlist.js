@@ -2,7 +2,8 @@
 //        /api/watchlist { items: [{ ticker, shares?, amount? }, ...] }     — add stocks with sizes (CSV)
 // PATCH  /api/watchlist { ticker, shares?, amount?, paid? }                — set or clear a position size and price paid
 // DELETE /api/watchlist?ticker=AAPL                                       — remove one stock
-// A position size is optional and is either a number of shares or a dollar amount, never both.
+// A position size is optional and is either a number of shares (always with the average price paid) or a
+// dollar amount, never both.
 // Both return the updated account view plus, for adds, what happened to each input.
 import { db } from '../../server/db.js';
 import { currentUser } from '../../server/auth.js';
@@ -42,8 +43,12 @@ export const onRequestPost = route(async ({ request, env }) => {
     if (owned.has(n.ticker)) { results.push({ input, ticker: n.ticker, status: 'duplicate' }); continue; }
     if (owned.size >= limit) { results.push({ input, ticker: n.ticker, status: 'limit' }); continue; }
     owned.add(n.ticker);
-    add.push({ ...n, ...sizes.get(input) });
-    results.push({ input, ticker: n.ticker, status: n.from ? 'mapped' : 'added' });
+    // Shares always come with the average price paid; without it the size is left for the member to finish.
+    const sz = { ...sizes.get(input) };
+    const needsPrice = sz.shares && !sz.paid ? sz.shares : null;
+    if (needsPrice) delete sz.shares;
+    add.push({ ...n, ...sz });
+    results.push({ input, ticker: n.ticker, status: n.from ? 'mapped' : 'added', ...(needsPrice ? { needsPrice } : {}) });
   }
   if (add.length) {
     const now = nowIso();
@@ -63,6 +68,7 @@ export const onRequestPatch = route(async ({ request, env }) => {
   const ticker = String(body.ticker || '').toUpperCase();
   const DB = await db(env);
   const sz = size(body);
+  if (sz.shares && !sz.paid) throw fail(422, 'Add your average price per share. Your broker shows it as “average cost”.');
   const res = await DB.prepare(`UPDATE watchlist SET shares = ?, amount = ?, paid = ? WHERE user_id = ? AND ticker = ?`).bind(sz.shares ?? null, sz.amount ?? null, sz.shares || sz.amount ? sz.paid ?? null : null, user.id, ticker).run();
   if (!res.meta?.changes) throw fail(404, 'That stock is not on your list.');
   return json({ ok: true, ...(await accountView(DB, user, env)) });

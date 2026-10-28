@@ -821,3 +821,4 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 .px-pf-act { display: flex; gap: 12px; align-items: center; grid-column: 1 / -1; }
 .wl-pos-form .form-note { grid-column: 1 / -1; margin: 0; max-width: 340px; }
 @media (max-width: 560px) { .px-ac-list li { grid-template-columns: 64px minmax(0, 1fr); } .px-ac-list .px-chip { display: none; } }
+.px-req { color: var(--gold); font-weight: 600; }

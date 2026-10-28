@@ -143,8 +143,11 @@
       S.results = j.results;
       S.tab = 'portfolio';
       var fresh = (j.results || []).filter(function (r) { return r.status === 'added' || r.status === 'mapped'; });
-      var sizeless = fresh.filter(function (r) { var w = (S.me.watchlist || []).filter(function (x) { return x.ticker === r.ticker; })[0]; return w && !w.shares && !w.amount; });
-      S.openPos = sizeless.length === 1 ? sizeless[0].ticker : null;
+      S.prefill = S.prefill || {};
+      fresh.forEach(function (r) { if (r.needsPrice) S.prefill[r.ticker] = r.needsPrice; });
+      var needs = fresh.filter(function (r) { return r.needsPrice; });
+      var sizeless = needs.length ? needs : fresh.filter(function (r) { var w = (S.me.watchlist || []).filter(function (x) { return x.ticker === r.ticker; })[0]; return w && !w.shares && !w.amount; });
+      S.openPos = needs.length || sizeless.length === 1 ? sizeless[0].ticker : null;
       return loadStocks().then(function () { render(); if (S.openPos) { var f = root.querySelector('form[data-pos="' + S.openPos + '"]'); if (f) { f.scrollIntoView({ behavior: 'smooth', block: 'center' }); f.n.focus({ preventScroll: true }); } } });
     });
   }
@@ -237,7 +240,7 @@
       '<form id="wl-add-form" class="wl-add-form"><div class="px-ac"><label class="sr-only" for="wl-input">Search by ticker or company name</label><input class="input" id="wl-input" name="tickers" placeholder="Search a ticker or company: AAPL, Shopify, VOO, XEQT" autocomplete="off" autocapitalize="characters" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="px-ac-list"' + (used >= limit ? ' disabled' : '') + '>' +
       '<ul class="px-ac-list" id="px-ac-list" role="listbox" aria-label="Matching stocks and ETFs" hidden></ul></div>' +
       '<button class="btn btn-gold" type="submit"' + (used >= limit ? ' disabled' : '') + '>Add</button></form>' +
-      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (Symbol or Ticker column, plus Shares or Amount, and Price paid if you like) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
+      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (Symbol or Ticker column, plus Shares with Average cost, or Amount) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
       resultsHtml() + '</section>';
   }
 
@@ -382,17 +385,17 @@
   function posForm(w) {
     var t = esc(w.ticker), unit = w.amount ? 'amount' : 'shares', open = S.openPos === w.ticker;
     return '<form class="wl-pos-form" data-pos="' + t + '" novalidate' + (open ? '' : ' hidden') + '>' +
-      '<label class="px-pf"><span>You own</span><span class="px-pf-row"><input class="input input-sm" name="n" inputmode="decimal" placeholder="' + (unit === 'shares' ? '10' : '10,000') + '" value="' + esc(w.shares || w.amount || '') + '" aria-label="How much of ' + t + ' you own">' +
+      '<label class="px-pf"><span>You own</span><span class="px-pf-row"><input class="input input-sm" name="n" inputmode="decimal" placeholder="' + (unit === 'shares' ? '10' : '10,000') + '" value="' + esc(w.shares || w.amount || (S.prefill && S.prefill[w.ticker]) || '') + '" aria-label="How much of ' + t + ' you own">' +
       '<select class="input input-sm" name="unit" aria-label="Shares or dollars"><option value="shares"' + (unit === 'shares' ? ' selected' : '') + '>shares</option><option value="amount"' + (unit === 'amount' ? ' selected' : '') + '>$ invested</option></select></span></label>' +
-      '<label class="px-pf px-pf-paid"' + (unit === 'shares' ? '' : ' hidden') + '><span>Average price per share</span><input class="input input-sm" name="paid" inputmode="decimal" placeholder="$150.00" value="' + esc(w.shares && w.paid ? w.paid : '') + '" aria-label="Average price you paid per share of ' + t + '"></label>' +
+      '<label class="px-pf px-pf-paid"' + (unit === 'shares' ? '' : ' hidden') + '><span>Average price per share <b class="px-req" aria-hidden="true">*</b></span><input class="input input-sm" name="paid" inputmode="decimal" placeholder="$150.00" aria-required="true" value="' + esc(w.shares && w.paid ? w.paid : '') + '" aria-label="Average price you paid per share of ' + t + ' (required)"></label>' +
       '<span class="px-pf-act"><button class="btn btn-sm btn-gold" type="submit">Save</button>' + (w.shares || w.amount ? '<button class="linklike" type="button" data-clear="' + t + '">Remove size</button>' : '<button class="linklike" type="button" data-edit="' + t + '">Later</button>') + '</span>' +
       '<p class="form-note px-pf-note" role="status">' + (unit === 'shares' ? 'Your broker shows it as “average cost” or “book cost per share”.' : 'The dollar amount you put in.') + '</p></form>';
   }
   function resultsHtml() {
     if (!S.results || !S.results.length) return '';
     var msg = {
-      added: function (r) { return '<b>' + esc(r.ticker) + '</b> added'; },
-      mapped: function (r) { return '<b>' + esc(r.input) + '</b> added as its New York listing <b>' + esc(r.ticker) + '</b>'; },
+      added: function (r) { return '<b>' + esc(r.ticker) + '</b> added' + (r.needsPrice ? '. Add your average price per share to include your ' + (+r.needsPrice).toLocaleString('en-US') + ' shares' : ''); },
+      mapped: function (r) { return '<b>' + esc(r.input) + '</b> added as its New York listing <b>' + esc(r.ticker) + '</b>' + (r.needsPrice ? '. Add your average price per share to include your ' + (+r.needsPrice).toLocaleString('en-US') + ' shares' : ''); },
       duplicate: function (r) { return '<b>' + esc(r.ticker) + '</b> is already on your list'; },
       limit: function (r) { return '<b>' + esc(r.ticker) + '</b> not added: your plan watches ' + S.me.limit + (S.me.pro ? '' : ' (<a href="#" data-open="membership">Pro watches 50</a>)'); },
       unknown: function (r) { return '<b>' + esc(r.input) + '</b> isn’t a ticker we recognise. Check the spelling?'; },
@@ -401,7 +404,7 @@
       error: function (r) { return esc(r.input); },
     };
     return '<ul class="wl-results" role="status">' + S.results.map(function (r) {
-      var ok = r.status === 'added' || r.status === 'mapped';
+      var ok = (r.status === 'added' || r.status === 'mapped') && !r.needsPrice;
       return '<li class="' + (ok ? 'ok' : 'warn') + '"><i class="fa-solid ' + (ok ? 'fa-check' : 'fa-circle-info') + '" aria-hidden="true"></i><span>' + (msg[r.status] || msg.error)(r) + '</span></li>';
     }).join('') + '</ul>';
   }
@@ -916,6 +919,7 @@
       body[f.unit.value] = f.n.value;
       if (shares) body.paid = f.paid.value;
       S.openPos = null;
+      if (S.prefill) delete S.prefill[body.ticker];
       savePos(body);
     });
     on('form[data-pos] select[name="unit"]', 'change', function (e, sel) {
@@ -984,7 +988,11 @@
   }
 
   function savePos(body) {
-    api('PATCH', '/api/watchlist', body).then(function (j) { if (j.ok) { S.me = Object.assign(S.me, j); S.results = null; render(); } else alert(j.message); });
+    api('PATCH', '/api/watchlist', body).then(function (j) {
+      if (j.ok) { S.me = Object.assign(S.me, j); S.results = null; render(); return; }
+      var f = root.querySelector('form[data-pos="' + body.ticker + '"]'), note = f && f.querySelector('.px-pf-note');
+      if (note) { f.hidden = false; note.textContent = j.message; } else alert(j.message);
+    });
   }
   function savePrefs(form, extra, quiet) {
     var g = function (n) { return form.elements[n]; };
