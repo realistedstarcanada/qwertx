@@ -6,6 +6,10 @@ name: Update prices and analyst targets
 on:
   schedule:
     - cron: '30 22 * * 1-5'   # 18:30 Toronto (EDT), after the close
+  push:
+    # Runs on the testing branch whenever the price script or this file changes (scheduled runs need main).
+    branches: [pro-phase1]
+    paths: ['scripts/fetch-yahoo.mjs', '.github/workflows/update-prices.yml']
   workflow_dispatch:
     inputs:
       tickers:
@@ -34,7 +38,7 @@ jobs:
       - name: Prices, analyst targets and earnings history
         run: node scripts/fetch-yahoo.mjs
         env:
-          TICKERS: ${{ github.event.inputs.tickers }}
+          TICKERS: ${{ github.event.inputs.tickers || '' }}
           PRO_SITE_URL: ${{ github.ref_name == 'main' && secrets.PRO_SITE_URL || format('https://{0}.qwertx.pages.dev', github.ref_name) }}
           CRON_SECRET: ${{ secrets.CRON_SECRET }}
       - name: Commit updated data
