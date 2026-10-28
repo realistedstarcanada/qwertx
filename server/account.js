@@ -2,7 +2,7 @@
 import { isAdmin, isPro, limitFor, prefsOf } from './pro.js';
 
 export async function accountView(DB, user, env = {}) {
-  const { results = [] } = await DB.prepare(`SELECT ticker, input, added_at, shares, amount, added_price FROM watchlist WHERE user_id = ? ORDER BY added_at, ticker`).bind(user.id).all();
+  const { results = [] } = await DB.prepare(`SELECT ticker, input, added_at, shares, amount, added_price, paid FROM watchlist WHERE user_id = ? ORDER BY added_at, ticker`).bind(user.id).all();
   const limit = limitFor(user);
   return {
     signedIn: true,
@@ -19,6 +19,6 @@ export async function accountView(DB, user, env = {}) {
     limit,
     prefs: prefsOf(user),
     // Stocks beyond the plan's limit (after a Pro plan ends) are kept but paused, oldest first stay active.
-    watchlist: results.map((r, i) => ({ ticker: r.ticker, input: r.input, addedAt: r.added_at, shares: r.shares ?? null, amount: r.amount ?? null, addedPrice: r.added_price ?? null, active: i < limit })),
+    watchlist: results.map((r, i) => ({ ticker: r.ticker, input: r.input, addedAt: r.added_at, shares: r.shares ?? null, amount: r.amount ?? null, addedPrice: r.added_price ?? null, paid: r.paid ?? null, active: i < limit })),
   };
 }

@@ -27,3 +27,8 @@ CREATE TABLE IF NOT EXISTS stripe_events (id TEXT PRIMARY KEY, type TEXT, receiv
 ALTER TABLE users ADD COLUMN name TEXT;
 ALTER TABLE watchlist ADD COLUMN shares REAL;
 ALTER TABLE watchlist ADD COLUMN amount REAL;
+ALTER TABLE watchlist ADD COLUMN added_price REAL;
+ALTER TABLE watchlist ADD COLUMN paid REAL;
+CREATE TABLE IF NOT EXISTS briefs (id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT NOT NULL, body TEXT NOT NULL, tickers TEXT NOT NULL DEFAULT '', status TEXT NOT NULL DEFAULT 'draft', author TEXT, created_at TEXT NOT NULL, updated_at TEXT NOT NULL, published_at TEXT);
+CREATE INDEX IF NOT EXISTS briefs_published ON briefs(status, published_at);
+CREATE TABLE IF NOT EXISTS brief_votes (brief_id INTEGER NOT NULL, user_id INTEGER NOT NULL, vote INTEGER, question TEXT, created_at TEXT NOT NULL, PRIMARY KEY (brief_id, user_id));

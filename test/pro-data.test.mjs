@@ -194,3 +194,18 @@ test('the Brief: admins write and publish, free members see a teaser, votes coun
   r = await client(env).req('POST', '/api/brief-vote', { body: { id, vote: 1 } });
   assert.equal(r.status, 401);
 });
+
+test('price paid per share is optional, kept only with a size, and cleared with it', async () => {
+  const web = await signIn('holder@example.com');
+  let r = await web.req('POST', '/api/watchlist', { body: { items: [{ ticker: 'NVDA', shares: '10', paid: '$1,20.50' }, { ticker: 'META', paid: '500' }] } });
+  assert.equal(r.status, 200, r.text);
+  const by = (j) => Object.fromEntries(j.watchlist.map((w) => [w.ticker, w]));
+  assert.equal(by(r.json).NVDA.paid, 120.5);
+  assert.equal(by(r.json).META.paid, null, 'no size, no price paid');
+  r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'META', amount: '8000', paid: '612.3' } });
+  assert.equal(by(r.json).META.amount, 8000);
+  assert.equal(by(r.json).META.paid, 612.3);
+  r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'META', paid: '612.3' } });
+  assert.equal(by(r.json).META.amount, null);
+  assert.equal(by(r.json).META.paid, null, 'removing the size removes the price paid');
+});

@@ -130,6 +130,14 @@ if (secTickers) {
   fs.mkdirSync(path.join(OUT, 'pro'), { recursive: true });
   fs.writeFileSync(path.join(OUT, 'pro/known.txt'), ` ${[...known].sort().join(' ')} `);
 }
+// Every other ticker we know a name for, for the add box's search (loaded when the box is first used):
+// SEC-listed companies plus the US listings of big Canadian companies.
+{
+  const names = { ...(readJSON('config/ticker-aliases.json')?.names || {}), ...(secTickers || {}) };
+  const extra = Object.entries(names).filter(([t, n]) => !pro.index.tickers[t] && n && n !== t).sort((x, y) => x[0].localeCompare(y[0])).map(([t, n]) => [t, String(n).slice(0, 60)]);
+  fs.mkdirSync(path.join(OUT, 'pro'), { recursive: true });
+  fs.writeFileSync(path.join(OUT, 'pro/search.json'), JSON.stringify(extra));
+}
 fs.mkdirSync(path.join(OUT, 'pro/t'), { recursive: true });
 for (const [t, o] of Object.entries(pro.ownership.stocks)) fs.writeFileSync(path.join(OUT, 'pro/t', `${t}.json`), JSON.stringify(o));
 fs.writeFileSync(path.join(OUT, 'pro/index.json'), JSON.stringify(pro.index));

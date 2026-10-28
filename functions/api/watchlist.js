@@ -1,6 +1,6 @@
 // POST   /api/watchlist { tickers: ["AAPL", "RY.TO", ...] }               — add stocks (typed)
 //        /api/watchlist { items: [{ ticker, shares?, amount? }, ...] }     — add stocks with sizes (CSV)
-// PATCH  /api/watchlist { ticker, shares?, amount? }                       — set or clear a position size
+// PATCH  /api/watchlist { ticker, shares?, amount?, paid? }                — set or clear a position size and price paid
 // DELETE /api/watchlist?ticker=AAPL                                       — remove one stock
 // A position size is optional and is either a number of shares or a dollar amount, never both.
 // Both return the updated account view plus, for adds, what happened to each input.
@@ -52,7 +52,7 @@ export const onRequestPost = route(async ({ request, env }) => {
     if (idx?.vendor) {
       await Promise.all(add.map(async (n) => { const t = await asset(env, request, `/pro/t/${encodeURIComponent(n.ticker)}.json`); n.price = t?.q?.p ?? null; }));
     }
-    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at, shares, amount, added_price) VALUES (?, ?, ?, ?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString(), n.shares ?? null, n.amount ?? null, n.price ?? null)));
+    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at, shares, amount, added_price, paid) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString(), n.shares ?? null, n.amount ?? null, n.price ?? null, n.paid ?? null)));
   }
   return json({ ok: true, results, ...(await accountView(DB, user, env)) });
 });
@@ -63,21 +63,23 @@ export const onRequestPatch = route(async ({ request, env }) => {
   const ticker = String(body.ticker || '').toUpperCase();
   const DB = await db(env);
   const sz = size(body);
-  const res = await DB.prepare(`UPDATE watchlist SET shares = ?, amount = ? WHERE user_id = ? AND ticker = ?`).bind(sz.shares ?? null, sz.amount ?? null, user.id, ticker).run();
+  const res = await DB.prepare(`UPDATE watchlist SET shares = ?, amount = ?, paid = ? WHERE user_id = ? AND ticker = ?`).bind(sz.shares ?? null, sz.amount ?? null, sz.shares || sz.amount ? sz.paid ?? null : null, user.id, ticker).run();
   if (!res.meta?.changes) throw fail(404, 'That stock is not on your list.');
   return json({ ok: true, ...(await accountView(DB, user, env)) });
 });
 
-/** Optional position size: shares wins if both are given; anything not a sensible positive number is dropped. */
+/** Optional position size: shares wins if both are given; anything not a sensible positive number is dropped.
+ *  `paid` is the optional price paid per share, kept only alongside a size. */
 export function size(x) {
   const num = (v) => {
     const n = Number(String(v ?? '').replace(/[$,\s]/g, ''));
     return Number.isFinite(n) && n > 0 && n < 1e12 ? Math.round(n * 10000) / 10000 : null;
   };
+  const paid = num(x.paid);
   const shares = num(x.shares);
-  if (shares) return { shares, amount: null };
+  if (shares) return { shares, amount: null, paid };
   const amount = num(x.amount);
-  return amount ? { shares: null, amount: Math.round(amount * 100) / 100 } : {};
+  return amount ? { shares: null, amount: Math.round(amount * 100) / 100, paid } : {};
 }
 
 export const onRequestDelete = route(async ({ request, env }) => {

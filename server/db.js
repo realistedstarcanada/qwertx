@@ -1,7 +1,7 @@
 // D1 schema for QWERTx Pro. Tables are created on first use, so binding an empty D1 database as DB is
 // the only setup. The same statements live in server/schema.sql for anyone who prefers migrations.
 // Privacy: a watchlist is ticker symbols plus an optional position size the member types in (shares or a
-// dollar amount). No account numbers, cost basis or brokerage logins are ever stored.
+// dollar amount) and, if they choose, the price they paid per share. No account numbers or brokerage logins are ever stored.
 
 const SCHEMA = [
   `CREATE TABLE IF NOT EXISTS users (
@@ -43,6 +43,8 @@ const ADDED_COLUMNS = [
   `ALTER TABLE watchlist ADD COLUMN amount REAL`,
   // Price when the stock was added (only with licensed price data), so performance can be shown.
   `ALTER TABLE watchlist ADD COLUMN added_price REAL`,
+  // Optional price paid per share, typed by the member.
+  `ALTER TABLE watchlist ADD COLUMN paid REAL`,
 ];
 
 let ready = false;

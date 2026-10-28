@@ -147,17 +147,18 @@
   }
 
   /** What a position is worth. kind: live (licensed price), quarter (13F quarter-end price), entered (dollar amount as typed). */
+  /** What a position is worth. kind: live (licensed price), paid (the price the member paid), quarter (latest 13F
+      quarter-end price, only when nothing better is known), entered (dollar amount as typed). */
   function value(w) {
     var d = S.data[w.ticker] || {}, live = d.q && d.q.p;
-    if (w.amount) {
-      if (live && w.addedPrice) return { now: w.amount * live / w.addedPrice, invested: w.amount, kind: 'live' };
-      return { now: w.amount, invested: w.amount, kind: 'entered' };
+    var sh = w.shares || (w.amount && w.paid ? w.amount / w.paid : null);
+    if (live) {
+      if (sh) return { now: sh * live, invested: w.paid ? sh * w.paid : w.amount || (w.addedPrice ? sh * w.addedPrice : null), kind: 'live' };
+      if (w.amount && w.addedPrice) return { now: w.amount * live / w.addedPrice, invested: w.amount, kind: 'live' };
     }
-    if (w.shares) {
-      var price = live || (d.px && d.px.p);
-      if (!price) return null;
-      return { now: w.shares * price, invested: w.addedPrice ? w.shares * w.addedPrice : null, kind: live ? 'live' : 'quarter', asOf: live ? null : d.px.d };
-    }
+    if (w.amount) return { now: w.amount, invested: w.amount, kind: 'entered' };
+    if (w.shares && w.paid) return { now: w.shares * w.paid, invested: w.shares * w.paid, kind: 'paid' };
+    if (w.shares && d.px) return { now: w.shares * d.px.p, invested: null, kind: 'quarter', asOf: d.px.d };
     return null;
   }
 
@@ -231,9 +232,10 @@
   function addBox(me) {
     var used = (me.watchlist || []).length, limit = me.limit;
     return '<section class="card px-add" aria-label="Add stocks and ETFs"><div class="px-add-head"><h2>Add your stocks and ETFs</h2><span class="form-note">' + used + ' of ' + limit + ' used' + (me.pro ? '' : ' · <a href="#" data-open="membership">Pro watches 50</a>') + '</span></div>' +
-      '<form id="wl-add-form" class="wl-add-form"><label class="sr-only" for="wl-input">Tickers</label><input class="input" id="wl-input" name="tickers" placeholder="AAPL, VOO, XEQT, RY.TO" autocomplete="off" autocapitalize="characters" spellcheck="false"' + (used >= limit ? ' disabled' : '') + '>' +
+      '<form id="wl-add-form" class="wl-add-form"><div class="px-ac"><label class="sr-only" for="wl-input">Search by ticker or company name</label><input class="input" id="wl-input" name="tickers" placeholder="Search a ticker or company: AAPL, Shopify, VOO, XEQT" autocomplete="off" autocapitalize="characters" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="px-ac-list"' + (used >= limit ? ' disabled' : '') + '>' +
+      '<ul class="px-ac-list" id="px-ac-list" role="listbox" aria-label="Matching stocks and ETFs" hidden></ul></div>' +
       '<button class="btn btn-gold" type="submit"' + (used >= limit ? ' disabled' : '') + '>Add</button></form>' +
-      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (Symbol or Ticker column, plus Shares or Amount) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
+      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (Symbol or Ticker column, plus Shares or Amount, and Price paid if you like) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
       resultsHtml() + '</section>';
   }
 
@@ -250,7 +252,13 @@
 
     // Hero: value + chart (live prices) or an honest note
     var kinds = {}; M.sized.forEach(function (r) { kinds[r.v.kind] = 1; });
-    var basis = kinds.live && kinds.entered ? 'live prices and the amounts you entered' : kinds.live ? 'live prices' : kinds.quarter && kinds.entered ? 'the amounts you entered and 13F quarter-end prices' : kinds.quarter ? '13F quarter-end prices' : 'the amounts you entered';
+    var qd = M.sized.filter(function (r) { return r.v.kind === 'quarter'; }).map(function (r) { return r.v.asOf; }).sort().pop();
+    var bits = [];
+    if (kinds.live) bits.push('live prices');
+    if (kinds.entered) bits.push('the amounts you entered');
+    if (kinds.paid) bits.push('the prices you paid');
+    if (kinds.quarter) bits.push(fmtDate(qd) + ' prices for shares with no price paid');
+    var basis = bits.length > 1 ? bits.slice(0, -1).join(', ') + ' and ' + bits[bits.length - 1] : bits[0];
     var gain = M.allLive && M.invested ? M.total - M.invested : null;
     html += '<div class="px-grid2">';
     html += '<section class="card px-hero" aria-label="Portfolio value">' + label('Portfolio value') +
@@ -361,20 +369,23 @@
       else if (d.e && d.e.d >= today()) er = chip(fmtShort(d.e.d), '');
     }
     var pos = w.amount ? usd(w.amount) : w.shares ? (+w.shares).toLocaleString('en-US') + ' shares' : '<span class="muted">—</span>';
+    if (w.paid) pos += '<div class="tkr-name">paid $' + (+w.paid).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' a share</div>';
     return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkr(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div></td>' +
       '<td>' + pos + ' <button type="button" class="linklike" data-edit="' + esc(t) + '">' + (w.amount || w.shares ? 'Edit' : 'Add size') + '</button>' + posForm(w) + '</td>' +
       '<td>' + (weight != null ? '<div class="px-wbar"><span style="width:' + Math.min(100, weight * 2.5).toFixed(0) + '%"></span></div><span class="mono">' + weight.toFixed(1) + '%</span>' : '<span class="muted">—</span>') + '</td>' +
-      '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'quarter' ? '<div class="tkr-name">at ' + fmtShort(v.asOf) + ' price</div>' : '') : '<span class="muted">—</span>') + '</td>' +
+      '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'quarter' ? '<div class="tkr-name">at ' + fmtShort(v.asOf) + ' price · <button type="button" class="linklike" data-edit="' + esc(t) + '">add what you paid</button></div>' : v.kind === 'paid' ? '<div class="tkr-name">at the price you paid</div>' : '') : '<span class="muted">—</span>') + '</td>' +
       '<td>' + sm + '</td><td>' + er + '</td>' +
       '<td><button class="icon-btn wl-remove" type="button" data-remove="' + esc(t) + '" aria-label="Remove ' + esc(t) + '"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></td></tr>';
   }
   function addDays(n) { return new Date(Date.now() + n * 864e5).toISOString().slice(0, 10); }
   function posForm(w) {
     var t = esc(w.ticker), unit = w.shares ? 'shares' : 'amount';
-    return '<form class="wl-pos-form" data-pos="' + t + '" hidden><label class="sr-only" for="pos-' + t + '">Position size for ' + t + '</label>' +
-      '<input class="input input-sm" id="pos-' + t + '" name="n" inputmode="decimal" placeholder="10,000" value="' + esc(w.shares || w.amount || '') + '">' +
-      '<select class="input input-sm" name="unit" aria-label="Unit"><option value="amount"' + (unit === 'amount' ? ' selected' : '') + '>$ amount</option><option value="shares"' + (unit === 'shares' ? ' selected' : '') + '>shares</option></select>' +
-      '<button class="btn btn-sm btn-gold" type="submit">Save</button>' + (w.shares || w.amount ? '<button class="linklike" type="button" data-clear="' + t + '">Remove size</button>' : '') + '</form>';
+    return '<form class="wl-pos-form" data-pos="' + t + '" hidden>' +
+      '<label class="px-pf"><span>You own</span><span class="px-pf-row"><input class="input input-sm" name="n" inputmode="decimal" placeholder="10" value="' + esc(w.shares || w.amount || '') + '" aria-label="How much of ' + t + ' you own">' +
+      '<select class="input input-sm" name="unit" aria-label="Unit"><option value="shares"' + (unit === 'shares' ? ' selected' : '') + '>shares</option><option value="amount"' + (unit === 'amount' ? ' selected' : '') + '>$ invested</option></select></span></label>' +
+      '<label class="px-pf"><span>Price you paid per share <i class="muted">(optional)</i></span><input class="input input-sm" name="paid" inputmode="decimal" placeholder="$150.00" value="' + esc(w.paid || '') + '" aria-label="Price you paid per share of ' + t + '"></label>' +
+      '<span class="px-pf-act"><button class="btn btn-sm btn-gold" type="submit">Save</button>' + (w.shares || w.amount ? '<button class="linklike" type="button" data-clear="' + t + '">Remove size</button>' : '') + '</span>' +
+      '<p class="form-note">Your average cost from your broker works best. With it we can show gains once live prices are on.</p></form>';
   }
   function resultsHtml() {
     if (!S.results || !S.results.length) return '';
@@ -792,6 +803,81 @@
     return '<button type="button" class="wl-planbtn' + (featured ? ' featured' : '') + '" data-plan="' + key + '"><span class="card-label"><span>' + esc(lbl) + '</span>' + (featured ? '<span>Best value</span>' : '') + '</span><span class="p">' + price + ' <small>' + per + '</small></span><span class="form-note">' + note + '</span></button>';
   }
 
+  // ---------- ticker search (add box) ----------
+  /** Everything a member can add, with names: the stocks and ETFs QWERTx covers first, then (once loaded) every
+      ticker the SEC lists. */
+  function searchList() {
+    if (S.search) return S.search;
+    var mine = {}; (S.me.watchlist || []).forEach(function (w) { mine[w.ticker] = 1; });
+    var seen = {}, out = [];
+    Object.keys(S.index.tickers || {}).forEach(function (t) {
+      var r = S.index.tickers[t], e = S.index.etfs && S.index.etfs[t];
+      seen[t] = 1;
+      out.push({ t: t, n: r[0] || '', l: (r[0] || '').toLowerCase(), etf: !!e, ca: /\.TO$/.test(t), own: r[1] || 0, cov: 1 });
+    });
+    (S.secList || []).forEach(function (x) { if (!seen[x[0]]) out.push({ t: x[0], n: x[1], l: String(x[1]).toLowerCase(), cov: 0 }); });
+    S.search = out;
+    return out;
+  }
+  function matches(q) {
+    q = q.trim();
+    if (!q) return [];
+    var Q = q.toUpperCase().replace(/^\$/, '').replace(/^TSX:/, ''), lq = q.toLowerCase();
+    var scored = [];
+    searchList().forEach(function (x) {
+      var base = x.t.replace(/\.TO$/, ''), sc = -1;
+      if (x.t === Q || base === Q || x.t === Q.replace(/\.TO$/, '')) sc = 100;
+      else if (x.t.indexOf(Q) === 0) sc = 80 - x.t.length;
+      else if (lq.length >= 2 && (' ' + x.l).indexOf(' ' + lq) >= 0) sc = 50 - Math.min(20, x.l.indexOf(lq));
+      else if (lq.length >= 3 && x.l.indexOf(lq) >= 0) sc = 20;
+      if (sc < 0) return;
+      scored.push([sc + (x.cov ? 6 : 0) + Math.min(4, x.own || 0), x]);
+    });
+    return scored.sort(function (a, b) { return b[0] - a[0] || a[1].t.localeCompare(b[1].t); }).slice(0, 8).map(function (s) { return s[1]; });
+  }
+  function autocomplete(input, list) {
+    if (!input || !list) return;
+    var items = [], active = -1;
+    var mine = {}; (S.me.watchlist || []).forEach(function (w) { mine[w.ticker] = 1; });
+    // What is being typed: the text after the last comma; if that phrase matches no name, just its last word.
+    var token = function () {
+      var v = input.value, i = Math.max(v.lastIndexOf(','), v.lastIndexOf(';'));
+      var head = v.slice(0, i + 1), q = v.slice(i + 1);
+      if (/\S\s+\S/.test(q.trim()) && !matches(q).length) { var j = q.replace(/\s+$/, '').lastIndexOf(' '); head += q.slice(0, j + 1); q = q.slice(j + 1); }
+      return { head: head, q: q };
+    };
+    var close = function () { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); active = -1; };
+    var paint = function () {
+      list.innerHTML = items.map(function (x, i) {
+        var tag = mine[x.t] ? '<span class="px-chip">On your list</span>' : x.ca ? '<span class="px-chip">Canadian ETF</span>' : x.etf ? '<span class="px-chip">ETF</span>' : x.own ? '<span class="px-chip gold">' + plural(x.own, 'fund manager') + '</span>' : '';
+        return '<li role="option" id="px-ac-' + i + '" data-i="' + i + '" aria-selected="' + (i === active) + '"' + (i === active ? ' class="on"' : '') + '><b class="mono">' + esc(x.t) + '</b><span class="nm">' + esc(x.n) + '</span>' + tag + '</li>';
+      }).join('');
+      list.hidden = !items.length;
+      input.setAttribute('aria-expanded', items.length ? 'true' : 'false');
+      if (active >= 0) input.setAttribute('aria-activedescendant', 'px-ac-' + active); else input.removeAttribute('aria-activedescendant');
+    };
+    var pick = function (i) {
+      var x = items[i]; if (!x) return;
+      var h = token().head;
+      input.value = (h ? h.replace(/\s*$/, ' ') : '') + x.t + ', ';
+      close(); input.focus();
+    };
+    var update = function () { var q = token().q; items = q.trim() ? matches(q) : []; active = items.length ? 0 : -1; paint(); };
+    input.addEventListener('input', update);
+    input.addEventListener('focus', function () {
+      if (S.secList === undefined) { S.secList = null; getJSON('/pro/search.json').then(function (j) { S.secList = j || []; S.search = null; if (document.activeElement === input) update(); }); }
+    });
+    input.addEventListener('keydown', function (e) {
+      if (list.hidden) return;
+      if (e.key === 'ArrowDown') { e.preventDefault(); active = (active + 1) % items.length; paint(); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); active = (active - 1 + items.length) % items.length; paint(); }
+      else if (e.key === 'Enter' && active >= 0) { e.preventDefault(); pick(active); }
+      else if (e.key === 'Escape') { e.preventDefault(); close(); }
+    });
+    input.addEventListener('blur', function () { setTimeout(close, 150); });
+    list.addEventListener('mousedown', function (e) { var li = e.target.closest('li[data-i]'); if (li) { e.preventDefault(); pick(+li.getAttribute('data-i')); } });
+  }
+
   // ---------- events ----------
   function on(sel, ev, fn) { root.querySelectorAll(sel).forEach(function (el) { el.addEventListener(ev, function (e) { fn(e, el); }); }); }
   function bind() {
@@ -803,7 +889,10 @@
     on('[data-sel]', 'click', function (e, b) { S.sel = b.getAttribute('data-sel'); render(); });
     on('[data-etf]', 'click', function (e, b) { e.preventDefault(); S.etf = b.getAttribute('data-etf'); render(); var el = document.getElementById('etf-card'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     var add = document.getElementById('wl-add-form');
-    if (add) add.addEventListener('submit', function (e) { e.preventDefault(); var v = add.tickers.value; add.querySelector('button').disabled = true; addTickers(v.split(/[\s,;]+/)); });
+    if (add) {
+      add.addEventListener('submit', function (e) { e.preventDefault(); var v = add.tickers.value; if (!v.trim()) return; add.querySelector('button[type="submit"]').disabled = true; addTickers(v.split(/[\s,;]+/)); });
+      autocomplete(add.tickers, document.getElementById('px-ac-list'));
+    }
     var csv = document.getElementById('wl-csv');
     if (csv) csv.addEventListener('change', function () {
       var f = csv.files && csv.files[0];
@@ -815,8 +904,8 @@
         addTickers(t);
       });
     });
-    on('[data-edit]', 'click', function (e, b) { var f = root.querySelector('form[data-pos="' + b.getAttribute('data-edit') + '"]'); f.hidden = !f.hidden; if (!f.hidden) f.n.focus(); });
-    on('form[data-pos]', 'submit', function (e, f) { e.preventDefault(); var body = { ticker: f.getAttribute('data-pos') }; body[f.unit.value] = f.n.value; savePos(body); });
+    on('[data-edit]', 'click', function (e, b) { var f = root.querySelector('form[data-pos="' + b.getAttribute('data-edit') + '"]'); var wantPaid = /paid/.test(b.textContent); f.hidden = wantPaid ? false : !f.hidden; if (!f.hidden) (wantPaid ? f.paid : f.n).focus(); });
+    on('form[data-pos]', 'submit', function (e, f) { e.preventDefault(); var body = { ticker: f.getAttribute('data-pos'), paid: f.paid.value }; body[f.unit.value] = f.n.value; savePos(body); });
     on('[data-clear]', 'click', function (e, b) { savePos({ ticker: b.getAttribute('data-clear') }); });
     on('[data-add]', 'click', function (e, b) { addTickers([b.getAttribute('data-add')]); });
     on('[data-remove]', 'click', function (e, b) {
@@ -904,13 +993,14 @@
     var delim = [',', ';', '\t'].sort(function (a, b) { return lines[0].split(b).length - lines[0].split(a).length; })[0];
     var split = function (l) { var out = [], cur = '', q = false; for (var i = 0; i < l.length; i++) { var c = l[i]; if (c === '"') q = !q; else if (c === delim && !q) { out.push(cur); cur = ''; } else cur += c; } out.push(cur); return out.map(function (x) { return x.trim(); }); };
     var rows = lines.map(split);
-    var hi = -1, col = 0, qcol = -1, acol = -1;
+    var hi = -1, col = 0, qcol = -1, acol = -1, pcol = -1;
     for (var r = 0; r < Math.min(rows.length, 15) && hi < 0; r++) {
       for (var c = 0; c < rows[r].length; c++) if (/^(symbol|ticker|ticker symbol|security symbol|stock symbol|code)$/i.test(rows[r][c])) { hi = r; col = c; break; }
     }
     if (hi >= 0) rows[hi].forEach(function (h, c) {
       if (qcol < 0 && /^(shares|quantity|qty|units|number of shares)$/i.test(h)) qcol = c;
       if (acol < 0 && /^(amount|market value|value|total value|position value)( \((us\$|usd|cad|c\$)\))?$/i.test(h)) acol = c;
+      if (pcol < 0 && /^(price paid|paid|purchase price|avg(\.)? cost|average cost|average price|avg(\.)? price|cost per share|book cost per share|acb per share)( \((us\$|usd|cad|c\$)\))?$/i.test(h)) pcol = c;
     });
     var data = hi >= 0 ? rows.slice(hi + 1) : rows;
     var out = [], seen = {};
@@ -921,6 +1011,7 @@
       var item = { ticker: v };
       if (qcol >= 0 && row[qcol]) item.shares = row[qcol];
       else if (acol >= 0 && row[acol]) item.amount = row[acol];
+      if (pcol >= 0 && row[pcol] && (item.shares || item.amount)) item.paid = row[pcol];
       out.push(item);
     });
     return out.slice(0, 100);
