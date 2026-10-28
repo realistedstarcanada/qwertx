@@ -7,7 +7,7 @@
 // The site build shows this data on preview (branch) builds only, never on the production build from main.
 // Replace with the licensed feed (scripts/fetch-fmp.mjs) before launch.
 //
-// Tickers: the stocks at least one tracked fund manager owns, every ETF in config/etfs.json, everything on a
+// Tickers: every stock the site has data for (about 1,200), every ETF in config/etfs.json, everything on a
 // member watchlist (POST {PRO_SITE_URL}/api/internal/universe with CRON_SECRET) and any extra TICKERS="A B".
 import fs from 'node:fs';
 import path from 'node:path';
@@ -89,7 +89,8 @@ async function yget(url, tries = 4) {
 async function universe() {
   const t = new Set();
   const idx = readJSON(path.join(ROOT, 'dist/pro/index.json'), null);
-  if (idx) for (const [k, v] of Object.entries(idx.tickers)) if (v[1] >= 1 && !idx.etfs?.[k]) t.add(k);
+  // Every stock the site has data for: held or recently sold by a tracked manager, or traded by politicians/insiders.
+  if (idx) for (const k of Object.keys(idx.tickers)) if (!idx.etfs?.[k]) t.add(k);
   else console.warn('dist/pro/index.json missing: run the build first for the fund-manager stocks');
   const etfs = readJSON(path.join(ROOT, 'config/etfs.json'), { us: {}, ca: {} });
   Object.keys(etfs.us || {}).forEach((k) => t.add(k));
