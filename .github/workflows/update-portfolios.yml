@@ -35,6 +35,9 @@ jobs:
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
           OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
+      - name: Toronto (TSX) ticker list for the Pro watchlist
+        run: node scripts/fetch-tsx.mjs
+        continue-on-error: true
       - name: US ticker list for the Pro watchlist
         run: node scripts/fetch-tickers.mjs
         continue-on-error: true

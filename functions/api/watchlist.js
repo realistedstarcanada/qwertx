@@ -37,8 +37,11 @@ export const onRequestPost = route(async ({ request, env }) => {
   const results = [];
   const add = [];
   for (const input of inputs) {
-    const n = normalizeTicker(input);
+    let n = normalizeTicker(input);
     if (n.error) { results.push({ input, status: n.error }); continue; }
+    // A bare ticker that only trades in Toronto (CGL) becomes its Toronto listing (CGL.TO).
+    const tsx = `${n.ticker.replace(/\./g, '-')}.TO`;
+    if (known && !n.ticker.endsWith('.TO') && !known.includes(` ${n.ticker} `) && known.includes(` ${tsx} `)) n = { ticker: tsx, from: input, listing: 'Toronto' };
     if (known && !known.includes(` ${n.ticker} `)) { results.push({ input, status: 'unknown' }); continue; }
     if (owned.has(n.ticker)) { results.push({ input, ticker: n.ticker, status: 'duplicate' }); continue; }
     if (owned.size >= limit) { results.push({ input, ticker: n.ticker, status: 'limit' }); continue; }
@@ -48,7 +51,7 @@ export const onRequestPost = route(async ({ request, env }) => {
     const needsPrice = sz.shares && !sz.paid ? sz.shares : null;
     if (needsPrice) delete sz.shares;
     add.push({ ...n, ...sz });
-    results.push({ input, ticker: n.ticker, status: n.from ? 'mapped' : 'added', ...(needsPrice ? { needsPrice } : {}) });
+    results.push({ input, ticker: n.ticker, status: n.from ? 'mapped' : 'added', ...(n.listing ? { listing: n.listing } : {}), ...(needsPrice ? { needsPrice } : {}) });
   }
   if (add.length) {
     const now = nowIso();

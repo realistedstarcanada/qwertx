@@ -21,6 +21,7 @@
     "data:etfs": "node scripts/fetch-etfs.mjs",
     "data:vendor": "node scripts/fetch-fmp.mjs",
     "data:tickers": "node scripts/fetch-tickers.mjs",
+    "data:tsx": "node scripts/fetch-tsx.mjs",
     "data:trump": "node scripts/fetch-trump.mjs",
     "data:featured": "node scripts/fetch-featured.mjs",
     "test": "node --no-warnings --import ./test/harness/json-hook.mjs --test test/*.test.mjs"

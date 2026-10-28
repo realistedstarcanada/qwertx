@@ -12,6 +12,7 @@ import { thin, shape } from '../scripts/fetch-fmp.mjs';
 import { buildWeather, recessionProbability, percentile, sahm } from '../src/lib/weather.mjs';
 import { normalizeTicker } from '../server/pro.js';
 import { teaser } from '../functions/api/brief.js';
+import { parseDirectory } from '../scripts/fetch-tsx.mjs';
 
 test('EDGAR daily form index: rows parsed, dates normalised', () => {
   const idx = [
@@ -208,4 +209,14 @@ test('price paid per share is optional, kept only with a size, and cleared with 
   r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'META', paid: '612.3' } });
   assert.equal(by(r.json).META.amount, null);
   assert.equal(by(r.json).META.paid, null, 'removing the size removes the price paid');
+});
+
+test('TSX directory: every listing and share class, written as SYMBOL.TO', () => {
+  const list = parseDirectory({ results: [
+    { symbol: 'CGL', name: 'iShares Gold Bullion ETF', instruments: [{ symbol: 'CGL', name: 'iShares Gold Bullion ETF' }, { symbol: 'CGL.C', name: 'iShares Gold Bullion ETF (non-hedged)' }] },
+    { symbol: 'BIP.UN', name: 'Brookfield Infrastructure Partners L.P.' },
+    { symbol: 'bad symbol!', name: 'x' },
+  ] });
+  assert.deepEqual(list, { 'CGL.TO': 'iShares Gold Bullion ETF', 'CGL-C.TO': 'iShares Gold Bullion ETF (non-hedged)', 'BIP-UN.TO': 'Brookfield Infrastructure Partners L.P.' });
+  assert.deepEqual(parseDirectory(null), {});
 });

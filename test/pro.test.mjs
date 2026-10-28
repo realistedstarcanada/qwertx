@@ -112,14 +112,14 @@ test('rejects requests from other sites and bad emails', async () => {
 });
 
 test('free watchlist: clean-up, Canadian aliases, limit of 3', async () => {
-  const r = await web.req('POST', '/api/watchlist', { body: { tickers: ['aapl', 'AAPL', 'RY.TO', 'XYZQ.TO', '$msft', 'BRK-B', '12345'] } });
+  const r = await web.req('POST', '/api/watchlist', { body: { tickers: ['aapl', 'AAPL', 'RY.TO', 'XYZQQQQQ.TO', '$msft', 'BRK-B', '12345'] } });
   assert.equal(r.status, 200, r.text);
   const by = Object.fromEntries(r.json.results.map((x) => [x.input, x]));
   assert.equal(by.aapl.status, 'added');
   assert.equal(by.AAPL.status, 'duplicate');
   assert.equal(by['RY.TO'].status, 'mapped');
   assert.equal(by['RY.TO'].ticker, 'RY');
-  assert.equal(by['XYZQ.TO'].status, 'not_covered');
+  assert.equal(by['XYZQQQQQ.TO'].status, 'invalid');
   assert.equal(by.$msft.status, 'added');
   assert.equal(by['BRK-B'].status, 'limit');
   assert.equal(by['12345'].status, 'invalid');
@@ -308,7 +308,13 @@ test('ticker clean-up', () => {
   assert.deepEqual(normalizeTicker('T.TO'), { ticker: 'TU', from: 'T.TO' });
   assert.deepEqual(normalizeTicker('TECK.B.TO'), { ticker: 'TECK', from: 'TECK.B.TO' });
   assert.equal(normalizeTicker('T').ticker, 'T', 'bare T is AT&T, not Telus');
-  assert.equal(normalizeTicker('L.TO').error, 'not_covered');
+  assert.deepEqual(normalizeTicker('L.TO'), { ticker: 'L.TO' }, 'Toronto-only listings keep .TO');
+  assert.deepEqual(normalizeTicker('CGL.TO'), { ticker: 'CGL.TO' });
+  assert.deepEqual(normalizeTicker('CGL'), { ticker: 'CGL.TO' }, 'popular Canadian ETFs work without .TO');
+  assert.deepEqual(normalizeTicker('XBB'), { ticker: 'XBB' }, 'unless the ticker is also a US security');
+  assert.deepEqual(normalizeTicker('BIP.UN.TO'), { ticker: 'BIP', from: 'BIP.UN.TO' });
+  assert.deepEqual(normalizeTicker('TSX:ATD'), { ticker: 'ATD.TO' });
+  assert.deepEqual(normalizeTicker('CTC.A.TO'), { ticker: 'CTC-A.TO' });
   assert.equal(normalizeTicker('').error, 'invalid');
 });
 

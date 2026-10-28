@@ -125,15 +125,16 @@ const pro = buildProData(d, {
 });
 // Space-separated list of every ticker we accept on a watchlist (catches typos without parsing JSON).
 const secTickers = readJSON('data/sec-tickers.json');
+const tsxTickers = readJSON('data/tsx-tickers.json') || {};
 if (secTickers) {
-  const known = new Set([...Object.keys(secTickers), ...Object.keys(pro.index.tickers), ...Object.values(pro.index.aliases)]);
+  const known = new Set([...Object.keys(secTickers), ...Object.keys(tsxTickers), ...Object.keys(pro.index.tickers), ...Object.values(pro.index.aliases)]);
   fs.mkdirSync(path.join(OUT, 'pro'), { recursive: true });
   fs.writeFileSync(path.join(OUT, 'pro/known.txt'), ` ${[...known].sort().join(' ')} `);
 }
 // Every other ticker we know a name for, for the add box's search (loaded when the box is first used):
-// SEC-listed companies plus the US listings of big Canadian companies.
+// SEC-listed companies, every Toronto listing, and the US listings of big Canadian companies.
 {
-  const names = { ...(readJSON('config/ticker-aliases.json')?.names || {}), ...(secTickers || {}) };
+  const names = { ...(readJSON('config/ticker-aliases.json')?.names || {}), ...(secTickers || {}), ...tsxTickers };
   const extra = Object.entries(names).filter(([t, n]) => !pro.index.tickers[t] && n && n !== t).sort((x, y) => x[0].localeCompare(y[0])).map(([t, n]) => [t, String(n).slice(0, 60)]);
   fs.mkdirSync(path.join(OUT, 'pro'), { recursive: true });
   fs.writeFileSync(path.join(OUT, 'pro/search.json'), JSON.stringify(extra));

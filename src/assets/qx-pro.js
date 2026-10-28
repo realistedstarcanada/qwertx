@@ -52,8 +52,10 @@
   else load();
 
   function load() {
-    Promise.all([api('GET', '/api/me'), getJSON('/pro/index.json')]).then(function (r) {
+    Promise.all([api('GET', '/api/me'), getJSON('/pro/index.json'), getJSON('/pro/search.json')]).then(function (r) {
       S.me = r[0];
+      S.secList = r[2] || [];
+      S.names = {}; S.secList.forEach(function (x) { S.names[x[0]] = x[1]; });
       S.index = r[1] || { managers: {}, managerOrder: [], tickers: {}, etfs: {} };
       if (params.get('welcome') === 'pro') S.notice = { tone: 'gold', html: '<b>Welcome to QWERTx Pro.</b> Add the stocks and ETFs you own below. Alerts start as soon as a new filing touches one of them.' };
       if (params.get('already') === 'pro') S.notice = { tone: 'gold', html: 'You already have QWERTx Pro, so there was nothing to buy. Manage your plan in Settings.' };
@@ -183,7 +185,8 @@
         var k = key(r.t);
         expo[k] = expo[k] || { d: 0, via: {} };
         expo[k].d += r.v.now;
-        countries['United States'] = (countries['United States'] || 0) + r.v.now;
+        var where = /\.TO$/.test(r.t) ? 'Canada' : 'United States';
+        countries[where] = (countries[where] || 0) + r.v.now;
         var sec = (r.d && r.d.sec) || 'Other';
         sectors[sec] = (sectors[sec] || 0) + r.v.now;
         return;
@@ -360,7 +363,8 @@
   function chip(text, tone) { return '<span class="px-chip ' + (tone || '') + '">' + text + '</span>'; }
   function holdingRow(w, M) {
     var t = w.ticker, d = S.data[t], v = value(w);
-    var name = (d && d.n) || (S.index.tickers[t] && S.index.tickers[t][0]) || '';
+    var name = (d && d.n) || (S.index.tickers[t] && S.index.tickers[t][0]) || (S.names && S.names[t]) || '';
+    var caOnly = /\.TO$/.test(t) && !(d && d.etf);
     var weight = v && M.total ? v.now / M.total * 100 : null;
     var sm = '', er = '';
     if (d && d.etf) {
@@ -371,6 +375,8 @@
       sm = (d.h || []).length || s ? chip(b + '↑ ' + s + '↓', b > s ? 'up' : s > b ? 'down' : '') : chip('No tracked owner', '');
       if (d.le && d.le.est != null && d.le.d >= addDays(-50)) er = chip(d.le.eps >= d.le.est ? 'Beat' : 'Missed', d.le.eps >= d.le.est ? 'up' : 'down');
       else if (d.e && d.e.d >= today()) er = chip(fmtShort(d.e.d), '');
+    } else if (caOnly) {
+      sm = '<span title="US fund-manager, politician and insider filings only cover US-listed shares.">' + chip('Toronto listing', '') + '</span>';
     }
     var pos = w.amount ? usd(w.amount) : w.shares ? (+w.shares).toLocaleString('en-US') + ' shares' : '<span class="muted">—</span>';
     if (w.paid && w.shares) pos += '<div class="tkr-name">avg. $' + (+w.paid).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' a share</div>';
@@ -395,7 +401,7 @@
     if (!S.results || !S.results.length) return '';
     var msg = {
       added: function (r) { return '<b>' + esc(r.ticker) + '</b> added' + (r.needsPrice ? '. Add your average price per share to include your ' + (+r.needsPrice).toLocaleString('en-US') + ' shares' : ''); },
-      mapped: function (r) { return '<b>' + esc(r.input) + '</b> added as its New York listing <b>' + esc(r.ticker) + '</b>' + (r.needsPrice ? '. Add your average price per share to include your ' + (+r.needsPrice).toLocaleString('en-US') + ' shares' : ''); },
+      mapped: function (r) { return '<b>' + esc(r.input) + '</b> added as its ' + esc(r.listing || 'New York') + ' listing <b>' + esc(r.ticker) + '</b>' + (r.needsPrice ? '. Add your average price per share to include your ' + (+r.needsPrice).toLocaleString('en-US') + ' shares' : ''); },
       duplicate: function (r) { return '<b>' + esc(r.ticker) + '</b> is already on your list'; },
       limit: function (r) { return '<b>' + esc(r.ticker) + '</b> not added: your plan watches ' + S.me.limit + (S.me.pro ? '' : ' (<a href="#" data-open="membership">Pro watches 50</a>)'); },
       unknown: function (r) { return '<b>' + esc(r.input) + '</b> isn’t a ticker we recognise. Check the spelling?'; },
@@ -436,6 +442,7 @@
     international: ['International', 'Companies outside North America, for spreading risk beyond the US and Canada.'],
     commodity: ['Commodity-linked', 'Moves with a commodity. Gold-miner funds typically swing more than gold itself.'],
     bonds: ['Bonds', 'Lends money to governments and companies. Usually much steadier than stocks.'],
+    cash: ['Cash', 'Holds high-interest savings deposits at banks. Steady, earns interest, little growth.'],
     thematic: ['Thematic', 'A concentrated bet on a theme or a manager’s picks. Can rise and fall sharply.'],
     allocation: ['All-in-one portfolio', 'A complete portfolio in one ticker, holding several other ETFs and rebalanced for you.'],
   };
@@ -488,8 +495,11 @@
 
   // ---------- Tab 2 · Smart Money ----------
   function tabSmart(M, pro) {
-    var stocks = (S.me.watchlist || []).filter(function (w) { return w.active && !isEtf(w.ticker); });
-    if (!stocks.length) return soon('Add a stock to see the smart money', 'This tab shows which fund managers, politicians and insiders are buying or selling the stocks you own. ETFs are explained on My Portfolio.');
+    var all = (S.me.watchlist || []).filter(function (w) { return w.active && !isEtf(w.ticker); });
+    var stocks = all.filter(function (w) { return !/\.TO$/.test(w.ticker); });
+    var caOnly = all.filter(function (w) { return /\.TO$/.test(w.ticker); }).map(function (w) { return w.ticker; });
+    var caNote = caOnly.length ? esc(caOnly.join(', ')) + (caOnly.length > 1 ? ' trade' : ' trades') + ' only in Toronto, and US fund-manager, politician and insider filings only cover US-listed shares.' : '';
+    if (!stocks.length) return soon('Add a US-listed stock to see the smart money', (caNote ? caNote + ' ' : '') + 'This tab shows which fund managers, politicians and insiders are buying or selling the stocks you own. ETFs are explained on My Portfolio.');
     var cell = function (b, s, note) {
       var tot = b + s, net = b - s, a = tot ? Math.min(0.55, 0.18 + Math.abs(net) / tot * 0.6) : 0;
       var bg = !tot || !net ? 'var(--px-cell)' : net > 0 ? 'rgba(45,212,191,' + a.toFixed(2) + ')' : 'rgba(248,113,113,' + a.toFixed(2) + ')';
@@ -512,7 +522,7 @@
     }).join('');
     var html = '<section class="card" aria-label="Who is buying and selling your stocks"><div class="px-h2row"><h2 class="px-h2">Who is buying and selling your stocks</h2><span class="form-note">Buys ↑ vs. sells ↓ · fund managers from their last 13F · politicians and insiders from recent disclosures</span></div>' +
       '<div class="px-heat-wrap"><div class="px-heat"><div class="px-hrow head"><div></div><div>Fund managers</div><div>Institutions</div><div>Congress</div><div>President</div><div>Insiders</div></div>' + rows + '</div></div>' +
-      '<div class="px-split-key"><span><i style="background:rgba(45,212,191,.45)"></i>More buying</span><span><i style="background:var(--px-cell)"></i>Balanced or none</span><span><i style="background:rgba(248,113,113,.45)"></i>More selling</span><span class="muted">Many insider sales are planned in advance; clusters of insider buying are the rarer signal.</span></div></section>';
+      '<div class="px-split-key"><span><i style="background:rgba(45,212,191,.45)"></i>More buying</span><span><i style="background:var(--px-cell)"></i>Balanced or none</span><span><i style="background:rgba(248,113,113,.45)"></i>More selling</span><span class="muted">Many insider sales are planned in advance; clusters of insider buying are the rarer signal.</span></div>' + (caNote ? '<p class="form-note">Not shown: ' + caNote + '</p>' : '') + '</section>';
 
     var feed = activity(stocks);
     var filters = [['all', 'All'], ['fund', 'Fund managers'], ['pol', 'Politicians'], ['ins', 'Insiders']];
@@ -819,7 +829,7 @@
       seen[t] = 1;
       out.push({ t: t, n: r[0] || '', l: (r[0] || '').toLowerCase(), etf: !!e, ca: /\.TO$/.test(t), own: r[1] || 0, cov: 1 });
     });
-    (S.secList || []).forEach(function (x) { if (!seen[x[0]]) out.push({ t: x[0], n: x[1], l: String(x[1]).toLowerCase(), cov: 0 }); });
+    (S.secList || []).forEach(function (x) { if (!seen[x[0]]) out.push({ t: x[0], n: x[1], l: String(x[1]).toLowerCase(), cov: 0, ca: /\.TO$/.test(x[0]), etf: /\bETF\b/i.test(x[1]) }); });
     S.search = out;
     return out;
   }
@@ -832,7 +842,7 @@
       var base = x.t.replace(/\.TO$/, ''), sc = -1;
       if (x.t === Q || base === Q || x.t === Q.replace(/\.TO$/, '')) sc = 100;
       else if (x.t.indexOf(Q) === 0) sc = 80 - x.t.length;
-      else if (lq.length >= 2 && (' ' + x.l).indexOf(' ' + lq) >= 0) sc = 50 - Math.min(20, x.l.indexOf(lq));
+      else if (lq.length >= 2 && (' ' + x.l).indexOf(' ' + lq) >= 0) sc = 50 - Math.min(20, x.l.indexOf(lq)) + ((' ' + x.l + ' ').indexOf(' ' + lq + ' ') >= 0 ? 12 : 0);
       else if (lq.length >= 3 && x.l.indexOf(lq) >= 0) sc = 20;
       if (sc < 0) return;
       scored.push([sc + (x.cov ? 6 : 0) + Math.min(4, x.own || 0), x]);
@@ -853,7 +863,7 @@
     var close = function () { list.hidden = true; input.setAttribute('aria-expanded', 'false'); input.removeAttribute('aria-activedescendant'); active = -1; };
     var paint = function () {
       list.innerHTML = items.map(function (x, i) {
-        var tag = mine[x.t] ? '<span class="px-chip">On your list</span>' : x.ca ? '<span class="px-chip">Canadian ETF</span>' : x.etf ? '<span class="px-chip">ETF</span>' : x.own ? '<span class="px-chip gold">' + plural(x.own, 'fund manager') + '</span>' : '';
+        var tag = mine[x.t] ? '<span class="px-chip">On your list</span>' : x.ca ? '<span class="px-chip">' + (x.etf ? 'Canadian ETF' : 'Toronto') + '</span>' : x.etf ? '<span class="px-chip">ETF</span>' : x.own ? '<span class="px-chip gold">' + plural(x.own, 'fund manager') + '</span>' : '';
         return '<li role="option" id="px-ac-' + i + '" data-i="' + i + '" aria-selected="' + (i === active) + '"' + (i === active ? ' class="on"' : '') + '><b class="mono">' + esc(x.t) + '</b><span class="nm">' + esc(x.n) + '</span>' + tag + '</li>';
       }).join('');
       list.hidden = !items.length;
@@ -868,9 +878,6 @@
     };
     var update = function () { var q = token().q; items = q.trim() ? matches(q) : []; active = items.length ? 0 : -1; paint(); };
     input.addEventListener('input', update);
-    input.addEventListener('focus', function () {
-      if (S.secList === undefined) { S.secList = null; getJSON('/pro/search.json').then(function (j) { S.secList = j || []; S.search = null; if (document.activeElement === input) update(); }); }
-    });
     input.addEventListener('keydown', function (e) {
       if (list.hidden) return;
       if (e.key === 'ArrowDown') { e.preventDefault(); active = (active + 1) % items.length; paint(); }
