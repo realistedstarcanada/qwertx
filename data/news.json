@@ -1,167 +1,185 @@
 {
-  "updatedAt": "2026-10-29T11:36:57.570Z",
+  "updatedAt": "2026-10-29T13:43:05.874Z",
   "items": [
     {
-      "title": "You can’t rely on the S&P 500 as much as you may think",
-      "link": "https://www.marketwatch.com/story/you-cant-rely-on-the-s-p-500-as-much-as-you-may-think-a3ac0cb7?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-10-29T11:30:00.000Z"
+      "title": "European Central Bank keeps key interest rate on hold at 2.5%",
+      "link": "https://www.cnbc.com/2026/10/29/european-central-bank-interest-rates.html",
+      "source": "CNBC",
+      "published": "2026-10-29T13:41:39.000Z"
     },
     {
-      "title": "Lilly raises outlook for third time this year as Zepbound sales soar",
-      "link": "https://www.marketwatch.com/story/lilly-raises-outlook-for-third-time-this-year-as-zepbound-sales-soar-6d987407?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-10-29T11:19:00.000Z"
+      "title": "As AI becomes more fractured, one name stands out: AMD",
+      "link": "https://www.cnbc.com/2026/10/26/-as-ai-becomes-more-fractured-one-names-stands-out-amd.html",
+      "source": "CNBC",
+      "published": "2026-10-29T13:37:38.000Z"
     },
     {
-      "title": "President of the European Central Bank Christine Lagarde to step down in February",
+      "title": "President of the European Central Bank Christine Lagarde to step down. Here's who is tipped to replace her",
       "link": "https://www.cnbc.com/2026/10/29/lagarde-ecb-stand-down.html",
       "source": "CNBC",
-      "published": "2026-10-29T11:15:40.000Z"
+      "published": "2026-10-29T13:32:02.000Z"
     },
     {
-      "title": "We’re in our 70s. Should we pay off our 2.5% mortgage — or put the money in a high-yield savings account?",
-      "link": "https://www.marketwatch.com/story/we-are-in-our-70s-should-we-pay-off-our-2-5-mortgage-or-build-up-our-savings-5a35e9c1?mod=mw_rss_topstories",
+      "title": "Too Late to Buy Coca-Cola? 1 Reason It Isn't.",
+      "link": "https://www.nasdaq.com/articles/too-late-buy-coca-cola-1-reason-it-isnt",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:20:00.000Z"
+    },
+    {
+      "title": "MISL vs. JETS ETFs: Defense Stability Versus Airline Cyclicality",
+      "link": "https://www.nasdaq.com/articles/misl-vs-jets-etfs-defense-stability-versus-airline-cyclicality",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:12:01.000Z"
+    },
+    {
+      "title": "Third-quarter U.S. GDP increases a better-than-expected 3.4% as September inflation accelerates",
+      "link": "https://www.cnbc.com/2026/10/29/pce-inflation-report-september-2026-.html",
+      "source": "CNBC",
+      "published": "2026-10-29T13:08:00.000Z"
+    },
+    {
+      "title": "CLPS Extends 1 Mln Share Repurchase Program By 8 Months Through July 3, 2027",
+      "link": "https://www.nasdaq.com/articles/clps-extends-1-mln-share-repurchase-program-8-months-through-july-3-2027",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:07:40.000Z"
+    },
+    {
+      "title": "BorgWarner Q3 Net Profit Improves, But Sales Drop On Lower Volumes; Revises Annual Outlook",
+      "link": "https://www.nasdaq.com/articles/borgwarner-q3-net-profit-improves-sales-drop-lower-volumes-revises-annual-outlook",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:06:02.000Z"
+    },
+    {
+      "title": "Bay Street Looks Headed For Weak Start",
+      "link": "https://www.nasdaq.com/articles/bay-street-looks-headed-weak-start-0",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:05:34.000Z"
+    },
+    {
+      "title": "Marvell is reportedly close to buying Lumentum. Analysts say they see logic in a potential deal.",
+      "link": "https://www.marketwatch.com/story/marvell-is-reportedly-close-to-buying-lumentum-analysts-say-they-see-logic-in-a-potential-deal-d7539c59?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-10-29T11:15:00.000Z"
+      "published": "2026-10-29T13:05:00.000Z"
     },
     {
-      "title": "The Fed held off on a rate hike. Today’s GDP and inflation reports could make waiting harder.",
-      "link": "https://www.marketwatch.com/story/the-fed-held-off-on-a-rate-hike-todays-gdp-and-inflation-reports-could-make-waiting-harder-693338e6?mod=mw_rss_topstories",
+      "title": "What a $1,000 Investment in Palantir Could Be Worth by the End of 2027 (The Answer May Surprise You)",
+      "link": "https://www.nasdaq.com/articles/what-1000-investment-palantir-could-be-worth-end-2027-answer-may-surprise-you",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:05:00.000Z"
+    },
+    {
+      "title": "Builders FirstSource Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/builders-firstsource-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:28.000Z"
+    },
+    {
+      "title": "Vulcan Materials Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/vulcan-materials-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:28.000Z"
+    },
+    {
+      "title": "Xcel Energy Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/xcel-energy-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:28.000Z"
+    },
+    {
+      "title": "Mid-America Apartment Communities Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/mid-america-apartment-communities-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:27.000Z"
+    },
+    {
+      "title": "VICI Properties Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/vici-properties-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:27.000Z"
+    },
+    {
+      "title": "Trane Technologies Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/trane-technologies-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:27.000Z"
+    },
+    {
+      "title": "Hyatt Hotels Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/hyatt-hotels-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:27.000Z"
+    },
+    {
+      "title": "A.O. Smith Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/ao-smith-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:27.000Z"
+    },
+    {
+      "title": "Howmet Aerospace Q3 26 Earnings Conference Call At 10:00 AM ET",
+      "link": "https://www.nasdaq.com/articles/howmet-aerospace-q3-26-earnings-conference-call-10-00-am-et",
+      "source": "Nasdaq",
+      "published": "2026-10-29T13:04:27.000Z"
+    },
+    {
+      "title": "Consumer spending flattens out after inflation surge",
+      "link": "https://www.marketwatch.com/story/consumer-spending-flattens-out-after-inflation-surge-e7761d25?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-10-29T11:11:00.000Z"
+      "published": "2026-10-29T13:01:00.000Z"
     },
     {
-      "title": "Samsung Electronics earned nearly as much as Microsoft and Alphabet combined. What the Korean giant is now saying about the memory-chip outlook.",
-      "link": "https://www.marketwatch.com/story/samsung-electronics-earned-nearly-as-much-as-microsoft-and-alphabet-combined-what-the-korean-giant-is-now-saying-about-the-memory-chip-outlook-e5c94b94?mod=mw_rss_topstories",
+      "title": "We stopped helping our neighbors with free home repairs and our friendship cooled. Who’s to blame?",
+      "link": "https://www.marketwatch.com/story/we-stopped-helping-our-neighbors-with-free-home-repairs-and-our-friendship-cooled-whos-to-blame-d20b0720?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-10-29T11:09:00.000Z"
+      "published": "2026-10-29T13:00:00.000Z"
     },
     {
-      "title": "3 Unstoppable S&P 500 Stocks to Buy Before October Ends",
-      "link": "https://www.nasdaq.com/articles/3-unstoppable-sp-500-stocks-buy-october-ends",
-      "source": "Nasdaq",
-      "published": "2026-10-29T11:05:23.000Z"
-    },
-    {
-      "title": "Warren Buffett's $48 Billion American Express Stake Has Been a Huge Winner. The Latest Results Say the Streak Is Far From Over.",
-      "link": "https://www.nasdaq.com/articles/warren-buffetts-48-billion-american-express-stake-has-been-huge-winner-latest-results-say",
-      "source": "Nasdaq",
-      "published": "2026-10-29T11:05:00.000Z"
-    },
-    {
-      "title": "Medicare used AI to pre-approve patient care, and it immediately led to a large drop in medical services",
-      "link": "https://www.marketwatch.com/story/medicare-used-ai-to-pre-approve-patient-care-and-it-immediately-led-to-a-large-drop-in-medical-services-dc38a210?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-10-29T11:00:00.000Z"
-    },
-    {
-      "title": "Solana Could Surpass XRP in Market Cap by the End of 2027. Here's a Realistic Timeline for How It Happens.",
-      "link": "https://www.nasdaq.com/articles/solana-could-surpass-xrp-market-cap-end-2027-heres-realistic-timeline-how-it-happens",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:59:00.000Z"
-    },
-    {
-      "title": "CNX Resources Corporation Q3 Profit Falls",
-      "link": "https://www.nasdaq.com/articles/cnx-resources-corporation-q3-profit-falls",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:58:11.000Z"
-    },
-    {
-      "title": "Forestar Group Inc. Q4 Income Retreats",
-      "link": "https://www.nasdaq.com/articles/forestar-group-inc-q4-income-retreats",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:58:10.000Z"
-    },
-    {
-      "title": "Quanta Services Inc. Profit Climbs In Q3",
-      "link": "https://www.nasdaq.com/articles/quanta-services-inc-profit-climbs-q3",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:57:47.000Z"
-    },
-    {
-      "title": "Boot Barn: 3 Key Takeaways for Long-Term Investors",
-      "link": "https://www.nasdaq.com/articles/boot-barn-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:57:01.000Z"
-    },
-    {
-      "title": "Granite Construction Inc. Announces Fall In Q3 Profit",
-      "link": "https://www.nasdaq.com/articles/granite-construction-inc-announces-fall-q3-profit",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:56:05.000Z"
-    },
-    {
-      "title": "Kimco Realty Corp. Profit Climbs In Q3",
-      "link": "https://www.nasdaq.com/articles/kimco-realty-corp-profit-climbs-q3",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:55:47.000Z"
-    },
-    {
-      "title": "Borg Warner Inc. Q3 Income Climbs",
-      "link": "https://www.nasdaq.com/articles/borg-warner-inc-q3-income-climbs",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:54:47.000Z"
-    },
-    {
-      "title": "Sonic Automotive Inc Q3 Profit Declines",
-      "link": "https://www.nasdaq.com/articles/sonic-automotive-inc-q3-profit-declines",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:54:33.000Z"
-    },
-    {
-      "title": "Wesco Raises 2026 Guidance",
-      "link": "https://www.nasdaq.com/articles/wesco-raises-2026-guidance",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:54:05.000Z"
-    },
-    {
-      "title": "Tenet Healthcare Corp. Profit Advances In Q3",
-      "link": "https://www.nasdaq.com/articles/tenet-healthcare-corp-profit-advances-q3",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:53:56.000Z"
-    },
-    {
-      "title": "Bunge Global Q3 Net Income Surges; Backs 2026 Earnings Guidance",
-      "link": "https://www.nasdaq.com/articles/bunge-global-q3-net-income-surges-backs-2026-earnings-guidance",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:53:16.000Z"
-    },
-    {
-      "title": "Avery Dennison Corp. Bottom Line Advances In Q3",
-      "link": "https://www.nasdaq.com/articles/avery-dennison-corp-bottom-line-advances-q3",
-      "source": "Nasdaq",
-      "published": "2026-10-29T10:51:31.000Z"
-    },
-    {
-      "title": "‘There may be better investment options’: My church received $1.5 million from a parishioner. Is 3.75% interest enough?",
+      "title": "Our church has a $1.5 million bequest earning 3.75% in a bank account. Is inflation eroding it?",
       "link": "https://www.marketwatch.com/story/there-may-be-better-investment-options-my-church-received-1-5-million-from-a-parishioner-is-3-75-interest-enough-5164d790?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-10-29T10:15:00.000Z"
+      "published": "2026-10-29T13:00:00.000Z"
     },
     {
-      "title": "ServiceNow stock is on track for its largest drop on record. But JPMorgan sees a bright spot.",
-      "link": "https://www.marketwatch.com/story/servicenow-stock-is-on-track-for-its-largest-drop-on-record-but-jpmorgan-sees-a-bright-spot-5e5b05c6?mod=mw_rss_topstories",
+      "title": "DoorDash and Instacart want to join forces. Will the U.S. government get in their way?",
+      "link": "https://www.marketwatch.com/story/doordash-and-instacart-want-to-join-forces-will-the-u-s-government-get-in-their-way-0c065bee?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-10-29T09:52:00.000Z"
+      "published": "2026-10-29T12:58:00.000Z"
     },
     {
-      "title": "‘Fancy cars hold no appeal’: My wife and I have a 99% chance of outliving our savings. Why don’t we spend it all?",
+      "title": "‘Fancy cars hold no appeal’: We have a 99% chance of outliving our life savings. Why not spend, spend, spend?",
       "link": "https://www.marketwatch.com/story/fancy-cars-hold-no-appeal-my-wife-and-i-have-a-99-chance-of-outliving-our-savings-why-dont-we-spend-it-all-932a2166?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-10-29T09:15:00.000Z"
+      "published": "2026-10-29T12:45:00.000Z"
     },
     {
-      "title": "Why Alphabet’s stock could see its worst drop in years after the latest results",
-      "link": "https://www.marketwatch.com/story/why-alphabets-stock-could-see-its-worst-drop-in-years-after-the-latest-results-6b64cf98?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-10-29T09:08:00.000Z"
-    },
-    {
-      "title": "Analysis: Warsh is learning to wield the Fed's power without showing his hand",
+      "title": "Analysis: Kevin Warsh is keeping his options open — and Wall Street guessing",
       "link": "https://www.cnbc.com/2026/10/29/kevin-warsh-fed-october-rate-decision-december-hike.html",
       "source": "CNBC",
-      "published": "2026-10-29T09:00:01.000Z"
+      "published": "2026-10-29T12:38:18.000Z"
+    },
+    {
+      "title": "Inflation surges, PCE shows. Fed pause on rate hikes unlikely to last long with prices still rising.",
+      "link": "https://www.marketwatch.com/story/inflation-surges-pce-shows-fed-pause-on-rate-hikes-unlikely-to-last-long-with-prices-still-rising-79128886?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-10-29T12:36:00.000Z"
+    },
+    {
+      "title": "Economy grows at fastest pace in a year, GDP shows, and shows little sign of slowing",
+      "link": "https://www.marketwatch.com/story/u-s-economy-grows-at-fastest-pace-in-almost-three-years-third-quarter-gdp-shows-0e15b810?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-10-29T12:35:00.000Z"
+    },
+    {
+      "title": "Caterpillar’s stock heads for worst day in 7 years — and what that means for the Dow",
+      "link": "https://www.marketwatch.com/story/caterpillars-stock-heads-for-worst-day-in-7-years-and-what-that-means-for-the-dow-d67f1fb7?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-10-29T12:25:00.000Z"
+    },
+    {
+      "title": "Lilly raised sales guidance for third time this year as Zepbound sales soar. Its stock is rallying.",
+      "link": "https://www.marketwatch.com/story/lilly-raises-outlook-for-third-time-this-year-as-zepbound-sales-soar-6d987407?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-10-29T12:03:00.000Z"
     },
     {
       "title": "Here are five key takeaways from the Fed rate decision and Warsh news conference",
@@ -218,28 +236,10 @@
       "published": "2026-10-26T20:08:57.000Z"
     },
     {
-      "title": "As AI becomes more fractured, one names stands out: AMD",
-      "link": "https://www.cnbc.com/2026/10/26/-as-ai-becomes-more-fractured-one-names-stands-out-amd.html",
-      "source": "CNBC",
-      "published": "2026-10-26T19:38:17.000Z"
-    },
-    {
       "title": "Analysis: Why a $2 trillion deficit and 5% Treasury yields are becoming America's biggest economic challenge",
       "link": "https://www.cnbc.com/2026/10/15/treasury-yields-deficit-national-debt-ai.html",
       "source": "CNBC",
       "published": "2026-10-26T18:33:51.000Z"
-    },
-    {
-      "title": "Investors are doing just as well this year by shunning AI. How to invest if the tech trade keeps fizzling",
-      "link": "https://www.cnbc.com/2026/10/26/sp-500-ex-ai-index-tech-selloff.html",
-      "source": "CNBC",
-      "published": "2026-10-26T15:39:55.000Z"
-    },
-    {
-      "title": "Apollo to buy nearly 10% stake in Abu Dhabi-backed alternative asset manager Mubadala Capital",
-      "link": "https://www.cnbc.com/2026/10/26/apollo-mubadala-capital-stake.html",
-      "source": "CNBC",
-      "published": "2026-10-26T15:19:41.000Z"
     }
   ]
 }
