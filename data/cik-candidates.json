@@ -1,0 +1,1600 @@
+{
+  "at": "2026-10-30T14:32:35.386Z",
+  "results": {
+    "ray-dalio": {
+      "manager": "Ray Dalio",
+      "firm": "Bridgewater Associates",
+      "pick": {
+        "cik": "0001350694",
+        "name": "Bridgewater Associates, LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001350694",
+          "name": "Bridgewater Associates, LP",
+          "formerNames": [
+            "Bridgewater Associates, Inc."
+          ],
+          "stateOfInc": "DE",
+          "city": "WESTPORT",
+          "files13F": true,
+          "count13F": 98,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "george-soros": {
+      "manager": "George Soros",
+      "firm": "Soros Fund Management",
+      "pick": {
+        "cik": "0001029160",
+        "name": "SOROS FUND MANAGEMENT LLC",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001029160",
+          "name": "SOROS FUND MANAGEMENT LLC",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 126,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0000900203",
+          "name": "SOROS GEORGE",
+          "formerNames": [],
+          "stateOfInc": "NY",
+          "city": null,
+          "files13F": true,
+          "count13F": 37,
+          "last13F": "2012-02-14",
+          "lastPeriod": "2011-12-31",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "bill-miller": {
+      "manager": "Bill Miller",
+      "firm": "Miller Value Partners",
+      "pick": {
+        "cik": "0001135778",
+        "name": "MILLER VALUE PARTNERS, LLC",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001135778",
+          "name": "MILLER VALUE PARTNERS, LLC",
+          "formerNames": [
+            "LMM LLC",
+            "LMM LLC /MD/"
+          ],
+          "stateOfInc": "DE",
+          "city": "SARASOTA",
+          "files13F": true,
+          "count13F": 79,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "mason-hawkins": {
+      "manager": "Mason Hawkins",
+      "firm": "Southeastern Asset Management",
+      "pick": {
+        "cik": "0000807985",
+        "name": "SOUTHEASTERN ASSET MANAGEMENT INC/TN/",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000807985",
+          "name": "SOUTHEASTERN ASSET MANAGEMENT INC/TN/",
+          "formerNames": [],
+          "stateOfInc": "TN",
+          "city": "MEMPHIS",
+          "files13F": true,
+          "count13F": 102,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "paul-singer": {
+      "manager": "Paul Singer",
+      "firm": "Elliott Investment Management",
+      "pick": {
+        "cik": "0001791786",
+        "name": "Elliott Investment Management L.P.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001791786",
+          "name": "Elliott Investment Management L.P.",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "WEST PALM BEACH",
+          "files13F": true,
+          "count13F": 30,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001048445",
+          "name": "ELLIOTT MANAGEMENT CORP",
+          "formerNames": [
+            "STONINGTON MANAGEMENT CORP"
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 96,
+          "last13F": "2020-11-16",
+          "lastPeriod": "2020-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0000904495",
+          "name": "ELLIOTT ASSOCIATES, L.P.",
+          "formerNames": [
+            "ELLIOTT ASSOCIATES LP"
+          ],
+          "stateOfInc": "DE",
+          "city": "WEST PALM BEACH",
+          "files13F": true,
+          "count13F": 4,
+          "last13F": "2011-11-14",
+          "lastPeriod": "2011-09-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "jeff-smith": {
+      "manager": "Jeff Smith",
+      "firm": "Starboard Value",
+      "pick": {
+        "cik": "0001517137",
+        "name": "Starboard Value LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001517137",
+          "name": "Starboard Value LP",
+          "formerNames": [],
+          "stateOfInc": null,
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 73,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "mason-morfit": {
+      "manager": "Mason Morfit",
+      "firm": "ValueAct Capital",
+      "pick": {
+        "cik": "0001418814",
+        "name": "ValueAct Holdings, L.P.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001418814",
+          "name": "ValueAct Holdings, L.P.",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "SAN FRANCISCO",
+          "files13F": true,
+          "count13F": 75,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001351069",
+          "name": "ValueAct Capital Management, L.P.",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "SAN FRANCISCO",
+          "files13F": true,
+          "count13F": 7,
+          "last13F": "2008-08-14",
+          "lastPeriod": "2008-03-31",
+          "score": 0.5
+        }
+      ],
+      "errors": []
+    },
+    "keith-meister": {
+      "manager": "Keith Meister",
+      "firm": "Corvex Management",
+      "pick": {
+        "cik": "0001535472",
+        "name": "Corvex Management LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001535472",
+          "name": "Corvex Management LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 63,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "philippe-laffont": {
+      "manager": "Philippe Laffont",
+      "firm": "Coatue Management",
+      "pick": {
+        "cik": "0001135730",
+        "name": "COATUE MANAGEMENT LLC",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001135730",
+          "name": "COATUE MANAGEMENT LLC",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 99,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "andreas-halvorsen": {
+      "manager": "Andreas Halvorsen",
+      "firm": "Viking Global Investors",
+      "pick": {
+        "cik": "0001103804",
+        "name": "VIKING GLOBAL INVESTORS LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001103804",
+          "name": "VIKING GLOBAL INVESTORS LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "STAMFORD",
+          "files13F": true,
+          "count13F": 107,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001101785",
+          "name": "Viking Global Equities LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "STAMFORD",
+          "files13F": true,
+          "count13F": 6,
+          "last13F": "2002-11-14",
+          "lastPeriod": "2002-09-30",
+          "score": 0.6666666666666666
+        }
+      ],
+      "errors": []
+    },
+    "dan-sundheim": {
+      "manager": "Dan Sundheim",
+      "firm": "D1 Capital Partners",
+      "pick": {
+        "cik": "0001747057",
+        "name": "D1 Capital Partners L.P.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001747057",
+          "name": "D1 Capital Partners L.P.",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 31,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "brad-gerstner": {
+      "manager": "Brad Gerstner",
+      "firm": "Altimeter Capital Management",
+      "pick": {
+        "cik": "0001541617",
+        "name": "Altimeter Capital Management, LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001541617",
+          "name": "Altimeter Capital Management, LP",
+          "formerNames": [
+            "Altimeter Capital Management, LLC"
+          ],
+          "stateOfInc": "DE",
+          "city": "MENLO PARK",
+          "files13F": true,
+          "count13F": 62,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "lee-ainslie": {
+      "manager": "Lee Ainslie",
+      "firm": "Maverick Capital",
+      "pick": {
+        "cik": "0000934639",
+        "name": "MAVERICK CAPITAL LTD",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000934639",
+          "name": "MAVERICK CAPITAL LTD",
+          "formerNames": [],
+          "stateOfInc": "TX",
+          "city": "DALLAS",
+          "files13F": true,
+          "count13F": 116,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0000928617",
+          "name": "MAVERICK CAPITAL LTD /ADV",
+          "formerNames": [],
+          "stateOfInc": "TX",
+          "city": "DALLAS",
+          "files13F": true,
+          "count13F": 6,
+          "last13F": "2002-05-14",
+          "lastPeriod": "2002-03-31",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "larry-robbins": {
+      "manager": "Larry Robbins",
+      "firm": "Glenview Capital Management",
+      "pick": {
+        "cik": "0001138995",
+        "name": "GLENVIEW CAPITAL MANAGEMENT, LLC",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001138995",
+          "name": "GLENVIEW CAPITAL MANAGEMENT, LLC",
+          "formerNames": [
+            "GLENVIEW CAPITAL MANAGEMENT LLC"
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 102,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "leopold-aschenbrenner": {
+      "manager": "Leopold Aschenbrenner",
+      "firm": "Situational Awareness LP",
+      "pick": {
+        "cik": "0002045724",
+        "name": "Situational Awareness LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0002045724",
+          "name": "Situational Awareness LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "SAN FRANCISCO",
+          "files13F": true,
+          "count13F": 7,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0002038540",
+          "name": "Situational Awareness Partners LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "SAN FRANCISCO",
+          "files13F": true,
+          "count13F": 1,
+          "last13F": "2026-05-18",
+          "lastPeriod": "2026-03-31",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "ken-fisher": {
+      "manager": "Ken Fisher",
+      "firm": "Fisher Asset Management",
+      "pick": {
+        "cik": "0000850529",
+        "name": "Fisher Asset Management, LLC",
+        "last13F": "2026-08-04",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000850529",
+          "name": "Fisher Asset Management, LLC",
+          "formerNames": [
+            "FISHER INVESTMENTS INC"
+          ],
+          "stateOfInc": "DE",
+          "city": "PLANO",
+          "files13F": true,
+          "count13F": 121,
+          "last13F": "2026-08-04",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "ken-griffin": {
+      "manager": "Ken Griffin",
+      "firm": "Citadel Advisors",
+      "pick": {
+        "cik": "0001423053",
+        "name": "CITADEL ADVISORS LLC",
+        "last13F": "2026-09-02",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001423053",
+          "name": "CITADEL ADVISORS LLC",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "MIAMI",
+          "files13F": true,
+          "count13F": 66,
+          "last13F": "2026-09-02",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "david-shaw": {
+      "manager": "David Shaw",
+      "firm": "D. E. Shaw & Co.",
+      "pick": {
+        "cik": "0001009207",
+        "name": "D. E. Shaw & Co., Inc.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001009207",
+          "name": "D. E. Shaw & Co., Inc.",
+          "formerNames": [
+            "SHAW D E & CO INC"
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 149,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001009268",
+          "name": "D. E. SHAW & CO, L.P.",
+          "formerNames": [
+            "SHAW D E & CO L P /NY/"
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 3,
+          "last13F": "2006-02-14",
+          "lastPeriod": "2005-12-31",
+          "score": 1
+        },
+        {
+          "cik": "0001335794",
+          "name": "D. E. Shaw Investment Management, L.L.C.",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 1,
+          "last13F": "2006-02-14",
+          "lastPeriod": "2005-12-31",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "israel-englander": {
+      "manager": "Israel Englander",
+      "firm": "Millennium Management",
+      "pick": {
+        "cik": "0001273087",
+        "name": "MILLENNIUM MANAGEMENT LLC",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001745981",
+          "name": "WORLDQUANT MILLENNIUM ADVISORS LLC",
+          "formerNames": [
+            "WORLDQUANT MILLENNIUM QUANTITATIVE STRATEGIES LLC"
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 33,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001273087",
+          "name": "MILLENNIUM MANAGEMENT LLC",
+          "formerNames": [
+            "MILLENNIUM MANAGEMENT, L.L.C."
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 88,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "cliff-asness": {
+      "manager": "Cliff Asness",
+      "firm": "AQR Capital Management",
+      "pick": {
+        "cik": "0001167456",
+        "name": "AQR Arbitrage LLC",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001167557",
+          "name": "AQR CAPITAL MANAGEMENT LLC",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "GREENWICH",
+          "files13F": true,
+          "count13F": 59,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001167456",
+          "name": "AQR Arbitrage LLC",
+          "formerNames": [
+            "CNH PARTNERS LLC"
+          ],
+          "stateOfInc": "DE",
+          "city": "GREENWICH",
+          "files13F": true,
+          "count13F": 71,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "two-sigma": {
+      "manager": "John Overdeck & David Siegel",
+      "firm": "Two Sigma Investments",
+      "pick": {
+        "cik": "0001179392",
+        "name": "TWO SIGMA INVESTMENTS, LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001179392",
+          "name": "TWO SIGMA INVESTMENTS, LP",
+          "formerNames": [
+            "TWO SIGMA INVESTMENTS LLC"
+          ],
+          "stateOfInc": null,
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 116,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001280134",
+          "name": "TWO SIGMA EQUITY PORTFOLIO, LLC",
+          "formerNames": [
+            "TWO SIGMA EQUITY PORTFOLIO LLC"
+          ],
+          "stateOfInc": null,
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 1,
+          "last13F": "2004-05-14",
+          "lastPeriod": "2004-03-31",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "louis-bacon": {
+      "manager": "Louis Bacon",
+      "firm": "Moore Capital Management",
+      "pick": {
+        "cik": "0001448574",
+        "name": "MOORE CAPITAL MANAGEMENT, LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000924178",
+          "name": "MOORE CAPITAL MANAGEMENT LLC",
+          "formerNames": [
+            "MOORE CAPITAL MANAGEMENT INC /NEW"
+          ],
+          "stateOfInc": null,
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 50,
+          "last13F": "2008-08-14",
+          "lastPeriod": "2008-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001448574",
+          "name": "MOORE CAPITAL MANAGEMENT, LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 76,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001230574",
+          "name": "MOORE MACRO FUND LP",
+          "formerNames": [],
+          "stateOfInc": null,
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 3,
+          "last13F": "2003-11-14",
+          "lastPeriod": "2003-09-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "jeffrey-ubben": {
+      "manager": "Jeffrey Ubben",
+      "firm": "Inclusive Capital Partners",
+      "pick": {
+        "cik": "0001817187",
+        "name": "INCLUSIVE CAPITAL PARTNERS, L.P.",
+        "last13F": "2025-11-13",
+        "lastPeriod": "2025-09-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001817187",
+          "name": "INCLUSIVE CAPITAL PARTNERS, L.P.",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "SAN FRANCISCO",
+          "files13F": true,
+          "count13F": 20,
+          "last13F": "2025-11-13",
+          "lastPeriod": "2025-09-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "barry-rosenstein": {
+      "manager": "Barry Rosenstein",
+      "firm": "Jana Partners",
+      "pick": {
+        "cik": "0001998597",
+        "name": "JANA Partners Management, LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001998597",
+          "name": "JANA Partners Management, LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 14,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001159159",
+          "name": "JANA PARTNERS LLC",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 93,
+          "last13F": "2023-08-14",
+          "lastPeriod": "2023-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "scott-ferguson": {
+      "manager": "Scott Ferguson",
+      "firm": "Sachem Head Capital Management",
+      "pick": {
+        "cik": "0001582090",
+        "name": "Sachem Head Capital Management LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001582090",
+          "name": "Sachem Head Capital Management LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 53,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "bryan-lawrence": {
+      "manager": "Bryan Lawrence",
+      "firm": "Oakcliff Capital Partners",
+      "pick": {
+        "cik": "0001657335",
+        "name": "Oakcliff Capital Partners, LP",
+        "last13F": "2026-08-13",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001657335",
+          "name": "Oakcliff Capital Partners, LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 39,
+          "last13F": "2026-08-13",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "renaissance-technologies": {
+      "manager": "Renaissance Technologies",
+      "firm": "Renaissance Technologies (founded by Jim Simons)",
+      "pick": {
+        "cik": "0001037389",
+        "name": "RENAISSANCE TECHNOLOGIES LLC",
+        "last13F": "2026-08-13",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001037389",
+          "name": "RENAISSANCE TECHNOLOGIES LLC",
+          "formerNames": [
+            "RENAISSANCE TECHNOLOGIES CORP"
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 27,
+          "last13F": "2026-08-13",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "chris-rokos": {
+      "manager": "Chris Rokos",
+      "firm": "Rokos Capital Management",
+      "pick": {
+        "cik": "0001666335",
+        "name": "Rokos Capital Management LLP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001666335",
+          "name": "Rokos Capital Management LLP",
+          "formerNames": [],
+          "stateOfInc": null,
+          "city": "LONDON",
+          "files13F": true,
+          "count13F": 36,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001827377",
+          "name": "Rokos Capital Management (US) LP",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 1,
+          "last13F": "2025-11-14",
+          "lastPeriod": "2025-09-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "michael-platt": {
+      "manager": "Michael Platt",
+      "firm": "BlueCrest Capital Management",
+      "pick": {
+        "cik": "0001610880",
+        "name": "BlueCrest Capital Management Ltd",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001363542",
+          "name": "BlueCrest Capital Management LLP",
+          "formerNames": [
+            "BlueCrest Capital Management LTD"
+          ],
+          "stateOfInc": "X0",
+          "city": "ST. PETER PORT",
+          "files13F": true,
+          "count13F": 45,
+          "last13F": "2015-02-17",
+          "lastPeriod": "2014-03-31",
+          "score": 1
+        },
+        {
+          "cik": "0001610880",
+          "name": "BlueCrest Capital Management Ltd",
+          "formerNames": [],
+          "stateOfInc": "Y9",
+          "city": "ST HELIER",
+          "files13F": true,
+          "count13F": 50,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "steven-cohen": {
+      "manager": "Steven Cohen",
+      "firm": "Point72 Asset Management",
+      "pick": {
+        "cik": "0001603466",
+        "name": "Point72 Asset Management, L.P.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0002006887",
+          "name": "SoundStone Italy S.r.l.",
+          "formerNames": [
+            "Point72 Italy, S.r.l."
+          ],
+          "stateOfInc": "L6",
+          "city": "MILAN",
+          "files13F": true,
+          "count13F": 8,
+          "last13F": "2025-11-14",
+          "lastPeriod": "2025-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0001698051",
+          "name": "Point72 Europe (London) LLP",
+          "formerNames": [],
+          "stateOfInc": "X0",
+          "city": "LONDON",
+          "files13F": true,
+          "count13F": 36,
+          "last13F": "2025-11-14",
+          "lastPeriod": "2025-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0001603466",
+          "name": "Point72 Asset Management, L.P.",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "STAMFORD",
+          "files13F": true,
+          "count13F": 51,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001599822",
+          "name": "Point72 Hong Kong Ltd",
+          "formerNames": [
+            "Point72 Asia (Hong Kong) Ltd",
+            "S.A.C. Capital Advisors (Hong Kong) Ltd."
+          ],
+          "stateOfInc": "K3",
+          "city": "HONG KONG",
+          "files13F": true,
+          "count13F": 48,
+          "last13F": "2025-11-14",
+          "lastPeriod": "2025-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0001949771",
+          "name": "Point72 Middle East FZE",
+          "formerNames": [],
+          "stateOfInc": "C0",
+          "city": "DUBAI",
+          "files13F": true,
+          "count13F": 12,
+          "last13F": "2025-11-14",
+          "lastPeriod": "2025-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0001666791",
+          "name": "Point72 Asia (Singapore) Pte. Ltd.",
+          "formerNames": [],
+          "stateOfInc": "U0",
+          "city": "SINGAPORE",
+          "files13F": true,
+          "count13F": 21,
+          "last13F": "2025-11-14",
+          "lastPeriod": "2025-09-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "paul-tudor-jones": {
+      "manager": "Paul Tudor Jones",
+      "firm": "Tudor Investment Corporation",
+      "pick": {
+        "cik": "0000923093",
+        "name": "TUDOR INVESTMENT CORP ET AL",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000923093",
+          "name": "TUDOR INVESTMENT CORP ET AL",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "STAMFORD",
+          "files13F": true,
+          "count13F": 116,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "stephen-schwarzman": {
+      "manager": "Stephen Schwarzman",
+      "firm": "Blackstone",
+      "pick": {
+        "cik": "0001393818",
+        "name": "Blackstone Inc.",
+        "last13F": "2026-10-09",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001393818",
+          "name": "Blackstone Inc.",
+          "formerNames": [
+            "Blackstone Inc",
+            "Blackstone Group Inc",
+            "Blackstone Group L.P."
+          ],
+          "stateOfInc": "DE",
+          "city": "NEW YORK",
+          "files13F": true,
+          "count13F": 51,
+          "last13F": "2026-10-09",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "daniel-och": {
+      "manager": "Sculptor Capital Management",
+      "firm": "Sculptor Capital Management (founded by Daniel Och)",
+      "pick": null,
+      "checked": [],
+      "errors": []
+    },
+    "edgepoint": {
+      "manager": "EdgePoint Investment Group",
+      "firm": "EdgePoint Investment Group",
+      "pick": {
+        "cik": "0001481669",
+        "name": "EdgePoint Investment Group Inc.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001481669",
+          "name": "EdgePoint Investment Group Inc.",
+          "formerNames": [
+            "EdgePoint Investment Group Inc",
+            "EdgePoint Investment Management Inc"
+          ],
+          "stateOfInc": null,
+          "city": "TORONTO",
+          "files13F": true,
+          "count13F": 62,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "connor-clark-lunn": {
+      "manager": "Connor, Clark & Lunn",
+      "firm": "Connor, Clark & Lunn Investment Management",
+      "pick": {
+        "cik": "0001596800",
+        "name": "Connor, Clark & Lunn Investment Management Ltd.",
+        "last13F": "2026-08-13",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001140804",
+          "name": "CONNOR CLARK & LUNN INVESTMENT MANAGEMENT LTD",
+          "formerNames": [],
+          "stateOfInc": null,
+          "city": "VANCOUVER BC",
+          "files13F": true,
+          "count13F": 57,
+          "last13F": "2014-02-13",
+          "lastPeriod": "2013-12-31",
+          "score": 1
+        },
+        {
+          "cik": "0001596800",
+          "name": "Connor, Clark & Lunn Investment Management Ltd.",
+          "formerNames": [],
+          "stateOfInc": "A1",
+          "city": "VANCOUVER",
+          "files13F": true,
+          "count13F": 55,
+          "last13F": "2026-08-13",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "brompton": {
+      "manager": "Brompton Funds",
+      "firm": "Brompton Funds",
+      "pick": null,
+      "checked": [],
+      "errors": []
+    },
+    "sprott": {
+      "manager": "Sprott",
+      "firm": "Sprott Inc.",
+      "pick": {
+        "cik": "0001512920",
+        "name": "SPROTT INC.",
+        "last13F": "2026-07-28",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001512920",
+          "name": "SPROTT INC.",
+          "formerNames": [],
+          "stateOfInc": "A6",
+          "city": "TORONTO",
+          "files13F": true,
+          "count13F": 66,
+          "last13F": "2026-07-28",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "guardian-capital": {
+      "manager": "Guardian Capital",
+      "firm": "Guardian Capital LP",
+      "pick": {
+        "cik": "0001224324",
+        "name": "GUARDIAN CAPITAL LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001224324",
+          "name": "GUARDIAN CAPITAL LP",
+          "formerNames": [
+            "GUARDIAN CAPITAL INC"
+          ],
+          "stateOfInc": "A6",
+          "city": "TORONTO",
+          "files13F": true,
+          "count13F": 64,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001884799",
+          "name": "Guardian Partners Inc.",
+          "formerNames": [],
+          "stateOfInc": "Z4",
+          "city": "TORONTO",
+          "files13F": true,
+          "count13F": 8,
+          "last13F": "2026-10-21",
+          "lastPeriod": "2026-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0002083963",
+          "name": "Guardian Capital, LLC",
+          "formerNames": [],
+          "stateOfInc": "PA",
+          "city": "WEXFORD",
+          "files13F": true,
+          "count13F": 3,
+          "last13F": "2026-08-07",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        },
+        {
+          "cik": "0001512652",
+          "name": "GUARDIAN CAPITAL ADVISORS LP",
+          "formerNames": [],
+          "stateOfInc": "A6",
+          "city": "TORONTO",
+          "files13F": true,
+          "count13F": 56,
+          "last13F": "2024-11-12",
+          "lastPeriod": "2024-09-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "ci-global": {
+      "manager": "CI Global Asset Management",
+      "firm": "CI Investments Inc.",
+      "pick": {
+        "cik": "0001163648",
+        "name": "CI INVESTMENTS INC.",
+        "last13F": "2026-08-13",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001163648",
+          "name": "CI INVESTMENTS INC.",
+          "formerNames": [
+            "CI MUTUAL FUNDS INC"
+          ],
+          "stateOfInc": "A6",
+          "city": "TORONTO",
+          "files13F": true,
+          "count13F": 108,
+          "last13F": "2026-08-13",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "fidelity-canada": {
+      "manager": "Fidelity Canada",
+      "firm": "Fidelity Investments Canada",
+      "pick": null,
+      "checked": [],
+      "errors": []
+    },
+    "brookfield": {
+      "manager": "Brookfield",
+      "firm": "Brookfield Corporation",
+      "pick": {
+        "cik": "0001001085",
+        "name": "BROOKFIELD Corp /ON/",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001001085",
+          "name": "BROOKFIELD Corp /ON/",
+          "formerNames": [
+            "BROOKFIELD ASSET MANAGEMENT INC.",
+            "BRASCAN CORP/",
+            "EDPERBRASCAN CORP"
+          ],
+          "stateOfInc": "A6",
+          "city": "TORONTO",
+          "files13F": true,
+          "count13F": 87,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "john-rogers": {
+      "manager": "John Rogers",
+      "firm": "Ariel Investments",
+      "pick": {
+        "cik": "0000936753",
+        "name": "ARIEL INVESTMENTS, LLC",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000936753",
+          "name": "ARIEL INVESTMENTS, LLC",
+          "formerNames": [
+            "ARIEL CAPITAL MANAGEMENT LLC",
+            "ARIEL CAPITAL MANAGEMENT INC"
+          ],
+          "stateOfInc": "DE",
+          "city": "CHICAGO",
+          "files13F": true,
+          "count13F": 85,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "charles-brandes": {
+      "manager": "Charles Brandes",
+      "firm": "Brandes Investment Partners",
+      "pick": {
+        "cik": "0001015079",
+        "name": "BRANDES INVESTMENT PARTNERS, LP",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001015079",
+          "name": "BRANDES INVESTMENT PARTNERS, LP",
+          "formerNames": [
+            "BRANDES INVESTMENT PARTNERS LLC",
+            "BRANDES INVESTMENT PARTNERS L P"
+          ],
+          "stateOfInc": "DE",
+          "city": "LA JOLLA",
+          "files13F": true,
+          "count13F": 130,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "robert-olstein": {
+      "manager": "Robert Olstein",
+      "firm": "Olstein Capital Management",
+      "pick": {
+        "cik": "0000947996",
+        "name": "Olstein Capital Management, L.P.",
+        "last13F": "2026-07-07",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000944690",
+          "name": "OLSTEIN FUNDS",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "PURCHASE",
+          "files13F": true,
+          "count13F": 2,
+          "last13F": "2007-11-15",
+          "lastPeriod": "2007-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0000947996",
+          "name": "Olstein Capital Management, L.P.",
+          "formerNames": [
+            "OLSTEIN & ASSOCIATES L P /NY",
+            "OLSTEIN & ASSOICATES L P /NY"
+          ],
+          "stateOfInc": "NY",
+          "city": "PURCHASE",
+          "files13F": true,
+          "count13F": 111,
+          "last13F": "2026-07-07",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "robert-bruce": {
+      "manager": "Robert Bruce",
+      "firm": "Bruce & Co.",
+      "pick": {
+        "cik": "0001358331",
+        "name": "Bruce & Co., Inc.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001358331",
+          "name": "Bruce & Co., Inc.",
+          "formerNames": [],
+          "stateOfInc": "IL",
+          "city": "CHICAGO",
+          "files13F": true,
+          "count13F": 83,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "david-abrams": {
+      "manager": "David Abrams",
+      "firm": "Abrams Capital Management",
+      "pick": {
+        "cik": "0001358706",
+        "name": "ABRAMS CAPITAL MANAGEMENT, L.P.",
+        "last13F": "2026-08-13",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001426355",
+          "name": "Abrams Capital Management, LLC",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "BOSTON",
+          "files13F": true,
+          "count13F": 12,
+          "last13F": "2010-11-12",
+          "lastPeriod": "2010-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0001358706",
+          "name": "ABRAMS CAPITAL MANAGEMENT, L.P.",
+          "formerNames": [
+            "PAMET CAPITAL MANAGEMENT, LP"
+          ],
+          "stateOfInc": "DE",
+          "city": "BOSTON",
+          "files13F": true,
+          "count13F": 83,
+          "last13F": "2026-08-13",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "david-blood": {
+      "manager": "David Blood",
+      "firm": "Generation Investment Management",
+      "pick": {
+        "cik": "0001375534",
+        "name": "GENERATION INVESTMENT MANAGEMENT LLP",
+        "last13F": "2026-08-10",
+        "lastPeriod": "2026-06-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001375534",
+          "name": "GENERATION INVESTMENT MANAGEMENT LLP",
+          "formerNames": [],
+          "stateOfInc": "X0",
+          "city": "LONDON",
+          "files13F": true,
+          "count13F": 84,
+          "last13F": "2026-08-10",
+          "lastPeriod": "2026-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "tom-steyer": {
+      "manager": "Farallon Capital",
+      "firm": "Farallon Capital Management (founded by Tom Steyer)",
+      "pick": {
+        "cik": "0000909661",
+        "name": "FARALLON CAPITAL MANAGEMENT, L.L.C.",
+        "last13F": "2026-08-14",
+        "lastPeriod": "2026-03-31",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0000909661",
+          "name": "FARALLON CAPITAL MANAGEMENT, L.L.C.",
+          "formerNames": [
+            "FARALLON CAPITAL MANAGEMENT LLC"
+          ],
+          "stateOfInc": "DE",
+          "city": "SAN FRANCISCO",
+          "files13F": true,
+          "count13F": 232,
+          "last13F": "2026-08-14",
+          "lastPeriod": "2026-03-31",
+          "score": 1
+        }
+      ],
+      "errors": []
+    }
+  }
+}
