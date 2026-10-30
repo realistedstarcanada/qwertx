@@ -18812,62 +18812,232 @@
     "name": null,
     "sic": null
   },
-  "PGAC": {
+  "GSPY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IWV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "GVLU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NEU": {
+    "sector": "Materials",
+    "name": "NEWMARKET CORP",
+    "sic": "2860",
+    "sicDescription": "Industrial Organic Chemicals"
+  },
+  "BOND": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DCI": {
+    "sector": "Industrials",
+    "name": "DONALDSON Co INC",
+    "sic": "3564",
+    "sicDescription": "Industrial & Commercial Fans & Blowers & Air Purifing Equip"
+  },
+  "IAU": {
     "sector": "Financials",
-    "name": "PANTAGES CAPITAL ACQUISITION Corp",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
+    "name": "ISHARES GOLD TRUST",
+    "sic": "6221",
+    "sicDescription": "Commodity Contracts Brokers & Dealers"
   },
-  "SCHA": {
+  "AOS": {
+    "sector": "Consumer Discretionary",
+    "name": "SMITH A O CORP",
+    "sic": "3630",
+    "sicDescription": "Household Appliances"
+  },
+  "IUSG": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "PAAC": {
-    "sector": "Financials",
-    "name": "Proem Acquisition Corp. I",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
+  "WH": {
+    "sector": "Consumer Discretionary",
+    "name": "WYNDHAM HOTELS & RESORTS, INC.",
+    "sic": "7011",
+    "sicDescription": "Hotels & Motels"
   },
-  "HVMC": {
-    "sector": "Financials",
-    "name": "Highview Merger Corp.",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
-  },
-  "URNJ": {
+  "CTEF": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "EUAD": {
+  "VTHR": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "BOTZ": {
-    "sector": "Funds & other",
-    "name": null,
-    "sic": null
+  "HOG": {
+    "sector": "Consumer Discretionary",
+    "name": "HARLEY-DAVIDSON, INC.",
+    "sic": "3751",
+    "sicDescription": "Motorcycles, Bicycles & Parts"
   },
-  "ESE": {
-    "sector": "Technology",
-    "name": "ESCO TECHNOLOGIES INC",
-    "sic": "3669",
-    "sicDescription": "Communications Equipment, NEC"
+  "STAG": {
+    "sector": "Real Estate",
+    "name": "STAG Industrial, Inc.",
+    "sic": "6798",
+    "sicDescription": "Real Estate Investment Trusts"
   },
-  "IRMD": {
+  "MSA": {
     "sector": "Health Care",
-    "name": "IRADIMED CORP",
-    "sic": "3841",
-    "sicDescription": "Surgical & Medical Instruments & Apparatus"
+    "name": "MSA Safety Inc",
+    "sic": "3842",
+    "sicDescription": "Orthopedic, Prosthetic & Surgical Appliances & Supplies"
   },
-  "AIQ": {
+  "DGRO": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "SPMO": {
+  "SNDR": {
+    "sector": "Industrials",
+    "name": "Schneider National, Inc.",
+    "sic": "4213",
+    "sicDescription": "Trucking (No Local)"
+  },
+  "VOOG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ACWX": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NEAR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NNN": {
+    "sector": "Real Estate",
+    "name": "NNN REIT, INC.",
+    "sic": "6798",
+    "sicDescription": "Real Estate Investment Trusts"
+  },
+  "FNDX": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PAG": {
+    "sector": "Consumer Discretionary",
+    "name": "PENSKE AUTOMOTIVE GROUP, INC.",
+    "sic": "5500",
+    "sicDescription": "Retail-Auto Dealers & Gasoline Stations"
+  },
+  "ROM": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PRI": {
+    "sector": "Financials",
+    "name": "Primerica, Inc.",
+    "sic": "6311",
+    "sicDescription": "Life Insurance"
+  },
+  "VFLO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "JAAA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "TECL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VIG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "MDU": {
+    "sector": "Utilities",
+    "name": "MDU RESOURCES GROUP INC",
+    "sic": "4924",
+    "sicDescription": "Natural Gas Distribution"
+  },
+  "SPLB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SLGN": {
+    "sector": "Industrials",
+    "name": "SILGAN HOLDINGS INC",
+    "sic": "3411",
+    "sicDescription": "Metal Cans"
+  },
+  "PAAA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "COWZ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RMOP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FLTR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FLRN": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VTWO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "QQQI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IVW": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SCL": {
+    "sector": "Consumer Staples",
+    "name": "STEPAN CO",
+    "sic": "2840",
+    "sicDescription": "Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics"
+  },
+  "XMHQ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "HDV": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
@@ -18877,203 +19047,1089 @@
     "name": null,
     "sic": null
   },
-  "NMR": {
-    "sector": "Financials",
-    "name": "NOMURA HOLDINGS INC",
-    "sic": "6211",
-    "sicDescription": "Security Brokers, Dealers & Flotation Companies"
+  "MMIN": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "IHS": {
-    "sector": "Communication",
-    "name": "IHS Holding Ltd",
-    "sic": "4812",
-    "sicDescription": "Radiotelephone Communications"
+  "NWL": {
+    "sector": "Materials",
+    "name": "NEWELL BRANDS INC.",
+    "sic": "3089",
+    "sicDescription": "Plastics Products, NEC"
+  },
+  "GSY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "AVUS": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "XLG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "JNK": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VONE": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "USMV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SDY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "JEPI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPIB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "JCPB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SMIG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RPV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "TBLL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PFLD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VIGI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPYV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PULS": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "TFLO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "MGV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VTEC": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IBDV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FNDF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPHQ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DYNF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BOXX": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VBIL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ISHG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VRP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "WING": {
+    "sector": "Consumer Discretionary",
+    "name": "Wingstop Inc.",
+    "sic": "5812",
+    "sicDescription": "Retail-Eating  Places"
+  },
+  "PFFV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "GNR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IDV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "KOS": {
+    "sector": "Energy",
+    "name": "Kosmos Energy Ltd.",
+    "sic": "1311",
+    "sicDescription": "Crude Petroleum & Natural Gas"
+  },
+  "ESE": {
+    "sector": "Technology",
+    "name": "ESCO TECHNOLOGIES INC",
+    "sic": "3669",
+    "sicDescription": "Communications Equipment, NEC"
+  },
+  "PGX": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPMD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DOO": {
+    "sector": "Industrials",
+    "name": "BRP Inc.",
+    "sic": "3790",
+    "sicDescription": "Miscellaneous Transportation Equipment"
+  },
+  "DGT": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DIVO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "QUAL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VOE": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "JEPQ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ICUI": {
+    "sector": "Health Care",
+    "name": "ICU MEDICAL INC/DE",
+    "sic": "3841",
+    "sicDescription": "Surgical & Medical Instruments & Apparatus"
+  },
+  "IGF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "UITB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ONEV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "CALF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "JMBS": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VAL": {
+    "sector": "Energy",
+    "name": "Valaris Ltd",
+    "sic": "1381",
+    "sicDescription": "Drilling Oil & Gas Wells"
+  },
+  "COWG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SCHH": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DFAX": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "AUPH": {
+    "sector": "Health Care",
+    "name": "Aurinia Pharmaceuticals Inc.",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "BKGI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IVE": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VTWV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NOBL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EUSA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "UDOW": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "AUGO": {
+    "sector": "Materials",
+    "name": "Aura Minerals Inc.",
+    "sic": "1000",
+    "sicDescription": "Metal Mining"
+  },
+  "CGCB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "CARY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NBSD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DBD": {
+    "sector": "Technology",
+    "name": "DIEBOLD NIXDORF, Inc",
+    "sic": "3578",
+    "sicDescription": "Calculating & Accounting Machines (No Electronic Computers)"
+  },
+  "BAI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BALI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EFV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "AIRR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "MODL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPMO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DDWM": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "USHY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VBK": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VFH": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SFL": {
+    "sector": "Industrials",
+    "name": "SFL Corp Ltd.",
+    "sic": "4412",
+    "sicDescription": "Deep Sea Foreign Transportation of  Freight"
+  },
+  "VPU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DFIV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IVOO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPEM": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FNCL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VTIP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SCYB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VWOB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "HTRB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VTP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BLDP": {
+    "sector": "Technology",
+    "name": "Ballard Power Systems Inc.",
+    "sic": "3620",
+    "sicDescription": "Electrical Industrial Apparatus"
+  },
+  "VDC": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FSTA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "HYS": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DFJ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IDEV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
   "PAVE": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "XSLL": {
-    "sector": "Financials",
-    "name": "Xsolla SPAC 1",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
+  "HYLB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "FGII": {
-    "sector": "Financials",
-    "name": "FG Imperii Acquisition Corp.",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
+  "XTL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "IMAX": {
-    "sector": "Technology",
-    "name": "IMAX CORP",
-    "sic": "3861",
-    "sicDescription": "Photographic Equipment & Supplies"
+  "VIS": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "EFC": {
+  "CGMS": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ORC": {
     "sector": "Real Estate",
-    "name": "Ellington Financial Inc.",
-    "sic": "6500",
-    "sicDescription": "Real Estate"
+    "name": "Orchid Island Capital, Inc.",
+    "sic": "6798",
+    "sicDescription": "Real Estate Investment Trusts"
   },
-  "DBCA": {
-    "sector": "Financials",
-    "name": "D. Boral Acquisition I Corp.",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
+  "CORP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "AZZ": {
+  "FVD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EFG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "HYBL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DX": {
+    "sector": "Real Estate",
+    "name": "DYNEX CAPITAL INC",
+    "sic": "6798",
+    "sicDescription": "Real Estate Investment Trusts"
+  },
+  "VAW": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DFE": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VOX": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PRGS": {
+    "sector": "Technology",
+    "name": "PROGRESS SOFTWARE CORP /MA",
+    "sic": "7372",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "JGRO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FTSD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EQWL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "TRIN": {
+    "sector": "Other",
+    "name": "Trinity Capital Inc.",
+    "sic": null,
+    "sicDescription": null
+  },
+  "LPTH": {
+    "sector": "Technology",
+    "name": "LIGHTPATH TECHNOLOGIES INC",
+    "sic": "3674",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "ADUS": {
+    "sector": "Health Care",
+    "name": "Addus HomeCare Corp",
+    "sic": "8082",
+    "sicDescription": "Services-Home Health Care Services"
+  },
+  "GFF": {
     "sector": "Industrials",
-    "name": "AZZ INC",
-    "sic": "3470",
-    "sicDescription": "Coating, Engraving & Allied Services"
+    "name": "GRIFFON CORP",
+    "sic": "3442",
+    "sicDescription": "Metal Doors, Sash, Frames, Moldings & Trim"
   },
-  "XCBE": {
+  "MCHI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "TCAF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VIOO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PCEF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ENR": {
+    "sector": "Technology",
+    "name": "ENERGIZER HOLDINGS, INC.",
+    "sic": "3690",
+    "sicDescription": "Miscellaneous Electrical Machinery, Equipment & Supplies"
+  },
+  "VTWG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IAUM": {
     "sector": "Financials",
-    "name": "X3 Acquisition Corp. Ltd.",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
+    "name": "iShares Gold Trust Micro",
+    "sic": "6221",
+    "sicDescription": "Commodity Contracts Brokers & Dealers"
   },
-  "ZROZ": {
+  "AVUV": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "GREK": {
+  "VMBS": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "FLDR": {
+  "FWD": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
+  },
+  "SHV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PCRX": {
+    "sector": "Health Care",
+    "name": "Pacira BioSciences, Inc.",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "MLPA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "HWKN": {
+    "sector": "Industrials",
+    "name": "HAWKINS INC",
+    "sic": "5160",
+    "sicDescription": "Wholesale-Chemicals & Allied Products"
+  },
+  "EQL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "MGK": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FLXR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IFRA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PLMR": {
+    "sector": "Financials",
+    "name": "Palomar Holdings, Inc.",
+    "sic": "6331",
+    "sicDescription": "Fire, Marine & Casualty Insurance"
+  },
+  "USMC": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ILCV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RECS": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NUTX": {
+    "sector": "Industrials",
+    "name": "Nutex Health Inc.",
+    "sic": "7389",
+    "sicDescription": "Services-Business Services, NEC"
+  },
+  "PSMT": {
+    "sector": "Consumer Staples",
+    "name": "PRICESMART INC",
+    "sic": "5331",
+    "sicDescription": "Retail-Variety Stores"
+  },
+  "BBJP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SYFI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "MTG": {
+    "sector": "Financials",
+    "name": "MGIC INVESTMENT CORP",
+    "sic": "6351",
+    "sicDescription": "Surety Insurance"
+  },
+  "KOP": {
+    "sector": "Materials",
+    "name": "Koppers Holdings Inc.",
+    "sic": "2400",
+    "sicDescription": "Lumber & Wood Products (No Furniture)"
+  },
+  "DBND": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DCRE": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PFFD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DJCO": {
+    "sector": "Communication",
+    "name": "DAILY JOURNAL CORP",
+    "sic": "2711",
+    "sicDescription": "Newspapers: Publishing or  Publishing & Printing"
+  },
+  "PXF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VYX": {
+    "sector": "Technology",
+    "name": "NCR Voyix Corp",
+    "sic": "3578",
+    "sicDescription": "Calculating & Accounting Machines (No Electronic Computers)"
+  },
+  "DXJ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RDVY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ARTY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DMC": {
+    "sector": "Consumer Staples",
+    "name": "DEL MONTE CORP",
+    "sic": "0100",
+    "sicDescription": "Agricultural Production-Crops"
+  },
+  "FLNG": {
+    "sector": "Industrials",
+    "name": "Flex LNG Ltd.",
+    "sic": "4400",
+    "sicDescription": "Water Transportation"
+  },
+  "GATX": {
+    "sector": "Industrials",
+    "name": "GATX CORP",
+    "sic": "4700",
+    "sicDescription": "Transportation Services"
+  },
+  "DGII": {
+    "sector": "Technology",
+    "name": "DIGI INTERNATIONAL INC",
+    "sic": "3576",
+    "sicDescription": "Computer Communications Equipment"
+  },
+  "XPRO": {
+    "sector": "Energy",
+    "name": "Expro Ltd",
+    "sic": "1389",
+    "sicDescription": "Oil & Gas Field Services, NEC"
+  },
+  "IOSP": {
+    "sector": "Materials",
+    "name": "INNOSPEC INC.",
+    "sic": "2800",
+    "sicDescription": "Chemicals & Allied Products"
+  },
+  "AIN": {
+    "sector": "Consumer Discretionary",
+    "name": "ALBANY INTERNATIONAL CORP /DE/",
+    "sic": "2221",
+    "sicDescription": "Broadwoven Fabric Mills, Man Made Fiber & Silk"
+  },
+  "UXI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ICVT": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EMBD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BBCA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ANGL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "OTTR": {
+    "sector": "Utilities",
+    "name": "Otter Tail Corp",
+    "sic": "4911",
+    "sicDescription": "Electric Services"
   },
   "RODM": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "VCTR": {
-    "sector": "Financials",
-    "name": "Victory Capital Holdings, Inc.",
-    "sic": "6282",
-    "sicDescription": "Investment Advice"
-  },
-  "KORU": {
+  "ITB": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "FGD": {
+  "IGE": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "SPTU": {
+  "BBDC": {
+    "sector": "Other",
+    "name": "Barings BDC, Inc.",
+    "sic": null,
+    "sicDescription": null
+  },
+  "HEDG": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "PCL": {
+  "SCHA": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "IBDU": {
-    "sector": "Funds & other",
-    "name": null,
-    "sic": null
-  },
-  "SBXE": {
-    "sector": "Financials",
-    "name": "SilverBox Corp V",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
-  },
-  "SQNS": {
+  "ENVX": {
     "sector": "Technology",
-    "name": "SEQUANS COMMUNICATIONS",
-    "sic": "3674",
-    "sicDescription": "Semiconductors & Related Devices"
+    "name": "Enovix Corp",
+    "sic": "3690",
+    "sicDescription": "Miscellaneous Electrical Machinery, Equipment & Supplies"
   },
-  "DAIC": {
+  "NGVC": {
+    "sector": "Consumer Staples",
+    "name": "Natural Grocers by Vitamin Cottage, Inc.",
+    "sic": "5411",
+    "sicDescription": "Retail-Grocery Stores"
+  },
+  "TBBK": {
+    "sector": "Financials",
+    "name": "Bancorp, Inc.",
+    "sic": "6021",
+    "sicDescription": "National Commercial Banks"
+  },
+  "PFM": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "KNSA": {
+    "sector": "Health Care",
+    "name": "Kiniksa Pharmaceuticals International, plc",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "BUFR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "MFSI": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "OEF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EWU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PSK": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SXI": {
+    "sector": "Industrials",
+    "name": "STANDEX INTERNATIONAL CORP/DE/",
+    "sic": "3580",
+    "sicDescription": "Refrigeration & Service Industry Machinery"
+  },
+  "RXT": {
     "sector": "Technology",
-    "name": "CID Holdco, Inc.",
+    "name": "Rackspace Technology, Inc.",
+    "sic": "7370",
+    "sicDescription": "Services-Computer Programming, Data Processing, Etc."
+  },
+  "WGO": {
+    "sector": "Consumer Discretionary",
+    "name": "WINNEBAGO INDUSTRIES INC",
+    "sic": "3716",
+    "sicDescription": "Motor Homes"
+  },
+  "AGYS": {
+    "sector": "Technology",
+    "name": "AGILYSYS INC",
     "sic": "7373",
     "sicDescription": "Services-Computer Integrated Systems Design"
   },
-  "SPWR": {
-    "sector": "Industrials",
-    "name": "SunPower Inc.",
-    "sic": "1700",
-    "sicDescription": "Construction - Special Trade Contractors"
+  "FXG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "PERF": {
-    "sector": "Technology",
-    "name": "Perfect Corp.",
-    "sic": "7372",
-    "sicDescription": "Services-Prepackaged Software"
+  "PREF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "GIW": {
-    "sector": "Financials",
-    "name": "GigCapital8 Corp.",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
+  "AVIG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   },
-  "HCAC": {
-    "sector": "Materials",
-    "name": "Hall Chadwick Acquisition Corp",
-    "sic": "3341",
-    "sicDescription": "Secondary Smelting & Refining of  Nonferrous Metals"
-  },
-  "EVOX": {
-    "sector": "Financials",
-    "name": "Evolution Global Acquisition Corp",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
-  },
-  "NUAI": {
+  "PDS": {
     "sector": "Energy",
-    "name": "New ERA Energy & Digital, Inc.",
-    "sic": "1311",
-    "sicDescription": "Crude Petroleum & Natural Gas"
+    "name": "PRECISION DRILLING Corp",
+    "sic": "1381",
+    "sicDescription": "Drilling Oil & Gas Wells"
   },
-  "OTGA": {
-    "sector": "Financials",
-    "name": "OTG Acquisition Corp. I",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
-  },
-  "BLZR": {
-    "sector": "Financials",
-    "name": "Trailblazer Acquisition Corp.",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
-  },
-  "EMLC": {
+  "SCHG": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "BRUN": {
+  "THRM": {
+    "sector": "Consumer Discretionary",
+    "name": "Gentherm Inc",
+    "sic": "3714",
+    "sicDescription": "Motor Vehicle Parts & Accessories"
+  },
+  "BBEU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NCDL": {
+    "sector": "Other",
+    "name": "Nuveen Churchill Direct Lending Corp.",
+    "sic": null,
+    "sicDescription": null
+  },
+  "IMCG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EVER": {
     "sector": "Technology",
-    "name": "Boost Run Inc.",
-    "sic": "7374",
-    "sicDescription": "Services-Computer Processing & Data Preparation"
+    "name": "EverQuote, Inc.",
+    "sic": "7370",
+    "sicDescription": "Services-Computer Programming, Data Processing, Etc."
   },
-  "IRHOU": {
-    "sector": "Industrials",
-    "name": "Iron Horse Acquisition II Corp.",
-    "sic": "7389",
-    "sicDescription": "Services-Business Services, NEC"
-  },
-  "UAE": {
+  "BBH": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
+  },
+  "IXP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "AEHR": {
+    "sector": "Technology",
+    "name": "AEHR TEST SYSTEMS",
+    "sic": "3825",
+    "sicDescription": "Instruments For Meas & Testing of  Electricity & Elec Signals"
+  },
+  "ARKW": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SCHM": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EWH": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PHYL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IMNM": {
+    "sector": "Health Care",
+    "name": "Immunome Inc.",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "SKYY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IVOV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "AEG": {
+    "sector": "Financials",
+    "name": "AEGON LTD.",
+    "sic": "6311",
+    "sicDescription": "Life Insurance"
   },
   "POET": {
     "sector": "Technology",
@@ -19081,74 +20137,159 @@
     "sic": "3674",
     "sicDescription": "Semiconductors & Related Devices"
   },
-  "AIB": {
-    "sector": "Financials",
-    "name": "AIB Data Centers Inc.",
-    "sic": "6221",
-    "sicDescription": "Commodity Contracts Brokers & Dealers"
+  "DRVN": {
+    "sector": "Consumer Discretionary",
+    "name": "Driven Brands Holdings Inc.",
+    "sic": "7500",
+    "sicDescription": "Services-Automotive Repair, Services & Parking"
   },
-  "NNE": {
-    "sector": "Utilities",
-    "name": "Nano Nuclear Energy Inc.",
-    "sic": "4911",
-    "sicDescription": "Electric Services"
-  },
-  "EWW": {
-    "sector": "Funds & other",
-    "name": null,
-    "sic": null
-  },
-  "QADR": {
-    "sector": "Financials",
-    "name": "QDRO Acquisition Corp.",
-    "sic": "6770",
-    "sicDescription": "Blank Checks"
-  },
-  "CGGR": {
-    "sector": "Funds & other",
-    "name": null,
-    "sic": null
-  },
-  "WINN": {
-    "sector": "Funds & other",
-    "name": null,
-    "sic": null
-  },
-  "RSPU": {
-    "sector": "Funds & other",
-    "name": null,
-    "sic": null
-  },
-  "BETA": {
+  "SWBI": {
     "sector": "Industrials",
-    "name": "BETA Technologies, Inc.",
-    "sic": "3721",
-    "sicDescription": "Aircraft"
+    "name": "SMITH & WESSON BRANDS, INC.",
+    "sic": "3480",
+    "sicDescription": "Ordnance & Accessories, (No Vehicles/Guided Missiles)"
   },
-  "BCH": {
+  "NRGV": {
+    "sector": "Technology",
+    "name": "Energy Vault Holdings, Inc.",
+    "sic": "3690",
+    "sicDescription": "Miscellaneous Electrical Machinery, Equipment & Supplies"
+  },
+  "BORR": {
+    "sector": "Energy",
+    "name": "Borr Drilling Ltd",
+    "sic": "1381",
+    "sicDescription": "Drilling Oil & Gas Wells"
+  },
+  "ULCC": {
+    "sector": "Industrials",
+    "name": "Frontier Group Holdings, Inc.",
+    "sic": "4512",
+    "sicDescription": "Air Transportation, Scheduled"
+  },
+  "WEST": {
+    "sector": "Consumer Staples",
+    "name": "Westrock Coffee Co",
+    "sic": "2080",
+    "sicDescription": "Beverages"
+  },
+  "VFF": {
+    "sector": "Consumer Staples",
+    "name": "Village Farms International, Inc.",
+    "sic": "0100",
+    "sicDescription": "Agricultural Production-Crops"
+  },
+  "GDRX": {
+    "sector": "Technology",
+    "name": "GoodRx Holdings, Inc.",
+    "sic": "7374",
+    "sicDescription": "Services-Computer Processing & Data Preparation"
+  },
+  "DVLT": {
+    "sector": "Industrials",
+    "name": "Datavault AI Inc.",
+    "sic": "7389",
+    "sicDescription": "Services-Business Services, NEC"
+  },
+  "NHYM": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BIZD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DFAW": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "UFPT": {
+    "sector": "Health Care",
+    "name": "UFP TECHNOLOGIES INC",
+    "sic": "3841",
+    "sicDescription": "Surgical & Medical Instruments & Apparatus"
+  },
+  "MOG.B": {
+    "sector": "Industrials",
+    "name": "MOOG INC.",
+    "sic": "3590",
+    "sicDescription": "Misc Industrial & Commercial Machinery & Equipment"
+  },
+  "GRID": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "DCGO": {
+    "sector": "Health Care",
+    "name": "DocGo Inc.",
+    "sic": "8000",
+    "sicDescription": "Services-Health Services"
+  },
+  "PRKS": {
+    "sector": "Consumer Discretionary",
+    "name": "United Parks & Resorts Inc.",
+    "sic": "7990",
+    "sicDescription": "Services-Miscellaneous Amusement & Recreation"
+  },
+  "FUL": {
+    "sector": "Materials",
+    "name": "FULLER H B CO",
+    "sic": "2891",
+    "sicDescription": "Adhesives & Sealants"
+  },
+  "FSK": {
+    "sector": "Other",
+    "name": "FS KKR Capital Corp",
+    "sic": null,
+    "sicDescription": null
+  },
+  "HG": {
     "sector": "Financials",
-    "name": "BANK OF CHILE",
-    "sic": "6029",
-    "sicDescription": "Commercial Banks, NEC"
+    "name": "Hamilton Insurance Group, Ltd.",
+    "sic": "6331",
+    "sicDescription": "Fire, Marine & Casualty Insurance"
   },
-  "LGLV": {
+  "DMX": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "CNRG": {
+  "YSPY": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "RDIV": {
+  "DFTT": {
     "sector": "Funds & other",
     "name": null,
     "sic": null
   },
-  "JGRO": {
-    "sector": "Funds & other",
-    "name": null,
-    "sic": null
+  "EMBC": {
+    "sector": "Health Care",
+    "name": "Embecta Corp.",
+    "sic": "3841",
+    "sicDescription": "Surgical & Medical Instruments & Apparatus"
+  },
+  "XZO": {
+    "sector": "Technology",
+    "name": "Exzeo Group, Inc.",
+    "sic": "7372",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "ABUS": {
+    "sector": "Health Care",
+    "name": "Arbutus Biopharma Corp",
+    "sic": "2834",
+    "sicDescription": "Pharmaceutical Preparations"
+  },
+  "UP": {
+    "sector": "Industrials",
+    "name": "Wheels Up Experience Inc.",
+    "sic": "4522",
+    "sicDescription": "Air Transportation, Nonscheduled"
   }
 }

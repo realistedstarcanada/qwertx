@@ -826,6 +826,11 @@
     "name": "CURTISS-WRIGHT CORP",
     "type": "Common Stock"
   },
+  "233051432": {
+    "ticker": "HYLB",
+    "name": "XTRACKERS USD HIGH YIELD COR",
+    "type": "Mutual Fund"
+  },
   "233051879": {
     "ticker": "ASHR",
     "name": "XTRACKERS HARVEST CSI 300 CH",
@@ -844,6 +849,11 @@
   "233377407": {
     "ticker": "DXPE",
     "name": "DXP ENTERPRISES INC",
+    "type": "Common Stock"
+  },
+  "233912104": {
+    "ticker": "DJCO",
+    "name": "DAILY JOURNAL CORP",
     "type": "Common Stock"
   },
   "234264109": {
@@ -932,6 +942,16 @@
     "name": "DICK'S SPORTING GOODS INC",
     "type": "Common Stock"
   },
+  "253651202": {
+    "ticker": "DBD",
+    "name": "DIEBOLD NIXDORF INC",
+    "type": "Common Stock"
+  },
+  "253798102": {
+    "ticker": "DGII",
+    "name": "DIGI INTERNATIONAL INC",
+    "type": "Common Stock"
+  },
   "253868103": {
     "ticker": "DLR",
     "name": "DIGITAL REALTY TRUST INC",
@@ -957,6 +977,11 @@
     "name": "WALT DISNEY CO/THE",
     "type": "Common Stock"
   },
+  "256086109": {
+    "ticker": "DCGO",
+    "name": "DOCGO INC",
+    "type": "Common Stock"
+  },
   "256135203": {
     "ticker": "RDY",
     "name": "DR. REDDY'S LABORATORIES-ADR",
@@ -975,6 +1000,11 @@
   "256746108": {
     "ticker": "DLTR",
     "name": "DOLLAR TREE INC",
+    "type": "Common Stock"
+  },
+  "257651109": {
+    "ticker": "DCI",
+    "name": "DONALDSON CO INC",
     "type": "Common Stock"
   },
   "258278100": {
@@ -1112,6 +1142,11 @@
     "name": "ENERGY FUELS INC",
     "type": "Common Stock"
   },
+  "293594107": {
+    "ticker": "ENVX",
+    "name": "ENOVIX CORP",
+    "type": "Common Stock"
+  },
   "293712105": {
     "ticker": "EFSC",
     "name": "ENTERPRISE FINANCIAL SERVICE",
@@ -1202,6 +1237,11 @@
     "name": "NEXTERA ENERGY INC",
     "via": "sec-name"
   },
+  "302635206": {
+    "ticker": "FSK",
+    "name": "FS KKR CAPITAL CORP",
+    "type": "Common Stock"
+  },
   "302941109": {
     "ticker": "FCN",
     "name": "FTI CONSULTING INC",
@@ -1277,9 +1317,19 @@
     "name": "FIDELITY MSCI CONS DISCR IND",
     "type": "Mutual Fund"
   },
+  "316092303": {
+    "ticker": "FSTA",
+    "name": "FIDELITY MSCI CONS STAP INDX",
+    "type": "Mutual Fund"
+  },
   "316092402": {
     "ticker": "FENY",
     "name": "FIDELITY MSCI ENERGY INDEX",
+    "type": "Mutual Fund"
+  },
+  "316092501": {
+    "ticker": "FNCL",
+    "name": "FIDELITY MSCI FINANCIAL INDX",
     "type": "Mutual Fund"
   },
   "316092808": {
@@ -1482,6 +1532,11 @@
     "name": "FRANCO-NEVADA CORP",
     "type": "Common Stock"
   },
+  "353506108": {
+    "ticker": "FTSD",
+    "name": "FRANKLIN SHORT DURATION U.S.",
+    "type": "Mutual Fund"
+  },
   "353514102": {
     "ticker": "FELE",
     "name": "FRANKLIN ELECTRIC CO INC",
@@ -1517,6 +1572,11 @@
     "name": "FULCRUM THERAPEUTICS INC",
     "type": "Common Stock"
   },
+  "359694106": {
+    "ticker": "FUL",
+    "name": "H.B. FULLER CO.",
+    "type": "Common Stock"
+  },
   "360271100": {
     "ticker": "FULT",
     "name": "FULTON FINANCIAL CORP",
@@ -1525,6 +1585,11 @@
   "361008105": {
     "ticker": "FNKO",
     "name": "FUNKO INC-CLASS A",
+    "type": "Common Stock"
+  },
+  "361448103": {
+    "ticker": "GATX",
+    "name": "GATX CORP",
     "type": "Common Stock"
   },
   "363576109": {
@@ -1752,6 +1817,11 @@
     "name": "AMERICAN HEALTHCARE REIT INC",
     "type": "REIT"
   },
+  "398433102": {
+    "ticker": "GFF",
+    "name": "GRIFFON CORP",
+    "type": "Common Stock"
+  },
   "398438408": {
     "ticker": "GRFS",
     "name": "GRIFOLS SA-ADR",
@@ -1847,6 +1917,11 @@
     "name": "HANOVER INSURANCE GROUP INC/",
     "type": "Common Stock"
   },
+  "412822108": {
+    "ticker": "HOG",
+    "name": "HARLEY-DAVIDSON INC",
+    "type": "Common Stock"
+  },
   "413160102": {
     "ticker": "HLIT",
     "name": "HARMONIC INC",
@@ -1881,6 +1956,11 @@
   "420201105": {
     "ticker": "HAWK",
     "name": "HAWKEYE 360 INC",
+    "type": "Common Stock"
+  },
+  "420261109": {
+    "ticker": "HWKN",
+    "name": "HAWKINS INC",
     "type": "Common Stock"
   },
   "421298100": {
@@ -2309,6 +2389,11 @@
     "name": "IOVANCE BIOTHERAPEUTICS INC",
     "type": "Common Stock"
   },
+  "464285204": {
+    "ticker": "IAU",
+    "name": "ISHARES GOLD TRUST",
+    "type": "Mutual Fund"
+  },
   "464286400": {
     "ticker": "EWZ",
     "name": "ISHARES MSCI BRAZIL ETF",
@@ -2334,6 +2419,11 @@
     "name": "ISHARES MSCI CHILE ETF",
     "type": "Mutual Fund"
   },
+  "464286681": {
+    "ticker": "EUSA",
+    "name": "ISHARES MSCI USA EQUAL WEIGH",
+    "type": "Mutual Fund"
+  },
   "464286715": {
     "ticker": "TUR",
     "name": "ISHARES MSCI TURKEY ETF",
@@ -2349,9 +2439,14 @@
     "name": "ISHARES MSCI SOUTH AFRICA ET",
     "type": "Mutual Fund"
   },
-  "464286822": {
-    "ticker": "EWW",
-    "name": "ISHARES MSCI MEXICO ETF",
+  "464286871": {
+    "ticker": "EWH",
+    "name": "ISHARES MSCI HONG KONG ETF",
+    "type": "Mutual Fund"
+  },
+  "464287101": {
+    "ticker": "OEF",
+    "name": "ISHARES S&P 100 ETF",
     "type": "Mutual Fund"
   },
   "464287119": {
@@ -2404,9 +2499,19 @@
     "name": "ISHR IBX USD INVGD CB ETF-UI",
     "type": "Mutual Fund"
   },
+  "464287275": {
+    "ticker": "IXP",
+    "name": "ISHARES GLOBAL COMM SERVICES",
+    "type": "Mutual Fund"
+  },
   "464287291": {
     "ticker": "IXN",
     "name": "ISHARES GLOBAL TECH ETF",
+    "type": "Mutual Fund"
+  },
+  "464287309": {
+    "ticker": "IVW",
+    "name": "ISHARES S&P 500 GROWTH ETF",
     "type": "Mutual Fund"
   },
   "464287325": {
@@ -2419,9 +2524,19 @@
     "name": "ISHARES GLOBAL ENERGY ETF",
     "type": "Mutual Fund"
   },
+  "464287374": {
+    "ticker": "IGE",
+    "name": "ISHARES NORTH AMERICAN NATUR",
+    "type": "Mutual Fund"
+  },
   "464287390": {
     "ticker": "ILF",
     "name": "ISHARES LATIN AMERICA 40 ETF",
+    "type": "Mutual Fund"
+  },
+  "464287408": {
+    "ticker": "IVE",
+    "name": "ISHARES S&P 500 VALUE ETF",
     "type": "Mutual Fund"
   },
   "464287432": {
@@ -2524,6 +2639,16 @@
     "name": "ISHARES CORE S&P U.S. VALUE",
     "type": "Mutual Fund"
   },
+  "464287671": {
+    "ticker": "IUSG",
+    "name": "ISHARES CORE S&P U.S. GROWTH",
+    "type": "Mutual Fund"
+  },
+  "464287689": {
+    "ticker": "IWV",
+    "name": "ISHARES RUSSELL 3000 ETF",
+    "type": "Mutual Fund"
+  },
   "464287697": {
     "ticker": "IDU",
     "name": "ISHARES US UTILITIES ETF",
@@ -2580,6 +2705,16 @@
     "type": "Mutual Fund"
   },
   "464287900": null,
+  "464288109": {
+    "ticker": "ILCV",
+    "name": "ISHARES MORNINGSTAR VALUE ET",
+    "type": "Mutual Fund"
+  },
+  "464288125": {
+    "ticker": "ISHG",
+    "name": "ISHARES -3 YEAR INTERNATIONA",
+    "type": "Mutual Fund"
+  },
   "464288182": {
     "ticker": "AAXJ",
     "name": "ISHARES MSCI ALL COUNTRY ASI",
@@ -2588,6 +2723,11 @@
   "464288224": {
     "ticker": "ICLN",
     "name": "ISHARES GLOBAL CLEAN ENERGY",
+    "type": "Mutual Fund"
+  },
+  "464288240": {
+    "ticker": "ACWX",
+    "name": "ISHARES MSCI ACWI EX US ETF",
     "type": "Mutual Fund"
   },
   "464288257": {
@@ -2605,9 +2745,24 @@
     "name": "ISHARES JP MORGAN USD EMERGI",
     "type": "Mutual Fund"
   },
+  "464288307": {
+    "ticker": "IMCG",
+    "name": "ISHARES MORNINGSTAR MID-CAP",
+    "type": "Mutual Fund"
+  },
+  "464288372": {
+    "ticker": "IGF",
+    "name": "ISHARES GLOBAL INFRASTRUCTUR",
+    "type": "Mutual Fund"
+  },
   "464288414": {
     "ticker": "MUB",
     "name": "ISHARES NATIONAL MUNI BOND E",
+    "type": "Mutual Fund"
+  },
+  "464288448": {
+    "ticker": "IDV",
+    "name": "ISHARES INTERNATIONAL SELECT",
     "type": "Mutual Fund"
   },
   "464288513": {
@@ -2635,6 +2790,11 @@
     "name": "ISHARES 3-7 YEAR TREASURY BO",
     "type": "Mutual Fund"
   },
+  "464288679": {
+    "ticker": "SHV",
+    "name": "ISHARES 0-1 YEAR TREASURY BO",
+    "type": "Mutual Fund"
+  },
   "464288687": {
     "ticker": "PFF",
     "name": "ISHARES PREFERRED & INCOME S",
@@ -2655,6 +2815,11 @@
     "name": "ISHARES GLOBAL CONSUMER STAP",
     "type": "Mutual Fund"
   },
+  "464288752": {
+    "ticker": "ITB",
+    "name": "ISHARES U.S. HOME CONSTRUCTI",
+    "type": "Mutual Fund"
+  },
   "464288760": {
     "ticker": "ITA",
     "name": "ISHARES U.S. AEROSPACE & DEF",
@@ -2673,6 +2838,16 @@
   "464288836": {
     "ticker": "IHE",
     "name": "ISHARES US PHARMACEUTICALS E",
+    "type": "Mutual Fund"
+  },
+  "464288877": {
+    "ticker": "EFV",
+    "name": "ISHARES MSCI EAFE VALUE ETF",
+    "type": "Mutual Fund"
+  },
+  "464288885": {
+    "ticker": "EFG",
+    "name": "ISHARES MSCI EAFE GROWTH ETF",
     "type": "Mutual Fund"
   },
   "464288953": null,
@@ -2879,6 +3054,11 @@
   "500643200": {
     "ticker": "KFY",
     "name": "KORN FERRY",
+    "type": "Common Stock"
+  },
+  "500688106": {
+    "ticker": "KOS",
+    "name": "KOSMOS ENERGY LTD",
     "type": "Common Stock"
   },
   "500754106": {
@@ -3121,6 +3301,11 @@
     "name": "LIFE360 INC",
     "type": "Common Stock"
   },
+  "532257805": {
+    "ticker": "LPTH",
+    "name": "LIGHTPATH TECHNOLOGIES INC-A",
+    "type": "Common Stock"
+  },
   "532275104": {
     "ticker": "LWLG",
     "name": "LIGHTWAVE LOGIC INC",
@@ -3211,6 +3396,16 @@
     "name": "LUMEN TECHNOLOGIES INC",
     "type": "Common Stock"
   },
+  "552690109": {
+    "ticker": "MDU",
+    "name": "MDU RESOURCES GROUP INC",
+    "type": "Common Stock"
+  },
+  "552848103": {
+    "ticker": "MTG",
+    "name": "MGIC INVESTMENT CORP",
+    "type": "Common Stock"
+  },
   "552953101": {
     "ticker": "MGM",
     "name": "MGM RESORTS INTERNATIONAL",
@@ -3219,6 +3414,11 @@
   "553368101": {
     "ticker": "MP",
     "name": "MP MATERIALS CORP",
+    "type": "Common Stock"
+  },
+  "553498106": {
+    "ticker": "MSA",
+    "name": "MSA SAFETY INC",
     "type": "Common Stock"
   },
   "553530106": {
@@ -3564,6 +3764,11 @@
     "name": "MOOG INC-CLASS A",
     "type": "Common Stock"
   },
+  "615394301": {
+    "ticker": "MOG.B",
+    "name": "MOOG INC-CLASS B",
+    "type": "Common Stock"
+  },
   "617446448": {
     "ticker": "MS",
     "name": "MORGAN STANLEY",
@@ -3684,6 +3889,11 @@
     "name": "NATIONAL PRESTO INDS INC",
     "type": "Common Stock"
   },
+  "637417106": {
+    "ticker": "NNN",
+    "name": "NNN REIT INC",
+    "type": "REIT"
+  },
   "637870106": {
     "ticker": null,
     "name": "NATIONAL STORAGE AFFILIATES",
@@ -3752,6 +3962,16 @@
   "650111107": {
     "ticker": "NYT",
     "name": "NEW YORK TIMES CO-A",
+    "type": "Common Stock"
+  },
+  "651229106": {
+    "ticker": "NWL",
+    "name": "NEWELL BRANDS INC",
+    "type": "Common Stock"
+  },
+  "651587107": {
+    "ticker": "NEU",
+    "name": "NEWMARKET CORP",
     "type": "Common Stock"
   },
   "651639106": {
@@ -4036,6 +4256,11 @@
     "name": "OSHKOSH CORP",
     "type": "Common Stock"
   },
+  "689648103": {
+    "ticker": "OTTR",
+    "name": "OTTER TAIL CORP",
+    "type": "Common Stock"
+  },
   "690370101": {
     "ticker": "NXH",
     "name": "NEIGHBORHOOD INTELLIGENCE IN",
@@ -4069,6 +4294,11 @@
   "693718108": {
     "ticker": "PCAR",
     "name": "PACCAR INC",
+    "type": "Common Stock"
+  },
+  "695127100": {
+    "ticker": "PCRX",
+    "name": "PACIRA BIOSCIENCES INC",
     "type": "Common Stock"
   },
   "695156109": {
@@ -4301,6 +4531,11 @@
     "name": "PREFERRED BANK/LOS ANGELES",
     "type": "Common Stock"
   },
+  "741511109": {
+    "ticker": "PSMT",
+    "name": "PRICESMART INC",
+    "type": "Common Stock"
+  },
   "741623102": {
     "ticker": "PRMB",
     "name": "PRIMO BRANDS CORP",
@@ -4309,6 +4544,11 @@
   "742718109": {
     "ticker": "PG",
     "name": "PROCTER & GAMBLE CO/THE",
+    "type": "Common Stock"
+  },
+  "743312100": {
+    "ticker": "PRGS",
+    "name": "PROGRESS SOFTWARE CORP",
     "type": "Common Stock"
   },
   "743315103": {
@@ -4374,6 +4614,11 @@
   "749685103": {
     "ticker": "RPM",
     "name": "RPM INTERNATIONAL INC",
+    "type": "Common Stock"
+  },
+  "750102105": {
+    "ticker": "RXT",
+    "name": "RACKSPACE TECHNOLOGY INC",
     "type": "Common Stock"
   },
   "750236101": {
@@ -4696,9 +4941,24 @@
     "name": "SCHWAB US LARGE-CAP ETF",
     "type": "Mutual Fund"
   },
+  "808524300": {
+    "ticker": "SCHG",
+    "name": "SCHWAB US LARGE-CAP GROWTH",
+    "type": "Mutual Fund"
+  },
+  "808524508": {
+    "ticker": "SCHM",
+    "name": "SCHWAB US MID CAP ETF",
+    "type": "Mutual Fund"
+  },
   "808524607": {
     "ticker": "SCHA",
     "name": "SCHWAB US SMALL-CAP ETF",
+    "type": "Mutual Fund"
+  },
+  "808524631": {
+    "ticker": "SCYB",
+    "name": "SCHWAB HIGH YIELD BOND ETF",
     "type": "Mutual Fund"
   },
   "808524706": {
@@ -4706,9 +4966,24 @@
     "name": "SCHWAB EMRG MRKTS EQTY ETF",
     "type": "Mutual Fund"
   },
+  "808524755": {
+    "ticker": "FNDF",
+    "name": "SCHWAB FNDMN INTL LRG CO ETF",
+    "type": "Mutual Fund"
+  },
+  "808524771": {
+    "ticker": "FNDX",
+    "name": "SCHWAB FNDMNTL US LRG CO ETF",
+    "type": "Mutual Fund"
+  },
   "808524797": {
     "ticker": "SCHD",
     "name": "SCHWAB US DVD EQUITY ETF",
+    "type": "Mutual Fund"
+  },
+  "808524847": {
+    "ticker": "SCHH",
+    "name": "SCHWAB US REIT ETF",
     "type": "Mutual Fund"
   },
   "808541106": {
@@ -4816,6 +5091,11 @@
     "name": "SILICON LABORATORIES INC",
     "type": "Common Stock"
   },
+  "827048109": {
+    "ticker": "SLGN",
+    "name": "SILGAN HOLDINGS INC",
+    "type": "Common Stock"
+  },
   "827427105": {
     "ticker": "SBMT",
     "name": "SILVER BOW MINING CORP",
@@ -4859,6 +5139,16 @@
   "831349105": {
     "ticker": "SLDE",
     "name": "SLIDE INSURANCE HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "831754106": {
+    "ticker": "SWBI",
+    "name": "SMITH & WESSON BRANDS INC",
+    "type": "Common Stock"
+  },
+  "831865209": {
+    "ticker": "AOS",
+    "name": "SMITH (A.O.) CORP",
     "type": "Common Stock"
   },
   "832248207": {
@@ -4957,6 +5247,11 @@
     "name": "STANDARD LITHIUM LTD",
     "type": "Common Stock"
   },
+  "854231107": {
+    "ticker": "SXI",
+    "name": "STANDEX INTERNATIONAL CORP",
+    "type": "Common Stock"
+  },
   "854502101": {
     "ticker": "SWK",
     "name": "STANLEY BLACK & DECKER INC",
@@ -4975,6 +5270,11 @@
   "858119100": {
     "ticker": "STLD",
     "name": "STEEL DYNAMICS INC",
+    "type": "Common Stock"
+  },
+  "858586100": {
+    "ticker": "SCL",
+    "name": "STEPAN CO",
     "type": "Common Stock"
   },
   "859241101": {
@@ -5259,9 +5559,19 @@
     "name": "THRYV HOLDINGS INC",
     "type": "Common Stock"
   },
+  "886364520": {
+    "ticker": "GVLU",
+    "name": "GOTHAM 1000 VALUE ETF",
+    "type": "Mutual Fund"
+  },
   "886364801": {
     "ticker": "SPUS",
     "name": "SP FUNDS S&P SHARIA INDU EXC",
+    "type": "Mutual Fund"
+  },
+  "886364835": {
+    "ticker": "GSPY",
+    "name": "GOTHAM ENHANCED 500 ETF",
     "type": "Mutual Fund"
   },
   "887389104": {
@@ -5349,6 +5659,11 @@
     "name": "TRINET GROUP INC",
     "type": "Common Stock"
   },
+  "896442308": {
+    "ticker": "TRIN",
+    "name": "TRINITY CAPITAL INC",
+    "type": "Common Stock"
+  },
   "896945201": {
     "ticker": "TRIP",
     "name": "TRIPADVISOR INC",
@@ -5393,6 +5708,11 @@
     "ticker": "UDR",
     "name": "UDR INC",
     "type": "REIT"
+  },
+  "902673102": {
+    "ticker": "UFPT",
+    "name": "UFP TECHNOLOGIES INC",
+    "type": "Common Stock"
   },
   "902681105": {
     "ticker": "UGI",
@@ -5585,6 +5905,11 @@
     "name": "VANDA PHARMACEUTICALS INC",
     "type": "Common Stock"
   },
+  "921908844": {
+    "ticker": "VIG",
+    "name": "VANGUARD DIVIDEND APPREC ETF",
+    "type": "Mutual Fund"
+  },
   "921909768": {
     "ticker": "VXUS",
     "name": "VANGUARD TOTAL INTL STOCK",
@@ -5600,14 +5925,44 @@
     "name": "VANGUARD ESG US STOCK ETF",
     "type": "Mutual Fund"
   },
+  "921910816": {
+    "ticker": "MGK",
+    "name": "VNGRD MRGSTR MG CP GR ETF-UI",
+    "type": "Mutual Fund"
+  },
+  "921910840": {
+    "ticker": "MGV",
+    "name": "VNGRD MRGSTR MG CP VL ETF-UI",
+    "type": "Mutual Fund"
+  },
   "921910873": {
     "ticker": "MGC",
     "name": "VNGRD MRNGSTR MG CAP ETF-USD",
     "type": "Mutual Fund"
   },
+  "921932505": {
+    "ticker": "VOOG",
+    "name": "VANGUARD S&P 500 GROWTH ETF",
+    "type": "Mutual Fund"
+  },
   "921932703": {
     "ticker": "VOOV",
     "name": "VANGUARD S&P 500 VALUE ETF",
+    "type": "Mutual Fund"
+  },
+  "921932828": {
+    "ticker": "VIOO",
+    "name": "VANGUARD S&P SMALL-CAP 600 E",
+    "type": "Mutual Fund"
+  },
+  "921932844": {
+    "ticker": "IVOV",
+    "name": "VANGUARD S&P MID-CAP 400 VAL",
+    "type": "Mutual Fund"
+  },
+  "921932885": {
+    "ticker": "IVOO",
+    "name": "VANGUARD S&P MID-CAP 400 ETF",
     "type": "Mutual Fund"
   },
   "921937827": {
@@ -5633,6 +5988,36 @@
   "921946794": {
     "ticker": "VYMI",
     "name": "VANGUARD INT HIGH DVD YLD IN",
+    "type": "Mutual Fund"
+  },
+  "921946810": {
+    "ticker": "VIGI",
+    "name": "VANGUARD INT DIV APP INDX FD",
+    "type": "Mutual Fund"
+  },
+  "921946885": {
+    "ticker": "VWOB",
+    "name": "VANGUARD EMERG MKTS GOV BND",
+    "type": "Mutual Fund"
+  },
+  "922020698": {
+    "ticker": "VTP",
+    "name": "VNGRD TOTL INFLT PRO SEC ETF",
+    "type": "Mutual Fund"
+  },
+  "922020805": {
+    "ticker": "VTIP",
+    "name": "VANGUARD SHORT-TERM TIPS",
+    "type": "Mutual Fund"
+  },
+  "922021605": {
+    "ticker": "VTEC",
+    "name": "VANGUARD CA TAX-EX BOND",
+    "type": "Mutual Fund"
+  },
+  "922040845": {
+    "ticker": "VBIL",
+    "name": "VANGUARD 0-3M T-BILL ETF",
     "type": "Mutual Fund"
   },
   "922042718": {
@@ -5685,6 +6070,11 @@
     "name": "VANGUARD S&P 500 ETF",
     "type": "Mutual Fund"
   },
+  "922908512": {
+    "ticker": "VOE",
+    "name": "VNGRD MRNGSTR MD-CAP VAL ETF",
+    "type": "Mutual Fund"
+  },
   "922908538": {
     "ticker": "VOT",
     "name": "VNGRD MRNGSTR MC GRW ETF-USD",
@@ -5693,6 +6083,11 @@
   "922908553": {
     "ticker": "VNQ",
     "name": "VANGUARD REAL ESTATE ETF",
+    "type": "Mutual Fund"
+  },
+  "922908595": {
+    "ticker": "VBK",
+    "name": "VAN MORST SML-CAP GRO-USD IN",
     "type": "Mutual Fund"
   },
   "922908611": {
@@ -6007,9 +6402,19 @@
     "name": "WILLSCOT HOLDINGS CORP",
     "type": "Common Stock"
   },
+  "974155103": {
+    "ticker": "WING",
+    "name": "WINGSTOP INC",
+    "type": "Common Stock"
+  },
   "974250102": {
     "ticker": "WINA",
     "name": "WINMARK CORP",
+    "type": "Common Stock"
+  },
+  "974637100": {
+    "ticker": "WGO",
+    "name": "WINNEBAGO INDUSTRIES",
     "type": "Common Stock"
   },
   "978097103": {
@@ -17948,197 +18353,520 @@
     "name": "OCULAR THERAPEUTIX INC",
     "type": "Common Stock"
   },
-  "92645B103": {
-    "ticker": "VCTR",
-    "name": "VICTORY CAPITAL HOLDING - A",
+  "72201R775": {
+    "ticker": "BOND",
+    "name": "PIMCO ACTIVE BOND EXCHANGE-T",
+    "type": "Mutual Fund"
+  },
+  "98311A105": {
+    "ticker": "WH",
+    "name": "WYNDHAM HOTELS & RESORTS INC",
     "type": "Common Stock"
   },
-  "25461A387": {
-    "ticker": "KORU",
-    "name": "DIREXION DLY M SK BULL 3X-UI",
+  "02072Q499": {
+    "ticker": "CTEF",
+    "name": "CASTELLAN TARGETD EQUITY ETF",
     "type": "Mutual Fund"
   },
-  "33734X200": {
-    "ticker": "FGD",
-    "name": "FIRST TRUST DJ GL SEL DVD",
+  "92206C599": {
+    "ticker": "VTHR",
+    "name": "VANGUARD RUSSELL 3000",
     "type": "Mutual Fund"
   },
-  "78468R432": {
-    "ticker": "SPTU",
-    "name": "SPDR PORT ULTRA SHRT T-BILL",
+  "85254J102": {
+    "ticker": "STAG",
+    "name": "STAG INDUSTRIAL INC",
+    "type": "REIT"
+  },
+  "46434V621": {
+    "ticker": "DGRO",
+    "name": "ISHARES CORE DIVIDEND GROWTH",
     "type": "Mutual Fund"
   },
-  "69344A735": {
-    "ticker": "PCL",
-    "name": "PGIM CORP BOND 10+ YEAR ETF",
-    "type": "Mutual Fund"
-  },
-  "46436E205": {
-    "ticker": "IBDU",
-    "name": "ISHARES IBONDS DEC 2029 TERM",
-    "type": "Mutual Fund"
-  },
-  "25460E232": {
-    "ticker": null,
-    "name": "DIRX DLY SMAL CAP B3X ETF-UI",
-    "type": "Mutual Fund"
-  },
-  "G8089R100": {
-    "ticker": "PGAC",
-    "name": "PANTAGES CAPITAL ACQUISITION Corp",
-    "via": "sec-name"
-  },
-  "G7341A129": {
-    "ticker": "PAAC",
-    "name": "Proem Acquisition Corp. I",
-    "via": "sec-name"
-  },
-  "G4569C127": {
-    "ticker": "HVMC",
-    "name": "Highview Merger Corp.",
-    "via": "sec-name"
-  },
-  "85208P808": {
-    "ticker": "URNJ",
-    "name": "SPROTT JR URANIUM MINERS ETF",
-    "type": "Mutual Fund"
-  },
-  "84858T772": {
-    "ticker": "EUAD",
-    "name": "SELECT STOXX EUR AER DE ETF",
-    "type": "Mutual Fund"
-  },
-  "37954Y715": {
-    "ticker": "BOTZ",
-    "name": "GLOBAL X ROBOTICS & ARTIFICI",
-    "type": "Mutual Fund"
-  },
-  "46266A109": {
-    "ticker": "IRMD",
-    "name": "IRADIMED CORP",
+  "80689H102": {
+    "ticker": "SNDR",
+    "name": "SCHNEIDER NATIONAL INC-CL B",
     "type": "Common Stock"
   },
-  "37954Y632": {
-    "ticker": "AIQ",
-    "name": "GLOBAL X ART INTEL & TECH",
+  "46431W507": {
+    "ticker": "NEAR",
+    "name": "ISHARES SH DBA ETF USD INC",
     "type": "Mutual Fund"
   },
-  "G4627B103": null,
+  "70959W103": {
+    "ticker": "PAG",
+    "name": "PENSKE AUTOMOTIVE GROUP INC",
+    "type": "Common Stock"
+  },
+  "74347R693": {
+    "ticker": "ROM",
+    "name": "PROSHARES ULTRA TECHNOLOGY",
+    "type": "Mutual Fund"
+  },
+  "74164M108": {
+    "ticker": "PRI",
+    "name": "PRIMERICA INC",
+    "type": "Common Stock"
+  },
+  "92647X830": {
+    "ticker": "VFLO",
+    "name": "VICTORYSHARES FREE CASH FLOW",
+    "type": "Mutual Fund"
+  },
+  "47103U845": {
+    "ticker": "JAAA",
+    "name": "JANUS HENDERSON AAA CLO ETF",
+    "type": "Mutual Fund"
+  },
+  "25459W102": {
+    "ticker": "TECL",
+    "name": "DIRE DAI TEC BULL 3X ETF-USD",
+    "type": "Mutual Fund"
+  },
+  "78464A367": {
+    "ticker": "SPLB",
+    "name": "SS SPDR P LONG TERM C ETF",
+    "type": "Mutual Fund"
+  },
+  "69344A834": {
+    "ticker": "PAAA",
+    "name": "PGIM AAA CLO ETF",
+    "type": "Mutual Fund"
+  },
+  "69374H881": {
+    "ticker": "COWZ",
+    "name": "PACER US CASH COWS 100 ETF",
+    "type": "Mutual Fund"
+  },
+  "45259A878": {
+    "ticker": "RMOP",
+    "name": "ROCKEFELLER OPPORT MUNI ETF",
+    "type": "Mutual Fund"
+  },
+  "92189F486": {
+    "ticker": "FLTR",
+    "name": "VANECK IG FLOATING RATE ETF",
+    "type": "Mutual Fund"
+  },
+  "78468R200": {
+    "ticker": "FLRN",
+    "name": "SS SPDR BB IG FLOAT RT ETF",
+    "type": "Mutual Fund"
+  },
+  "92206C664": {
+    "ticker": "VTWO",
+    "name": "VANGUARD RUSSELL 2000 ETF",
+    "type": "Mutual Fund"
+  },
+  "78433H675": {
+    "ticker": "QQQI",
+    "name": "NEOS NASDAQ-100 HIGH INC ETF",
+    "type": "Mutual Fund"
+  },
+  "46137V472": {
+    "ticker": "XMHQ",
+    "name": "INVESCO S&P MIDCAP QUAL ETF",
+    "type": "Mutual Fund"
+  },
+  "46429B663": {
+    "ticker": "HDV",
+    "name": "ISHARES CORE HIGH DIVIDEND E",
+    "type": "Mutual Fund"
+  },
+  "45409F843": {
+    "ticker": "MMIN",
+    "name": "NYLIM MACKAY MUNI INSURED ET",
+    "type": "Mutual Fund"
+  },
+  "46090A887": {
+    "ticker": "GSY",
+    "name": "INVESCO ULTRA SHORT DURATION",
+    "type": "Mutual Fund"
+  },
+  "025072885": {
+    "ticker": "AVUS",
+    "name": "AVANTIS U.S. EQUITY ETF",
+    "type": "Mutual Fund"
+  },
+  "46137V233": {
+    "ticker": "XLG",
+    "name": "INVESCO S&P 500 TOP 50 ETF",
+    "type": "Mutual Fund"
+  },
+  "78468R622": {
+    "ticker": "JNK",
+    "name": "SS SPDR BB HIGH YIELD BOND",
+    "type": "Mutual Fund"
+  },
+  "92206C730": {
+    "ticker": "VONE",
+    "name": "VANGUARD RUSSELL 1000",
+    "type": "Mutual Fund"
+  },
+  "46429B697": {
+    "ticker": "USMV",
+    "name": "ISHARES MSCI USA MIN VOL FAC",
+    "type": "Mutual Fund"
+  },
+  "78464A763": {
+    "ticker": "SDY",
+    "name": "SS SPDR S&P DIVIDEND ETF",
+    "type": "Mutual Fund"
+  },
+  "46641Q332": {
+    "ticker": "JEPI",
+    "name": "JPMORGAN EQUITY PREMIUM INCO",
+    "type": "Mutual Fund"
+  },
+  "78464A375": {
+    "ticker": "SPIB",
+    "name": "SS SPDR P INT C CORP ETF",
+    "type": "Mutual Fund"
+  },
+  "46641Q670": {
+    "ticker": "JCPB",
+    "name": "JPMORGAN CORE PLUS BOND ETF",
+    "type": "Mutual Fund"
+  },
+  "26922B832": {
+    "ticker": "SMIG",
+    "name": "BAHL & GAYNOR S/M INC GROWTH",
+    "type": "Mutual Fund"
+  },
+  "46137V258": {
+    "ticker": "RPV",
+    "name": "INVESCO S&P 500 PURE VALUE E",
+    "type": "Mutual Fund"
+  },
+  "46138G888": {
+    "ticker": "TBLL",
+    "name": "INVESCO SHORT TERM TREASURY",
+    "type": "Mutual Fund"
+  },
+  "26922A198": {
+    "ticker": "PFLD",
+    "name": "AAM LOW DUR PREF & INC SEC",
+    "type": "Mutual Fund"
+  },
+  "78464A508": {
+    "ticker": "SPYV",
+    "name": "SS SPDR P S&P 500 VALUE ETF",
+    "type": "Mutual Fund"
+  },
+  "69344A107": {
+    "ticker": "PULS",
+    "name": "PGIM ULTRA SHORT BOND ETF",
+    "type": "Mutual Fund"
+  },
+  "46434V860": {
+    "ticker": "TFLO",
+    "name": "ISHARES TREASURY FLOATING RA",
+    "type": "Mutual Fund"
+  },
+  "46436E726": {
+    "ticker": "IBDV",
+    "name": "ISHARES IBONDS DEC 2030 CORP",
+    "type": "Mutual Fund"
+  },
+  "46137V241": {
+    "ticker": "SPHQ",
+    "name": "INVESCO S&P 500 QUALITY ETF",
+    "type": "Mutual Fund"
+  },
+  "09290C103": {
+    "ticker": "DYNF",
+    "name": "ISHRS US E F R A ETF-USD INC",
+    "type": "Mutual Fund"
+  },
+  "02072L565": {
+    "ticker": "BOXX",
+    "name": "ALPHA ARCHITECT 1-3 MNTH BOX",
+    "type": "Mutual Fund"
+  },
+  "46138G870": {
+    "ticker": "VRP",
+    "name": "INVESCO VARIABLE RATE PREFER",
+    "type": "Mutual Fund"
+  },
+  "37954Y376": {
+    "ticker": "PFFV",
+    "name": "GLOBAL X VARIABLE RATE PREF",
+    "type": "Mutual Fund"
+  },
+  "78463X541": {
+    "ticker": "GNR",
+    "name": "STATE STREET SPDR S&P GLOBAL",
+    "type": "Mutual Fund"
+  },
+  "46138E511": {
+    "ticker": "PGX",
+    "name": "INVESCO PREFERRED ETF",
+    "type": "Mutual Fund"
+  },
+  "78464A847": {
+    "ticker": "SPMD",
+    "name": "SS SPDR P S&P 400 MIDCAP ETF",
+    "type": "Mutual Fund"
+  },
+  "05577W200": {
+    "ticker": "DOO",
+    "name": "BRP INC/CA- SUB VOTING",
+    "type": "Common Stock"
+  },
+  "78464A706": {
+    "ticker": "DGT",
+    "name": "SS SPDR GLOBAL DOW ETF",
+    "type": "Mutual Fund"
+  },
+  "032108409": {
+    "ticker": "DIVO",
+    "name": "AMPLIFY CWP ENHAN DIVID ETF",
+    "type": "Mutual Fund"
+  },
+  "46432F339": {
+    "ticker": "QUAL",
+    "name": "ISHARES MSCI USA QUALITY FAC",
+    "type": "Mutual Fund"
+  },
+  "46654Q203": {
+    "ticker": "JEPQ",
+    "name": "JPM NASDAQ EQUITY PREMIUM",
+    "type": "Mutual Fund"
+  },
+  "44930G107": {
+    "ticker": "ICUI",
+    "name": "ICU MEDICAL INC",
+    "type": "Common Stock"
+  },
+  "92647N527": {
+    "ticker": "UITB",
+    "name": "VICTORYSHARES CORE INTERMEDI",
+    "type": "Mutual Fund"
+  },
+  "78468R754": {
+    "ticker": "ONEV",
+    "name": "SS SPDR R1000 LO VOL FOC ETF",
+    "type": "Mutual Fund"
+  },
+  "69374H857": {
+    "ticker": "CALF",
+    "name": "PCR US SM CP CSH CWS ETF-USD",
+    "type": "Mutual Fund"
+  },
+  "47103U852": {
+    "ticker": "JMBS",
+    "name": "JANUS HENDERSON MORTG BACKED",
+    "type": "Mutual Fund"
+  },
+  "G9460G101": {
+    "ticker": "VAL",
+    "name": "Valaris Ltd",
+    "via": "sec-name"
+  },
+  "69374H360": {
+    "ticker": "COWG",
+    "name": "PACER US LRG CAP COWS GR LD",
+    "type": "Mutual Fund"
+  },
+  "25434V880": {
+    "ticker": "DFAX",
+    "name": "DIMENSIONAL WORLD EX US CORE",
+    "type": "Mutual Fund"
+  },
+  "05156V102": {
+    "ticker": "AUPH",
+    "name": "AURINIA PHARMACEUTICALS INC",
+    "type": "Common Stock"
+  },
+  "09661T826": {
+    "ticker": "BKGI",
+    "name": "BNY MELLON GLBL INFRA INC",
+    "type": "Mutual Fund"
+  },
+  "92206C649": {
+    "ticker": "VTWV",
+    "name": "VANGUARD RUSSELL 2000 VALUE",
+    "type": "Mutual Fund"
+  },
+  "74348A467": {
+    "ticker": "NOBL",
+    "name": "PROSHARES S&P 500 DIVIDEND A",
+    "type": "Mutual Fund"
+  },
+  "74347X823": {
+    "ticker": "UDOW",
+    "name": "PROSHARES ULTRAPRO DOW30",
+    "type": "Mutual Fund"
+  },
+  "G06973112": {
+    "ticker": "AUGO",
+    "name": "Aura Minerals Inc.",
+    "via": "sec-name"
+  },
+  "14020Y508": {
+    "ticker": "CGCB",
+    "name": "CAP GROUP CORE BOND",
+    "type": "Mutual Fund"
+  },
+  "03463K760": {
+    "ticker": "CARY",
+    "name": "ANGEL OAK INCOME ETF",
+    "type": "Mutual Fund"
+  },
+  "64135A887": {
+    "ticker": "NBSD",
+    "name": "NEUBERGER SHORT DURATION INC",
+    "type": "Mutual Fund"
+  },
+  "09290C780": {
+    "ticker": "BAI",
+    "name": "ISHRS AI IN AND TECH ACT ETF",
+    "type": "Mutual Fund"
+  },
+  "09290C863": {
+    "ticker": "BALI",
+    "name": "IS US LRG CP PRE INC ACT-USD",
+    "type": "Mutual Fund"
+  },
+  "33738R704": {
+    "ticker": "AIRR",
+    "name": "FIRST TRUST RBA AMERICAN IND",
+    "type": "Mutual Fund"
+  },
+  "92647P126": {
+    "ticker": "MODL",
+    "name": "VICTORYSHARES WESTEND US SEC",
+    "type": "Mutual Fund"
+  },
   "46138E339": {
     "ticker": "SPMO",
     "name": "INVESCO S&P 500 MOMENTUM ETF",
     "type": "Mutual Fund"
   },
-  "65535H208": {
-    "ticker": "NMR",
-    "name": "NOMURA HOLDINGS INC-SPON ADR",
-    "type": "Depositary Receipt"
+  "97717X263": {
+    "ticker": "DDWM",
+    "name": "WISDOMTREE DY INTER EQ FD-US",
+    "type": "Mutual Fund"
   },
-  "G4701H109": {
-    "ticker": "IHS",
-    "name": "IHS Holding Ltd",
+  "46435U853": {
+    "ticker": "USHY",
+    "name": "ISHARES BROAD USD HIGH YIELD",
+    "type": "Mutual Fund"
+  },
+  "92204A405": {
+    "ticker": "VFH",
+    "name": "VANGUARD FINANCIALS ETF",
+    "type": "Mutual Fund"
+  },
+  "G7738W106": {
+    "ticker": "SFL",
+    "name": "SFL Corp Ltd.",
     "via": "sec-name"
+  },
+  "92204A876": {
+    "ticker": "VPU",
+    "name": "VANGUARD UTILITIES ETF",
+    "type": "Mutual Fund"
+  },
+  "25434V807": {
+    "ticker": "DFIV",
+    "name": "DIMENSIONAL INTERNATIONAL VA",
+    "type": "Mutual Fund"
+  },
+  "78463X509": {
+    "ticker": "SPEM",
+    "name": "STATE STREET SP PTF EM ETF",
+    "type": "Mutual Fund"
+  },
+  "41653L305": {
+    "ticker": "HTRB",
+    "name": "HARTFORD TTL RTRN BND ETF",
+    "type": "Mutual Fund"
+  },
+  "058586108": {
+    "ticker": "BLDP",
+    "name": "BALLARD POWER SYSTEMS INC",
+    "type": "Common Stock"
+  },
+  "92204A207": {
+    "ticker": "VDC",
+    "name": "VANGUARD CONSUMER STAPLE ETF",
+    "type": "Mutual Fund"
+  },
+  "72201R783": {
+    "ticker": "HYS",
+    "name": "PIMCO 0-5 YEAR HIGH YIELD CO",
+    "type": "Mutual Fund"
+  },
+  "97717W836": {
+    "ticker": "DFJ",
+    "name": "WISDOMTREE JPN S/C DVD FUND",
+    "type": "Mutual Fund"
+  },
+  "46435G326": {
+    "ticker": "IDEV",
+    "name": "ISHARES CORE MSCI DEV MKTS",
+    "type": "Mutual Fund"
   },
   "37954Y673": {
     "ticker": "PAVE",
     "name": "GLOBAL X US INFRASTRUCTURE",
     "type": "Mutual Fund"
   },
-  "G9833K128": {
-    "ticker": "XSLL",
-    "name": "Xsolla SPAC 1",
-    "via": "sec-name"
+  "78464A540": {
+    "ticker": "XTL",
+    "name": "SS SPDR S&P TELECOM ETF",
+    "type": "Mutual Fund"
   },
-  "G3R41C128": {
-    "ticker": "FGII",
-    "name": "FG Imperii Acquisition Corp.",
-    "via": "sec-name"
+  "92204A603": {
+    "ticker": "VIS",
+    "name": "VANGUARD INDUSTRIALS ETF",
+    "type": "Mutual Fund"
   },
-  "G5345D123": null,
-  "45245E109": {
-    "ticker": "IMAX",
-    "name": "IMAX CORP",
-    "type": "Common Stock"
+  "14020Y300": {
+    "ticker": "CGMS",
+    "name": "CAP GROUP US MULTI-SECT BOND",
+    "type": "Mutual Fund"
   },
-  "28852N109": {
-    "ticker": "EFC",
-    "name": "ELLINGTON FINANCIAL INC",
+  "68571X301": {
+    "ticker": "ORC",
+    "name": "ORCHID ISLAND CAPITAL INC",
     "type": "REIT"
   },
-  "G2616T127": {
-    "ticker": "DBCA",
-    "name": "D. Boral Acquisition I Corp.",
-    "via": "sec-name"
-  },
-  "002474104": {
-    "ticker": "AZZ",
-    "name": "AZZ INC",
-    "type": "Common Stock"
-  },
-  "29286M105": null,
-  "G9831H127": {
-    "ticker": "XCBE",
-    "name": "X3 Acquisition Corp. Ltd.",
-    "via": "sec-name"
-  },
-  "09239B109": {
-    "ticker": "BL",
-    "name": "BLACKLINE INC",
-    "type": "Common Stock"
-  },
-  "72201R882": {
-    "ticker": "ZROZ",
-    "name": "PIMCO 25+ YR ZERO CPN US TIF",
+  "72201R817": {
+    "ticker": "CORP",
+    "name": "PIMCO INVESTMENT GRADE CORPO",
     "type": "Mutual Fund"
   },
-  "37954Y319": {
-    "ticker": "GREK",
-    "name": "GLOBAL X MSCI GREECE ETF",
+  "33734H106": {
+    "ticker": "FVD",
+    "name": "FIRST TRUST VALUE LINE DVD",
     "type": "Mutual Fund"
   },
-  "G7310E128": {
-    "ticker": "QADR",
-    "name": "QDRO Acquisition Corp.",
-    "via": "sec-name"
-  },
-  "14020G101": {
-    "ticker": "CGGR",
-    "name": "CAP GROUP GROWTH EQUITY",
+  "G65773106": null,
+  "78470P846": {
+    "ticker": "HYBL",
+    "name": "SS BLACKSTONE HIGH INC ETF",
     "type": "Mutual Fund"
   },
-  "41151J406": {
-    "ticker": "WINN",
-    "name": "HARBOR LONG-TERM GROWERS ETF",
+  "26817Q886": {
+    "ticker": "DX",
+    "name": "DYNEX CAPITAL INC",
+    "type": "REIT"
+  },
+  "92204A801": {
+    "ticker": "VAW",
+    "name": "VANGUARD MATERIALS ETF",
     "type": "Mutual Fund"
   },
-  "46137V274": {
-    "ticker": "RSPU",
-    "name": "INVESCO S&P 500 EQUAL WEIGHT",
+  "97717W869": {
+    "ticker": "DFE",
+    "name": "WISDOMTREE EUR S/C DIVIDEND",
     "type": "Mutual Fund"
   },
-  "086921103": {
-    "ticker": "BETA",
-    "name": "BETA TECHNOLOGIES INC -CL A",
-    "type": "Common Stock"
-  },
-  "059520106": {
-    "ticker": "BCH",
-    "name": "BANCO DE CHILE-ADR",
-    "type": "Depositary Receipt"
-  },
-  "78468R804": {
-    "ticker": "LGLV",
-    "name": "SPDR US LC LOW VOL IDX",
-    "type": "Mutual Fund"
-  },
-  "78468R655": {
-    "ticker": "CNRG",
-    "name": "SS SPDR S&P KENSHO CLP ETF",
-    "type": "Mutual Fund"
-  },
-  "46138G656": {
-    "ticker": "RDIV",
-    "name": "INVESCO S&P ULTRA DIVIDEND",
+  "92204A884": {
+    "ticker": "VOX",
+    "name": "VANGUARD COMMUNICATION SERVI",
     "type": "Mutual Fund"
   },
   "46654Q609": {
@@ -18146,136 +18874,463 @@
     "name": "JPMORGAN ACTIVE GROWTH ETF",
     "type": "Mutual Fund"
   },
-  "G8148S107": {
-    "ticker": "SBXE",
-    "name": "SilverBox Corp V",
-    "via": "sec-name"
-  },
-  "G53157106": {
-    "ticker": "KPET",
-    "name": "KPET Ultra Paceline Corp",
-    "via": "sec-name"
-  },
-  "G3730U107": {
-    "ticker": "FCRS",
-    "name": "FutureCrest Acquisition Corp.",
-    "via": "sec-name"
-  },
-  "G82617104": null,
-  "G04819119": null,
-  "G6301B127": null,
-  "20460L104": {
-    "ticker": "SPWR",
-    "name": "SUNPOWER INC",
-    "type": "Common Stock"
-  },
-  "G7006A117": {
-    "ticker": "PERF",
-    "name": "Perfect Corp.",
-    "via": "sec-name"
-  },
-  "G5380J118": null,
-  "G4330A103": {
-    "ticker": "HAVA",
-    "name": "Harvard Ave Acquisition Corp",
-    "via": "sec-name"
-  },
-  "G3864J100": {
-    "ticker": "GIW",
-    "name": "GigCapital8 Corp.",
-    "via": "sec-name"
-  },
-  "G42386105": {
-    "ticker": "HCAC",
-    "name": "Hall Chadwick Acquisition Corp",
-    "via": "sec-name"
-  },
-  "G3226F101": {
-    "ticker": "EVOX",
-    "name": "Evolution Global Acquisition Corp",
-    "via": "sec-name"
-  },
-  "82452J307": {
-    "ticker": null,
-    "name": "SHIFT4 PAYMENTS INC",
-    "type": "Preferred Stock"
-  },
-  "G8377G121": null,
-  "G7309T102": null,
-  "G2616C124": null,
-  "64428N109": {
-    "ticker": "NUAI",
-    "name": "NEW ERA ENERGY & DIGITAL INC",
-    "type": "Common Stock"
-  },
-  "G0081J129": null,
-  "G6791A100": {
-    "ticker": "OTGA",
-    "name": "OTG Acquisition Corp. I",
-    "via": "sec-name"
-  },
-  "G9009S103": {
-    "ticker": "BLZR",
-    "name": "Trailblazer Acquisition Corp.",
-    "via": "sec-name"
-  },
-  "92189H300": {
-    "ticker": "EMLC",
-    "name": "VANECK JPM EM LOCAL CURR BND",
+  "46137V449": {
+    "ticker": "EQWL",
+    "name": "INVESCO S&P 100 EQUAL WEIGHT",
     "type": "Mutual Fund"
   },
-  "09940T100": {
-    "ticker": "BRUN",
-    "name": "BOOST RUN INC-CL A",
+  "006739106": {
+    "ticker": "ADUS",
+    "name": "ADDUS HOMECARE CORP",
     "type": "Common Stock"
   },
-  "46283H202": {
-    "ticker": "IRHOU",
-    "name": "IRON HORSE ACQUISITION II CO",
-    "type": "Unit"
-  },
-  "46434V761": {
-    "ticker": "UAE",
-    "name": "ISHARES MSCI UAE ETF",
+  "46429B671": {
+    "ticker": "MCHI",
+    "name": "ISHARES MSCI CHINA ETF",
     "type": "Mutual Fund"
   },
-  "63010H108": {
-    "ticker": "NNE",
-    "name": "NANO NUCLEAR ENERGY INC",
+  "87283Q867": {
+    "ticker": "TCAF",
+    "name": "T ROWE PRC CAP APPRECIATION",
+    "type": "Mutual Fund"
+  },
+  "46138E404": {
+    "ticker": "PCEF",
+    "name": "INVESCO CEF INCOME COMPOSITE",
+    "type": "Mutual Fund"
+  },
+  "29272W109": {
+    "ticker": "ENR",
+    "name": "ENERGIZER HOLDINGS INC",
     "type": "Common Stock"
   },
-  "36467WAE9": {
-    "ticker": "GME",
-    "name": "GameStop Corp.",
-    "type": "Corp",
+  "92206C623": {
+    "ticker": "VTWG",
+    "name": "VANGUARD RUSSELL 2000 GROWTH",
+    "type": "Mutual Fund"
+  },
+  "46436F103": {
+    "ticker": "IAUM",
+    "name": "ISHARES GOLD TRUST MICRO",
+    "type": "Mutual Fund"
+  },
+  "025072877": {
+    "ticker": "AVUV",
+    "name": "AVANTIS US SMALL CAP VALUE",
+    "type": "Mutual Fund"
+  },
+  "92206C771": {
+    "ticker": "VMBS",
+    "name": "VANGUARD MORTGAGE-BACKED SEC",
+    "type": "Mutual Fund"
+  },
+  "00039J509": {
+    "ticker": "FWD",
+    "name": "AB DISRUPTORS ETF",
+    "type": "Mutual Fund"
+  },
+  "37954Y343": {
+    "ticker": "MLPA",
+    "name": "GLOBAL X MLP ETF",
+    "type": "Mutual Fund"
+  },
+  "00162Q205": {
+    "ticker": "EQL",
+    "name": "CI INV SP 500 EQU WEG IND-UI",
+    "type": "Mutual Fund"
+  },
+  "29287L700": {
+    "ticker": "FLXR",
+    "name": "TCW FLEXIBLE INCOME ETF",
+    "type": "Mutual Fund"
+  },
+  "46435U713": {
+    "ticker": "IFRA",
+    "name": "ISHARES US INFRASTRUCTURE",
+    "type": "Mutual Fund"
+  },
+  "69753M105": {
+    "ticker": "PLMR",
+    "name": "PALOMAR HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "74255Y870": {
+    "ticker": "USMC",
+    "name": "PRINCIPAL US MEGA-CAP ETF",
+    "type": "Mutual Fund"
+  },
+  "19761L706": {
+    "ticker": "RECS",
+    "name": "COLUMBIA RESEAR ENH COR ETF",
+    "type": "Mutual Fund"
+  },
+  "67079U306": {
+    "ticker": "NUTX",
+    "name": "NUTEX HEALTH INC",
+    "type": "Common Stock"
+  },
+  "46641Q217": {
+    "ticker": "BBJP",
+    "name": "JPMORGAN BETABUILDERS JAPAN",
+    "type": "Mutual Fund"
+  },
+  "00039J830": {
+    "ticker": "SYFI",
+    "name": "AB SHRT DURATION HGH YLD ETF",
+    "type": "Mutual Fund"
+  },
+  "50060P106": {
+    "ticker": "KOP",
+    "name": "KOPPERS HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "25861R105": {
+    "ticker": "DBND",
+    "name": "DOUBLELINE OPPOR COR BND-USD",
+    "type": "Mutual Fund"
+  },
+  "25861R303": {
+    "ticker": "DCRE",
+    "name": "DBL COMM REAL EST DEBT",
+    "type": "Mutual Fund"
+  },
+  "37954Y657": {
+    "ticker": "PFFD",
+    "name": "GLOBAL X US PREFERRED ETF",
+    "type": "Mutual Fund"
+  },
+  "46138E743": {
+    "ticker": "PXF",
+    "name": "INVESCO RAFI DEVELOPED MARKE",
+    "type": "Mutual Fund"
+  },
+  "62886E108": {
+    "ticker": "VYX",
+    "name": "NCR VOYIX CORP",
+    "type": "Common Stock"
+  },
+  "97717W851": {
+    "ticker": "DXJ",
+    "name": "WISDOMTREE JAPAN HEDGED EQ",
+    "type": "Mutual Fund"
+  },
+  "33738R506": {
+    "ticker": "RDVY",
+    "name": "FIRST TRUST RISING DIVIDEND",
+    "type": "Mutual Fund"
+  },
+  "46435U556": {
+    "ticker": "ARTY",
+    "name": "ISHARES FUTURE AI & TECH ETF",
+    "type": "Mutual Fund"
+  },
+  "G36738105": {
+    "ticker": "DMC",
+    "name": "DEL MONTE CORP",
     "via": "sec-name"
   },
-  "86800UAB0": {
-    "ticker": "SMCI",
-    "name": "Super Micro Computer, Inc.",
-    "type": "Corp",
+  "G35947202": {
+    "ticker": "FLNG",
+    "name": "Flex LNG Ltd.",
     "via": "sec-name"
   },
-  "589889AB0": {
-    "ticker": "MMSI",
-    "name": "MERIT MEDICAL SYSTEMS INC",
-    "type": "Corp",
+  "N3144W105": {
+    "ticker": "XPRO",
+    "name": "Expro Ltd",
     "via": "sec-name"
   },
-  "45826HAD1": {
-    "ticker": "ITGR",
-    "name": "Integer Holdings Corp",
-    "type": "Corp",
+  "45768S105": {
+    "ticker": "IOSP",
+    "name": "INNOSPEC INC",
+    "type": "Common Stock"
+  },
+  "012348108": {
+    "ticker": "AIN",
+    "name": "ALBANY INTL CORP-CL A",
+    "type": "Common Stock"
+  },
+  "74347R727": {
+    "ticker": "UXI",
+    "name": "PROSHARES ULTRA INDUSTRIALS",
+    "type": "Mutual Fund"
+  },
+  "46435G102": {
+    "ticker": "ICVT",
+    "name": "ISHARES CONVERTIBLE BOND ETF",
+    "type": "Mutual Fund"
+  },
+  "37954Y350": {
+    "ticker": "EMBD",
+    "name": "GLOBAL X EMERGING MARKETS BD",
+    "type": "Mutual Fund"
+  },
+  "46641Q225": {
+    "ticker": "BBCA",
+    "name": "JPMORGAN BETABUILDERS CANADA",
+    "type": "Mutual Fund"
+  },
+  "92189F437": {
+    "ticker": "ANGL",
+    "name": "VANECK FALLEN ANGEL HIGH YLD",
+    "type": "Mutual Fund"
+  },
+  "06759L103": {
+    "ticker": "BBDC",
+    "name": "BARINGS BDC INC",
+    "type": "Common Stock"
+  },
+  "81752T411": {
+    "ticker": "HEDG",
+    "name": "EQUABLE SHARES HDG EQTY ETF",
+    "type": "Mutual Fund"
+  },
+  "B9151N105": null,
+  "63888U108": {
+    "ticker": "NGVC",
+    "name": "NATURAL GROCERS BY VITAMIN C",
+    "type": "Common Stock"
+  },
+  "05969A105": {
+    "ticker": "TBBK",
+    "name": "BANCORP INC/THE",
+    "type": "Common Stock"
+  },
+  "46137V506": {
+    "ticker": "PFM",
+    "name": "INVESCO DIVIDEND ACHIEVERS E",
+    "type": "Mutual Fund"
+  },
+  "G52694109": {
+    "ticker": "KNSA",
+    "name": "Kiniksa Pharmaceuticals International, plc",
     "via": "sec-name"
+  },
+  "33740F755": {
+    "ticker": "BUFR",
+    "name": "FT VEST LAD BUFFERVETF-USD I",
+    "type": "Mutual Fund"
+  },
+  "55286W405": {
+    "ticker": "MFSI",
+    "name": "MFS ACTIVE INTERNATIONAL",
+    "type": "Mutual Fund"
+  },
+  "46435G334": {
+    "ticker": "EWU",
+    "name": "ISHARES MSCI UNITED KINGDOM",
+    "type": "Mutual Fund"
+  },
+  "78464A292": {
+    "ticker": "PSK",
+    "name": "SS SPDR ICE PREF SEC ETF",
+    "type": "Mutual Fund"
+  },
+  "00847J105": {
+    "ticker": "AGYS",
+    "name": "AGILYSYS INC",
+    "type": "Common Stock"
+  },
+  "33734X119": {
+    "ticker": "FXG",
+    "name": "FIRST TRUST CONSUMER STAPLES",
+    "type": "Mutual Fund"
+  },
+  "74255Y888": {
+    "ticker": "PREF",
+    "name": "PRI SPE PRE SEC ACTI-USD INC",
+    "type": "Mutual Fund"
+  },
+  "025072562": {
+    "ticker": "AVIG",
+    "name": "AVANTIS CORE FIXED INCOME",
+    "type": "Mutual Fund"
+  },
+  "74022D407": {
+    "ticker": "PDS",
+    "name": "PRECISION DRILLING CORP",
+    "type": "Common Stock"
+  },
+  "37253A103": {
+    "ticker": "THRM",
+    "name": "GENTHERM INC",
+    "type": "Common Stock"
+  },
+  "46641Q191": {
+    "ticker": "BBEU",
+    "name": "JPMORGAN BETABUILDERS EUROPE",
+    "type": "Mutual Fund"
+  },
+  "67090S108": {
+    "ticker": "NCDL",
+    "name": "NUVEEN CHURCHILL DIRECT LEND",
+    "type": "Common Stock"
+  },
+  "30041R108": {
+    "ticker": "EVER",
+    "name": "EVERQUOTE INC - CLASS A",
+    "type": "Common Stock"
+  },
+  "92189F726": {
+    "ticker": "BBH",
+    "name": "VANECK BIOTECH ETF",
+    "type": "Mutual Fund"
+  },
+  "00760J108": {
+    "ticker": "AEHR",
+    "name": "AEHR TEST SYSTEMS",
+    "type": "Common Stock"
+  },
+  "00214Q401": {
+    "ticker": "ARKW",
+    "name": "ARK NEXT GENERATION TECHNOLO",
+    "type": "Mutual Fund"
+  },
+  "69344A206": {
+    "ticker": "PHYL",
+    "name": "PGIM ACTIVE HIGH YIELD BOND",
+    "type": "Mutual Fund"
+  },
+  "45257U108": {
+    "ticker": "IMNM",
+    "name": "IMMUNOME INC",
+    "type": "Common Stock"
+  },
+  "33734X192": {
+    "ticker": "SKYY",
+    "name": "FIRST TRUST CLOUD COMPUTING",
+    "type": "Mutual Fund"
+  },
+  "0076CA104": {
+    "ticker": "AEG",
+    "name": "AEGON LTD-NY REG SHR",
+    "type": "Depositary Receipt"
   },
   "73044W302": {
     "ticker": "POET",
     "name": "POET TECHNOLOGIES INC",
     "type": "Common Stock"
   },
-  "093919108": {
-    "ticker": "AIB",
-    "name": "AIB DATA CENTERS INC",
+  "26210V102": {
+    "ticker": "DRVN",
+    "name": "DRIVEN BRANDS HOLDINGS INC",
     "type": "Common Stock"
+  },
+  "29280W109": {
+    "ticker": "NRGV",
+    "name": "ENERGY VAULT HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "G1466R173": {
+    "ticker": "BORR",
+    "name": "Borr Drilling Ltd",
+    "via": "sec-name"
+  },
+  "35909R108": {
+    "ticker": "ULCC",
+    "name": "FRONTIER GROUP HOLDINGS INC",
+    "type": "Common Stock"
+  },
+  "96145W103": {
+    "ticker": "WEST",
+    "name": "WESTROCK COFFEE CO",
+    "type": "Common Stock"
+  },
+  "62914V106": {
+    "ticker": "NIO",
+    "name": "NIO INC - ADR",
+    "type": "Depositary Receipt"
+  },
+  "92707Y108": {
+    "ticker": "VFF",
+    "name": "VILLAGE FARMS INTERNATIONAL",
+    "type": "Common Stock"
+  },
+  "38246G108": {
+    "ticker": "GDRX",
+    "name": "GOODRX HOLDINGS INC-CLASS A",
+    "type": "Common Stock"
+  },
+  "86633R609": {
+    "ticker": "DVLT",
+    "name": "DATAVAULT AI INC",
+    "type": "Common Stock"
+  },
+  "67092P722": {
+    "ticker": "NHYM",
+    "name": "NUVEEN HY MUNICIPAL BOND ETF",
+    "type": "Mutual Fund"
+  },
+  "G4766E116": null,
+  "92189F411": {
+    "ticker": "BIZD",
+    "name": "VANECK BDC INCOME ETF",
+    "type": "Mutual Fund"
+  },
+  "25434V617": {
+    "ticker": "DFAW",
+    "name": "DIMENSIONAL WORLD EQTY ETF",
+    "type": "Mutual Fund"
+  },
+  "33737A108": {
+    "ticker": "GRID",
+    "name": "FIRST TRST NASD CL EDG SGIIF",
+    "type": "Mutual Fund"
+  },
+  "046353108": {
+    "ticker": "AZN",
+    "name": "ASTRAZENECA PLC",
+    "type": "Depositary Receipt",
+    "via": "sec-name"
+  },
+  "81282V100": {
+    "ticker": "PRKS",
+    "name": "UNITED PARKS & RESORTS INC",
+    "type": "Common Stock"
+  },
+  "G0250X107": {
+    "ticker": "AMCR",
+    "name": "Amcor plc",
+    "via": "sec-name"
+  },
+  "G42706104": {
+    "ticker": "HG",
+    "name": "Hamilton Insurance Group, Ltd.",
+    "via": "sec-name"
+  },
+  "25861R709": {
+    "ticker": "DMX",
+    "name": "DOUBLELINE MULTI-SEC INC ETF",
+    "type": "Mutual Fund"
+  },
+  "38747R579": {
+    "ticker": "YSPY",
+    "name": "GRANITE YIELDBOOST SPY",
+    "type": "Mutual Fund"
+  },
+  "66538J258": {
+    "ticker": "DFTT",
+    "name": "DF TACTICAL 30 ETF",
+    "type": "Mutual Fund"
+  },
+  "29082K105": {
+    "ticker": "EMBC",
+    "name": "EMBECTA CORP",
+    "type": "Common Stock"
+  },
+  "30234F101": {
+    "ticker": "XZO",
+    "name": "EXZEO GROUP INC",
+    "type": "Common Stock"
+  },
+  "03879J100": {
+    "ticker": "ABUS",
+    "name": "ARBUTUS BIOPHARMA CORP",
+    "type": "Common Stock"
+  },
+  "96328L205": {
+    "ticker": "UP",
+    "name": "Wheels Up Experience Inc.",
+    "type": "Common Stock",
+    "via": "sec-name"
   }
 }
