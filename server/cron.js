@@ -157,9 +157,11 @@ export async function weekly({ DB, env, site, index, after = 0, pageSize = 60, n
       const x = index.tickers[t];
       if (!x) return { t, name: t, owners: 0, bought: 0, trimmed: 0, exited: 0, holders: [], earnings: null };
       const e = x[7] && Date.parse(x[7]) - now < 14 * 864e5 && Date.parse(x[7]) >= now - 864e5 ? x[7] : null;
-      return { t, name: x[0], owners: x[1], bought: x[2], trimmed: x[3], exited: x[4], holders: (x[6] || []).map((i) => order[i]), earnings: e ? fmtShort(e) : null };
+      // Free digests name only the investors with public pages; Pro-only ones are counted for Pro members.
+      const holders = (x[6] || []).map((i) => order[i]).filter((m) => pro || !index.managers?.[m]?.p);
+      return { t, name: x[0], owners: pro ? x[1] : holders.length, bought: x[2], trimmed: x[3], exited: x[4], holders, earnings: e ? fmtShort(e) : null };
     });
-    const events = al.filter((r) => r.user_id === user.id).map((r) => JSON.parse(r.event)).filter((e) => tickers.includes(e.t));
+    const events = al.filter((r) => r.user_id === user.id).map((r) => JSON.parse(r.event)).filter((e) => tickers.includes(e.t) && (pro || !e.pro));
     msgs.push(weeklyEmail(env, { site, user, events, managers: index.managers, snapshot, pro, brief }));
     sentIds.push(user.id);
   }

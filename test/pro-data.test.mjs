@@ -266,3 +266,20 @@ test('SEC ID finder: reads EDGAR search hits and scores name matches', async () 
   assert.equal(nameScore('Citadel Advisors', 'CITADEL ADVISORS LLC'), 1);
   assert.ok(nameScore('Jana Partners', 'JANUS HENDERSON GROUP PLC') < 0.5);
 });
+
+test('Pro-only investors: public teaser with top 5, listed under "more investors in Pro"', async () => {
+  const { investorTeaser, proInvestorsSection } = await import('../src/pages/investors.mjs');
+  const holdings = Array.from({ length: 8 }, (_, i) => ({ label: `T${i}`, name: `Company ${i}`, w: 20 - i, ticker: `T${i}` }));
+  const inv = { slug: 'x-fund', manager: 'Jane Doe', firm: 'X Fund', categories: ['growth'], avatar: 'JD', tags: ['Growth'], about: 'About X.', philosophy: ['Idea one.'], pro: true,
+    p: { holdings, totalValue: 5e9, holdingsCount: 812, topN: 150, period: '2026-06-30', filingDate: '2026-08-14', filingUrl: 'https://www.sec.gov/x', counts: { new: 3, added: 4, reduced: 2, sold: 1 } } };
+  const page = investorTeaser({}, inv);
+  assert.equal(page.path, '/investors/x-fund.html');
+  assert.match(page.title, /Jane Doe Portfolio/);
+  assert.ok(page.body.includes('T4') && !page.body.includes('Company 5'), 'only the top 5 are public');
+  assert.match(page.body, /top 150 positions/);
+  assert.match(page.body, /10 buys and sells/);
+  const sect = proInvestorsSection({ proOnly: [inv] });
+  assert.match(sect, /1 more investor in QWERTx Pro/);
+  assert.match(sect, /\/investors\/x-fund\.html/);
+  assert.equal(proInvestorsSection({ proOnly: [] }), '');
+});

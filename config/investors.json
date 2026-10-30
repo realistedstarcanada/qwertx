@@ -783,7 +783,6 @@
         "value",
         "quant"
       ],
-      "pro": true,
       "group": "institution",
       "topN": 150
     },
@@ -1164,7 +1163,6 @@
         "growth",
         "quant"
       ],
-      "pro": true,
       "group": "institution",
       "topN": 150
     },

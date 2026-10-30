@@ -864,3 +864,5 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 .px-dir-body { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
 .px-dir-body > p { margin: 0 0 8px; color: var(--text-2); line-height: 1.55; font-size: 14.5px; max-width: 60em; }
 @media (max-width: 760px) { .px-dir-grid { grid-template-columns: minmax(0, 1fr); } .px-dir .px-h2row .input { max-width: none; width: 100%; } }
+.pro-more { display: inline-flex; align-items: center; gap: 6px; margin-left: 4px; color: var(--gold); white-space: nowrap; }
+.pro-teaser { border-color: color-mix(in srgb, var(--gold) 45%, var(--line)); }

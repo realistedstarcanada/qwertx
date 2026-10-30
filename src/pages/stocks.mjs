@@ -69,7 +69,7 @@ export function stockPage(d, s) {
     eyebrow: `${esc(s.sector)} · owned by ${s.owners} fund manager${s.owners > 1 ? 's' : ''}`,
     h1: `Who owns ${esc(label)}?`,
     extra: earningsChip(s) + watchStrip(s.ticker),
-    lead: `${s.owners} of the ${N} fund managers we track hold ${esc(s.name)}, worth ${money(s.value)} combined as of ${quarter(d.latestPeriod)}. ${esc(top.inv.manager)} has the biggest bet at ${pct(top.w)} of the portfolio.`,
+    lead: `${s.owners} of the ${N} fund managers we track hold ${esc(s.name)}, worth ${money(s.value)} combined as of ${quarter(d.latestPeriod)}. ${esc(top.inv.manager)} has the biggest bet at ${pct(top.w)} of the portfolio.${s.proOwners ? ` <a href="/pro.html" class="pro-more"><i class="fa-solid fa-lock" aria-hidden="true"></i> + ${s.proOwners} more investor${s.proOwners > 1 ? 's' : ''} tracked in QWERTx Pro</a>` : ''}`,
   })}
 <section class="section-sm">
   <div class="container">
@@ -95,6 +95,7 @@ export function stockPage(d, s) {
 </section>
 <section class="section-sm">
   <div class="container">
+    ${s.proOwners ? `<div class="watch-strip reveal" style="margin:0 0 18px"><p><i class="fa-solid fa-lock" aria-hidden="true"></i> <b>${s.proOwners} more investor${s.proOwners > 1 ? 's' : ''}</b> tracked in QWERTx Pro also own ${esc(s.label)}, from growth funds and activists to the biggest hedge funds.</p><a class="btn btn-sm btn-gold" href="/pro.html">See who with Pro</a></div>` : ''}
     <div class="row between center reveal" style="margin-bottom:20px"><h2 style="font-size:30px;margin:0">Fund managers who own ${esc(s.label)}</h2>${sourceChip(`SEC 13F ${tip('13F')} · ${quarter(d.latestPeriod)}`)}</div>
     <div class="table-wrap reveal"><table class="data" data-sortable style="min-width:620px">
       <caption class="sr-only">Fund managers holding ${esc(s.name)}</caption>

@@ -267,11 +267,12 @@ export function buildEvents(d, { now = Date.now() } = {}) {
   const recent = (iso) => iso && daysAgo(iso, now) <= EVENT_WINDOW_DAYS;
 
   // 13F: new positions, changes in shares and full exits, one event per manager per company per filing.
-  for (const inv of [...d.live, ...(d.institutions || [])]) {
+  for (const inv of [...d.live, ...(d.institutions || []), ...(d.proOnly || [])]) {
     const p = inv.p;
     if (!recent(p.filingDate)) continue;
     const seen = new Set();
-    const base = { k: '13f', at: p.filingDate, m: inv.slug, p: p.period, u: p.filingUrl };
+    // pro: 1 = a Pro-only manager; free members' weekly digests leave these out.
+    const base = { k: '13f', at: p.filingDate, m: inv.slug, p: p.period, u: p.filingUrl, ...(inv.pro ? { pro: 1 } : {}) };
     for (const h of p.holdings) {
       if (!TICKER.test(h.ticker || '') || h.putCall || h.shType === 'PRN' || seen.has(h.issuer)) continue;
       if (h.act === 'Hold') continue;

@@ -44,6 +44,7 @@ ${d.institutions?.length ? `<section class="section-sm" id="institutions">
         .join('')}</tbody></table></div>
   </div>
 </section>
+${proInvestorsSection(d)}
 ${proCta}`;
   return { page: 'investors', path: '/investors.html', title: 'Super Investors: Latest 13F Portfolios', description: `Portfolios of ${d.live.length} super investors including Warren Buffett, Bill Ackman, Chris Hohn and Seth Klarman, decoded from their latest SEC 13F filings.`, body, charts: false };
 }
@@ -242,4 +243,72 @@ export function investorPending(inv) {
     noindex: true,
     body: pageHero({ crumbs: [['Fund Managers', '/investors.html'], [inv.manager]], eyebrow: 'Super investor portfolio', h1: `${esc(inv.manager)} portfolio`, lead: 'This portfolio fills in automatically on the next SEC data update.' }),
   };
+}
+
+const CAT_LABEL = { value: 'Value investor', growth: 'Growth and technology', activist: 'Activist', quant: 'Quant, macro and multi-strategy', canada: 'Canadian investor', more: 'Investor worth following' };
+
+/** Public teaser for a manager whose full portfolio is part of QWERTx Pro: who they are and their top 5 holdings. */
+export function investorTeaser(d, inv) {
+  const p = inv.p;
+  const top5 = p.holdings.slice(0, 5);
+  const maxW = top5[0]?.w || 1;
+  const cats = (inv.categories || []).map((c) => CAT_LABEL[c]).filter(Boolean);
+  const moves = (p.counts?.new || 0) + (p.counts?.added || 0) + (p.counts?.reduced || 0) + (p.counts?.sold || 0);
+  const body = `${pageHero({
+    crumbs: [['Fund Managers', '/investors.html'], [inv.manager]],
+    eyebrow: esc(cats[0] || 'Investor') + ' portfolio',
+    h1: `${esc(inv.manager)} portfolio`,
+    lead: esc(inv.about || `Latest US stock holdings of ${inv.firm}.`),
+  })}
+<section class="section-sm">
+  <div class="container">
+    <div class="row">
+      ${kpi('Portfolio value', money(p.totalValue), `US-listed stocks, ${quarter(p.period)}`)}
+      ${kpi('Positions', int(p.holdingsCount), p.topN ? `QWERTx Pro shows the top ${p.topN}` : 'All in QWERTx Pro')}
+      ${kpi('Top 5 make up', pct(top5.reduce((a, h) => a + h.w, 0)), 'of the portfolio')}
+      ${kpi('Latest filing', date(p.filingDate), `SEC 13F for ${quarter(p.period)}`)}
+    </div>
+    <div class="row mt-32">
+      <div class="col-7 reveal"><div class="card">
+        <div class="card-label"><span>Top 5 holdings</span><span>${quarter(p.period)}</span></div>
+        <ul class="rank-list hero-rank">${top5.map((h, i) => `<li><span class="r">${i + 1}</span><span class="t">${tkr(h.label, h.stockSlug)}<small>${esc(h.name)}</small></span><span class="v">${wbar(h.w, maxW, 35)}${pct(h.w)}</span></li>`).join('')}</ul>
+        <p class="form-note mt-32">${sourceChip(`SEC 13F${tip('13F')} · filed ${date(p.filingDate)} · <a href="${esc(p.filingUrl)}" target="_blank" rel="noopener">View filing</a>`)}</p>
+      </div></div>
+      <div class="col-5 reveal"><div class="card pro-teaser" style="height:100%">
+        <div class="card-label"><span>QWERTx Pro</span></div>
+        <h3>See the whole portfolio</h3>
+        <ul class="list-check">
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>All ${p.topN ? `top ${p.topN}` : int(p.holdingsCount)} positions with weights</span></li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>${moves ? `${int(moves)} buys and sells` : 'Every buy and sell'} from the latest quarter</span></li>
+          <li><i class="fa-solid fa-check" aria-hidden="true"></i><span>Which of <b>your</b> stocks ${esc(inv.manager)} owns, and an email when that changes</span></li>
+        </ul>
+        <div class="btn-row mt-32"><a class="btn btn-gold" href="/pro.html">See QWERTx Pro</a><a class="btn" href="/account.html#smart">I’m a member</a></div>
+      </div></div>
+    </div>
+    ${(inv.philosophy || []).length ? `<div class="card mt-32 reveal"><div class="card-label"><span>How ${esc(inv.manager.split(' & ')[0])} invests</span>${(inv.tags || []).map((t) => `<span class="tag tag-gold">${esc(t)}</span>`).join(' ')}</div><ul class="list-check">${inv.philosophy.map((x) => `<li><i class="fa-solid fa-angle-right" aria-hidden="true"></i><span>${esc(x)}</span></li>`).join('')}</ul></div>` : ''}
+  </div>
+</section>
+${proCta}`;
+  return {
+    page: 'investors',
+    path: `/investors/${inv.slug}.html`,
+    title: `${inv.manager} Portfolio: Top Holdings from the Latest 13F`,
+    description: `${inv.manager} (${inv.firm}) latest 13F portfolio: ${int(p.holdingsCount)} US stock positions worth ${money(p.totalValue)} as of ${quarter(p.period)}. Top holdings: ${top5.map((h) => h.label).join(', ')}.`,
+    body,
+    charts: false,
+  };
+}
+
+/** "More investors in QWERTx Pro" section for the Fund Managers page, grouped by category. */
+export function proInvestorsSection(d) {
+  const list = d.proOnly || [];
+  if (!list.length) return '';
+  const order = ['value', 'growth', 'activist', 'quant', 'canada', 'more'];
+  const groups = order.map((c) => [c, list.filter((i) => (i.categories || [])[0] === c)]).filter(([, l]) => l.length);
+  return `<section class="section-sm" id="more-investors">
+  <div class="container">
+    <div class="section-head reveal" style="margin-bottom:24px"><div><div class="card-label" style="margin:0"><span>QWERTx Pro</span></div><h2 style="font-size:32px;margin:6px 0 0">${list.length} more investor${list.length > 1 ? "s" : ""} in QWERTx Pro</h2></div><p>Growth funds, activists, quant giants and Canadian firms. See who they are and their top holdings here; their full portfolios, moves and alerts are part of Pro.</p></div>
+    ${groups.map(([c, l]) => `<h3 class="mt-32" style="font-size:19px">${esc(CAT_LABEL[c])}s</h3><div class="v-grid">${l.sort((a, b) => b.p.totalValue - a.p.totalValue).map((i) => `<a class="v-card" href="/investors/${i.slug}.html"><span class="avatar" aria-hidden="true">${esc(i.avatar)}</span><b>${esc(i.manager)}</b><div class="firm">${esc(i.firm)}</div><div class="row"><span>${money(i.p.totalValue)}</span><span><i class="fa-solid fa-lock" aria-hidden="true"></i> Pro</span></div><div class="top3">${i.p.holdings.slice(0, 3).map((h) => `<span class="v-tk">${esc(h.label)}</span>`).join('')}</div></a>`).join('')}</div>`).join('')}
+  </div>
+</section>`;
 }

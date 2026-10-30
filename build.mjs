@@ -8,7 +8,7 @@ import { fileURLToPath } from 'node:url';
 import { loadData } from './src/lib/data.mjs';
 import { layout } from './src/layout.mjs';
 import { home } from './src/pages/home.mjs';
-import { investorsIndex, investorPage, investorPending } from './src/pages/investors.mjs';
+import { investorsIndex, investorPage, investorPending, investorTeaser } from './src/pages/investors.mjs';
 import { stockPage } from './src/pages/stocks.mjs';
 import { smartMoney } from './src/pages/smart.mjs';
 import { politicians } from './src/pages/politicians.mjs';
@@ -67,6 +67,7 @@ const pages = [
   home(d),
   investorsIndex(d),
   ...d.investors.map((inv) => (inv.p ? investorPage(d, inv) : investorPending(inv))),
+  ...(d.proOnly || []).map((inv) => investorTeaser(d, inv)),
   smartMoney(d),
   ...d.stocks.map((s) => stockPage(d, s)),
   ...d.extraStocks.map((s) => stockPage(d, s)),

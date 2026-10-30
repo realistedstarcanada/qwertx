@@ -158,6 +158,11 @@ export function loadData({ root, dataDir, configPath }) {
   const proOnly = withDataAll.filter((i) => i.pro);
   const live = withData.filter((i) => i.group !== 'institution');
   const institutions = withData.filter((i) => i.group === 'institution');
+  const proOwnerCount = new Map(); // issuer -> how many Pro-only super investors hold it (shown as a teaser)
+  for (const inv of proOnly) {
+    if (inv.group === 'institution') continue;
+    for (const k of new Set(inv.p.holdings.filter((h) => !h.putCall && h.shType !== 'PRN').map((h) => h.issuer))) proOwnerCount.set(k, (proOwnerCount.get(k) || 0) + 1);
+  }
 
   // ---------- Similarity (cosine on issuer-level weights) ----------
   const vec = new Map(withData.map((i) => {
@@ -237,6 +242,7 @@ export function loadData({ root, dataDir, configPath }) {
     s.sector = (ticker && sectors[ticker]?.sector) || 'Other';
     s.slug = ticker ? slugify(ticker) : s.issuer.toLowerCase();
     s.owners = s.holders.length;
+    s.proOwners = proOwnerCount.get(s.issuer) || 0;
     s.holders.sort((a, b) => b.w - a.w);
     s.maxW = s.holders[0]?.w || 0;
     s.buyers = s.holders.filter((x) => x.act === 'New' || x.act === 'Add').length;
