@@ -1,5 +1,5 @@
 {
-  "_note": "Super investors tracked by QWERTx. 'cik' is the SEC filer ID; 'expect' must appear in the SEC entity name or the investor is skipped (protects against a wrong CIK). Profile text (tags, meta, about, philosophy) appears on each investor page. The data workflow runs automatically when this file changes.",
+  "_note": "Super investors tracked by QWERTx. 'cik' is the SEC filer ID; 'expect' must appear in the SEC entity name or the investor is skipped (protects against a wrong CIK). Profile text (tags, meta, about, philosophy) appears on each investor page. The data workflow runs automatically when this file changes. 'categories' groups managers on the Pro investor directory (value, growth, activist, quant, canada, more). 'pro': true managers appear only for Pro members: no public page, not counted in public rankings. 'topN' keeps only that many of the biggest positions for funds that file thousands.",
   "investors": [
     {
       "slug": "warren-buffett",
@@ -19,6 +19,9 @@
         "Buy wonderful businesses at fair prices and hold them for a very long time.",
         "Stay inside your circle of competence and demand a margin of safety.",
         "Keep plenty of cash so you can act when others are fearful."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -42,6 +45,10 @@
       ],
       "previousCiks": [
         "0001336528"
+      ],
+      "categories": [
+        "value",
+        "activist"
       ]
     },
     {
@@ -62,6 +69,10 @@
         "Own businesses with durable barriers to entry and pricing power.",
         "Concentrate in your best ideas.",
         "Engage hard when governance or strategy falls short."
+      ],
+      "categories": [
+        "value",
+        "activist"
       ]
     },
     {
@@ -82,6 +93,9 @@
         "Preserve capital to fund decades of grant-making.",
         "Hold durable, high-quality companies.",
         "Steady, long-term stewardship rather than trading."
+      ],
+      "categories": [
+        "more"
       ]
     },
     {
@@ -102,6 +116,9 @@
         "Do the right things, and do them right.",
         "Only buy what you understand and would own for ten years.",
         "Very few decisions, held with patience."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -122,6 +139,9 @@
         "Buy businesses trading at a big discount to intrinsic value.",
         "Invest with managers who think like owners.",
         "Sell when price approaches value, then repeat."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -142,6 +162,9 @@
         "Back the long-term winners of technology shifts.",
         "Combine deep fundamental research with a global lens.",
         "Size positions by conviction and earnings growth."
+      ],
+      "categories": [
+        "growth"
       ]
     },
     {
@@ -162,6 +185,10 @@
         "Find businesses whose growth the market underestimates.",
         "Do intense, bottom-up research on management and competition.",
         "Rotate quickly when the thesis changes."
+      ],
+      "categories": [
+        "growth",
+        "more"
       ]
     },
     {
@@ -182,6 +209,9 @@
         "Buy good companies.",
         "Don’t overpay.",
         "Do nothing."
+      ],
+      "categories": [
+        "growth"
       ]
     },
     {
@@ -202,6 +232,10 @@
         "Profitable businesses with good returns and little debt.",
         "Management teams with equal talent and integrity.",
         "Reinvestment opportunities, at a fair price."
+      ],
+      "categories": [
+        "value",
+        "more"
       ]
     },
     {
@@ -222,6 +256,10 @@
         "Buy when a company is out of favour and management can be challenged.",
         "Shareholders, not managers, should decide a company’s direction.",
         "Be willing to stand alone against consensus."
+      ],
+      "categories": [
+        "value",
+        "activist"
       ]
     },
     {
@@ -242,6 +280,9 @@
         "Be aggressive when fear is at its highest and prices reflect it.",
         "Follow policy and the economic cycle, not just company stories.",
         "Change your mind fast when the facts change."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -262,6 +303,9 @@
         "You can’t predict the future, but you can know where we are in the cycle.",
         "Second-level thinking: ask what everyone else is missing.",
         "Risk means the chance of permanent loss, not volatility."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -282,6 +326,10 @@
         "Own extraordinary businesses with high returns on capital.",
         "Back managers with integrity and talent.",
         "Look for great reinvestment opportunities, then sit still."
+      ],
+      "categories": [
+        "value",
+        "more"
       ]
     },
     {
@@ -302,6 +350,10 @@
         "Look for catalysts that can close the gap between price and value.",
         "Engage directly when management falls short.",
         "Move nimbly across asset classes."
+      ],
+      "categories": [
+        "value",
+        "activist"
       ]
     },
     {
@@ -322,6 +374,9 @@
         "Think like an owner of the whole business, not a trader of its stock.",
         "Concentrate on the few ideas you understand deeply.",
         "Let compounding work over decades."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -342,6 +397,10 @@
         "Buy when others are selling, with a margin of safety.",
         "Protect the downside first; returns will follow.",
         "Fair and friendly long-term partnerships with management."
+      ],
+      "categories": [
+        "canada",
+        "value"
       ]
     },
     {
@@ -362,6 +421,10 @@
         "A margin of safety comes first: avoid permanent loss of capital.",
         "Look where others are forced or unwilling to sell.",
         "Holding cash is fine when bargains are scarce."
+      ],
+      "categories": [
+        "value",
+        "more"
       ]
     },
     {
@@ -382,6 +445,9 @@
         "Few bets, big bets, infrequent bets.",
         "Clone the best ideas of great investors shamelessly.",
         "Low risk, high uncertainty situations are where the bargains hide."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -402,6 +468,10 @@
         "Great brands can underperform because of strategy, not because of the business.",
         "Operational change and focus unlock value.",
         "Be patient and constructive, but persistent."
+      ],
+      "categories": [
+        "value",
+        "activist"
       ]
     },
     {
@@ -422,6 +492,9 @@
         "Make big bets when conviction is high, and cut losses quickly when wrong.",
         "Follow liquidity and central banks: they drive markets more than earnings.",
         "Stay flexible; no position is permanent."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -445,6 +518,10 @@
       ],
       "previousCiks": [
         "0001079114"
+      ],
+      "categories": [
+        "value",
+        "activist"
       ]
     },
     {
@@ -465,6 +542,9 @@
         "Invest in innovation platforms that can change how the world works.",
         "Think in five-year time frames, not quarters.",
         "Concentrate in high-conviction ideas and lean in when they are out of favour."
+      ],
+      "categories": [
+        "growth"
       ]
     },
     {
@@ -485,6 +565,10 @@
         "Own brands that travel well into fast-growing markets.",
         "Back managers with the “capacity to suffer”: reinvesting even when it hurts short-term profits.",
         "Hold for decades and let compounding do the work."
+      ],
+      "categories": [
+        "value",
+        "growth"
       ]
     },
     {
@@ -505,6 +589,9 @@
         "Own a few great businesses and trade very rarely.",
         "Design your environment to avoid bad decisions: fewer screens, fewer meetings.",
         "Use checklists to catch mistakes before they cost money."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -525,6 +612,10 @@
         "Concentrate in the few ideas you know best.",
         "Buy what others are afraid of, with a wide margin of safety.",
         "Judge companies by the cash they generate, not reported earnings."
+      ],
+      "categories": [
+        "value",
+        "activist"
       ]
     },
     {
@@ -545,6 +636,9 @@
         "Buy good businesses (high return on capital) at bargain prices (high earnings yield).",
         "Stick with a sound process through long stretches when it lags.",
         "Value is about what a business is worth, not what the stock did lately."
+      ],
+      "categories": [
+        "value"
       ]
     },
     {
@@ -566,6 +660,9 @@
         "Invest for generations, not for the next quarter.",
         "Diversify across assets, regions and strategies.",
         "Use long horizons and scale as advantages."
+      ],
+      "categories": [
+        "canada"
       ]
     },
     {
@@ -587,6 +684,9 @@
         "Combine public and private market strategies.",
         "Focus on quality companies with durable growth.",
         "Manage risk across many separate mandates."
+      ],
+      "categories": [
+        "canada"
       ]
     },
     {
@@ -608,6 +708,9 @@
         "Own quality companies with sustainable growth.",
         "Pay a reasonable price and hold for the long term.",
         "Avoid excessive debt and weak governance."
+      ],
+      "categories": [
+        "canada"
       ]
     },
     {
@@ -629,6 +732,9 @@
         "Buy wealth-creating companies with excellent management at discounts to intrinsic value.",
         "Be boring: patience and discipline over prediction.",
         "Diversify thoughtfully and stay invested."
+      ],
+      "categories": [
+        "canada"
       ]
     },
     {
@@ -650,7 +756,1074 @@
         "Buy at a discount to business value.",
         "Focus on free cash flow and strong balance sheets.",
         "Sell when prices reach business value; stay disciplined."
+      ],
+      "categories": [
+        "canada"
       ]
+    },
+    {
+      "slug": "ray-dalio",
+      "manager": "Ray Dalio",
+      "firm": "Bridgewater Associates",
+      "cik": "0001350694",
+      "expect": "BRIDGEWATER",
+      "avatar": "RD",
+      "tags": [
+        "Macro",
+        "All-weather",
+        "Diversified"
+      ],
+      "meta": "Bridgewater Associates · Westport, Connecticut · founded 1975",
+      "about": "Ray Dalio founded Bridgewater, one of the world’s largest hedge funds, known for its macro research and “All Weather” portfolio. He has since stepped back from running the firm. Its 13F shows only the US-listed stock part of a much larger, global book.",
+      "philosophy": [
+        "Understand how the economic machine works: debt cycles, growth and inflation.",
+        "Balance risks so no single economic outcome can sink the portfolio."
+      ],
+      "categories": [
+        "value",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "george-soros",
+      "manager": "George Soros",
+      "firm": "Soros Fund Management",
+      "cik": "0001029160",
+      "expect": "SOROS",
+      "avatar": "GS",
+      "tags": [
+        "Macro",
+        "Opportunistic",
+        "Global"
+      ],
+      "meta": "Soros Fund Management · New York · founded 1970",
+      "about": "George Soros became famous for big macro bets on currencies and markets. Soros Fund Management now invests mainly the family’s and foundation’s money, run by a professional team.",
+      "philosophy": [
+        "Markets are often wrong, and mistaken beliefs can feed on themselves until they break.",
+        "Bet big when the odds are clearly in your favour, and cut losses quickly."
+      ],
+      "categories": [
+        "value"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "bill-miller",
+      "manager": "Bill Miller",
+      "firm": "Miller Value Partners",
+      "cik": "0001135778",
+      "expect": "MILLER",
+      "avatar": "BM",
+      "tags": [
+        "Value",
+        "Contrarian",
+        "Concentrated"
+      ],
+      "meta": "Miller Value Partners · Baltimore, Maryland",
+      "about": "Bill Miller beat the S&P 500 for 15 years in a row at Legg Mason in the 1990s and 2000s, partly by treating fast-growing companies like Amazon as value stocks.",
+      "philosophy": [
+        "Value means paying less than a business is worth, whether it is growing fast or not.",
+        "Be willing to look wrong for a while if the long-term math works."
+      ],
+      "categories": [
+        "value"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "mason-hawkins",
+      "manager": "Mason Hawkins",
+      "firm": "Southeastern Asset Management",
+      "cik": "0000807985",
+      "expect": "SOUTHEASTERN",
+      "avatar": "MH",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Long-term"
+      ],
+      "meta": "Southeastern Asset Management (Longleaf Partners) · Memphis, Tennessee",
+      "about": "Mason Hawkins founded Southeastern Asset Management, home of the Longleaf Partners funds, a classic deep-value shop that owns a small number of companies.",
+      "philosophy": [
+        "Buy strong businesses with capable, owner-minded management at a big discount to their value.",
+        "Own few stocks and know them very well."
+      ],
+      "categories": [
+        "value",
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "paul-singer",
+      "manager": "Paul Singer",
+      "firm": "Elliott Investment Management",
+      "cik": "0001791786",
+      "expect": "ELLIOTT",
+      "avatar": "PS",
+      "tags": [
+        "Activist",
+        "Event-driven",
+        "Credit"
+      ],
+      "meta": "Elliott Investment Management · West Palm Beach, Florida · founded 1977",
+      "about": "Paul Singer founded Elliott, one of the oldest and largest activist funds. It often buys big stakes and pushes companies for changes such as asset sales, new directors or buybacks.",
+      "philosophy": [
+        "Find companies worth more than their share price, then push for the changes that close the gap.",
+        "Protect the downside first."
+      ],
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "jeff-smith",
+      "manager": "Jeff Smith",
+      "firm": "Starboard Value",
+      "cik": "0001517137",
+      "expect": "STARBOARD",
+      "avatar": "JS",
+      "tags": [
+        "Activist",
+        "Operational",
+        "Board seats"
+      ],
+      "meta": "Starboard Value · New York",
+      "about": "Jeff Smith’s Starboard Value is an activist fund known for detailed plans to improve under-performing companies, often winning board seats to carry them out.",
+      "philosophy": [
+        "Under-performing companies can be fixed with better costs, focus and governance.",
+        "Engage with management first; go to shareholders if needed."
+      ],
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "mason-morfit",
+      "manager": "Mason Morfit",
+      "firm": "ValueAct Capital",
+      "cik": "0001418814",
+      "expect": "VALUEACT",
+      "avatar": "MM",
+      "tags": [
+        "Activist",
+        "Constructive",
+        "Concentrated"
+      ],
+      "meta": "ValueAct Capital · San Francisco",
+      "about": "ValueAct, led by Mason Morfit, takes large stakes in a few companies and works with their boards, usually quietly rather than through public fights.",
+      "philosophy": [
+        "Own a few quality companies and help them improve from the inside.",
+        "Patience: stay for years, not quarters."
+      ],
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "keith-meister",
+      "manager": "Keith Meister",
+      "firm": "Corvex Management",
+      "cik": "0001535472",
+      "expect": "CORVEX",
+      "avatar": "KM",
+      "tags": [
+        "Activist",
+        "Event-driven",
+        "Concentrated"
+      ],
+      "meta": "Corvex Management · New York",
+      "about": "Keith Meister, a former Carl Icahn protégé, runs Corvex, a concentrated fund that invests in companies where a catalyst such as a sale or restructuring can unlock value.",
+      "philosophy": [
+        "Look for a clear event that can make the market re-price a stock.",
+        "Concentrate on the best few ideas."
+      ],
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "philippe-laffont",
+      "manager": "Philippe Laffont",
+      "firm": "Coatue Management",
+      "cik": "0001135730",
+      "expect": "COATUE",
+      "avatar": "PL",
+      "tags": [
+        "Growth",
+        "Technology",
+        "Long/short"
+      ],
+      "meta": "Coatue Management · New York · founded 1999",
+      "about": "Philippe Laffont founded Coatue, a technology-focused fund that invests in both public and private companies, with large stakes in internet, software and AI leaders.",
+      "philosophy": [
+        "Technology shifts create a few very big winners; find them early.",
+        "Combine public stocks with private companies to see trends first."
+      ],
+      "categories": [
+        "growth"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "andreas-halvorsen",
+      "manager": "Andreas Halvorsen",
+      "firm": "Viking Global Investors",
+      "cik": "0001103804",
+      "expect": "VIKING",
+      "avatar": "AH",
+      "tags": [
+        "Growth",
+        "Long/short",
+        "Fundamental"
+      ],
+      "meta": "Viking Global Investors · Greenwich, Connecticut · founded 1999",
+      "about": "Andreas Halvorsen, a “Tiger Cub” trained under Julian Robertson, runs Viking Global, which picks stocks on deep company research and bets against weaker ones.",
+      "philosophy": [
+        "Know the companies, their managers and their competitors in depth.",
+        "Pair good businesses you own with weaker ones you bet against."
+      ],
+      "categories": [
+        "growth",
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "dan-sundheim",
+      "manager": "Dan Sundheim",
+      "firm": "D1 Capital Partners",
+      "cik": "0001747057",
+      "expect": "CAPITAL",
+      "avatar": "DS",
+      "tags": [
+        "Growth",
+        "Concentrated",
+        "Public and private"
+      ],
+      "meta": "D1 Capital Partners · New York · founded 2018",
+      "about": "Dan Sundheim, formerly Viking Global’s chief investment officer, founded D1 Capital, which invests in fast-growing public and private companies.",
+      "philosophy": [
+        "Back high-quality businesses that can grow for many years.",
+        "Size positions by conviction."
+      ],
+      "categories": [
+        "growth",
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "brad-gerstner",
+      "manager": "Brad Gerstner",
+      "firm": "Altimeter Capital Management",
+      "cik": "0001541617",
+      "expect": "ALTIMETER",
+      "avatar": "BG",
+      "tags": [
+        "Growth",
+        "Technology",
+        "AI"
+      ],
+      "meta": "Altimeter Capital · Menlo Park, California",
+      "about": "Brad Gerstner’s Altimeter Capital invests in technology and travel companies, from early private rounds to large public stocks, and is known for big bets on AI leaders.",
+      "philosophy": [
+        "Invest in a few companies riding the biggest technology waves.",
+        "Stay with winners while the story keeps improving."
+      ],
+      "categories": [
+        "growth"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "lee-ainslie",
+      "manager": "Lee Ainslie",
+      "firm": "Maverick Capital",
+      "cik": "0000934639",
+      "expect": "MAVERICK",
+      "avatar": "LA",
+      "tags": [
+        "Growth",
+        "Long/short",
+        "Fundamental"
+      ],
+      "meta": "Maverick Capital · Dallas, Texas · founded 1993",
+      "about": "Lee Ainslie, another Tiger Cub, built Maverick Capital into a long-running stock-picking fund that owns companies it likes and bets against ones it doesn’t.",
+      "philosophy": [
+        "Pick stocks company by company, not by market forecasts.",
+        "Keep risk balanced between what you own and what you bet against."
+      ],
+      "categories": [
+        "growth"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "larry-robbins",
+      "manager": "Larry Robbins",
+      "firm": "Glenview Capital Management",
+      "cik": "0001138995",
+      "expect": "GLENVIEW",
+      "avatar": "LR",
+      "tags": [
+        "Growth",
+        "Health care",
+        "Concentrated"
+      ],
+      "meta": "Glenview Capital Management · New York",
+      "about": "Larry Robbins’ Glenview Capital is known especially for health-care investments and for occasionally pushing companies for change.",
+      "philosophy": [
+        "Find mispriced companies in complex industries such as health care.",
+        "Concentrate on a manageable number of ideas."
+      ],
+      "categories": [
+        "growth"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "manager": "Leopold Aschenbrenner",
+      "firm": "Situational Awareness LP",
+      "cik": "0002045724",
+      "expect": "SITUATIONAL",
+      "avatar": "LA",
+      "tags": [
+        "AI",
+        "Growth",
+        "Thematic"
+      ],
+      "meta": "Situational Awareness LP · San Francisco · founded 2024",
+      "about": "Leopold Aschenbrenner, a former OpenAI researcher and author of the essay “Situational Awareness”, launched this fund to invest in the build-out of artificial intelligence: chips, power and infrastructure.",
+      "philosophy": [
+        "AI will need enormous amounts of computing power and electricity.",
+        "Own the companies that supply the build-out."
+      ],
+      "categories": [
+        "growth"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "ken-fisher",
+      "manager": "Ken Fisher",
+      "firm": "Fisher Asset Management",
+      "cik": "0000850529",
+      "expect": "FISHER",
+      "avatar": "KF",
+      "tags": [
+        "Growth",
+        "Diversified",
+        "Global"
+      ],
+      "meta": "Fisher Asset Management (Fisher Investments) · Plano, Texas",
+      "about": "Ken Fisher founded Fisher Investments, a very large money manager for individuals and institutions. Its US portfolio holds hundreds of stocks, led by the biggest technology companies.",
+      "philosophy": [
+        "Stay invested through most of the cycle; bear markets are rarer than people fear.",
+        "Tilt towards the sectors and countries that suit the economic outlook."
+      ],
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "ken-griffin",
+      "manager": "Ken Griffin",
+      "firm": "Citadel Advisors",
+      "cik": "0001423053",
+      "expect": "CITADEL",
+      "avatar": "KG",
+      "tags": [
+        "Multi-strategy",
+        "Quant",
+        "Very diversified"
+      ],
+      "meta": "Citadel Advisors · Miami, Florida · founded 1990",
+      "about": "Ken Griffin founded Citadel, one of the most profitable hedge funds ever. It runs many independent teams and holds thousands of positions, often briefly; we show its 150 biggest.",
+      "philosophy": [
+        "Many small, independent bets with tight risk limits.",
+        "Use data, technology and speed as an edge."
+      ],
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "david-shaw",
+      "manager": "David Shaw",
+      "firm": "D. E. Shaw & Co.",
+      "cik": "0001009207",
+      "expect": "SHAW",
+      "avatar": "DS",
+      "tags": [
+        "Quant",
+        "Multi-strategy",
+        "Very diversified"
+      ],
+      "meta": "D. E. Shaw & Co. · New York · founded 1988",
+      "about": "David Shaw, a computer scientist, founded D. E. Shaw, a pioneer of computer-driven investing. It holds thousands of positions; we show its 150 biggest.",
+      "philosophy": [
+        "Find small, repeatable patterns in markets with mathematics and computing.",
+        "Diversify across many strategies."
+      ],
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "israel-englander",
+      "manager": "Israel Englander",
+      "firm": "Millennium Management",
+      "cik": "0001273087",
+      "expect": "MILLENNIUM",
+      "avatar": "IE",
+      "tags": [
+        "Multi-strategy",
+        "Very diversified",
+        "Risk-controlled"
+      ],
+      "meta": "Millennium Management · New York · founded 1989",
+      "about": "Israel Englander’s Millennium runs hundreds of independent trading teams under strict loss limits. Its book is huge and changes fast; we show its 150 biggest positions.",
+      "philosophy": [
+        "Spread capital across many teams and strategies.",
+        "Cut losing positions quickly."
+      ],
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "cliff-asness",
+      "manager": "Cliff Asness",
+      "firm": "AQR Capital Management",
+      "cik": "0001167557",
+      "expect": "AQR",
+      "avatar": "CA",
+      "tags": [
+        "Quant",
+        "Factor investing",
+        "Very diversified"
+      ],
+      "meta": "AQR Capital Management · Greenwich, Connecticut · founded 1998",
+      "about": "Cliff Asness co-founded AQR, which invests using research-based “factors” such as value, momentum and quality across thousands of securities. We show its 150 biggest positions.",
+      "philosophy": [
+        "Follow evidence: cheap, improving and high-quality stocks tend to do better over time.",
+        "Diversify widely and stay disciplined when a factor goes out of favour."
+      ],
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "two-sigma",
+      "manager": "John Overdeck & David Siegel",
+      "firm": "Two Sigma Investments",
+      "cik": "0001179392",
+      "expect": "TWO",
+      "avatar": "JO",
+      "tags": [
+        "Quant",
+        "Data-driven",
+        "Very diversified"
+      ],
+      "meta": "Two Sigma Investments · New York · founded 2001",
+      "about": "Two Sigma, founded by John Overdeck and David Siegel, uses machine learning and huge data sets to invest. It holds thousands of positions; we show its 150 biggest.",
+      "philosophy": [
+        "Let data and models, not opinions, drive decisions.",
+        "Diversify across many small edges."
+      ],
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "louis-bacon",
+      "manager": "Louis Bacon",
+      "firm": "Moore Capital Management",
+      "cik": "0001448574",
+      "expect": "MOORE",
+      "avatar": "LB",
+      "tags": [
+        "Macro",
+        "Global",
+        "Opportunistic"
+      ],
+      "meta": "Moore Capital Management · New York · founded 1989",
+      "about": "Louis Bacon founded Moore Capital, a global macro fund that trades interest rates, currencies and commodities as well as stocks; its 13F shows only the US-listed part.",
+      "philosophy": [
+        "Trade the big economic themes across markets.",
+        "Protect capital first; size bets by how wrong they could go."
+      ],
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "barry-rosenstein",
+      "manager": "Barry Rosenstein",
+      "firm": "Jana Partners",
+      "cik": "0001998597",
+      "expect": "JANA",
+      "avatar": "BR",
+      "tags": [
+        "Activist",
+        "Event-driven",
+        "Concentrated"
+      ],
+      "meta": "Jana Partners · New York · founded 2001",
+      "about": "Barry Rosenstein’s Jana Partners is an activist fund that pushes companies to sell divisions, cut costs or explore a sale.",
+      "philosophy": [
+        "Find companies where a clear change can unlock value.",
+        "Work with other shareholders to press for it."
+      ],
+      "categories": [
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "scott-ferguson",
+      "manager": "Scott Ferguson",
+      "firm": "Sachem Head Capital Management",
+      "cik": "0001582090",
+      "expect": "SACHEM",
+      "avatar": "SF",
+      "tags": [
+        "Activist",
+        "Concentrated",
+        "Quality"
+      ],
+      "meta": "Sachem Head Capital Management · New York · founded 2012",
+      "about": "Scott Ferguson, a former Pershing Square partner, runs Sachem Head, a concentrated fund that sometimes takes activist positions.",
+      "philosophy": [
+        "Own a handful of high-quality businesses.",
+        "Engage with boards when change is needed."
+      ],
+      "categories": [
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "bryan-lawrence",
+      "manager": "Bryan Lawrence",
+      "firm": "Oakcliff Capital Partners",
+      "cik": "0001657335",
+      "expect": "OAKCLIFF",
+      "avatar": "BL",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Long-term"
+      ],
+      "meta": "Oakcliff Capital · New York",
+      "about": "Bryan Lawrence runs Oakcliff Capital, a small, very concentrated value fund that holds a handful of businesses for the long term.",
+      "philosophy": [
+        "Own very few businesses you understand deeply.",
+        "Hold for years and ignore short-term noise."
+      ],
+      "categories": [
+        "activist"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "renaissance-technologies",
+      "manager": "Renaissance Technologies",
+      "firm": "Renaissance Technologies (founded by Jim Simons)",
+      "cik": "0001037389",
+      "expect": "RENAISSANCE",
+      "avatar": "RT",
+      "tags": [
+        "Quant",
+        "Systematic",
+        "Very diversified"
+      ],
+      "meta": "Renaissance Technologies · East Setauket, New York · founded 1982",
+      "about": "Renaissance Technologies, founded by mathematician Jim Simons, is the most famous quantitative fund, trading on patterns found with mathematics and computing. It holds thousands of positions; we show its 150 biggest.",
+      "philosophy": [
+        "Markets contain tiny patterns that mathematics can find.",
+        "Trust the models and avoid human emotion."
+      ],
+      "categories": [
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "chris-rokos",
+      "manager": "Chris Rokos",
+      "firm": "Rokos Capital Management",
+      "cik": "0001666335",
+      "expect": "ROKOS",
+      "avatar": "CR",
+      "tags": [
+        "Macro",
+        "Global",
+        "Rates"
+      ],
+      "meta": "Rokos Capital Management · London",
+      "about": "Chris Rokos co-founded Brevan Howard before starting Rokos Capital, a global macro fund that trades mainly interest rates and currencies; its 13F shows only US-listed holdings.",
+      "philosophy": [
+        "Trade big economic turning points, especially in interest rates.",
+        "Keep risk tight and liquidity high."
+      ],
+      "categories": [
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "michael-platt",
+      "manager": "Michael Platt",
+      "firm": "BlueCrest Capital Management",
+      "cik": "0001610880",
+      "expect": "BLUECREST",
+      "avatar": "MP",
+      "tags": [
+        "Systematic",
+        "Macro",
+        "Proprietary"
+      ],
+      "meta": "BlueCrest Capital Management · Jersey, Channel Islands",
+      "about": "Michael Platt’s BlueCrest manages mostly the partners’ own money with many trading teams and systematic strategies; its 13F shows only US-listed holdings.",
+      "philosophy": [
+        "Many independent traders under one risk system.",
+        "Invest the firm’s own capital."
+      ],
+      "categories": [
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "steven-cohen",
+      "manager": "Steven Cohen",
+      "firm": "Point72 Asset Management",
+      "cik": "0001603466",
+      "expect": "POINT72",
+      "avatar": "SC",
+      "tags": [
+        "Multi-strategy",
+        "Fundamental",
+        "Very diversified"
+      ],
+      "meta": "Point72 Asset Management · Stamford, Connecticut · founded 2014",
+      "about": "Steven Cohen’s Point72 runs many specialised stock-picking teams and holds a very large number of positions. We show its 150 biggest.",
+      "philosophy": [
+        "Deep company research by many specialised teams.",
+        "Strict risk limits for every team."
+      ],
+      "categories": [
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "paul-tudor-jones",
+      "manager": "Paul Tudor Jones",
+      "firm": "Tudor Investment Corporation",
+      "cik": "0000923093",
+      "expect": "TUDOR",
+      "avatar": "PT",
+      "tags": [
+        "Macro",
+        "Trading",
+        "Global"
+      ],
+      "meta": "Tudor Investment Corporation · Stamford, Connecticut · founded 1980",
+      "about": "Paul Tudor Jones is a famous macro trader who predicted the 1987 crash. Tudor Investment trades global markets; its 13F shows only US-listed holdings, which change often.",
+      "philosophy": [
+        "Don’t focus on making money; focus on protecting what you have.",
+        "Follow the trend and cut losers fast."
+      ],
+      "categories": [
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "stephen-schwarzman",
+      "manager": "Stephen Schwarzman",
+      "firm": "Blackstone",
+      "cik": "0001393818",
+      "expect": "BLACKSTONE",
+      "avatar": "SS",
+      "tags": [
+        "Private equity",
+        "Alternatives",
+        "Institution"
+      ],
+      "meta": "Blackstone · New York · founded 1985",
+      "about": "Stephen Schwarzman co-founded Blackstone, the world’s largest alternative asset manager (private equity, real estate, credit). Its 13F shows the US-listed shares it holds.",
+      "philosophy": [
+        "Buy, improve and later sell whole businesses and properties.",
+        "Think in decades about where capital is needed."
+      ],
+      "categories": [
+        "quant"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "edgepoint",
+      "manager": "EdgePoint Investment Group",
+      "firm": "EdgePoint Investment Group",
+      "cik": "0001481669",
+      "expect": "EDGEPOINT",
+      "avatar": "EI",
+      "tags": [
+        "Canadian",
+        "Value",
+        "Concentrated"
+      ],
+      "meta": "EdgePoint Investment Group · Toronto",
+      "about": "EdgePoint, founded by former Trimark managers, runs concentrated portfolios of businesses it believes the market misunderstands.",
+      "philosophy": [
+        "Own businesses with an idea the market is missing.",
+        "Hold a small number of companies for years."
+      ],
+      "categories": [
+        "canada"
+      ],
+      "pro": true,
+      "group": "institution"
+    },
+    {
+      "slug": "connor-clark-lunn",
+      "manager": "Connor, Clark & Lunn",
+      "firm": "Connor, Clark & Lunn Investment Management",
+      "cik": "0001596800",
+      "expect": "CONNOR",
+      "avatar": "CC",
+      "tags": [
+        "Canadian",
+        "Quant",
+        "Diversified"
+      ],
+      "meta": "Connor, Clark & Lunn · Vancouver",
+      "about": "Connor, Clark & Lunn is one of Canada’s largest independent investment firms, running many strategies including systematic stock selection. We show its 150 biggest US positions.",
+      "philosophy": [
+        "Combine many independent investment teams under one firm.",
+        "Use research and data to pick stocks."
+      ],
+      "categories": [
+        "canada"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "sprott",
+      "manager": "Sprott",
+      "firm": "Sprott Inc.",
+      "cik": "0001512920",
+      "expect": "SPROTT",
+      "avatar": "S",
+      "tags": [
+        "Canadian",
+        "Gold",
+        "Resources"
+      ],
+      "meta": "Sprott · Toronto",
+      "about": "Sprott is a Toronto firm specialising in precious metals and critical minerals, including physical gold, silver and uranium trusts.",
+      "philosophy": [
+        "Real assets such as gold and silver protect wealth over long periods.",
+        "Invest in the resources the energy transition needs."
+      ],
+      "categories": [
+        "canada"
+      ],
+      "pro": true,
+      "group": "institution"
+    },
+    {
+      "slug": "guardian-capital",
+      "manager": "Guardian Capital",
+      "firm": "Guardian Capital LP",
+      "cik": "0001224324",
+      "expect": "GUARDIAN",
+      "avatar": "GC",
+      "tags": [
+        "Canadian",
+        "Diversified",
+        "Institution"
+      ],
+      "meta": "Guardian Capital · Toronto",
+      "about": "Guardian Capital is a long-established Toronto investment manager for pension funds, insurers and individuals. We show its 150 biggest US positions.",
+      "philosophy": [
+        "Disciplined, diversified investing for institutions.",
+        "Long-term client relationships."
+      ],
+      "categories": [
+        "canada"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "ci-global",
+      "manager": "CI Global Asset Management",
+      "firm": "CI Investments Inc.",
+      "cik": "0001163648",
+      "expect": "INVESTMENTS",
+      "avatar": "CG",
+      "tags": [
+        "Canadian",
+        "Diversified",
+        "Institution"
+      ],
+      "meta": "CI Global Asset Management · Toronto",
+      "about": "CI Global Asset Management is one of Canada’s largest fund companies, behind many mutual funds and ETFs sold through Canadian advisors. We show its 150 biggest US positions.",
+      "philosophy": [
+        "Broad range of funds for Canadian investors.",
+        "Diversified portfolios run by many teams."
+      ],
+      "categories": [
+        "canada"
+      ],
+      "pro": true,
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "brookfield",
+      "manager": "Brookfield",
+      "firm": "Brookfield Corporation",
+      "cik": "0001001085",
+      "expect": "BROOKFIELD",
+      "avatar": "B",
+      "tags": [
+        "Canadian",
+        "Real assets",
+        "Long-term"
+      ],
+      "meta": "Brookfield Corporation · Toronto",
+      "about": "Brookfield is a Toronto-based global investor in real estate, renewable power, infrastructure and private equity. Its 13F shows the US-listed shares it holds.",
+      "philosophy": [
+        "Own essential real assets that produce steady cash.",
+        "Buy when others are selling, and hold for the long term."
+      ],
+      "categories": [
+        "canada"
+      ],
+      "pro": true,
+      "group": "institution"
+    },
+    {
+      "slug": "john-rogers",
+      "manager": "John Rogers",
+      "firm": "Ariel Investments",
+      "cik": "0000936753",
+      "expect": "ARIEL",
+      "avatar": "JR",
+      "tags": [
+        "Value",
+        "Patient",
+        "Small and mid caps"
+      ],
+      "meta": "Ariel Investments · Chicago · founded 1983",
+      "about": "John Rogers founded Ariel Investments, the first Black-owned mutual fund firm, known for patiently owning out-of-favour small and mid-sized companies.",
+      "philosophy": [
+        "Slow and steady wins the race.",
+        "Buy good companies when they are temporarily unpopular."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "charles-brandes",
+      "manager": "Charles Brandes",
+      "firm": "Brandes Investment Partners",
+      "cik": "0001015079",
+      "expect": "BRANDES",
+      "avatar": "CB",
+      "tags": [
+        "Value",
+        "Global",
+        "Benjamin Graham"
+      ],
+      "meta": "Brandes Investment Partners · San Diego · founded 1974",
+      "about": "Charles Brandes, who learned directly from Benjamin Graham, built Brandes Investment Partners into a global value investor.",
+      "philosophy": [
+        "Buy stocks well below their intrinsic value.",
+        "Look worldwide for bargains."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "robert-olstein",
+      "manager": "Robert Olstein",
+      "firm": "Olstein Capital Management",
+      "cik": "0000947996",
+      "expect": "OLSTEIN",
+      "avatar": "RO",
+      "tags": [
+        "Value",
+        "Accounting-focused",
+        "Diversified"
+      ],
+      "meta": "Olstein Capital Management · Purchase, New York",
+      "about": "Robert Olstein’s firm picks undervalued companies by reading their financial statements closely, looking for strong free cash flow and clean accounting.",
+      "philosophy": [
+        "Free cash flow matters more than reported earnings.",
+        "Read the footnotes: accounting tells the real story."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "robert-bruce",
+      "manager": "Robert Bruce",
+      "firm": "Bruce & Co.",
+      "cik": "0001358331",
+      "expect": "BRUCE",
+      "avatar": "RB",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Long-term"
+      ],
+      "meta": "Bruce & Co. · Chicago",
+      "about": "Robert Bruce runs Bruce & Co. and the Bruce Fund, a small, long-running value fund with a very concentrated, patient approach.",
+      "philosophy": [
+        "Own few companies and hold them a long time.",
+        "Look where others are not."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "david-abrams",
+      "manager": "David Abrams",
+      "firm": "Abrams Capital Management",
+      "cik": "0001358706",
+      "expect": "ABRAMS",
+      "avatar": "DA",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Low profile"
+      ],
+      "meta": "Abrams Capital Management · Boston",
+      "about": "David Abrams, who learned under Seth Klarman at Baupost, runs Abrams Capital, a private, concentrated value fund with a long-term focus.",
+      "philosophy": [
+        "Avoid permanent loss of capital above all.",
+        "Be patient and contrarian."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "david-blood",
+      "manager": "David Blood",
+      "firm": "Generation Investment Management",
+      "cik": "0001375534",
+      "expect": "GENERATION",
+      "avatar": "DB",
+      "tags": [
+        "Sustainable",
+        "Quality",
+        "Long-term"
+      ],
+      "meta": "Generation Investment Management · London · founded 2004",
+      "about": "David Blood co-founded Generation Investment Management with Al Gore to invest in high-quality companies that benefit from a more sustainable economy.",
+      "philosophy": [
+        "Sustainability is a driver of long-term business success.",
+        "Own a concentrated set of high-quality companies."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "tom-steyer",
+      "manager": "Farallon Capital",
+      "firm": "Farallon Capital Management (founded by Tom Steyer)",
+      "cik": "0000909661",
+      "expect": "FARALLON",
+      "avatar": "FC",
+      "tags": [
+        "Multi-strategy",
+        "Event-driven",
+        "Credit"
+      ],
+      "meta": "Farallon Capital Management · San Francisco · founded 1986",
+      "about": "Farallon Capital, founded by Tom Steyer (who left in 2012), is a large multi-strategy fund investing in merger situations, credit, real estate and stocks.",
+      "philosophy": [
+        "Find value in complex situations such as mergers and restructurings.",
+        "Diversify across many kinds of opportunity."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
     }
   ]
 }

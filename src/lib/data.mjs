@@ -152,7 +152,10 @@ export function loadData({ root, dataDir, configPath }) {
   // Super investors drive the cross-investor views (Top Stocks, owner counts, heatmap). Large institutions
   // (pension funds, big asset managers: group "institution" in config) get their own pages and appear in
   // Pro watchlists, but don't swamp the "most owned" rankings with index-like books.
-  const withData = investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue);
+  // Managers marked "pro" in config appear only for Pro members: no public page, not in public rankings.
+  const withDataAll = investors.filter((i) => i.p).sort((a, b) => b.p.totalValue - a.p.totalValue);
+  const withData = withDataAll.filter((i) => !i.pro);
+  const proOnly = withDataAll.filter((i) => i.pro);
   const live = withData.filter((i) => i.group !== 'institution');
   const institutions = withData.filter((i) => i.group === 'institution');
 
@@ -423,9 +426,11 @@ export function loadData({ root, dataDir, configPath }) {
   return {
     cfg,
     extraStocks,
-    investors,
+    investors: investors.filter((i) => !i.pro),
+    allInvestors: investors,
     live,
     institutions,
+    proOnly,
     stocks: stockList,
     stockByTicker,
     smart,

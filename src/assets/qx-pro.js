@@ -244,10 +244,11 @@
     if (S.drawer) html += '<div id="px-drawer" class="px-drawer">' + alertsHtml(me, pro) + membershipHtml(me, pro) + '</div>';
     var M = model();
     if (!lget('qx-welcome')) html += welcomeHtml();
-    html += '<div class="px-panel">' + introHtml(tab) + ({ portfolio: tabPortfolio, smart: tabSmart, analyst: tabAnalyst, earnings: tabEarnings, weather: tabWeather, brief: tabBrief }[tab])(M, pro) + '</div>';
+    html += '<div class="px-panel">' + introHtml(tab) + ({ portfolio: tabPortfolio, smart: tabSmart, analyst: tabAnalyst, earnings: tabEarnings, weather: tabWeather, brief: tabBrief }[tab])(M, pro) + (tab === 'smart' ? dirHtml(pro) : '') + '</div>';
     html += '<p class="px-foot">QWERTx provides information from public filings for education. It is not investment advice or a recommendation to buy or sell any security. Fund holdings come from 13F and N-PORT filings made up to 45–60 days after each quarter; politician trades can be disclosed up to 45 days after the trade.</p>';
     root.innerHTML = html;
     bind();
+    if (tab === 'smart' && S.dir === undefined) { S.dir = null; getJSON('/pro/managers.json').then(function (j) { S.dir = j || false; render(); }); }
     if (tab === 'weather' && S.weather === undefined) { S.weather = null; getJSON('/pro/weather.json').then(function (w) { S.weather = w || false; render(); }); }
     if (tab === 'brief' && S.brief === undefined) { S.brief = null; api('GET', '/api/brief').then(function (b) { S.brief = b && b.ok ? b : false; render(); }); }
     if (S.drawer && !S.status) getJSON('/api/pro-status').then(function (s) { if (s) { S.status = s; var el = document.getElementById('wl-seats'); if (el) el.textContent = seatsText(s); } });
@@ -658,6 +659,56 @@
       }).join('') + (!pro && list.length > 2 ? lock((list.length - 2) + ' more managers who think like you.') : '') + '</section>';
   }
 
+  // ---------- Investor directory (Smart Money tab) ----------
+  var CATS = [
+    ['value', 'Value investors', 'Buy good businesses when they look cheap and hold them for years. The classic Warren Buffett approach.'],
+    ['growth', 'Growth and technology', 'Back fast-growing companies, often in technology, AI, chips and software. Bigger swings, bigger potential.'],
+    ['activist', 'Activists and special situations', 'Buy large stakes and push companies to change: new directors, spin-offs, buybacks or a sale.'],
+    ['quant', 'Quant, macro and multi-strategy', 'Huge funds holding thousands of stocks, often briefly, and betting on the economy. Good for spotting broad trends, not for copying.'],
+    ['canada', 'Canadian investors', 'Canadian pension funds and investment firms that report their US-listed holdings.'],
+    ['more', 'More investors worth following', 'Respected managers with distinctive styles, from patient small-company investors to sustainability specialists.'],
+  ];
+  function bn(v) { return v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(1) + 'B' : '$' + Math.round(v / 1e6) + 'M'; }
+  function dirHtml(pro) {
+    if (S.dir == null) return '<section class="card"><p class="form-note"><i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Loading the investor directory…</p></section>';
+    if (S.dir === false) return '';
+    var mine = {}; (S.me.watchlist || []).forEach(function (w) { mine[w.ticker === 'GOOGL' ? 'GOOG' : w.ticker] = 1; });
+    var all = Object.keys(S.dir).map(function (k) { var m = S.dir[k]; m.slug = k; var sh = {}; m.top.forEach(function (h) { var k = h[0] === 'GOOGL' ? 'GOOG' : h[0] === 'BRK.A' ? 'BRK.B' : h[0]; if (mine[k]) sh[k] = 1; }); m.shared = Object.keys(sh).length; return m; });
+    var cat = S.dirCat || 'all', q = (S.dirQ || '').toLowerCase();
+    var list = all.filter(function (m) { return (cat === 'all' || m.c.indexOf(cat) >= 0) && (!q || (m.n + ' ' + m.f).toLowerCase().indexOf(q) >= 0); })
+      .sort(function (a, b) { return b.shared - a.shared || b.v - a.v; });
+    var c = CATS.filter(function (x) { return x[0] === cat; })[0];
+    var html = '<section class="card px-dir" aria-label="All tracked investors"><div class="px-h2row"><div><h2 class="px-h2">All ' + all.length + ' tracked investors</h2><p class="form-note">From each firm’s latest 13F filing. Sorted by how many of your stocks they own, then by size.</p></div>' +
+      '<label class="sr-only" for="px-dir-q">Search investors</label><input class="input input-sm" id="px-dir-q" placeholder="Search a name or firm" value="' + esc(S.dirQ || '') + '"></div>' +
+      '<div class="px-seg small px-dir-cats" role="group" aria-label="Investor category">' + [['all', 'All']].concat(CATS.map(function (x) { return [x[0], x[1]]; })).map(function (x) {
+        var n = x[0] === 'all' ? all.length : all.filter(function (m) { return m.c.indexOf(x[0]) >= 0; }).length;
+        return '<button type="button" data-dircat="' + x[0] + '" aria-pressed="' + (cat === x[0]) + '"' + (cat === x[0] ? ' class="on"' : '') + '>' + esc(x[1]) + ' <span class="muted">' + n + '</span></button>';
+      }).join('') + '</div>' + (c ? '<p class="px-dir-desc">' + esc(c[2]) + '</p>' : '') +
+      '<div class="px-dir-grid">' + list.map(function (m) { return dirCard(m, mine, pro); }).join('') + '</div>' + (list.length ? '' : '<p class="muted">No investor matches that search.</p>') + '</section>';
+    return html;
+  }
+  function dirCard(m, mine, pro) {
+    var open = S.dirOpen === m.slug, locked = m.p && !pro;
+    var head = '<button type="button" class="px-dir-h" data-diropen="' + esc(m.slug) + '" aria-expanded="' + open + '"><span class="px-dir-n"><b>' + esc(m.n) + '</b>' + (m.g ? ' <span class="px-chip">Institution</span>' : '') + '<span class="tkr-name">' + esc(m.f) + '</span></span>' +
+      '<span class="px-dir-k"><b class="mono">' + bn(m.v) + '</b><span class="tkr-name">' + m.k.toLocaleString('en-US') + ' positions</span></span></button>';
+    var chips = '<div class="px-dir-top">' + m.top.slice(0, 6).map(function (h) { var own = mine[h[0] === 'GOOGL' ? 'GOOG' : h[0]]; return '<span class="px-chip' + (own ? ' gold' : '') + '" title="' + h[1] + '% of the portfolio">' + esc(h[0]) + '</span>'; }).join('') +
+      (m.shared ? '<span class="form-note">owns ' + plural(m.shared, 'of your stocks', 'of your stocks') + ' in its top 12</span>' : '') + '</div>';
+    var body = '';
+    if (open) {
+      if (locked) body = lock(esc(m.n) + '’s full portfolio and moves are part of QWERTx Pro.');
+      else {
+        var max = m.top[0] ? m.top[0][1] : 1;
+        body = '<div class="px-dir-body"><p>' + esc(m.a) + '</p>' + (m.t.length ? '<div>' + m.t.map(function (t) { return '<span class="px-chip">' + esc(t) + '</span>'; }).join('') + '</div>' : '') +
+          '<div class="px-grid2 tight"><div>' + label('Biggest positions' + (m.topN ? ' (we keep its top ' + m.topN + ')' : '')) + m.top.map(function (h) {
+            var own = mine[h[0] === 'GOOGL' ? 'GOOG' : h[0]];
+            return '<div class="px-bar"><div class="px-bar-l"><span>' + (own ? '<b class="gold">' + esc(h[0]) + '</b> · you own' : esc(h[0])) + (h[2] === 'New' ? ' <span class="px-chip up">New</span>' : h[2] === 'Add' ? ' <span class="px-chip up">Added</span>' : h[2] === 'Trim' ? ' <span class="px-chip down">Trimmed</span>' : '') + '</span><b>' + h[1].toFixed(1) + '%</b></div><div class="px-bar-t"><span style="width:' + Math.max(2, h[1] / max * 100).toFixed(1) + '%;background:' + (own ? '#F5B83D' : 'var(--teal)') + '"></span></div></div>';
+          }).join('') + '</div><div>' + label('Biggest moves last quarter') + (m.moves.length ? m.moves.map(function (x) { return '<span class="px-chip ' + (x[1] === 'Trim' || x[1] === 'Sold' ? 'down' : 'up') + '">' + esc(x[0]) + ' · ' + (x[1] === 'New' ? 'new' : x[1] === 'Add' ? 'added' : x[1] === 'Trim' ? 'trimmed' : 'sold out') + '</span>'; }).join('') : '<p class="muted">No big changes.</p>') +
+          '<p class="form-note">Holdings as of ' + fmtDate(m.period) + ', filed ' + fmtDate(m.filed) + '. <a href="' + esc(m.url) + '" target="_blank" rel="noopener">Official filing</a>' + (m.p ? '' : ' · <a href="/investors/' + esc(m.slug) + '.html">Full profile</a>') + '</p></div></div></div>';
+      }
+    }
+    return '<article class="px-dir-card' + (open ? ' open' : '') + '">' + head + chips + body + '</article>';
+  }
+
   // ---------- Tab 3 · Analyst Targets ----------
   function tabAnalyst(M, pro) {
     var stocks = (S.me.watchlist || []).filter(function (w) { return w.active && !isEtf(w.ticker); });
@@ -972,6 +1023,10 @@
     on('[data-open]', 'click', function (e) { e.preventDefault(); S.drawer = true; render(); var el = document.getElementById('membership'); if (el) el.scrollIntoView({ behavior: 'smooth' }); });
     on('[data-filter]', 'click', function (e, b) { S.filter = b.getAttribute('data-filter'); S.more = false; render(); });
     on('[data-region]', 'click', function (e, b) { S.region = b.getAttribute('data-region'); render(); });
+    on('[data-dircat]', 'click', function (e, b) { S.dirCat = b.getAttribute('data-dircat'); S.dirOpen = null; render(); });
+    on('[data-diropen]', 'click', function (e, b) { var k = b.getAttribute('data-diropen'); S.dirOpen = S.dirOpen === k ? null : k; render(); var el = root.querySelector('[data-diropen="' + k + '"]'); if (el) el.focus({ preventScroll: true }); });
+    var dq = document.getElementById('px-dir-q');
+    if (dq) dq.addEventListener('input', function () { S.dirQ = dq.value; clearTimeout(S.dirT); S.dirT = setTimeout(function () { var pos = dq.selectionStart; render(); var n = document.getElementById('px-dir-q'); if (n) { n.focus(); n.setSelectionRange(pos, pos); } }, 200); });
     on('[data-ccy]', 'click', function (e, b) {
       var c = b.getAttribute('data-ccy');
       S.me.prefs = Object.assign({}, S.me.prefs, { currency: c });

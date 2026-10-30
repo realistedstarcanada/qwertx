@@ -847,3 +847,20 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 .px-welcome ol { margin: 4px 0 10px; padding-left: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 28px; color: var(--text-2); font-size: 14.5px; }
 .px-welcome .linklike { text-decoration: none; font-weight: 600; }
 @media (max-width: 700px) { .px-welcome { flex-direction: column; } .px-welcome ol { grid-template-columns: 1fr; } }
+/* Investor directory */
+.px-dir .px-h2row .input { max-width: 260px; }
+.px-dir-cats { margin: 4px 0 10px; }
+.px-dir-desc { margin: 0 0 14px; color: var(--text-2); font-size: 14.5px; max-width: 60em; }
+.px-dir-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.px-dir-card { border: 1px solid var(--line); border-radius: 12px; background: var(--px-cell); padding: 12px 14px; min-width: 0; }
+.px-dir-card.open { grid-column: 1 / -1; border-color: var(--gold); }
+.px-dir-h { width: 100%; display: flex; justify-content: space-between; gap: 12px; text-align: left; background: transparent; border: 0; padding: 0; color: var(--text); font: inherit; cursor: pointer; }
+.px-dir-n { display: flex; flex-direction: column; min-width: 0; }
+.px-dir-n b { font-size: 15.5px; }
+.px-dir-n .px-chip { font-size: 10.5px; padding: 3px 6px; margin: 0 0 0 4px; vertical-align: 1px; }
+.px-dir-k { display: flex; flex-direction: column; align-items: flex-end; flex: 0 0 auto; }
+.px-dir-top { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; margin-top: 8px; }
+.px-dir-top .px-chip { margin: 0; }
+.px-dir-body { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--line); }
+.px-dir-body > p { margin: 0 0 8px; color: var(--text-2); line-height: 1.55; font-size: 14.5px; max-width: 60em; }
+@media (max-width: 760px) { .px-dir-grid { grid-template-columns: minmax(0, 1fr); } .px-dir .px-h2row .input { max-width: none; width: 100%; } }

@@ -23,9 +23,11 @@ const TICKER = /^[A-Z][A-Z0-9.\-]{0,9}$/;
 export function buildProData(d, { now = Date.now(), aliases = {}, filings8k = null, etfCfg = null, etfData = {}, vendor = null, vendorLabel = null } = {}) {
   const managers = {};
   const institutions = d.institutions || [];
-  for (const inv of [...d.live, ...institutions]) {
+  for (const inv of [...d.live, ...institutions, ...(d.proOnly || [])]) {
     managers[inv.slug] = {
       ...(inv.group === 'institution' ? { g: 'i' } : {}),
+      ...(inv.pro ? { p: 1 } : {}),
+      c: inv.categories || [],
       n: inv.manager,
       f: inv.firm,
       period: inv.p.period,
@@ -86,6 +88,34 @@ export function buildProData(d, { now = Date.now(), aliases = {}, filings8k = nu
       (o.ih ||= []).push([inv.slug, r2(x.w), x.act, x.chg != null && x.act !== 'New' ? Math.round(x.chg * 100) : null, Math.round(x.v)]);
     }
   }
+
+  // ---- Pro-only managers (config "pro": true): counted in Pro data only, never on public pages ----
+  for (const inv of d.proOnly || []) {
+    const inst = inv.group === 'institution';
+    const per = new Map();
+    for (const h of inv.p.holdings) {
+      if (!TICKER.test(h.ticker || '') || h.putCall || h.shType === 'PRN') continue;
+      const x = per.get(h.ticker) || { w: 0, v: 0, act: h.act, chg: h.sharesChangePct };
+      x.w += h.w;
+      x.v += h.value;
+      per.set(h.ticker, x);
+    }
+    for (const [t, x] of per) {
+      const o = get(d.stockByTicker.get(t), t);
+      if (!o) continue;
+      const list = inst ? (o.ih ||= []) : o.h;
+      const have = list.find((r) => r[0] === inv.slug); // another share class of the same company
+      if (have) { have[1] = r2(have[1] + x.w); have[4] += Math.round(x.v); continue; }
+      list.push([inv.slug, r2(x.w), x.act, x.chg != null && x.act !== 'New' ? Math.round(x.chg * 100) : null, Math.round(x.v)]);
+    }
+    if (inst) continue;
+    for (const h of inv.p.sold || []) {
+      if (!TICKER.test(h.ticker || '') || per.has(h.ticker)) continue;
+      const o = get(d.stockByTicker.get(h.ticker), h.ticker);
+      if (o && !o.x.includes(inv.slug) && !o.h.some((r) => r[0] === inv.slug)) o.x.push(inv.slug);
+    }
+  }
+  for (const o of Object.values(stocks)) { o.h.sort((a, b) => b[1] - a[1]); o.ih?.sort((a, b) => b[1] - a[1]); }
 
   // ---- Congress ----
   for (const [ticker, trades] of d.politics.byTicker) {
@@ -287,4 +317,24 @@ export function buildEvents(d, { now = Date.now() } = {}) {
 
   const ids = new Set();
   return out.filter((e) => !ids.has(e.id) && ids.add(e.id)).sort((a, b) => b.at.localeCompare(a.at) || a.id.localeCompare(b.id));
+}
+
+/** Every tracked manager for the Pro investor directory: who they are, their category and what they hold. */
+export function buildManagerDirectory(d) {
+  const out = {};
+  for (const inv of [...d.live, ...(d.institutions || []), ...(d.proOnly || [])]) {
+    const p = inv.p;
+    const top = p.holdings.slice(0, 12).map((h) => [h.ticker && TICKER.test(h.ticker) ? h.ticker : h.label, r2(h.w), h.act]);
+    const moves = [
+      ...p.holdings.filter((h) => h.act === 'New' || h.act === 'Add').map((h) => [h.ticker || h.label, h.act, h.flow || 0]),
+      ...p.holdings.filter((h) => h.act === 'Trim').map((h) => [h.ticker || h.label, 'Trim', h.flow || 0]),
+      ...(p.sold || []).map((h) => [h.ticker || h.label, 'Sold', h.flow || -(h.prevValue || 0)]),
+    ].sort((a, b) => Math.abs(b[2]) - Math.abs(a[2])).slice(0, 8).map((m) => [m[0], m[1]]);
+    out[inv.slug] = {
+      n: inv.manager, f: inv.firm, c: inv.categories || [], ...(inv.group === 'institution' ? { g: 'i' } : {}), ...(inv.pro ? { p: 1 } : {}),
+      a: inv.about || '', t: inv.tags || [], v: Math.round(p.totalValue), k: p.holdingsCount, ...(p.topN ? { topN: p.topN } : {}),
+      period: p.period, filed: p.filingDate, url: p.filingUrl, top, moves,
+    };
+  }
+  return out;
 }

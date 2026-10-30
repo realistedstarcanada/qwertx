@@ -19,7 +19,7 @@ import { personPage } from './src/pages/people.mjs';
 import { proPages } from './src/pages/pro-pages.mjs';
 import { accountPage } from './src/pages/account.mjs';
 import { staticPages } from './src/pages/static.mjs';
-import { buildProData } from './src/lib/pro-data.mjs';
+import { buildProData, buildManagerDirectory } from './src/lib/pro-data.mjs';
 import { buildWeather } from './src/lib/weather.mjs';
 
 const ROOT = path.dirname(fileURLToPath(import.meta.url));
@@ -150,6 +150,7 @@ for (const [t, o] of Object.entries(pro.ownership.stocks)) fs.writeFileSync(path
   if (last) pro.index.fx = { USDCAD: last[1], d: last[0], source: fx.source || 'Bank of Canada' };
 }
 fs.writeFileSync(path.join(OUT, 'pro/index.json'), JSON.stringify(pro.index));
+fs.writeFileSync(path.join(OUT, 'pro/managers.json'), JSON.stringify(buildManagerDirectory(d)));
 fs.writeFileSync(path.join(OUT, 'pro/weather.json'), JSON.stringify(buildWeather({ macro: readJSON('data/macro.json'), market: d.market, insiders: d.insiders, politics: d.politics, live: d.live })));
 fs.writeFileSync(path.join(OUT, 'pro/events-recent.json'), JSON.stringify({ generatedAt: pro.ownership.generatedAt, events: pro.recentEvents }));
 
