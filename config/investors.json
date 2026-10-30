@@ -616,7 +616,8 @@
       ],
       "categories": [
         "value"
-      ]
+      ],
+      "topN": 150
     },
     {
       "slug": "cpp-investments",
