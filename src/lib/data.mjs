@@ -46,9 +46,12 @@ export function loadData({ root, dataDir, configPath }) {
       classes.get(k).add(h.cusip);
     }
   }
+  // ETF names from config/etfs.json: 13F filings name the trust ("iShares Tr"), not the fund.
+  const etfCfg = readJSON(path.join(root, 'config', 'etfs.json'), { us: {} });
+  const etfNames = Object.fromEntries(Object.entries(etfCfg.us || {}).map(([t, v]) => [t, v.name]));
   const nameFor = (h) => {
     const s = h.ticker && sectors[h.ticker];
-    const base = cleanName((s && s.name) || h.issuer || h.cusip);
+    const base = (h.ticker && etfNames[h.ticker]) || cleanName((s && s.name) || h.issuer || h.cusip);
     if (h.putCall) return `${base} (${h.putCall === 'CALL' ? 'call options' : 'put options'})`;
     return base + ((classes.get(h.cusip.slice(0, 6))?.size || 0) > 1 ? classSuffix(h.cls) : '');
   };
