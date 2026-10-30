@@ -825,3 +825,25 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 .px-hero-h { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
 .px-table .wl-pos-form { grid-template-columns: auto auto auto; max-width: 480px; }
 @media (max-width: 600px) { .px-table .wl-pos-form { grid-template-columns: auto auto; } }
+/* Compact footer on the Pro dashboard */
+.site-footer-compact { padding: 22px 0 18px !important; margin-top: 40px; }
+.footer-compact { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 20px; font-size: 14px; }
+.footer-compact a { color: var(--text-2); }
+.footer-compact a:hover { color: var(--gold); }
+.footer-compact-logo { margin-right: 10px; }
+.footer-compact-logo img { display: block; height: 21px; width: auto; }
+.footer-compact .sep { flex: 1 1 auto; }
+.site-footer-compact .disclaimer-mini { margin: 12px 0 0; }
+@media (max-width: 700px) { .footer-compact .sep { flex-basis: 100%; height: 0; } }
+/* Guidance for new investors */
+.px-intro { margin: -4px 0 4px; }
+.px-intro-what { font-size: 17px; line-height: 1.5; color: var(--text); margin: 0 0 8px; max-width: 60em; }
+.px-howto summary { cursor: pointer; color: var(--gold); font-size: 14px; width: max-content; }
+.px-howto[open] summary { margin-bottom: 10px; }
+.px-howto dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 0; padding: 14px; border: 1px solid var(--line); border-radius: 12px; background: var(--px-cell); }
+.px-howto dt { font-weight: 600; color: var(--text); font-size: 14px; margin-bottom: 3px; }
+.px-howto dd { margin: 0; color: var(--text-2); font-size: 13.5px; line-height: 1.5; }
+.px-welcome { display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; margin-bottom: 20px; border-color: color-mix(in srgb, var(--gold) 40%, var(--line)); }
+.px-welcome ol { margin: 4px 0 10px; padding-left: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 28px; color: var(--text-2); font-size: 14.5px; }
+.px-welcome .linklike { text-decoration: none; font-weight: 600; }
+@media (max-width: 700px) { .px-welcome { flex-direction: column; } .px-welcome ol { grid-template-columns: 1fr; } }

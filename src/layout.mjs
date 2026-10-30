@@ -107,7 +107,18 @@ ${JSON.stringify({ symbols: TAPE_SYMBOLS.map(([proName, t]) => ({ proName, title
 <main id="main">
 ${body}
 </main>
-<footer class="site-footer">
+${pro ? `<footer class="site-footer site-footer-compact">
+  <div class="container">
+    <nav class="footer-compact" aria-label="Footer">
+      <a href="/" class="footer-compact-logo" aria-label="QWERTx home"><img src="/assets/img/logo-qwertx.svg" alt="QWERTx" width="120" height="21"></a>
+      <a href="/investors.html">Fund Managers</a><a href="/smart-money.html">Top Stocks</a><a href="/politicians.html">Politicians</a><a href="/insiders.html">Insiders</a><a href="/market.html">Market Mood</a><a href="/insights.html">Learn</a>
+      <span class="sep" aria-hidden="true"></span>
+      <a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a>
+    </nav>
+    <p class="disclaimer-mini">© <span data-year>${new Date().getFullYear()}</span> QWERTx · Information from public filings for education, not investment advice.</p>
+  </div>
+</footer>
+` : `<footer class="site-footer">
   <div class="container">
     <div class="row row-wide">
       <div class="col-2 footer-brand" style="flex-basis:34%">
@@ -157,7 +168,7 @@ ${body}
     <div class="footer-bottom"><span>© <span data-year>${new Date().getFullYear()}</span> QWERTx · After Work Investment Strategies</span><span class="mono">Data: SEC EDGAR · House &amp; Senate disclosures · FRED · CNN · TradingView</span></div>
   </div>
 </footer>
-${charts ? '<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js" defer></script>\n<script src="' + site.assets.charts + '" defer></script>' : ''}
+`}${charts ? '<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js" defer></script>\n<script src="' + site.assets.charts + '" defer></script>' : ''}
 <script src="${site.assets.main}"></script>
 <script src="${site.assets.live}" defer></script>${pro ? `\n<script src="${site.assets.pro}" defer></script>` : ''}
 </body>

@@ -243,13 +243,65 @@
     if (S.notice) html += '<div class="wl-notice ' + S.notice.tone + '">' + S.notice.html + '</div>';
     if (S.drawer) html += '<div id="px-drawer" class="px-drawer">' + alertsHtml(me, pro) + membershipHtml(me, pro) + '</div>';
     var M = model();
-    html += '<div class="px-panel">' + ({ portfolio: tabPortfolio, smart: tabSmart, analyst: tabAnalyst, earnings: tabEarnings, weather: tabWeather, brief: tabBrief }[tab])(M, pro) + '</div>';
+    if (!lget('qx-welcome')) html += welcomeHtml();
+    html += '<div class="px-panel">' + introHtml(tab) + ({ portfolio: tabPortfolio, smart: tabSmart, analyst: tabAnalyst, earnings: tabEarnings, weather: tabWeather, brief: tabBrief }[tab])(M, pro) + '</div>';
     html += '<p class="px-foot">QWERTx provides information from public filings for education. It is not investment advice or a recommendation to buy or sell any security. Fund holdings come from 13F and N-PORT filings made up to 45–60 days after each quarter; politician trades can be disclosed up to 45 days after the trade.</p>';
     root.innerHTML = html;
     bind();
     if (tab === 'weather' && S.weather === undefined) { S.weather = null; getJSON('/pro/weather.json').then(function (w) { S.weather = w || false; render(); }); }
     if (tab === 'brief' && S.brief === undefined) { S.brief = null; api('GET', '/api/brief').then(function (b) { S.brief = b && b.ok ? b : false; render(); }); }
     if (S.drawer && !S.status) getJSON('/api/pro-status').then(function (s) { if (s) { S.status = s; var el = document.getElementById('wl-seats'); if (el) el.textContent = seatsText(s); } });
+  }
+
+  // ---------- Plain-English guidance for people new to investing ----------
+  function lget(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function lset(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* private mode */ } }
+  var GUIDE = {
+    portfolio: ['Everything you own in one place: what it is worth, how spread out it is, and what is really inside your ETFs.', [
+      ['Portfolio value', 'Your shares times today’s price (or the amount you entered), in the currency you pick at the top right.'],
+      ['Biggest company', 'If one company is more than about 20% of everything, a bad day for it is a bad day for you. Many investors keep any single stock below that.'],
+      ['Top 10 companies', 'How much of your money sits in your 10 biggest companies, counting what is inside your ETFs. The higher it is, the less spread out you are.'],
+      ['What you really own', 'An ETF is a basket of companies. VOO holds about 500. We add up each company across your own shares and your ETFs, so you can see when you own the same stock twice.'],
+    ]],
+    smart: ['Who has been buying or selling the stocks you own: well-known fund managers, big institutions, members of Congress, the President and the companies’ own executives.', [
+      ['Green and red', 'Green means more buyers than sellers, red means more sellers. Grey means no recent moves. It is context, not a signal to buy or sell.'],
+      ['Fund managers', 'Large US funds must report their US stock holdings each quarter (SEC Form 13F), up to 45 days after the quarter ends. So these moves are weeks or months old.'],
+      ['Insiders', 'Executives and directors trading their own company’s shares (SEC Form 4). Selling is common, for taxes or planned sales. Several insiders buying at once is rarer and more telling.'],
+      ['Politicians', 'Members of Congress must disclose trades within 45 days, as amount ranges such as $1,001–$15,000, not exact figures.'],
+    ]],
+    analyst: ['Where Wall Street analysts expect each of your stocks to be in 12 months, and what that would mean for your own positions.', [
+      ['The bar', 'The grey band runs from the lowest to the highest analyst target. The white line is today’s price and the gold dot the average target.'],
+      ['Room to run', 'The gap between the average target and today’s price. +20% means analysts, on average, see the stock 20% higher in a year.'],
+      ['Agreement', 'A wide band means analysts disagree a lot. Buy, hold and sell counts show how many analysts recommend each.'],
+      ['A word of caution', 'Targets are opinions and tend to be optimistic. Use them as one view among many, never as a promise.'],
+    ]],
+    earnings: ['When your companies next report their results, whether they beat expectations last time, and any major official news.', [
+      ['Earnings per share (EPS)', 'The company’s profit divided by its number of shares. Analysts estimate it before each report.'],
+      ['Beat or missed', 'Beat means the company earned more than analysts expected. Stocks often move sharply on report days, up or down.'],
+      ['Major news', 'Big events such as a new CEO, a takeover or layoffs must be filed with the SEC on Form 8-K within four business days. We show those, straight from the filing.'],
+    ]],
+    weather: ['The big picture in four plain questions: is the economy OK, are stocks expensive, is money tight, and are people scared?', [
+      ['The dials', 'Each dial sums up several official indicators. Green is calm, gold is mixed, red is a warning.'],
+      ['Like a weather forecast', 'It tells you the conditions, not what to do. Markets can stay expensive or scared for a long time, and trying to time them rarely works.'],
+      ['The cards', 'Each card shows one indicator, where it sits in its own history, what it means and where the number comes from.'],
+    ]],
+    brief: ['A short weekly note from the QWERTx team: what moved markets, what the smart money did and what to watch next week, in plain English.', [
+      ['When it arrives', 'Every weekend, on this tab and at the top of the Friday email.'],
+      ['Your stocks', 'Stocks you own are highlighted in gold when the Brief mentions them.'],
+      ['Ask us', 'Use the question box under each Brief. We read every one and answer the common ones in the next Brief.'],
+    ]],
+  };
+  function introHtml(tab) {
+    var g = GUIDE[tab]; if (!g) return '';
+    var key = 'qx-howto-' + tab, seen = lget(key);
+    return '<div class="px-intro"><p class="px-intro-what">' + esc(g[0]) + '</p><details class="px-howto" data-howto="' + tab + '"' + (seen === 'closed' ? '' : seen ? ' open' : ' open') + '><summary>How to read this</summary><dl>' +
+      g[1].map(function (x) { return '<div><dt>' + esc(x[0]) + '</dt><dd>' + esc(x[1]) + '</dd></div>'; }).join('') + '</dl></details></div>';
+  }
+  function welcomeHtml() {
+    var lines = [['My Portfolio', 'what you own and how spread out it is'], ['Smart Money', 'who is buying and selling your stocks'], ['Analyst Targets', 'what Wall Street expects next year'], ['Earnings & News', 'report dates and big company news'], ['Market Weather', 'the economy and market mood at a glance'], ['QWERTx Brief', 'our weekly note in plain English']];
+    return '<section class="card px-welcome" aria-label="Welcome"><div><div class="px-label">New here? Start with this</div><h2 class="px-h2">Six tabs, one question each</h2><ol>' +
+      lines.map(function (l, i) { return '<li><button type="button" class="linklike" data-tab-go="' + TABS[i][0] + '">' + esc(l[0]) + '</button> · ' + esc(l[1]) + '</li>'; }).join('') +
+      '</ol><p class="form-note">Everything here comes from official filings and public market data. It explains what is happening; it never tells you what to buy or sell.</p></div><button type="button" class="btn btn-sm" data-act="welcome-done">Got it</button></section>';
   }
 
   // ---------- Tab 1 · My Portfolio ----------
@@ -915,7 +967,8 @@
   function on(sel, ev, fn) { root.querySelectorAll(sel).forEach(function (el) { el.addEventListener(ev, function (e) { fn(e, el); }); }); }
   function bind() {
     on('[data-tab]', 'click', function (e, b) { S.tab = b.getAttribute('data-tab'); store('qx-tab', S.tab); history.replaceState(null, '', '#' + S.tab); render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); });
-    on('[data-tab-go]', 'click', function (e, b) { e.preventDefault(); S.tab = b.getAttribute('data-tab-go'); render(); });
+    on('[data-tab-go]', 'click', function (e, b) { e.preventDefault(); S.tab = b.getAttribute('data-tab-go'); store('qx-tab', S.tab); render(); });
+    root.querySelectorAll('details[data-howto]').forEach(function (d) { d.addEventListener('toggle', function () { lset('qx-howto-' + d.getAttribute('data-howto'), d.open ? 'open' : 'closed'); }); });
     on('[data-open]', 'click', function (e) { e.preventDefault(); S.drawer = true; render(); var el = document.getElementById('membership'); if (el) el.scrollIntoView({ behavior: 'smooth' }); });
     on('[data-filter]', 'click', function (e, b) { S.filter = b.getAttribute('data-filter'); S.more = false; render(); });
     on('[data-region]', 'click', function (e, b) { S.region = b.getAttribute('data-region'); render(); });
@@ -1011,6 +1064,7 @@
       if (act === 'drawer') { S.drawer = !S.drawer; render(); if (S.drawer) { var d = document.getElementById('px-drawer'); if (d) d.scrollIntoView({ behavior: 'smooth' }); } }
       if (act === 'edit-brief' && S.brief && S.brief.latest) { var L = S.brief.latest; S.briefEdit = { id: L.id, title: L.title, body: L.body || '', tickers: (L.tickers || []).join(', ') }; render(); }
       if (act === 'more') { S.more = true; render(); }
+      if (act === 'welcome-done') { lset('qx-welcome', '1'); render(); }
       if (act === 'new-brief') { S.briefEdit = null; render(); }
       if (act === 'logout') api('POST', '/api/auth/logout').then(function () { location.href = '/account.html'; });
       if (act === 'portal') { b.disabled = true; api('POST', '/api/billing-portal').then(function (j) { if (j.url) location.href = j.url; else { b.disabled = false; alert(j.message); } }); }
