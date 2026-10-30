@@ -1,6 +1,7 @@
 import { esc, money, int, date, cleanName } from '../lib/format.mjs';
 import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, tip } from '../parts.mjs';
 import { titleish } from './home.mjs';
+import { GUIDES } from '../guides.mjs';
 
 export function insiders(d) {
   const I = d.insiders;
@@ -24,6 +25,7 @@ export function insiders(d) {
   const months = Object.keys(I.monthly || {}).sort().slice(-6);
   const ratio = T.sellValue ? T.buyValue / T.sellValue : 0;
   const body = `${pageHero({
+    guide: GUIDES.insiders,
     crumbs: [['Insiders']],
     eyebrow: `Insider trading tracker · ${esc(I.label)}`,
     h1: 'What company insiders are <span class="accent">buying and selling</span>',

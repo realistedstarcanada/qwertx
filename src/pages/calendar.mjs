@@ -1,6 +1,7 @@
 // Market calendar: the economic releases that move markets and the big companies reporting earnings.
 import { esc, date } from '../lib/format.mjs';
 import { pageHero, newsletter } from '../parts.mjs';
+import { GUIDES } from '../guides.mjs';
 
 const flag = (c) => `<span class="cal-flag" title="${c === 'CA' ? 'Canada' : 'United States'}">${c === 'CA' ? 'CA' : 'US'}</span>`;
 const verdictChip = (v) => (v ? `<span class="cal-verdict v-${v.tone}">${esc(v.text)}</span>` : '');
@@ -77,6 +78,7 @@ export function calendarPage(d) {
   const c = d.calendar;
   const empty = '<p class="form-note">The calendar fills in after the next daily update.</p>';
   const body = `${pageHero({
+    guide: GUIDES.calendar,
     crumbs: [['Market Mood', '/market.html'], ['Calendar']],
     eyebrow: 'Market calendar',
     h1: 'What’s coming up, <span class="accent">and why it matters</span>',

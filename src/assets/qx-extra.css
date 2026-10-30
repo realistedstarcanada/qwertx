@@ -866,3 +866,12 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 @media (max-width: 760px) { .px-dir-grid { grid-template-columns: minmax(0, 1fr); } .px-dir .px-h2row .input { max-width: none; width: 100%; } }
 .pro-more { display: inline-flex; align-items: center; gap: 6px; margin-left: 4px; color: var(--gold); white-space: nowrap; }
 .pro-teaser { border-color: color-mix(in srgb, var(--gold) 45%, var(--line)); }
+/* "What this page tells you" guide under public page headers */
+.page-guide { padding: 0 0 8px; }
+.page-guide .pg-box { border: 1px solid var(--line); border-radius: 14px; background: color-mix(in srgb, var(--surface) 80%, transparent); padding: 14px 18px; }
+.pg-what { display: flex; gap: 10px; align-items: flex-start; margin: 0; font-size: 16px; line-height: 1.55; color: var(--text); }
+.pg-what i { color: var(--gold); margin-top: 4px; }
+.pg-howto summary { cursor: pointer; color: var(--gold); font-size: 14px; margin: 8px 0 0 26px; width: max-content; }
+.pg-howto dl { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; margin: 12px 0 2px; }
+.pg-howto dt { font-weight: 600; color: var(--text); font-size: 14px; margin-bottom: 3px; }
+.pg-howto dd { margin: 0; color: var(--text-2); font-size: 13.5px; line-height: 1.55; }

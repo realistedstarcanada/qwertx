@@ -1,6 +1,7 @@
 import { esc, money, int, date, cleanName } from '../lib/format.mjs';
 import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, partyChip, tip } from '../parts.mjs';
 import { featuredCards } from './people.mjs';
+import { GUIDES } from '../guides.mjs';
 
 const typeBadge = (t) => (t.type === 'buy' ? '<span class="act act-add">Buy</span>' : '<span class="act act-trim">Sell</span>');
 
@@ -15,6 +16,7 @@ export function politicians(d) {
   const empty = '<p class="form-note">Trades appear after the first disclosure update.</p>';
 
   const body = `${pageHero({
+    guide: GUIDES.politicians,
     crumbs: [['Politicians']],
     eyebrow: 'Congress trading tracker',
     h1: 'What politicians are <span class="accent">buying and selling</span>',

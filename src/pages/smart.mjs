@@ -1,5 +1,6 @@
 import { esc, money, pct, quarter } from '../lib/format.mjs';
 import { chart, tkr, rankList, vRank, sourceChip, kpi, pageHero, newsletter, tip } from '../parts.mjs';
+import { GUIDES } from '../guides.mjs';
 
 export function smartMoney(d) {
   const sm = d.smart;
@@ -7,6 +8,7 @@ export function smartMoney(d) {
   const top = sm.owned[0];
   const grand = d.stocks.slice(0, 30);
   const body = `${pageHero({
+    guide: GUIDES.smart,
     crumbs: [['Top Stocks']],
     eyebrow: 'Smart money stats',
     h1: 'What the smartest money owns, <span class="accent">all at once</span>',

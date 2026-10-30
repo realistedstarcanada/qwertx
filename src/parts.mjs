@@ -190,7 +190,15 @@ export const watchStrip = (ticker) =>
     ? `<div class="watch-strip"><p><b style="color:var(--text)">Own ${esc(ticker)}?</b> Watch it and get an email when a fund manager, politician or insider discloses a trade.</p><a class="btn btn-gold btn-sm" href="/account.html?add=${encodeURIComponent(ticker)}"><i class="fa-solid fa-binoculars" aria-hidden="true"></i> Watch ${esc(ticker)}</a></div>`
     : '';
 
-export const pageHero = ({ crumbs, eyebrow, h1, lead, img, imgAlt, extra = '' }) => `<section class="page-hero">
+/** Plain-English guide under a page header: one line on what the page tells you, plus "How to read this". */
+export const guide = (g) => (!g ? '' : `<section class="page-guide" aria-label="About this page">
+  <div class="container"><div class="pg-box">
+    <p class="pg-what"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><span>${g.what}</span></p>
+    <details class="pg-howto"><summary>How to read this page</summary><dl>${g.items.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl></details>
+  </div></div>
+</section>`);
+
+export const pageHero = ({ crumbs, eyebrow, h1, lead, img, imgAlt, extra = '', guide: g = null }) => `<section class="page-hero">
   <div class="hero-bg grid">${img ? `<img src="/assets/img/${img}" alt="${esc(imgAlt || '')}" width="1672" height="941" fetchpriority="high">` : ''}</div>
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a>${crumbs.map((c, i) => `<span aria-hidden="true">/</span>${i === crumbs.length - 1 ? `<span aria-current="page">${esc(c[0])}</span>` : `<a href="${c[1]}">${esc(c[0])}</a>`}`).join('')}</nav>
@@ -199,7 +207,7 @@ export const pageHero = ({ crumbs, eyebrow, h1, lead, img, imgAlt, extra = '' })
     ${lead ? `<p class="lead maxw-640">${lead}</p>` : ''}
     ${extra}
   </div>
-</section>`;
+</section>${guide(g)}`;
 
 export const kpi = (k, v, s) => `<div class="kpi reveal"><div class="k">${k}</div><div class="v">${v}</div><div class="s">${s}</div></div>`;
 

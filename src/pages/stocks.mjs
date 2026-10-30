@@ -2,6 +2,7 @@ import { esc, money, int, pct, date, quarter } from '../lib/format.mjs';
 import { tvWidget } from '../layout.mjs';
 import { tkr, actBadge, wbar, sourceChip, kpi, pageHero, proCta, partyChip, tip, watchStrip } from '../parts.mjs';
 import { titleish } from './home.mjs';
+import { GUIDES } from '../guides.mjs';
 
 /** "Next earnings: Wed Oct 21 · after close · EPS est. $6.54" */
 export const earningsChip = (s) => {
@@ -65,6 +66,7 @@ export function stockPage(d, s) {
   const consensus = d.stocks.filter((x) => x.slug !== s.slug).slice(0, 8);
 
   const body = `${pageHero({
+    guide: GUIDES.stock(esc(s.label)),
     crumbs: [['Top Stocks', '/smart-money.html'], [s.label]],
     eyebrow: `${esc(s.sector)} · owned by ${s.owners} fund manager${s.owners > 1 ? 's' : ''}`,
     h1: `Who owns ${esc(label)}?`,
@@ -128,6 +130,7 @@ function tradedStockPage(d, s) {
   const members = new Set(pol.map((t) => t.bioguide || t.member)).size;
   const label = `${s.name} (${s.ticker})`;
   const body = `${pageHero({
+    guide: GUIDES.stock(esc(s.label)),
     crumbs: [['Top Stocks', '/smart-money.html'], [s.label]],
     eyebrow: `${s.sector ? esc(s.sector) + ' · ' : ''}not held by our fund managers`,
     h1: `Who’s trading ${esc(label)}?`,

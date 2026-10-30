@@ -1,8 +1,10 @@
 import { esc, money, int, pct, date, quarter, signed, upDown } from '../lib/format.mjs';
-import { chart, tkr, actBadge, wbar, sourceChip, rankList, vCard, pageHero, kpi, proCta, tip } from '../parts.mjs';
+import { chart, tkr, actBadge, wbar, sourceChip, rankList, vCard, pageHero, kpi, proCta, tip, guide } from '../parts.mjs';
+import { GUIDES } from '../guides.mjs';
 
 export function investorsIndex(d) {
   const body = `${pageHero({
+    guide: GUIDES.investors,
     crumbs: [['Fund Managers']],
     eyebrow: 'Super investors',
     h1: `The ${d.live.length} super investors we track`,
@@ -99,7 +101,7 @@ export function investorPage(d, inv) {
       </div>
     </div>
   </div>
-</section>
+</section>${guide(GUIDES.investor(esc(inv.manager)))}
 <section class="section-sm">
   <div class="container">
     <h2 class="sr-only">Portfolio summary and charts</h2>
