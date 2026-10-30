@@ -599,42 +599,50 @@
       ]
     },
     {
-      "slug": "guy-spier",
-      "manager": "Guy Spier",
-      "firm": "Aquamarine Capital",
+      "slug": "robert-torray",
+      "manager": "Robert Torray",
+      "firm": "Torray Investment Partners",
       "categories": [
         "value"
       ],
       "q": [
-        "Aquamarine Capital Management",
-        "Aquamarine Capital"
-      ],
-      "check": true
+        "Torray Investment Partners",
+        "Torray LLC",
+        "Torray"
+      ]
     },
     {
-      "slug": "joel-greenblatt",
-      "manager": "Joel Greenblatt",
-      "firm": "Gotham Asset Management",
+      "slug": "edgar-wachenheim",
+      "manager": "Edgar Wachenheim",
+      "firm": "Greenhaven Associates",
       "categories": [
         "value"
       ],
       "q": [
-        "Gotham Asset Management"
-      ],
-      "check": true
+        "Greenhaven Associates"
+      ]
     },
     {
-      "slug": "jarislowsky-fraser",
-      "manager": "Jarislowsky Fraser",
-      "firm": "Jarislowsky, Fraser Limited",
+      "slug": "john-armitage",
+      "manager": "John Armitage",
+      "firm": "Egerton Capital",
       "categories": [
-        "canada"
+        "more"
       ],
       "q": [
-        "Jarislowsky Fraser",
-        "Jarislowsky, Fraser"
+        "Egerton Capital"
+      ]
+    },
+    {
+      "slug": "david-katz",
+      "manager": "David Katz",
+      "firm": "Matrix Asset Advisors",
+      "categories": [
+        "value"
       ],
-      "check": true
+      "q": [
+        "Matrix Asset Advisors"
+      ]
     }
   ]
 }
