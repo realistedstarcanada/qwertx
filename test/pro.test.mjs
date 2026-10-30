@@ -350,5 +350,5 @@ test('Pro data files stay small enough for a Worker to read', () => {
   assert.ok(fs.statSync('dist/pro/events-recent.json').size < 600e3);
   const idx = JSON.parse(fs.readFileSync('dist/pro/index.json', 'utf8'));
   assert.ok(idx.tickers.AAPL[1] > 0, 'AAPL has tracked owners');
-  assert.equal(idx.managerOrder.length, Object.keys(idx.managers).length);
+  assert.equal(idx.managerOrder.length, Object.values(idx.managers).filter((m) => !m.g).length, 'institutions stay out of the manager ranking');
 });

@@ -45,6 +45,8 @@ const ADDED_COLUMNS = [
   `ALTER TABLE watchlist ADD COLUMN added_price REAL`,
   // Optional price paid per share, typed by the member.
   `ALTER TABLE watchlist ADD COLUMN paid REAL`,
+  // Currency of the amount or average price the member typed ('USD' or 'CAD'); null = the stock's own currency.
+  `ALTER TABLE watchlist ADD COLUMN cur TEXT`,
 ];
 
 let ready = false;

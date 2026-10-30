@@ -24,6 +24,7 @@ export const DEFAULT_PREFS = {
   snoozeUntil: null, // ISO date
   quiet: { on: false, start: 22, end: 7, tz: 'America/Toronto' },
   emailOff: false, // unsubscribed from alert and digest emails (sign-in links still work)
+  currency: null, // portfolio totals in 'USD' or 'CAD'; null = the page picks one from the member's time zone
 };
 
 export function prefsOf(u) {
@@ -32,12 +33,13 @@ export function prefsOf(u) {
   return { ...DEFAULT_PREFS, ...p, types: { ...DEFAULT_PREFS.types, ...(p.types || {}) }, quiet: { ...DEFAULT_PREFS.quiet, ...(p.quiet || {}) } };
 }
 
-/** Accepts only known keys with sane values. Free members can only change digest/email settings. */
+/** Accepts only known keys with sane values. Free members can only change digest/email settings and currency. */
 export function cleanPrefs(input, current, { pro: isProUser }) {
   const p = { ...current };
   const bool = (v) => v === true || v === 'true' || v === 'on' || v === 1;
   if ('weekly' in input) p.weekly = bool(input.weekly);
   if ('emailOff' in input) p.emailOff = bool(input.emailOff);
+  if ('currency' in input) p.currency = input.currency === 'USD' || input.currency === 'CAD' ? input.currency : null;
   if (!isProUser) return p;
   if (input.mode === 'instant' || input.mode === 'daily') p.mode = input.mode;
   if (input.types && typeof input.types === 'object') for (const k of ['f13', 'cg', 'ins']) if (k in input.types) p.types[k] = bool(input.types[k]);

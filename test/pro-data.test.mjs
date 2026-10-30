@@ -241,3 +241,18 @@ test('Yahoo test feed: quoteSummary and chart responses become the vendor shape'
   assert.equal(shapeYahoo(null).q, null);
   assert.equal(shapeYahoo({ price: { regularMarketPrice: 10 }, financialData: { targetMeanPrice: { raw: 12 } } }).an, null, 'no analysts, no targets');
 });
+
+test('holdings remember the currency they were typed in; Toronto tickers default to CAD', async () => {
+  const web = await signIn('loonie@example.com');
+  let r = await web.req('POST', '/api/watchlist', { body: { items: [{ ticker: 'RY.TO', shares: 40, paid: 135 }, { ticker: 'NVDA', shares: 10, paid: 120, cur: 'C$' }, { ticker: 'AAPL', amount: 5000 }] } });
+  const by = (j) => Object.fromEntries(j.watchlist.map((w) => [w.ticker, w]));
+  assert.equal(by(r.json).RY.cur, 'CAD', 'bought on the TSX, so Canadian dollars');
+  assert.equal(by(r.json).NVDA.cur, 'CAD');
+  assert.equal(by(r.json).AAPL.cur, null, 'otherwise the stock’s own currency');
+  r = await web.req('PATCH', '/api/watchlist', { body: { ticker: 'AAPL', amount: 5000, cur: 'usd' } });
+  assert.equal(by(r.json).AAPL.cur, 'USD');
+  r = await web.req('POST', '/api/prefs', { body: { currency: 'CAD' } });
+  assert.equal(r.json.prefs.currency, 'CAD', 'free members can pick the display currency');
+  r = await web.req('POST', '/api/prefs', { body: { currency: 'EUR' } });
+  assert.equal(r.json.prefs.currency, null);
+});

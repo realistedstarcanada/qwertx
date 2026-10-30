@@ -822,3 +822,6 @@ span.earn-chip { background: var(--surface); border-color: var(--line); }
 .wl-pos-form .form-note { grid-column: 1 / -1; margin: 0; max-width: 340px; }
 @media (max-width: 560px) { .px-ac-list li { grid-template-columns: 64px minmax(0, 1fr); } .px-ac-list .px-chip { display: none; } }
 .px-req { color: var(--gold); font-weight: 600; }
+.px-hero-h { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.px-table .wl-pos-form { grid-template-columns: auto auto auto; max-width: 480px; }
+@media (max-width: 600px) { .px-table .wl-pos-form { grid-template-columns: auto auto; } }

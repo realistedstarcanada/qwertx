@@ -19,7 +19,20 @@
   function fmtDate(iso) { if (!iso) return ''; var p = String(iso).slice(0, 10).split('-'); return MONTHS[+p[1] - 1] + ' ' + (+p[2]) + ', ' + p[0]; }
   function fmtShort(iso) { if (!iso) return ''; var p = String(iso).slice(0, 10).split('-'); return MONTHS[+p[1] - 1] + ' ' + (+p[2]); }
   function money(v) { v = +v || 0; return v >= 1e9 ? '$' + (v / 1e9).toFixed(1) + 'B' : v >= 1e6 ? '$' + (v / 1e6).toFixed(1) + 'M' : v >= 1e3 ? '$' + Math.round(v / 1e3) + 'K' : '$' + Math.round(v); }
-  function usd(v) { return '$' + Math.round(v).toLocaleString('en-US'); }
+  // Money in the member's display currency (USD or CAD). Prices in the other currency carry a US$ or C$ label.
+  function usd(v) { return (v < 0 ? '−' : '') + '$' + Math.round(Math.abs(v)).toLocaleString('en-US'); }
+  var CA_ZONES = /^America\/(Toronto|Montreal|Vancouver|Edmonton|Winnipeg|Halifax|St_Johns|Regina|Moncton|Glace_Bay|Goose_Bay|Whitehorse|Dawson|Dawson_Creek|Fort_Nelson|Yellowknife|Inuvik|Iqaluit|Rankin_Inlet|Resolute|Cambridge_Bay|Swift_Current|Atikokan|Creston|Thunder_Bay|Nipigon|Rainy_River|Blanc-Sablon)$/;
+  function guessCcy() { try { return CA_ZONES.test(Intl.DateTimeFormat().resolvedOptions().timeZone) ? 'CAD' : 'USD'; } catch (e) { return 'USD'; } }
+  function ccy() { return (S.me && S.me.prefs && S.me.prefs.currency) || S.ccyGuess || (S.ccyGuess = guessCcy()); }
+  /** The currency a ticker trades in: from the price feed, else Toronto listings are CAD and the rest USD. */
+  function nativeCcy(t) { var d = S.data[t]; return (d && d.q && d.q.cur === 'CAD') || /\.TO$/.test(t) ? 'CAD' : 'USD'; }
+  /** Currency a member most likely typed for a holding: what they chose, else CAD for a Toronto ticker they typed. */
+  function typedCcy(w) { return w.cur || (w.input && /(\.TO|^TSX|^TSE|:CA|:CN)/i.test(w.input) ? 'CAD' : nativeCcy(w.ticker)); }
+  function rate() { return S.index && S.index.fx && S.index.fx.USDCAD; }
+  /** Converts between USD and CAD at the Bank of Canada rate; without a rate, amounts are left as they are. */
+  function conv(v, from, to) { if (v == null || from === to || !rate()) return v; return from === 'USD' ? v * rate() : v / rate(); }
+  function sym(c) { return c === ccy() ? '$' : c === 'CAD' ? 'C$' : 'US$'; }
+  function price(v, c) { return sym(c) + v.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
   function pct(v, d) { return (v >= 0 ? '+' : '−') + Math.abs(v).toFixed(d == null ? 1 : d) + '%'; }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : (many || one + 's')); }
   function store(k, v) { try { if (v === undefined) return sessionStorage.getItem(k); if (v === null) sessionStorage.removeItem(k); else sessionStorage.setItem(k, v); } catch (e) { return null; } }
@@ -159,13 +172,16 @@
       entered (dollar amount as typed). Shares without an average price have no value until one is added. */
   function value(w) {
     var d = S.data[w.ticker] || {}, live = d.q && d.q.p;
+    var nat = nativeCcy(w.ticker), typed = typedCcy(w), out = ccy();
+    var C = function (v, from) { return conv(v, from, out); };
     var sh = w.shares || (w.amount && w.paid ? w.amount / w.paid : null);
     if (live) {
-      if (sh) return { now: sh * live, invested: w.paid ? sh * w.paid : w.amount || (w.addedPrice ? sh * w.addedPrice : null), kind: 'live' };
-      if (w.amount && w.addedPrice) return { now: w.amount * live / w.addedPrice, invested: w.amount, kind: 'live' };
+      // Book cost stays in the currency it was typed in, so a Canadian's gain on a US stock includes the dollar's move.
+      if (sh) return { now: C(sh * live, nat), invested: w.paid ? C(sh * w.paid, typed) : w.amount ? C(w.amount, typed) : w.addedPrice ? C(sh * w.addedPrice, nat) : null, kind: 'live' };
+      if (w.amount && w.addedPrice) return { now: C(w.amount * live / w.addedPrice, typed), invested: C(w.amount, typed), kind: 'live' };
     }
-    if (w.amount) return { now: w.amount, invested: w.amount, kind: 'entered' };
-    if (w.shares && w.paid) return { now: w.shares * w.paid, invested: w.shares * w.paid, kind: 'paid' };
+    if (w.amount) return { now: C(w.amount, typed), invested: C(w.amount, typed), kind: 'entered' };
+    if (w.shares && w.paid) return { now: C(w.shares * w.paid, typed), invested: C(w.shares * w.paid, typed), kind: 'paid' };
     return null;
   }
 
@@ -243,7 +259,7 @@
       '<form id="wl-add-form" class="wl-add-form"><div class="px-ac"><label class="sr-only" for="wl-input">Search by ticker or company name</label><input class="input" id="wl-input" name="tickers" placeholder="Search a ticker or company: AAPL, Shopify, VOO, XEQT" autocomplete="off" autocapitalize="characters" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="px-ac-list"' + (used >= limit ? ' disabled' : '') + '>' +
       '<ul class="px-ac-list" id="px-ac-list" role="listbox" aria-label="Matching stocks and ETFs" hidden></ul></div>' +
       '<button class="btn btn-gold" type="submit"' + (used >= limit ? ' disabled' : '') + '>Add</button></form>' +
-      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (Symbol or Ticker column, plus Shares with Average cost, or Amount) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
+      '<p class="form-note">Separate tickers with commas or spaces. Or <label class="linklike" for="wl-csv">upload a CSV</label><input id="wl-csv" type="file" accept=".csv,text/csv" hidden> from your broker (Symbol or Ticker column, plus Shares with Average cost, or Amount, and Currency) · <a href="/assets/qwertx-watchlist-template.csv" download>CSV template</a></p>' +
       resultsHtml() + '</section>';
   }
 
@@ -269,10 +285,13 @@
     var glNow = gl.reduce(function (a, r) { return a + r.v.now; }, 0), glIn = gl.reduce(function (a, r) { return a + r.v.invested; }, 0);
     var gain = gl.length ? glNow - glIn : null;
     html += '<div class="px-grid2">';
-    html += '<section class="card px-hero" aria-label="Portfolio value">' + label('Portfolio value') +
+    var mixed = M.sized.some(function (r) { return typedCcy(r.w) !== ccy() || nativeCcy(r.t) !== ccy(); });
+    var fxNote = mixed && rate() ? ' Converted at US$1 = C$' + rate().toFixed(4) + ' (' + esc(S.index.fx.source) + ', ' + fmtShort(S.index.fx.d) + ').' : mixed ? ' Exchange rate not loaded yet, so US and Canadian dollars are added as they are.' : '';
+    html += '<section class="card px-hero" aria-label="Portfolio value"><div class="px-hero-h">' + label('Portfolio value · ' + (ccy() === 'CAD' ? 'Canadian dollars' : 'US dollars')) +
+      '<div class="px-seg small" role="group" aria-label="Show totals in">' + ['USD', 'CAD'].map(function (c) { return '<button type="button" data-ccy="' + c + '" aria-pressed="' + (ccy() === c) + '"' + (ccy() === c ? ' class="on"' : '') + '>' + c + '</button>'; }).join('') + '</div></div>' +
       (M.sized.length ? '<div class="px-big">' + usd(M.total) + '</div>' +
         (gain != null ? '<div class="px-gain ' + (gain >= 0 ? 'up' : 'down') + '">' + (gain >= 0 ? '+' : '−') + usd(Math.abs(gain)) + ' (' + pct(gain / glIn * 100) + ') ' + (gl.length === M.sized.length ? 'on what you paid' : 'on the ' + plural(gl.length, 'holding') + ' with an average price') + '</div>' : '') +
-        '<p class="form-note">From ' + basis + '. ' + plural(M.sized.length, 'position') + ' with a size' + (M.rows.length > M.sized.length ? ', ' + (M.rows.length - M.sized.length) + ' without' : '') + '.' +
+        '<p class="form-note">From ' + basis + '.' + fxNote + ' ' + plural(M.sized.length, 'position') + ' with a size' + (M.rows.length > M.sized.length ? ', ' + (M.rows.length - M.sized.length) + ' without' : '') + '.' +
           (M.rows.some(function (r) { return r.w.shares && !r.v; }) ? ' Holdings in shares count once you add their average price.' : '') + '</p>'
         : '<div class="px-big muted">—</div><p class="form-note">Add how much you own on each holding (optional) to see your total, your weights and what you really own.</p>') +
       (M.sized.some(function (r) { return r.d && r.d.hist && r.d.q; }) ? perfChart(M) : soon('Performance tracking starts with live prices', 'Once live price data is switched on, this charts how your current holdings have moved over the past year.')) +
@@ -372,17 +391,17 @@
     if (d && d.etf) {
       sm = chip(d.etf.count ? d.etf.count.toLocaleString('en-US') + ' holdings' : 'ETF', '');
       er = '<a href="#etf-card" data-etf="' + esc(t) + '">Look inside →</a>';
+    } else if (caOnly) {
+      sm = '<span title="US fund-manager, politician and insider filings only cover US-listed shares.">' + chip('Toronto listing', '') + '</span>';
     } else if (d) {
       var b = (d.h || []).filter(function (h) { return h[2] === 'New' || h[2] === 'Add'; }).length, s = (d.h || []).filter(function (h) { return h[2] === 'Trim'; }).length + (d.x || []).length;
       sm = (d.h || []).length || s ? chip(b + '↑ ' + s + '↓', b > s ? 'up' : s > b ? 'down' : '') : chip('No tracked owner', '');
       if (d.le && d.le.est != null && d.le.d >= addDays(-50)) er = chip(d.le.eps >= d.le.est ? 'Beat' : 'Missed', d.le.eps >= d.le.est ? 'up' : 'down');
       else if (d.e && d.e.d >= today()) er = chip(fmtShort(d.e.d), '');
-    } else if (caOnly) {
-      sm = '<span title="US fund-manager, politician and insider filings only cover US-listed shares.">' + chip('Toronto listing', '') + '</span>';
     }
-    var pos = w.amount ? usd(w.amount) : w.shares ? (+w.shares).toLocaleString('en-US') + ' shares' : '<span class="muted">—</span>';
-    if (w.paid && w.shares) pos += '<div class="tkr-name">avg. $' + (+w.paid).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' a share</div>';
-    return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkr(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div>' + (d && d.q && d.q.p ? '<div class="tkr-name mono">' + (d.q.cur && d.q.cur !== 'USD' ? d.q.cur + ' ' : '$') + d.q.p.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + (d.q.chg != null ? ' <span class="' + (d.q.chg >= 0 ? 'up' : 'down') + '">' + pct(d.q.chg, 2) + '</span>' : '') + '</div>' : '') + '</td>' +
+    var pos = w.amount ? sym(typedCcy(w)) + Math.round(w.amount).toLocaleString('en-US') : w.shares ? (+w.shares).toLocaleString('en-US') + ' shares' : '<span class="muted">—</span>';
+    if (w.paid && w.shares) pos += '<div class="tkr-name">avg. ' + price(+w.paid, typedCcy(w)) + ' a share</div>';
+    return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkr(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div>' + (d && d.q && d.q.p ? '<div class="tkr-name mono">' + price(d.q.p, nativeCcy(t)) + (d.q.chg != null ? ' <span class="' + (d.q.chg >= 0 ? 'up' : 'down') + '">' + pct(d.q.chg, 2) + '</span>' : '') + '</div>' : '') + '</td>' +
       '<td>' + pos + ' <button type="button" class="linklike" data-edit="' + esc(t) + '">' + (w.amount || w.shares ? 'Edit' : 'Add size') + '</button>' + posForm(w) + '</td>' +
       '<td>' + (weight != null ? '<div class="px-wbar"><span style="width:' + Math.min(100, weight * 2.5).toFixed(0) + '%"></span></div><span class="mono">' + weight.toFixed(1) + '%</span>' : '<span class="muted">—</span>') + '</td>' +
       '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'paid' ? '<div class="tkr-name">at your average price</div>' : '') + (v.kind === 'live' && v.invested ? '<div class="tkr-name ' + (v.now >= v.invested ? 'up' : 'down') + '">' + (v.now >= v.invested ? '+' : '−') + usd(Math.abs(v.now - v.invested)) + ' (' + pct((v.now / v.invested - 1) * 100) + ')</div>' : '') : w.shares ? '<button type="button" class="linklike" data-edit="' + esc(t) + '">Add average price</button>' : '<span class="muted">—</span>') + '</td>' +
@@ -396,6 +415,7 @@
       '<label class="px-pf"><span>You own</span><span class="px-pf-row"><input class="input input-sm" name="n" inputmode="decimal" placeholder="' + (unit === 'shares' ? '10' : '10,000') + '" value="' + esc(w.shares || w.amount || (S.prefill && S.prefill[w.ticker]) || '') + '" aria-label="How much of ' + t + ' you own">' +
       '<select class="input input-sm" name="unit" aria-label="Shares or dollars"><option value="shares"' + (unit === 'shares' ? ' selected' : '') + '>shares</option><option value="amount"' + (unit === 'amount' ? ' selected' : '') + '>$ invested</option></select></span></label>' +
       '<label class="px-pf px-pf-paid"' + (unit === 'shares' ? '' : ' hidden') + '><span>Average price per share <b class="px-req" aria-hidden="true">*</b></span><input class="input input-sm" name="paid" inputmode="decimal" placeholder="$150.00" aria-required="true" value="' + esc(w.shares && w.paid ? w.paid : '') + '" aria-label="Average price you paid per share of ' + t + ' (required)"></label>' +
+      '<label class="px-pf"><span>In</span><select class="input input-sm" name="cur" aria-label="Currency of the amount or average price">' + ['USD', 'CAD'].map(function (c) { return '<option value="' + c + '"' + (typedCcy(w) === c ? ' selected' : '') + '>' + (c === 'USD' ? 'US$' : 'C$') + '</option>'; }).join('') + '</select></label>' +
       '<span class="px-pf-act"><button class="btn btn-sm btn-gold" type="submit">Save</button>' + (w.shares || w.amount ? '<button class="linklike" type="button" data-clear="' + t + '">Remove size</button>' : '<button class="linklike" type="button" data-edit="' + t + '">Later</button>') + '</span>' +
       '<p class="form-note px-pf-note" role="status">' + (unit === 'shares' ? 'Your broker shows it as “average cost” or “book cost per share”.' : 'The dollar amount you put in.') + '</p></form>';
   }
@@ -627,8 +647,8 @@
       var pX = X(x.p), aX = X(x.a.avg);
       var seg = [((x.a.sb || 0) + (x.a.b || 0)), x.a.h || 0, ((x.a.s || 0) + (x.a.ss || 0))];
       return '<button type="button" class="card px-tcard' + (x.t === sel.t ? ' on' : '') + '" data-sel="' + esc(x.t) + '" aria-pressed="' + (x.t === sel.t ? 'true' : 'false') + '"><span class="px-tc-h"><b class="mono">' + esc(x.t) + '</b><span class="mono ' + (x.up >= 0 ? 'up' : 'down') + '">' + pct(x.up, 0) + '</span></span>' +
-        '<svg viewBox="0 0 360 74" width="100%" height="74" role="img" aria-label="' + esc(x.t) + ' price ' + x.p.toFixed(2) + ', average target ' + x.a.avg + '"><rect x="8" y="32" width="344" height="10" rx="5" fill="var(--px-track)"></rect><rect x="' + X(x.a.low).toFixed(1) + '" y="32" width="' + (X(x.a.high) - X(x.a.low)).toFixed(1) + '" height="10" rx="5" fill="var(--px-band)"></rect><line x1="' + pX.toFixed(1) + '" y1="24" x2="' + pX.toFixed(1) + '" y2="50" stroke="currentColor" stroke-width="3"></line><text x="' + pX.toFixed(1) + '" y="16" text-anchor="' + anc(pX) + '" fill="currentColor" font-size="12.5" font-family="IBM Plex Mono, monospace">Today $' + x.p.toFixed(0) + '</text><circle cx="' + aX.toFixed(1) + '" cy="37" r="8" fill="#F5B83D"></circle><text x="' + aX.toFixed(1) + '" y="68" text-anchor="' + anc(aX) + '" fill="#F5B83D" font-size="12.5" font-family="IBM Plex Mono, monospace">Target $' + Math.round(x.a.avg) + '</text></svg>' +
-        '<span class="px-lohi"><span>Lowest $' + Math.round(x.a.low) + '</span><span>' + (x.spread < 0.5 ? 'Analysts mostly agree' : x.spread < 0.8 ? 'Some disagreement' : 'Wide disagreement') + '</span><span>Highest $' + Math.round(x.a.high) + '</span></span>' +
+        '<svg viewBox="0 0 360 74" width="100%" height="74" role="img" aria-label="' + esc(x.t) + ' price ' + x.p.toFixed(2) + ', average target ' + x.a.avg + '"><rect x="8" y="32" width="344" height="10" rx="5" fill="var(--px-track)"></rect><rect x="' + X(x.a.low).toFixed(1) + '" y="32" width="' + (X(x.a.high) - X(x.a.low)).toFixed(1) + '" height="10" rx="5" fill="var(--px-band)"></rect><line x1="' + pX.toFixed(1) + '" y1="24" x2="' + pX.toFixed(1) + '" y2="50" stroke="currentColor" stroke-width="3"></line><text x="' + pX.toFixed(1) + '" y="16" text-anchor="' + anc(pX) + '" fill="currentColor" font-size="12.5" font-family="IBM Plex Mono, monospace">Today ' + sym(nativeCcy(x.t)) + x.p.toFixed(0) + '</text><circle cx="' + aX.toFixed(1) + '" cy="37" r="8" fill="#F5B83D"></circle><text x="' + aX.toFixed(1) + '" y="68" text-anchor="' + anc(aX) + '" fill="#F5B83D" font-size="12.5" font-family="IBM Plex Mono, monospace">Target ' + sym(nativeCcy(x.t)) + Math.round(x.a.avg) + '</text></svg>' +
+        '<span class="px-lohi"><span>Lowest ' + sym(nativeCcy(x.t)) + Math.round(x.a.low) + '</span><span>' + (x.spread < 0.5 ? 'Analysts mostly agree' : x.spread < 0.8 ? 'Some disagreement' : 'Wide disagreement') + '</span><span>Highest ' + sym(nativeCcy(x.t)) + Math.round(x.a.high) + '</span></span>' +
         '<span class="px-ratings">' + ['Buy', 'Hold', 'Sell'].map(function (l, i) { var wv = seg[i] / (x.n || 1) * 100; return '<span class="' + l.toLowerCase() + '" style="width:' + wv.toFixed(1) + '%">' + (wv >= 16 ? seg[i] + ' ' + l : wv >= 7 ? seg[i] : '') + '</span>'; }).join('') + '</span></button>';
     }).join('') + '</section>';
     if (sel.v) {
@@ -636,7 +656,7 @@
       var mx = Math.max(sc[2].v, sel.v.now) * 1.05;
       html += '<section class="card px-scen"><div class="px-h2row"><h3 class="px-h3">Your ' + esc(sel.t) + ' position in 12 months</h3><span class="form-note">Worth ' + usd(sel.v.now) + ' today</span></div>' + sc.map(function (s, i) {
         var dlt = s.v - sel.v.now;
-        return '<div class="px-sc"><div class="px-bar-l"><span>' + s.l + ' <span class="muted">· $' + Math.round(s.t) + '</span></span><span><b class="mono">' + usd(s.v) + '</b> <span class="mono ' + (dlt >= 0 ? 'up' : 'down') + '">' + (dlt >= 0 ? '+' : '−') + usd(Math.abs(dlt)) + '</span></span></div><div class="px-sc-t"><span style="width:' + (s.v / mx * 100).toFixed(1) + '%;background:' + (i === 1 ? '#F5B83D' : dlt >= 0 ? '#2DD4BF' : '#F87171') + '"></span><i style="left:' + (sel.v.now / mx * 100).toFixed(1) + '%"></i></div></div>';
+        return '<div class="px-sc"><div class="px-bar-l"><span>' + s.l + ' <span class="muted">· ' + sym(nativeCcy(sel.t)) + Math.round(s.t) + '</span></span><span><b class="mono">' + usd(s.v) + '</b> <span class="mono ' + (dlt >= 0 ? 'up' : 'down') + '">' + (dlt >= 0 ? '+' : '−') + usd(Math.abs(dlt)) + '</span></span></div><div class="px-sc-t"><span style="width:' + (s.v / mx * 100).toFixed(1) + '%;background:' + (i === 1 ? '#F5B83D' : dlt >= 0 ? '#2DD4BF' : '#F87171') + '"></span><i style="left:' + (sel.v.now / mx * 100).toFixed(1) + '%"></i></div></div>';
       }).join('') + '<p class="form-note">White line = your position today. Targets tend to run optimistic; read them as a direction, not a promise.</p></section>';
     }
     return html;
@@ -899,6 +919,12 @@
     on('[data-open]', 'click', function (e) { e.preventDefault(); S.drawer = true; render(); var el = document.getElementById('membership'); if (el) el.scrollIntoView({ behavior: 'smooth' }); });
     on('[data-filter]', 'click', function (e, b) { S.filter = b.getAttribute('data-filter'); S.more = false; render(); });
     on('[data-region]', 'click', function (e, b) { S.region = b.getAttribute('data-region'); render(); });
+    on('[data-ccy]', 'click', function (e, b) {
+      var c = b.getAttribute('data-ccy');
+      S.me.prefs = Object.assign({}, S.me.prefs, { currency: c });
+      render();
+      api('POST', '/api/prefs', { currency: c });
+    });
     on('[data-sel]', 'click', function (e, b) { S.sel = b.getAttribute('data-sel'); render(); });
     on('[data-etf]', 'click', function (e, b) { e.preventDefault(); S.etf = b.getAttribute('data-etf'); render(); var el = document.getElementById('etf-card'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     var add = document.getElementById('wl-add-form');
@@ -927,6 +953,7 @@
       var body = { ticker: f.getAttribute('data-pos') };
       body[f.unit.value] = f.n.value;
       if (shares) body.paid = f.paid.value;
+      body.cur = f.cur.value;
       S.openPos = null;
       if (S.prefill) delete S.prefill[body.ticker];
       savePos(body);
@@ -1028,13 +1055,14 @@
     var delim = [',', ';', '\t'].sort(function (a, b) { return lines[0].split(b).length - lines[0].split(a).length; })[0];
     var split = function (l) { var out = [], cur = '', q = false; for (var i = 0; i < l.length; i++) { var c = l[i]; if (c === '"') q = !q; else if (c === delim && !q) { out.push(cur); cur = ''; } else cur += c; } out.push(cur); return out.map(function (x) { return x.trim(); }); };
     var rows = lines.map(split);
-    var hi = -1, col = 0, qcol = -1, acol = -1, pcol = -1;
+    var hi = -1, col = 0, qcol = -1, acol = -1, pcol = -1, ccol = -1;
     for (var r = 0; r < Math.min(rows.length, 15) && hi < 0; r++) {
       for (var c = 0; c < rows[r].length; c++) if (/^(symbol|ticker|ticker symbol|security symbol|stock symbol|code)$/i.test(rows[r][c])) { hi = r; col = c; break; }
     }
     if (hi >= 0) rows[hi].forEach(function (h, c) {
       if (qcol < 0 && /^(shares|quantity|qty|units|number of shares)$/i.test(h)) qcol = c;
       if (acol < 0 && /^(amount|market value|value|total value|position value)( \((us\$|usd|cad|c\$)\))?$/i.test(h)) acol = c;
+      if (ccol < 0 && /^(currency|ccy|cur|price currency|book currency)$/i.test(h)) ccol = c;
       if (pcol < 0 && /^(price paid|paid|purchase price|avg(\.)? cost|average cost|average price|avg(\.)? price|cost per share|book cost per share|acb per share)( \((us\$|usd|cad|c\$)\))?$/i.test(h)) pcol = c;
     });
     var data = hi >= 0 ? rows.slice(hi + 1) : rows;
@@ -1047,6 +1075,7 @@
       if (qcol >= 0 && row[qcol]) item.shares = row[qcol];
       else if (acol >= 0 && row[acol]) item.amount = row[acol];
       if (pcol >= 0 && row[pcol] && (item.shares || item.amount)) item.paid = row[pcol];
+      if (ccol >= 0 && /^(USD|CAD|US\$|C\$)$/i.test(row[ccol] || '')) item.cur = row[ccol].toUpperCase();
       out.push(item);
     });
     return out.slice(0, 100);

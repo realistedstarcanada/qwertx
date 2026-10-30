@@ -143,6 +143,12 @@ if (secTickers) {
 }
 fs.mkdirSync(path.join(OUT, 'pro/t'), { recursive: true });
 for (const [t, o] of Object.entries(pro.ownership.stocks)) fs.writeFileSync(path.join(OUT, 'pro/t', `${t}.json`), JSON.stringify(o));
+// Exchange rate for members who hold both US and Canadian listings (Bank of Canada daily rate).
+{
+  const fx = readJSON('data/macro.json')?.series?.ca_usdcad;
+  const last = fx?.last || fx?.obs?.at(-1);
+  if (last) pro.index.fx = { USDCAD: last[1], d: last[0], source: fx.source || 'Bank of Canada' };
+}
 fs.writeFileSync(path.join(OUT, 'pro/index.json'), JSON.stringify(pro.index));
 fs.writeFileSync(path.join(OUT, 'pro/weather.json'), JSON.stringify(buildWeather({ macro: readJSON('data/macro.json'), market: d.market, insiders: d.insiders, politics: d.politics, live: d.live })));
 fs.writeFileSync(path.join(OUT, 'pro/events-recent.json'), JSON.stringify({ generatedAt: pro.ownership.generatedAt, events: pro.recentEvents }));

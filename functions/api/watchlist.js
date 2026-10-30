@@ -1,6 +1,6 @@
 // POST   /api/watchlist { tickers: ["AAPL", "RY.TO", ...] }               — add stocks (typed)
 //        /api/watchlist { items: [{ ticker, shares?, amount? }, ...] }     — add stocks with sizes (CSV)
-// PATCH  /api/watchlist { ticker, shares?, amount?, paid? }                — set or clear a position size and price paid
+// PATCH  /api/watchlist { ticker, shares?, amount?, paid?, cur? }          — set or clear a position size, price paid, currency
 // DELETE /api/watchlist?ticker=AAPL                                       — remove one stock
 // A position size is optional and is either a number of shares (always with the average price paid) or a
 // dollar amount, never both.
@@ -48,6 +48,8 @@ export const onRequestPost = route(async ({ request, env }) => {
     owned.add(n.ticker);
     // Shares always come with the average price paid; without it the size is left for the member to finish.
     const sz = { ...sizes.get(input) };
+    // A Toronto ticker matched to its New York listing (RY.TO -> RY) was bought in Canadian dollars.
+    if ((sz.shares || sz.amount) && !sz.cur && (n.ticker.endsWith('.TO') || /(\.TO|^TSX|^TSE|:CA|:CN)/i.test(input))) sz.cur = 'CAD';
     const needsPrice = sz.shares && !sz.paid ? sz.shares : null;
     if (needsPrice) delete sz.shares;
     add.push({ ...n, ...sz });
@@ -60,7 +62,7 @@ export const onRequestPost = route(async ({ request, env }) => {
     if (idx?.vendor) {
       await Promise.all(add.map(async (n) => { const t = await asset(env, request, `/pro/t/${encodeURIComponent(n.ticker)}.json`); n.price = t?.q?.p ?? null; }));
     }
-    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at, shares, amount, added_price, paid) VALUES (?, ?, ?, ?, ?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString(), n.shares ?? null, n.amount ?? null, n.price ?? null, n.paid ?? null)));
+    await DB.batch(add.map((n, i) => DB.prepare(`INSERT OR IGNORE INTO watchlist (user_id, ticker, input, added_at, shares, amount, added_price, paid, cur) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`).bind(user.id, n.ticker, n.from || null, new Date(Date.parse(now) + i).toISOString(), n.shares ?? null, n.amount ?? null, n.price ?? null, n.paid ?? null, n.shares || n.amount ? n.cur ?? null : null)));
   }
   return json({ ok: true, results, ...(await accountView(DB, user, env)) });
 });
@@ -72,23 +74,26 @@ export const onRequestPatch = route(async ({ request, env }) => {
   const DB = await db(env);
   const sz = size(body);
   if (sz.shares && !sz.paid) throw fail(422, 'Add your average price per share. Your broker shows it as “average cost”.');
-  const res = await DB.prepare(`UPDATE watchlist SET shares = ?, amount = ?, paid = ? WHERE user_id = ? AND ticker = ?`).bind(sz.shares ?? null, sz.amount ?? null, sz.shares || sz.amount ? sz.paid ?? null : null, user.id, ticker).run();
+  const res = await DB.prepare(`UPDATE watchlist SET shares = ?, amount = ?, paid = ?, cur = ? WHERE user_id = ? AND ticker = ?`).bind(sz.shares ?? null, sz.amount ?? null, sz.shares || sz.amount ? sz.paid ?? null : null, sz.shares || sz.amount ? sz.cur ?? null : null, user.id, ticker).run();
   if (!res.meta?.changes) throw fail(404, 'That stock is not on your list.');
   return json({ ok: true, ...(await accountView(DB, user, env)) });
 });
 
 /** Optional position size: shares wins if both are given; anything not a sensible positive number is dropped.
- *  `paid` is the optional price paid per share, kept only alongside a size. */
+ *  `paid` is the average price paid per share and `cur` the currency both were typed in ('USD' or 'CAD';
+ *  missing = the stock's own currency), kept only alongside a size. */
 export function size(x) {
   const num = (v) => {
     const n = Number(String(v ?? '').replace(/[$,\s]/g, ''));
     return Number.isFinite(n) && n > 0 && n < 1e12 ? Math.round(n * 10000) / 10000 : null;
   };
   const paid = num(x.paid);
+  const c = String(x.cur || x.currency || '').toUpperCase().replace(/^(US|C)\$$/, (m) => (m === 'US$' ? 'USD' : 'CAD'));
+  const cur = c === 'USD' || c === 'CAD' ? c : null;
   const shares = num(x.shares);
-  if (shares) return { shares, amount: null, paid };
+  if (shares) return { shares, amount: null, paid, cur };
   const amount = num(x.amount);
-  return amount ? { shares: null, amount: Math.round(amount * 100) / 100, paid } : {};
+  return amount ? { shares: null, amount: Math.round(amount * 100) / 100, paid, cur } : {};
 }
 
 export const onRequestDelete = route(async ({ request, env }) => {
