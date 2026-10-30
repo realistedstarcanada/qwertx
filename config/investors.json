@@ -572,29 +572,6 @@
       ]
     },
     {
-      "slug": "guy-spier",
-      "manager": "Guy Spier",
-      "firm": "Aquamarine Capital",
-      "cik": "0001404599",
-      "expect": "AQUAMARINE",
-      "avatar": "GS",
-      "tags": [
-        "Value",
-        "Concentrated",
-        "Buffett school"
-      ],
-      "meta": "Aquamarine Capital Management · Zurich · since 1997",
-      "about": "Guy Spier runs Aquamarine, a concentrated value fund modelled on Warren Buffett’s early partnerships. He is the author of The Education of a Value Investor and, with Mohnish Pabrai, bid for a charity lunch with Buffett in 2008.",
-      "philosophy": [
-        "Own a few great businesses and trade very rarely.",
-        "Design your environment to avoid bad decisions: fewer screens, fewer meetings.",
-        "Use checklists to catch mistakes before they cost money."
-      ],
-      "categories": [
-        "value"
-      ]
-    },
-    {
       "slug": "bruce-berkowitz",
       "manager": "Bruce Berkowitz",
       "firm": "Fairholme Capital Management",
@@ -622,8 +599,8 @@
       "slug": "joel-greenblatt",
       "manager": "Joel Greenblatt",
       "firm": "Gotham Asset Management",
-      "cik": "0001279148",
-      "expect": "GOTHAM ASSET",
+      "cik": "0001510387",
+      "expect": "GOTHAM",
       "avatar": "JG",
       "tags": [
         "Value",
@@ -684,30 +661,6 @@
         "Combine public and private market strategies.",
         "Focus on quality companies with durable growth.",
         "Manage risk across many separate mandates."
-      ],
-      "categories": [
-        "canada"
-      ]
-    },
-    {
-      "slug": "jarislowsky-fraser",
-      "manager": "Jarislowsky Fraser",
-      "firm": "Jarislowsky, Fraser Limited",
-      "cik": "0001123778",
-      "expect": "JARISLOWSKY",
-      "avatar": "JF",
-      "group": "institution",
-      "tags": [
-        "Canadian",
-        "Quality",
-        "Long-term"
-      ],
-      "meta": "Jarislowsky Fraser · Montreal · since 1955",
-      "about": "Founded by Stephen Jarislowsky in 1955, Jarislowsky Fraser is one of Canada’s best-known long-term investment firms and has been part of Scotiabank since 2018. It favours high-quality companies bought at sensible prices and held for years. The 13F shows its US-listed holdings only.",
-      "philosophy": [
-        "Own quality companies with sustainable growth.",
-        "Pay a reasonable price and hold for the long term.",
-        "Avoid excessive debt and weak governance."
       ],
       "categories": [
         "canada"
