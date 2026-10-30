@@ -181,7 +181,10 @@ async function run() {
       }
       history.sort((a, b) => a.period.localeCompare(b.period));
 
-      await mapCusips([...curAgg.holdings, ...sold].map((h) => h.cusip), cusipMap);
+      // Very large multi-strategy funds file thousands of positions; "topN" keeps their biggest ones (totals stay complete).
+      const keep = (list, key) => (inv.topN ? [...list].sort((a, b) => (b[key] || 0) - (a[key] || 0)).slice(0, inv.topN) : list);
+      const holdingsOut = keep(curAgg.holdings, 'value'), soldOut = keep(sold, 'prevValue');
+      await mapCusips([...holdingsOut, ...soldOut].map((h) => h.cusip), cusipMap);
       writeJSON(cusipFile, cusipMap);
       const tk = (h) => ({ ...h, ticker: cusipMap[h.cusip]?.ticker || null });
 
@@ -199,9 +202,10 @@ async function run() {
         prevTotalValue: prevAgg?.total ?? null,
         totalValue: curAgg.total,
         holdingsCount: curAgg.holdings.length,
+        topN: inv.topN || null,
         counts,
-        holdings: curAgg.holdings.map(tk),
-        sold: sold.map(tk),
+        holdings: holdingsOut.map(tk),
+        sold: soldOut.map(tk),
         history,
         updatedAt: new Date().toISOString(),
       });

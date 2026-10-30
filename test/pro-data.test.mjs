@@ -256,3 +256,13 @@ test('holdings remember the currency they were typed in; Toronto tickers default
   r = await web.req('POST', '/api/prefs', { body: { currency: 'EUR' } });
   assert.equal(r.json.prefs.currency, null);
 });
+
+test('SEC ID finder: reads EDGAR search hits and scores name matches', async () => {
+  const { ciksFromSearch, nameScore } = await import('../scripts/resolve-ciks.mjs');
+  const hits = { hits: { hits: [{ _source: { ciks: ['0001061768'], display_names: ['BAUPOST GROUP LLC/MA  (CIK 0001061768)'] } }, { _source: { ciks: ['0001061768'], display_names: ['BAUPOST GROUP LLC/MA  (CIK 0001061768)'] } }] } };
+  assert.deepEqual(ciksFromSearch(hits), [{ cik: '0001061768', name: 'BAUPOST GROUP LLC/MA' }]);
+  assert.deepEqual(ciksFromSearch(null), []);
+  assert.equal(nameScore('Coatue Management', 'COATUE MANAGEMENT LLC'), 1);
+  assert.equal(nameScore('Citadel Advisors', 'CITADEL ADVISORS LLC'), 1);
+  assert.ok(nameScore('Jana Partners', 'JANUS HENDERSON GROUP PLC') < 0.5);
+});
