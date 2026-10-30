@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-10-29T13:04:00.869Z",
+  "updatedAt": "2026-10-30T13:02:24.235Z",
   "since": "2026-04-01",
   "checks": {
     "house": {
-      "at": "2026-10-29T13:04:00.869Z",
-      "docs": 5,
-      "complete": 5,
+      "at": "2026-10-30T13:02:24.235Z",
+      "docs": 1,
+      "complete": 1,
       "incomplete": []
     }
   },
@@ -411,9 +411,91 @@
     "H20035714",
     "H20035525",
     "H20035715",
-    "H20035563"
+    "H20035563",
+    "H20035710",
+    "H9116389",
+    "H9116390",
+    "H9116391"
   ],
   "trades": [
+    {
+      "id": "H20035710-0",
+      "chamber": "House",
+      "member": "Kevin Hern",
+      "bioguide": "H001082",
+      "party": "Republican",
+      "state": "OK",
+      "district": "01",
+      "filed": "2026-10-28",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035710.pdf",
+      "ticker": "ASML",
+      "assetType": "ST",
+      "asset": "Registry Shares (ASML)",
+      "type": "sell",
+      "partial": true,
+      "date": "2026-10-23",
+      "notified": "2026-10-23",
+      "amount": {
+        "label": "$15,001 – $50,000",
+        "low": 15001,
+        "high": 50000,
+        "mid": 32500.5
+      },
+      "owner": "Self",
+      "company": "ASML HOLDING NV"
+    },
+    {
+      "id": "H20035710-1",
+      "chamber": "House",
+      "member": "Kevin Hern",
+      "bioguide": "H001082",
+      "party": "Republican",
+      "state": "OK",
+      "district": "01",
+      "filed": "2026-10-28",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035710.pdf",
+      "ticker": "STX",
+      "assetType": "ST",
+      "asset": "Seagate Technology Holdings PLC - Ordinary Shares (STX)",
+      "type": "sell",
+      "partial": true,
+      "date": "2026-10-23",
+      "notified": "2026-10-23",
+      "amount": {
+        "label": "$15,001 – $50,000",
+        "low": 15001,
+        "high": 50000,
+        "mid": 32500.5
+      },
+      "owner": "Self",
+      "company": "Seagate Technology Holdings plc"
+    },
+    {
+      "id": "H20035710-2",
+      "chamber": "House",
+      "member": "Kevin Hern",
+      "bioguide": "H001082",
+      "party": "Republican",
+      "state": "OK",
+      "district": "01",
+      "filed": "2026-10-28",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035710.pdf",
+      "ticker": "TXN",
+      "assetType": "ST",
+      "asset": "Texas Instruments Incorporated - Common Stock (TXN)",
+      "type": "sell",
+      "partial": true,
+      "date": "2026-10-14",
+      "notified": "2026-10-14",
+      "amount": {
+        "label": "$15,001 – $50,000",
+        "low": 15001,
+        "high": 50000,
+        "mid": 32500.5
+      },
+      "owner": "JT",
+      "company": "TEXAS INSTRUMENTS INC"
+    },
     {
       "id": "H20035563-31",
       "chamber": "House",
