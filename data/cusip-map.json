@@ -4771,6 +4771,12 @@
     "name": "ROCKET LAB CORP",
     "type": "Common Stock"
   },
+  "773122106": {
+    "ticker": "RKLB",
+    "name": "Rocket Lab Corp",
+    "type": "Common Stock",
+    "via": "sec-name"
+  },
   "773903109": {
     "ticker": "ROK",
     "name": "ROCKWELL AUTOMATION INC",
@@ -4790,6 +4796,11 @@
     "ticker": "ROL",
     "name": "ROLLINS INC",
     "type": "Common Stock"
+  },
+  "775781206": {
+    "ticker": "RYCEY",
+    "name": "ROLLS-ROYCE HOLDINGS-SP ADR",
+    "type": "Depositary Receipt"
   },
   "776696106": {
     "ticker": "ROP",
@@ -19353,5 +19364,45 @@
   "G8377G121": null,
   "G7309T102": null,
   "G2616C124": null,
-  "G0081J129": null
+  "G0081J129": null,
+  "30609A109": {
+    "ticker": "OKE",
+    "name": "ONEOK INC",
+    "type": "Common Stock"
+  },
+  "54338V101": {
+    "ticker": "LZAGY",
+    "name": "LONZA GROUP AG-UNSPON ADR",
+    "type": "Depositary Receipt"
+  },
+  "35045V100": {
+    "ticker": "GM",
+    "name": "General Motors Co",
+    "via": "sec-name"
+  },
+  "02072Q812": {
+    "ticker": "MAVF",
+    "name": "MATRIX ADVISORS VALUE ETF",
+    "type": "Mutual Fund"
+  },
+  "87283Q107": {
+    "ticker": "TCHP",
+    "name": "T ROWE PRICE BLUE CHIP GROWT",
+    "type": "Mutual Fund"
+  },
+  "78468R796": {
+    "ticker": "SPYX",
+    "name": "SS SPDR S&P 500 FOSS FL ETF",
+    "type": "Mutual Fund"
+  },
+  "46435G516": {
+    "ticker": "ESGD",
+    "name": "ISHARES TRUST ISHARES ESG AW",
+    "type": "Mutual Fund"
+  },
+  "78471E105": {
+    "ticker": "SKYX",
+    "name": "SKYX PLATFORMS CORP",
+    "type": "Common Stock"
+  }
 }

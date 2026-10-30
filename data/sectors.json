@@ -20588,5 +20588,41 @@
     "sector": "Funds & other",
     "name": null,
     "sic": null
+  },
+  "MAVF": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "TCHP": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPYX": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ESGD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SKYX": {
+    "sector": "Technology",
+    "name": "SKYX Platforms Corp.",
+    "sic": "3640",
+    "sicDescription": "Electric Lighting & Wiring Equipment"
+  },
+  "LZAGY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RYCEY": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   }
 }
