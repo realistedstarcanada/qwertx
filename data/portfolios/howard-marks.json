@@ -450,7 +450,7 @@
       "sharesChangePct": 0.512703164040274,
       "status": "added",
       "flow": 19351968.75,
-      "ticker": null
+      "ticker": "DXCM"
     },
     {
       "key": "071705107",
@@ -1458,7 +1458,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 7977776,
-      "ticker": null
+      "ticker": "DASH"
     },
     {
       "key": "47215PAJ5",

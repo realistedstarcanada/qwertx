@@ -13,6 +13,8 @@
   "totalValue": 286847511937,
   "holdingsCount": 3900,
   "topN": 150,
+  "stocksOnly": true,
+  "otherValue": 0,
   "counts": {
     "new": 254,
     "added": 2428,
@@ -4341,5 +4343,5 @@
       }
     }
   ],
-  "updatedAt": "2026-10-30T14:42:25.584Z"
+  "updatedAt": "2026-10-30T14:52:18.598Z"
 }

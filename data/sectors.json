@@ -18811,5 +18811,344 @@
     "sector": "Funds & other",
     "name": null,
     "sic": null
+  },
+  "PGAC": {
+    "sector": "Financials",
+    "name": "PANTAGES CAPITAL ACQUISITION Corp",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "SCHA": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PAAC": {
+    "sector": "Financials",
+    "name": "Proem Acquisition Corp. I",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "HVMC": {
+    "sector": "Financials",
+    "name": "Highview Merger Corp.",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "URNJ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "EUAD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BOTZ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "ESE": {
+    "sector": "Technology",
+    "name": "ESCO TECHNOLOGIES INC",
+    "sic": "3669",
+    "sicDescription": "Communications Equipment, NEC"
+  },
+  "IRMD": {
+    "sector": "Health Care",
+    "name": "IRADIMED CORP",
+    "sic": "3841",
+    "sicDescription": "Surgical & Medical Instruments & Apparatus"
+  },
+  "AIQ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPMO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VTEB": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "NMR": {
+    "sector": "Financials",
+    "name": "NOMURA HOLDINGS INC",
+    "sic": "6211",
+    "sicDescription": "Security Brokers, Dealers & Flotation Companies"
+  },
+  "IHS": {
+    "sector": "Communication",
+    "name": "IHS Holding Ltd",
+    "sic": "4812",
+    "sicDescription": "Radiotelephone Communications"
+  },
+  "PAVE": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "XSLL": {
+    "sector": "Financials",
+    "name": "Xsolla SPAC 1",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "FGII": {
+    "sector": "Financials",
+    "name": "FG Imperii Acquisition Corp.",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "IMAX": {
+    "sector": "Technology",
+    "name": "IMAX CORP",
+    "sic": "3861",
+    "sicDescription": "Photographic Equipment & Supplies"
+  },
+  "EFC": {
+    "sector": "Real Estate",
+    "name": "Ellington Financial Inc.",
+    "sic": "6500",
+    "sicDescription": "Real Estate"
+  },
+  "DBCA": {
+    "sector": "Financials",
+    "name": "D. Boral Acquisition I Corp.",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "AZZ": {
+    "sector": "Industrials",
+    "name": "AZZ INC",
+    "sic": "3470",
+    "sicDescription": "Coating, Engraving & Allied Services"
+  },
+  "XCBE": {
+    "sector": "Financials",
+    "name": "X3 Acquisition Corp. Ltd.",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "ZROZ": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "GREK": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FLDR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RODM": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "VCTR": {
+    "sector": "Financials",
+    "name": "Victory Capital Holdings, Inc.",
+    "sic": "6282",
+    "sicDescription": "Investment Advice"
+  },
+  "KORU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "FGD": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SPTU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "PCL": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "IBDU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "SBXE": {
+    "sector": "Financials",
+    "name": "SilverBox Corp V",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "SQNS": {
+    "sector": "Technology",
+    "name": "SEQUANS COMMUNICATIONS",
+    "sic": "3674",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "DAIC": {
+    "sector": "Technology",
+    "name": "CID Holdco, Inc.",
+    "sic": "7373",
+    "sicDescription": "Services-Computer Integrated Systems Design"
+  },
+  "SPWR": {
+    "sector": "Industrials",
+    "name": "SunPower Inc.",
+    "sic": "1700",
+    "sicDescription": "Construction - Special Trade Contractors"
+  },
+  "PERF": {
+    "sector": "Technology",
+    "name": "Perfect Corp.",
+    "sic": "7372",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "GIW": {
+    "sector": "Financials",
+    "name": "GigCapital8 Corp.",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "HCAC": {
+    "sector": "Materials",
+    "name": "Hall Chadwick Acquisition Corp",
+    "sic": "3341",
+    "sicDescription": "Secondary Smelting & Refining of  Nonferrous Metals"
+  },
+  "EVOX": {
+    "sector": "Financials",
+    "name": "Evolution Global Acquisition Corp",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "NUAI": {
+    "sector": "Energy",
+    "name": "New ERA Energy & Digital, Inc.",
+    "sic": "1311",
+    "sicDescription": "Crude Petroleum & Natural Gas"
+  },
+  "OTGA": {
+    "sector": "Financials",
+    "name": "OTG Acquisition Corp. I",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "BLZR": {
+    "sector": "Financials",
+    "name": "Trailblazer Acquisition Corp.",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "EMLC": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BRUN": {
+    "sector": "Technology",
+    "name": "Boost Run Inc.",
+    "sic": "7374",
+    "sicDescription": "Services-Computer Processing & Data Preparation"
+  },
+  "IRHOU": {
+    "sector": "Industrials",
+    "name": "Iron Horse Acquisition II Corp.",
+    "sic": "7389",
+    "sicDescription": "Services-Business Services, NEC"
+  },
+  "UAE": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "POET": {
+    "sector": "Technology",
+    "name": "POET TECHNOLOGIES INC.",
+    "sic": "3674",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "AIB": {
+    "sector": "Financials",
+    "name": "AIB Data Centers Inc.",
+    "sic": "6221",
+    "sicDescription": "Commodity Contracts Brokers & Dealers"
+  },
+  "NNE": {
+    "sector": "Utilities",
+    "name": "Nano Nuclear Energy Inc.",
+    "sic": "4911",
+    "sicDescription": "Electric Services"
+  },
+  "EWW": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "QADR": {
+    "sector": "Financials",
+    "name": "QDRO Acquisition Corp.",
+    "sic": "6770",
+    "sicDescription": "Blank Checks"
+  },
+  "CGGR": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "WINN": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RSPU": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "BETA": {
+    "sector": "Industrials",
+    "name": "BETA Technologies, Inc.",
+    "sic": "3721",
+    "sicDescription": "Aircraft"
+  },
+  "BCH": {
+    "sector": "Financials",
+    "name": "BANK OF CHILE",
+    "sic": "6029",
+    "sicDescription": "Commercial Banks, NEC"
+  },
+  "LGLV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "CNRG": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "RDIV": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
+  },
+  "JGRO": {
+    "sector": "Funds & other",
+    "name": null,
+    "sic": null
   }
 }
