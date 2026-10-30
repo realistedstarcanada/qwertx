@@ -1,53 +1,640 @@
 {
   "_note": "Managers to add, by category. scripts/resolve-ciks.mjs finds each one's SEC CIK and checks it files 13F-HR reports; results land in data/cik-candidates.json for review before they move to config/investors.json. 'institution' keeps a manager out of Top Stocks rankings; 'topN' keeps only the biggest positions of funds that file thousands.",
   "candidates": [
-    { "slug": "ray-dalio", "manager": "Ray Dalio", "firm": "Bridgewater Associates", "categories": ["value", "quant"], "q": ["Bridgewater Associates"], "group": "institution", "topN": 150 },
-    { "slug": "george-soros", "manager": "George Soros", "firm": "Soros Fund Management", "categories": ["value"], "q": ["Soros Fund Management"] },
-    { "slug": "bill-miller", "manager": "Bill Miller", "firm": "Miller Value Partners", "categories": ["value"], "q": ["Miller Value Partners"] },
-    { "slug": "mason-hawkins", "manager": "Mason Hawkins", "firm": "Southeastern Asset Management", "categories": ["value", "more"], "q": ["Southeastern Asset Management"] },
-    { "slug": "paul-singer", "manager": "Paul Singer", "firm": "Elliott Investment Management", "categories": ["value", "activist"], "q": ["Elliott Investment Management", "Elliott Management"] },
-    { "slug": "jeff-smith", "manager": "Jeff Smith", "firm": "Starboard Value", "categories": ["value", "activist"], "q": ["Starboard Value"] },
-    { "slug": "mason-morfit", "manager": "Mason Morfit", "firm": "ValueAct Capital", "categories": ["value", "activist"], "q": ["ValueAct Holdings", "ValueAct Capital"] },
-    { "slug": "keith-meister", "manager": "Keith Meister", "firm": "Corvex Management", "categories": ["value", "activist"], "q": ["Corvex Management"] },
-    { "slug": "philippe-laffont", "manager": "Philippe Laffont", "firm": "Coatue Management", "categories": ["growth"], "q": ["Coatue Management"] },
-    { "slug": "andreas-halvorsen", "manager": "Andreas Halvorsen", "firm": "Viking Global Investors", "categories": ["growth", "more"], "q": ["Viking Global Investors"] },
-    { "slug": "dan-sundheim", "manager": "Dan Sundheim", "firm": "D1 Capital Partners", "categories": ["growth", "activist"], "q": ["D1 Capital Partners"] },
-    { "slug": "brad-gerstner", "manager": "Brad Gerstner", "firm": "Altimeter Capital Management", "categories": ["growth"], "q": ["Altimeter Capital Management"] },
-    { "slug": "lee-ainslie", "manager": "Lee Ainslie", "firm": "Maverick Capital", "categories": ["growth"], "q": ["Maverick Capital"] },
-    { "slug": "larry-robbins", "manager": "Larry Robbins", "firm": "Glenview Capital Management", "categories": ["growth"], "q": ["Glenview Capital Management"] },
-    { "slug": "leopold-aschenbrenner", "manager": "Leopold Aschenbrenner", "firm": "Situational Awareness LP", "categories": ["growth"], "q": ["Situational Awareness LP", "Situational Awareness"] },
-    { "slug": "ken-fisher", "manager": "Ken Fisher", "firm": "Fisher Asset Management", "categories": ["growth", "quant"], "q": ["Fisher Asset Management"], "group": "institution", "topN": 150 },
-    { "slug": "ken-griffin", "manager": "Ken Griffin", "firm": "Citadel Advisors", "categories": ["growth", "quant"], "q": ["Citadel Advisors"], "group": "institution", "topN": 150 },
-    { "slug": "david-shaw", "manager": "David Shaw", "firm": "D. E. Shaw & Co.", "categories": ["growth", "quant"], "q": ["D. E. Shaw & Co", "Shaw D E & Co"], "group": "institution", "topN": 150 },
-    { "slug": "israel-englander", "manager": "Israel Englander", "firm": "Millennium Management", "categories": ["growth", "quant"], "q": ["Millennium Management"], "group": "institution", "topN": 150 },
-    { "slug": "cliff-asness", "manager": "Cliff Asness", "firm": "AQR Capital Management", "categories": ["growth", "quant"], "q": ["AQR Capital Management"], "group": "institution", "topN": 150 },
-    { "slug": "two-sigma", "manager": "John Overdeck & David Siegel", "firm": "Two Sigma Investments", "categories": ["growth", "quant"], "q": ["Two Sigma Investments"], "group": "institution", "topN": 150 },
-    { "slug": "louis-bacon", "manager": "Louis Bacon", "firm": "Moore Capital Management", "categories": ["growth", "quant"], "q": ["Moore Capital Management"], "group": "institution", "topN": 150 },
-    { "slug": "jeffrey-ubben", "manager": "Jeffrey Ubben", "firm": "Inclusive Capital Partners", "categories": ["activist"], "q": ["Inclusive Capital Partners"] },
-    { "slug": "barry-rosenstein", "manager": "Barry Rosenstein", "firm": "Jana Partners", "categories": ["activist"], "q": ["Jana Partners"] },
-    { "slug": "scott-ferguson", "manager": "Scott Ferguson", "firm": "Sachem Head Capital Management", "categories": ["activist"], "q": ["Sachem Head Capital Management"] },
-    { "slug": "bryan-lawrence", "manager": "Bryan Lawrence", "firm": "Oakcliff Capital Partners", "categories": ["activist"], "q": ["Oakcliff Capital Partners", "Oakcliff Capital"] },
-    { "slug": "renaissance-technologies", "manager": "Renaissance Technologies", "firm": "Renaissance Technologies (founded by Jim Simons)", "categories": ["quant"], "q": ["Renaissance Technologies"], "group": "institution", "topN": 150 },
-    { "slug": "chris-rokos", "manager": "Chris Rokos", "firm": "Rokos Capital Management", "categories": ["quant"], "q": ["Rokos Capital Management"], "group": "institution", "topN": 150 },
-    { "slug": "michael-platt", "manager": "Michael Platt", "firm": "BlueCrest Capital Management", "categories": ["quant"], "q": ["BlueCrest Capital Management"], "group": "institution", "topN": 150 },
-    { "slug": "steven-cohen", "manager": "Steven Cohen", "firm": "Point72 Asset Management", "categories": ["quant"], "q": ["Point72 Asset Management"], "group": "institution", "topN": 150 },
-    { "slug": "paul-tudor-jones", "manager": "Paul Tudor Jones", "firm": "Tudor Investment Corporation", "categories": ["quant"], "q": ["Tudor Investment Corp"], "group": "institution", "topN": 150 },
-    { "slug": "stephen-schwarzman", "manager": "Stephen Schwarzman", "firm": "Blackstone", "categories": ["quant"], "q": ["Blackstone Inc", "Blackstone Group"], "group": "institution", "topN": 150 },
-    { "slug": "daniel-och", "manager": "Sculptor Capital Management", "firm": "Sculptor Capital Management (founded by Daniel Och)", "categories": ["quant"], "q": ["Sculptor Capital Management"], "group": "institution", "topN": 150 },
-    { "slug": "edgepoint", "manager": "EdgePoint Investment Group", "firm": "EdgePoint Investment Group", "categories": ["canada"], "q": ["EdgePoint Investment Group"], "group": "institution" },
-    { "slug": "connor-clark-lunn", "manager": "Connor, Clark & Lunn", "firm": "Connor, Clark & Lunn Investment Management", "categories": ["canada"], "q": ["Connor, Clark & Lunn Investment Management", "Connor Clark & Lunn"], "group": "institution", "topN": 150 },
-    { "slug": "brompton", "manager": "Brompton Funds", "firm": "Brompton Funds", "categories": ["canada"], "q": ["Brompton Funds", "Brompton"], "group": "institution" },
-    { "slug": "sprott", "manager": "Sprott", "firm": "Sprott Inc.", "categories": ["canada"], "q": ["Sprott Inc", "Sprott Asset Management"], "group": "institution" },
-    { "slug": "guardian-capital", "manager": "Guardian Capital", "firm": "Guardian Capital LP", "categories": ["canada"], "q": ["Guardian Capital LP", "Guardian Capital"], "group": "institution", "topN": 150 },
-    { "slug": "ci-global", "manager": "CI Global Asset Management", "firm": "CI Investments Inc.", "categories": ["canada"], "q": ["CI Investments Inc", "CI Global Asset Management"], "group": "institution", "topN": 150 },
-    { "slug": "fidelity-canada", "manager": "Fidelity Canada", "firm": "Fidelity Investments Canada", "categories": ["canada"], "q": ["Fidelity Investments Canada"], "group": "institution", "topN": 150 },
-    { "slug": "brookfield", "manager": "Brookfield", "firm": "Brookfield Corporation", "categories": ["canada"], "q": ["Brookfield Corp", "Brookfield Asset Management"], "group": "institution" },
-    { "slug": "john-rogers", "manager": "John Rogers", "firm": "Ariel Investments", "categories": ["more"], "q": ["Ariel Investments"] },
-    { "slug": "charles-brandes", "manager": "Charles Brandes", "firm": "Brandes Investment Partners", "categories": ["more"], "q": ["Brandes Investment Partners"] },
-    { "slug": "robert-olstein", "manager": "Robert Olstein", "firm": "Olstein Capital Management", "categories": ["more"], "q": ["Olstein Capital Management"] },
-    { "slug": "robert-bruce", "manager": "Robert Bruce", "firm": "Bruce & Co.", "categories": ["more"], "q": ["Bruce & Co"] },
-    { "slug": "david-abrams", "manager": "David Abrams", "firm": "Abrams Capital Management", "categories": ["more"], "q": ["Abrams Capital Management"] },
-    { "slug": "david-blood", "manager": "David Blood", "firm": "Generation Investment Management", "categories": ["more"], "q": ["Generation Investment Management"] },
-    { "slug": "tom-steyer", "manager": "Farallon Capital", "firm": "Farallon Capital Management (founded by Tom Steyer)", "categories": ["more"], "q": ["Farallon Capital Management"] }
+    {
+      "slug": "ray-dalio",
+      "manager": "Ray Dalio",
+      "firm": "Bridgewater Associates",
+      "categories": [
+        "value",
+        "quant"
+      ],
+      "q": [
+        "Bridgewater Associates"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "george-soros",
+      "manager": "George Soros",
+      "firm": "Soros Fund Management",
+      "categories": [
+        "value"
+      ],
+      "q": [
+        "Soros Fund Management"
+      ]
+    },
+    {
+      "slug": "bill-miller",
+      "manager": "Bill Miller",
+      "firm": "Miller Value Partners",
+      "categories": [
+        "value"
+      ],
+      "q": [
+        "Miller Value Partners"
+      ]
+    },
+    {
+      "slug": "mason-hawkins",
+      "manager": "Mason Hawkins",
+      "firm": "Southeastern Asset Management",
+      "categories": [
+        "value",
+        "more"
+      ],
+      "q": [
+        "Southeastern Asset Management"
+      ]
+    },
+    {
+      "slug": "paul-singer",
+      "manager": "Paul Singer",
+      "firm": "Elliott Investment Management",
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "q": [
+        "Elliott Investment Management",
+        "Elliott Management"
+      ]
+    },
+    {
+      "slug": "jeff-smith",
+      "manager": "Jeff Smith",
+      "firm": "Starboard Value",
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "q": [
+        "Starboard Value"
+      ]
+    },
+    {
+      "slug": "mason-morfit",
+      "manager": "Mason Morfit",
+      "firm": "ValueAct Capital",
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "q": [
+        "ValueAct Holdings",
+        "ValueAct Capital"
+      ]
+    },
+    {
+      "slug": "keith-meister",
+      "manager": "Keith Meister",
+      "firm": "Corvex Management",
+      "categories": [
+        "value",
+        "activist"
+      ],
+      "q": [
+        "Corvex Management"
+      ]
+    },
+    {
+      "slug": "philippe-laffont",
+      "manager": "Philippe Laffont",
+      "firm": "Coatue Management",
+      "categories": [
+        "growth"
+      ],
+      "q": [
+        "Coatue Management"
+      ]
+    },
+    {
+      "slug": "andreas-halvorsen",
+      "manager": "Andreas Halvorsen",
+      "firm": "Viking Global Investors",
+      "categories": [
+        "growth",
+        "more"
+      ],
+      "q": [
+        "Viking Global Investors"
+      ]
+    },
+    {
+      "slug": "dan-sundheim",
+      "manager": "Dan Sundheim",
+      "firm": "D1 Capital Partners",
+      "categories": [
+        "growth",
+        "activist"
+      ],
+      "q": [
+        "D1 Capital Partners"
+      ]
+    },
+    {
+      "slug": "brad-gerstner",
+      "manager": "Brad Gerstner",
+      "firm": "Altimeter Capital Management",
+      "categories": [
+        "growth"
+      ],
+      "q": [
+        "Altimeter Capital Management"
+      ]
+    },
+    {
+      "slug": "lee-ainslie",
+      "manager": "Lee Ainslie",
+      "firm": "Maverick Capital",
+      "categories": [
+        "growth"
+      ],
+      "q": [
+        "Maverick Capital"
+      ]
+    },
+    {
+      "slug": "larry-robbins",
+      "manager": "Larry Robbins",
+      "firm": "Glenview Capital Management",
+      "categories": [
+        "growth"
+      ],
+      "q": [
+        "Glenview Capital Management"
+      ]
+    },
+    {
+      "slug": "leopold-aschenbrenner",
+      "manager": "Leopold Aschenbrenner",
+      "firm": "Situational Awareness LP",
+      "categories": [
+        "growth"
+      ],
+      "q": [
+        "Situational Awareness LP",
+        "Situational Awareness"
+      ]
+    },
+    {
+      "slug": "ken-fisher",
+      "manager": "Ken Fisher",
+      "firm": "Fisher Asset Management",
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "q": [
+        "Fisher Asset Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "ken-griffin",
+      "manager": "Ken Griffin",
+      "firm": "Citadel Advisors",
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "q": [
+        "Citadel Advisors"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "david-shaw",
+      "manager": "David Shaw",
+      "firm": "D. E. Shaw & Co.",
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "q": [
+        "D. E. Shaw & Co",
+        "Shaw D E & Co"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "israel-englander",
+      "manager": "Israel Englander",
+      "firm": "Millennium Management",
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "q": [
+        "Millennium Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "cliff-asness",
+      "manager": "Cliff Asness",
+      "firm": "AQR Capital Management",
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "q": [
+        "AQR Capital Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "two-sigma",
+      "manager": "John Overdeck & David Siegel",
+      "firm": "Two Sigma Investments",
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "q": [
+        "Two Sigma Investments"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "louis-bacon",
+      "manager": "Louis Bacon",
+      "firm": "Moore Capital Management",
+      "categories": [
+        "growth",
+        "quant"
+      ],
+      "q": [
+        "Moore Capital Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "jeffrey-ubben",
+      "manager": "Jeffrey Ubben",
+      "firm": "Inclusive Capital Partners",
+      "categories": [
+        "activist"
+      ],
+      "q": [
+        "Inclusive Capital Partners"
+      ]
+    },
+    {
+      "slug": "barry-rosenstein",
+      "manager": "Barry Rosenstein",
+      "firm": "Jana Partners",
+      "categories": [
+        "activist"
+      ],
+      "q": [
+        "Jana Partners"
+      ]
+    },
+    {
+      "slug": "scott-ferguson",
+      "manager": "Scott Ferguson",
+      "firm": "Sachem Head Capital Management",
+      "categories": [
+        "activist"
+      ],
+      "q": [
+        "Sachem Head Capital Management"
+      ]
+    },
+    {
+      "slug": "bryan-lawrence",
+      "manager": "Bryan Lawrence",
+      "firm": "Oakcliff Capital Partners",
+      "categories": [
+        "activist"
+      ],
+      "q": [
+        "Oakcliff Capital Partners",
+        "Oakcliff Capital"
+      ]
+    },
+    {
+      "slug": "renaissance-technologies",
+      "manager": "Renaissance Technologies",
+      "firm": "Renaissance Technologies (founded by Jim Simons)",
+      "categories": [
+        "quant"
+      ],
+      "q": [
+        "Renaissance Technologies"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "chris-rokos",
+      "manager": "Chris Rokos",
+      "firm": "Rokos Capital Management",
+      "categories": [
+        "quant"
+      ],
+      "q": [
+        "Rokos Capital Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "michael-platt",
+      "manager": "Michael Platt",
+      "firm": "BlueCrest Capital Management",
+      "categories": [
+        "quant"
+      ],
+      "q": [
+        "BlueCrest Capital Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "steven-cohen",
+      "manager": "Steven Cohen",
+      "firm": "Point72 Asset Management",
+      "categories": [
+        "quant"
+      ],
+      "q": [
+        "Point72 Asset Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "paul-tudor-jones",
+      "manager": "Paul Tudor Jones",
+      "firm": "Tudor Investment Corporation",
+      "categories": [
+        "quant"
+      ],
+      "q": [
+        "Tudor Investment Corp"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "stephen-schwarzman",
+      "manager": "Stephen Schwarzman",
+      "firm": "Blackstone",
+      "categories": [
+        "quant"
+      ],
+      "q": [
+        "Blackstone Inc",
+        "Blackstone Group"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "daniel-och",
+      "manager": "Sculptor Capital Management",
+      "firm": "Sculptor Capital Management (founded by Daniel Och)",
+      "categories": [
+        "quant"
+      ],
+      "q": [
+        "Sculptor Capital Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "edgepoint",
+      "manager": "EdgePoint Investment Group",
+      "firm": "EdgePoint Investment Group",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "EdgePoint Investment Group"
+      ],
+      "group": "institution"
+    },
+    {
+      "slug": "connor-clark-lunn",
+      "manager": "Connor, Clark & Lunn",
+      "firm": "Connor, Clark & Lunn Investment Management",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "Connor, Clark & Lunn Investment Management",
+        "Connor Clark & Lunn"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "brompton",
+      "manager": "Brompton Funds",
+      "firm": "Brompton Funds",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "Brompton Funds",
+        "Brompton"
+      ],
+      "group": "institution"
+    },
+    {
+      "slug": "sprott",
+      "manager": "Sprott",
+      "firm": "Sprott Inc.",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "Sprott Inc",
+        "Sprott Asset Management"
+      ],
+      "group": "institution"
+    },
+    {
+      "slug": "guardian-capital",
+      "manager": "Guardian Capital",
+      "firm": "Guardian Capital LP",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "Guardian Capital LP",
+        "Guardian Capital"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "ci-global",
+      "manager": "CI Global Asset Management",
+      "firm": "CI Investments Inc.",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "CI Investments Inc",
+        "CI Global Asset Management"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "fidelity-canada",
+      "manager": "Fidelity Canada",
+      "firm": "Fidelity Investments Canada",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "Fidelity Investments Canada"
+      ],
+      "group": "institution",
+      "topN": 150
+    },
+    {
+      "slug": "brookfield",
+      "manager": "Brookfield",
+      "firm": "Brookfield Corporation",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "Brookfield Corp",
+        "Brookfield Asset Management"
+      ],
+      "group": "institution"
+    },
+    {
+      "slug": "john-rogers",
+      "manager": "John Rogers",
+      "firm": "Ariel Investments",
+      "categories": [
+        "more"
+      ],
+      "q": [
+        "Ariel Investments"
+      ]
+    },
+    {
+      "slug": "charles-brandes",
+      "manager": "Charles Brandes",
+      "firm": "Brandes Investment Partners",
+      "categories": [
+        "more"
+      ],
+      "q": [
+        "Brandes Investment Partners"
+      ]
+    },
+    {
+      "slug": "robert-olstein",
+      "manager": "Robert Olstein",
+      "firm": "Olstein Capital Management",
+      "categories": [
+        "more"
+      ],
+      "q": [
+        "Olstein Capital Management"
+      ]
+    },
+    {
+      "slug": "robert-bruce",
+      "manager": "Robert Bruce",
+      "firm": "Bruce & Co.",
+      "categories": [
+        "more"
+      ],
+      "q": [
+        "Bruce & Co"
+      ]
+    },
+    {
+      "slug": "david-abrams",
+      "manager": "David Abrams",
+      "firm": "Abrams Capital Management",
+      "categories": [
+        "more"
+      ],
+      "q": [
+        "Abrams Capital Management"
+      ]
+    },
+    {
+      "slug": "david-blood",
+      "manager": "David Blood",
+      "firm": "Generation Investment Management",
+      "categories": [
+        "more"
+      ],
+      "q": [
+        "Generation Investment Management"
+      ]
+    },
+    {
+      "slug": "tom-steyer",
+      "manager": "Farallon Capital",
+      "firm": "Farallon Capital Management (founded by Tom Steyer)",
+      "categories": [
+        "more"
+      ],
+      "q": [
+        "Farallon Capital Management"
+      ]
+    },
+    {
+      "slug": "guy-spier",
+      "manager": "Guy Spier",
+      "firm": "Aquamarine Capital",
+      "categories": [
+        "value"
+      ],
+      "q": [
+        "Aquamarine Capital Management",
+        "Aquamarine Capital"
+      ],
+      "check": true
+    },
+    {
+      "slug": "joel-greenblatt",
+      "manager": "Joel Greenblatt",
+      "firm": "Gotham Asset Management",
+      "categories": [
+        "value"
+      ],
+      "q": [
+        "Gotham Asset Management"
+      ],
+      "check": true
+    },
+    {
+      "slug": "jarislowsky-fraser",
+      "manager": "Jarislowsky Fraser",
+      "firm": "Jarislowsky, Fraser Limited",
+      "categories": [
+        "canada"
+      ],
+      "q": [
+        "Jarislowsky Fraser",
+        "Jarislowsky, Fraser"
+      ],
+      "check": true
+    }
   ]
 }
