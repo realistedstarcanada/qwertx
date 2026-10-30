@@ -2,8 +2,8 @@ name: Update superinvestor portfolios
 
 on:
   schedule:
-    - cron: '0 12 1 * *'          # monthly, on the 1st (08:00 Toronto)
-    - cron: '0 12 16 2,5,8,11 *'  # day after each 13F filing deadline, so new quarters show up fast
+    - cron: '20 11 * * *'         # every day (07:20 Toronto): managers file 13Fs any day in the 45 days after a quarter;
+                                  # unchanged filings are skipped, so a quiet day takes a couple of minutes
   workflow_dispatch:
     inputs:
       force:

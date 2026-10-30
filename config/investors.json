@@ -1776,6 +1776,98 @@
         "more"
       ],
       "pro": true
+    },
+    {
+      "slug": "robert-torray",
+      "manager": "Robert Torray",
+      "firm": "Torray Investment Partners",
+      "cik": "0000098758",
+      "expect": "TORRAY",
+      "avatar": "RT",
+      "tags": [
+        "Value",
+        "Large companies",
+        "Long-term"
+      ],
+      "meta": "Torray Investment Partners · Bethesda, Maryland",
+      "about": "Robert Torray built the Bethesda, Maryland firm behind the Torray Fund, a long-running value fund that owns a short list of large, established US companies and holds them for years.",
+      "philosophy": [
+        "Own a small number of high-quality, well-run large companies.",
+        "Buy when they are out of favour and be patient."
+      ],
+      "categories": [
+        "value"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "edgar-wachenheim",
+      "manager": "Edgar Wachenheim",
+      "firm": "Greenhaven Associates",
+      "cik": "0000846222",
+      "expect": "GREENHAVEN",
+      "avatar": "EW",
+      "tags": [
+        "Value",
+        "Concentrated",
+        "Contrarian"
+      ],
+      "meta": "Greenhaven Associates · Purchase, New York",
+      "about": "Edgar Wachenheim III runs Greenhaven Associates and wrote “Common Stocks and Common Sense”. He buys good companies that are temporarily out of favour, often in industrial and cyclical businesses, and waits for a recovery.",
+      "philosophy": [
+        "Buy solid companies when a temporary problem has made them cheap.",
+        "Know what will make the market change its mind, and be patient."
+      ],
+      "categories": [
+        "value"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "john-armitage",
+      "manager": "John Armitage",
+      "firm": "Egerton Capital",
+      "cik": "0001581811",
+      "expect": "EGERTON",
+      "avatar": "JA",
+      "tags": [
+        "Quality",
+        "Long-term",
+        "Global"
+      ],
+      "meta": "Egerton Capital · London · founded 1994",
+      "about": "John Armitage founded Egerton Capital in London, a long-term stock picker that owns a concentrated set of high-quality companies around the world.",
+      "philosophy": [
+        "Own exceptional businesses with long runways for growth.",
+        "Concentrate on the best ideas and hold them for years."
+      ],
+      "categories": [
+        "more"
+      ],
+      "pro": true
+    },
+    {
+      "slug": "david-katz",
+      "manager": "David Katz",
+      "firm": "Matrix Asset Advisors",
+      "cik": "0001016287",
+      "expect": "MATRIX",
+      "avatar": "DK",
+      "tags": [
+        "Value",
+        "Large companies",
+        "Disciplined"
+      ],
+      "meta": "Matrix Asset Advisors · New York",
+      "about": "David Katz is chief investment officer of Matrix Asset Advisors, a New York value manager that buys large, financially strong companies trading below its estimate of their worth.",
+      "philosophy": [
+        "Buy financially strong companies at a discount to their value.",
+        "Sell when the price reaches fair value."
+      ],
+      "categories": [
+        "value"
+      ],
+      "pro": true
     }
   ]
 }
