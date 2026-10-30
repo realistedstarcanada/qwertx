@@ -1,5 +1,5 @@
 {
-  "at": "2026-10-30T14:52:48.855Z",
+  "at": "2026-10-30T15:04:23.011Z",
   "results": {
     "ray-dalio": {
       "manager": "Ray Dalio",
@@ -1596,89 +1596,132 @@
       ],
       "errors": []
     },
-    "guy-spier": {
-      "manager": "Guy Spier",
-      "firm": "Aquamarine Capital",
-      "pick": null,
-      "checked": [
-        {
-          "cik": "0001404599",
-          "name": "Aquamarine Capital Management, LLC",
-          "formerNames": [],
-          "stateOfInc": "NY",
-          "city": "NEW YORK",
-          "files13F": true,
-          "count13F": 32,
-          "last13F": "2022-08-02",
-          "lastPeriod": "2022-06-30",
-          "score": 1
-        }
-      ],
-      "errors": []
-    },
-    "joel-greenblatt": {
-      "manager": "Joel Greenblatt",
-      "firm": "Gotham Asset Management",
+    "robert-torray": {
+      "manager": "Robert Torray",
+      "firm": "Torray Investment Partners",
       "pick": {
-        "cik": "0001510387",
-        "name": "Gotham Asset Management, LLC",
-        "last13F": "2026-08-14",
-        "lastPeriod": "2026-06-30",
+        "cik": "0000098758",
+        "name": "TORRAY INVESTMENT PARTNERS LLC",
+        "last13F": "2026-10-30",
+        "lastPeriod": "2026-09-30",
         "alreadyTracked": false
       },
       "checked": [
         {
-          "cik": "0001510387",
-          "name": "Gotham Asset Management, LLC",
-          "formerNames": [],
-          "stateOfInc": "DE",
-          "city": "NEW YORK",
+          "cik": "0000098758",
+          "name": "TORRAY INVESTMENT PARTNERS LLC",
+          "formerNames": [
+            "TORRAY LLC",
+            "TORRAY ROBERT E & CO INC"
+          ],
+          "stateOfInc": "MD",
+          "city": "BETHESDA",
           "files13F": true,
-          "count13F": 64,
-          "last13F": "2026-08-14",
-          "lastPeriod": "2026-06-30",
+          "count13F": 112,
+          "last13F": "2026-10-30",
+          "lastPeriod": "2026-09-30",
           "score": 1
         },
         {
-          "cik": "0001279148",
-          "name": "GOTHAM ASSET MANAGEMENT LP",
+          "cik": "0001007028",
+          "name": "TORRAY CORP",
           "formerNames": [],
-          "stateOfInc": "DE",
-          "city": "NEW YORK",
+          "stateOfInc": "MD",
+          "city": "BETHESDA",
           "files13F": true,
-          "count13F": 17,
-          "last13F": "2009-11-16",
-          "lastPeriod": "2009-09-30",
+          "count13F": 28,
+          "last13F": "2005-08-12",
+          "lastPeriod": "2005-06-30",
           "score": 1
         }
       ],
       "errors": []
     },
-    "jarislowsky-fraser": {
-      "manager": "Jarislowsky Fraser",
-      "firm": "Jarislowsky, Fraser Limited",
+    "edgar-wachenheim": {
+      "manager": "Edgar Wachenheim",
+      "firm": "Greenhaven Associates",
       "pick": {
-        "cik": "0001123778",
-        "name": "JARISLOWSKY, FRASER Ltd",
-        "last13F": "2025-10-21",
-        "lastPeriod": "2025-09-30",
-        "alreadyTracked": true
+        "cik": "0000846222",
+        "name": "GREENHAVEN ASSOCIATES INC",
+        "last13F": "2026-10-26",
+        "lastPeriod": "2026-09-30",
+        "alreadyTracked": false
       },
       "checked": [
         {
-          "cik": "0001123778",
-          "name": "JARISLOWSKY, FRASER Ltd",
-          "formerNames": [
-            "JARISLOWSKY , FRASER Ltd",
-            "JARISLOWSKY FRASER LTD",
-            "JARISLOWSKI FRASER LTD"
-          ],
-          "stateOfInc": "A8",
-          "city": "MONTREAL",
+          "cik": "0000846222",
+          "name": "GREENHAVEN ASSOCIATES INC",
+          "formerNames": [],
+          "stateOfInc": "NY",
+          "city": "PURCHASE",
           "files13F": true,
           "count13F": 113,
-          "last13F": "2025-10-21",
-          "lastPeriod": "2025-09-30",
+          "last13F": "2026-10-26",
+          "lastPeriod": "2026-09-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "john-armitage": {
+      "manager": "John Armitage",
+      "firm": "Egerton Capital",
+      "pick": {
+        "cik": "0001581811",
+        "name": "Egerton Capital (UK) LLP",
+        "last13F": "2026-10-20",
+        "lastPeriod": "2026-09-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001581811",
+          "name": "Egerton Capital (UK) LLP",
+          "formerNames": [],
+          "stateOfInc": "X0",
+          "city": "LONDON",
+          "files13F": true,
+          "count13F": 67,
+          "last13F": "2026-10-20",
+          "lastPeriod": "2026-09-30",
+          "score": 1
+        },
+        {
+          "cik": "0001083657",
+          "name": "EGERTON CAPITAL LTD",
+          "formerNames": [],
+          "stateOfInc": "X0",
+          "city": "LONDON",
+          "files13F": true,
+          "count13F": 60,
+          "last13F": "2013-08-12",
+          "lastPeriod": "2013-06-30",
+          "score": 1
+        }
+      ],
+      "errors": []
+    },
+    "david-katz": {
+      "manager": "David Katz",
+      "firm": "Matrix Asset Advisors",
+      "pick": {
+        "cik": "0001016287",
+        "name": "MATRIX ASSET ADVISORS INC/NY",
+        "last13F": "2026-10-13",
+        "lastPeriod": "2026-09-30",
+        "alreadyTracked": false
+      },
+      "checked": [
+        {
+          "cik": "0001016287",
+          "name": "MATRIX ASSET ADVISORS INC/NY",
+          "formerNames": [],
+          "stateOfInc": "DE",
+          "city": "WHITE PLAINS",
+          "files13F": true,
+          "count13F": 113,
+          "last13F": "2026-10-13",
+          "lastPeriod": "2026-09-30",
           "score": 1
         }
       ],
