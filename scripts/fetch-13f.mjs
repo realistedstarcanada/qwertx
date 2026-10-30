@@ -80,6 +80,14 @@ async function tableSize(cik, acc) {
 }
 
 const loadQuarter = async (cik, f) => aggregate(await infoTableRows(cik, f.acc), f.filingDate);
+/** Shares only: drops options and bonds and re-weights. Used for giant funds ("topN"), whose option positions are
+ *  reported at the full value of the shares they control and would otherwise dwarf their real stock holdings. */
+function stocksOnly(agg) {
+  const holdings = agg.holdings.filter((h) => !h.putCall && h.shType !== 'PRN');
+  const total = holdings.reduce((a, h) => a + h.value, 0);
+  for (const h of holdings) h.weight = total ? h.value / total : 0;
+  return { holdings, total, otherValue: agg.total - total };
+}
 
 /** Compact history entry: total, count and weights of positions >= 0.25%, keyed by CUSIP. */
 function historyEntry(f, agg) {
@@ -143,9 +151,12 @@ async function run() {
       if (ageDays > 300 && !readJSON(outFile)) throw new Error(`latest 13F is for ${cur.period}, too old to publish. Remove this manager or find their current CIK.`);
 
       const existing = readJSON(outFile);
-      const haveHist = new Map((existing?.history || []).map((h) => [h.acc, h]));
+      // Switching a manager to shares-only means rebuilding every stored quarter once.
+      const redo = FORCE || (!!inv.topN !== !!existing?.stocksOnly && !!existing);
+      const load = async (cik, f) => (inv.topN ? stocksOnly(await loadQuarter(cik, f)) : loadQuarter(cik, f));
+      const haveHist = new Map(redo ? [] : (existing?.history || []).map((h) => [h.acc, h]));
       const upToDate =
-        !FORCE && existing && existing.accession === cur.acc && existing.prevAccession === (prev?.acc ?? null) &&
+        !redo && existing && existing.accession === cur.acc && existing.prevAccession === (prev?.acc ?? null) &&
         filings.every((f) => haveHist.has(f.acc));
 
       if (upToDate) {
@@ -160,9 +171,9 @@ async function run() {
         continue;
       }
 
-      const curAgg = await loadQuarter(cur.cik, cur);
+      const curAgg = await load(cur.cik, cur);
       if (!curAgg.holdings.length) throw new Error(`no holdings parsed from ${cur.acc}`);
-      const prevAgg = prev ? await loadQuarter(prev.cik, prev) : null;
+      const prevAgg = prev ? await load(prev.cik, prev) : null;
       const { sold, counts } = diffQuarters(curAgg, prevAgg);
       addFlows(curAgg, sold);
 
@@ -170,10 +181,10 @@ async function run() {
       for (const f of filings) {
         if (f.acc === cur.acc) history.push(historyEntry(f, curAgg));
         else if (prev && f.acc === prev.acc) history.push(historyEntry(f, prevAgg));
-        else if (haveHist.has(f.acc) && !FORCE) history.push(haveHist.get(f.acc));
+        else if (haveHist.has(f.acc)) history.push(haveHist.get(f.acc));
         else {
           try {
-            history.push(historyEntry(f, await loadQuarter(f.cik, f)));
+            history.push(historyEntry(f, await load(f.cik, f)));
           } catch (e) {
             console.warn(`  history ${f.period} skipped: ${e.message}`);
           }
@@ -203,6 +214,7 @@ async function run() {
         totalValue: curAgg.total,
         holdingsCount: curAgg.holdings.length,
         topN: inv.topN || null,
+        ...(inv.topN ? { stocksOnly: true, otherValue: curAgg.otherValue || 0 } : {}),
         counts,
         holdings: holdingsOut.map(tk),
         sold: soldOut.map(tk),

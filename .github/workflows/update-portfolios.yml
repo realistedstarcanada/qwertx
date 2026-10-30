@@ -10,6 +10,10 @@ on:
         description: 'Re-download every filing even if unchanged'
         type: boolean
         default: false
+      only:
+        description: 'Only these managers (slugs, space-separated; blank = all)'
+        type: string
+        default: ''
   push:
     branches: [main]
     paths: ['config/investors.json', 'config/etfs.json']
@@ -31,7 +35,7 @@ jobs:
         with:
           node-version: 22
       - name: Fetch 13F filings from SEC EDGAR
-        run: node scripts/fetch-13f.mjs ${{ inputs.force && '--force' || '' }}
+        run: node scripts/fetch-13f.mjs ${{ inputs.force && '--force' || '' }} ${{ inputs.only }}
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
           OPENFIGI_API_KEY: ${{ secrets.OPENFIGI_API_KEY }}
