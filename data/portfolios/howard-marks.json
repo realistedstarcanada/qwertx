@@ -530,7 +530,7 @@
       "sharesChangePct": 0.3189268402660354,
       "status": "added",
       "flow": 13174244.929693509,
-      "ticker": null
+      "ticker": "DKNG"
     },
     {
       "key": "207410AH4",
@@ -1186,7 +1186,7 @@
       "sharesChangePct": 3.466875,
       "status": "added",
       "flow": 9232708.69035959,
-      "ticker": null
+      "ticker": "SNOW"
     },
     {
       "key": "62957HAL9",
@@ -1234,7 +1234,7 @@
       "sharesChangePct": 0.08377621026186105,
       "status": "added",
       "flow": 865646.5493045648,
-      "ticker": null
+      "ticker": "ITRI"
     },
     {
       "key": "48123VAE2",
@@ -1346,7 +1346,7 @@
       "sharesChangePct": 5.031774580335731,
       "status": "added",
       "flow": 8099242.497366067,
-      "ticker": null
+      "ticker": "RPD"
     },
     {
       "key": "358039AB1",
@@ -1362,7 +1362,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 9198862,
-      "ticker": null
+      "ticker": "FRPT"
     },
     {
       "key": "02081GAB8",
@@ -1474,7 +1474,7 @@
       "sharesChangePct": -0.27033384601465665,
       "status": "reduced",
       "flow": -2938697.8147551147,
-      "ticker": null
+      "ticker": "JD"
     },
     {
       "key": "011642AD7",
@@ -1490,7 +1490,7 @@
       "sharesChangePct": 7.1061507936507935,
       "status": "added",
       "flow": 6814161.637008933,
-      "ticker": null
+      "ticker": "ALRM"
     },
     {
       "key": "70932AAH6",
@@ -1938,7 +1938,7 @@
       "sharesChangePct": -0.5125069483046136,
       "status": "reduced",
       "flow": -3296618.8848346635,
-      "ticker": null
+      "ticker": "AKAM"
     },
     {
       "key": "62886HBD2",
@@ -1970,7 +1970,7 @@
       "sharesChangePct": -0.7105263157894737,
       "status": "reduced",
       "flow": -6099300,
-      "ticker": null
+      "ticker": "NTNX"
     },
     {
       "key": "55303JAB2",
@@ -2002,7 +2002,7 @@
       "sharesChangePct": 0,
       "status": "unchanged",
       "flow": 0,
-      "ticker": null
+      "ticker": "UBER"
     },
     {
       "key": "538034BC2",
@@ -2130,7 +2130,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 1509375,
-      "ticker": null
+      "ticker": "ON"
     },
     {
       "key": "879273209",
@@ -2226,7 +2226,7 @@
       "prevShares": 0,
       "sharesChangePct": null,
       "flow": 885750,
-      "ticker": null
+      "ticker": "BABA"
     },
     {
       "key": "83304AAB2",
@@ -2820,7 +2820,7 @@
       "prevValue": 1479600,
       "prevWeight": 0.00022564787189327957,
       "flow": -1479600,
-      "ticker": null
+      "ticker": "IRTC"
     },
     {
       "key": "15102KAA8",
