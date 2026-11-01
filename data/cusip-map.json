@@ -1035,6 +1035,11 @@
     "name": "SHERWIN-WILLIAMS CO/THE",
     "type": "Common Stock"
   },
+  "826919102": {
+    "ticker": "SLAB",
+    "name": "SILICON LABORATORIES INC",
+    "type": "Common Stock"
+  },
   "829933100": {
     "ticker": "SIRI",
     "name": "SIRIUS XM HOLDINGS INC",
@@ -1175,6 +1180,11 @@
     "name": "THOR INDUSTRIES INC",
     "type": "Common Stock"
   },
+  "888787108": {
+    "ticker": "TOST",
+    "name": "TOAST INC-CLASS A",
+    "type": "Common Stock"
+  },
   "893641100": {
     "ticker": "TDG",
     "name": "TRANSDIGM GROUP INC",
@@ -1183,6 +1193,11 @@
   "896945201": {
     "ticker": "TRIP",
     "name": "TRIPADVISOR INC",
+    "type": "Common Stock"
+  },
+  "902252105": {
+    "ticker": "TYL",
+    "name": "TYLER TECHNOLOGIES INC",
     "type": "Common Stock"
   },
   "902494103": {
@@ -1260,6 +1275,11 @@
     "name": "VICTORIA'S SECRET & CO",
     "type": "Common Stock"
   },
+  "927926303": {
+    "ticker": "VGZ",
+    "name": "VISTA GOLD CORP",
+    "type": "Common Stock"
+  },
   "929160109": {
     "ticker": "VMC",
     "name": "VULCAN MATERIALS CO",
@@ -1296,6 +1316,11 @@
     "name": "WATSCO INC",
     "type": "Common Stock"
   },
+  "942749102": {
+    "ticker": "WTS",
+    "name": "WATTS WATER TECHNOLOGIES-A",
+    "type": "Common Stock"
+  },
   "947002101": {
     "ticker": "WLTH",
     "name": "WEALTHFRONT CORP",
@@ -1326,9 +1351,19 @@
     "name": "WHIRLPOOL CORP",
     "type": "Common Stock"
   },
+  "971378104": {
+    "ticker": "WSC",
+    "name": "WILLSCOT HOLDINGS CORP",
+    "type": "Common Stock"
+  },
   "980745103": {
     "ticker": "WWD",
     "name": "WOODWARD INC",
+    "type": "Common Stock"
+  },
+  "983793100": {
+    "ticker": "XPO",
+    "name": "XPO INC",
     "type": "Common Stock"
   },
   "984245100": {
@@ -1339,6 +1374,11 @@
   "988498101": {
     "ticker": "YUM",
     "name": "YUM! BRANDS INC",
+    "type": "Common Stock"
+  },
+  "989207105": {
+    "ticker": "ZBRA",
+    "name": "ZEBRA TECHNOLOGIES CORP-CL A",
     "type": "Common Stock"
   },
   "037833100": {
@@ -4036,5 +4076,40 @@
     "ticker": "MICC",
     "name": "Magnum Ice Cream Co N.V.",
     "via": "sec-name"
+  },
+  "30233Q108": {
+    "ticker": "XOM",
+    "name": "EXXONMOBIL HOLDINGS CORP",
+    "type": "Common Stock"
+  },
+  "60744M106": {
+    "ticker": "MBGL",
+    "name": "MOBILITY GLOBAL INC",
+    "type": "Common Stock"
+  },
+  "98419M100": {
+    "ticker": "XYL",
+    "name": "XYLEM INC",
+    "type": "Common Stock"
+  },
+  "92047W101": {
+    "ticker": "VVV",
+    "name": "VALVOLINE INC",
+    "type": "Common Stock"
+  },
+  "98379L100": {
+    "ticker": "XPEL",
+    "name": "XPEL INC",
+    "type": "Common Stock"
+  },
+  "37954A303": {
+    "ticker": "XRN",
+    "name": "CHIRON REAL ESTATE INC",
+    "type": "REIT"
+  },
+  "82982L103": {
+    "ticker": "SITE",
+    "name": "SITEONE LANDSCAPE SUPPLY INC",
+    "type": "Common Stock"
   }
 }

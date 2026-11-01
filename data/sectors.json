@@ -3966,5 +3966,95 @@
     "name": "Chubb Ltd",
     "sic": "6331",
     "sicDescription": "Fire, Marine & Casualty Insurance"
+  },
+  "XOM": {
+    "sector": "Energy",
+    "name": "ExxonMobil Holdings Corp",
+    "sic": "2911",
+    "sicDescription": "Petroleum Refining"
+  },
+  "ZBRA": {
+    "sector": "Industrials",
+    "name": "ZEBRA TECHNOLOGIES CORP",
+    "sic": "3560",
+    "sicDescription": "General Industrial Machinery & Equipment"
+  },
+  "MBGL": {
+    "sector": "Industrials",
+    "name": "Mobility Global Inc.",
+    "sic": "7389",
+    "sicDescription": "Services-Business Services, NEC"
+  },
+  "SLAB": {
+    "sector": "Technology",
+    "name": "SILICON LABORATORIES INC.",
+    "sic": "3674",
+    "sicDescription": "Semiconductors & Related Devices"
+  },
+  "TYL": {
+    "sector": "Technology",
+    "name": "TYLER TECHNOLOGIES INC",
+    "sic": "7372",
+    "sicDescription": "Services-Prepackaged Software"
+  },
+  "VGZ": {
+    "sector": "Materials",
+    "name": "VISTA GOLD CORP",
+    "sic": "1040",
+    "sicDescription": "Gold and Silver Ores"
+  },
+  "WSC": {
+    "sector": "Industrials",
+    "name": "WillScot Holdings Corp",
+    "sic": "7350",
+    "sicDescription": "Services-Miscellaneous Equipment Rental & Leasing"
+  },
+  "XPO": {
+    "sector": "Industrials",
+    "name": "XPO, Inc.",
+    "sic": "4700",
+    "sicDescription": "Transportation Services"
+  },
+  "XYL": {
+    "sector": "Industrials",
+    "name": "Xylem Inc.",
+    "sic": "3561",
+    "sicDescription": "Pumps & Pumping Equipment"
+  },
+  "WTS": {
+    "sector": "Industrials",
+    "name": "WATTS WATER TECHNOLOGIES INC",
+    "sic": "3490",
+    "sicDescription": "Miscellaneous Fabricated Metal Products"
+  },
+  "VVV": {
+    "sector": "Energy",
+    "name": "VALVOLINE INC",
+    "sic": "2990",
+    "sicDescription": "Miscellaneous Products of  Petroleum & Coal"
+  },
+  "XPEL": {
+    "sector": "Industrials",
+    "name": "XPEL, Inc.",
+    "sic": "3470",
+    "sicDescription": "Coating, Engraving & Allied Services"
+  },
+  "TOST": {
+    "sector": "Technology",
+    "name": "Toast, Inc.",
+    "sic": "7374",
+    "sicDescription": "Services-Computer Processing & Data Preparation"
+  },
+  "XRN": {
+    "sector": "Real Estate",
+    "name": "Chiron Real Estate Inc.",
+    "sic": "6798",
+    "sicDescription": "Real Estate Investment Trusts"
+  },
+  "SITE": {
+    "sector": "Industrials",
+    "name": "SiteOne Landscape Supply, Inc.",
+    "sic": "5040",
+    "sicDescription": "Wholesale-Professional & Commercial Equipment & Supplies"
   }
 }
