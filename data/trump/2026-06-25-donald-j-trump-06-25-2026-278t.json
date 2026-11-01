@@ -3161,7 +3161,8 @@
       "hi": 250000,
       "checked": 2,
       "cls": "stock",
-      "tk": "BNY"
+      "tk": "BNY",
+      "fz": 0.86
     },
     {
       "no": 245,
