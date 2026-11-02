@@ -9,8 +9,8 @@
   if (!root) return;
 
   var params = new URLSearchParams(location.search);
-  var TABS = [['portfolio', 'My Portfolio'], ['smart', 'Smart Money'], ['analyst', 'Analyst Targets'], ['earnings', 'Earnings & News'], ['weather', 'Market Weather'], ['brief', 'QWERTx Brief']];
-  var S = { me: null, index: null, data: {}, results: null, status: null, notice: null, tab: null, drawer: false, region: 'us', filter: 'all', etf: null, sel: null, weather: undefined, brief: undefined, briefEdit: null };
+  var TABS = [['portfolio', 'My Portfolio'], ['smart', 'Smart Money'], ['analyst', 'Analyst Targets'], ['earnings', 'Earnings & News'], ['weather', 'Market Weather'], ['investors', 'Super Investors'], ['brief', 'QWERTx Brief']];
+  var S = { me: null, index: null, data: {}, results: null, status: null, notice: null, tab: null, drawer: false, region: 'us', filter: 'all', etf: null, sel: null, weather: undefined, brief: undefined, briefEdit: null, mgr: {}, inv: null };
   var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var COLORS = ['#F5B83D', '#2DD4BF', '#60A5FA', '#A78BFA', '#F472B6', '#FB923C', '#E2E8F0', '#94A3B8', '#34D399', '#FCA5A5'];
 
@@ -244,11 +244,12 @@
     if (S.drawer) html += '<div id="px-drawer" class="px-drawer">' + alertsHtml(me, pro) + membershipHtml(me, pro) + '</div>';
     var M = model();
     if (!lget('qx-welcome')) html += welcomeHtml();
-    html += '<div class="px-panel">' + introHtml(tab) + ({ portfolio: tabPortfolio, smart: tabSmart, analyst: tabAnalyst, earnings: tabEarnings, weather: tabWeather, brief: tabBrief }[tab])(M, pro) + (tab === 'smart' ? dirHtml(pro) : '') + '</div>';
+    html += '<div class="px-panel">' + introHtml(tab) + ({ portfolio: tabPortfolio, smart: tabSmart, analyst: tabAnalyst, earnings: tabEarnings, weather: tabWeather, investors: tabInvestors, brief: tabBrief }[tab])(M, pro) + '</div>';
     html += '<p class="px-foot">QWERTx provides information from public filings for education. It is not investment advice or a recommendation to buy or sell any security. Fund holdings come from 13F and N-PORT filings made up to 45–60 days after each quarter; politician trades can be disclosed up to 45 days after the trade.</p>';
     root.innerHTML = html;
     bind();
-    if (tab === 'smart' && S.dir === undefined) { S.dir = null; getJSON('/pro/managers.json').then(function (j) { S.dir = j || false; render(); }); }
+    if (tab === 'investors' && S.inv && S.mgr[S.inv] === undefined) { var slug = S.inv; S.mgr[slug] = null; getJSON('/pro/m/' + encodeURIComponent(slug) + '.json').then(function (j) { S.mgr[slug] = j || false; render(); }); }
+    if ((tab === 'smart' || tab === 'investors') && S.dir === undefined) { S.dir = null; getJSON('/pro/managers.json').then(function (j) { S.dir = j || false; render(); }); }
     if (tab === 'weather' && S.weather === undefined) { S.weather = null; getJSON('/pro/weather.json').then(function (w) { S.weather = w || false; render(); }); }
     if (tab === 'brief' && S.brief === undefined) { S.brief = null; api('GET', '/api/brief').then(function (b) { S.brief = b && b.ok ? b : false; render(); }); }
     if (S.drawer && !S.status) getJSON('/api/pro-status').then(function (s) { if (s) { S.status = s; var el = document.getElementById('wl-seats'); if (el) el.textContent = seatsText(s); } });
@@ -286,6 +287,12 @@
       ['Like a weather forecast', 'It tells you the conditions, not what to do. Markets can stay expensive or scared for a long time, and trying to time them rarely works.'],
       ['The cards', 'Each card shows one indicator, where it sits in its own history, what it means and where the number comes from.'],
     ]],
+    investors: ['Every investor we track, in full: what they own, what they just bought and sold, and which of your stocks they hold.', [
+      ['Just filed', 'Fund managers file their holdings within 45 days after each quarter. The newest filings are at the top, so you see fresh moves first.'],
+      ['Categories', 'Value, growth, activist, quant and Canadian investors behave very differently. A quant fund’s 3,000 stocks mean less than a value investor’s 15.'],
+      ['Weights and changes', '“% of portfolio” shows how big each bet is. New, Added, Trimmed and Sold show what changed since the previous quarter.'],
+      ['Gold', 'Stocks you own are highlighted in gold wherever they appear.'],
+    ]],
     brief: ['A short weekly note from the QWERTx team: what moved markets, what the smart money did and what to watch next week, in plain English.', [
       ['When it arrives', 'Every weekend, on this tab and at the top of the Friday email.'],
       ['Your stocks', 'Stocks you own are highlighted in gold when the Brief mentions them.'],
@@ -299,8 +306,8 @@
       g[1].map(function (x) { return '<div><dt>' + esc(x[0]) + '</dt><dd>' + esc(x[1]) + '</dd></div>'; }).join('') + '</dl></details></div>';
   }
   function welcomeHtml() {
-    var lines = [['My Portfolio', 'what you own and how spread out it is'], ['Smart Money', 'who is buying and selling your stocks'], ['Analyst Targets', 'what Wall Street expects next year'], ['Earnings & News', 'report dates and big company news'], ['Market Weather', 'the economy and market mood at a glance'], ['QWERTx Brief', 'our weekly note in plain English']];
-    return '<section class="card px-welcome" aria-label="Welcome"><div><div class="px-label">New here? Start with this</div><h2 class="px-h2">Six tabs, one question each</h2><ol>' +
+    var lines = [['My Portfolio', 'what you own and how spread out it is'], ['Smart Money', 'who is buying and selling your stocks'], ['Analyst Targets', 'what Wall Street expects next year'], ['Earnings & News', 'report dates and big company news'], ['Market Weather', 'the economy and market mood at a glance'], ['Super Investors', 'every portfolio we track, in full'], ['QWERTx Brief', 'our weekly note in plain English']];
+    return '<section class="card px-welcome" aria-label="Welcome"><div><div class="px-label">New here? Start with this</div><h2 class="px-h2">Seven tabs, one question each</h2><ol>' +
       lines.map(function (l, i) { return '<li><button type="button" class="linklike" data-tab-go="' + TABS[i][0] + '">' + esc(l[0]) + '</button> · ' + esc(l[1]) + '</li>'; }).join('') +
       '</ol><p class="form-note">Everything here comes from official filings and public market data. It explains what is happening; it never tells you what to buy or sell.</p></div><button type="button" class="btn btn-sm" data-act="welcome-done">Got it</button></section>';
   }
@@ -611,6 +618,7 @@
       (pro && shown.length > limit ? '<button type="button" class="btn btn-sm" data-act="more">Show ' + Math.min(48, shown.length - limit) + ' more</button>' : '') +
       (!pro && shown.length > limit ? lock((shown.length - limit) + ' more moves in your stocks.') : '') + '</section>';
     html += twins(stocks, pro) + '</div>';
+    html += '<section class="card px-golink"><div><b>See every portfolio in full</b><p class="form-note">All the super investors we track, who just filed, and everything they own.</p></div><button type="button" class="btn btn-sm" data-tab-go="investors">Super Investors →</button></section>';
     return html;
   }
   function activity(stocks) {
@@ -655,7 +663,7 @@
     var shown = pro ? list : list.slice(0, 2);
     return '<section class="card" aria-label="Your portfolio twins"><h2 class="px-h2">Your portfolio twins</h2><p class="form-note">Tracked managers who own the most of the same stocks as you. Gold squares are the stocks you share.</p>' +
       shown.map(function (x) {
-        return '<div class="px-twin"><a href="/investors/' + esc(x.m) + '.html">' + esc(mname(x.m)) + '</a><div class="px-twin-cells">' + stocks.map(function (w) { var on = x.t.indexOf(w.ticker) >= 0; return '<span class="' + (on ? 'on' : '') + '" title="' + esc(w.ticker) + '">' + esc(w.ticker) + '</span>'; }).join('') + '</div><b class="mono">' + x.t.length + '/' + stocks.length + '</b></div>';
+        return '<div class="px-twin"><button type="button" class="linklike px-twin-n" data-inv="' + esc(x.m) + '">' + esc(mname(x.m)) + '</button><div class="px-twin-cells">' + stocks.map(function (w) { var on = x.t.indexOf(w.ticker) >= 0; return '<span class="' + (on ? 'on' : '') + '" title="' + esc(w.ticker) + '">' + esc(w.ticker) + '</span>'; }).join('') + '</div><b class="mono">' + x.t.length + '/' + stocks.length + '</b></div>';
       }).join('') + (!pro && list.length > 2 ? lock((list.length - 2) + ' more managers who think like you.') : '') + '</section>';
   }
 
@@ -669,44 +677,86 @@
     ['more', 'More investors worth following', 'Respected managers with distinctive styles, from patient small-company investors to sustainability specialists.'],
   ];
   function bn(v) { return v >= 1e12 ? '$' + (v / 1e12).toFixed(1) + 'T' : v >= 1e9 ? '$' + (v / 1e9).toFixed(1) + 'B' : '$' + Math.round(v / 1e6) + 'M'; }
-  function dirHtml(pro) {
-    if (S.dir == null) return '<section class="card"><p class="form-note"><i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Loading the investor directory…</p></section>';
-    if (S.dir === false) return '';
-    var mine = {}; (S.me.watchlist || []).forEach(function (w) { mine[w.ticker === 'GOOGL' ? 'GOOG' : w.ticker] = 1; });
-    var all = Object.keys(S.dir).map(function (k) { var m = S.dir[k]; m.slug = k; var sh = {}; m.top.forEach(function (h) { var k = h[0] === 'GOOGL' ? 'GOOG' : h[0] === 'BRK.A' ? 'BRK.B' : h[0]; if (mine[k]) sh[k] = 1; }); m.shared = Object.keys(sh).length; return m; });
-    var cat = S.dirCat || 'all', q = (S.dirQ || '').toLowerCase();
-    var list = all.filter(function (m) { return (cat === 'all' || m.c.indexOf(cat) >= 0) && (!q || (m.n + ' ' + m.f).toLowerCase().indexOf(q) >= 0); })
-      .sort(function (a, b) { return b.shared - a.shared || b.v - a.v; });
+  function ownSet() { var o = {}; (S.me.watchlist || []).forEach(function (w) { o[canon(w.ticker)] = 1; }); return o; }
+  function canon(t) { return t === 'GOOGL' ? 'GOOG' : t === 'BRK.A' ? 'BRK.B' : t; }
+  function dirList() {
+    var mine = ownSet();
+    return Object.keys(S.dir).map(function (k) {
+      var m = S.dir[k], sh = {}; m.slug = k;
+      m.top.forEach(function (h) { if (mine[canon(h[0])]) sh[canon(h[0])] = 1; });
+      m.shared = Object.keys(sh).length;
+      return m;
+    });
+  }
+  function fresh(iso) { return iso && Date.now() - Date.parse(iso) < 21 * 864e5; }
+  function qLabel(iso) { if (!iso) return ''; var m = +iso.slice(5, 7); return 'Q' + Math.ceil(m / 3) + ' ' + iso.slice(0, 4); }
+
+  // ---------- Tab 6 · Super Investors ----------
+  function tabInvestors(M, pro) {
+    if (S.dir == null) return '<section class="card"><p class="form-note"><i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Loading the investors…</p></section>';
+    if (S.dir === false) return soon('The investor list is updating', 'Please try again in a minute.');
+    if (S.inv) return invDetail(S.inv, pro);
+    var all = dirList(), mine = ownSet();
+    var latest = all.map(function (m) { return m.period; }).sort().pop();
+    var recent = all.slice().sort(function (a, b) { return String(b.filed).localeCompare(String(a.filed)); }).slice(0, 8);
+    var nNew = all.filter(function (m) { return m.period === latest; }).length;
+    var html = '<section class="card px-justfiled" aria-label="Just filed"><div class="px-h2row"><h2 class="px-h2">Just filed</h2><span class="form-note">' + nNew + ' of ' + all.length + ' have filed for ' + qLabel(latest) + '. Most file in the final two weeks before the deadline, 45 days after the quarter ends.</span></div><div class="px-jf">' +
+      recent.map(function (m) {
+        return '<button type="button" class="px-jf-i" data-inv="' + esc(m.slug) + '"><span class="px-jf-d">' + esc(fmtShort(m.filed)) + (fresh(m.filed) ? ' <span class="px-chip gold">New</span>' : '') + '</span><b>' + esc(m.n) + '</b><span class="tkr-name">' + esc(m.f) + ' · ' + esc(qLabel(m.period)) + '</span></button>';
+      }).join('') + '</div></section>';
+    var cat = S.dirCat || 'all', q = (S.dirQ || '').toLowerCase(), sort = S.dirSort || 'mine';
+    var list = all.filter(function (m) { return (cat === 'all' || m.c.indexOf(cat) >= 0) && (!q || (m.n + ' ' + m.f + ' ' + m.top.map(function (h) { return h[0]; }).join(' ')).toLowerCase().indexOf(q) >= 0); });
+    list.sort(sort === 'size' ? function (a, b) { return b.v - a.v; } : sort === 'filed' ? function (a, b) { return String(b.filed).localeCompare(String(a.filed)) || b.v - a.v; } : function (a, b) { return b.shared - a.shared || b.v - a.v; });
     var c = CATS.filter(function (x) { return x[0] === cat; })[0];
-    var html = '<section class="card px-dir" aria-label="All tracked investors"><div class="px-h2row"><div><h2 class="px-h2">All ' + all.length + ' tracked investors</h2><p class="form-note">From each firm’s latest 13F filing. Sorted by how many of your stocks they own, then by size.</p></div>' +
-      '<label class="sr-only" for="px-dir-q">Search investors</label><input class="input input-sm" id="px-dir-q" placeholder="Search a name or firm" value="' + esc(S.dirQ || '') + '"></div>' +
+    html += '<section class="card px-dir" aria-label="All tracked investors"><div class="px-h2row"><div><h2 class="px-h2">All ' + all.length + ' super investors</h2><p class="form-note">From each firm’s latest SEC 13F filing.</p></div>' +
+      '<div class="px-dir-tools"><label class="sr-only" for="px-dir-q">Search investors or a ticker</label><input class="input input-sm" id="px-dir-q" placeholder="Search a name, firm or ticker" value="' + esc(S.dirQ || '') + '">' +
+      '<label class="sr-only" for="px-dir-sort">Sort by</label><select class="input input-sm" id="px-dir-sort">' + [['mine', 'Owns my stocks'], ['size', 'Biggest'], ['filed', 'Newest filing']].map(function (o) { return '<option value="' + o[0] + '"' + (sort === o[0] ? ' selected' : '') + '>' + o[1] + '</option>'; }).join('') + '</select></div></div>' +
       '<div class="px-seg small px-dir-cats" role="group" aria-label="Investor category">' + [['all', 'All']].concat(CATS.map(function (x) { return [x[0], x[1]]; })).map(function (x) {
         var n = x[0] === 'all' ? all.length : all.filter(function (m) { return m.c.indexOf(x[0]) >= 0; }).length;
         return '<button type="button" data-dircat="' + x[0] + '" aria-pressed="' + (cat === x[0]) + '"' + (cat === x[0] ? ' class="on"' : '') + '>' + esc(x[1]) + ' <span class="muted">' + n + '</span></button>';
       }).join('') + '</div>' + (c ? '<p class="px-dir-desc">' + esc(c[2]) + '</p>' : '') +
-      '<div class="px-dir-grid">' + list.map(function (m) { return dirCard(m, mine, pro); }).join('') + '</div>' + (list.length ? '' : '<p class="muted">No investor matches that search.</p>') + '</section>';
+      '<div class="px-dir-grid">' + list.map(function (m) { return invCard(m, mine, pro); }).join('') + '</div>' + (list.length ? '' : '<p class="muted">No investor matches that search.</p>') + '</section>';
     return html;
   }
-  function dirCard(m, mine, pro) {
-    var open = S.dirOpen === m.slug, locked = m.p && !pro;
-    var head = '<button type="button" class="px-dir-h" data-diropen="' + esc(m.slug) + '" aria-expanded="' + open + '"><span class="px-dir-n"><b>' + esc(m.n) + '</b>' + (m.g ? ' <span class="px-chip">Institution</span>' : '') + '<span class="tkr-name">' + esc(m.f) + '</span></span>' +
-      '<span class="px-dir-k"><b class="mono">' + bn(m.v) + '</b><span class="tkr-name">' + m.k.toLocaleString('en-US') + ' positions</span></span></button>';
-    var chips = '<div class="px-dir-top">' + m.top.slice(0, 6).map(function (h) { var own = mine[h[0] === 'GOOGL' ? 'GOOG' : h[0]]; return '<span class="px-chip' + (own ? ' gold' : '') + '" title="' + h[1] + '% of the portfolio">' + esc(h[0]) + '</span>'; }).join('') +
-      (m.shared ? '<span class="form-note">owns ' + plural(m.shared, 'of your stocks', 'of your stocks') + ' in its top 12</span>' : '') + '</div>';
-    var body = '';
-    if (open) {
-      if (locked) body = lock(esc(m.n) + '’s full portfolio and moves are part of QWERTx Pro.');
-      else {
-        var max = m.top[0] ? m.top[0][1] : 1;
-        body = '<div class="px-dir-body"><p>' + esc(m.a) + '</p>' + (m.t.length ? '<div>' + m.t.map(function (t) { return '<span class="px-chip">' + esc(t) + '</span>'; }).join('') + '</div>' : '') +
-          '<div class="px-grid2 tight"><div>' + label('Biggest positions' + (m.topN ? ' (we keep its top ' + m.topN + ')' : '')) + m.top.map(function (h) {
-            var own = mine[h[0] === 'GOOGL' ? 'GOOG' : h[0]];
-            return '<div class="px-bar"><div class="px-bar-l"><span>' + (own ? '<b class="gold">' + esc(h[0]) + '</b> · you own' : esc(h[0])) + (h[2] === 'New' ? ' <span class="px-chip up">New</span>' : h[2] === 'Add' ? ' <span class="px-chip up">Added</span>' : h[2] === 'Trim' ? ' <span class="px-chip down">Trimmed</span>' : '') + '</span><b>' + h[1].toFixed(1) + '%</b></div><div class="px-bar-t"><span style="width:' + Math.max(2, h[1] / max * 100).toFixed(1) + '%;background:' + (own ? '#F5B83D' : 'var(--teal)') + '"></span></div></div>';
-          }).join('') + '</div><div>' + label('Biggest moves last quarter') + (m.moves.length ? m.moves.map(function (x) { return '<span class="px-chip ' + (x[1] === 'Trim' || x[1] === 'Sold' ? 'down' : 'up') + '">' + esc(x[0]) + ' · ' + (x[1] === 'New' ? 'new' : x[1] === 'Add' ? 'added' : x[1] === 'Trim' ? 'trimmed' : 'sold out') + '</span>'; }).join('') : '<p class="muted">No big changes.</p>') +
-          '<p class="form-note">Holdings as of ' + fmtDate(m.period) + ', filed ' + fmtDate(m.filed) + '. <a href="' + esc(m.url) + '" target="_blank" rel="noopener">Official filing</a>' + (m.p ? '' : ' · <a href="/investors/' + esc(m.slug) + '.html">Full profile</a>') + '</p></div></div></div>';
-      }
-    }
-    return '<article class="px-dir-card' + (open ? ' open' : '') + '">' + head + chips + body + '</article>';
+  function invCard(m, mine, pro) {
+    var locked = m.p && !pro;
+    return '<button type="button" class="px-dir-card" data-inv="' + esc(m.slug) + '"><span class="px-dir-h"><span class="px-dir-n"><b>' + esc(m.n) + '</b>' + (m.g ? ' <span class="px-chip">Institution</span>' : '') + (locked ? ' <i class="fa-solid fa-lock muted" aria-label="Pro"></i>' : '') + '<span class="tkr-name">' + esc(m.f) + '</span></span>' +
+      '<span class="px-dir-k"><b class="mono">' + bn(m.v) + '</b><span class="tkr-name">' + m.k.toLocaleString('en-US') + ' positions</span></span></span>' +
+      '<span class="px-dir-top">' + m.top.slice(0, 6).map(function (h) { return '<span class="px-chip' + (mine[canon(h[0])] ? ' gold' : '') + '">' + esc(h[0]) + '</span>'; }).join('') +
+      '<span class="form-note">' + (m.shared ? 'owns ' + plural(m.shared, 'of your stocks', 'of your stocks') + ' · ' : '') + esc(qLabel(m.period)) + ', filed ' + esc(fmtShort(m.filed)) + (fresh(m.filed) ? ' <span class="px-chip gold">New</span>' : '') + '</span></span></button>';
+  }
+  function invDetail(slug, pro) {
+    var back = '<button type="button" class="linklike px-back" data-act="inv-back"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> All super investors</button>';
+    var m = S.mgr[slug], summary = S.dir[slug];
+    if (summary && summary.p && !pro) return back + '<section class="card"><h2 class="px-h2">' + esc(summary.n) + '</h2><p>' + esc(summary.a) + '</p>' + lock(esc(summary.n) + '’s full portfolio, every move and its history are part of QWERTx Pro.') + '</section>';
+    if (m == null) return back + '<section class="card"><p class="form-note"><i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Loading the portfolio…</p></section>';
+    if (m === false) return back + soon('This portfolio could not be loaded', 'Please try again in a minute.');
+    var mine = ownSet(), owned = m.h.filter(function (h) { return h[0] && mine[canon(h[0])]; });
+    var cn = m.counts || {}, max = m.h[0] ? m.h[0][2] : 1;
+    var showAll = S.invAll === slug, rows = showAll ? m.h : m.h.slice(0, 40);
+    var slugFor = function (t) { var x = t && S.index.tickers[t]; return x && x[5]; };
+    var nameCell = function (t, name) { var sl = slugFor(t); return (t ? (sl ? '<a class="tkr' + (mine[canon(t)] ? ' gold' : '') + '" href="/stocks/' + sl + '.html">' + esc(t) + '</a>' : '<span class="tkr' + (mine[canon(t)] ? ' gold' : '') + '">' + esc(t) + '</span>') : '') + '<div class="tkr-name">' + esc(name) + '</div>'; };
+    var act = function (a, c) { return a === 'New' ? chip('New', 'up') : a === 'Add' ? chip('Added' + (c != null ? ' ' + c + '%' : ''), 'up') : a === 'Trim' ? chip('Trimmed' + (c != null ? ' ' + Math.abs(c) + '%' : ''), 'down') : '<span class="muted">Held</span>'; };
+    var buys = m.h.filter(function (h) { return h[6] > 0; }).sort(function (a, b) { return b[6] - a[6]; }).slice(0, 5);
+    var sells = m.h.filter(function (h) { return h[6] < 0; }).map(function (h) { return [h[0], h[1], h[6], 'Trimmed']; }).concat(m.x.map(function (x) { return [x[0], x[1], -x[2], 'Sold out']; })).sort(function (a, b) { return a[2] - b[2]; }).slice(0, 5);
+    var hmax = Math.max.apply(null, m.hist.map(function (x) { return x[1]; }).concat([1]));
+    var html = back + '<section class="card px-inv-hero"><div class="px-h2row"><div>' + label(esc(m.c.map(function (c) { var x = CATS.filter(function (y) { return y[0] === c; })[0]; return x ? x[1] : c; }).join(' · '))) +
+      '<h2 class="px-h2 big">' + esc(m.n) + '</h2><p class="form-note">' + esc(m.meta || m.f) + '</p></div><div class="px-inv-tags">' + m.t.map(function (t) { return '<span class="px-chip">' + esc(t) + '</span>'; }).join('') + '</div></div>' +
+      '<p class="px-inv-about">' + esc(m.a) + '</p>' + (m.ph.length ? '<ul class="px-inv-ph">' + m.ph.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      '<div class="px-grid4">' +
+      '<div class="px-sub">' + label('Portfolio value') + '<div class="px-hv">' + bn(m.v) + '</div><p>' + (m.vChg != null ? '<span class="' + (m.vChg >= 0 ? 'up' : 'down') + '">' + pct(m.vChg) + '</span> vs. ' + esc(qLabel(m.prevPeriod)) : 'US-listed stocks') + '</p></div>' +
+      '<div class="px-sub">' + label('Positions') + '<div class="px-hv">' + m.k.toLocaleString('en-US') + '</div><p>' + (m.topN ? 'We show the ' + m.topN + ' biggest.' : 'Top 10 are ' + Math.round(m.top10) + '% of it.') + '</p></div>' +
+      '<div class="px-sub">' + label('Last quarter') + '<div class="px-hv"><span class="up">' + ((cn.new || 0) + (cn.added || 0)) + '↑</span> <span class="down">' + ((cn.reduced || 0) + (cn.sold || 0)) + '↓</span></div><p>' + (cn.new || 0) + ' new, ' + (cn.added || 0) + ' added, ' + (cn.reduced || 0) + ' trimmed, ' + (cn.sold || 0) + ' sold out</p></div>' +
+      '<div class="px-sub">' + label('Your stocks') + '<div class="px-hv gold">' + owned.length + '</div><p>' + (owned.length ? owned.slice(0, 5).map(function (h) { return esc(h[0]); }).join(', ') : 'None of your stocks') + '</p></div></div>' +
+      '<p class="form-note">' + esc(qLabel(m.period)) + ' holdings, filed ' + fmtDate(m.filed) + '. <a href="' + esc(m.url) + '" target="_blank" rel="noopener">Official filing</a>' + (m.p ? '' : ' · <a href="/investors/' + esc(slug) + '.html">Public profile with charts</a>') + '</p></section>';
+    html += '<div class="px-grid2"><section class="card">' + label('Biggest buys last quarter') + (buys.length ? buys.map(function (h) { return '<div class="px-res px-mv"><span>' + nameCell(h[0], h[1]) + '</span><span>' + act(h[3], h[4]) + '</span><b class="mono up">+' + bn(h[6]) + '</b></div>'; }).join('') : '<p class="muted">No buying.</p>') + '</section>' +
+      '<section class="card">' + label('Biggest sales last quarter') + (sells.length ? sells.map(function (h) { return '<div class="px-res px-mv"><span>' + nameCell(h[0], h[1]) + '</span><span>' + chip(h[3], 'down') + '</span><b class="mono down">−' + bn(-h[2]) + '</b></div>'; }).join('') : '<p class="muted">No selling.</p>') + '</section></div>';
+    if (m.hist.length > 1) html += '<section class="card">' + label('Portfolio value, last ' + m.hist.length + ' quarters') + '<div class="px-hist" role="img" aria-label="Portfolio value by quarter">' + m.hist.map(function (x) { return '<div><span class="mono">' + bn(x[1]) + '</span><i style="height:' + Math.max(4, x[1] / hmax * 100).toFixed(0) + '%"></i><small>' + esc(x[0]) + '</small></div>'; }).join('') + '</div></section>';
+    html += '<section class="card"><div class="px-h2row"><h3 class="px-h3">' + (m.topN ? 'Top ' + m.h.length + ' positions' : 'All ' + m.h.length + ' positions') + '</h3><span class="form-note">Weights at quarter-end prices · your stocks in gold</span></div><div class="px-table-wrap"><table class="px-table px-inv-table"><thead><tr><th>#</th><th>Stock</th><th>% of portfolio</th><th>Last quarter</th><th class="num">Value</th></tr></thead><tbody>' +
+      rows.map(function (h, i) { return '<tr' + (h[0] && mine[canon(h[0])] ? ' class="mine"' : '') + '><td class="mono muted">' + (i + 1) + '</td><td>' + nameCell(h[0], h[1]) + '</td><td><div class="px-wbar"><span style="width:' + Math.max(2, h[2] / max * 100).toFixed(0) + '%"></span></div><span class="mono">' + h[2].toFixed(h[2] < 1 ? 2 : 1) + '%</span></td><td>' + act(h[3], h[4]) + '</td><td class="num mono">' + bn(h[5]) + '</td></tr>'; }).join('') +
+      (m.x.length ? m.x.map(function (x) { return '<tr class="sold"><td></td><td>' + nameCell(x[0], x[1]) + '</td><td class="mono muted">0%</td><td>' + chip('Sold out', 'down') + '</td><td class="num mono muted">was ' + bn(x[2]) + '</td></tr>'; }).join('') : '') +
+      '</tbody></table></div>' + (m.h.length > rows.length ? '<button type="button" class="btn btn-sm" data-act="inv-all">Show all ' + m.h.length + ' positions</button>' : '') + '</section>';
+    return html;
   }
 
   // ---------- Tab 3 · Analyst Targets ----------
@@ -1017,14 +1067,16 @@
   // ---------- events ----------
   function on(sel, ev, fn) { root.querySelectorAll(sel).forEach(function (el) { el.addEventListener(ev, function (e) { fn(e, el); }); }); }
   function bind() {
-    on('[data-tab]', 'click', function (e, b) { S.tab = b.getAttribute('data-tab'); store('qx-tab', S.tab); history.replaceState(null, '', '#' + S.tab); render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); });
+    on('[data-tab]', 'click', function (e, b) { if (b.getAttribute('data-tab') === 'investors' && S.tab === 'investors') S.inv = null; S.tab = b.getAttribute('data-tab'); store('qx-tab', S.tab); history.replaceState(null, '', '#' + S.tab); render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); });
     on('[data-tab-go]', 'click', function (e, b) { e.preventDefault(); S.tab = b.getAttribute('data-tab-go'); store('qx-tab', S.tab); render(); });
     root.querySelectorAll('details[data-howto]').forEach(function (d) { d.addEventListener('toggle', function () { lset('qx-howto-' + d.getAttribute('data-howto'), d.open ? 'open' : 'closed'); }); });
     on('[data-open]', 'click', function (e) { e.preventDefault(); S.drawer = true; render(); var el = document.getElementById('membership'); if (el) el.scrollIntoView({ behavior: 'smooth' }); });
     on('[data-filter]', 'click', function (e, b) { S.filter = b.getAttribute('data-filter'); S.more = false; render(); });
     on('[data-region]', 'click', function (e, b) { S.region = b.getAttribute('data-region'); render(); });
-    on('[data-dircat]', 'click', function (e, b) { S.dirCat = b.getAttribute('data-dircat'); S.dirOpen = null; render(); });
-    on('[data-diropen]', 'click', function (e, b) { var k = b.getAttribute('data-diropen'); S.dirOpen = S.dirOpen === k ? null : k; render(); var el = root.querySelector('[data-diropen="' + k + '"]'); if (el) el.focus({ preventScroll: true }); });
+    on('[data-dircat]', 'click', function (e, b) { S.dirCat = b.getAttribute('data-dircat'); render(); });
+    on('[data-inv]', 'click', function (e, b) { S.inv = b.getAttribute('data-inv'); S.tab = 'investors'; S.invAll = null; render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90 }); });
+    var ds = document.getElementById('px-dir-sort');
+    if (ds) ds.addEventListener('change', function () { S.dirSort = ds.value; render(); });
     var dq = document.getElementById('px-dir-q');
     if (dq) dq.addEventListener('input', function () { S.dirQ = dq.value; clearTimeout(S.dirT); S.dirT = setTimeout(function () { var pos = dq.selectionStart; render(); var n = document.getElementById('px-dir-q'); if (n) { n.focus(); n.setSelectionRange(pos, pos); } }, 200); });
     on('[data-ccy]', 'click', function (e, b) {
@@ -1119,6 +1171,8 @@
       if (act === 'drawer') { S.drawer = !S.drawer; render(); if (S.drawer) { var d = document.getElementById('px-drawer'); if (d) d.scrollIntoView({ behavior: 'smooth' }); } }
       if (act === 'edit-brief' && S.brief && S.brief.latest) { var L = S.brief.latest; S.briefEdit = { id: L.id, title: L.title, body: L.body || '', tickers: (L.tickers || []).join(', ') }; render(); }
       if (act === 'more') { S.more = true; render(); }
+      if (act === 'inv-back') { S.inv = null; render(); }
+      if (act === 'inv-all') { S.invAll = S.inv; render(); }
       if (act === 'welcome-done') { lset('qx-welcome', '1'); render(); }
       if (act === 'new-brief') { S.briefEdit = null; render(); }
       if (act === 'logout') api('POST', '/api/auth/logout').then(function () { location.href = '/account.html'; });

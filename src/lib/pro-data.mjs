@@ -339,3 +339,22 @@ export function buildManagerDirectory(d) {
   }
   return out;
 }
+
+/** One investor's full portfolio for the Pro "Super Investors" tab (dist/pro/m/<slug>.json). */
+export function buildManagerDetail(inv) {
+  const p = inv.p;
+  const tk = (h) => (h.ticker && TICKER.test(h.ticker) ? h.ticker : null);
+  return {
+    slug: inv.slug, n: inv.manager, f: inv.firm, meta: inv.meta || '', a: inv.about || '', ph: inv.philosophy || [], t: inv.tags || [], c: inv.categories || [],
+    ...(inv.group === 'institution' ? { g: 'i' } : {}), ...(inv.pro ? { p: 1 } : {}),
+    period: p.period, prevPeriod: p.prevPeriod || null, filed: p.filingDate, url: p.filingUrl,
+    v: Math.round(p.totalValue), vChg: p.valueChange != null ? r2(p.valueChange * 100) : null, k: p.holdingsCount, ...(p.topN ? { topN: p.topN } : {}),
+    top10: r2(p.top10), bets: Math.round(p.effN), counts: p.counts || {},
+    sectors: (p.sectors || []).slice(0, 8),
+    hist: (p.hist?.labels || []).map((l, i) => [l, Math.round(p.hist.values[i]), p.hist.counts?.[i] ?? null]),
+    // [ticker or null, name, weight %, action, % change in shares, value $, estimated $ flow, stock page slug]
+    h: p.holdings.map((h) => [tk(h), h.name, r2(h.w), h.act, h.sharesChangePct != null && h.act !== 'New' ? Math.round(h.sharesChangePct * 100) : null, Math.round(h.value), Math.round(h.flow || 0), h.stockSlug || null]),
+    // sold out: [ticker or null, name, value last quarter $]
+    x: (p.sold || []).map((h) => [tk(h), h.name, Math.round(h.prevValue || -(h.flow || 0))]),
+  };
+}
