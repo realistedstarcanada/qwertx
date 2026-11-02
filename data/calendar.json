@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T20:39:28.701Z",
+  "updatedAt": "2026-11-02T22:04:49.143Z",
   "econ": [
     {
       "id": "398758",
@@ -2438,18 +2438,18 @@
       "source": "S&P Global"
     },
     {
-      "id": "397438",
+      "id": "399000",
       "country": "US",
-      "title": "ISM Manufacturing PMI",
+      "title": "JOLTs Job Openings",
       "date": "2026-12-01T15:00:00.000Z",
-      "period": "Nov",
+      "period": "Oct",
       "actual": null,
       "forecast": null,
-      "previous": 55.5,
+      "previous": null,
       "unit": "",
       "scale": "",
       "importance": 1,
-      "source": "Institute for Supply Management"
+      "source": "Bureau of Labour Statistics"
     },
     {
       "id": "397440",
@@ -2466,18 +2466,18 @@
       "source": "Institute for Supply Management"
     },
     {
-      "id": "399000",
+      "id": "397438",
       "country": "US",
-      "title": "JOLTs Job Openings",
+      "title": "ISM Manufacturing PMI",
       "date": "2026-12-01T15:00:00.000Z",
-      "period": "Oct",
+      "period": "Nov",
       "actual": null,
       "forecast": null,
-      "previous": null,
+      "previous": 55.5,
       "unit": "",
       "scale": "",
       "importance": 1,
-      "source": "Bureau of Labour Statistics"
+      "source": "Institute for Supply Management"
     },
     {
       "id": "421544",
@@ -10169,19 +10169,6 @@
       "lastYearEps": null,
       "eps": 3.63,
       "surprise": 5.83
-    },
-    {
-      "date": "2026-10-30",
-      "ticker": "TLK",
-      "name": "PT Telekomunikasi Indonesia, Tbk",
-      "time": "",
-      "marketCap": 11065249800,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.65,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": 0.22,
-      "surprise": -66.15
     },
     {
       "date": "2026-10-30",
