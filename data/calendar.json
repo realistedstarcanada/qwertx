@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T18:30:43.734Z",
+  "updatedAt": "2026-11-04T20:04:31.753Z",
   "econ": [
     {
       "id": "1001662600001",
@@ -5705,7 +5705,7 @@
       "ticker": "PEP",
       "name": "Pepsico, Inc.",
       "time": "",
-      "marketCap": 191356109000,
+      "marketCap": 187063468000,
       "quarter": "Sep/2026",
       "epsForecast": 2.29,
       "estimates": 7,
@@ -5718,7 +5718,7 @@
       "ticker": "NG",
       "name": "Novagold Resources Inc.",
       "time": "",
-      "marketCap": 2582627330,
+      "marketCap": 2528413180,
       "quarter": "Aug/2026",
       "epsForecast": -0.08,
       "estimates": 1,
@@ -5731,7 +5731,7 @@
       "ticker": "BYRN",
       "name": "Byrna Technologies, Inc.",
       "time": "",
-      "marketCap": 96427584,
+      "marketCap": 97597824,
       "quarter": "Aug/2026",
       "epsForecast": -0.15,
       "estimates": 2,
@@ -5757,7 +5757,7 @@
       "ticker": "JPM",
       "name": "J P Morgan Chase & Co",
       "time": "",
-      "marketCap": 905325050000,
+      "marketCap": 898413760000,
       "quarter": "Sep/2026",
       "epsForecast": 5.94,
       "estimates": 6,
@@ -5770,7 +5770,7 @@
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
       "time": "",
-      "marketCap": 651321870000,
+      "marketCap": 640753800000,
       "quarter": "Sep/2026",
       "epsForecast": 2.53,
       "estimates": 6,
@@ -5783,7 +5783,7 @@
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
       "time": "",
-      "marketCap": 359432880000,
+      "marketCap": 363023270000,
       "quarter": "Sep/2026",
       "epsForecast": 4.12,
       "estimates": 8,
@@ -5796,7 +5796,7 @@
       "ticker": "GS",
       "name": "The Goldman Sachs Group, Inc.",
       "time": "",
-      "marketCap": 261681562000,
+      "marketCap": 258463351000,
       "quarter": "Sep/2026",
       "epsForecast": 12.9,
       "estimates": 7,
@@ -5809,7 +5809,7 @@
       "ticker": "WFC",
       "name": "Wells Fargo & Company",
       "time": "",
-      "marketCap": 257828930000,
+      "marketCap": 256748257000,
       "quarter": "Sep/2026",
       "epsForecast": 1.85,
       "estimates": 8,
@@ -5822,7 +5822,7 @@
       "ticker": "C",
       "name": "Citigroup Inc.",
       "time": "",
-      "marketCap": 206492467000,
+      "marketCap": 205838270000,
       "quarter": "Sep/2026",
       "epsForecast": 2.66,
       "estimates": 7,
@@ -5835,7 +5835,7 @@
       "ticker": "DPZ",
       "name": "Domino's Pizza Inc",
       "time": "",
-      "marketCap": 10604043300,
+      "marketCap": 10628386800,
       "quarter": "Sep/2026",
       "epsForecast": 4.33,
       "estimates": 9,
@@ -5848,7 +5848,7 @@
       "ticker": "FBK",
       "name": "FB Financial Corporation",
       "time": "",
-      "marketCap": 2747298300,
+      "marketCap": 2685060860,
       "quarter": "Sep/2026",
       "epsForecast": 1.21,
       "estimates": 5,
@@ -6199,7 +6199,7 @@
       "ticker": "FITB",
       "name": "Fifth Third Bancorp",
       "time": "",
-      "marketCap": 49851884000,
+      "marketCap": 48908714000,
       "quarter": "Sep/2026",
       "epsForecast": 1.09,
       "estimates": 8,
@@ -6212,7 +6212,7 @@
       "ticker": "STLD",
       "name": "Steel Dynamics, Inc.",
       "time": "",
-      "marketCap": 35826008000,
+      "marketCap": 35221582000,
       "quarter": "Sep/2026",
       "epsForecast": 5.42,
       "estimates": 3,
@@ -6225,7 +6225,7 @@
       "ticker": "WRB",
       "name": "W.R. Berkley Corporation",
       "time": "",
-      "marketCap": 27901460500,
+      "marketCap": 27908266000,
       "quarter": "Sep/2026",
       "epsForecast": 1.14,
       "estimates": 6,
@@ -6238,7 +6238,7 @@
       "ticker": "PAC",
       "name": "Grupo Aeroportuario Del Pacifico, S.A. de C.V.",
       "time": "",
-      "marketCap": 14004943900,
+      "marketCap": 14167978000,
       "quarter": "Sep/2026",
       "epsForecast": 2.72,
       "estimates": 3,
@@ -6251,7 +6251,7 @@
       "ticker": "CCK",
       "name": "Crown Holdings, Inc.",
       "time": "",
-      "marketCap": 13316263900,
+      "marketCap": 13045054500,
       "quarter": "Sep/2026",
       "epsForecast": 2.25,
       "estimates": 4,
@@ -6264,7 +6264,7 @@
       "ticker": "AGNC",
       "name": "AGNC Investment Corp.",
       "time": "",
-      "marketCap": 11069371400,
+      "marketCap": 10865562600,
       "quarter": "Sep/2026",
       "epsForecast": 0.39,
       "estimates": 4,
@@ -6277,7 +6277,7 @@
       "ticker": "WTFC",
       "name": "Wintrust Financial Corporation",
       "time": "",
-      "marketCap": 10619143200,
+      "marketCap": 10482187300,
       "quarter": "Sep/2026",
       "epsForecast": 3.29,
       "estimates": 7,
@@ -6290,7 +6290,7 @@
       "ticker": "CLF",
       "name": "Cleveland-Cliffs Inc.",
       "time": "",
-      "marketCap": 8142247400,
+      "marketCap": 8068071400,
       "quarter": "Sep/2026",
       "epsForecast": 0.24,
       "estimates": 5,
@@ -6303,7 +6303,7 @@
       "ticker": "RLI",
       "name": "RLI Corp.",
       "time": "",
-      "marketCap": 6168062000,
+      "marketCap": 6131369000,
       "quarter": "Sep/2026",
       "epsForecast": 0.58,
       "estimates": 4,
@@ -6316,7 +6316,7 @@
       "ticker": "AERO",
       "name": "Grupo Aeromexico, S.A.B. de C.V.",
       "time": "",
-      "marketCap": 2217731840,
+      "marketCap": 2153534210,
       "quarter": "Sep/2026",
       "epsForecast": 0.29,
       "estimates": 2,
@@ -6329,7 +6329,7 @@
       "ticker": "SPCX",
       "name": "Space Exploration Technologies Corp.",
       "time": "",
-      "marketCap": 1852049720000,
+      "marketCap": 1919140100000,
       "quarter": "Sep/2026",
       "epsForecast": 0.1,
       "estimates": 9,
@@ -6342,7 +6342,7 @@
       "ticker": "GE",
       "name": "GE Aerospace",
       "time": "",
-      "marketCap": 326311870000,
+      "marketCap": 331364958000,
       "quarter": "Sep/2026",
       "epsForecast": 2.02,
       "estimates": 7,
@@ -6355,7 +6355,7 @@
       "ticker": "RTX",
       "name": "RTX Corporation",
       "time": "",
-      "marketCap": 273653055000,
+      "marketCap": 275042959000,
       "quarter": "Sep/2026",
       "epsForecast": 1.78,
       "estimates": 5,
@@ -6368,7 +6368,7 @@
       "ticker": "NFLX",
       "name": "Netflix, Inc.",
       "time": "",
-      "marketCap": 255988351000,
+      "marketCap": 260423188000,
       "quarter": "Sep/2026",
       "epsForecast": 0.82,
       "estimates": 13,
@@ -6381,7 +6381,7 @@
       "ticker": "ISRG",
       "name": "Intuitive Surgical, Inc.",
       "time": "",
-      "marketCap": 151438246000,
+      "marketCap": 152783225000,
       "quarter": "Sep/2026",
       "epsForecast": 2.13,
       "estimates": 8,
@@ -6394,7 +6394,7 @@
       "ticker": "CB",
       "name": "Chubb Limited",
       "time": "",
-      "marketCap": 140979585000,
+      "marketCap": 140047319000,
       "quarter": "Sep/2026",
       "epsForecast": 6.53,
       "estimates": 10,
@@ -6407,7 +6407,7 @@
       "ticker": "COF",
       "name": "Capital One Financial Corporation",
       "time": "",
-      "marketCap": 129304199000,
+      "marketCap": 128040419000,
       "quarter": "Sep/2026",
       "epsForecast": 5.45,
       "estimates": 8,
@@ -6420,7 +6420,7 @@
       "ticker": "MMM",
       "name": "3M Company",
       "time": "",
-      "marketCap": 92163883000,
+      "marketCap": 91486970000,
       "quarter": "Sep/2026",
       "epsForecast": 2.4,
       "estimates": 5,
@@ -6433,7 +6433,7 @@
       "ticker": "NOC",
       "name": "Northrop Grumman Corporation",
       "time": "",
-      "marketCap": 78891254000,
+      "marketCap": 78178091000,
       "quarter": "Sep/2026",
       "epsForecast": 7.22,
       "estimates": 6,
@@ -6446,7 +6446,7 @@
       "ticker": "GM",
       "name": "General Motors Company",
       "time": "",
-      "marketCap": 75868832000,
+      "marketCap": 74519159000,
       "quarter": "Sep/2026",
       "epsForecast": 3.55,
       "estimates": 6,
@@ -6459,7 +6459,7 @@
       "ticker": "AMX",
       "name": "America Movil, S.A.B. de C.V.",
       "time": "",
-      "marketCap": 74461217000,
+      "marketCap": 74491314000,
       "quarter": "Sep/2026",
       "epsForecast": 0.46,
       "estimates": 3,
@@ -6472,7 +6472,7 @@
       "ticker": "MSCI",
       "name": "MSCI Inc.",
       "time": "",
-      "marketCap": 45560517000,
+      "marketCap": 45744271000,
       "quarter": "Sep/2026",
       "epsForecast": 4.98,
       "estimates": 6,
@@ -6485,7 +6485,7 @@
       "ticker": "UAL",
       "name": "United Airlines Holdings, Inc.",
       "time": "",
-      "marketCap": 35491463000,
+      "marketCap": 34831925000,
       "quarter": "Sep/2026",
       "epsForecast": 2.6,
       "estimates": 7,
@@ -6498,7 +6498,7 @@
       "ticker": "HAL",
       "name": "Halliburton Company",
       "time": "",
-      "marketCap": 28626843600,
+      "marketCap": 28180195300,
       "quarter": "Sep/2026",
       "epsForecast": 0.58,
       "estimates": 9,
@@ -6511,7 +6511,7 @@
       "ticker": "SYF",
       "name": "Synchrony Financial",
       "time": "",
-      "marketCap": 23922120700,
+      "marketCap": 23411417100,
       "quarter": "Sep/2026",
       "epsForecast": 2.48,
       "estimates": 6,
@@ -6524,7 +6524,7 @@
       "ticker": "KEY",
       "name": "KeyCorp",
       "time": "",
-      "marketCap": 22932592600,
+      "marketCap": 22655139800,
       "quarter": "Sep/2026",
       "epsForecast": 0.46,
       "estimates": 7,
@@ -6537,7 +6537,7 @@
       "ticker": "EFX",
       "name": "Equifax, Inc.",
       "time": "",
-      "marketCap": 22526976000,
+      "marketCap": 21966463000,
       "quarter": "Sep/2026",
       "epsForecast": 2.19,
       "estimates": 9,
@@ -6550,7 +6550,7 @@
       "ticker": "EWBC",
       "name": "East West Bancorp, Inc.",
       "time": "",
-      "marketCap": 18243129300,
+      "marketCap": 18141739000,
       "quarter": "Sep/2026",
       "epsForecast": 2.69,
       "estimates": 9,
@@ -6563,7 +6563,7 @@
       "ticker": "GPC",
       "name": "Genuine Parts Company",
       "time": "",
-      "marketCap": 17179318300,
+      "marketCap": 17132443600,
       "quarter": "Sep/2026",
       "epsForecast": 2.09,
       "estimates": 5,
@@ -6576,7 +6576,7 @@
       "ticker": "HAS",
       "name": "Hasbro, Inc.",
       "time": "",
-      "marketCap": 16554135600,
+      "marketCap": 16499589100,
       "quarter": "Sep/2026",
       "epsForecast": 1.86,
       "estimates": 5,
@@ -6589,7 +6589,7 @@
       "ticker": "NLY",
       "name": "Annaly Capital Management Inc.",
       "time": "",
-      "marketCap": 14567586800,
+      "marketCap": 14362741800,
       "quarter": "Sep/2026",
       "epsForecast": 0.77,
       "estimates": 4,
@@ -6602,7 +6602,7 @@
       "ticker": "MLI",
       "name": "Mueller Industries, Inc.",
       "time": "",
-      "marketCap": 12023467000,
+      "marketCap": 12108476400,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -6615,7 +6615,7 @@
       "ticker": "ELS",
       "name": "Equity Lifestyle Properties, Inc.",
       "time": "",
-      "marketCap": 11774790700,
+      "marketCap": 11745572900,
       "quarter": "Sep/2026",
       "epsForecast": 0.79,
       "estimates": 3,
@@ -6628,7 +6628,7 @@
       "ticker": "ALLY",
       "name": "Ally Financial Inc.",
       "time": "",
-      "marketCap": 11745150000,
+      "marketCap": 11376670700,
       "quarter": "Sep/2026",
       "epsForecast": 1.32,
       "estimates": 6,
@@ -6641,7 +6641,7 @@
       "ticker": "ADC",
       "name": "Agree Realty Corporation",
       "time": "",
-      "marketCap": 8909318100,
+      "marketCap": 8958756900,
       "quarter": "Sep/2026",
       "epsForecast": 1.11,
       "estimates": 4,
@@ -6654,7 +6654,7 @@
       "ticker": "CBSH",
       "name": "Commerce Bancshares, Inc.",
       "time": "",
-      "marketCap": 8003515400,
+      "marketCap": 7979131900,
       "quarter": "Sep/2026",
       "epsForecast": 1.07,
       "estimates": 8,
@@ -6667,7 +6667,7 @@
       "ticker": "ALK",
       "name": "Alaska Air Group, Inc.",
       "time": "",
-      "marketCap": 4273283580,
+      "marketCap": 4104762880,
       "quarter": "Sep/2026",
       "epsForecast": 0.35,
       "estimates": 8,
@@ -6677,23 +6677,10 @@
     },
     {
       "date": "2026-10-21",
-      "ticker": "TSLA",
-      "name": "Tesla, Inc.",
-      "time": "",
-      "marketCap": 1596202680000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.22,
-      "estimates": 10,
-      "lastYearEps": null,
-      "eps": 0.2,
-      "surprise": -9.09
-    },
-    {
-      "date": "2026-10-21",
       "ticker": "META",
       "name": "Meta Platforms, Inc.",
       "time": "",
-      "marketCap": 1550948240000,
+      "marketCap": 1587502510000,
       "quarter": "Sep/2026",
       "epsForecast": 6.52,
       "estimates": 6,
@@ -6703,10 +6690,23 @@
     },
     {
       "date": "2026-10-21",
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "time": "",
+      "marketCap": 1575174010000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.22,
+      "estimates": 10,
+      "lastYearEps": null,
+      "eps": 0.2,
+      "surprise": -9.09
+    },
+    {
+      "date": "2026-10-21",
       "ticker": "PM",
       "name": "Philip Morris International Inc",
       "time": "",
-      "marketCap": 324652368000,
+      "marketCap": 324247126000,
       "quarter": "Sep/2026",
       "epsForecast": 2.3,
       "estimates": 4,
@@ -6716,23 +6716,10 @@
     },
     {
       "date": "2026-10-21",
-      "ticker": "SAP",
-      "name": "SAP SE",
-      "time": "",
-      "marketCap": 287003148000,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.03,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": 2.18,
-      "surprise": 7.39
-    },
-    {
-      "date": "2026-10-21",
       "ticker": "LRCX",
       "name": "Lam Research Corporation",
       "time": "",
-      "marketCap": 284261351000,
+      "marketCap": 288208749000,
       "quarter": "Sep/2026",
       "epsForecast": 2.17,
       "estimates": 9,
@@ -6745,7 +6732,7 @@
       "ticker": "TXN",
       "name": "Texas Instruments Incorporated",
       "time": "",
-      "marketCap": 275976913000,
+      "marketCap": 285544088000,
       "quarter": "Sep/2026",
       "epsForecast": 2.4,
       "estimates": 9,
@@ -6755,10 +6742,23 @@
     },
     {
       "date": "2026-10-21",
+      "ticker": "SAP",
+      "name": "SAP SE",
+      "time": "",
+      "marketCap": 282936803000,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.03,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": 2.18,
+      "surprise": 7.39
+    },
+    {
+      "date": "2026-10-21",
       "ticker": "TMO",
       "name": "Thermo Fisher Scientific Inc",
       "time": "",
-      "marketCap": 252932653000,
+      "marketCap": 258746057000,
       "quarter": "Sep/2026",
       "epsForecast": 6.4,
       "estimates": 8,
@@ -6771,7 +6771,7 @@
       "ticker": "IBM",
       "name": "International Business Machines Corporation",
       "time": "",
-      "marketCap": 238652457000,
+      "marketCap": 236317999000,
       "quarter": "Sep/2026",
       "epsForecast": 2.88,
       "estimates": 6,
@@ -6784,7 +6784,7 @@
       "ticker": "ABT",
       "name": "Abbott Laboratories",
       "time": "",
-      "marketCap": 190619025000,
+      "marketCap": 189303931000,
       "quarter": "Sep/2026",
       "epsForecast": 1.43,
       "estimates": 8,
@@ -6797,7 +6797,7 @@
       "ticker": "NEE",
       "name": "NextEra Energy, Inc.",
       "time": "",
-      "marketCap": 178333925000,
+      "marketCap": 176865821000,
       "quarter": "Sep/2026",
       "epsForecast": 1.2,
       "estimates": 5,
@@ -6810,7 +6810,7 @@
       "ticker": "DHR",
       "name": "Danaher Corporation",
       "time": "",
-      "marketCap": 160383926000,
+      "marketCap": 161889468000,
       "quarter": "Sep/2026",
       "epsForecast": 1.92,
       "estimates": 7,
@@ -6823,7 +6823,7 @@
       "ticker": "SCCO",
       "name": "Southern Copper Corporation",
       "time": "",
-      "marketCap": 151441408000,
+      "marketCap": 146485117000,
       "quarter": "Sep/2026",
       "epsForecast": 2.04,
       "estimates": 2,
@@ -6836,7 +6836,7 @@
       "ticker": "T",
       "name": "AT&T Inc.",
       "time": "",
-      "marketCap": 144429990000,
+      "marketCap": 144093168000,
       "quarter": "Sep/2026",
       "epsForecast": 0.61,
       "estimates": 7,
@@ -6849,7 +6849,7 @@
       "ticker": "CME",
       "name": "CME Group Inc.",
       "time": "",
-      "marketCap": 109612900000,
+      "marketCap": 108832612000,
       "quarter": "Sep/2026",
       "epsForecast": 2.98,
       "estimates": 8,
@@ -6862,7 +6862,7 @@
       "ticker": "CSX",
       "name": "CSX Corporation",
       "time": "",
-      "marketCap": 95156216000,
+      "marketCap": 93497156000,
       "quarter": "Sep/2026",
       "epsForecast": 0.52,
       "estimates": 8,
@@ -6875,7 +6875,7 @@
       "ticker": "ELV",
       "name": "Elevance Health, Inc.",
       "time": "",
-      "marketCap": 89360720000,
+      "marketCap": 89393127000,
       "quarter": "Sep/2026",
       "epsForecast": 4.66,
       "estimates": 9,
@@ -6888,7 +6888,7 @@
       "ticker": "MCO",
       "name": "Moody's Corporation",
       "time": "",
-      "marketCap": 87237845000,
+      "marketCap": 86836158000,
       "quarter": "Sep/2026",
       "epsForecast": 4.25,
       "estimates": 8,
@@ -6901,7 +6901,7 @@
       "ticker": "KMI",
       "name": "Kinder Morgan, Inc.",
       "time": "",
-      "marketCap": 72868569000,
+      "marketCap": 73225003000,
       "quarter": "Sep/2026",
       "epsForecast": 0.33,
       "estimates": 9,
@@ -6914,7 +6914,7 @@
       "ticker": "URI",
       "name": "United Rentals, Inc.",
       "time": "",
-      "marketCap": 72777998000,
+      "marketCap": 72762515000,
       "quarter": "Sep/2026",
       "epsForecast": 13.83,
       "estimates": 6,
@@ -6927,7 +6927,7 @@
       "ticker": "WAB",
       "name": "Westinghouse Air Brake Technologies Corporation",
       "time": "",
-      "marketCap": 48124047000,
+      "marketCap": 48961380000,
       "quarter": "Sep/2026",
       "epsForecast": 2.72,
       "estimates": 4,
@@ -6940,7 +6940,7 @@
       "ticker": "WCN",
       "name": "Waste Connections, Inc.",
       "time": "",
-      "marketCap": 47111250000,
+      "marketCap": 46647345000,
       "quarter": "Sep/2026",
       "epsForecast": 1.52,
       "estimates": 10,
@@ -6953,7 +6953,7 @@
       "ticker": "CCI",
       "name": "Crown Castle Inc.",
       "time": "",
-      "marketCap": 37027385000,
+      "marketCap": 36835930000,
       "quarter": "Sep/2026",
       "epsForecast": 1.16,
       "estimates": 5,
@@ -6966,7 +6966,7 @@
       "ticker": "NTRS",
       "name": "Northern Trust Corporation",
       "time": "",
-      "marketCap": 30909564900,
+      "marketCap": 31260934100,
       "quarter": "Sep/2026",
       "epsForecast": 2.86,
       "estimates": 5,
@@ -6979,7 +6979,7 @@
       "ticker": "TDY",
       "name": "Teledyne Technologies Incorporated",
       "time": "",
-      "marketCap": 30379892700,
+      "marketCap": 30551146500,
       "quarter": "Sep/2026",
       "epsForecast": 6.15,
       "estimates": 4,
@@ -6992,7 +6992,7 @@
       "ticker": "LVS",
       "name": "Las Vegas Sands Corp.",
       "time": "",
-      "marketCap": 23951022100,
+      "marketCap": 23988641800,
       "quarter": "Sep/2026",
       "epsForecast": 0.71,
       "estimates": 8,
@@ -7005,7 +7005,7 @@
       "ticker": "PKG",
       "name": "Packaging Corporation of America",
       "time": "",
-      "marketCap": 23044384800,
+      "marketCap": 22715611100,
       "quarter": "Sep/2026",
       "epsForecast": 2.95,
       "estimates": 4,
@@ -7018,7 +7018,7 @@
       "ticker": "RS",
       "name": "Reliance, Inc.",
       "time": "",
-      "marketCap": 22826051600,
+      "marketCap": 22610057200,
       "quarter": "Sep/2026",
       "epsForecast": 6.76,
       "estimates": 4,
@@ -7031,7 +7031,7 @@
       "ticker": "LUV",
       "name": "Southwest Airlines Company",
       "time": "",
-      "marketCap": 21522921500,
+      "marketCap": 21273223200,
       "quarter": "Sep/2026",
       "epsForecast": 0.61,
       "estimates": 9,
@@ -7044,7 +7044,7 @@
       "ticker": "MEDP",
       "name": "Medpace Holdings, Inc.",
       "time": "",
-      "marketCap": 18129567700,
+      "marketCap": 18558933000,
       "quarter": "Sep/2026",
       "epsForecast": 4.45,
       "estimates": 2,
@@ -7057,7 +7057,7 @@
       "ticker": "ROL",
       "name": "Rollins, Inc.",
       "time": "",
-      "marketCap": 17223970800,
+      "marketCap": 17854990300,
       "quarter": "Sep/2026",
       "epsForecast": 0.35,
       "estimates": 6,
@@ -7070,7 +7070,7 @@
       "ticker": "PNFP",
       "name": "Pinnacle Financial Partners, Inc.",
       "time": "",
-      "marketCap": 15764070400,
+      "marketCap": 15550405600,
       "quarter": "Sep/2026",
       "epsForecast": 2.61,
       "estimates": 10,
@@ -7083,7 +7083,7 @@
       "ticker": "CACI",
       "name": "CACI International, Inc.",
       "time": "",
-      "marketCap": 15115153400,
+      "marketCap": 15106269200,
       "quarter": "Sep/2026",
       "epsForecast": 6.45,
       "estimates": 5,
@@ -7096,7 +7096,7 @@
       "ticker": "SEIC",
       "name": "SEI Investments Company",
       "time": "",
-      "marketCap": 12557269000,
+      "marketCap": 12506275800,
       "quarter": "Sep/2026",
       "epsForecast": 1.59,
       "estimates": 4,
@@ -7109,7 +7109,7 @@
       "ticker": "GL",
       "name": "Globe Life Inc.",
       "time": "",
-      "marketCap": 12279773200,
+      "marketCap": 12157582300,
       "quarter": "Sep/2026",
       "epsForecast": 4.87,
       "estimates": 5,
@@ -7122,7 +7122,7 @@
       "ticker": "GGG",
       "name": "Graco Inc.",
       "time": "",
-      "marketCap": 11065883600,
+      "marketCap": 11091544100,
       "quarter": "Sep/2026",
       "epsForecast": 0.82,
       "estimates": 5,
@@ -7135,7 +7135,7 @@
       "ticker": "MOH",
       "name": "Molina Healthcare Inc",
       "time": "",
-      "marketCap": 10881089500,
+      "marketCap": 10849770500,
       "quarter": "Sep/2026",
       "epsForecast": 0.72,
       "estimates": 5,
@@ -7148,7 +7148,7 @@
       "ticker": "EGP",
       "name": "EastGroup Properties, Inc.",
       "time": "",
-      "marketCap": 10800638000,
+      "marketCap": 10766758900,
       "quarter": "Sep/2026",
       "epsForecast": 2.43,
       "estimates": 6,
@@ -7161,7 +7161,7 @@
       "ticker": "SF",
       "name": "Stifel Financial Corporation",
       "time": "",
-      "marketCap": 10369289200,
+      "marketCap": 10364759000,
       "quarter": "Sep/2026",
       "epsForecast": 1.43,
       "estimates": 3,
@@ -7174,7 +7174,7 @@
       "ticker": "SSB",
       "name": "SouthState Bank Corporation",
       "time": "",
-      "marketCap": 10345806800,
+      "marketCap": 10243324900,
       "quarter": "Sep/2026",
       "epsForecast": 2.39,
       "estimates": 6,
@@ -7187,7 +7187,7 @@
       "ticker": "KNX",
       "name": "Knight Transportation, Inc.",
       "time": "",
-      "marketCap": 10036830200,
+      "marketCap": 10224023600,
       "quarter": "Sep/2026",
       "epsForecast": 0.75,
       "estimates": 7,
@@ -7200,7 +7200,7 @@
       "ticker": "LAD",
       "name": "Lithia Motors, Inc.",
       "time": "",
-      "marketCap": 6694940700,
+      "marketCap": 6459495900,
       "quarter": "Sep/2026",
       "epsForecast": 9.7,
       "estimates": 5,
@@ -7213,7 +7213,7 @@
       "ticker": "HXL",
       "name": "Hexcel Corporation",
       "time": "",
-      "marketCap": 6148509700,
+      "marketCap": 6194688000,
       "quarter": "Sep/2026",
       "epsForecast": 0.48,
       "estimates": 5,
@@ -7226,7 +7226,7 @@
       "ticker": "FULT",
       "name": "Fulton Financial Corporation",
       "time": "",
-      "marketCap": 4601040900,
+      "marketCap": 4547585000,
       "quarter": "Sep/2026",
       "epsForecast": 0.55,
       "estimates": 5,
@@ -7239,7 +7239,7 @@
       "ticker": "CATY",
       "name": "Cathay General Bancorp",
       "time": "",
-      "marketCap": 4374425100,
+      "marketCap": 4331728400,
       "quarter": "Sep/2026",
       "epsForecast": 1.44,
       "estimates": 3,
@@ -7252,7 +7252,7 @@
       "ticker": "WSBC",
       "name": "WesBanco, Inc.",
       "time": "",
-      "marketCap": 3784693500,
+      "marketCap": 3728062210,
       "quarter": "Sep/2026",
       "epsForecast": 0.87,
       "estimates": 5,
@@ -7265,7 +7265,7 @@
       "ticker": "MPB",
       "name": "Mid Penn Bancorp",
       "time": "",
-      "marketCap": 874821120,
+      "marketCap": 865951300,
       "quarter": "Sep/2026",
       "epsForecast": 0.88,
       "estimates": 3,
@@ -12933,7 +12933,7 @@
       "ticker": "AAPL",
       "name": "Apple Inc.",
       "time": "",
-      "marketCap": 4937503200000,
+      "marketCap": 4843808200000,
       "quarter": "Sep/2026",
       "epsForecast": 1.98,
       "estimates": 7,
@@ -12946,7 +12946,7 @@
       "ticker": "PLTR",
       "name": "Palantir Technologies Inc.",
       "time": "",
-      "marketCap": 428382224000,
+      "marketCap": 421320196000,
       "quarter": "Sep/2026",
       "epsForecast": 0.32,
       "estimates": 11,
@@ -12956,10 +12956,23 @@
     },
     {
       "date": "2026-11-02",
+      "ticker": "WMB",
+      "name": "Williams Companies, Inc. (The)",
+      "time": "",
+      "marketCap": 184055906000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.55,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 0.54,
+      "surprise": -1.82
+    },
+    {
+      "date": "2026-11-02",
       "ticker": "VRTX",
       "name": "Vertex Pharmaceuticals Incorporated",
       "time": "",
-      "marketCap": 140201902000,
+      "marketCap": 134526919000,
       "quarter": "Sep/2026",
       "epsForecast": 4.36,
       "estimates": 5,
@@ -12972,7 +12985,7 @@
       "ticker": "MAR",
       "name": "Marriott International",
       "time": "",
-      "marketCap": 108557009000,
+      "marketCap": 107219681000,
       "quarter": "Sep/2026",
       "epsForecast": 2.86,
       "estimates": 8,
@@ -12982,23 +12995,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "WMB",
-      "name": "Williams Companies, Inc. (The)",
-      "time": "",
-      "marketCap": 87077290000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.55,
-      "estimates": 8,
-      "lastYearEps": null,
-      "eps": 0.54,
-      "surprise": -1.82
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "LITE",
       "name": "Lumentum Holdings Inc.",
       "time": "",
-      "marketCap": 61994906000,
+      "marketCap": 61610836000,
       "quarter": "Sep/2026",
       "epsForecast": 3.82,
       "estimates": 6,
@@ -13008,23 +13008,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "FANG",
-      "name": "Diamondback Energy, Inc.",
-      "time": "",
-      "marketCap": 55932064000,
-      "quarter": "Sep/2026",
-      "epsForecast": 4.92,
-      "estimates": 8,
-      "lastYearEps": null,
-      "eps": 5.86,
-      "surprise": 19.11
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "O",
       "name": "Realty Income Corporation",
       "time": "",
-      "marketCap": 54483235000,
+      "marketCap": 54407537000,
       "quarter": "Sep/2026",
       "epsForecast": 1.11,
       "estimates": 7,
@@ -13034,10 +13021,23 @@
     },
     {
       "date": "2026-11-02",
+      "ticker": "FANG",
+      "name": "Diamondback Energy, Inc.",
+      "time": "",
+      "marketCap": 53859885000,
+      "quarter": "Sep/2026",
+      "epsForecast": 4.92,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 5.86,
+      "surprise": 19.11
+    },
+    {
+      "date": "2026-11-02",
       "ticker": "IDXX",
       "name": "IDEXX Laboratories, Inc.",
       "time": "",
-      "marketCap": 52912550000,
+      "marketCap": 52947522000,
       "quarter": "Sep/2026",
       "epsForecast": 3.71,
       "estimates": 6,
@@ -13050,7 +13050,7 @@
       "ticker": "ETR",
       "name": "Entergy Corporation",
       "time": "",
-      "marketCap": 51268805000,
+      "marketCap": 52044931000,
       "quarter": "Sep/2026",
       "epsForecast": 1.71,
       "estimates": 6,
@@ -13063,7 +13063,7 @@
       "ticker": "EL",
       "name": "Estee Lauder Companies, Inc. (The)",
       "time": "",
-      "marketCap": 37960557000,
+      "marketCap": 38186009000,
       "quarter": "Sep/2026",
       "epsForecast": 0.52,
       "estimates": 11,
@@ -13076,7 +13076,7 @@
       "ticker": "PEG",
       "name": "Public Service Enterprise Group Incorporated",
       "time": "",
-      "marketCap": 37072482000,
+      "marketCap": 36296909000,
       "quarter": "Sep/2026",
       "epsForecast": 1.21,
       "estimates": 5,
@@ -13086,23 +13086,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "RYAAY",
-      "name": "Ryanair Holdings plc",
-      "time": "",
-      "marketCap": 28156612600,
-      "quarter": "Sep/2026",
-      "epsForecast": 3.49,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 3.54,
-      "surprise": 1.43
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "ON",
       "name": "ON Semiconductor Corporation",
       "time": "",
-      "marketCap": 27295127600,
+      "marketCap": 28262053900,
       "quarter": "Sep/2026",
       "epsForecast": 0.88,
       "estimates": 11,
@@ -13112,10 +13099,23 @@
     },
     {
       "date": "2026-11-02",
+      "ticker": "RYAAY",
+      "name": "Ryanair Holdings plc",
+      "time": "",
+      "marketCap": 28204484600,
+      "quarter": "Sep/2026",
+      "epsForecast": 3.49,
+      "estimates": 3,
+      "lastYearEps": null,
+      "eps": 3.54,
+      "surprise": 1.43
+    },
+    {
+      "date": "2026-11-02",
       "ticker": "FOX",
       "name": "Fox Corporation",
       "time": "",
-      "marketCap": 23596855300,
+      "marketCap": 25152018400,
       "quarter": "Sep/2026",
       "epsForecast": 2.12,
       "estimates": 3,
@@ -13128,7 +13128,7 @@
       "ticker": "FOXA",
       "name": "Fox Corporation",
       "time": "",
-      "marketCap": 23596855300,
+      "marketCap": 25152018400,
       "quarter": "Sep/2026",
       "epsForecast": 1.99,
       "estimates": 5,
@@ -13141,7 +13141,7 @@
       "ticker": "ROKU",
       "name": "Roku, Inc.",
       "time": "",
-      "marketCap": 23082117100,
+      "marketCap": 23909888000,
       "quarter": "Sep/2026",
       "epsForecast": 0.55,
       "estimates": 9,
@@ -13154,7 +13154,7 @@
       "ticker": "L",
       "name": "Loews Corporation",
       "time": "",
-      "marketCap": 22760982500,
+      "marketCap": 22238707700,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -13167,7 +13167,7 @@
       "ticker": "SBAC",
       "name": "SBA Communications Corporation",
       "time": "",
-      "marketCap": 19611447300,
+      "marketCap": 19593412600,
       "quarter": "Sep/2026",
       "epsForecast": 2.89,
       "estimates": 4,
@@ -13180,7 +13180,7 @@
       "ticker": "PS",
       "name": "Pershing Square Inc.",
       "time": "",
-      "marketCap": 18648000500,
+      "marketCap": 18663999500,
       "quarter": "Sep/2026",
       "epsForecast": 0.13,
       "estimates": 2,
@@ -13193,7 +13193,7 @@
       "ticker": "TSEM",
       "name": "Tower Semiconductor Ltd.",
       "time": "",
-      "marketCap": 17555974100,
+      "marketCap": 18430834700,
       "quarter": "Sep/2026",
       "epsForecast": 0.98,
       "estimates": 6,
@@ -13203,62 +13203,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "PKX",
-      "name": "POSCO HOLDINGS INC.",
-      "time": "",
-      "marketCap": 16607441900,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.29,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": 0.56,
-      "surprise": -56.59
-    },
-    {
-      "date": "2026-11-02",
-      "ticker": "VNOM",
-      "name": "Viper Energy, Inc.",
-      "time": "",
-      "marketCap": 16422390800,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.59,
-      "estimates": 9,
-      "lastYearEps": null,
-      "eps": 0.72,
-      "surprise": 22.03
-    },
-    {
-      "date": "2026-11-02",
-      "ticker": "CRBG",
-      "name": "Corebridge Financial Inc.",
-      "time": "",
-      "marketCap": 15619868700,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.22,
-      "estimates": 7,
-      "lastYearEps": null,
-      "eps": 1.22,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-02",
-      "ticker": "EQH",
-      "name": "Equitable Holdings, Inc.",
-      "time": "",
-      "marketCap": 14814887900,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.87,
-      "estimates": 4,
-      "lastYearEps": null,
-      "eps": 2.13,
-      "surprise": 13.9
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "NBIX",
       "name": "Neurocrine Biosciences, Inc.",
       "time": "",
-      "marketCap": 14774708200,
+      "marketCap": 16685893600,
       "quarter": "Sep/2026",
       "epsForecast": 1.95,
       "estimates": 7,
@@ -13268,10 +13216,88 @@
     },
     {
       "date": "2026-11-02",
+      "ticker": "PKX",
+      "name": "POSCO HOLDINGS INC.",
+      "time": "",
+      "marketCap": 16011775000,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.29,
+      "estimates": 1,
+      "lastYearEps": null,
+      "eps": 0.56,
+      "surprise": -56.59
+    },
+    {
+      "date": "2026-11-02",
+      "ticker": "CRBG",
+      "name": "Corebridge Financial Inc.",
+      "time": "",
+      "marketCap": 15931910100,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.22,
+      "estimates": 7,
+      "lastYearEps": null,
+      "eps": 1.22,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-02",
+      "ticker": "VNOM",
+      "name": "Viper Energy, Inc.",
+      "time": "",
+      "marketCap": 15865638900,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.59,
+      "estimates": 9,
+      "lastYearEps": null,
+      "eps": 0.72,
+      "surprise": 22.03
+    },
+    {
+      "date": "2026-11-02",
+      "ticker": "EQH",
+      "name": "Equitable Holdings, Inc.",
+      "time": "",
+      "marketCap": 15082462200,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.87,
+      "estimates": 4,
+      "lastYearEps": null,
+      "eps": 2.13,
+      "surprise": 13.9
+    },
+    {
+      "date": "2026-11-02",
+      "ticker": "LSCC",
+      "name": "Lattice Semiconductor Corporation",
+      "time": "",
+      "marketCap": 15043846100,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.27,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": 0.42,
+      "surprise": 55.56
+    },
+    {
+      "date": "2026-11-02",
+      "ticker": "JAZZ",
+      "name": "Jazz Pharmaceuticals plc",
+      "time": "",
+      "marketCap": 14746793000,
+      "quarter": "Sep/2026",
+      "epsForecast": -5.18,
+      "estimates": 4,
+      "lastYearEps": null,
+      "eps": -4.83,
+      "surprise": 6.76
+    },
+    {
+      "date": "2026-11-02",
       "ticker": "CHKP",
       "name": "Check Point Software Technologies Ltd.",
       "time": "",
-      "marketCap": 14447240200,
+      "marketCap": 14526877700,
       "quarter": "Sep/2026",
       "epsForecast": 1.99,
       "estimates": 12,
@@ -13284,7 +13310,7 @@
       "ticker": "TEM",
       "name": "Tempus AI, Inc.",
       "time": "",
-      "marketCap": 14248526800,
+      "marketCap": 14190847000,
       "quarter": "Sep/2026",
       "epsForecast": -0.32,
       "estimates": 4,
@@ -13294,36 +13320,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "JAZZ",
-      "name": "Jazz Pharmaceuticals plc",
-      "time": "",
-      "marketCap": 13920281600,
-      "quarter": "Sep/2026",
-      "epsForecast": -5.18,
-      "estimates": 4,
-      "lastYearEps": null,
-      "eps": -4.83,
-      "surprise": 6.76
-    },
-    {
-      "date": "2026-11-02",
-      "ticker": "LSCC",
-      "name": "Lattice Semiconductor Corporation",
-      "time": "",
-      "marketCap": 13555369000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.27,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": 0.42,
-      "surprise": 55.56
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "DOC",
       "name": "Healthpeak Properties, Inc.",
       "time": "",
-      "marketCap": 13431991300,
+      "marketCap": 13487153200,
       "quarter": "Sep/2026",
       "epsForecast": 0.43,
       "estimates": 5,
@@ -13333,10 +13333,23 @@
     },
     {
       "date": "2026-11-02",
+      "ticker": "FN",
+      "name": "Fabrinet",
+      "time": "",
+      "marketCap": 13019519000,
+      "quarter": "Sep/2026",
+      "epsForecast": 3.88,
+      "estimates": 3,
+      "lastYearEps": null,
+      "eps": 4.03,
+      "surprise": 3.87
+    },
+    {
+      "date": "2026-11-02",
       "ticker": "CNA",
       "name": "CNA Financial Corporation",
       "time": "",
-      "marketCap": 12967196700,
+      "marketCap": 12781117400,
       "quarter": "Sep/2026",
       "epsForecast": 1.16,
       "estimates": 2,
@@ -13349,7 +13362,7 @@
       "ticker": "BWXT",
       "name": "BWX Technologies, Inc.",
       "time": "",
-      "marketCap": 11953920000,
+      "marketCap": 12078033900,
       "quarter": "Sep/2026",
       "epsForecast": 1.19,
       "estimates": 7,
@@ -13359,23 +13372,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "GRAB",
-      "name": "Grab Holdings Limited",
-      "time": "amc",
-      "marketCap": 11727377400,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.02,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": 0.01,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "UDR",
       "name": "UDR, Inc.",
       "time": "",
-      "marketCap": 11536598000,
+      "marketCap": 11543023600,
       "quarter": "Sep/2026",
       "epsForecast": 0.64,
       "estimates": 4,
@@ -13385,36 +13385,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "FN",
-      "name": "Fabrinet",
-      "time": "",
-      "marketCap": 11276917800,
-      "quarter": "Sep/2026",
-      "epsForecast": 3.88,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 4.03,
-      "surprise": 3.87
-    },
-    {
-      "date": "2026-11-02",
-      "ticker": "BMRN",
-      "name": "BioMarin Pharmaceutical Inc.",
-      "time": "",
-      "marketCap": 11118876700,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.3,
-      "estimates": 6,
-      "lastYearEps": null,
-      "eps": 0.02,
-      "surprise": 106.67
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "CLX",
       "name": "Clorox Company (The)",
       "time": "",
-      "marketCap": 10872281100,
+      "marketCap": 11363626000,
       "quarter": "Sep/2026",
       "epsForecast": 0.97,
       "estimates": 7,
@@ -13424,10 +13398,23 @@
     },
     {
       "date": "2026-11-02",
+      "ticker": "BMRN",
+      "name": "BioMarin Pharmaceutical Inc.",
+      "time": "",
+      "marketCap": 10774315000,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.3,
+      "estimates": 6,
+      "lastYearEps": null,
+      "eps": 0.02,
+      "surprise": 106.67
+    },
+    {
+      "date": "2026-11-02",
       "ticker": "ALSN",
       "name": "Allison Transmission Holdings, Inc.",
       "time": "",
-      "marketCap": 9338750000,
+      "marketCap": 9820180500,
       "quarter": "Sep/2026",
       "epsForecast": 2.47,
       "estimates": 4,
@@ -13437,23 +13424,10 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "RHP",
-      "name": "Ryman Hospitality Properties, Inc.",
-      "time": "",
-      "marketCap": 9305855000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.62,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": 1.79,
-      "surprise": 10.49
-    },
-    {
-      "date": "2026-11-02",
       "ticker": "AEIS",
       "name": "Advanced Energy Industries, Inc.",
       "time": "",
-      "marketCap": 8698555400,
+      "marketCap": 9638762500,
       "quarter": "Sep/2026",
       "epsForecast": 2.68,
       "estimates": 5,
@@ -13463,23 +13437,23 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "RIG",
-      "name": "Transocean Ltd.",
+      "ticker": "RHP",
+      "name": "Ryman Hospitality Properties, Inc.",
       "time": "",
-      "marketCap": 6958162900,
+      "marketCap": 9355523100,
       "quarter": "Sep/2026",
-      "epsForecast": 0.03,
-      "estimates": 6,
+      "epsForecast": 1.62,
+      "estimates": 5,
       "lastYearEps": null,
-      "eps": 0,
-      "surprise": null
+      "eps": 1.79,
+      "surprise": 10.49
     },
     {
       "date": "2026-11-02",
       "ticker": "TBBB",
       "name": "BBB Foods Inc.",
       "time": "",
-      "marketCap": 6714321900,
+      "marketCap": 7421464600,
       "quarter": "Sep/2026",
       "epsForecast": -0.15,
       "estimates": 2,
@@ -13489,15 +13463,15 @@
     },
     {
       "date": "2026-11-02",
-      "ticker": "XENE",
-      "name": "Xenon Pharmaceuticals Inc.",
+      "ticker": "RIG",
+      "name": "Transocean Ltd.",
       "time": "",
-      "marketCap": 3643137020,
+      "marketCap": 6589592600,
       "quarter": "Sep/2026",
-      "epsForecast": -1.17,
-      "estimates": 8,
+      "epsForecast": 0.03,
+      "estimates": 6,
       "lastYearEps": null,
-      "eps": -1.15,
+      "eps": 0,
       "surprise": null
     },
     {
@@ -13505,7 +13479,7 @@
       "ticker": "CIFR",
       "name": "Cipher Digital Inc.",
       "time": "",
-      "marketCap": 3126312700,
+      "marketCap": 3705684740,
       "quarter": "Sep/2026",
       "epsForecast": -0.31,
       "estimates": 3,
@@ -13518,7 +13492,7 @@
       "ticker": "CC",
       "name": "Chemours Company (The)",
       "time": "",
-      "marketCap": 1980566780,
+      "marketCap": 1970031870,
       "quarter": "Sep/2026",
       "epsForecast": 0.26,
       "estimates": 4,
@@ -13531,7 +13505,7 @@
       "ticker": "VOYG",
       "name": "Voyager Technologies, Inc.",
       "time": "",
-      "marketCap": 1523787140,
+      "marketCap": 1538659460,
       "quarter": "Sep/2026",
       "epsForecast": -0.85,
       "estimates": 1,
@@ -13544,7 +13518,7 @@
       "ticker": "HLF",
       "name": "Herbalife Ltd.",
       "time": "",
-      "marketCap": 1391788930,
+      "marketCap": 1508401410,
       "quarter": "Sep/2026",
       "epsForecast": 0.73,
       "estimates": 2,
@@ -13557,7 +13531,7 @@
       "ticker": "ICHR",
       "name": "Ichor Holdings",
       "time": "",
-      "marketCap": 1379813760,
+      "marketCap": 1368203010,
       "quarter": "Sep/2026",
       "epsForecast": 0.35,
       "estimates": 4,
@@ -13570,7 +13544,7 @@
       "ticker": "NSSC",
       "name": "NAPCO Security Technologies, Inc.",
       "time": "",
-      "marketCap": 1148345730,
+      "marketCap": 1136363260,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -13583,7 +13557,7 @@
       "ticker": "AESI",
       "name": "Atlas Energy Solutions Inc.",
       "time": "",
-      "marketCap": 1028778430,
+      "marketCap": 1017528060,
       "quarter": "Sep/2026",
       "epsForecast": -0.26,
       "estimates": 5,
@@ -13596,7 +13570,7 @@
       "ticker": "PAMT",
       "name": "PAMT CORP",
       "time": "",
-      "marketCap": 254029584,
+      "marketCap": 249003440,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -16638,10 +16612,10 @@
       "ticker": "COP",
       "name": "ConocoPhillips",
       "time": "bmo",
-      "marketCap": 176404398000,
+      "marketCap": 173473137000,
       "quarter": "Sep/2026",
-      "epsForecast": 2.97,
-      "estimates": 9,
+      "epsForecast": 3.06,
+      "estimates": 8,
       "lastYearEps": 1.61,
       "eps": null,
       "surprise": null
@@ -16651,7 +16625,7 @@
       "ticker": "SONY",
       "name": "Sony Group Corporation",
       "time": "bmo",
-      "marketCap": 150408298000,
+      "marketCap": 149700772000,
       "quarter": "Sep/2026",
       "epsForecast": 0.38,
       "estimates": 1,
@@ -16664,7 +16638,7 @@
       "ticker": "MNST",
       "name": "Monster Beverage Corporation",
       "time": "amc",
-      "marketCap": 141110641000,
+      "marketCap": 138642227000,
       "quarter": "Sep/2026",
       "epsForecast": 0.3,
       "estimates": 9,
@@ -16677,7 +16651,7 @@
       "ticker": "PH",
       "name": "Parker-Hannifin Corporation",
       "time": "bmo",
-      "marketCap": 117068890000,
+      "marketCap": 119174971000,
       "quarter": "Sep/2026",
       "epsForecast": 8.23,
       "estimates": 6,
@@ -16690,7 +16664,7 @@
       "ticker": "CNQ",
       "name": "Canadian Natural Resources Limited",
       "time": "bmo",
-      "marketCap": 111137841000,
+      "marketCap": 110740505000,
       "quarter": "Sep/2026",
       "epsForecast": 1.05,
       "estimates": 2,
@@ -16703,7 +16677,7 @@
       "ticker": "SO",
       "name": "Southern Company (The)",
       "time": "bmo",
-      "marketCap": 108835840000,
+      "marketCap": 107846525000,
       "quarter": "Sep/2026",
       "epsForecast": 1.71,
       "estimates": 6,
@@ -16716,7 +16690,7 @@
       "ticker": "ABNB",
       "name": "Airbnb, Inc.",
       "time": "amc",
-      "marketCap": 102458221000,
+      "marketCap": 99973259000,
       "quarter": "Sep/2026",
       "epsForecast": 2.86,
       "estimates": 11,
@@ -16729,7 +16703,7 @@
       "ticker": "DUK",
       "name": "Duke Energy Corporation",
       "time": "bmo",
-      "marketCap": 100098171000,
+      "marketCap": 98640126000,
       "quarter": "Sep/2026",
       "epsForecast": 1.87,
       "estimates": 6,
@@ -16742,7 +16716,7 @@
       "ticker": "NET",
       "name": "Cloudflare, Inc.",
       "time": "amc",
-      "marketCap": 94421656000,
+      "marketCap": 97430528000,
       "quarter": "Sep/2026",
       "epsForecast": 0.02,
       "estimates": 9,
@@ -16755,7 +16729,7 @@
       "ticker": "EOG",
       "name": "EOG Resources, Inc.",
       "time": "amc",
-      "marketCap": 82817909000,
+      "marketCap": 81391190000,
       "quarter": "Sep/2026",
       "epsForecast": 4.45,
       "estimates": 8,
@@ -16768,7 +16742,7 @@
       "ticker": "CI",
       "name": "The Cigna Group",
       "time": "bmo",
-      "marketCap": 78001152000,
+      "marketCap": 78067212000,
       "quarter": "Sep/2026",
       "epsForecast": 7.46,
       "estimates": 7,
@@ -16781,7 +16755,7 @@
       "ticker": "SPG",
       "name": "Simon Property Group, Inc.",
       "time": "amc",
-      "marketCap": 71741080000,
+      "marketCap": 71854318000,
       "quarter": "Sep/2026",
       "epsForecast": 3.32,
       "estimates": 6,
@@ -16794,7 +16768,7 @@
       "ticker": "APD",
       "name": "Air Products and Chemicals, Inc.",
       "time": "bmo",
-      "marketCap": 70375309000,
+      "marketCap": 69693891000,
       "quarter": "Sep/2026",
       "epsForecast": 3.6,
       "estimates": 7,
@@ -16807,7 +16781,7 @@
       "ticker": "CMI",
       "name": "Cummins Inc.",
       "time": "bmo",
-      "marketCap": 68914840000,
+      "marketCap": 68927234000,
       "quarter": "Sep/2026",
       "epsForecast": 8.38,
       "estimates": 7,
@@ -16817,14 +16791,14 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "TRP",
-      "name": "TC Energy Corporation",
+      "ticker": "KMB",
+      "name": "Kimberly-Clark Corporation",
       "time": "bmo",
-      "marketCap": 63681516000,
+      "marketCap": 64100823000,
       "quarter": "Sep/2026",
-      "epsForecast": 0.64,
-      "estimates": 4,
-      "lastYearEps": 0.56,
+      "epsForecast": 1.66,
+      "estimates": 5,
+      "lastYearEps": 1.82,
       "eps": null,
       "surprise": null
     },
@@ -16833,7 +16807,7 @@
       "ticker": "TRGP",
       "name": "Targa Resources, Inc.",
       "time": "bmo",
-      "marketCap": 63199257000,
+      "marketCap": 64020525000,
       "quarter": "Sep/2026",
       "epsForecast": 2.74,
       "estimates": 8,
@@ -16843,10 +16817,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "TRP",
+      "name": "TC Energy Corporation",
+      "time": "bmo",
+      "marketCap": 63495123000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.64,
+      "estimates": 4,
+      "lastYearEps": 0.56,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "CAH",
       "name": "Cardinal Health, Inc.",
       "time": "bmo",
-      "marketCap": 58892489000,
+      "marketCap": 58570621000,
       "quarter": "Sep/2026",
       "epsForecast": 2.92,
       "estimates": 5,
@@ -16856,23 +16843,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "SRE",
-      "name": "Sempra",
-      "time": "bmo",
-      "marketCap": 56215814000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.18,
-      "estimates": 5,
-      "lastYearEps": 1.11,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "NTRA",
       "name": "Natera, Inc.",
       "time": "amc",
-      "marketCap": 54619107000,
+      "marketCap": 56018747000,
       "quarter": "Sep/2026",
       "epsForecast": -0.17,
       "estimates": 4,
@@ -16882,14 +16856,14 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "WPM",
-      "name": "Wheaton Precious Metals Corp.",
-      "time": "amc",
-      "marketCap": 54186177000,
+      "ticker": "SRE",
+      "name": "Sempra",
+      "time": "bmo",
+      "marketCap": 55816933000,
       "quarter": "Sep/2026",
-      "epsForecast": 0.91,
+      "epsForecast": 1.18,
       "estimates": 5,
-      "lastYearEps": 0.62,
+      "lastYearEps": 1.11,
       "eps": null,
       "surprise": null
     },
@@ -16898,7 +16872,7 @@
       "ticker": "BDX",
       "name": "Becton, Dickinson and Company",
       "time": "bmo",
-      "marketCap": 54096019000,
+      "marketCap": 53978890000,
       "quarter": "Sep/2026",
       "epsForecast": 4.06,
       "estimates": 7,
@@ -16908,10 +16882,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "WPM",
+      "name": "Wheaton Precious Metals Corp.",
+      "time": "amc",
+      "marketCap": 53354668000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.91,
+      "estimates": 5,
+      "lastYearEps": 0.62,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "DVN",
       "name": "Devon Energy Corporation",
       "time": "amc",
-      "marketCap": 53492998000,
+      "marketCap": 52381999000,
       "quarter": "Sep/2026",
       "epsForecast": 1.24,
       "estimates": 9,
@@ -16924,9 +16911,9 @@
       "ticker": "ROK",
       "name": "Rockwell Automation, Inc.",
       "time": "bmo",
-      "marketCap": 48978342000,
+      "marketCap": 49670468000,
       "quarter": "Sep/2026",
-      "epsForecast": 3.55,
+      "epsForecast": 3.72,
       "estimates": 10,
       "lastYearEps": 3.34,
       "eps": null,
@@ -16937,7 +16924,7 @@
       "ticker": "TEAM",
       "name": "Atlassian Corporation",
       "time": "amc",
-      "marketCap": 47173456000,
+      "marketCap": 48174514000,
       "quarter": "Sep/2026",
       "epsForecast": 0.24,
       "estimates": 6,
@@ -16950,7 +16937,7 @@
       "ticker": "MT",
       "name": "ArcelorMittal",
       "time": "bmo",
-      "marketCap": 46580900000,
+      "marketCap": 45987222000,
       "quarter": "Sep/2026",
       "epsForecast": 0.8,
       "estimates": 2,
@@ -16963,7 +16950,7 @@
       "ticker": "ED",
       "name": "Consolidated Edison Inc",
       "time": "amc",
-      "marketCap": 43817296000,
+      "marketCap": 43199685000,
       "quarter": "Sep/2026",
       "epsForecast": 2.07,
       "estimates": 4,
@@ -16973,10 +16960,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "MCHP",
+      "name": "Microchip Technology Incorporated",
+      "time": "amc",
+      "marketCap": 42300375000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.82,
+      "estimates": 8,
+      "lastYearEps": 0.26,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "LYV",
       "name": "Live Nation Entertainment, Inc.",
       "time": "amc",
-      "marketCap": 41742537000,
+      "marketCap": 42147828000,
       "quarter": "Sep/2026",
       "epsForecast": 1.5,
       "estimates": 7,
@@ -16989,7 +16989,7 @@
       "ticker": "AU",
       "name": "AngloGold Ashanti PLC",
       "time": "bmo",
-      "marketCap": 41604579000,
+      "marketCap": 41174675000,
       "quarter": "Sep/2026",
       "epsForecast": 1.7,
       "estimates": 1,
@@ -16999,23 +16999,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "MCHP",
-      "name": "Microchip Technology Incorporated",
-      "time": "amc",
-      "marketCap": 41328390000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.82,
-      "estimates": 8,
-      "lastYearEps": 0.26,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "ONC",
       "name": "BeOne Medicines Ltd.",
       "time": "bmo",
-      "marketCap": 41077076000,
+      "marketCap": 40364167000,
       "quarter": "Sep/2026",
       "epsForecast": 2.34,
       "estimates": 2,
@@ -17025,49 +17012,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "KMB",
-      "name": "Kimberly-Clark Corporation",
-      "time": "bmo",
-      "marketCap": 36001681000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.66,
-      "estimates": 5,
-      "lastYearEps": 1.82,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "AXON",
-      "name": "Axon Enterprise, Inc.",
-      "time": "amc",
-      "marketCap": 34560831000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.44,
-      "estimates": 7,
-      "lastYearEps": -0.23,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "ZTS",
-      "name": "Zoetis Inc.",
-      "time": "bmo",
-      "marketCap": 34371940000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.51,
-      "estimates": 8,
-      "lastYearEps": 1.7,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "IRM",
       "name": "Iron Mountain Incorporated",
       "time": "bmo",
-      "marketCap": 34289410000,
+      "marketCap": 34738942000,
       "quarter": "Sep/2026",
       "epsForecast": 1.35,
       "estimates": 1,
@@ -17080,7 +17028,7 @@
       "ticker": "GMAB",
       "name": "Genmab A/S",
       "time": "bmo",
-      "marketCap": 34273296400,
+      "marketCap": 34647732000,
       "quarter": "Sep/2026",
       "epsForecast": 0.36,
       "estimates": 6,
@@ -17090,10 +17038,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "ZTS",
+      "name": "Zoetis Inc.",
+      "time": "bmo",
+      "marketCap": 34293426200,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.51,
+      "estimates": 8,
+      "lastYearEps": 1.7,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "MTD",
       "name": "Mettler-Toledo International, Inc.",
       "time": "amc",
-      "marketCap": 33625153500,
+      "marketCap": 34022879200,
       "quarter": "Sep/2026",
       "epsForecast": 12.11,
       "estimates": 3,
@@ -17103,10 +17064,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "AXON",
+      "name": "Axon Enterprise, Inc.",
+      "time": "amc",
+      "marketCap": 33841070100,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.44,
+      "estimates": 7,
+      "lastYearEps": -0.23,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "AEE",
       "name": "Ameren Corporation",
       "time": "amc",
-      "marketCap": 30845874200,
+      "marketCap": 30555189200,
       "quarter": "Sep/2026",
       "epsForecast": 2.29,
       "estimates": 6,
@@ -17116,23 +17090,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "PBA",
-      "name": "Pembina Pipeline Corp.",
-      "time": "amc",
-      "marketCap": 29319690200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.38,
-      "estimates": 2,
-      "lastYearEps": 0.31,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "ECHO",
       "name": "EchoStar Corporation",
       "time": "",
-      "marketCap": 28566841300,
+      "marketCap": 29645766700,
       "quarter": "Sep/2026",
       "epsForecast": 0.02,
       "estimates": 4,
@@ -17142,10 +17103,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "PBA",
+      "name": "Pembina Pipeline Corp.",
+      "time": "amc",
+      "marketCap": 28758442000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.38,
+      "estimates": 2,
+      "lastYearEps": 0.31,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "DTE",
       "name": "DTE Energy Company",
       "time": "bmo",
-      "marketCap": 28268765200,
+      "marketCap": 27937904600,
       "quarter": "Sep/2026",
       "epsForecast": 2.22,
       "estimates": 5,
@@ -17158,7 +17132,7 @@
       "ticker": "GPN",
       "name": "Global Payments Inc.",
       "time": "bmo",
-      "marketCap": 26363930600,
+      "marketCap": 25932601300,
       "quarter": "Sep/2026",
       "epsForecast": 3.57,
       "estimates": 14,
@@ -17171,7 +17145,7 @@
       "ticker": "VRSK",
       "name": "Verisk Analytics, Inc.",
       "time": "bmo",
-      "marketCap": 26226436100,
+      "marketCap": 25640734700,
       "quarter": "Sep/2026",
       "epsForecast": 1.92,
       "estimates": 7,
@@ -17184,7 +17158,7 @@
       "ticker": "AFRM",
       "name": "Affirm Holdings, Inc.",
       "time": "amc",
-      "marketCap": 24937691100,
+      "marketCap": 24392032300,
       "quarter": "Sep/2026",
       "epsForecast": 0.35,
       "estimates": 8,
@@ -17197,7 +17171,7 @@
       "ticker": "TPR",
       "name": "Tapestry, Inc.",
       "time": "bmo",
-      "marketCap": 24121860100,
+      "marketCap": 24173795300,
       "quarter": "Sep/2026",
       "epsForecast": 1.56,
       "estimates": 6,
@@ -17210,7 +17184,7 @@
       "ticker": "RL",
       "name": "Ralph Lauren Corporation",
       "time": "bmo",
-      "marketCap": 23685728300,
+      "marketCap": 23499235300,
       "quarter": "Sep/2026",
       "epsForecast": 4.27,
       "estimates": 6,
@@ -17223,7 +17197,7 @@
       "ticker": "GH",
       "name": "Guardant Health, Inc.",
       "time": "amc",
-      "marketCap": 22911311900,
+      "marketCap": 23484330000,
       "quarter": "Sep/2026",
       "epsForecast": -0.68,
       "estimates": 3,
@@ -17233,23 +17207,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "USFD",
-      "name": "US Foods Holding Corp.",
-      "time": "bmo",
-      "marketCap": 22887790600,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.18,
-      "estimates": 4,
-      "lastYearEps": 1,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "FWONA",
       "name": "Liberty Media Corporation",
       "time": "bmo",
-      "marketCap": 21748961300,
+      "marketCap": 22022234100,
       "quarter": "Sep/2026",
       "epsForecast": 0.6,
       "estimates": 1,
@@ -17262,7 +17223,7 @@
       "ticker": "FWONK",
       "name": "Liberty Media Corporation",
       "time": "bmo",
-      "marketCap": 21748961300,
+      "marketCap": 22022234100,
       "quarter": "Sep/2026",
       "epsForecast": 0.59,
       "estimates": 5,
@@ -17272,10 +17233,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "USFD",
+      "name": "US Foods Holding Corp.",
+      "time": "bmo",
+      "marketCap": 21927282700,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.18,
+      "estimates": 4,
+      "lastYearEps": 1,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "VTRS",
       "name": "Viatris Inc.",
       "time": "bmo",
-      "marketCap": 21444192300,
+      "marketCap": 21731338200,
       "quarter": "Sep/2026",
       "epsForecast": 0.64,
       "estimates": 5,
@@ -17288,7 +17262,7 @@
       "ticker": "EVRG",
       "name": "Evergy, Inc.",
       "time": "bmo",
-      "marketCap": 19955589100,
+      "marketCap": 19701964800,
       "quarter": "Sep/2026",
       "epsForecast": 2.3,
       "estimates": 3,
@@ -17301,7 +17275,7 @@
       "ticker": "BCE",
       "name": "BCE, Inc.",
       "time": "bmo",
-      "marketCap": 19292512300,
+      "marketCap": 19175444500,
       "quarter": "Sep/2026",
       "epsForecast": 0.49,
       "estimates": 6,
@@ -17311,36 +17285,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "RGA",
-      "name": "Reinsurance Group of America, Incorporated",
-      "time": "amc",
-      "marketCap": 17462319100,
-      "quarter": "Sep/2026",
-      "epsForecast": 6.98,
-      "estimates": 5,
-      "lastYearEps": 6.37,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "U",
-      "name": "Unity Software Inc.",
-      "time": "bmo",
-      "marketCap": 17106256900,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.18,
-      "estimates": 5,
-      "lastYearEps": 0.01,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "MTSI",
       "name": "MACOM Technology Solutions Holdings, Inc.",
       "time": "bmo",
-      "marketCap": 16968093700,
+      "marketCap": 17984589800,
       "quarter": "Sep/2026",
       "epsForecast": 1.68,
       "estimates": 6,
@@ -17350,14 +17298,27 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "JHX",
-      "name": "James Hardie Industries plc.",
-      "time": "amc",
-      "marketCap": 16144330800,
+      "ticker": "U",
+      "name": "Unity Software Inc.",
+      "time": "bmo",
+      "marketCap": 17814800400,
       "quarter": "Sep/2026",
-      "epsForecast": 0.35,
-      "estimates": 3,
-      "lastYearEps": 0.26,
+      "epsForecast": 0.18,
+      "estimates": 5,
+      "lastYearEps": 0.01,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
+      "ticker": "RGA",
+      "name": "Reinsurance Group of America, Incorporated",
+      "time": "amc",
+      "marketCap": 17285351400,
+      "quarter": "Sep/2026",
+      "epsForecast": 6.98,
+      "estimates": 5,
+      "lastYearEps": 6.37,
       "eps": null,
       "surprise": null
     },
@@ -17366,7 +17327,7 @@
       "ticker": "LAMR",
       "name": "Lamar Advertising Company",
       "time": "bmo",
-      "marketCap": 16009308200,
+      "marketCap": 15921975300,
       "quarter": "Sep/2026",
       "epsForecast": 2.23,
       "estimates": 2,
@@ -17376,10 +17337,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "JHX",
+      "name": "James Hardie Industries plc.",
+      "time": "amc",
+      "marketCap": 15825043500,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.35,
+      "estimates": 3,
+      "lastYearEps": 0.26,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "SBS",
       "name": "Companhia de saneamento Basico Do Estado De Sao Paulo - Sabesp",
       "time": "amc",
-      "marketCap": 15930893300,
+      "marketCap": 15578440700,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -17392,9 +17366,9 @@
       "ticker": "HALO",
       "name": "Halozyme Therapeutics, Inc.",
       "time": "amc",
-      "marketCap": 14635567100,
+      "marketCap": 14598112300,
       "quarter": "Sep/2026",
-      "epsForecast": 2.16,
+      "epsForecast": 2.17,
       "estimates": 3,
       "lastYearEps": 1.63,
       "eps": null,
@@ -17405,7 +17379,7 @@
       "ticker": "CG",
       "name": "The Carlyle Group Inc.",
       "time": "bmo",
-      "marketCap": 14631024600,
+      "marketCap": 14574011400,
       "quarter": "Sep/2026",
       "epsForecast": 0.99,
       "estimates": 8,
@@ -17418,10 +17392,10 @@
       "ticker": "SOLV",
       "name": "Solventum Corporation",
       "time": "amc",
-      "marketCap": 14426461200,
+      "marketCap": 14428163100,
       "quarter": "Sep/2026",
-      "epsForecast": 1.38,
-      "estimates": 6,
+      "epsForecast": 1.35,
+      "estimates": 5,
       "lastYearEps": 1.5,
       "eps": null,
       "surprise": null
@@ -17431,7 +17405,7 @@
       "ticker": "REG",
       "name": "Regency Centers Corporation",
       "time": "amc",
-      "marketCap": 13840250900,
+      "marketCap": 13765171200,
       "quarter": "Sep/2026",
       "epsForecast": 1.22,
       "estimates": 6,
@@ -17444,7 +17418,7 @@
       "ticker": "TIGO",
       "name": "Millicom International Cellular S.A.",
       "time": "bmo",
-      "marketCap": 12964309000,
+      "marketCap": 12986089500,
       "quarter": "Sep/2026",
       "epsForecast": 1.08,
       "estimates": 2,
@@ -17454,23 +17428,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "BSY",
-      "name": "Bentley Systems, Incorporated",
-      "time": "bmo",
-      "marketCap": 12808738800,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.29,
-      "estimates": 4,
-      "lastYearEps": 0.22,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "AHR",
       "name": "American Healthcare REIT, Inc.",
       "time": "amc",
-      "marketCap": 12543032300,
+      "marketCap": 12808862700,
       "quarter": "Sep/2026",
       "epsForecast": 0.56,
       "estimates": 3,
@@ -17480,10 +17441,36 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "BSY",
+      "name": "Bentley Systems, Incorporated",
+      "time": "bmo",
+      "marketCap": 12727173100,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.29,
+      "estimates": 4,
+      "lastYearEps": 0.22,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
+      "ticker": "MAIR",
+      "name": "Madison Air Solutions Corporation",
+      "time": "bmo",
+      "marketCap": 12543065100,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.3,
+      "estimates": 2,
+      "lastYearEps": null,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "AKAM",
       "name": "Akamai Technologies, Inc.",
       "time": "amc",
-      "marketCap": 12458793000,
+      "marketCap": 12435798000,
       "quarter": "Sep/2026",
       "epsForecast": 0.92,
       "estimates": 9,
@@ -17493,10 +17480,36 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "IONQ",
+      "name": "IonQ, Inc.",
+      "time": "amc",
+      "marketCap": 12263141400,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.79,
+      "estimates": 1,
+      "lastYearEps": -3.58,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
+      "ticker": "QXO",
+      "name": "QXO, Inc.",
+      "time": "",
+      "marketCap": 12149016600,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.13,
+      "estimates": 5,
+      "lastYearEps": 0.14,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "TXRH",
       "name": "Texas Roadhouse, Inc.",
       "time": "amc",
-      "marketCap": 12286012400,
+      "marketCap": 12110094300,
       "quarter": "Sep/2026",
       "epsForecast": 1.49,
       "estimates": 9,
@@ -17506,14 +17519,14 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "QXO",
-      "name": "QXO, Inc.",
+      "ticker": "SKM",
+      "name": "SK Telecom Co., Ltd.",
       "time": "",
-      "marketCap": 12117891100,
+      "marketCap": 11706861600,
       "quarter": "Sep/2026",
-      "epsForecast": 0.13,
-      "estimates": 5,
-      "lastYearEps": 0.14,
+      "epsForecast": null,
+      "estimates": null,
+      "lastYearEps": -0.77,
       "eps": null,
       "surprise": null
     },
@@ -17524,48 +17537,9 @@
       "time": "amc",
       "marketCap": 11693087700,
       "quarter": "Sep/2026",
-      "epsForecast": 0.15,
+      "epsForecast": 0.17,
       "estimates": 1,
       "lastYearEps": 0.29,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "MAIR",
-      "name": "Madison Air Solutions Corporation",
-      "time": "bmo",
-      "marketCap": 11670068200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.3,
-      "estimates": 2,
-      "lastYearEps": null,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "SKM",
-      "name": "SK Telecom Co., Ltd.",
-      "time": "",
-      "marketCap": 11576443900,
-      "quarter": "Sep/2026",
-      "epsForecast": null,
-      "estimates": null,
-      "lastYearEps": -0.77,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "IONQ",
-      "name": "IonQ, Inc.",
-      "time": "amc",
-      "marketCap": 11518928900,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.79,
-      "estimates": 1,
-      "lastYearEps": -3.58,
       "eps": null,
       "surprise": null
     },
@@ -17574,7 +17548,7 @@
       "ticker": "FNF",
       "name": "Fidelity National Financial, Inc.",
       "time": "amc",
-      "marketCap": 11312373800,
+      "marketCap": 11100501000,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -17584,12 +17558,25 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "FROG",
+      "name": "JFrog Ltd.",
+      "time": "amc",
+      "marketCap": 10910933000,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.04,
+      "estimates": 8,
+      "lastYearEps": -0.1,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "DKNG",
       "name": "DraftKings Inc.",
       "time": "amc",
-      "marketCap": 10827662300,
+      "marketCap": 10887237600,
       "quarter": "Sep/2026",
-      "epsForecast": -0.31,
+      "epsForecast": -0.34,
       "estimates": 3,
       "lastYearEps": -0.41,
       "eps": null,
@@ -17600,7 +17587,7 @@
       "ticker": "GSAT",
       "name": "Globalstar, Inc.",
       "time": "",
-      "marketCap": 10745987100,
+      "marketCap": 10853525500,
       "quarter": "Sep/2026",
       "epsForecast": -0.12,
       "estimates": 1,
@@ -17613,7 +17600,7 @@
       "ticker": "GMED",
       "name": "Globus Medical, Inc.",
       "time": "amc",
-      "marketCap": 10668451800,
+      "marketCap": 10684563500,
       "quarter": "Sep/2026",
       "epsForecast": 1.2,
       "estimates": 4,
@@ -17623,36 +17610,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "FROG",
-      "name": "JFrog Ltd.",
-      "time": "amc",
-      "marketCap": 10494174200,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.04,
-      "estimates": 8,
-      "lastYearEps": -0.1,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "WMS",
-      "name": "Advanced Drainage Systems, Inc.",
-      "time": "bmo",
-      "marketCap": 10480588800,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.89,
-      "estimates": 3,
-      "lastYearEps": 1.97,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "ARW",
       "name": "Arrow Electronics, Inc.",
       "time": "bmo",
-      "marketCap": 10344491000,
+      "marketCap": 10627015700,
       "quarter": "Sep/2026",
       "epsForecast": 4.98,
       "estimates": 3,
@@ -17662,23 +17623,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "CPT",
-      "name": "Camden Property Trust",
-      "time": "amc",
-      "marketCap": 10221835300,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.69,
-      "estimates": 5,
-      "lastYearEps": 1.7,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "VSAT",
       "name": "ViaSat, Inc.",
       "time": "amc",
-      "marketCap": 10209083400,
+      "marketCap": 10364746800,
       "quarter": "Sep/2026",
       "epsForecast": -0.17,
       "estimates": 4,
@@ -17688,27 +17636,40 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "IAG",
-      "name": "Iamgold Corporation",
-      "time": "amc",
-      "marketCap": 9138516000,
+      "ticker": "WMS",
+      "name": "Advanced Drainage Systems, Inc.",
+      "time": "bmo",
+      "marketCap": 10255126500,
       "quarter": "Sep/2026",
-      "epsForecast": 0.36,
-      "estimates": 4,
-      "lastYearEps": 0.3,
+      "epsForecast": 1.89,
+      "estimates": 3,
+      "lastYearEps": 1.97,
       "eps": null,
       "surprise": null
     },
     {
       "date": "2026-11-05",
-      "ticker": "PTGX",
-      "name": "Protagonist Therapeutics, Inc.",
-      "time": "",
-      "marketCap": 9018393600,
+      "ticker": "CPT",
+      "name": "Camden Property Trust",
+      "time": "amc",
+      "marketCap": 10122301400,
       "quarter": "Sep/2026",
-      "epsForecast": 2.58,
-      "estimates": 4,
-      "lastYearEps": -0.62,
+      "epsForecast": 1.69,
+      "estimates": 5,
+      "lastYearEps": 1.7,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
+      "ticker": "OSCR",
+      "name": "Oscar Health, Inc.",
+      "time": "bmo",
+      "marketCap": 10003184600,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.11,
+      "estimates": 3,
+      "lastYearEps": -0.53,
       "eps": null,
       "surprise": null
     },
@@ -17717,7 +17678,7 @@
       "ticker": "IREN",
       "name": "IREN Limited",
       "time": "amc",
-      "marketCap": 8909590500,
+      "marketCap": 9896847400,
       "quarter": "Sep/2026",
       "epsForecast": -0.49,
       "estimates": 3,
@@ -17727,14 +17688,27 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "SARO",
-      "name": "StandardAero, Inc.",
-      "time": "amc",
-      "marketCap": 8316005400,
+      "ticker": "PTGX",
+      "name": "Protagonist Therapeutics, Inc.",
+      "time": "",
+      "marketCap": 9074690000,
       "quarter": "Sep/2026",
-      "epsForecast": 0.37,
-      "estimates": 2,
-      "lastYearEps": 0.2,
+      "epsForecast": 2.58,
+      "estimates": 4,
+      "lastYearEps": -0.62,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
+      "ticker": "IAG",
+      "name": "Iamgold Corporation",
+      "time": "amc",
+      "marketCap": 9046601700,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.36,
+      "estimates": 4,
+      "lastYearEps": 0.3,
       "eps": null,
       "surprise": null
     },
@@ -17743,7 +17717,7 @@
       "ticker": "QNT",
       "name": "Quantinuum Inc.",
       "time": "amc",
-      "marketCap": 8222724100,
+      "marketCap": 8653121500,
       "quarter": "Sep/2026",
       "epsForecast": -0.99,
       "estimates": 2,
@@ -17753,23 +17727,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "TAP",
-      "name": "Molson Coors Beverage Company",
-      "time": "bmo",
-      "marketCap": 8060403700,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.47,
-      "estimates": 6,
-      "lastYearEps": 1.67,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "TXG",
       "name": "10x Genomics, Inc.",
       "time": "amc",
-      "marketCap": 8029844500,
+      "marketCap": 8506710500,
       "quarter": "Sep/2026",
       "epsForecast": -0.29,
       "estimates": 5,
@@ -17779,10 +17740,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "SARO",
+      "name": "StandardAero, Inc.",
+      "time": "amc",
+      "marketCap": 8349097500,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.37,
+      "estimates": 2,
+      "lastYearEps": 0.2,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "WYNN",
       "name": "Wynn Resorts, Limited",
       "time": "amc",
-      "marketCap": 7997982200,
+      "marketCap": 7999011800,
       "quarter": "Sep/2026",
       "epsForecast": 0.58,
       "estimates": 8,
@@ -17792,10 +17766,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "TAP",
+      "name": "Molson Coors Beverage Company",
+      "time": "bmo",
+      "marketCap": 7806826000,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.47,
+      "estimates": 6,
+      "lastYearEps": 1.67,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "GIL",
       "name": "Gildan Activewear, Inc.",
       "time": "bmo",
-      "marketCap": 7584527400,
+      "marketCap": 7510386200,
       "quarter": "Sep/2026",
       "epsForecast": 1.6,
       "estimates": 2,
@@ -17808,7 +17795,7 @@
       "ticker": "PRMB",
       "name": "Primo Brands Corporation",
       "time": "bmo",
-      "marketCap": 7526093300,
+      "marketCap": 7460869600,
       "quarter": "Sep/2026",
       "epsForecast": 0.39,
       "estimates": 5,
@@ -17821,7 +17808,7 @@
       "ticker": "EPAM",
       "name": "EPAM Systems, Inc.",
       "time": "bmo",
-      "marketCap": 7418207700,
+      "marketCap": 7127773200,
       "quarter": "Sep/2026",
       "epsForecast": 2.76,
       "estimates": 8,
@@ -17834,7 +17821,7 @@
       "ticker": "COMP",
       "name": "Compass, Inc.",
       "time": "amc",
-      "marketCap": 7135859200,
+      "marketCap": 7060106800,
       "quarter": "Sep/2026",
       "epsForecast": 0.06,
       "estimates": 4,
@@ -17847,7 +17834,7 @@
       "ticker": "TFX",
       "name": "Teleflex Incorporated",
       "time": "bmo",
-      "marketCap": 5960525300,
+      "marketCap": 5930016800,
       "quarter": "Sep/2026",
       "epsForecast": 1.92,
       "estimates": 3,
@@ -17857,23 +17844,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "IBP",
-      "name": "Installed Building Products, Inc.",
-      "time": "bmo",
-      "marketCap": 5859114000,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.74,
-      "estimates": 3,
-      "lastYearEps": 3.04,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "DOCS",
       "name": "Doximity, Inc.",
       "time": "amc",
-      "marketCap": 5858945500,
+      "marketCap": 5810819100,
       "quarter": "Sep/2026",
       "epsForecast": 0.19,
       "estimates": 5,
@@ -17883,10 +17857,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "IBP",
+      "name": "Installed Building Products, Inc.",
+      "time": "bmo",
+      "marketCap": 5647011800,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.74,
+      "estimates": 3,
+      "lastYearEps": 3.04,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "MIDD",
       "name": "The Middleby Corporation",
       "time": "bmo",
-      "marketCap": 5583603200,
+      "marketCap": 5550138900,
       "quarter": "Sep/2026",
       "epsForecast": 1.74,
       "estimates": 7,
@@ -17899,7 +17886,7 @@
       "ticker": "AUGO",
       "name": "Aura Minerals Inc.",
       "time": "amc",
-      "marketCap": 5550198300,
+      "marketCap": 5371726800,
       "quarter": "Sep/2026",
       "epsForecast": 1.52,
       "estimates": 2,
@@ -17912,7 +17899,7 @@
       "ticker": "LFST",
       "name": "LifeStance Health Group, Inc.",
       "time": "bmo",
-      "marketCap": 5067363800,
+      "marketCap": 5109401100,
       "quarter": "Sep/2026",
       "epsForecast": 0.03,
       "estimates": 3,
@@ -17922,23 +17909,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "HHH",
-      "name": "Howard Hughes Holdings Inc.",
-      "time": "amc",
-      "marketCap": 4652866000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.02,
-      "estimates": 2,
-      "lastYearEps": 2.02,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "PRM",
-      "name": "Perimeter Solutions, SA",
+      "name": "Perimeter Group Inc.",
       "time": "bmo",
-      "marketCap": 4593055200,
+      "marketCap": 4671624700,
       "quarter": "Sep/2026",
       "epsForecast": 0.95,
       "estimates": 3,
@@ -17948,23 +17922,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "CNR",
-      "name": "Core Natural Resources, Inc.",
-      "time": "bmo",
-      "marketCap": 4181854720,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.53,
-      "estimates": 1,
-      "lastYearEps": 0.61,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "CORZ",
       "name": "Core Scientific, Inc.",
       "time": "bmo",
-      "marketCap": 4018362110,
+      "marketCap": 4575887900,
       "quarter": "Sep/2026",
       "epsForecast": 0,
       "estimates": 2,
@@ -17974,27 +17935,27 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "FA",
-      "name": "First Advantage Corporation",
-      "time": "bmo",
-      "marketCap": 3788886530,
+      "ticker": "HHH",
+      "name": "Howard Hughes Holdings Inc.",
+      "time": "amc",
+      "marketCap": 4556715000,
       "quarter": "Sep/2026",
-      "epsForecast": 0.32,
-      "estimates": 3,
-      "lastYearEps": 0.27,
+      "epsForecast": 1.02,
+      "estimates": 2,
+      "lastYearEps": 2.02,
       "eps": null,
       "surprise": null
     },
     {
       "date": "2026-11-05",
-      "ticker": "RLAY",
-      "name": "Relay Therapeutics, Inc.",
-      "time": "",
-      "marketCap": 3786767360,
+      "ticker": "CNR",
+      "name": "Core Natural Resources, Inc.",
+      "time": "bmo",
+      "marketCap": 4136685570,
       "quarter": "Sep/2026",
-      "epsForecast": -0.4,
-      "estimates": 5,
-      "lastYearEps": -0.43,
+      "epsForecast": 0.53,
+      "estimates": 1,
+      "lastYearEps": 0.61,
       "eps": null,
       "surprise": null
     },
@@ -18003,7 +17964,7 @@
       "ticker": "SPHR",
       "name": "Sphere Entertainment Co.",
       "time": "bmo",
-      "marketCap": 3770569470,
+      "marketCap": 3772724480,
       "quarter": "Sep/2026",
       "epsForecast": -1.79,
       "estimates": 4,
@@ -18013,10 +17974,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "FA",
+      "name": "First Advantage Corporation",
+      "time": "bmo",
+      "marketCap": 3747665660,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.32,
+      "estimates": 3,
+      "lastYearEps": 0.27,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "WSC",
       "name": "WillScot Holdings Corporation",
       "time": "amc",
-      "marketCap": 3489737730,
+      "marketCap": 3549530880,
       "quarter": "Sep/2026",
       "epsForecast": 0.28,
       "estimates": 5,
@@ -18029,7 +18003,7 @@
       "ticker": "CELC",
       "name": "Celcuity Inc.",
       "time": "amc",
-      "marketCap": 3281863170,
+      "marketCap": 3411532540,
       "quarter": "Sep/2026",
       "epsForecast": -1.47,
       "estimates": 4,
@@ -18042,7 +18016,7 @@
       "ticker": "SHAK",
       "name": "Shake Shack, Inc.",
       "time": "bmo",
-      "marketCap": 3101211140,
+      "marketCap": 3001917440,
       "quarter": "Sep/2026",
       "epsForecast": 0.33,
       "estimates": 9,
@@ -18055,7 +18029,7 @@
       "ticker": "DNOW",
       "name": "DNOW Inc.",
       "time": "bmo",
-      "marketCap": 2856417020,
+      "marketCap": 2910652930,
       "quarter": "Sep/2026",
       "epsForecast": 0.15,
       "estimates": 3,
@@ -18065,23 +18039,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "SKWD",
-      "name": "Skyward Specialty Insurance Group, Inc.",
-      "time": "amc",
-      "marketCap": 2713957630,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.22,
-      "estimates": 5,
-      "lastYearEps": 1.05,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "PURR",
       "name": "Hyperliquid Strategies Inc",
       "time": "amc",
-      "marketCap": 2702014210,
+      "marketCap": 2827236350,
       "quarter": "Sep/2026",
       "epsForecast": 2.1,
       "estimates": 2,
@@ -18091,14 +18052,14 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "BHF",
-      "name": "Brighthouse Financial, Inc.",
-      "time": "",
-      "marketCap": 2504628480,
+      "ticker": "SKWD",
+      "name": "Skyward Specialty Insurance Group, Inc.",
+      "time": "amc",
+      "marketCap": 2703302400,
       "quarter": "Sep/2026",
-      "epsForecast": 5.03,
-      "estimates": 4,
-      "lastYearEps": 4.54,
+      "epsForecast": 1.22,
+      "estimates": 5,
+      "lastYearEps": 1.05,
       "eps": null,
       "surprise": null
     },
@@ -18107,7 +18068,7 @@
       "ticker": "DCO",
       "name": "Ducommun Incorporated",
       "time": "bmo",
-      "marketCap": 2471078910,
+      "marketCap": 2517133060,
       "quarter": "Sep/2026",
       "epsForecast": 1.06,
       "estimates": 1,
@@ -18117,13 +18078,26 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "BHF",
+      "name": "Brighthouse Financial, Inc.",
+      "time": "",
+      "marketCap": 2449704960,
+      "quarter": "Sep/2026",
+      "epsForecast": 5.03,
+      "estimates": 4,
+      "lastYearEps": 4.54,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "PTON",
       "name": "Peloton Interactive, Inc.",
       "time": "bmo",
-      "marketCap": 2361703170,
+      "marketCap": 2366159100,
       "quarter": "Sep/2026",
-      "epsForecast": 0.27,
-      "estimates": 7,
+      "epsForecast": 0.11,
+      "estimates": 6,
       "lastYearEps": 0.03,
       "eps": null,
       "surprise": null
@@ -18133,7 +18107,7 @@
       "ticker": "PENN",
       "name": "PENN Entertainment, Inc.",
       "time": "bmo",
-      "marketCap": 2281813500,
+      "marketCap": 2288516610,
       "quarter": "Sep/2026",
       "epsForecast": 0.21,
       "estimates": 5,
@@ -18143,23 +18117,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "BKV",
-      "name": "BKV Corporation",
-      "time": "bmo",
-      "marketCap": 2198606080,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.3,
-      "estimates": 1,
-      "lastYearEps": 0.5,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "CTRI",
       "name": "Centuri Holdings, Inc.",
       "time": "bmo",
-      "marketCap": 2148493820,
+      "marketCap": 2219168000,
       "quarter": "Sep/2026",
       "epsForecast": 0.23,
       "estimates": 2,
@@ -18169,10 +18130,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "BKV",
+      "name": "BKV Corporation",
+      "time": "bmo",
+      "marketCap": 2169057790,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.3,
+      "estimates": 1,
+      "lastYearEps": 0.5,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "NGL",
       "name": "NGL ENERGY PARTNERS LP",
       "time": "amc",
-      "marketCap": 2040713600,
+      "marketCap": 2043209860,
       "quarter": "Sep/2026",
       "epsForecast": 0.22,
       "estimates": 1,
@@ -18185,7 +18159,7 @@
       "ticker": "KRP",
       "name": "Kimbell Royalty Partners",
       "time": "bmo",
-      "marketCap": 1877697790,
+      "marketCap": 1871962620,
       "quarter": "Sep/2026",
       "epsForecast": 0.24,
       "estimates": 1,
@@ -18198,7 +18172,7 @@
       "ticker": "AGIO",
       "name": "Agios Pharmaceuticals, Inc.",
       "time": "bmo",
-      "marketCap": 1788071420,
+      "marketCap": 1862698750,
       "quarter": "Sep/2026",
       "epsForecast": -1.32,
       "estimates": 5,
@@ -18211,11 +18185,24 @@
       "ticker": "SNDA",
       "name": "Sonida Senior Living, Inc.",
       "time": "bmo",
-      "marketCap": 1627385470,
+      "marketCap": 1635553540,
       "quarter": "Sep/2026",
       "epsForecast": -0.52,
       "estimates": 1,
       "lastYearEps": -1.56,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
+      "ticker": "INOD",
+      "name": "Innodata Inc.",
+      "time": "amc",
+      "marketCap": 1440633090,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.21,
+      "estimates": 2,
+      "lastYearEps": 0.24,
       "eps": null,
       "surprise": null
     },
@@ -18234,36 +18221,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "INOD",
-      "name": "Innodata Inc.",
-      "time": "amc",
-      "marketCap": 1420691200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.21,
-      "estimates": 2,
-      "lastYearEps": 0.24,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
-      "ticker": "DMLP",
-      "name": "Dorchester Minerals, L.P.",
-      "time": "",
-      "marketCap": 1392232320,
-      "quarter": "Sep/2026",
-      "epsForecast": null,
-      "estimates": 2,
-      "lastYearEps": 0.23,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "WEN",
       "name": "Wendy's Company (The)",
       "time": "bmo",
-      "marketCap": 1384263680,
+      "marketCap": 1386170370,
       "quarter": "Sep/2026",
       "epsForecast": 0.1,
       "estimates": 8,
@@ -18273,10 +18234,23 @@
     },
     {
       "date": "2026-11-05",
+      "ticker": "DMLP",
+      "name": "Dorchester Minerals, L.P.",
+      "time": "",
+      "marketCap": 1384868610,
+      "quarter": "Sep/2026",
+      "epsForecast": null,
+      "estimates": 2,
+      "lastYearEps": 0.23,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-05",
       "ticker": "TNDM",
       "name": "Tandem Diabetes Care, Inc.",
       "time": "amc",
-      "marketCap": 1299034500,
+      "marketCap": 1228064130,
       "quarter": "Sep/2026",
       "epsForecast": -0.27,
       "estimates": 7,
@@ -18289,7 +18263,7 @@
       "ticker": "AORT",
       "name": "Artivion, Inc.",
       "time": "amc",
-      "marketCap": 1149671680,
+      "marketCap": 1156009980,
       "quarter": "Sep/2026",
       "epsForecast": 0.11,
       "estimates": 1,
@@ -18315,7 +18289,7 @@
       "ticker": "GLUE",
       "name": "Monte Rosa Therapeutics, Inc.",
       "time": "",
-      "marketCap": 906881470,
+      "marketCap": 888112510,
       "quarter": "Sep/2026",
       "epsForecast": -0.1,
       "estimates": 4,
@@ -18328,7 +18302,7 @@
       "ticker": "KBDC",
       "name": "Kayne Anderson BDC, Inc.",
       "time": "amc",
-      "marketCap": 863114180,
+      "marketCap": 851887740,
       "quarter": "Sep/2026",
       "epsForecast": 0.38,
       "estimates": 1,
@@ -18341,7 +18315,7 @@
       "ticker": "HTZ",
       "name": "Hertz Global Holdings, Inc",
       "time": "bmo",
-      "marketCap": 695080190,
+      "marketCap": 737854400,
       "quarter": "Sep/2026",
       "epsForecast": 0.11,
       "estimates": 1,
@@ -18367,7 +18341,7 @@
       "ticker": "YORW",
       "name": "The York Water Company",
       "time": "",
-      "marketCap": 520937440,
+      "marketCap": 514283744,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 2,
@@ -18380,7 +18354,7 @@
       "ticker": "FIP",
       "name": "FTAI Infrastructure Inc.",
       "time": "amc",
-      "marketCap": 335636128,
+      "marketCap": 315545248,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 2,
@@ -18406,7 +18380,7 @@
       "ticker": "RWAY",
       "name": "Runway Growth Finance Corp.",
       "time": "amc",
-      "marketCap": 271576192,
+      "marketCap": 270737984,
       "quarter": "Sep/2026",
       "epsForecast": 0.33,
       "estimates": 4,
@@ -18416,23 +18390,10 @@
     },
     {
       "date": "2026-11-05",
-      "ticker": "GWRS",
-      "name": "Global Water Resources, Inc.",
-      "time": "bmo",
-      "marketCap": 240599376,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.05,
-      "estimates": 1,
-      "lastYearEps": 0.07,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-05",
       "ticker": "GPRO",
       "name": "GoPro, Inc.",
       "time": "",
-      "marketCap": 197132240,
+      "marketCap": 198989440,
       "quarter": "Sep/2026",
       "epsForecast": -0.17,
       "estimates": 1,
@@ -18444,8 +18405,8 @@
       "date": "2026-11-05",
       "ticker": "FLL",
       "name": "Full House Resorts, Inc.",
-      "time": "",
-      "marketCap": 27215856,
+      "time": "amc",
+      "marketCap": 27798504,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 2,
@@ -18458,7 +18419,7 @@
       "ticker": "BGDE",
       "name": "Big Digital Energy, Inc.",
       "time": "amc",
-      "marketCap": 17725956,
+      "marketCap": 18011858,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 2,
@@ -18471,7 +18432,7 @@
       "ticker": "BRK.A",
       "name": "Berkshire Hathaway Inc.",
       "time": "",
-      "marketCap": 1198913880000,
+      "marketCap": 1201505700000,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 1,
@@ -18484,7 +18445,7 @@
       "ticker": "BRK.B",
       "name": "Berkshire Hathaway Inc.",
       "time": "",
-      "marketCap": 1198913880000,
+      "marketCap": 1201505700000,
       "quarter": "Sep/2026",
       "epsForecast": 5.91,
       "estimates": 2,
@@ -18497,7 +18458,7 @@
       "ticker": "ENB",
       "name": "Enbridge Inc",
       "time": "bmo",
-      "marketCap": 107490075000,
+      "marketCap": 106945815000,
       "quarter": "Sep/2026",
       "epsForecast": 0.36,
       "estimates": 5,
@@ -18510,7 +18471,7 @@
       "ticker": "MRNA",
       "name": "Moderna, Inc.",
       "time": "bmo",
-      "marketCap": 88163262000,
+      "marketCap": 91201446000,
       "quarter": "Sep/2026",
       "epsForecast": -1.1,
       "estimates": 7,
@@ -18523,7 +18484,7 @@
       "ticker": "BAM",
       "name": "Brookfield Asset Management",
       "time": "bmo",
-      "marketCap": 82193973000,
+      "marketCap": 81334116000,
       "quarter": "Sep/2026",
       "epsForecast": 0.44,
       "estimates": 5,
@@ -18536,7 +18497,7 @@
       "ticker": "HUM",
       "name": "Humana Inc.",
       "time": "bmo",
-      "marketCap": 49282159000,
+      "marketCap": 50177958000,
       "quarter": "Sep/2026",
       "epsForecast": -1.03,
       "estimates": 10,
@@ -18549,10 +18510,10 @@
       "ticker": "VST",
       "name": "Vistra Corp.",
       "time": "bmo",
-      "marketCap": 45179855000,
+      "marketCap": 46851318000,
       "quarter": "Sep/2026",
-      "epsForecast": 2.18,
-      "estimates": 4,
+      "epsForecast": 2.77,
+      "estimates": 3,
       "lastYearEps": 1.75,
       "eps": null,
       "surprise": null
@@ -18562,7 +18523,7 @@
       "ticker": "HMC",
       "name": "Honda Motor Company, Ltd.",
       "time": "",
-      "marketCap": 44492194000,
+      "marketCap": 44102935000,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -18575,7 +18536,7 @@
       "ticker": "UI",
       "name": "Ubiquiti Inc.",
       "time": "",
-      "marketCap": 32675784700,
+      "marketCap": 32998864900,
       "quarter": "Sep/2026",
       "epsForecast": 3.82,
       "estimates": 1,
@@ -18588,7 +18549,7 @@
       "ticker": "PPL",
       "name": "PPL Corporation",
       "time": "bmo",
-      "marketCap": 27196971000,
+      "marketCap": 26873376800,
       "quarter": "Sep/2026",
       "epsForecast": 0.53,
       "estimates": 5,
@@ -18601,7 +18562,7 @@
       "ticker": "PAA",
       "name": "Plains All American Pipeline, L.P.",
       "time": "bmo",
-      "marketCap": 18111891500,
+      "marketCap": 18238892000,
       "quarter": "Sep/2026",
       "epsForecast": 0.4,
       "estimates": 5,
@@ -18614,7 +18575,7 @@
       "ticker": "BIP",
       "name": "Brookfield Infrastructure Partners LP",
       "time": "bmo",
-      "marketCap": 17426581500,
+      "marketCap": 17140844500,
       "quarter": "Sep/2026",
       "epsForecast": 0.89,
       "estimates": 2,
@@ -18627,7 +18588,7 @@
       "ticker": "BEN",
       "name": "Franklin Templeton, Inc.",
       "time": "bmo",
-      "marketCap": 16243218400,
+      "marketCap": 16441368600,
       "quarter": "Sep/2026",
       "epsForecast": 0.78,
       "estimates": 6,
@@ -18640,7 +18601,7 @@
       "ticker": "EMA",
       "name": "Emera Incorporated",
       "time": "bmo",
-      "marketCap": 15362581500,
+      "marketCap": 15371186200,
       "quarter": "Sep/2026",
       "epsForecast": 0.64,
       "estimates": 3,
@@ -18652,8 +18613,8 @@
       "date": "2026-11-06",
       "ticker": "TU",
       "name": "TELUS Corporation",
-      "time": "",
-      "marketCap": 14351811600,
+      "time": "bmo",
+      "marketCap": 14136243200,
       "quarter": "Sep/2026",
       "epsForecast": 0.13,
       "estimates": 6,
@@ -18666,7 +18627,7 @@
       "ticker": "CHTR",
       "name": "Charter Communications, Inc.",
       "time": "bmo",
-      "marketCap": 13238283300,
+      "marketCap": 13037772800,
       "quarter": "Sep/2026",
       "epsForecast": 10.06,
       "estimates": 5,
@@ -18679,7 +18640,7 @@
       "ticker": "ELAN",
       "name": "Elanco Animal Health Incorporated",
       "time": "bmo",
-      "marketCap": 12040886300,
+      "marketCap": 12275707900,
       "quarter": "Sep/2026",
       "epsForecast": 0.2,
       "estimates": 8,
@@ -18692,7 +18653,7 @@
       "ticker": "FRHC",
       "name": "Freedom Holding Corp.",
       "time": "",
-      "marketCap": 11947429900,
+      "marketCap": 11917449200,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 1,
@@ -18705,7 +18666,7 @@
       "ticker": "FLR",
       "name": "Fluor Corporation",
       "time": "bmo",
-      "marketCap": 6202910700,
+      "marketCap": 6418233900,
       "quarter": "Sep/2026",
       "epsForecast": 0.85,
       "estimates": 1,
@@ -18718,7 +18679,7 @@
       "ticker": "WULF",
       "name": "TeraWulf Inc.",
       "time": "bmo",
-      "marketCap": 5458717200,
+      "marketCap": 6252077600,
       "quarter": "Sep/2026",
       "epsForecast": -0.12,
       "estimates": 8,
@@ -18731,7 +18692,7 @@
       "ticker": "TDS",
       "name": "Telephone and Data Systems, Inc.",
       "time": "bmo",
-      "marketCap": 4155109890,
+      "marketCap": 4099862020,
       "quarter": "Sep/2026",
       "epsForecast": 0.1,
       "estimates": 1,
@@ -18744,7 +18705,7 @@
       "ticker": "DKL",
       "name": "Delek Logistics Partners, L.P.",
       "time": "bmo",
-      "marketCap": 3186943230,
+      "marketCap": 3107760900,
       "quarter": "Sep/2026",
       "epsForecast": 1.38,
       "estimates": 1,
@@ -18757,7 +18718,7 @@
       "ticker": "AD",
       "name": "Array Digital Infrastructure, Inc.",
       "time": "bmo",
-      "marketCap": 2910725120,
+      "marketCap": 2876124930,
       "quarter": "Sep/2026",
       "epsForecast": 0.07,
       "estimates": 1,
@@ -18770,7 +18731,7 @@
       "ticker": "UA",
       "name": "Under Armour, Inc.",
       "time": "bmo",
-      "marketCap": 2250818560,
+      "marketCap": 2285182210,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 1,
@@ -18783,7 +18744,7 @@
       "ticker": "UAA",
       "name": "Under Armour, Inc.",
       "time": "bmo",
-      "marketCap": 2250818560,
+      "marketCap": 2285182210,
       "quarter": "Sep/2026",
       "epsForecast": 0,
       "estimates": 9,
@@ -18796,7 +18757,7 @@
       "ticker": "AMR",
       "name": "Alpha Metallurgical Resources, Inc.",
       "time": "bmo",
-      "marketCap": 1955362300,
+      "marketCap": 1935202690,
       "quarter": "Sep/2026",
       "epsForecast": -0.29,
       "estimates": 1,
@@ -18809,7 +18770,7 @@
       "ticker": "DCH",
       "name": "Dauch Corporation",
       "time": "bmo",
-      "marketCap": 1102485380,
+      "marketCap": 1076348800,
       "quarter": "Sep/2026",
       "epsForecast": 0.14,
       "estimates": 6,
@@ -19342,7 +19303,7 @@
       "ticker": "PBR",
       "name": "Petroleo Brasileiro S.A.- Petrobras",
       "time": "amc",
-      "marketCap": 136362795000,
+      "marketCap": 135847240000,
       "quarter": "Sep/2026",
       "epsForecast": 1.23,
       "estimates": 2,
@@ -19355,7 +19316,7 @@
       "ticker": "PBR.A",
       "name": "Petroleo Brasileiro S.A.- Petrobras",
       "time": "amc",
-      "marketCap": 136362795000,
+      "marketCap": 135847240000,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 1,
@@ -19368,7 +19329,7 @@
       "ticker": "TDG",
       "name": "Transdigm Group Incorporated",
       "time": "bmo",
-      "marketCap": 67084698000,
+      "marketCap": 66776252000,
       "quarter": "Sep/2026",
       "epsForecast": 11.43,
       "estimates": 5,
@@ -19381,7 +19342,7 @@
       "ticker": "SE",
       "name": "Sea Limited",
       "time": "bmo",
-      "marketCap": 46230331000,
+      "marketCap": 47020438000,
       "quarter": "Sep/2026",
       "epsForecast": 0.79,
       "estimates": 2,
@@ -19391,23 +19352,10 @@
     },
     {
       "date": "2026-11-10",
-      "ticker": "ALC",
-      "name": "Alcon Inc.",
-      "time": "amc",
-      "marketCap": 36792910000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.89,
-      "estimates": 3,
-      "lastYearEps": 0.79,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-10",
       "ticker": "VOD",
       "name": "Vodafone Group Plc",
       "time": "bmo",
-      "marketCap": 36264059000,
+      "marketCap": 36434522000,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 1,
@@ -19417,10 +19365,23 @@
     },
     {
       "date": "2026-11-10",
+      "ticker": "ALC",
+      "name": "Alcon Inc.",
+      "time": "amc",
+      "marketCap": 36163289000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.89,
+      "estimates": 3,
+      "lastYearEps": 0.79,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-10",
       "ticker": "EC",
       "name": "Ecopetrol S.A.",
       "time": "amc",
-      "marketCap": 33242847200,
+      "marketCap": 34003507200,
       "quarter": "Sep/2026",
       "epsForecast": 0.62,
       "estimates": 1,
@@ -19433,7 +19394,7 @@
       "ticker": "VG",
       "name": "Venture Global, Inc.",
       "time": "bmo",
-      "marketCap": 32176195600,
+      "marketCap": 32501207000,
       "quarter": "Sep/2026",
       "epsForecast": 0.5,
       "estimates": 7,
@@ -19446,7 +19407,7 @@
       "ticker": "CRWV",
       "name": "CoreWeave, Inc.",
       "time": "amc",
-      "marketCap": 27659561000,
+      "marketCap": 29639577600,
       "quarter": "Sep/2026",
       "epsForecast": -1.45,
       "estimates": 10,
@@ -19459,7 +19420,7 @@
       "ticker": "ONON",
       "name": "On Holding AG",
       "time": "bmo",
-      "marketCap": 21433872400,
+      "marketCap": 22025234400,
       "quarter": "Sep/2026",
       "epsForecast": 0.42,
       "estimates": 6,
@@ -19472,7 +19433,7 @@
       "ticker": "VIV",
       "name": "Telefonica Brasil S.A.",
       "time": "amc",
-      "marketCap": 17943328800,
+      "marketCap": 17559857200,
       "quarter": "Sep/2026",
       "epsForecast": 0.24,
       "estimates": 2,
@@ -19485,7 +19446,7 @@
       "ticker": "MANE",
       "name": "Veradermics, Incorporated",
       "time": "",
-      "marketCap": 5411781100,
+      "marketCap": 5582243800,
       "quarter": "Sep/2026",
       "epsForecast": -0.59,
       "estimates": 1,
@@ -19498,7 +19459,7 @@
       "ticker": "ALH",
       "name": "Alliance Laundry Holdings Inc.",
       "time": "bmo",
-      "marketCap": 4474742800,
+      "marketCap": 4413118000,
       "quarter": "Sep/2026",
       "epsForecast": 0.32,
       "estimates": 3,
@@ -19511,7 +19472,7 @@
       "ticker": "WIX",
       "name": "Wix.com Ltd.",
       "time": "bmo",
-      "marketCap": 3136620800,
+      "marketCap": 3126158590,
       "quarter": "Sep/2026",
       "epsForecast": 0.19,
       "estimates": 8,
@@ -19524,7 +19485,7 @@
       "ticker": "REZI",
       "name": "Resideo Technologies, Inc.",
       "time": "amc",
-      "marketCap": 2923062020,
+      "marketCap": 2921543680,
       "quarter": "Sep/2026",
       "epsForecast": 0.4,
       "estimates": 2,
@@ -19537,7 +19498,7 @@
       "ticker": "STUB",
       "name": "StubHub Holdings, Inc.",
       "time": "amc",
-      "marketCap": 2307823360,
+      "marketCap": 2315465220,
       "quarter": "Sep/2026",
       "epsForecast": 0.11,
       "estimates": 4,
@@ -19547,10 +19508,23 @@
     },
     {
       "date": "2026-11-10",
+      "ticker": "BTDR",
+      "name": "Bitdeer Technologies Group",
+      "time": "bmo",
+      "marketCap": 1880733180,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.33,
+      "estimates": 3,
+      "lastYearEps": -1.28,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-10",
       "ticker": "BRSL",
       "name": "Brightstar Lottery PLC Trading under the Legal Name to begin at",
       "time": "bmo",
-      "marketCap": 1850535040,
+      "marketCap": 1819170050,
       "quarter": "Sep/2026",
       "epsForecast": 0.02,
       "estimates": 2,
@@ -19563,7 +19537,7 @@
       "ticker": "ETOR",
       "name": "eToro Group Ltd.",
       "time": "bmo",
-      "marketCap": 1817930750,
+      "marketCap": 1818736260,
       "quarter": "Sep/2026",
       "epsForecast": 0.27,
       "estimates": 2,
@@ -19573,23 +19547,10 @@
     },
     {
       "date": "2026-11-10",
-      "ticker": "BTDR",
-      "name": "Bitdeer Technologies Group",
-      "time": "bmo",
-      "marketCap": 1676896510,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.33,
-      "estimates": 3,
-      "lastYearEps": -1.28,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-10",
       "ticker": "AZTA",
       "name": "Azenta, Inc.",
       "time": "amc",
-      "marketCap": 1557388420,
+      "marketCap": 1627043710,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 1,
@@ -19602,7 +19563,7 @@
       "ticker": "HUMA",
       "name": "Humacyte, Inc.",
       "time": "bmo",
-      "marketCap": 110591424,
+      "marketCap": 122370064,
       "quarter": "Sep/2026",
       "epsForecast": -0.09,
       "estimates": 2,
@@ -23201,72 +23162,72 @@
     "ARGX": {
       "date": null,
       "raw": "Earnings announcement* for ARGX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T18:17:19.103Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "STLD": {
       "date": null,
       "raw": "Earnings announcement* for STLD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SNA": {
       "date": null,
       "raw": "Earnings announcement* for SNA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "POOL": {
       "date": null,
       "raw": "Earnings announcement* for POOL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PNC": {
       "date": null,
       "raw": "Earnings announcement* for PNC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "OMC": {
       "date": null,
       "raw": "Earnings announcement* for OMC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "NOC": {
       "date": null,
       "raw": "Earnings announcement* for NOC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "NEM": {
       "date": null,
       "raw": "Earnings announcement* for NEM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MS": {
       "date": null,
       "raw": "Earnings announcement* for MS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "KMI": {
       "date": null,
       "raw": "Earnings announcement* for KMI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ISRG": {
       "date": null,
       "raw": "Earnings announcement* for ISRG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HBAN": {
       "date": null,
       "raw": "Earnings announcement* for HBAN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HAS": {
       "date": null,
       "raw": "Earnings announcement* for HAS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "GL": {
       "date": null,
       "raw": "Earnings announcement* for GL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CAG": {
       "date": null,
@@ -23281,137 +23242,137 @@
     "AVB": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HONAV": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SPSM": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "NTDOY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ADC": {
       "date": null,
       "raw": "Earnings announcement* for ADC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "NSRGY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "NVZMY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BRCM": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CBZ": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SFTBF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "TCBI": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "AJINF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BNPQF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "TOELF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "TCNNF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "LUV": {
       "date": null,
       "raw": "Earnings announcement* for LUV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FBK": {
       "date": null,
       "raw": "Earnings announcement* for FBK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "INDB": {
       "date": null,
       "raw": "Earnings announcement* for INDB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "RNMBF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "GEHCV": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "TPH": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "THLEF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "REXR": {
       "date": null,
       "raw": "Earnings announcement* for REXR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "IHG": {
       "date": null,
       "raw": "Earnings announcement* for IHG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "RYCEY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "IFNNY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "VLY": {
       "date": null,
       "raw": "Earnings announcement* for VLY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CODI": {
       "date": null,
@@ -23421,97 +23382,97 @@
     "SOUHY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "WTSHF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "WDS": {
       "date": null,
       "raw": "Earnings announcement* for WDS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SFGYY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HOLX": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SSNC": {
       "date": null,
       "raw": "Earnings announcement* for SSNC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SNEJF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HESAF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "LBRDK": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ENBP": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FULT": {
       "date": null,
       "raw": "Earnings announcement* for FULT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "UHALB": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "XNGSY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "COLB": {
       "date": null,
       "raw": "Earnings announcement* for COLB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BABAF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SQ": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "DBRG": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CATY": {
       "date": null,
       "raw": "Earnings announcement* for CATY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "EXAS": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PLD": {
       "date": null,
@@ -23521,17 +23482,17 @@
     "SVRE": {
       "date": null,
       "raw": "Earnings announcement* for SVRE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "APCX": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MLPT": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BLSM": {
       "date": null,
@@ -23541,72 +23502,72 @@
     "APLM": {
       "date": null,
       "raw": "Earnings announcement* for APLM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BBD": {
       "date": null,
       "raw": "Earnings announcement* for BBD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "GREE": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PSNY": {
       "date": null,
       "raw": "Earnings announcement* for PSNY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "AVBC": {
       "date": null,
       "raw": "Earnings announcement* for AVBC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BYRN": {
       "date": null,
       "raw": "Earnings announcement* for BYRN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CBKM": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MPB": {
       "date": null,
       "raw": "Earnings announcement* for MPB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "EWSB": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HEPA": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ADRX": {
       "date": null,
       "raw": "Earnings announcement* for ADRX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "QVCG": {
       "date": null,
       "raw": "Earnings announcement* for QVCG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ETRA": {
       "date": null,
       "raw": "Earnings announcement* for ETRA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MKTX": {
       "date": null,
       "raw": "Earnings announcement* for MKTX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "NUE": {
       "date": null,
@@ -23676,32 +23637,32 @@
     "PSA": {
       "date": null,
       "raw": "Earnings announcement* for PSA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PFG": {
       "date": null,
       "raw": "Earnings announcement* for PFG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HIG": {
       "date": null,
       "raw": "Earnings announcement* for HIG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ARLP": {
       "date": null,
       "raw": "Earnings announcement* for ARLP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ARE": {
       "date": null,
       "raw": "Earnings announcement* for ARE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FSBC": {
       "date": null,
       "raw": "Earnings announcement* for FSBC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MSGS": {
       "date": null,
@@ -23961,62 +23922,62 @@
     "UHS": {
       "date": null,
       "raw": "Earnings announcement* for UHS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T18:17:19.103Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BXP": {
       "date": null,
       "raw": "Earnings announcement* for BXP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T18:17:19.103Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "VTR": {
       "date": null,
       "raw": "Earnings announcement* for VTR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "RCL": {
       "date": null,
       "raw": "Earnings announcement* for RCL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HOOD": {
       "date": null,
       "raw": "Earnings announcement* for HOOD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ACGL": {
       "date": null,
       "raw": "Earnings announcement* for ACGL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FE": {
       "date": null,
       "raw": "Earnings announcement* for FE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ST": {
       "date": null,
       "raw": "Earnings announcement* for ST:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "INTA": {
       "date": null,
       "raw": "Earnings announcement* for INTA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "RRC": {
       "date": null,
       "raw": "Earnings announcement* for RRC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PAMT": {
       "date": null,
       "raw": "Earnings announcement* for PAMT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "RVSB": {
       "date": null,
       "raw": "Earnings announcement* for RVSB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "STLA": {
       "date": null,
@@ -24026,7 +23987,7 @@
     "JMKE": {
       "date": null,
       "raw": "Earnings announcement* for JMKE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "GOOGL": {
       "date": null,
@@ -24361,47 +24322,47 @@
     "VICI": {
       "date": null,
       "raw": "Earnings announcement* for VICI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "TMUS": {
       "date": null,
       "raw": "Earnings announcement* for TMUS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MAA": {
       "date": null,
       "raw": "Earnings announcement* for MAA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "INVH": {
       "date": null,
       "raw": "Earnings announcement* for INVH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FTV": {
       "date": null,
       "raw": "Earnings announcement* for FTV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "EG": {
       "date": null,
       "raw": "Earnings announcement* for EG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "EBAY": {
       "date": null,
       "raw": "Earnings announcement* for EBAY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BOOT": {
       "date": null,
       "raw": "Earnings announcement* for BOOT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MORN": {
       "date": null,
       "raw": "Earnings announcement* for MORN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CMG": {
       "date": null,
@@ -24411,22 +24372,22 @@
     "JLL": {
       "date": null,
       "raw": "Earnings announcement* for JLL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "GPI": {
       "date": null,
       "raw": "Earnings announcement* for GPI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "UMC": {
       "date": null,
       "raw": "Earnings announcement* for UMC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PWP": {
       "date": null,
       "raw": "Earnings announcement* for PWP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "DVA": {
       "date": null,
@@ -24851,112 +24812,112 @@
     "BG": {
       "date": null,
       "raw": "Earnings announcement* for BG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "TT": {
       "date": null,
       "raw": "Earnings announcement* for TT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "TXT": {
       "date": null,
       "raw": "Earnings announcement* for TXT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "KIM": {
       "date": null,
       "raw": "Earnings announcement* for KIM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "AJG": {
       "date": null,
       "raw": "Earnings announcement* for AJG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CTSH": {
       "date": null,
       "raw": "Earnings announcement* for CTSH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "AMP": {
       "date": null,
       "raw": "Earnings announcement* for AMP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MO": {
       "date": null,
       "raw": "Earnings announcement* for MO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FMC": {
       "date": null,
       "raw": "Earnings announcement* for FMC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "LGND": {
       "date": null,
       "raw": "Earnings announcement* for LGND:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "DXCM": {
       "date": null,
       "raw": "Earnings announcement* for DXCM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "HOG": {
       "date": null,
       "raw": "Earnings announcement* for HOG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MIAX": {
       "date": null,
       "raw": "Earnings announcement* for MIAX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "IDA": {
       "date": null,
       "raw": "Earnings announcement* for IDA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PATK": {
       "date": null,
       "raw": "Earnings announcement* for PATK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "SUPN": {
       "date": null,
       "raw": "Earnings announcement* for SUPN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ERIE": {
       "date": null,
       "raw": "Earnings announcement* for ERIE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "INGM": {
       "date": null,
       "raw": "Earnings announcement* for INGM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ILMN": {
       "date": null,
       "raw": "Earnings announcement* for ILMN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CLBK": {
       "date": null,
       "raw": "Earnings announcement* for CLBK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BWFG": {
       "date": null,
       "raw": "Earnings announcement* for BWFG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "PBF": {
       "date": null,
       "raw": "Earnings announcement* for PBF:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CVX": {
       "date": null,
@@ -25046,12 +25007,12 @@
     "REGN": {
       "date": null,
       "raw": "Earnings announcement* for REGN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "MGA": {
       "date": null,
       "raw": "Earnings announcement* for MGA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "XPO": {
       "date": null,
@@ -25076,12 +25037,12 @@
     "NVT": {
       "date": null,
       "raw": "Earnings announcement* for NVT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "BP": {
       "date": null,
       "raw": "Earnings announcement* for BP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "AAPL": {
       "date": null,
@@ -25266,52 +25227,52 @@
     "DOC": {
       "date": null,
       "raw": "Earnings announcement* for DOC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "ICHR": {
       "date": null,
       "raw": "Earnings announcement* for ICHR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "VOYG": {
       "date": null,
       "raw": "Earnings announcement* for VOYG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FOX": {
       "date": null,
       "raw": "Earnings announcement* for FOX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "AESI": {
       "date": null,
       "raw": "Earnings announcement* for AESI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "LGIH": {
       "date": null,
       "raw": "Earnings announcement* for LGIH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "RHP": {
       "date": null,
       "raw": "Earnings announcement* for RHP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "GRAB": {
       "date": null,
       "raw": "Earnings announcement* for GRAB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "FANG": {
       "date": null,
       "raw": "Earnings announcement* for FANG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "CC": {
       "date": null,
       "raw": "Earnings announcement* for CC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-03T19:51:30.078Z"
+      "checked": "2026-11-04T20:04:31.753Z"
     },
     "LPX": {
       "date": null,
@@ -25662,6 +25623,11 @@
       "date": null,
       "raw": "Earnings announcement* for VGNT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
       "checked": "2026-11-04T18:30:43.734Z"
+    },
+    "GWRS": {
+      "date": null,
+      "raw": "Earnings announcement* for GWRS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-04T20:04:31.753Z"
     }
   }
 }
