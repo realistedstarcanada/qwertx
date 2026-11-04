@@ -15,7 +15,7 @@
   "rows": 1154,
   "from": "2026-07-06",
   "to": "2026-07-31",
-  "mapped": 1028,
+  "mapped": 1027,
   "stocks": 1094,
   "untyped": 0,
   "transactions": [
@@ -6971,8 +6971,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "SUPN"
+      "cls": "stock"
     },
     {
       "no": 543,

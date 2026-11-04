@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-03T19:29:01.160Z",
+  "updatedAt": "2026-11-04T19:43:46.016Z",
   "since": "2026-04-01",
   "checks": {
     "house": {
-      "at": "2026-11-03T19:29:01.160Z",
+      "at": "2026-11-04T19:43:46.016Z",
       "docs": 1,
       "complete": 1,
       "incomplete": []
@@ -421,9 +421,37 @@
     "H20035484",
     "H20035591",
     "H20035734",
-    "H20035751"
+    "H20035751",
+    "H20035763"
   ],
   "trades": [
+    {
+      "id": "H20035763-0",
+      "chamber": "House",
+      "member": "Robert E. Latta",
+      "bioguide": "L000566",
+      "party": "Republican",
+      "state": "OH",
+      "district": "05",
+      "filed": "2026-11-03",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035763.pdf",
+      "ticker": "FMAO",
+      "assetType": "ST",
+      "asset": "Farmers & Merchants Bancorp, Inc. (FMAO)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-10-20",
+      "notified": "2026-10-20",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "SP",
+      "desc": "Dividend reinvestment",
+      "company": "FARMERS & MERCHANTS BANCORP INC"
+    },
     {
       "id": "H20035484-3",
       "chamber": "House",
