@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T20:18:21.957Z",
+  "updatedAt": "2026-11-06T01:41:47.345Z",
   "econ": [
     {
       "id": "1001683751301",
@@ -5213,7 +5213,7 @@
       "ticker": "CTAS",
       "name": "Cintas Corporation",
       "time": "",
-      "marketCap": 90942112000,
+      "marketCap": 88841585000,
       "quarter": "Aug/2026",
       "epsForecast": 1.35,
       "estimates": 8,
@@ -5226,7 +5226,7 @@
       "ticker": "PAYX",
       "name": "Paychex, Inc.",
       "time": "",
-      "marketCap": 42258440000,
+      "marketCap": 41169142000,
       "quarter": "Aug/2026",
       "epsForecast": 1.33,
       "estimates": 6,
@@ -5239,7 +5239,7 @@
       "ticker": "GIS",
       "name": "General Mills, Inc.",
       "time": "",
-      "marketCap": 19168534500,
+      "marketCap": 18222137300,
       "quarter": "Aug/2026",
       "epsForecast": 0.72,
       "estimates": 6,
@@ -5252,7 +5252,7 @@
       "ticker": "CBRL",
       "name": "Cracker Barrel Old Country Store, Inc.",
       "time": "",
-      "marketCap": 1570705280,
+      "marketCap": 1527341570,
       "quarter": "Jul/2026",
       "epsForecast": 0.2,
       "estimates": 3,
@@ -5304,7 +5304,7 @@
       "ticker": "JEF",
       "name": "Jefferies Financial Group Inc.",
       "time": "",
-      "marketCap": 11752195100,
+      "marketCap": 11152757800,
       "quarter": "Aug/2026",
       "epsForecast": 1.04,
       "estimates": 2,
@@ -5317,7 +5317,7 @@
       "ticker": "MTN",
       "name": "Vail Resorts, Inc.",
       "time": "",
-      "marketCap": 5753382900,
+      "marketCap": 5477643800,
       "quarter": "Jul/2026",
       "epsForecast": -5.4,
       "estimates": 6,
@@ -5330,7 +5330,7 @@
       "ticker": "CCL",
       "name": "Carnival Corporation Ltd.",
       "time": "",
-      "marketCap": 42113188000,
+      "marketCap": 39262618000,
       "quarter": "Aug/2026",
       "epsForecast": 1.36,
       "estimates": 7,
@@ -5343,7 +5343,7 @@
       "ticker": "KMX",
       "name": "CarMax Inc",
       "time": "",
-      "marketCap": 7826726400,
+      "marketCap": 7576907300,
       "quarter": "Aug/2026",
       "epsForecast": 0.68,
       "estimates": 8,
@@ -5356,7 +5356,7 @@
       "ticker": "MU",
       "name": "Micron Technology, Inc.",
       "time": "",
-      "marketCap": 967479980000,
+      "marketCap": 899741710000,
       "quarter": "Aug/2026",
       "epsForecast": 31.41,
       "estimates": 10,
@@ -5369,7 +5369,7 @@
       "ticker": "JBL",
       "name": "Jabil Inc.",
       "time": "",
-      "marketCap": 27978164200,
+      "marketCap": 26625079300,
       "quarter": "Aug/2026",
       "epsForecast": 3.89,
       "estimates": 4,
@@ -5382,7 +5382,7 @@
       "ticker": "FDS",
       "name": "FactSet Research Systems Inc.",
       "time": "",
-      "marketCap": 11730406400,
+      "marketCap": 12068997100,
       "quarter": "Aug/2026",
       "epsForecast": 4.32,
       "estimates": 7,
@@ -5395,7 +5395,7 @@
       "ticker": "CAG",
       "name": "ConAgra Brands, Inc.",
       "time": "",
-      "marketCap": 6879499800,
+      "marketCap": 7290074100,
       "quarter": "Aug/2026",
       "epsForecast": 0.31,
       "estimates": 5,
@@ -5408,7 +5408,7 @@
       "ticker": "PRGS",
       "name": "Progress Software Corporation",
       "time": "",
-      "marketCap": 1803369340,
+      "marketCap": 1830755070,
       "quarter": "Aug/2026",
       "epsForecast": 1.16,
       "estimates": 2,
@@ -5486,7 +5486,7 @@
       "ticker": "STZ",
       "name": "Constellation Brands Inc",
       "time": "",
-      "marketCap": 24616687600,
+      "marketCap": 23371386900,
       "quarter": "Aug/2026",
       "epsForecast": 3.62,
       "estimates": 7,
@@ -5499,7 +5499,7 @@
       "ticker": "RPM",
       "name": "RPM International Inc.",
       "time": "",
-      "marketCap": 13907549200,
+      "marketCap": 13435674600,
       "quarter": "Aug/2026",
       "epsForecast": 1.95,
       "estimates": 7,
@@ -5577,7 +5577,7 @@
       "ticker": "JPM",
       "name": "J P Morgan Chase & Co",
       "time": "",
-      "marketCap": 935066660000,
+      "marketCap": 898413760000,
       "quarter": "Sep/2026",
       "epsForecast": 5.94,
       "estimates": 6,
@@ -5590,7 +5590,7 @@
       "ticker": "JNJ",
       "name": "Johnson & Johnson",
       "time": "",
-      "marketCap": 665187980000,
+      "marketCap": 640753800000,
       "quarter": "Sep/2026",
       "epsForecast": 2.53,
       "estimates": 6,
@@ -5603,7 +5603,7 @@
       "ticker": "UNH",
       "name": "UnitedHealth Group Incorporated",
       "time": "",
-      "marketCap": 366813741000,
+      "marketCap": 363023270000,
       "quarter": "Sep/2026",
       "epsForecast": 4.12,
       "estimates": 8,
@@ -5616,7 +5616,7 @@
       "ticker": "GS",
       "name": "The Goldman Sachs Group, Inc.",
       "time": "",
-      "marketCap": 267667292000,
+      "marketCap": 258463351000,
       "quarter": "Sep/2026",
       "epsForecast": 12.9,
       "estimates": 7,
@@ -5629,7 +5629,7 @@
       "ticker": "WFC",
       "name": "Wells Fargo & Company",
       "time": "",
-      "marketCap": 262451773000,
+      "marketCap": 256748257000,
       "quarter": "Sep/2026",
       "epsForecast": 1.85,
       "estimates": 8,
@@ -5642,7 +5642,7 @@
       "ticker": "C",
       "name": "Citigroup Inc.",
       "time": "",
-      "marketCap": 209243472000,
+      "marketCap": 205838270000,
       "quarter": "Sep/2026",
       "epsForecast": 2.66,
       "estimates": 7,
@@ -5655,7 +5655,7 @@
       "ticker": "DPZ",
       "name": "Domino's Pizza Inc",
       "time": "",
-      "marketCap": 11207357400,
+      "marketCap": 10628386800,
       "quarter": "Sep/2026",
       "epsForecast": 4.33,
       "estimates": 9,
@@ -5668,7 +5668,7 @@
       "ticker": "FBK",
       "name": "FB Financial Corporation",
       "time": "",
-      "marketCap": 2731143680,
+      "marketCap": 2685060860,
       "quarter": "Sep/2026",
       "epsForecast": 1.21,
       "estimates": 5,
@@ -14651,7 +14651,7 @@
       "ticker": "TM",
       "name": "Toyota Motor Corp Ltd Ord",
       "time": "",
-      "marketCap": 251554890000,
+      "marketCap": 259974808000,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
@@ -14663,268 +14663,281 @@
       "date": "2026-11-04",
       "ticker": "ARM",
       "name": "Arm Holdings plc",
-      "time": "amc",
-      "marketCap": 215460545000,
+      "time": "",
+      "marketCap": 204085805000,
       "quarter": "Sep/2026",
       "epsForecast": 0.22,
       "estimates": 7,
       "lastYearEps": null,
       "eps": 0.15,
-      "surprise": null
+      "surprise": -31.82
     },
     {
       "date": "2026-11-04",
       "ticker": "MCD",
       "name": "McDonald's Corporation",
-      "time": "bmo",
-      "marketCap": 186138034000,
+      "time": "",
+      "marketCap": 198295306000,
       "quarter": "Sep/2026",
       "epsForecast": 3.36,
       "estimates": 11,
       "lastYearEps": null,
-      "eps": 3.22,
-      "surprise": null
+      "eps": 3.57,
+      "surprise": 6.25
     },
     {
       "date": "2026-11-04",
       "ticker": "NVO",
       "name": "Novo Nordisk A/S",
-      "time": "bmo",
-      "marketCap": 177958535000,
+      "time": "",
+      "marketCap": 186770113000,
       "quarter": "Sep/2026",
       "epsForecast": 0.81,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 1.02,
-      "surprise": null
+      "eps": 0.89,
+      "surprise": 9.88
     },
     {
       "date": "2026-11-04",
       "ticker": "QCOM",
       "name": "QUALCOMM Incorporated",
-      "time": "amc",
-      "marketCap": 172689965000,
+      "time": "",
+      "marketCap": 181890007000,
       "quarter": "Sep/2026",
       "epsForecast": 1.46,
       "estimates": 9,
       "lastYearEps": null,
-      "eps": 2.56,
-      "surprise": null
+      "eps": 1.45,
+      "surprise": -0.68
     },
     {
       "date": "2026-11-04",
       "ticker": "UBER",
       "name": "Uber Technologies, Inc.",
-      "time": "bmo",
-      "marketCap": 136034501000,
+      "time": "",
+      "marketCap": 142713668000,
       "quarter": "Sep/2026",
       "epsForecast": 0.94,
       "estimates": 7,
       "lastYearEps": null,
-      "eps": 3.11,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "CVS",
-      "name": "CVS Health Corporation",
-      "time": "bmo",
-      "marketCap": 116910678000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.62,
-      "estimates": 9,
-      "lastYearEps": null,
-      "eps": 1.6,
-      "surprise": null
+      "eps": 0.25,
+      "surprise": -73.4
     },
     {
       "date": "2026-11-04",
       "ticker": "MCK",
       "name": "McKesson Corporation",
-      "time": "amc",
-      "marketCap": 116546060000,
+      "time": "",
+      "marketCap": 124686402000,
       "quarter": "Sep/2026",
       "epsForecast": 10.69,
       "estimates": 6,
       "lastYearEps": null,
-      "eps": 9.86,
-      "surprise": null
+      "eps": 11.68,
+      "surprise": 9.26
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CVS",
+      "name": "CVS Health Corporation",
+      "time": "",
+      "marketCap": 102266470000,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.62,
+      "estimates": 9,
+      "lastYearEps": null,
+      "eps": 2.09,
+      "surprise": 29.01
     },
     {
       "date": "2026-11-04",
       "ticker": "EMR",
       "name": "Emerson Electric Company",
-      "time": "bmo",
-      "marketCap": 92812345000,
+      "time": "",
+      "marketCap": 95071429000,
       "quarter": "Sep/2026",
       "epsForecast": 1.85,
       "estimates": 7,
       "lastYearEps": null,
-      "eps": 1.62,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "MELI",
-      "name": "MercadoLibre, Inc.",
-      "time": "amc",
-      "marketCap": 84266197000,
-      "quarter": "Sep/2026",
-      "epsForecast": 9.41,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 8.32,
-      "surprise": null
+      "eps": 1.86,
+      "surprise": 0.54
     },
     {
       "date": "2026-11-04",
       "ticker": "APP",
       "name": "Applovin Corporation",
-      "time": "amc",
-      "marketCap": 82160165000,
+      "time": "",
+      "marketCap": 90941407000,
       "quarter": "Sep/2026",
       "epsForecast": 3.94,
       "estimates": 9,
       "lastYearEps": null,
-      "eps": 2.45,
-      "surprise": null
+      "eps": 4.3,
+      "surprise": 9.14
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "time": "",
+      "marketCap": 88206352000,
+      "quarter": "Sep/2026",
+      "epsForecast": 9.41,
+      "estimates": 3,
+      "lastYearEps": null,
+      "eps": 8.83,
+      "surprise": -6.16
     },
     {
       "date": "2026-11-04",
       "ticker": "MSI",
       "name": "Motorola Solutions, Inc.",
-      "time": "amc",
-      "marketCap": 81257447000,
+      "time": "",
+      "marketCap": 82248761000,
       "quarter": "Sep/2026",
       "epsForecast": 3.99,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 3.69,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "DDOG",
-      "name": "Datadog, Inc.",
-      "time": "bmo",
-      "marketCap": 79183225000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.18,
-      "estimates": 10,
-      "lastYearEps": null,
-      "eps": 0.11,
-      "surprise": null
+      "eps": 4.21,
+      "surprise": 5.51
     },
     {
       "date": "2026-11-04",
       "ticker": "MFC",
       "name": "Manulife Financial Corp",
-      "time": "amc",
-      "marketCap": 74830660000,
+      "time": "",
+      "marketCap": 76641223000,
       "quarter": "Sep/2026",
       "epsForecast": 0.83,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": 0.84,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "ALL",
-      "name": "Allstate Corporation (The)",
-      "time": "amc",
-      "marketCap": 66122355000,
-      "quarter": "Sep/2026",
-      "epsForecast": 7.03,
-      "estimates": 10,
-      "lastYearEps": null,
-      "eps": 11.17,
-      "surprise": null
+      "eps": 0.89,
+      "surprise": 7.23
     },
     {
       "date": "2026-11-04",
       "ticker": "GWW",
       "name": "W.W. Grainger, Inc.",
-      "time": "bmo",
-      "marketCap": 65846174000,
+      "time": "",
+      "marketCap": 70151676000,
       "quarter": "Sep/2026",
       "epsForecast": 11.64,
       "estimates": 7,
       "lastYearEps": null,
-      "eps": 10.21,
-      "surprise": null
+      "eps": 12.54,
+      "surprise": 7.73
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "ALL",
+      "name": "Allstate Corporation (The)",
+      "time": "",
+      "marketCap": 68033962000,
+      "quarter": "Sep/2026",
+      "epsForecast": 7.03,
+      "estimates": 10,
+      "lastYearEps": null,
+      "eps": 9.76,
+      "surprise": 38.83
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "DDOG",
+      "name": "Datadog, Inc.",
+      "time": "",
+      "marketCap": 67764638000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.18,
+      "estimates": 10,
+      "lastYearEps": null,
+      "eps": 0.33,
+      "surprise": 83.33
     },
     {
       "date": "2026-11-04",
       "ticker": "COR",
       "name": "Cencora, Inc.",
-      "time": "bmo",
-      "marketCap": 64976650000,
+      "time": "",
+      "marketCap": 67552817000,
       "quarter": "Sep/2026",
       "epsForecast": 4.56,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 3.84,
-      "surprise": null
+      "eps": 4.66,
+      "surprise": 2.19
     },
     {
       "date": "2026-11-04",
       "ticker": "MET",
       "name": "MetLife, Inc.",
-      "time": "amc",
-      "marketCap": 63973462000,
+      "time": "",
+      "marketCap": 65384223000,
       "quarter": "Sep/2026",
       "epsForecast": 2.71,
       "estimates": 8,
       "lastYearEps": null,
-      "eps": 2.34,
-      "surprise": null
+      "eps": 2.85,
+      "surprise": 5.17
     },
     {
       "date": "2026-11-04",
       "ticker": "AFL",
       "name": "Aflac Incorporated",
-      "time": "amc",
-      "marketCap": 62186623000,
+      "time": "",
+      "marketCap": 62818316000,
       "quarter": "Sep/2026",
       "epsForecast": 1.8,
       "estimates": 6,
       "lastYearEps": null,
-      "eps": 2.49,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "CVE",
-      "name": "Cenovus Energy Inc",
-      "time": "bmo",
-      "marketCap": 57605599000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.21,
-      "estimates": 2,
-      "lastYearEps": null,
-      "eps": 0.52,
-      "surprise": null
+      "eps": 2.43,
+      "surprise": 35
     },
     {
       "date": "2026-11-04",
       "ticker": "EW",
       "name": "Edwards Lifesciences Corporation",
-      "time": "amc",
-      "marketCap": 54867517000,
+      "time": "",
+      "marketCap": 57276867000,
       "quarter": "Sep/2026",
       "epsForecast": 0.73,
       "estimates": 9,
       "lastYearEps": null,
-      "eps": 0.67,
-      "surprise": null
+      "eps": 0.8,
+      "surprise": 9.59
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CVE",
+      "name": "Cenovus Energy Inc",
+      "time": "",
+      "marketCap": 53217755000,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.21,
+      "estimates": 2,
+      "lastYearEps": null,
+      "eps": 1.31,
+      "surprise": 8.26
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "MDLN",
+      "name": "Medline Inc.",
+      "time": "",
+      "marketCap": 53048447000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.32,
+      "estimates": 6,
+      "lastYearEps": null,
+      "eps": 0.42,
+      "surprise": 31.25
     },
     {
       "date": "2026-11-04",
       "ticker": "VMRK",
       "name": "Vivmark Residential",
       "time": "amc",
-      "marketCap": 48856498000,
+      "marketCap": 50179498000,
       "quarter": "Sep/2026",
       "epsForecast": 0.97,
       "estimates": 5,
@@ -14936,697 +14949,775 @@
       "date": "2026-11-04",
       "ticker": "SLF",
       "name": "Sun Life Financial Inc.",
-      "time": "amc",
-      "marketCap": 44824957000,
+      "time": "",
+      "marketCap": 45638742000,
       "quarter": "Sep/2026",
       "epsForecast": 1.45,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 1.35,
-      "surprise": null
+      "eps": 1.47,
+      "surprise": 1.38
     },
     {
       "date": "2026-11-04",
       "ticker": "RVMD",
       "name": "Revolution Medicines, Inc.",
-      "time": "amc",
-      "marketCap": 41630564000,
+      "time": "",
+      "marketCap": 42802983000,
       "quarter": "Sep/2026",
       "epsForecast": -2.34,
       "estimates": 11,
       "lastYearEps": null,
-      "eps": -1.61,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "COHR",
-      "name": "Coherent Corp.",
-      "time": "amc",
-      "marketCap": 40861970000,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.8,
-      "estimates": 8,
-      "lastYearEps": null,
-      "eps": 0.93,
-      "surprise": null
+      "eps": -1.9,
+      "surprise": 18.8
     },
     {
       "date": "2026-11-04",
       "ticker": "MLM",
       "name": "Martin Marietta Materials, Inc.",
-      "time": "bmo",
-      "marketCap": 38618726000,
+      "time": "",
+      "marketCap": 39527076000,
       "quarter": "Sep/2026",
       "epsForecast": 5.27,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": 5.97,
-      "surprise": null
+      "eps": 5.47,
+      "surprise": 3.8
     },
     {
       "date": "2026-11-04",
       "ticker": "RPRX",
       "name": "Royalty Pharma plc",
-      "time": "bmo",
-      "marketCap": 38180082000,
+      "time": "",
+      "marketCap": 38847082000,
       "quarter": "Sep/2026",
       "epsForecast": 1.18,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 1.17,
+      "eps": 1.21,
+      "surprise": 2.54
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "time": "",
+      "marketCap": 38419984000,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.8,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 1.8,
       "surprise": null
     },
     {
       "date": "2026-11-04",
       "ticker": "CHT",
       "name": "Chunghwa Telecom Co., Ltd.",
-      "time": "bmo",
-      "marketCap": 37724463000,
+      "time": "",
+      "marketCap": 37995975000,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": null,
       "lastYearEps": null,
-      "eps": 0.41,
+      "eps": 0.49,
       "surprise": null
     },
     {
       "date": "2026-11-04",
       "ticker": "TKO",
       "name": "TKO Group Holdings, Inc.",
-      "time": "amc",
-      "marketCap": 35431289000,
+      "time": "",
+      "marketCap": 36619903000,
       "quarter": "Sep/2026",
       "epsForecast": 1.2,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 0.5,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "NTR",
-      "name": "Nutrien Ltd.",
-      "time": "amc",
-      "marketCap": 33403357200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.66,
-      "estimates": 6,
-      "lastYearEps": null,
-      "eps": 0.93,
-      "surprise": null
+      "eps": 1.33,
+      "surprise": 10.83
     },
     {
       "date": "2026-11-04",
       "ticker": "EXPE",
       "name": "Expedia Group, Inc.",
-      "time": "amc",
-      "marketCap": 32719491100,
+      "time": "",
+      "marketCap": 36166963000,
       "quarter": "Sep/2026",
       "epsForecast": 8.09,
       "estimates": 8,
       "lastYearEps": null,
-      "eps": 7.03,
-      "surprise": null
+      "eps": 8.6,
+      "surprise": 6.3
     },
     {
       "date": "2026-11-04",
-      "ticker": "TS",
-      "name": "Tenaris S.A.",
-      "time": "amc",
-      "marketCap": 30485749800,
+      "ticker": "NTR",
+      "name": "Nutrien Ltd.",
+      "time": "",
+      "marketCap": 34615947000,
       "quarter": "Sep/2026",
-      "epsForecast": 0.8,
-      "estimates": 4,
+      "epsForecast": 0.66,
+      "estimates": 6,
       "lastYearEps": null,
-      "eps": 0.85,
-      "surprise": null
+      "eps": 0.49,
+      "surprise": -25.76
     },
     {
       "date": "2026-11-04",
       "ticker": "SN",
       "name": "SharkNinja, Inc.",
-      "time": "bmo",
-      "marketCap": 29666140200,
+      "time": "",
+      "marketCap": 30886088700,
       "quarter": "Sep/2026",
       "epsForecast": 1.78,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 1.45,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "ATO",
-      "name": "Atmos Energy Corporation",
-      "time": "amc",
-      "marketCap": 29365141500,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.14,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": 1.06,
-      "surprise": null
+      "eps": 2.04,
+      "surprise": 14.61
     },
     {
       "date": "2026-11-04",
       "ticker": "KHC",
       "name": "The Kraft Heinz Company",
-      "time": "bmo",
-      "marketCap": 29076398100,
+      "time": "",
+      "marketCap": 30167355400,
       "quarter": "Sep/2026",
       "epsForecast": 0.43,
       "estimates": 8,
       "lastYearEps": null,
-      "eps": 0.61,
-      "surprise": null
+      "eps": 0.53,
+      "surprise": 23.26
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "ATO",
+      "name": "Atmos Energy Corporation",
+      "time": "",
+      "marketCap": 29818030100,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.14,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": 1.17,
+      "surprise": 2.63
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "TS",
+      "name": "Tenaris S.A.",
+      "time": "",
+      "marketCap": 29606862800,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.81,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": 1.01,
+      "surprise": 24.69
     },
     {
       "date": "2026-11-04",
       "ticker": "CPAY",
       "name": "Corpay, Inc.",
-      "time": "amc",
-      "marketCap": 26695880700,
+      "time": "",
+      "marketCap": 27485108200,
       "quarter": "Sep/2026",
       "epsForecast": 6.74,
       "estimates": 6,
       "lastYearEps": null,
-      "eps": 5.41,
-      "surprise": null
+      "eps": 7.15,
+      "surprise": 6.08
     },
     {
       "date": "2026-11-04",
       "ticker": "ES",
       "name": "Eversource Energy",
-      "time": "amc",
-      "marketCap": 26001858600,
+      "time": "",
+      "marketCap": 26540503000,
       "quarter": "Sep/2026",
       "epsForecast": 0.97,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 1.19,
-      "surprise": null
+      "eps": 0.92,
+      "surprise": -5.15
     },
     {
       "date": "2026-11-04",
       "ticker": "UTHR",
       "name": "United Therapeutics Corporation",
-      "time": "bmo",
-      "marketCap": 25791031300,
+      "time": "",
+      "marketCap": 26098556900,
       "quarter": "Sep/2026",
       "epsForecast": 5.85,
       "estimates": 6,
       "lastYearEps": null,
-      "eps": 7.16,
-      "surprise": null
+      "eps": 5.71,
+      "surprise": -2.39
     },
     {
       "date": "2026-11-04",
       "ticker": "Q",
       "name": "Qnity Electronics, Inc.",
-      "time": "bmo",
-      "marketCap": 24872804400,
+      "time": "",
+      "marketCap": 24849791000,
       "quarter": "Sep/2026",
       "epsForecast": 1.18,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 1.01,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "GFS",
-      "name": "GlobalFoundries Inc.",
-      "time": "bmo",
-      "marketCap": 23907684400,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.39,
-      "estimates": 8,
-      "lastYearEps": null,
-      "eps": 0.34,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "TPL",
-      "name": "Texas Pacific Land Corporation",
-      "time": "amc",
-      "marketCap": 22899595300,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.35,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": 1.76,
-      "surprise": null
+      "eps": 1.46,
+      "surprise": 23.73
     },
     {
       "date": "2026-11-04",
       "ticker": "STE",
       "name": "STERIS plc",
-      "time": "amc",
-      "marketCap": 22556649500,
+      "time": "",
+      "marketCap": 24171251700,
       "quarter": "Sep/2026",
       "epsForecast": 2.67,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": 2.47,
-      "surprise": null
+      "eps": 2.94,
+      "surprise": 10.11
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "GFS",
+      "name": "GlobalFoundries Inc.",
+      "time": "",
+      "marketCap": 22486265900,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.39,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 0.45,
+      "surprise": 15.38
     },
     {
       "date": "2026-11-04",
       "ticker": "AMCR",
       "name": "Amcor plc",
-      "time": "amc",
-      "marketCap": 21711753200,
+      "time": "",
+      "marketCap": 22423765000,
       "quarter": "Sep/2026",
       "epsForecast": 0.96,
       "estimates": 5,
       "lastYearEps": null,
       "eps": 0.95,
-      "surprise": null
+      "surprise": -1.04
     },
     {
       "date": "2026-11-04",
       "ticker": "PTC",
       "name": "PTC Inc.",
-      "time": "amc",
-      "marketCap": 21056725000,
+      "time": "",
+      "marketCap": 21178251300,
       "quarter": "Sep/2026",
       "epsForecast": 1.59,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 3.1,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "BEP",
-      "name": "Brookfield Renewable Partners L.P.",
-      "time": "bmo",
-      "marketCap": 20543209500,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.51,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": -0.23,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "FIS",
-      "name": "Fidelity National Information Services, Inc.",
-      "time": "bmo",
-      "marketCap": 20107374600,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.61,
-      "estimates": 12,
-      "lastYearEps": null,
-      "eps": 1.51,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "PR",
-      "name": "Permian Resources Corporation",
-      "time": "amc",
-      "marketCap": 20101367800,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.6,
-      "estimates": 7,
-      "lastYearEps": null,
-      "eps": 0.37,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "RGLD",
-      "name": "Royal Gold, Inc.",
-      "time": "amc",
-      "marketCap": 19565357100,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.91,
-      "estimates": 2,
-      "lastYearEps": null,
-      "eps": 2.06,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "CRCL",
-      "name": "Circle Internet Group, Inc.",
-      "time": "bmo",
-      "marketCap": 19096543200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.42,
-      "estimates": 9,
-      "lastYearEps": null,
-      "eps": 0.64,
-      "surprise": null
+      "eps": 1.43,
+      "surprise": -10.06
     },
     {
       "date": "2026-11-04",
       "ticker": "CDW",
       "name": "CDW Corporation",
-      "time": "bmo",
-      "marketCap": 18723860500,
+      "time": "",
+      "marketCap": 21096689700,
       "quarter": "Sep/2026",
       "epsForecast": 2.77,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 2.55,
-      "surprise": null
+      "eps": 3.09,
+      "surprise": 11.55
     },
     {
       "date": "2026-11-04",
       "ticker": "ZBH",
       "name": "Zimmer Biomet Holdings, Inc.",
-      "time": "bmo",
-      "marketCap": 18513000400,
+      "time": "",
+      "marketCap": 21009756200,
       "quarter": "Sep/2026",
       "epsForecast": 1.89,
       "estimates": 9,
       "lastYearEps": null,
       "eps": 1.9,
-      "surprise": null
+      "surprise": 0.53
     },
     {
       "date": "2026-11-04",
-      "ticker": "CW",
-      "name": "Curtiss-Wright Corporation",
-      "time": "amc",
-      "marketCap": 18384488400,
+      "ticker": "BEP",
+      "name": "Brookfield Renewable Partners L.P.",
+      "time": "",
+      "marketCap": 20892872700,
       "quarter": "Sep/2026",
-      "epsForecast": 3.76,
-      "estimates": 5,
+      "epsForecast": -0.51,
+      "estimates": 3,
       "lastYearEps": null,
-      "eps": 3.4,
-      "surprise": null
+      "eps": -0.52,
+      "surprise": -1.96
     },
     {
       "date": "2026-11-04",
-      "ticker": "ITT",
-      "name": "ITT Inc.",
-      "time": "amc",
-      "marketCap": 18336833500,
+      "ticker": "RGLD",
+      "name": "Royal Gold, Inc.",
+      "time": "",
+      "marketCap": 20849831900,
       "quarter": "Sep/2026",
-      "epsForecast": 2.07,
+      "epsForecast": 2.92,
+      "estimates": 2,
+      "lastYearEps": null,
+      "eps": 2.8,
+      "surprise": -4.11
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "time": "",
+      "marketCap": 19840567300,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.35,
+      "estimates": 1,
+      "lastYearEps": null,
+      "eps": 2.42,
+      "surprise": 2.98
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CRCL",
+      "name": "Circle Internet Group, Inc.",
+      "time": "",
+      "marketCap": 19325032400,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.42,
+      "estimates": 9,
+      "lastYearEps": null,
+      "eps": 0.84,
+      "surprise": 100
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "PR",
+      "name": "Permian Resources Corporation",
+      "time": "",
+      "marketCap": 18786404400,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.6,
       "estimates": 7,
       "lastYearEps": null,
-      "eps": 1.78,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "WES",
-      "name": "Western Midstream Partners, LP",
-      "time": "amc",
-      "marketCap": 18125969400,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.89,
-      "estimates": 6,
-      "lastYearEps": null,
-      "eps": 0.87,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "CF",
-      "name": "CF Industries Holdings, Inc.",
-      "time": "amc",
-      "marketCap": 17677807600,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.93,
-      "estimates": 6,
-      "lastYearEps": null,
-      "eps": 2.19,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "HST",
-      "name": "Host Hotels & Resorts, Inc.",
-      "time": "amc",
-      "marketCap": 17662507000,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.38,
-      "estimates": 8,
-      "lastYearEps": null,
-      "eps": 0.35,
-      "surprise": null
+      "eps": 0.69,
+      "surprise": 15
     },
     {
       "date": "2026-11-04",
       "ticker": "NWS",
       "name": "News Corporation",
-      "time": "amc",
-      "marketCap": 17326698500,
+      "time": "",
+      "marketCap": 18045491200,
       "quarter": "Sep/2026",
       "epsForecast": 0.27,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": 0.22,
-      "surprise": null
+      "eps": 0.28,
+      "surprise": 3.7
     },
     {
       "date": "2026-11-04",
       "ticker": "NWSA",
       "name": "News Corporation",
-      "time": "amc",
-      "marketCap": 17326698500,
+      "time": "",
+      "marketCap": 18045491200,
       "quarter": "Sep/2026",
       "epsForecast": 0.26,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 0.22,
-      "surprise": null
+      "eps": 0.28,
+      "surprise": 7.69
     },
     {
       "date": "2026-11-04",
-      "ticker": "CRL",
-      "name": "Charles River Laboratories International, Inc.",
-      "time": "bmo",
-      "marketCap": 16797877200,
+      "ticker": "ITT",
+      "name": "ITT Inc.",
+      "time": "",
+      "marketCap": 17972082700,
       "quarter": "Sep/2026",
-      "epsForecast": 2.98,
+      "epsForecast": 2.07,
       "estimates": 7,
       "lastYearEps": null,
-      "eps": 2.43,
-      "surprise": null
+      "eps": 2.26,
+      "surprise": 9.18
     },
     {
       "date": "2026-11-04",
-      "ticker": "APA",
-      "name": "APA Corporation",
-      "time": "amc",
-      "marketCap": 16736291800,
+      "ticker": "HST",
+      "name": "Host Hotels & Resorts, Inc.",
+      "time": "",
+      "marketCap": 17888598000,
       "quarter": "Sep/2026",
-      "epsForecast": 1.44,
+      "epsForecast": 0.38,
       "estimates": 8,
       "lastYearEps": null,
-      "eps": 0.93,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "PAAS",
-      "name": "Pan American Silver Corp.",
-      "time": "amc",
-      "marketCap": 15896975400,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.66,
-      "estimates": 8,
-      "lastYearEps": null,
-      "eps": 0.48,
-      "surprise": null
+      "eps": 0.39,
+      "surprise": 2.63
     },
     {
       "date": "2026-11-04",
       "ticker": "SWK",
       "name": "Stanley Black & Decker, Inc.",
-      "time": "bmo",
-      "marketCap": 15799360500,
+      "time": "",
+      "marketCap": 17869799400,
       "quarter": "Sep/2026",
       "epsForecast": 1.54,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 1.43,
-      "surprise": null
+      "eps": 2.31,
+      "surprise": 50
     },
     {
       "date": "2026-11-04",
-      "ticker": "FICO",
-      "name": "Fair Isaac Corporation",
-      "time": "amc",
-      "marketCap": 15644895200,
+      "ticker": "WES",
+      "name": "Western Midstream Partners, LP",
+      "time": "",
+      "marketCap": 17576448000,
       "quarter": "Sep/2026",
-      "epsForecast": 9.2,
-      "estimates": 4,
+      "epsForecast": 0.89,
+      "estimates": 6,
       "lastYearEps": null,
-      "eps": 6.74,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "TRMB",
-      "name": "Trimble Inc.",
-      "time": "bmo",
-      "marketCap": 15298929700,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.73,
-      "estimates": 4,
-      "lastYearEps": null,
-      "eps": 0.7,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "W",
-      "name": "Wayfair Inc.",
-      "time": "bmo",
-      "marketCap": 15247285200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.31,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": 0.01,
-      "surprise": null
+      "eps": 0.78,
+      "surprise": -12.36
     },
     {
       "date": "2026-11-04",
       "ticker": "PFGC",
       "name": "Performance Food Group Company",
-      "time": "bmo",
-      "marketCap": 15227939800,
+      "time": "",
+      "marketCap": 17288626200,
       "quarter": "Sep/2026",
       "epsForecast": 1.26,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": 1.18,
+      "eps": 1.32,
+      "surprise": 4.76
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "PAAS",
+      "name": "Pan American Silver Corp.",
+      "time": "",
+      "marketCap": 17227716600,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.66,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 0.69,
+      "surprise": 4.55
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "W",
+      "name": "Wayfair Inc.",
+      "time": "",
+      "marketCap": 16923775000,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.31,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": 0.49,
+      "surprise": 58.06
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CF",
+      "name": "CF Industries Holdings, Inc.",
+      "time": "",
+      "marketCap": 16901442600,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.93,
+      "estimates": 6,
+      "lastYearEps": null,
+      "eps": 2.87,
+      "surprise": -2.05
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CW",
+      "name": "Curtiss-Wright Corporation",
+      "time": "",
+      "marketCap": 16699169800,
+      "quarter": "Sep/2026",
+      "epsForecast": 3.76,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": 3.94,
+      "surprise": 4.79
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "APA",
+      "name": "APA Corporation",
+      "time": "",
+      "marketCap": 15587138600,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.44,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 1.94,
+      "surprise": 34.72
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CRL",
+      "name": "Charles River Laboratories International, Inc.",
+      "time": "",
+      "marketCap": 15576716300,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.98,
+      "estimates": 7,
+      "lastYearEps": null,
+      "eps": 3.09,
+      "surprise": 3.69
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "FIS",
+      "name": "Fidelity National Information Services, Inc.",
+      "time": "",
+      "marketCap": 15347407900,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.61,
+      "estimates": 12,
+      "lastYearEps": null,
+      "eps": 1.61,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CG",
+      "name": "The Carlyle Group Inc.",
+      "time": "",
+      "marketCap": 15233226800,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.99,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 1.12,
+      "surprise": 13.13
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "FICO",
+      "name": "Fair Isaac Corporation",
+      "time": "",
+      "marketCap": 15140589600,
+      "quarter": "Sep/2026",
+      "epsForecast": 9.2,
+      "estimates": 4,
+      "lastYearEps": null,
+      "eps": 9.61,
+      "surprise": 4.46
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CDE",
+      "name": "Coeur Mining, Inc.",
+      "time": "",
+      "marketCap": 14987292700,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.1,
+      "estimates": 3,
+      "lastYearEps": null,
+      "eps": 0.1,
       "surprise": null
     },
     {
       "date": "2026-11-04",
       "ticker": "FLUT",
       "name": "Flutter Entertainment plc",
-      "time": "bmo",
-      "marketCap": 14669666300,
+      "time": "",
+      "marketCap": 14328063000,
       "quarter": "Sep/2026",
       "epsForecast": -0.21,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 1.25,
+      "eps": -0.47,
+      "surprise": -123.81
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "COKE",
+      "name": "Coca-Cola Consolidated, Inc.",
+      "time": "",
+      "marketCap": 13591097300,
+      "quarter": "Sep/2026",
+      "epsForecast": null,
+      "estimates": null,
+      "lastYearEps": null,
+      "eps": 2.63,
       "surprise": null
     },
     {
       "date": "2026-11-04",
       "ticker": "MKSI",
       "name": "MKS Inc.",
-      "time": "amc",
-      "marketCap": 13873770500,
+      "time": "",
+      "marketCap": 13182043100,
       "quarter": "Sep/2026",
       "epsForecast": 3.64,
       "estimates": 7,
       "lastYearEps": null,
-      "eps": 1.93,
-      "surprise": null
+      "eps": 4.18,
+      "surprise": 14.84
     },
     {
       "date": "2026-11-04",
-      "ticker": "CDE",
-      "name": "Coeur Mining, Inc.",
-      "time": "amc",
-      "marketCap": 13784608800,
+      "ticker": "SMMT",
+      "name": "Summit Therapeutics Inc.",
+      "time": "",
+      "marketCap": 12931575800,
       "quarter": "Sep/2026",
-      "epsForecast": 0.1,
+      "epsForecast": -0.28,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 0.23,
-      "surprise": null
+      "eps": -0.26,
+      "surprise": 7.14
     },
     {
       "date": "2026-11-04",
-      "ticker": "COKE",
-      "name": "Coca-Cola Consolidated, Inc.",
-      "time": "amc",
-      "marketCap": 13729551400,
+      "ticker": "TRMB",
+      "name": "Trimble Inc.",
+      "time": "",
+      "marketCap": 12650006500,
       "quarter": "Sep/2026",
-      "epsForecast": null,
-      "estimates": 3,
+      "epsForecast": 0.73,
+      "estimates": 4,
       "lastYearEps": null,
-      "eps": 2.06,
-      "surprise": null
+      "eps": 0.71,
+      "surprise": -2.74
     },
     {
       "date": "2026-11-04",
       "ticker": "SITM",
       "name": "SiTime Corporation",
-      "time": "amc",
-      "marketCap": 13378002900,
+      "time": "",
+      "marketCap": 12126746600,
       "quarter": "Sep/2026",
       "epsForecast": 2.36,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": -0.2,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "WTS",
-      "name": "Watts Water Technologies, Inc.",
-      "time": "amc",
-      "marketCap": 12028914700,
-      "quarter": "Sep/2026",
-      "epsForecast": 3.15,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 2.5,
-      "surprise": null
+      "eps": 2.89,
+      "surprise": 22.46
     },
     {
       "date": "2026-11-04",
       "ticker": "PAYC",
       "name": "Paycom Software, Inc.",
-      "time": "amc",
-      "marketCap": 11853384700,
+      "time": "",
+      "marketCap": 12086405100,
       "quarter": "Sep/2026",
       "epsForecast": 2.37,
       "estimates": 6,
       "lastYearEps": null,
-      "eps": 1.39,
+      "eps": 2.91,
+      "surprise": 22.78
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "SKM",
+      "name": "SK Telecom Co., Ltd.",
+      "time": "",
+      "marketCap": 12002218000,
+      "quarter": "Sep/2026",
+      "epsForecast": null,
+      "estimates": null,
+      "lastYearEps": null,
+      "eps": 0.75,
       "surprise": null
     },
     {
       "date": "2026-11-04",
       "ticker": "UHAL",
       "name": "U-Haul Holding Company",
-      "time": "amc",
-      "marketCap": 11494487000,
+      "time": "",
+      "marketCap": 11819124700,
       "quarter": "Sep/2026",
       "epsForecast": 0.84,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": 0.49,
-      "surprise": null
+      "eps": 0.66,
+      "surprise": -21.43
     },
     {
       "date": "2026-11-04",
       "ticker": "UHAL.B",
       "name": "U-Haul Holding Company",
-      "time": "amc",
-      "marketCap": 11494487000,
+      "time": "",
+      "marketCap": 11819124700,
       "quarter": "Sep/2026",
       "epsForecast": null,
+      "estimates": null,
+      "lastYearEps": null,
+      "eps": 0.66,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "FIG",
+      "name": "Figma, Inc.",
+      "time": "",
+      "marketCap": 11795508200,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.22,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": -0.2,
+      "surprise": 9.09
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "WTS",
+      "name": "Watts Water Technologies, Inc.",
+      "time": "",
+      "marketCap": 11794231300,
+      "quarter": "Sep/2026",
+      "epsForecast": 3.15,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 0.49,
-      "surprise": null
+      "eps": 3.4,
+      "surprise": 7.94
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "AMH",
+      "name": "American Homes 4 Rent",
+      "time": "",
+      "marketCap": 11720041500,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.47,
+      "estimates": 5,
+      "lastYearEps": null,
+      "eps": 0.5,
+      "surprise": 6.38
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
+      "time": "",
+      "marketCap": 11444830200,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.59,
+      "estimates": 8,
+      "lastYearEps": null,
+      "eps": 1.99,
+      "surprise": 25.16
     },
     {
       "date": "2026-11-04",
       "ticker": "TECH",
       "name": "Bio-Techne Corp",
       "time": "",
-      "marketCap": 11394413600,
+      "marketCap": 11405390800,
       "quarter": "Sep/2026",
       "epsForecast": 0.4,
       "estimates": 2,
@@ -15636,153 +15727,140 @@
     },
     {
       "date": "2026-11-04",
-      "ticker": "AMH",
-      "name": "American Homes 4 Rent",
-      "time": "amc",
-      "marketCap": 11321352200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.47,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": 0.47,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "HUBS",
-      "name": "HubSpot, Inc.",
-      "time": "amc",
-      "marketCap": 11278238700,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.93,
-      "estimates": 7,
-      "lastYearEps": null,
-      "eps": 0.04,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "FIG",
-      "name": "Figma, Inc.",
-      "time": "amc",
-      "marketCap": 11209197600,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.22,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": -2.65,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "NYT",
-      "name": "New York Times Company (The)",
-      "time": "bmo",
-      "marketCap": 10772952100,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.65,
-      "estimates": 4,
-      "lastYearEps": null,
-      "eps": 0.59,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "PODD",
-      "name": "Insulet Corporation",
-      "time": "bmo",
-      "marketCap": 10740191200,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.59,
-      "estimates": 8,
-      "lastYearEps": null,
-      "eps": 1.24,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
       "ticker": "CHYM",
       "name": "Chime Financial, Inc.",
-      "time": "amc",
-      "marketCap": 10676100100,
+      "time": "",
+      "marketCap": 11308337200,
       "quarter": "Sep/2026",
       "epsForecast": 0.09,
       "estimates": 7,
       "lastYearEps": null,
-      "eps": -0.15,
-      "surprise": null
+      "eps": 0.15,
+      "surprise": 66.67
     },
     {
       "date": "2026-11-04",
       "ticker": "ALB",
       "name": "Albemarle Corporation",
-      "time": "amc",
-      "marketCap": 10642876400,
+      "time": "",
+      "marketCap": 11206940700,
       "quarter": "Sep/2026",
       "epsForecast": 2.56,
       "estimates": 6,
       "lastYearEps": null,
-      "eps": -0.19,
-      "surprise": null
+      "eps": 2.58,
+      "surprise": 0.78
     },
     {
       "date": "2026-11-04",
-      "ticker": "BEPC",
-      "name": "Brookfield Renewable Corporation",
-      "time": "bmo",
-      "marketCap": 10620051500,
+      "ticker": "HUBS",
+      "name": "HubSpot, Inc.",
+      "time": "",
+      "marketCap": 10803013600,
       "quarter": "Sep/2026",
-      "epsForecast": -0.9,
-      "estimates": 1,
+      "epsForecast": 0.93,
+      "estimates": 7,
       "lastYearEps": null,
-      "eps": null,
-      "surprise": null
+      "eps": 1.24,
+      "surprise": 33.33
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "NYT",
+      "name": "New York Times Company (The)",
+      "time": "",
+      "marketCap": 10673440800,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.65,
+      "estimates": 4,
+      "lastYearEps": null,
+      "eps": 0.68,
+      "surprise": 4.62
     },
     {
       "date": "2026-11-04",
       "ticker": "QGEN",
       "name": "Qiagen N.V.",
-      "time": "amc",
-      "marketCap": 10382046200,
+      "time": "",
+      "marketCap": 10474779600,
       "quarter": "Sep/2026",
       "epsForecast": 0.63,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 0.64,
-      "surprise": null
+      "eps": 0.65,
+      "surprise": 3.17
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "PCVX",
+      "name": "Vaxcyte, Inc.",
+      "time": "",
+      "marketCap": 10337352700,
+      "quarter": "Sep/2026",
+      "epsForecast": -1.84,
+      "estimates": 2,
+      "lastYearEps": null,
+      "eps": -1.99,
+      "surprise": -8.15
     },
     {
       "date": "2026-11-04",
       "ticker": "BIO",
       "name": "Bio-Rad Laboratories, Inc.",
-      "time": "amc",
-      "marketCap": 10024409100,
+      "time": "",
+      "marketCap": 10160239600,
       "quarter": "Sep/2026",
       "epsForecast": 2.61,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": 2.26,
-      "surprise": null
+      "eps": 2.65,
+      "surprise": 1.53
     },
     {
       "date": "2026-11-04",
       "ticker": "BIO.B",
       "name": "Bio-Rad Laboratories, Inc.",
-      "time": "amc",
-      "marketCap": 10024409100,
+      "time": "",
+      "marketCap": 10160239600,
       "quarter": "Sep/2026",
       "epsForecast": null,
+      "estimates": null,
+      "lastYearEps": null,
+      "eps": 2.65,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "OC",
+      "name": "Owens Corning Inc",
+      "time": "",
+      "marketCap": 10102421500,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.96,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 2.26,
-      "surprise": null
+      "eps": 2.44,
+      "surprise": -17.57
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "SNAP",
+      "name": "Snap Inc.",
+      "time": "",
+      "marketCap": 10011890700,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.01,
+      "estimates": 6,
+      "lastYearEps": null,
+      "eps": 0.03,
+      "surprise": 400
     },
     {
       "date": "2026-11-04",
       "ticker": "LLYVK",
       "name": "Liberty Live Holdings, Inc.",
       "time": "",
-      "marketCap": 9413069800,
+      "marketCap": 9786611700,
       "quarter": "Sep/2026",
       "epsForecast": 1.06,
       "estimates": 1,
@@ -15792,504 +15870,530 @@
     },
     {
       "date": "2026-11-04",
-      "ticker": "OC",
-      "name": "Owens Corning Inc",
-      "time": "bmo",
-      "marketCap": 9308773400,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.96,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 3.67,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
       "ticker": "CAI",
       "name": "Caris Life Sciences, Inc.",
-      "time": "amc",
-      "marketCap": 9283252200,
+      "time": "",
+      "marketCap": 9387811800,
       "quarter": "Sep/2026",
       "epsForecast": 0.03,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 0.08,
-      "surprise": null
+      "eps": 0.05,
+      "surprise": 66.67
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "SOLS",
+      "name": "Solstice Advanced Materials Inc.",
+      "time": "",
+      "marketCap": 9165493200,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.69,
+      "estimates": 2,
+      "lastYearEps": null,
+      "eps": 0.8,
+      "surprise": 15.94
     },
     {
       "date": "2026-11-04",
       "ticker": "CYTK",
       "name": "Cytokinetics, Incorporated",
-      "time": "amc",
-      "marketCap": 8662549500,
+      "time": "",
+      "marketCap": 8841889800,
       "quarter": "Sep/2026",
       "epsForecast": -1.5,
       "estimates": 9,
       "lastYearEps": null,
-      "eps": -1.54,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "HUT",
-      "name": "Hut 8 Corp.",
-      "time": "bmo",
-      "marketCap": 7823734800,
-      "quarter": "Sep/2026",
-      "epsForecast": -1.06,
-      "estimates": 5,
-      "lastYearEps": null,
-      "eps": -0.07,
-      "surprise": null
+      "eps": -1.37,
+      "surprise": 8.67
     },
     {
       "date": "2026-11-04",
       "ticker": "VIAV",
       "name": "Viavi Solutions Inc.",
-      "time": "amc",
-      "marketCap": 7441585700,
+      "time": "",
+      "marketCap": 7275666900,
       "quarter": "Sep/2026",
       "epsForecast": 0.35,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 0.09,
-      "surprise": null
+      "eps": 0.43,
+      "surprise": 22.86
     },
     {
       "date": "2026-11-04",
       "ticker": "ELF",
       "name": "e.l.f. Beauty, Inc.",
-      "time": "amc",
-      "marketCap": 6579391500,
+      "time": "",
+      "marketCap": 6705078800,
       "quarter": "Sep/2026",
       "epsForecast": 0.37,
       "estimates": 9,
       "lastYearEps": null,
-      "eps": 0.3,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "NICE",
-      "name": "NICE Ltd",
-      "time": "bmo",
-      "marketCap": 6312818700,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.1,
-      "estimates": 7,
-      "lastYearEps": null,
-      "eps": 2.67,
-      "surprise": null
+      "eps": 0.8,
+      "surprise": 116.22
     },
     {
       "date": "2026-11-04",
       "ticker": "EXP",
       "name": "Eagle Materials Inc",
-      "time": "bmo",
-      "marketCap": 5912975900,
+      "time": "",
+      "marketCap": 6079542800,
       "quarter": "Sep/2026",
       "epsForecast": 3.71,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 4.23,
-      "surprise": null
+      "eps": 3.63,
+      "surprise": -2.16
     },
     {
       "date": "2026-11-04",
-      "ticker": "CIGI",
-      "name": "Colliers International Group Inc.",
-      "time": "bmo",
-      "marketCap": 5277568000,
+      "ticker": "HUT",
+      "name": "Hut 8 Corp.",
+      "time": "",
+      "marketCap": 6008934900,
       "quarter": "Sep/2026",
-      "epsForecast": 1.78,
-      "estimates": 4,
+      "epsForecast": -1.06,
+      "estimates": 5,
       "lastYearEps": null,
-      "eps": 1.36,
-      "surprise": null
+      "eps": -1.23,
+      "surprise": -16.04
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "NICE",
+      "name": "NICE Ltd",
+      "time": "",
+      "marketCap": 5916002300,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.1,
+      "estimates": 7,
+      "lastYearEps": null,
+      "eps": 2.13,
+      "surprise": 1.43
     },
     {
       "date": "2026-11-04",
       "ticker": "RIOT",
       "name": "Riot Platforms, Inc.",
-      "time": "bmo",
-      "marketCap": 5261130200,
+      "time": "",
+      "marketCap": 5767729700,
       "quarter": "Sep/2026",
       "epsForecast": -0.34,
       "estimates": 6,
       "lastYearEps": null,
-      "eps": 0.26,
-      "surprise": null
+      "eps": 0.01,
+      "surprise": 102.94
     },
     {
       "date": "2026-11-04",
       "ticker": "NWE",
       "name": "NorthWestern Energy Group, Inc.",
-      "time": "amc",
-      "marketCap": 4918351900,
+      "time": "",
+      "marketCap": 5044463600,
       "quarter": "Sep/2026",
       "epsForecast": 0.73,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 0.79,
-      "surprise": null
+      "eps": 0.58,
+      "surprise": -20.55
     },
     {
       "date": "2026-11-04",
-      "ticker": "OPLN",
-      "name": "OPENLANE, Inc.",
-      "time": "bmo",
-      "marketCap": 4746076200,
+      "ticker": "CIGI",
+      "name": "Colliers International Group Inc.",
+      "time": "",
+      "marketCap": 5024345100,
       "quarter": "Sep/2026",
-      "epsForecast": 0.39,
+      "epsForecast": 1.78,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 0.35,
-      "surprise": null
+      "eps": 1.82,
+      "surprise": 2.25
     },
     {
       "date": "2026-11-04",
       "ticker": "ESAB",
       "name": "ESAB Corporation",
-      "time": "bmo",
-      "marketCap": 4727861800,
+      "time": "",
+      "marketCap": 4871469600,
       "quarter": "Sep/2026",
       "epsForecast": 1.33,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 1.32,
-      "surprise": null
+      "eps": 1.3,
+      "surprise": -2.26
     },
     {
       "date": "2026-11-04",
-      "ticker": "TPC",
-      "name": "Tutor Perini Corporation",
-      "time": "amc",
-      "marketCap": 4355351600,
+      "ticker": "OPLN",
+      "name": "OPENLANE, Inc.",
+      "time": "",
+      "marketCap": 4487288300,
       "quarter": "Sep/2026",
-      "epsForecast": 1.34,
-      "estimates": 2,
+      "epsForecast": 0.39,
+      "estimates": 4,
       "lastYearEps": null,
-      "eps": 1.15,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "HCC",
-      "name": "Warrior Met Coal, Inc.",
-      "time": "amc",
-      "marketCap": 4259016450,
-      "quarter": "Sep/2026",
-      "epsForecast": 1.71,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": 0.7,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "VCYT",
-      "name": "Veracyte, Inc.",
-      "time": "amc",
-      "marketCap": 4042849790,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.28,
-      "estimates": 2,
-      "lastYearEps": null,
-      "eps": 0.38,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "ARQT",
-      "name": "Arcutis Biotherapeutics, Inc.",
-      "time": "amc",
-      "marketCap": 4022142720,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.17,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 0.06,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "NVST",
-      "name": "Envista Holdings Corporation",
-      "time": "amc",
-      "marketCap": 3978500610,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.35,
-      "estimates": 6,
-      "lastYearEps": null,
-      "eps": 0.32,
-      "surprise": null
+      "eps": 0.43,
+      "surprise": 10.26
     },
     {
       "date": "2026-11-04",
       "ticker": "AVNT",
       "name": "Avient Corporation",
-      "time": "bmo",
-      "marketCap": 3966870530,
+      "time": "",
+      "marketCap": 4389697500,
       "quarter": "Sep/2026",
       "epsForecast": 0.81,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 0.7,
-      "surprise": null
+      "eps": 0.86,
+      "surprise": 6.17
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "TPC",
+      "name": "Tutor Perini Corporation",
+      "time": "",
+      "marketCap": 4370070500,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.34,
+      "estimates": 2,
+      "lastYearEps": null,
+      "eps": 1.83,
+      "surprise": 36.57
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "NVST",
+      "name": "Envista Holdings Corporation",
+      "time": "",
+      "marketCap": 4367195600,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.35,
+      "estimates": 6,
+      "lastYearEps": null,
+      "eps": 0.4,
+      "surprise": 14.29
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "ARQT",
+      "name": "Arcutis Biotherapeutics, Inc.",
+      "time": "",
+      "marketCap": 4279811330,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.17,
+      "estimates": 3,
+      "lastYearEps": null,
+      "eps": 0.06,
+      "surprise": -64.71
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "HCC",
+      "name": "Warrior Met Coal, Inc.",
+      "time": "",
+      "marketCap": 4272744960,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.71,
+      "estimates": 1,
+      "lastYearEps": null,
+      "eps": 0.93,
+      "surprise": -45.61
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "VCYT",
+      "name": "Veracyte, Inc.",
+      "time": "",
+      "marketCap": 4222121220,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.29,
+      "estimates": 2,
+      "lastYearEps": null,
+      "eps": 0.38,
+      "surprise": 31.03
     },
     {
       "date": "2026-11-04",
       "ticker": "RLAY",
       "name": "Relay Therapeutics, Inc.",
-      "time": "amc",
-      "marketCap": 3821830140,
+      "time": "",
+      "marketCap": 3951123710,
       "quarter": "Sep/2026",
       "epsForecast": -0.4,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": -0.43,
+      "eps": -0.37,
+      "surprise": 7.5
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "TRMD",
+      "name": "TORM plc",
+      "time": "",
+      "marketCap": 3863775230,
+      "quarter": "Sep/2026",
+      "epsForecast": null,
+      "estimates": null,
+      "lastYearEps": null,
+      "eps": 1.91,
       "surprise": null
     },
     {
       "date": "2026-11-04",
       "ticker": "CXT",
       "name": "Crane NXT, Co.",
-      "time": "amc",
-      "marketCap": 3455980800,
+      "time": "",
+      "marketCap": 3546927620,
       "quarter": "Sep/2026",
       "epsForecast": 1.2,
       "estimates": 4,
       "lastYearEps": null,
       "eps": 1.28,
-      "surprise": null
+      "surprise": 6.67
     },
     {
       "date": "2026-11-04",
       "ticker": "CWK",
       "name": "Cushman & Wakefield Ltd.",
-      "time": "bmo",
-      "marketCap": 3196800770,
+      "time": "",
+      "marketCap": 3504275710,
       "quarter": "Sep/2026",
       "epsForecast": 0.36,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": 0.29,
-      "surprise": null
+      "eps": 0.37,
+      "surprise": 2.78
     },
     {
       "date": "2026-11-04",
       "ticker": "ACHC",
       "name": "Acadia Healthcare Company, Inc.",
-      "time": "amc",
-      "marketCap": 2757630210,
+      "time": "",
+      "marketCap": 3002483970,
       "quarter": "Sep/2026",
       "epsForecast": 0.46,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 0.72,
-      "surprise": null
+      "eps": 0.6,
+      "surprise": 30.43
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "VGNT",
+      "name": "Versigent PLC",
+      "time": "",
+      "marketCap": 2972956160,
+      "quarter": "Sep/2026",
+      "epsForecast": 1.79,
+      "estimates": 3,
+      "lastYearEps": null,
+      "eps": 1.91,
+      "surprise": 6.7
     },
     {
       "date": "2026-11-04",
       "ticker": "UWMC",
       "name": "UWM Holdings Corporation",
-      "time": "bmo",
-      "marketCap": 2555068670,
+      "time": "",
+      "marketCap": 2715764990,
       "quarter": "Sep/2026",
       "epsForecast": 0.03,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": 0.01,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "ADMA",
-      "name": "ADMA Biologics Inc",
-      "time": "amc",
-      "marketCap": 2488469760,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.19,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": 0.16,
-      "surprise": null
+      "eps": 0.1,
+      "surprise": 233.33
     },
     {
       "date": "2026-11-04",
       "ticker": "NAMS",
       "name": "NewAmsterdam Pharma Company N.V.",
       "time": "",
-      "marketCap": 2378789630,
+      "marketCap": 2501912830,
       "quarter": "Sep/2026",
       "epsForecast": -0.5,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": -0.41,
-      "surprise": null
+      "eps": -0.14,
+      "surprise": 72
     },
     {
       "date": "2026-11-04",
-      "ticker": "BCRX",
-      "name": "BioCryst Pharmaceuticals, Inc.",
-      "time": "bmo",
-      "marketCap": 2189935870,
+      "ticker": "ADMA",
+      "name": "ADMA Biologics Inc",
+      "time": "",
+      "marketCap": 2347359490,
       "quarter": "Sep/2026",
-      "epsForecast": 0.1,
-      "estimates": 4,
+      "epsForecast": 0.19,
+      "estimates": 1,
       "lastYearEps": null,
-      "eps": 0.06,
-      "surprise": null
+      "eps": 0.22,
+      "surprise": 15.79
     },
     {
       "date": "2026-11-04",
       "ticker": "SDGR",
       "name": "Schrodinger, Inc.",
-      "time": "amc",
-      "marketCap": 2033217020,
+      "time": "",
+      "marketCap": 2133456510,
       "quarter": "Sep/2026",
-      "epsForecast": -0.65,
+      "epsForecast": -0.66,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": -0.45,
-      "surprise": null
+      "eps": -0.5,
+      "surprise": 24.24
     },
     {
       "date": "2026-11-04",
       "ticker": "SMA",
       "name": "SmartStop Self Storage REIT, Inc.",
-      "time": "amc",
-      "marketCap": 2029270270,
+      "time": "",
+      "marketCap": 2111769980,
       "quarter": "Sep/2026",
       "epsForecast": 0.5,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": 0.47,
-      "surprise": null
+      "eps": 0.51,
+      "surprise": 2
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "BCRX",
+      "name": "BioCryst Pharmaceuticals, Inc.",
+      "time": "",
+      "marketCap": 2105609220,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.1,
+      "estimates": 4,
+      "lastYearEps": null,
+      "eps": 0.14,
+      "surprise": 40
     },
     {
       "date": "2026-11-04",
       "ticker": "ATS",
       "name": "ATS Corporation",
-      "time": "bmo",
-      "marketCap": 1835452540,
+      "time": "",
+      "marketCap": 1707128830,
       "quarter": "Sep/2026",
       "epsForecast": 0.22,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": 0.33,
-      "surprise": null
+      "eps": 0.19,
+      "surprise": -13.64
     },
     {
       "date": "2026-11-04",
       "ticker": "LILA",
       "name": "Liberty Latin America Ltd.",
-      "time": "amc",
-      "marketCap": 1710206980,
+      "time": "",
+      "marketCap": 1696493950,
       "quarter": "Sep/2026",
       "epsForecast": -0.16,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": 0.02,
-      "surprise": null
+      "eps": -0.42,
+      "surprise": -162.5
     },
     {
       "date": "2026-11-04",
       "ticker": "NUVB",
       "name": "Nuvation Bio Inc.",
-      "time": "amc",
-      "marketCap": 1646768000,
+      "time": "",
+      "marketCap": 1660812930,
       "quarter": "Sep/2026",
       "epsForecast": -0.11,
       "estimates": 4,
       "lastYearEps": null,
-      "eps": -0.16,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "CDRE",
-      "name": "Cadre Holdings, Inc.",
-      "time": "amc",
-      "marketCap": 1330012030,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.33,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 0.27,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "GT",
-      "name": "The Goodyear Tire & Rubber Company",
-      "time": "amc",
-      "marketCap": 1278270340,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.03,
-      "estimates": 3,
-      "lastYearEps": null,
-      "eps": 0.28,
-      "surprise": null
+      "eps": -0.12,
+      "surprise": -9.09
     },
     {
       "date": "2026-11-04",
       "ticker": "USPH",
       "name": "U.S. Physical Therapy, Inc.",
-      "time": "amc",
-      "marketCap": 1264549380,
+      "time": "",
+      "marketCap": 1330806270,
       "quarter": "Sep/2026",
       "epsForecast": 0.76,
       "estimates": 5,
       "lastYearEps": null,
-      "eps": 0.66,
-      "surprise": null
+      "eps": 0.8,
+      "surprise": 5.26
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "CDRE",
+      "name": "Cadre Holdings, Inc.",
+      "time": "",
+      "marketCap": 1320591490,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.33,
+      "estimates": 3,
+      "lastYearEps": null,
+      "eps": 0.37,
+      "surprise": 12.12
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "GT",
+      "name": "The Goodyear Tire & Rubber Company",
+      "time": "",
+      "marketCap": 1309939200,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.01,
+      "estimates": 4,
+      "lastYearEps": null,
+      "eps": -0.11,
+      "surprise": -1000
     },
     {
       "date": "2026-11-04",
       "ticker": "WOLF",
       "name": "Wolfspeed, Inc.",
-      "time": "amc",
-      "marketCap": 1186703360,
+      "time": "",
+      "marketCap": 1206287620,
       "quarter": "Sep/2026",
       "epsForecast": -2.18,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": -0.63,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "XPEL",
-      "name": "XPEL, Inc.",
-      "time": "bmo",
-      "marketCap": 1171481090,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.55,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": 0.47,
-      "surprise": null
+      "eps": -2.22,
+      "surprise": -1.83
     },
     {
       "date": "2026-11-04",
       "ticker": "GOLD",
       "name": "Gold.com, Inc.",
-      "time": "amc",
-      "marketCap": 1138253180,
+      "time": "",
+      "marketCap": 1205465980,
       "quarter": "Sep/2026",
       "epsForecast": 0.88,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": 0.2,
-      "surprise": null
+      "eps": 0.44,
+      "surprise": -50
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "XPEL",
+      "name": "XPEL, Inc.",
+      "time": "",
+      "marketCap": 1161555580,
+      "quarter": "Sep/2026",
+      "epsForecast": 0.55,
+      "estimates": 1,
+      "lastYearEps": null,
+      "eps": 0.62,
+      "surprise": 12.73
     },
     {
       "date": "2026-11-04",
       "ticker": "BORR",
       "name": "Borr Drilling Limited",
       "time": "",
-      "marketCap": 1064645700,
+      "marketCap": 1024644610,
       "quarter": "Sep/2026",
       "epsForecast": -0.11,
       "estimates": 1,
@@ -16301,130 +16405,117 @@
       "date": "2026-11-04",
       "ticker": "CODI",
       "name": "Compass Diversified",
-      "time": "amc",
-      "marketCap": 904336320,
+      "time": "",
+      "marketCap": 926154750,
       "quarter": "Sep/2026",
       "epsForecast": 0.06,
       "estimates": 3,
       "lastYearEps": null,
-      "eps": -0.98,
-      "surprise": null
+      "eps": 0.08,
+      "surprise": 33.33
     },
     {
       "date": "2026-11-04",
       "ticker": "MNTN",
       "name": "MNTN, Inc.",
-      "time": "amc",
-      "marketCap": 727834750,
+      "time": "",
+      "marketCap": 775708800,
       "quarter": "Sep/2026",
       "epsForecast": 0.25,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": 0.08,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "PCT",
-      "name": "PureCycle Technologies, Inc.",
-      "time": "amc",
-      "marketCap": 626822980,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.21,
-      "estimates": 2,
-      "lastYearEps": null,
-      "eps": -0.44,
-      "surprise": null
+      "eps": 0.1,
+      "surprise": -60
     },
     {
       "date": "2026-11-04",
       "ticker": "AEVA",
       "name": "Aeva Technologies, Inc.",
-      "time": "amc",
-      "marketCap": 623169470,
+      "time": "",
+      "marketCap": 661507650,
       "quarter": "Sep/2026",
       "epsForecast": -0.58,
       "estimates": 2,
       "lastYearEps": null,
-      "eps": -0.56,
-      "surprise": null
+      "eps": -0.55,
+      "surprise": 5.17
     },
     {
       "date": "2026-11-04",
-      "ticker": "ITIC",
-      "name": "Investors Title Company",
+      "ticker": "PCT",
+      "name": "PureCycle Technologies, Inc.",
       "time": "",
-      "marketCap": 504227104,
+      "marketCap": 560524420,
       "quarter": "Sep/2026",
-      "epsForecast": null,
-      "estimates": 3,
+      "epsForecast": -0.21,
+      "estimates": 2,
       "lastYearEps": null,
-      "eps": 6.45,
-      "surprise": null
+      "eps": -0.29,
+      "surprise": -38.1
     },
     {
       "date": "2026-11-04",
       "ticker": "SD",
       "name": "SandRidge Energy, Inc.",
-      "time": "amc",
-      "marketCap": 496067456,
+      "time": "",
+      "marketCap": 468260992,
       "quarter": "Sep/2026",
       "epsForecast": 0.51,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": 0.42,
-      "surprise": null
+      "eps": 0.64,
+      "surprise": 25.49
     },
     {
       "date": "2026-11-04",
       "ticker": "XRN",
       "name": "Chiron Real Estate Inc.",
-      "time": "amc",
-      "marketCap": 402165280,
+      "time": "",
+      "marketCap": 418712576,
       "quarter": "Sep/2026",
       "epsForecast": 0.55,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": 1.12,
+      "eps": 0.75,
+      "surprise": 36.36
+    },
+    {
+      "date": "2026-11-04",
+      "ticker": "SMRT",
+      "name": "SmartRent, Inc.",
+      "time": "",
+      "marketCap": 310411104,
+      "quarter": "Sep/2026",
+      "epsForecast": -0.02,
+      "estimates": 1,
+      "lastYearEps": null,
+      "eps": -0.02,
       "surprise": null
     },
     {
       "date": "2026-11-04",
       "ticker": "SEG",
       "name": "Seaport Entertainment Group Inc.",
-      "time": "amc",
-      "marketCap": 291673120,
+      "time": "",
+      "marketCap": 301280288,
       "quarter": "Sep/2026",
       "epsForecast": -0.05,
       "estimates": 1,
       "lastYearEps": null,
-      "eps": -0.57,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-04",
-      "ticker": "SMRT",
-      "name": "SmartRent, Inc.",
-      "time": "bmo",
-      "marketCap": 262508160,
-      "quarter": "Sep/2026",
-      "epsForecast": -0.02,
-      "estimates": 1,
-      "lastYearEps": null,
-      "eps": -0.03,
-      "surprise": null
+      "eps": -0.23,
+      "surprise": -360
     },
     {
       "date": "2026-11-04",
       "ticker": "MX",
       "name": "Magnachip Semiconductor Corporation",
-      "time": "amc",
-      "marketCap": 95864120,
+      "time": "",
+      "marketCap": 91679576,
       "quarter": "Sep/2026",
       "epsForecast": null,
-      "estimates": 3,
+      "estimates": null,
       "lastYearEps": null,
-      "eps": -0.01,
+      "eps": -0.35,
       "surprise": null
     },
     {
@@ -19903,7 +19994,7 @@
       "ticker": "BIDU",
       "name": "Baidu, Inc.",
       "time": "bmo",
-      "marketCap": 27366520800,
+      "marketCap": 26189246500,
       "quarter": "Sep/2026",
       "epsForecast": 0.57,
       "estimates": 2,
@@ -19916,7 +20007,7 @@
       "ticker": "TCOM",
       "name": "Trip.com Group Limited",
       "time": "",
-      "marketCap": 26882115600,
+      "marketCap": 26057201700,
       "quarter": "Sep/2026",
       "epsForecast": 1.02,
       "estimates": 2,
@@ -19929,7 +20020,7 @@
       "ticker": "TSN",
       "name": "Tyson Foods, Inc.",
       "time": "bmo",
-      "marketCap": 21118644200,
+      "marketCap": 20038615000,
       "quarter": "Sep/2026",
       "epsForecast": 0.65,
       "estimates": 4,
@@ -19939,23 +20030,10 @@
     },
     {
       "date": "2026-11-16",
-      "ticker": "BEKE",
-      "name": "KE Holdings Inc",
-      "time": "bmo",
-      "marketCap": 20981127200,
-      "quarter": "Sep/2026",
-      "epsForecast": 0.21,
-      "estimates": 2,
-      "lastYearEps": 0.1,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-16",
       "ticker": "HTHT",
       "name": "H World Group Limited",
-      "time": "bmo",
-      "marketCap": 15446921200,
+      "time": "",
+      "marketCap": 15040990200,
       "quarter": "Sep/2026",
       "epsForecast": 0.75,
       "estimates": 1,
@@ -19968,7 +20046,7 @@
       "ticker": "ARMK",
       "name": "Aramark",
       "time": "bmo",
-      "marketCap": 13795499000,
+      "marketCap": 14396563500,
       "quarter": "Sep/2026",
       "epsForecast": 0.75,
       "estimates": 5,
@@ -19981,7 +20059,7 @@
       "ticker": "ACM",
       "name": "AECOM",
       "time": "amc",
-      "marketCap": 8777096200,
+      "marketCap": 8526138400,
       "quarter": "Sep/2026",
       "epsForecast": 1.57,
       "estimates": 2,
@@ -19994,7 +20072,7 @@
       "ticker": "XP",
       "name": "XP Inc.",
       "time": "",
-      "marketCap": 7862792200,
+      "marketCap": 7546622000,
       "quarter": "Sep/2026",
       "epsForecast": 0.53,
       "estimates": 3,
@@ -20007,7 +20085,7 @@
       "ticker": "IMTX",
       "name": "Immatics N.V.",
       "time": "",
-      "marketCap": 1033954880,
+      "marketCap": 1058644100,
       "quarter": "Sep/2026",
       "epsForecast": -0.49,
       "estimates": 2,
@@ -20020,7 +20098,7 @@
       "ticker": "SHAZ",
       "name": "SharonAI Holdings, Inc.",
       "time": "amc",
-      "marketCap": 874321600,
+      "marketCap": 851765380,
       "quarter": "Sep/2026",
       "epsForecast": -1.47,
       "estimates": 1,
@@ -20033,7 +20111,7 @@
       "ticker": "PARA",
       "name": "Parabolic Technologies, Inc.",
       "time": "amc",
-      "marketCap": 176964,
+      "marketCap": 1508909,
       "quarter": "Sep/2026",
       "epsForecast": -12.2,
       "estimates": 1,
@@ -20423,7 +20501,7 @@
       "ticker": "WMT",
       "name": "Walmart Inc.",
       "time": "bmo",
-      "marketCap": 990607570000,
+      "marketCap": 1024802030000,
       "quarter": "Oct/2026",
       "epsForecast": 0.64,
       "estimates": 12,
@@ -20436,7 +20514,7 @@
       "ticker": "INTU",
       "name": "Intuit Inc.",
       "time": "amc",
-      "marketCap": 92121596000,
+      "marketCap": 95307047000,
       "quarter": "Oct/2026",
       "epsForecast": 2.47,
       "estimates": 9,
@@ -20446,23 +20524,10 @@
     },
     {
       "date": "2026-11-19",
-      "ticker": "NTES",
-      "name": "NetEase, Inc.",
-      "time": "",
-      "marketCap": 74169631000,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.4,
-      "estimates": 2,
-      "lastYearEps": 1.88,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-19",
       "ticker": "ROST",
       "name": "Ross Stores, Inc.",
       "time": "",
-      "marketCap": 73985343000,
+      "marketCap": 78502404000,
       "quarter": "Oct/2026",
       "epsForecast": 1.82,
       "estimates": 7,
@@ -20472,14 +20537,14 @@
     },
     {
       "date": "2026-11-19",
-      "ticker": "KEYS",
-      "name": "Keysight Technologies Inc.",
-      "time": "amc",
-      "marketCap": 51943375000,
-      "quarter": "Oct/2026",
-      "epsForecast": 3.09,
+      "ticker": "NTES",
+      "name": "NetEase, Inc.",
+      "time": "",
+      "marketCap": 77379412000,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.4,
       "estimates": 2,
-      "lastYearEps": 1.65,
+      "lastYearEps": 1.88,
       "eps": null,
       "surprise": null
     },
@@ -20488,7 +20553,7 @@
       "ticker": "VEEV",
       "name": "Veeva Systems Inc.",
       "time": "",
-      "marketCap": 49092383000,
+      "marketCap": 50293748000,
       "quarter": "Oct/2026",
       "epsForecast": 1.68,
       "estimates": 7,
@@ -20498,10 +20563,23 @@
     },
     {
       "date": "2026-11-19",
+      "ticker": "KEYS",
+      "name": "Keysight Technologies Inc.",
+      "time": "amc",
+      "marketCap": 48666161000,
+      "quarter": "Oct/2026",
+      "epsForecast": 3.09,
+      "estimates": 2,
+      "lastYearEps": 1.65,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-19",
       "ticker": "CPRT",
       "name": "Copart, Inc.",
       "time": "",
-      "marketCap": 28773300200,
+      "marketCap": 30218450900,
       "quarter": "Oct/2026",
       "epsForecast": 0.41,
       "estimates": 4,
@@ -20514,7 +20592,7 @@
       "ticker": "WMG",
       "name": "Warner Music Group Corp.",
       "time": "bmo",
-      "marketCap": 16284406800,
+      "marketCap": 17027222500,
       "quarter": "Sep/2026",
       "epsForecast": 0.38,
       "estimates": 3,
@@ -20524,23 +20602,10 @@
     },
     {
       "date": "2026-11-19",
-      "ticker": "ESE",
-      "name": "ESCO Technologies Inc.",
-      "time": "amc",
-      "marketCap": 7770186200,
-      "quarter": "Sep/2026",
-      "epsForecast": 2.59,
-      "estimates": 3,
-      "lastYearEps": 2.32,
-      "eps": null,
-      "surprise": null
-    },
-    {
-      "date": "2026-11-19",
       "ticker": "GAP",
       "name": "Gap, Inc. (The)",
       "time": "amc",
-      "marketCap": 7724430300,
+      "marketCap": 8342665700,
       "quarter": "Oct/2026",
       "epsForecast": 0.73,
       "estimates": 7,
@@ -20550,10 +20615,23 @@
     },
     {
       "date": "2026-11-19",
+      "ticker": "ESE",
+      "name": "ESCO Technologies Inc.",
+      "time": "amc",
+      "marketCap": 7437474800,
+      "quarter": "Sep/2026",
+      "epsForecast": 2.59,
+      "estimates": 3,
+      "lastYearEps": 2.32,
+      "eps": null,
+      "surprise": null
+    },
+    {
+      "date": "2026-11-19",
       "ticker": "VVV",
       "name": "Valvoline Inc.",
       "time": "bmo",
-      "marketCap": 4304766000,
+      "marketCap": 4616076800,
       "quarter": "Sep/2026",
       "epsForecast": 0.42,
       "estimates": 4,
@@ -20566,7 +20644,7 @@
       "ticker": "BULL",
       "name": "Webull Corporation",
       "time": "",
-      "marketCap": 2811491840,
+      "marketCap": 2914219520,
       "quarter": "Sep/2026",
       "epsForecast": 0.05,
       "estimates": 2,
@@ -20579,7 +20657,7 @@
       "ticker": "RERE",
       "name": "ATRenew Inc.",
       "time": "",
-      "marketCap": 896793860,
+      "marketCap": 942839490,
       "quarter": "Sep/2026",
       "epsForecast": 0.1,
       "estimates": 1,
@@ -20592,7 +20670,7 @@
       "ticker": "MATW",
       "name": "Matthews International Corporation",
       "time": "amc",
-      "marketCap": 613338880,
+      "marketCap": 634251650,
       "quarter": "Sep/2026",
       "epsForecast": 0.28,
       "estimates": 2,
@@ -20605,7 +20683,7 @@
       "ticker": "BNR",
       "name": "Burning Rock Biotech Limited",
       "time": "",
-      "marketCap": 115376992,
+      "marketCap": 135309584,
       "quarter": "Sep/2026",
       "epsForecast": null,
       "estimates": 1,
@@ -22600,7 +22678,7 @@
     "PURR": {
       "date": null,
       "raw": "Earnings announcement* for PURR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-10-25T02:43:53.377Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SCCO": {
       "date": null,
@@ -23145,7 +23223,7 @@
     "CODI": {
       "date": null,
       "raw": "Earnings announcement* for CODI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SOUHY": {
       "date": null,
@@ -25045,332 +25123,332 @@
     "LPX": {
       "date": null,
       "raw": "Earnings announcement* for LPX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "KDP": {
       "date": null,
       "raw": "Earnings announcement* for KDP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AIG": {
       "date": null,
       "raw": "Earnings announcement* for AIG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SYY": {
       "date": null,
       "raw": "Earnings announcement* for SYY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "FISV": {
       "date": null,
       "raw": "Earnings announcement* for FISV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "FBIN": {
       "date": null,
       "raw": "Earnings announcement* for FBIN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "IT": {
       "date": null,
       "raw": "Earnings announcement* for IT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "BKNG": {
       "date": null,
       "raw": "Earnings announcement* for BKNG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CPNG": {
       "date": null,
       "raw": "Earnings announcement* for CPNG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MPC": {
       "date": null,
       "raw": "Earnings announcement* for MPC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "WAT": {
       "date": null,
       "raw": "Earnings announcement* for WAT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AMD": {
       "date": null,
       "raw": "Earnings announcement* for AMD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "XYZ": {
       "date": null,
       "raw": "Earnings announcement* for XYZ:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "APO": {
       "date": null,
       "raw": "Earnings announcement* for APO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TLN": {
       "date": null,
       "raw": "Earnings announcement* for TLN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "YUM": {
       "date": null,
       "raw": "Earnings announcement* for YUM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ADM": {
       "date": null,
       "raw": "Earnings announcement* for ADM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "HGTY": {
       "date": null,
       "raw": "Earnings announcement* for HGTY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SHOP": {
       "date": null,
       "raw": "Earnings announcement* for SHOP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ZBRA": {
       "date": null,
       "raw": "Earnings announcement* for ZBRA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SLAB": {
       "date": null,
       "raw": "Earnings announcement* for SLAB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TOST": {
       "date": null,
       "raw": "Earnings announcement* for TOST:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CVI": {
       "date": null,
       "raw": "Earnings announcement* for CVI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "IFF": {
       "date": null,
       "raw": "Earnings announcement* for IFF:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MPLX": {
       "date": null,
       "raw": "Earnings announcement* for MPLX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ITUB": {
       "date": null,
       "raw": "Earnings announcement* for ITUB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "LBTYA": {
       "date": null,
       "raw": "Earnings announcement* for LBTYA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TAC": {
       "date": null,
       "raw": "Earnings announcement* for TAC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "EMBJ": {
       "date": null,
       "raw": "Earnings announcement* for EMBJ:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TX": {
       "date": null,
       "raw": "Earnings announcement* for TX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PCVX": {
       "date": null,
       "raw": "Earnings announcement* for PCVX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "RYTM": {
       "date": null,
       "raw": "Earnings announcement* for RYTM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SKY": {
       "date": null,
       "raw": "Earnings announcement* for SKY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NVTS": {
       "date": null,
       "raw": "Earnings announcement* for NVTS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "BEAM": {
       "date": null,
       "raw": "Earnings announcement* for BEAM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SOPH": {
       "date": null,
       "raw": "Earnings announcement* for SOPH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SRTA": {
       "date": null,
       "raw": "Earnings announcement* for SRTA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "GPK": {
       "date": null,
       "raw": "Earnings announcement* for GPK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SHC": {
       "date": null,
       "raw": "Earnings announcement* for SHC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "HSIC": {
       "date": null,
       "raw": "Earnings announcement* for HSIC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PFE": {
       "date": null,
       "raw": "Earnings announcement* for PFE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "APTV": {
       "date": null,
       "raw": "Earnings announcement* for APTV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "IBRX": {
       "date": null,
       "raw": "Earnings announcement* for IBRX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ALKS": {
       "date": null,
       "raw": "Earnings announcement* for ALKS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ATRC": {
       "date": null,
       "raw": "Earnings announcement* for ATRC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "RARE": {
       "date": null,
       "raw": "Earnings announcement* for RARE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "RVTY": {
       "date": null,
       "raw": "Earnings announcement* for RVTY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AMGN": {
       "date": null,
       "raw": "Earnings announcement* for AMGN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ETN": {
       "date": null,
       "raw": "Earnings announcement* for ETN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "HMN": {
       "date": null,
       "raw": "Earnings announcement* for HMN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "DD": {
       "date": null,
       "raw": "Earnings announcement* for DD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "LTC": {
       "date": null,
       "raw": "Earnings announcement* for LTC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PRU": {
       "date": null,
       "raw": "Earnings announcement* for PRU:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SWKS": {
       "date": null,
       "raw": "Earnings announcement* for SWKS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "JKHY": {
       "date": null,
       "raw": "Earnings announcement* for JKHY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TEVA": {
       "date": null,
       "raw": "Earnings announcement* for TEVA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "RACE": {
       "date": null,
       "raw": "Earnings announcement* for RACE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "BR": {
       "date": null,
       "raw": "Earnings announcement* for BR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MOS": {
       "date": null,
       "raw": "Earnings announcement* for MOS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "LDOS": {
       "date": null,
       "raw": "Earnings announcement* for LDOS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "EXPD": {
       "date": null,
       "raw": "Earnings announcement* for EXPD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ANET": {
       "date": null,
       "raw": "Earnings announcement* for ANET:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AME": {
       "date": null,
       "raw": "Earnings announcement* for AME:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PRIM": {
       "date": null,
       "raw": "Earnings announcement* for PRIM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "FWRG": {
       "date": null,
       "raw": "Earnings announcement* for FWRG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "FTK": {
       "date": null,
       "raw": "Earnings announcement* for FTK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MDLN": {
       "date": null,
@@ -25400,507 +25478,507 @@
     "KHC": {
       "date": null,
       "raw": "Earnings announcement* for KHC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "LLYVK": {
       "date": null,
       "raw": "Earnings announcement* for LLYVK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NYT": {
       "date": null,
       "raw": "Earnings announcement* for NYT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ZBH": {
       "date": null,
       "raw": "Earnings announcement* for ZBH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CDW": {
       "date": null,
       "raw": "Earnings announcement* for CDW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CRL": {
       "date": null,
       "raw": "Earnings announcement* for CRL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PAYC": {
       "date": null,
       "raw": "Earnings announcement* for PAYC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "OC": {
       "date": null,
       "raw": "Earnings announcement* for OC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NVST": {
       "date": null,
       "raw": "Earnings announcement* for NVST:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CVS": {
       "date": null,
       "raw": "Earnings announcement* for CVS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CIGI": {
       "date": null,
       "raw": "Earnings announcement* for CIGI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CWK": {
       "date": null,
       "raw": "Earnings announcement* for CWK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "OPLN": {
       "date": null,
       "raw": "Earnings announcement* for OPLN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MLM": {
       "date": null,
       "raw": "Earnings announcement* for MLM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SDGR": {
       "date": null,
       "raw": "Earnings announcement* for SDGR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MCD": {
       "date": null,
       "raw": "Earnings announcement* for MCD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CPAY": {
       "date": null,
       "raw": "Earnings announcement* for CPAY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MELI": {
       "date": null,
       "raw": "Earnings announcement* for MELI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CHYM": {
       "date": null,
       "raw": "Earnings announcement* for CHYM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "UBER": {
       "date": null,
       "raw": "Earnings announcement* for UBER:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MNTN": {
       "date": null,
       "raw": "Earnings announcement* for MNTN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "APP": {
       "date": null,
       "raw": "Earnings announcement* for APP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SEG": {
       "date": null,
       "raw": "Earnings announcement* for SEG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CRCL": {
       "date": null,
       "raw": "Earnings announcement* for CRCL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "HUT": {
       "date": null,
       "raw": "Earnings announcement* for HUT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PFGC": {
       "date": null,
       "raw": "Earnings announcement* for PFGC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MCK": {
       "date": null,
       "raw": "Earnings announcement* for MCK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "FICO": {
       "date": null,
       "raw": "Earnings announcement* for FICO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ADMA": {
       "date": null,
       "raw": "Earnings announcement* for ADMA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NVO": {
       "date": null,
       "raw": "Earnings announcement* for NVO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ITIC": {
       "date": null,
       "raw": "Earnings announcement* for ITIC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ALL": {
       "date": null,
       "raw": "Earnings announcement* for ALL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "EXP": {
       "date": null,
       "raw": "Earnings announcement* for EXP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "WTS": {
       "date": null,
       "raw": "Earnings announcement* for WTS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "XPEL": {
       "date": null,
       "raw": "Earnings announcement* for XPEL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "XRN": {
       "date": null,
       "raw": "Earnings announcement* for XRN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SD": {
       "date": null,
       "raw": "Earnings announcement* for SD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "QCOM": {
       "date": null,
       "raw": "Earnings announcement* for QCOM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "GT": {
       "date": null,
       "raw": "Earnings announcement* for GT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "LILA": {
       "date": null,
       "raw": "Earnings announcement* for LILA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SMRT": {
       "date": null,
       "raw": "Earnings announcement* for SMRT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MX": {
       "date": null,
       "raw": "Earnings announcement* for MX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NAMS": {
       "date": null,
       "raw": "Earnings announcement* for NAMS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "RVMD": {
       "date": null,
       "raw": "Earnings announcement* for RVMD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CAI": {
       "date": null,
       "raw": "Earnings announcement* for CAI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NUVB": {
       "date": null,
       "raw": "Earnings announcement* for NUVB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PCT": {
       "date": null,
       "raw": "Earnings announcement* for PCT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AEVA": {
       "date": null,
       "raw": "Earnings announcement* for AEVA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "RIOT": {
       "date": null,
       "raw": "Earnings announcement* for RIOT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "Q": {
       "date": null,
       "raw": "Earnings announcement* for Q:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ARM": {
       "date": null,
       "raw": "Earnings announcement* for ARM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "RLAY": {
       "date": null,
       "raw": "Earnings announcement* for RLAY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "UWMC": {
       "date": null,
       "raw": "Earnings announcement* for UWMC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "COHR": {
       "date": null,
       "raw": "Earnings announcement* for COHR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "WOLF": {
       "date": null,
       "raw": "Earnings announcement* for WOLF:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SN": {
       "date": null,
       "raw": "Earnings announcement* for SN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ACHC": {
       "date": null,
       "raw": "Earnings announcement* for ACHC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ATS": {
       "date": null,
       "raw": "Earnings announcement* for ATS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "HCC": {
       "date": null,
       "raw": "Earnings announcement* for HCC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ESAB": {
       "date": null,
       "raw": "Earnings announcement* for ESAB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "DDOG": {
       "date": null,
       "raw": "Earnings announcement* for DDOG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "EMR": {
       "date": null,
       "raw": "Earnings announcement* for EMR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CYTK": {
       "date": null,
       "raw": "Earnings announcement* for CYTK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ITT": {
       "date": null,
       "raw": "Earnings announcement* for ITT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "FIS": {
       "date": null,
       "raw": "Earnings announcement* for FIS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PODD": {
       "date": null,
       "raw": "Earnings announcement* for PODD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "PTC": {
       "date": null,
       "raw": "Earnings announcement* for PTC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "BEP": {
       "date": null,
       "raw": "Earnings announcement* for BEP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "STE": {
       "date": null,
       "raw": "Earnings announcement* for STE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CXT": {
       "date": null,
       "raw": "Earnings announcement* for CXT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AMCR": {
       "date": null,
       "raw": "Earnings announcement* for AMCR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TRMB": {
       "date": null,
       "raw": "Earnings announcement* for TRMB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "VIAV": {
       "date": null,
       "raw": "Earnings announcement* for VIAV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "USPH": {
       "date": null,
       "raw": "Earnings announcement* for USPH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "BCRX": {
       "date": null,
       "raw": "Earnings announcement* for BCRX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "GWW": {
       "date": null,
       "raw": "Earnings announcement* for GWW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ELF": {
       "date": null,
       "raw": "Earnings announcement* for ELF:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NICE": {
       "date": null,
       "raw": "Earnings announcement* for NICE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "GOLD": {
       "date": null,
       "raw": "Earnings announcement* for GOLD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MSI": {
       "date": null,
       "raw": "Earnings announcement* for MSI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TM": {
       "date": null,
       "raw": "Earnings announcement* for TM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "MET": {
       "date": null,
       "raw": "Earnings announcement* for MET:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "EXPE": {
       "date": null,
       "raw": "Earnings announcement* for EXPE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "EW": {
       "date": null,
       "raw": "Earnings announcement* for EW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CF": {
       "date": null,
       "raw": "Earnings announcement* for CF:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "COR": {
       "date": null,
       "raw": "Earnings announcement* for COR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AFL": {
       "date": null,
       "raw": "Earnings announcement* for AFL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ATO": {
       "date": null,
       "raw": "Earnings announcement* for ATO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "CDRE": {
       "date": null,
       "raw": "Earnings announcement* for CDRE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ALB": {
       "date": null,
       "raw": "Earnings announcement* for ALB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "ARQT": {
       "date": null,
       "raw": "Earnings announcement* for ARQT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "W": {
       "date": null,
       "raw": "Earnings announcement* for W:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NWS": {
       "date": null,
       "raw": "Earnings announcement* for NWS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TECH": {
       "date": null,
       "raw": "Earnings announcement* for TECH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "AVNT": {
       "date": null,
       "raw": "Earnings announcement* for AVNT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "NWE": {
       "date": null,
       "raw": "Earnings announcement* for NWE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "VCYT": {
       "date": null,
       "raw": "Earnings announcement* for VCYT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "SMA": {
       "date": null,
       "raw": "Earnings announcement* for SMA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "TPC": {
       "date": null,
       "raw": "Earnings announcement* for TPC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "BORR": {
       "date": null,
       "raw": "Earnings announcement* for BORR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "UTHR": {
       "date": null,
       "raw": "Earnings announcement* for UTHR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-05T01:34:36.545Z"
+      "checked": "2026-11-06T01:41:47.345Z"
     },
     "JD": {
       "date": "2026-11-17",
@@ -25926,6 +26004,566 @@
       "date": null,
       "raw": "Earnings announcement* for MAIR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
       "checked": "2026-11-05T20:18:21.957Z"
+    },
+    "ABNB": {
+      "date": null,
+      "raw": "Earnings announcement* for ABNB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TRGP": {
+      "date": null,
+      "raw": "Earnings announcement* for TRGP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "COP": {
+      "date": null,
+      "raw": "Earnings announcement* for COP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "RGA": {
+      "date": null,
+      "raw": "Earnings announcement* for RGA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GPN": {
+      "date": null,
+      "raw": "Earnings announcement* for GPN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CG": {
+      "date": null,
+      "raw": "Earnings announcement* for CG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "BDX": {
+      "date": null,
+      "raw": "Earnings announcement* for BDX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "WEN": {
+      "date": null,
+      "raw": "Earnings announcement* for WEN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "EOG": {
+      "date": null,
+      "raw": "Earnings announcement* for EOG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "PH": {
+      "date": null,
+      "raw": "Earnings announcement* for PH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "FWONK": {
+      "date": null,
+      "raw": "Earnings announcement* for FWONK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CORZ": {
+      "date": null,
+      "raw": "Earnings announcement* for CORZ:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "HHH": {
+      "date": null,
+      "raw": "Earnings announcement* for HHH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "HTZ": {
+      "date": null,
+      "raw": "Earnings announcement* for HTZ:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "INOD": {
+      "date": null,
+      "raw": "Earnings announcement* for INOD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "USFD": {
+      "date": null,
+      "raw": "Earnings announcement* for USFD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SABR": {
+      "date": null,
+      "raw": "Earnings announcement* for SABR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "DOCS": {
+      "date": null,
+      "raw": "Earnings announcement* for DOCS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "ZTS": {
+      "date": null,
+      "raw": "Earnings announcement* for ZTS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "ROK": {
+      "date": null,
+      "raw": "Earnings announcement* for ROK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "LAMR": {
+      "date": null,
+      "raw": "Earnings announcement* for LAMR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "VRSK": {
+      "date": null,
+      "raw": "Earnings announcement* for VRSK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "APD": {
+      "date": null,
+      "raw": "Earnings announcement* for APD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SONY": {
+      "date": null,
+      "raw": "Earnings announcement* for SONY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "WSC": {
+      "date": null,
+      "raw": "Earnings announcement* for WSC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CTRI": {
+      "date": null,
+      "raw": "Earnings announcement* for CTRI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "AU": {
+      "date": null,
+      "raw": "Earnings announcement* for AU:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "VSAT": {
+      "date": null,
+      "raw": "Earnings announcement* for VSAT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "RWAY": {
+      "date": null,
+      "raw": "Earnings announcement* for RWAY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "PENN": {
+      "date": null,
+      "raw": "Earnings announcement* for PENN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CELC": {
+      "date": null,
+      "raw": "Earnings announcement* for CELC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TFX": {
+      "date": null,
+      "raw": "Earnings announcement* for TFX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "DNOW": {
+      "date": null,
+      "raw": "Earnings announcement* for DNOW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "NTRA": {
+      "date": null,
+      "raw": "Earnings announcement* for NTRA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "PTGX": {
+      "date": null,
+      "raw": "Earnings announcement* for PTGX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "U": {
+      "date": null,
+      "raw": "Earnings announcement* for U:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TXG": {
+      "date": null,
+      "raw": "Earnings announcement* for TXG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GLUE": {
+      "date": null,
+      "raw": "Earnings announcement* for GLUE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "IREN": {
+      "date": null,
+      "raw": "Earnings announcement* for IREN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "NET": {
+      "date": null,
+      "raw": "Earnings announcement* for NET:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "PRM": {
+      "date": null,
+      "raw": "Earnings announcement* for PRM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "LYV": {
+      "date": null,
+      "raw": "Earnings announcement* for LYV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SPRY": {
+      "date": null,
+      "raw": "Earnings announcement* for SPRY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SOLV": {
+      "date": null,
+      "raw": "Earnings announcement* for SOLV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CNR": {
+      "date": null,
+      "raw": "Earnings announcement* for CNR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "BHF": {
+      "date": null,
+      "raw": "Earnings announcement* for BHF:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "BKV": {
+      "date": null,
+      "raw": "Earnings announcement* for BKV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "PRMB": {
+      "date": null,
+      "raw": "Earnings announcement* for PRMB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "VTRS": {
+      "date": null,
+      "raw": "Earnings announcement* for VTRS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TRIP": {
+      "date": null,
+      "raw": "Earnings announcement* for TRIP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CI": {
+      "date": null,
+      "raw": "Earnings announcement* for CI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GPRO": {
+      "date": null,
+      "raw": "Earnings announcement* for GPRO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "PTON": {
+      "date": null,
+      "raw": "Earnings announcement* for PTON:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TAP": {
+      "date": null,
+      "raw": "Earnings announcement* for TAP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GH": {
+      "date": null,
+      "raw": "Earnings announcement* for GH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "DVN": {
+      "date": null,
+      "raw": "Earnings announcement* for DVN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "HALO": {
+      "date": null,
+      "raw": "Earnings announcement* for HALO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "MTSI": {
+      "date": null,
+      "raw": "Earnings announcement* for MTSI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TNDM": {
+      "date": null,
+      "raw": "Earnings announcement* for TNDM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "MCHP": {
+      "date": null,
+      "raw": "Earnings announcement* for MCHP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GMED": {
+      "date": null,
+      "raw": "Earnings announcement* for GMED:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "PBA": {
+      "date": null,
+      "raw": "Earnings announcement* for PBA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "IBP": {
+      "date": null,
+      "raw": "Earnings announcement* for IBP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "WPM": {
+      "date": null,
+      "raw": "Earnings announcement* for WPM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "AGIO": {
+      "date": null,
+      "raw": "Earnings announcement* for AGIO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "AORT": {
+      "date": null,
+      "raw": "Earnings announcement* for AORT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SHAK": {
+      "date": null,
+      "raw": "Earnings announcement* for SHAK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TXRH": {
+      "date": null,
+      "raw": "Earnings announcement* for TXRH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "DCO": {
+      "date": null,
+      "raw": "Earnings announcement* for DCO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "MIDD": {
+      "date": null,
+      "raw": "Earnings announcement* for MIDD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "COMP": {
+      "date": null,
+      "raw": "Earnings announcement* for COMP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SKWD": {
+      "date": null,
+      "raw": "Earnings announcement* for SKWD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "KMB": {
+      "date": null,
+      "raw": "Earnings announcement* for KMB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "MNST": {
+      "date": null,
+      "raw": "Earnings announcement* for MNST:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "AEE": {
+      "date": null,
+      "raw": "Earnings announcement* for AEE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SRE": {
+      "date": null,
+      "raw": "Earnings announcement* for SRE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "DUK": {
+      "date": null,
+      "raw": "Earnings announcement* for DUK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "WMS": {
+      "date": null,
+      "raw": "Earnings announcement* for WMS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GMAB": {
+      "date": null,
+      "raw": "Earnings announcement* for GMAB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "MT": {
+      "date": null,
+      "raw": "Earnings announcement* for MT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "WYNN": {
+      "date": null,
+      "raw": "Earnings announcement* for WYNN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "TPR": {
+      "date": null,
+      "raw": "Earnings announcement* for TPR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SPG": {
+      "date": null,
+      "raw": "Earnings announcement* for SPG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "REG": {
+      "date": null,
+      "raw": "Earnings announcement* for REG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CAH": {
+      "date": null,
+      "raw": "Earnings announcement* for CAH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "AXON": {
+      "date": null,
+      "raw": "Earnings announcement* for AXON:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "AKAM": {
+      "date": null,
+      "raw": "Earnings announcement* for AKAM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GIL": {
+      "date": null,
+      "raw": "Earnings announcement* for GIL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SPHR": {
+      "date": null,
+      "raw": "Earnings announcement* for SPHR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "FLL": {
+      "date": null,
+      "raw": "Earnings announcement* for FLL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "QNT": {
+      "date": null,
+      "raw": "Earnings announcement* for QNT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SARO": {
+      "date": null,
+      "raw": "Earnings announcement* for SARO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "FIP": {
+      "date": null,
+      "raw": "Earnings announcement* for FIP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "IAG": {
+      "date": null,
+      "raw": "Earnings announcement* for IAG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "DTE": {
+      "date": null,
+      "raw": "Earnings announcement* for DTE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "EPAM": {
+      "date": null,
+      "raw": "Earnings announcement* for EPAM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "CMI": {
+      "date": null,
+      "raw": "Earnings announcement* for CMI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SNDA": {
+      "date": null,
+      "raw": "Earnings announcement* for SNDA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "DMLP": {
+      "date": null,
+      "raw": "Earnings announcement* for DMLP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "KRP": {
+      "date": null,
+      "raw": "Earnings announcement* for KRP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "IONQ": {
+      "date": null,
+      "raw": "Earnings announcement* for IONQ:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "FA": {
+      "date": null,
+      "raw": "Earnings announcement* for FA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "SVV": {
+      "date": null,
+      "raw": "Earnings announcement* for SVV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "LFST": {
+      "date": null,
+      "raw": "Earnings announcement* for LFST:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "AUGO": {
+      "date": null,
+      "raw": "Earnings announcement* for AUGO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "KBDC": {
+      "date": null,
+      "raw": "Earnings announcement* for KBDC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "NGL": {
+      "date": null,
+      "raw": "Earnings announcement* for NGL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "ONC": {
+      "date": null,
+      "raw": "Earnings announcement* for ONC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "BEKE": {
+      "date": "2026-11-16",
+      "estimated": true,
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "YORW": {
+      "date": null,
+      "raw": "Earnings announcement* for YORW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "BGDE": {
+      "date": null,
+      "raw": "Earnings announcement* for BGDE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
+    },
+    "GSAT": {
+      "date": null,
+      "raw": "Earnings announcement* for GSAT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-06T01:41:47.345Z"
     }
   }
 }
