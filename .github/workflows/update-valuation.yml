@@ -44,7 +44,7 @@ jobs:
         run: node scripts/fetch-valuation.mjs
         continue-on-error: true
         env:
-          QX_DEBUG_SHEETS: '1'
+          QX_DEBUG_SHEETS: ${{ vars.QX_DEBUG_SHEETS || '' }}
       - name: Commit updated data
         run: |
           git config user.name "qwertx-bot"
