@@ -282,8 +282,9 @@
       ['Beat or missed', 'Beat means the company earned more than analysts expected. Stocks often move sharply on report days, up or down.'],
       ['Major news', 'Big events such as a new CEO, a takeover or layoffs must be filed with the SEC on Form 8-K within four business days. We show those, straight from the filing.'],
     ]],
-    weather: ['The big picture in four plain questions: is the economy OK, are stocks expensive, is money tight, and are people scared?', [
+    weather: ['The big picture in plain questions: is the economy OK, are stocks expensive, is the trend up, is money tight, and are people scared?', [
       ['The dials', 'Each dial sums up several official indicators. Green is calm, gold is mixed, red is a warning.'],
+      ['Price vs. trend', 'Valuation is a guide to roughly what the next ten years may return, not to when prices turn. The trend dial is the faster signal. Read the two together.'],
       ['Like a weather forecast', 'It tells you the conditions, not what to do. Markets can stay expensive or scared for a long time, and trying to time them rarely works.'],
       ['The cards', 'Each card shows one indicator, where it sits in its own history, what it means and where the number comes from.'],
     ]],
@@ -874,7 +875,7 @@
     if (S.weather === false) return soon('Market Weather is updating', 'The economic data could not be loaded right now. Please try again in a minute.');
     var w = S.weather[S.region] || S.weather.us;
     var icon = w.icon === 'sun' ? '<circle cx="42" cy="32" r="18" fill="none" stroke="#F5B83D" stroke-width="3"></circle>' : w.icon === 'storm' ? '<path d="M24 50h40a12 12 0 0 0 0-24 16 16 0 0 0-30-4 11 11 0 0 0-10 28z" fill="var(--px-cell)" stroke="currentColor" stroke-width="3" stroke-linejoin="round"></path><path d="M44 52l-6 10h8l-6 10" fill="none" stroke="#F5B83D" stroke-width="3"></path>' : '<circle cx="30" cy="24" r="14" fill="none" stroke="#F5B83D" stroke-width="3"></circle><path d="M24 54h40a12 12 0 0 0 0-24 16 16 0 0 0-30-4 11 11 0 0 0-10 28z" fill="var(--px-cell)" stroke="currentColor" stroke-width="3" stroke-linejoin="round"></path>';
-    var html = '<section class="card px-weather"><div class="px-h2row"><div class="px-wx-h"><svg width="84" height="74" viewBox="0 0 84 74" aria-hidden="true">' + icon + '</svg><div>' + label('Market weather · ' + esc(w.region)) + '<div class="px-wx-title">' + esc(w.headline) + '</div><p>' + esc(w.summary) + '</p></div></div>' +
+    var html = '<section class="card px-weather"><div class="px-h2row"><div class="px-wx-h"><svg width="84" height="74" viewBox="0 0 84 74" aria-hidden="true">' + icon + '</svg><div>' + label('Market weather · ' + esc(w.region)) + '<div class="px-wx-title">' + esc(w.headline) + '</div><p>' + esc(w.summary) + '</p>' + (w.verdict ? '<p class="px-wx-verdict"><b>Putting it together:</b> ' + esc(w.verdict) + '</p>' : '') + '</div></div>' +
       '<div class="px-seg" role="group" aria-label="Country">' + [['us', 'United States'], ['ca', 'Canada']].map(function (r) { return '<button type="button" data-region="' + r[0] + '" aria-pressed="' + (S.region === r[0] ? 'true' : 'false') + '"' + (S.region === r[0] ? ' class="on"' : '') + '>' + r[1] + '</button>'; }).join('') + '</div></div>' +
       '<div class="px-dials">' + w.dials.map(gauge).join('') + '</div></section>';
     if (!pro) return html + lock('The indicators behind each dial, with what they mean and where they sit in history, are part of QWERTx Pro.');

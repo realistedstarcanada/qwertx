@@ -15,6 +15,7 @@ zero npm dependencies, hosted free on Cloudflare Pages and kept fresh by GitHub 
 | Insider trades (quarterly) | `scripts/fetch-insiders.mjs` | SEC Insider Transactions Data Sets (Form 4) | Daily check; processes each new quarter once |
 | Company events (8-K item numbers) for every stock on the site | `scripts/fetch-8k.mjs` | SEC EDGAR daily index + submissions | Same as politician trades |
 | Economy and rates for Market Weather (US + Canada) | `scripts/fetch-macro.mjs` | FRED (public-domain series only), Bank of Canada Valet, Statistics Canada | Same as politician trades; FRED needs `FRED_API_KEY` |
+| Market Weather long-term gauges: Shiller CAPE and Excess CAPE Yield, Damodaran implied ERP, Fed excess bond premium, TSX trend | `scripts/fetch-valuation.mjs` (Excel files read by `scripts/lib/sheet2json.py`) | shillerdata.com, NYU Stern (Damodaran), Federal Reserve Board, Yahoo Finance (TSX, internal-only) | Mon and Thu (`update-valuation.yml`, which also refreshes the FRED series) |
 | What's inside US ETFs (`config/etfs.json`; Canadian ETFs borrow a same-index US fund) | `scripts/fetch-etfs.mjs` | SEC Form N-PORT | Same as portfolios |
 | Prices, analyst targets, earnings history — **internal testing** | `scripts/fetch-yahoo.mjs` | Yahoo Finance public pages (not licensed for public display) | Weekdays 18:30 Toronto (`update-prices.yml`), while `vendor.name` is `yahoo` |
 | Licensed prices, analyst targets, earnings history (off until licensed) | `scripts/fetch-fmp.mjs` | Financial Modeling Prep | Same as politician trades, only when `vendor.enabled` |
@@ -59,7 +60,7 @@ alerts; everyone with a watchlist gets a Friday digest.
 | Plans and prices | `config/pro.json` (prices are created in Stripe from `amount` + `lookupKey`) |
 | Toronto → New York tickers | `config/ticker-aliases.json` |
 | Canadian ETFs (VEQT, XEQT, VFV…) kept as `.TO` | `config/etfs.json` |
-| Market Weather | `src/lib/weather.mjs` → `dist/pro/weather.json` |
+| Market Weather | `src/lib/weather.mjs` → `dist/pro/weather.json` (valuation dial: CAPE, household stock allocation, MarketCap/GVA; trend dial: index vs. its 10-month average; stocks-vs-bonds cards: Excess CAPE Yield and Damodaran ERP; credit: Fed excess bond premium; concentration from the latest S&P 500 ETF N-PORT) |
 | The weekly QWERTx Brief | `functions/api/{brief,brief-vote}.js`, written on the QWERTx Brief tab by admins |
 
 The Pro page has six tabs: My Portfolio (value, health cards, what you really own through ETFs, ETF scorecard),

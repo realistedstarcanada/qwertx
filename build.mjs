@@ -154,7 +154,12 @@ fs.writeFileSync(path.join(OUT, 'pro/index.json'), JSON.stringify(pro.index));
 fs.writeFileSync(path.join(OUT, 'pro/managers.json'), JSON.stringify(buildManagerDirectory(d)));
 fs.mkdirSync(path.join(OUT, 'pro/m'), { recursive: true });
 for (const inv of [...d.live, ...(d.institutions || []), ...(d.proOnly || [])]) fs.writeFileSync(path.join(OUT, 'pro/m', `${inv.slug}.json`), JSON.stringify(buildManagerDetail(inv)));
-fs.writeFileSync(path.join(OUT, 'pro/weather.json'), JSON.stringify(buildWeather({ macro: readJSON('data/macro.json'), market: d.market, insiders: d.insiders, politics: d.politics, live: d.live })));
+// Market Weather. Index concentration comes from the latest S&P 500 ETF holdings filed with the SEC (Form N-PORT).
+const sp500Fund = ['VOO', 'IVV'].map((t) => readJSON(`data/etfs/${t}.json`)).filter((e) => e?.top10 > 0).sort((a, b) => String(b.period).localeCompare(String(a.period)))[0];
+fs.writeFileSync(path.join(OUT, 'pro/weather.json'), JSON.stringify(buildWeather({
+  macro: readJSON('data/macro.json'), valuation: readJSON('data/valuation.json'), market: d.market, insiders: d.insiders, politics: d.politics, live: d.live,
+  concentration: sp500Fund ? { top10: sp500Fund.top10, period: sp500Fund.period, fund: sp500Fund.t } : null,
+})));
 fs.writeFileSync(path.join(OUT, 'pro/events-recent.json'), JSON.stringify({ generatedAt: pro.ownership.generatedAt, events: pro.recentEvents }));
 
 // Fear & Greed snapshot for the live gauge's fallback, sitemap, robots.

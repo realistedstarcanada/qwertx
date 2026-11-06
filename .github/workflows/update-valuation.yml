@@ -1,0 +1,53 @@
+name: Update valuation and credit data
+
+# Market Weather's long-term gauges: Shiller CAPE and Excess CAPE Yield, Damodaran's implied equity risk premium,
+# the Fed's excess bond premium, plus the FRED series (household stock allocation, MarketCap/GVA, S&P 500 trend).
+# Most of these change once a month; the run is cheap, so it checks twice a week.
+on:
+  schedule:
+    - cron: '40 13 * * 1,4'   # Monday and Thursday, 09:40 Toronto (EDT)
+  push:
+    # Runs on the testing branch whenever these scripts or this file change (scheduled runs need main).
+    branches: [pro-phase1]
+    paths: ['scripts/fetch-valuation.mjs', 'scripts/fetch-macro.mjs', 'scripts/lib/sheet2json.py', '.github/workflows/update-valuation.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || 'QWERTx admin@qwertx.com' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Excel readers for the Shiller and Damodaran files
+        run: python3 -m pip install --quiet xlrd openpyxl
+      - name: Economic data (FRED, Bank of Canada, Statistics Canada)
+        run: node scripts/fetch-macro.mjs
+        continue-on-error: true
+        env:
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+      - name: Shiller CAPE, Damodaran ERP, Fed excess bond premium, TSX trend
+        run: node scripts/fetch-valuation.mjs
+        continue-on-error: true
+      - name: Commit updated data
+        run: |
+          git config user.name "qwertx-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/macro.json data/valuation.json
+          if git diff --staged --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "data: valuation and credit $(date -u +%F)"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && break; sleep 5; done

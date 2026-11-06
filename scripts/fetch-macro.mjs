@@ -24,6 +24,12 @@ export const FRED = {
   us_mortgage: { id: 'MORTGAGE30US', label: '30-year mortgage rate', unit: '%', freq: 'w', source: 'Freddie Mac via FRED' },
   us_equity: { id: 'NCBEILQ027S', label: 'US corporate equities, market value', unit: '$M', freq: 'q', source: 'Federal Reserve Z.1 via FRED' },
   us_gdp_level: { id: 'GDP', label: 'US GDP (nominal)', unit: '$B', freq: 'q', source: 'BEA via FRED' },
+  // Hussman's MarketCap/GVA: nonfinancial corporate equities (us_equity) over nonfinancial corporate gross value added.
+  us_gva: { id: 'A455RC1Q027SBEA', label: 'Nonfinancial corporate gross value added', unit: '$B', freq: 'q', source: 'BEA via FRED' },
+  // How much of US households' financial assets sit in stocks (directly and through funds and retirement plans).
+  us_hh_equity: { id: 'BOGZ1FL153064486Q', label: 'Households: stocks as a share of financial assets', unit: '%', freq: 'q', source: 'Federal Reserve Z.1 via FRED', start: '1952-01-01' },
+  // S&P 500 month-end closes for the 10-month trend (FRED carries the last 10 years).
+  us_sp500: { id: 'SP500', label: 'S&P 500', unit: '', freq: 'd', source: 'S&P Dow Jones Indices via FRED' },
 };
 
 export const VALET = {
@@ -69,7 +75,7 @@ async function run() {
   if (key) {
     for (const [k, s] of Object.entries(FRED)) {
       try {
-        const url = `https://api.stlouisfed.org/fred/series/observations?series_id=${s.id}&api_key=${key}&file_type=json&observation_start=1960-01-01${s.units ? `&units=${s.units}` : ''}`;
+        const url = `https://api.stlouisfed.org/fred/series/observations?series_id=${s.id}&api_key=${key}&file_type=json&observation_start=${s.start || '1960-01-01'}${s.units ? `&units=${s.units}` : ''}`;
         const obs = parseFred(await fetchRetry(url, { headers: UA }, { type: 'json', minGapMs: 600 }));
         if (!obs.length) throw new Error('no observations');
         series[k] = { label: s.label, source: s.source, unit: s.unit, freq: s.freq, obs: s.freq === 'q' ? obs : monthly(obs), last: obs.at(-1) };
