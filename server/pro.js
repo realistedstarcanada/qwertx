@@ -25,6 +25,7 @@ export const DEFAULT_PREFS = {
   quiet: { on: false, start: 22, end: 7, tz: 'America/Toronto' },
   emailOff: false, // unsubscribed from alert and digest emails (sign-in links still work)
   currency: null, // portfolio totals in 'USD' or 'CAD'; null = the page picks one from the member's time zone
+  follow: [], // investors the member follows (up to 10): their new filings lead the "since your last visit" strip
 };
 
 export function prefsOf(u) {
@@ -40,6 +41,7 @@ export function cleanPrefs(input, current, { pro: isProUser }) {
   if ('weekly' in input) p.weekly = bool(input.weekly);
   if ('emailOff' in input) p.emailOff = bool(input.emailOff);
   if ('currency' in input) p.currency = input.currency === 'USD' || input.currency === 'CAD' ? input.currency : null;
+  if (Array.isArray(input.follow)) p.follow = [...new Set(input.follow.filter((s) => typeof s === 'string' && /^[a-z0-9-]{2,60}$/.test(s)))].slice(0, 10);
   if (!isProUser) return p;
   if (input.mode === 'instant' || input.mode === 'daily') p.mode = input.mode;
   if (input.types && typeof input.types === 'object') for (const k of ['f13', 'cg', 'ins']) if (k in input.types) p.types[k] = bool(input.types[k]);

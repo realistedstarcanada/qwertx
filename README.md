@@ -63,8 +63,10 @@ alerts; everyone with a watchlist gets a Friday digest.
 | Market Weather | `src/lib/weather.mjs` → `dist/pro/weather.json` (valuation dial: CAPE, household stock allocation, MarketCap/GVA; trend dial: index vs. its 10-month average; stocks-vs-bonds cards: Excess CAPE Yield and Damodaran ERP; credit: Fed excess bond premium; concentration from the latest S&P 500 ETF N-PORT) |
 | The weekly QWERTx Brief | `functions/api/{brief,brief-vote}.js`, written on the QWERTx Brief tab by admins |
 
-The Pro page has six tabs: My Portfolio (value, health cards, what you really own through ETFs, ETF scorecard),
-Smart Money, Analyst Targets, Earnings & News, Market Weather and the QWERTx Brief. Anything that needs licensed
+The Pro page has four places: My Stocks (Overview, Smart money, Analyst targets, Earnings & news), Market (Market
+Weather), Investors and the QWERTx Brief. It opens with a "since your last visit" strip (new filings in the member's
+stocks, an upcoming report, followed investors who filed, a new Brief), shows help once, and every ticker opens one
+panel with the position, who moved, the analyst range, earnings and major news. Anything that needs licensed
 data (live prices, analyst targets, ETF returns) comes from `config/pro.json` → `vendor`. While the site is
 internal-only it is Yahoo Finance (`internalTest: true`). **Before public launch** switch to the licensed feed
 (`"name": "fmp"`, `displayLicence: true` once signed) or set `enabled` to `false`.

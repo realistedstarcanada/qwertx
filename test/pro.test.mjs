@@ -328,6 +328,12 @@ test('alert preferences and quiet hours', () => {
   const e = { k: '13f', a: 'add', c: 8, m: 'x' };
   assert.equal(wants(e, { ...p, minChange: 10 }), false);
   assert.equal(wants(e, { ...p, minChange: 5 }), true);
+  // Followed investors: any member, valid slugs only, no repeats, at most 10.
+  const f = cleanPrefs({ follow: ['bill-ackman', 'bill-ackman', 'BAD SLUG', ...Array.from({ length: 12 }, (_, i) => `m-${i}`)] }, DEFAULT_PREFS, { pro: false });
+  assert.equal(f.follow.length, 10);
+  assert.equal(f.follow[0], 'bill-ackman');
+  assert.ok(!f.follow.includes('BAD SLUG'));
+  assert.deepEqual(DEFAULT_PREFS.follow, []);
 });
 
 test('alert wording keeps the dates and never says buy or sell advice', () => {

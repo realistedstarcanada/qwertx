@@ -1,5 +1,7 @@
-/* QWERTx Pro — "Your stocks, watched for you" (/account.html), in six tabs:
-   My Portfolio · Smart Money · Analyst Targets · Earnings & News · Market Weather · QWERTx Brief.
+/* QWERTx Pro — "Your stocks, watched for you" (/account.html), in four places:
+   My Stocks (Overview · Smart money · Analyst targets · Earnings & news) · Market · Investors · Brief.
+   Built to be calm: a "since your last visit" strip first, help shown once, one panel per stock, plain sentences
+   before grids, and no daily-move scoreboard.
    Everything shown comes from official filings and data built with the site (/pro/t/<TICKER>.json,
    /pro/index.json, /pro/weather.json) or from the member's own account (/api/*). Licensed prices and analyst
    targets appear only when the site has them switched on; until then those panels say so instead of guessing. */
@@ -9,8 +11,11 @@
   if (!root) return;
 
   var params = new URLSearchParams(location.search);
-  var TABS = [['portfolio', 'My Portfolio'], ['smart', 'Smart Money'], ['analyst', 'Analyst Targets'], ['earnings', 'Earnings & News'], ['weather', 'Market Weather'], ['investors', 'Super Investors'], ['brief', 'QWERTx Brief']];
-  var S = { me: null, index: null, data: {}, results: null, status: null, notice: null, tab: null, drawer: false, region: 'us', filter: 'all', etf: null, sel: null, weather: undefined, brief: undefined, briefEdit: null, mgr: {}, inv: null };
+  // Views (S.tab) and the four places that hold them. My Stocks has four views of the same holdings.
+  var TABS = [['portfolio', 'Overview'], ['smart', 'Smart money'], ['analyst', 'Analyst targets'], ['earnings', 'Earnings & news'], ['weather', 'Market'], ['investors', 'Investors'], ['brief', 'Brief']];
+  var TOP = [['stocks', 'My Stocks', 'fa-briefcase', ['portfolio', 'smart', 'analyst', 'earnings']], ['market', 'Market', 'fa-cloud-sun', ['weather']], ['investors', 'Investors', 'fa-user-tie', ['investors']], ['brief', 'Brief', 'fa-newspaper', ['brief']]];
+  function topOf(view) { for (var i = 0; i < TOP.length; i++) if (TOP[i][3].indexOf(view) >= 0) return TOP[i]; return TOP[0]; }
+  var S = { me: null, index: null, data: {}, results: null, status: null, notice: null, tab: null, drawer: false, region: 'us', filter: 'all', etf: null, sel: null, weather: undefined, brief: undefined, briefEdit: null, mgr: {}, inv: null, stock: null, events: undefined };
   var MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   var COLORS = ['#F5B83D', '#2DD4BF', '#60A5FA', '#A78BFA', '#F472B6', '#FB923C', '#E2E8F0', '#94A3B8', '#34D399', '#FCA5A5'];
 
@@ -60,6 +65,17 @@
   if (params.get('add')) store('qx-pending-add', params.get('add'));
   var hash = location.hash.replace('#', '');
   if (TABS.some(function (t) { return t[0] === hash; })) S.tab = hash;
+  TOP.forEach(function (t) { if (t[0] === hash) S.tab = t[3][0]; });
+  // A "visit" is a session separated from the last one by 3+ hours, so a reload doesn't reset "since your last visit".
+  (function () {
+    var cur = lget('qx-visit-cur'), now = new Date().toISOString();
+    if (!cur || Date.now() - Date.parse(cur) > 3 * 36e5) { lset('qx-visit-prev', cur || ''); }
+    lset('qx-visit-cur', now);
+    S.prevVisit = lget('qx-visit-prev') || null;
+    S.welcome = !lget('qx-welcome');
+    if (S.welcome) lset('qx-welcome', '1'); // shown on the first visit only; "Got it" hides it sooner
+  })();
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && S.stock) { S.stock = null; render(); } });
   if (hash === 'alerts' || hash === 'membership') S.drawer = true;
   if (token) { cleanUrl(['welcome']); renderFinish(token); }
   else load();
@@ -76,8 +92,16 @@
       if (!S.me.signedIn) return renderSignedOut();
       var pending = store('qx-pending-add');
       if (pending) { store('qx-pending-add', null); return addTickers(pending.split(/[\s,;]+/)); }
-      loadStocks().then(render);
+      loadStocks().then(render).then(loadExtras);
     });
+  }
+  /** What the "since your last visit" strip needs, loaded after the first paint. */
+  function loadExtras() {
+    var jobs = [];
+    if (S.events === undefined) { S.events = null; jobs.push(getJSON('/pro/events-recent.json').then(function (j) { S.events = (j && j.events) || []; })); }
+    if (S.weather === undefined) { S.weather = null; jobs.push(getJSON('/pro/weather.json').then(function (w) { S.weather = w || false; })); }
+    if (S.brief === undefined) { S.brief = null; jobs.push(api('GET', '/api/brief').then(function (b) { S.brief = b && b.ok ? b : false; })); }
+    return Promise.all(jobs).then(function () { if (S.tab === 'portfolio' || S.tab === 'brief' || S.tab === 'weather') render(); });
   }
 
   function loadStocks() {
@@ -236,18 +260,30 @@
     var planLabel = pro ? (me.founding ? 'Pro · Founding member' : 'Pro') : 'Free';
     var html = '<div class="px-top"><div><span class="wl-plan' + (pro ? ' pro' : '') + '">' + esc(planLabel) + '</span>' + (me.name ? ' <b class="wl-name">' + esc(me.name) + '</b>' : '') + ' <span class="wl-email">' + esc(me.email) + '</span></div>' +
       '<div class="px-top-actions"><button type="button" class="px-gear" data-act="drawer" aria-expanded="' + (S.drawer ? 'true' : 'false') + '" aria-controls="px-drawer"><i class="fa-solid fa-gear" aria-hidden="true"></i> Settings</button><button type="button" class="linklike" data-act="logout">Sign out</button></div></div>';
-    html += '<nav class="px-tabs" aria-label="Pro sections">' + TABS.map(function (t, i) {
-      var on = t[0] === tab;
-      return '<button type="button" data-tab="' + t[0] + '" aria-pressed="' + (on ? 'true' : 'false') + '" class="px-tab' + (on ? ' on' : '') + '"><span class="n">0' + (i + 1) + '</span>' + esc(t[1]) + '</button>';
+    var top = topOf(tab);
+    if (top[0] === 'stocks') S.lastStockView = tab;
+    html += '<nav class="px-tabs" aria-label="Pro sections">' + TOP.map(function (t) {
+      var on = t === top;
+      return '<button type="button" data-top="' + t[0] + '" aria-current="' + (on ? 'page' : 'false') + '" class="px-tab' + (on ? ' on' : '') + '"><i class="fa-solid ' + t[2] + '" aria-hidden="true"></i><span>' + esc(t[1]) + '</span></button>';
     }).join('') + '</nav>';
+    if (top[0] === 'stocks') html += '<div class="px-subnav" role="group" aria-label="My Stocks views">' + top[3].map(function (v) {
+      var on = v === tab, name = TABS.filter(function (x) { return x[0] === v; })[0][1];
+      return '<button type="button" data-tab="' + v + '" aria-pressed="' + (on ? 'true' : 'false') + '"' + (on ? ' class="on"' : '') + '>' + esc(name) + '</button>';
+    }).join('') + '</div>';
     if (S.notice) html += '<div class="wl-notice ' + S.notice.tone + '">' + S.notice.html + '</div>';
     if (S.drawer) html += '<div id="px-drawer" class="px-drawer">' + alertsHtml(me, pro) + membershipHtml(me, pro) + '</div>';
     var M = model();
-    if (!lget('qx-welcome')) html += welcomeHtml();
+    if (S.welcome) html += welcomeHtml();
+    if (tab === 'portfolio' && (me.watchlist || []).length) html += todayHtml(M);
     html += '<div class="px-panel">' + introHtml(tab) + ({ portfolio: tabPortfolio, smart: tabSmart, analyst: tabAnalyst, earnings: tabEarnings, weather: tabWeather, investors: tabInvestors, brief: tabBrief }[tab])(M, pro) + '</div>';
     html += '<p class="px-foot">QWERTx provides information from public filings for education. It is not investment advice or a recommendation to buy or sell any security. Fund holdings come from 13F and N-PORT filings made up to 45–60 days after each quarter; politician trades can be disclosed up to 45 days after the trade.</p>';
+    if (S.stock) html += stockPanel(S.stock, M);
+    // Members don't need the sales headline every visit: the page starts with their own stocks.
+    document.body.classList.add('px-signed');
     root.innerHTML = html;
+    document.body.classList.toggle('px-noscroll', !!S.stock);
     bind();
+    if (S.stock && S.stockFocus) { S.stockFocus = false; var cb = root.querySelector('.px-sp-close'); if (cb) cb.focus(); }
     if (tab === 'investors' && S.inv && S.mgr[S.inv] === undefined) { var slug = S.inv; S.mgr[slug] = null; getJSON('/pro/m/' + encodeURIComponent(slug) + '.json').then(function (j) { S.mgr[slug] = j || false; render(); }); }
     if ((tab === 'smart' || tab === 'investors') && S.dir === undefined) { S.dir = null; getJSON('/pro/managers.json').then(function (j) { S.dir = j || false; render(); }); }
     if (tab === 'weather' && S.weather === undefined) { S.weather = null; getJSON('/pro/weather.json').then(function (w) { S.weather = w || false; render(); }); }
@@ -302,16 +338,137 @@
   };
   function introHtml(tab) {
     var g = GUIDE[tab]; if (!g) return '';
-    var key = 'qx-howto-' + tab, seen = lget(key);
-    return '<div class="px-intro"><p class="px-intro-what">' + esc(g[0]) + '</p><details class="px-howto" data-howto="' + tab + '"' + (seen === 'closed' ? '' : seen ? ' open' : ' open') + '><summary>How to read this</summary><dl>' +
+    // Open the first time a member sees this view, closed after that unless they opened it themselves.
+    var key = 'qx-howto-' + tab, seen = lget(key), open = !seen || seen === 'open';
+    if (!seen) lset(key, 'seen');
+    return '<div class="px-intro"><p class="px-intro-what">' + esc(g[0]) + '</p><details class="px-howto" data-howto="' + tab + '"' + (open ? ' open' : '') + '><summary>How to read this</summary><dl>' +
       g[1].map(function (x) { return '<div><dt>' + esc(x[0]) + '</dt><dd>' + esc(x[1]) + '</dd></div>'; }).join('') + '</dl></details></div>';
   }
   function welcomeHtml() {
-    var lines = [['My Portfolio', 'what you own and how spread out it is'], ['Smart Money', 'who is buying and selling your stocks'], ['Analyst Targets', 'what Wall Street expects next year'], ['Earnings & News', 'report dates and big company news'], ['Market Weather', 'the economy and market mood at a glance'], ['Super Investors', 'every portfolio we track, in full'], ['QWERTx Brief', 'our weekly note in plain English']];
-    return '<section class="card px-welcome" aria-label="Welcome"><div><div class="px-label">New here? Start with this</div><h2 class="px-h2">Seven tabs, one question each</h2><ol>' +
-      lines.map(function (l, i) { return '<li><button type="button" class="linklike" data-tab-go="' + TABS[i][0] + '">' + esc(l[0]) + '</button> · ' + esc(l[1]) + '</li>'; }).join('') +
-      '</ol><p class="form-note">Everything here comes from official filings and public market data. It explains what is happening; it never tells you what to buy or sell.</p></div><button type="button" class="btn btn-sm" data-act="welcome-done">Got it</button></section>';
+    var lines = [['stocks', 'My Stocks', 'what you own, who is buying it, what analysts expect and when it reports'], ['market', 'Market', 'the economy and market mood in one look'], ['investors', 'Investors', 'every super investor we track; follow the ones you like'], ['brief', 'Brief', 'a short plain-English note every weekend']];
+    return '<section class="card px-welcome" aria-label="Welcome"><div><div class="px-label">Welcome · shown once</div><h2 class="px-h2">Four places, one habit</h2><ol>' +
+      lines.map(function (l) { return '<li><button type="button" class="linklike" data-top="' + l[0] + '">' + esc(l[1]) + '</button> · ' + esc(l[2]) + '</li>'; }).join('') +
+      '</ol><p class="form-note">Tap any ticker for everything about it in one place. Check in once a week: the strip at the top tells you what changed. Everything comes from official filings and public data; nothing here tells you what to buy or sell.</p></div><button type="button" class="btn btn-sm" data-act="welcome-done">Got it</button></section>';
   }
+
+  // ---------- One place to start: what changed since the last visit ----------
+  function ownedT() { var o = {}; (S.me.watchlist || []).forEach(function (w) { if (w.active) o[canon(w.ticker)] = w.ticker; }); return o; }
+  function follows() { return (S.me && S.me.prefs && S.me.prefs.follow) || []; }
+  function daysTo(iso) { return Math.round((Date.parse(iso) - Date.parse(today())) / 864e5); }
+  /** One filing event in plain words. */
+  function eventText(e) {
+    if (e.k === '13f') return mname(e.m) + ' ' + ({ new: 'opened a position in', add: 'added to', trim: 'trimmed', exit: 'sold all of' }[e.a] || 'changed') + ' ' + e.t;
+    if (e.k === 'cg') return (e.ch === 'Senate' ? 'Sen. ' : e.ch === 'President' ? 'President ' : 'Rep. ') + e.who + (e.a === 'buy' ? ' bought ' : ' sold ') + e.t;
+    return e.t + ': new filing';
+  }
+  function todayHtml(M) {
+    var own = ownedT(), sinceIso = S.prevVisit, since = sinceIso ? sinceIso.slice(0, 10) : addDays(-14);
+    var whenTxt = sinceIso ? 'since your last visit, ' + fmtShort(sinceIso) : 'in the last two weeks';
+    var cards = [], news = 0;
+    if (S.events) {
+      var seen = {}, evs = S.events.filter(function (e) {
+        if (!own[canon(e.t)] || !(sinceIso ? e.at > since : e.at >= since)) return false;
+        var key = e.k + e.t + (e.m || e.who) + e.a; if (seen[key]) return false; seen[key] = 1; return true;
+      }).sort(function (a, b) { return String(b.at).localeCompare(String(a.at)); });
+      news += evs.length;
+      cards.push(evs.length
+        ? { icon: 'fa-binoculars', tone: 'gold', title: plural(evs.length, 'new move') + ' in your stocks', body: eventText(evs[0]) + (evs.length > 1 ? ', and ' + (evs.length - 1) + ' more.' : '.'), go: 'data-tab-go="smart"', cta: 'See who' }
+        : { icon: 'fa-mug-hot', tone: 'calm', title: 'Quiet for your stocks', body: 'No new fund-manager, Congress or insider filings ' + whenTxt + '. Nothing needs your attention.', go: 'data-tab-go="smart"', cta: 'Smart money' });
+    }
+    var next = M.rows.filter(function (r) { return r.d && r.d.e && r.d.e.d >= today() && daysTo(r.d.e.d) <= 21; }).sort(function (a, b) { return a.d.e.d.localeCompare(b.d.e.d); })[0];
+    if (next) {
+      var dd = daysTo(next.d.e.d), wt = next.v && M.total ? ' · ' + (next.v.now / M.total * 100).toFixed(0) + '% of your portfolio' : '';
+      cards.push({ icon: 'fa-calendar-day', tone: 'blue', title: next.t + ' reports ' + (dd === 0 ? 'today' : dd === 1 ? 'tomorrow' : 'in ' + dd + ' days'), body: esc(next.d.e.l) + wt + '. Prices often jump on report days, up or down.', go: 'data-stock="' + esc(next.t) + '"', cta: 'Details' });
+    }
+    var fl = follows().filter(function (m) { var x = S.index.managers[m]; return x && x.filed && (sinceIso ? x.filed > since : x.filed >= since); });
+    if (fl.length) { news += fl.length; cards.push({ icon: 'fa-user-tie', tone: 'gold', title: mname(fl[0]) + (fl.length > 1 ? ' and ' + (fl.length - 1) + ' more' : '') + ' filed', body: 'New quarterly holdings from investors you follow.', go: 'data-inv="' + esc(fl[0]) + '"', cta: 'Open' }); }
+    else if (!follows().length) cards.push({ icon: 'fa-star', tone: 'calm', title: 'Follow 3 investors', body: 'Pick the investors you trust and we’ll tell you here when they file.', go: 'data-top="investors"', cta: 'Choose' });
+    var b = S.brief && S.brief.latest;
+    if (b && b.status === 'published' && (!sinceIso || String(b.publishedAt || b.updatedAt) > sinceIso)) { news++; cards.push({ icon: 'fa-newspaper', tone: 'gold', title: 'New Brief', body: esc(b.title), go: 'data-top="brief"', cta: 'Read' }); }
+    var w = S.weather && S.weather.us;
+    if (w && w.headline && w.headline !== 'Gathering data') cards.push({ icon: w.icon === 'sun' ? 'fa-sun' : w.icon === 'storm' ? 'fa-cloud-bolt' : 'fa-cloud-sun', tone: 'calm', title: 'Market: ' + w.headline.toLowerCase(), body: esc(String(w.verdict || w.summary).split('. ')[0].replace(/\.$/, '')) + '.', go: 'data-top="market"', cta: 'Market' });
+    if (!cards.length) return '';
+    var caught = S.events && !news;
+    return '<section class="px-today" aria-label="What changed"><div class="px-today-h"><span class="px-label">' + (sinceIso ? 'Since your last visit · ' + fmtShort(sinceIso) : 'The last two weeks') + '</span>' + (caught ? '<span class="px-caught"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> You’re caught up</span>' : '') + '</div><div class="px-today-cards">' +
+      cards.slice(0, 4).map(function (c) { return '<button type="button" class="px-tcard2 ' + c.tone + '" ' + c.go + '><i class="fa-solid ' + c.icon + '" aria-hidden="true"></i><span class="px-tc2-t">' + esc(c.title) + '</span><span class="px-tc2-b">' + c.body + '</span><span class="px-tc2-c">' + c.cta + ' →</span></button>'; }).join('') + '</div></section>';
+  }
+
+  // ---------- Who is buying and selling, in one sentence ----------
+  function flows(d) {
+    d = d || {};
+    var h = d.h || [], ih = d.ih || [], cg = (d.cg || []).filter(function (x) { return x.ch !== 'President'; }), pr = (d.cg || []).filter(function (x) { return x.ch === 'President'; });
+    var cnt = function (list, kinds) { return list.filter(function (x) { return kinds.indexOf(x[2]) >= 0; }).length; };
+    return {
+      fb: cnt(h, ['New', 'Add']), fs: cnt(h, ['Trim']) + (d.x || []).length, ib: cnt(ih, ['New', 'Add']), is: cnt(ih, ['Trim']),
+      cb: cg.filter(function (x) { return x.a === 'buy'; }).length, cs: cg.filter(function (x) { return x.a !== 'buy'; }).length,
+      pb: pr.filter(function (x) { return x.a === 'buy'; }).length, ps: pr.filter(function (x) { return x.a !== 'buy'; }).length,
+      cluster: !!d.cl, insB: d.cl ? d.cl.i : d.ib ? d.ib.i : 0, insS: d.is ? d.is.i : 0, holders: h.length,
+    };
+  }
+  function smartLine(d) {
+    var f = flows(d), parts = [];
+    var side = function (b, s) { return b + s === 0 ? null : b >= s * 1.5 ? 'buy' : s >= b * 1.5 ? 'sell' : 'mix'; };
+    var fund = side(f.fb + f.ib, f.fs + f.is), pol = side(f.cb + f.pb, f.cs + f.ps);
+    if (fund) parts.push(fund === 'buy' ? 'funds mostly added' : fund === 'sell' ? 'funds mostly trimmed' : 'funds were split');
+    if (pol) parts.push(pol === 'buy' ? 'politicians bought' : pol === 'sell' ? 'politicians sold' : 'politicians bought and sold');
+    if (f.cluster) parts.push('several insiders bought together, which is rare');
+    else if (f.insB) parts.push('insiders bought');
+    else if (f.insS) parts.push('insiders sold, usually planned and routine');
+    // Insider sales are left out of the lean: most are planned in advance for taxes or diversification.
+    var b = f.fb + f.ib + f.cb + f.pb + (f.cluster ? 3 : f.insB ? 1 : 0), sl = f.fs + f.is + f.cs + f.ps, tot = b + sl;
+    var lean = !tot ? 'quiet' : b - sl > tot * 0.2 ? 'buy' : sl - b > tot * 0.2 ? 'sell' : 'mix';
+    var txt = parts.length ? parts.join(', ').replace(/^./, function (c) { return c.toUpperCase(); }) + '.' : 'No recent moves by the people we track.';
+    return { lean: lean, label: { buy: 'More buying', sell: 'More selling', mix: 'Mixed', quiet: 'Quiet' }[lean], text: txt };
+  }
+  function leanPill(l) { return '<span class="px-pill ' + l.lean + '">' + esc(l.label) + '</span>'; }
+
+  // ---------- One panel per stock ----------
+  function stockPanel(t, M) {
+    var w = (S.me.watchlist || []).filter(function (x) { return x.ticker === t; })[0];
+    var d = S.data[t] || {}, v = w ? value(w) : null, e = d.etf;
+    var name = d.n || (S.index.tickers[t] && S.index.tickers[t][0]) || (S.names && S.names[t]) || '';
+    var html = '<div class="px-sp-back" data-act="stock-close" aria-hidden="true"></div><aside class="px-sp" role="dialog" aria-modal="true" aria-labelledby="px-sp-h">' +
+      '<div class="px-sp-head"><div><div class="px-label">' + (e ? 'ETF' : 'Stock') + ' · everything in one place</div><h2 class="px-h2 big" id="px-sp-h"><span class="mono">' + esc(t) + '</span></h2><p class="form-note">' + esc(name) + (d.q && d.q.p ? ' · ' + price(d.q.p, nativeCcy(t)) : '') + '</p></div><button type="button" class="icon-btn px-sp-close" data-act="stock-close" aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>';
+    if (!e && !/\.TO$/.test(t)) { var l = smartLine(d); html += '<p class="px-sp-line">' + leanPill(l) + ' ' + esc(l.text) + '</p>'; }
+    else if (e) { var k = KIND[e.kind] || KIND.core; html += '<p class="px-sp-line"><span class="px-pill quiet">' + esc(k[0]) + '</span> ' + esc(k[1]) + '</p>'; }
+    // Your position
+    var pos = '';
+    if (v) {
+      pos += '<div class="px-sp-kv"><span>Worth</span><b class="mono">' + usd(v.now) + '</b></div>';
+      if (v.invested) pos += '<div class="px-sp-kv"><span>Since you bought</span><b class="mono ' + (v.now >= v.invested ? 'up' : 'down') + '">' + (v.now >= v.invested ? '+' : '−') + usd(Math.abs(v.now - v.invested)) + ' (' + pct((v.now / v.invested - 1) * 100) + ')</b></div>';
+      if (M.total) pos += '<div class="px-sp-kv"><span>Share of your portfolio</span><b class="mono">' + (v.now / M.total * 100).toFixed(1) + '%</b></div>';
+    }
+    if (w && w.shares) pos += '<div class="px-sp-kv"><span>You own</span><b class="mono">' + (+w.shares).toLocaleString('en-US') + ' shares' + (w.paid ? ' at ' + price(+w.paid, typedCcy(w)) : '') + '</b></div>';
+    html += '<section><h3 class="px-h3">Your position</h3>' + (pos || '<p class="form-note">Add how much you own on the Overview to see its value here.</p>') + '</section>';
+    if (e) {
+      if (e.top) html += '<section><h3 class="px-h3">What’s inside</h3>' + e.top.slice(0, 5).map(function (h) { return '<div class="px-sp-kv"><span>' + esc(h[0]) + '</span><b class="mono">' + h[1].toFixed(1) + '%</b></div>'; }).join('') + '<p class="form-note">Its 10 biggest holdings are ' + e.top10.toFixed(0) + '% of the fund, out of ' + (e.count || 0).toLocaleString('en-US') + '.</p></section>';
+      html += '<div class="px-sp-links"><button type="button" class="btn btn-sm" data-etf="' + esc(t) + '">Open the ETF scorecard</button></div>';
+    } else {
+      var feed = activity([{ ticker: t }]).slice(0, 5);
+      html += '<section><h3 class="px-h3">Who moved recently</h3>' + (feed.length ? '<ol class="px-feed compact">' + feed.map(function (x) { return '<li><div class="px-fd">' + esc(x.date) + '</div><div><div>' + esc(x.text) + '</div><div class="tkr-name">' + esc(x.detail) + (x.u ? ' · <a href="' + esc(x.u) + '" target="_blank" rel="noopener nofollow">Filing</a>' : '') + '</div></div></li>'; }).join('') + '</ol>' : '<p class="form-note">No recent moves by fund managers, politicians or insiders.</p>') + '</section>';
+      if (d.an && d.q && d.q.p && S.index.vendor) {
+        var a = d.an, n = (a.sb || 0) + (a.b || 0) + (a.h || 0) + (a.s || 0) + (a.ss || 0), c = sym(nativeCcy(t));
+        html += '<section><h3 class="px-h3">Analysts’ 12-month range</h3><div class="px-sp-range"><span>Lowest<b class="mono">' + c + Math.round(a.low) + '</b></span><span>Average<b class="mono">' + c + Math.round(a.avg) + '</b></span><span>Highest<b class="mono">' + c + Math.round(a.high) + '</b></span></div><p class="form-note">' + plural(n, 'analyst') + ', ' + Math.round(((a.sb || 0) + (a.b || 0)) / (n || 1) * 100) + '% say buy. Targets tend to run optimistic; read them as a range of opinions.</p></section>';
+      }
+      var er = '';
+      if (d.e && d.e.d >= today()) er += '<div class="px-sp-kv"><span>Next report</span><b>' + esc(d.e.l) + '</b></div>';
+      var last = lastResult(d);
+      if (last) er += '<div class="px-sp-kv"><span>Last quarter</span><b class="' + (last.beat ? 'up' : 'down') + '">' + (last.beat ? 'Beat' : 'Missed') + ' · $' + last.a.toFixed(2) + ' vs. $' + last.e.toFixed(2) + '</b></div>';
+      var major = (d.k8 || []).filter(function (k) { return (k.i || []).some(function (i) { return MAJOR.indexOf(i) >= 0; }); }).slice(0, 3);
+      if (major.length) er += major.map(function (k) { var it = (k.i || []).filter(function (i) { return ITEMS[i] && i !== '9.01'; })[0]; return '<div class="px-sp-kv"><span>' + fmtShort(k.d) + '</span><a href="' + esc(k.u) + '" target="_blank" rel="noopener nofollow">' + esc(it ? ITEMS[it][0] : 'Company news') + '</a></div>'; }).join('');
+      if (er) html += '<section><h3 class="px-h3">Earnings and news</h3>' + er + '</section>';
+      html += '<div class="px-sp-links">' + (stockHref(d) ? '<a class="btn btn-sm" href="' + stockHref(d) + '">Full public page</a>' : '') + '<button type="button" class="btn btn-sm" data-tab-go="smart">All smart money</button></div>';
+    }
+    return html + '</aside>';
+  }
+  /** Latest reported quarter: the calendar's last result, else the newest entry in the earnings history. */
+  function lastResult(d) {
+    if (d.le && d.le.est != null) return { a: d.le.eps, e: d.le.est, beat: d.le.eps >= d.le.est, when: d.le.l };
+    var x = (d.er || []).filter(function (r) { return r.a != null && r.e != null; })[0];
+    return x ? { a: x.a, e: x.e, beat: x.a >= x.e, when: x.d } : null;
+  }
+  /** Ticker that opens its panel when it's on the member's list, else links to the public page. */
+  function tkrBtn(t, d) { return (S.me.watchlist || []).some(function (w) { return w.ticker === t; }) ? '<button type="button" class="tkr linklike" data-stock="' + esc(t) + '">' + esc(t) + '</button>' : tkr(t, d); }
 
   // ---------- Tab 1 · My Portfolio ----------
   function addBox(me) {
@@ -324,6 +481,17 @@
       resultsHtml() + '</section>';
   }
 
+  /** The one thing worth knowing about this portfolio right now, in a sentence. */
+  function insightHtml(M) {
+    if (!M.total || !M.top.length) return '';
+    var t0 = M.top[0], p0 = t0.tot / M.total * 100, t10 = M.top.reduce(function (a, x) { return a + x.tot; }, 0) / M.total * 100;
+    var multi = M.top.filter(function (x) { return x.d > 0 && Object.keys(x.via).length; })[0], msg;
+    if (p0 >= 20) msg = '<b>' + esc(t0.t) + ' is ' + p0.toFixed(0) + '% of everything you own</b>' + (Object.keys(t0.via).length ? ', counting what your ETFs hold' : '') + '. Many investors keep any one company below 20%.';
+    else if (multi) msg = '<b>You own ' + esc(multi.t) + ' more than one way</b>: in your own shares and inside ' + esc(Object.keys(multi.via).join(' and ')) + '.';
+    else if (t10 >= 60) msg = '<b>' + t10.toFixed(0) + '% of your money is in 10 companies.</b> A few names drive most of your result.';
+    else msg = '<b>Nicely spread out.</b> No company is more than ' + p0.toFixed(0) + '% of your portfolio.';
+    return '<p class="px-insight"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i><span>' + msg + '</span></p>';
+  }
   function tabPortfolio(M, pro) {
     var me = S.me, wl = me.watchlist || [];
     var html = '';
@@ -345,6 +513,7 @@
     var gl = M.sized.filter(function (r) { return r.v.kind === 'live' && r.v.invested; });
     var glNow = gl.reduce(function (a, r) { return a + r.v.now; }, 0), glIn = gl.reduce(function (a, r) { return a + r.v.invested; }, 0);
     var gain = gl.length ? glNow - glIn : null;
+    html += insightHtml(M);
     html += '<div class="px-grid2">';
     var mixed = M.sized.some(function (r) { return typedCcy(r.w) !== ccy() || nativeCcy(r.t) !== ccy(); });
     var fxNote = mixed && rate() ? ' Converted at US$1 = C$' + rate().toFixed(4) + ' (' + esc(S.index.fx.source) + ', ' + fmtShort(S.index.fx.d) + ').' : mixed ? ' Exchange rate not loaded yet, so US and Canadian dollars are added as they are.' : '';
@@ -362,18 +531,28 @@
     var cards = [];
     if (M.top.length && M.total) {
       var t0 = M.top[0], p0 = t0.tot / M.total * 100;
-      cards.push(health('Biggest company', p0.toFixed(0) + '%', p0, '#F5B83D', esc(t0.t) + (Object.keys(t0.via).length ? ', counting your shares plus what your ETFs hold.' : ' is your biggest single position.')));
+      cards.push(health('Biggest company', p0.toFixed(0) + '%', p0, '#F5B83D', esc(t0.t) + (Object.keys(t0.via).length ? ', counting your shares plus what your ETFs hold.' : ' is your biggest single position.'), 'If one company is more than about 20% of everything, a bad day for it is a bad day for you.'));
     }
     var stockVal = stocks.reduce(function (a, r) { return a + (r.v ? r.v.now : 0); }, 0);
     var smartVal = stocks.reduce(function (a, r) { return a + (r.v && r.d && r.d.h && r.d.h.length ? r.v.now : 0); }, 0);
-    if (stocks.length) cards.push(health('Smart money overlap', stockVal ? Math.round(smartVal / stockVal * 100) + '%' : owned + '/' + stocks.length, stockVal ? smartVal / stockVal * 100 : owned / stocks.length * 100, '#2DD4BF', stockVal ? 'Of the money in your stocks is in companies a tracked fund manager also owns.' : 'Of your stocks are owned by a tracked fund manager.'));
+    void smartVal; void owned;
+    var us = stocks.filter(function (r) { return !/\.TO$/.test(r.t); }), leans = us.map(function (r) { return smartLine(r.d).lean; });
+    var nb = leans.filter(function (l) { return l === 'buy'; }).length, ns = leans.filter(function (l) { return l === 'sell'; }).length;
+    if (us.length) cards.push(health('Smart money lately', nb + ' of ' + us.length, us.length ? nb / us.length * 100 : 0, '#60A5FA', 'of your stocks saw more buying than selling by funds and politicians' + (ns ? '; ' + ns + ' saw more selling' : '') + '. <button type="button" class="linklike" data-tab-go="smart">Who</button>', 'Counts recent buys and sells by tracked fund managers, institutions and politicians. Insider sales are left out because most are routine.'));
     if (M.top.length && M.total) {
       var t10 = M.top.reduce(function (a, x) { return a + x.tot; }, 0) / M.total * 100;
-      cards.push(health('Top 10 companies', t10.toFixed(0) + '%', t10, '#F87171', 'Share of everything you own that sits in your 10 biggest companies' + (M.etfRows.some(function (r) { return r.d.etf.top; }) ? ', counting inside your ETFs.' : M.etfRows.length ? ' you hold directly. ETFs are counted once their holdings load.' : '.')));
+      cards.push(health('Top 10 companies', t10.toFixed(0) + '%', t10, '#F5B83D', 'Share of everything you own that sits in your 10 biggest companies' + (M.etfRows.some(function (r) { return r.d.etf.top; }) ? ', counting inside your ETFs.' : M.etfRows.length ? ' you hold directly. ETFs are counted once their holdings load.' : '.'), 'How much of your money sits in your 10 biggest companies, counting what is inside your ETFs. The higher it is, the less spread out you are.'));
     }
     var next = stocks.filter(function (r) { return r.d && r.d.e && r.d.e.d >= today(); }).sort(function (a, b) { return a.d.e.d.localeCompare(b.d.e.d); })[0];
-    if (next) cards.push(health('Next earnings', fmtShort(next.d.e.d), 100, '#60A5FA', esc(next.t) + ' reports ' + esc(next.d.e.l) + (next.d.e.t === 'amc' ? ' after the close' : next.d.e.t === 'bmo' ? ' before the open' : '') + '.'));
+    // Said once: an earnings date within three weeks is already in the "since your last visit" strip.
+    if (next && daysTo(next.d.e.d) > 21) cards.push(health('Next earnings', fmtShort(next.d.e.d), 100, '#60A5FA', esc(next.t) + ' reports ' + esc(next.d.e.l) + (next.d.e.t === 'amc' ? ' after the close' : next.d.e.t === 'bmo' ? ' before the open' : '') + '.'));
     html += '<section class="px-health" aria-label="Portfolio health">' + cards.join('') + '</section></div>';
+
+    // Holdings table, then the add box (members look at what they own far more often than they add to it)
+    html += '<section class="card" aria-label="Your holdings"><h2 class="px-h2">Your holdings <span class="form-note">' + plural(stocks.length, 'stock') + ' · ' + plural(M.rows.length - stocks.length, 'ETF') + '</span></h2><div class="px-table-wrap"><table class="px-table"><thead><tr><th>Holding</th><th>Your position</th><th>Weight</th><th class="num">Value</th><th>Smart money</th><th>Earnings</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody>' +
+      (me.watchlist || []).map(function (w) { return holdingRow(w, M); }).join('') + '</tbody></table></div>' +
+      '<p class="form-note">Values use ' + basis + '. Amounts are shown as you entered them.</p></section>';
+    html += addBox(me);
 
     // Allocation + country/sector
     if (M.sized.length) {
@@ -385,22 +564,18 @@
       html += '</div>';
     }
 
-    // Holdings table
-    html += addBox(me);
-    html += '<section class="card" aria-label="Your holdings"><h2 class="px-h2">Your holdings <span class="form-note">' + plural(stocks.length, 'stock') + ' · ' + plural(M.rows.length - stocks.length, 'ETF') + '</span></h2><div class="px-table-wrap"><table class="px-table"><thead><tr><th>Holding</th><th>Your position</th><th>Weight</th><th class="num">Value</th><th>Smart money</th><th>Earnings</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody>' +
-      (me.watchlist || []).map(function (w) { return holdingRow(w, M); }).join('') + '</tbody></table></div>' +
-      '<p class="form-note">Values use ' + basis + '. Amounts are shown as you entered them.</p></section>';
-
-    // What you really own
-    if (M.etfRows.some(function (r) { return r.d.etf.top; }) && M.top.length) html += reallyOwn(M);
-    // ETF scorecard
+    // Dig deeper: what's really inside, and the ETF scorecard. Closed until opened (remembered).
+    var deep = '';
+    if (M.etfRows.some(function (r) { return r.d.etf.top; }) && M.top.length) deep += reallyOwn(M);
     var etfs = (me.watchlist || []).filter(function (w) { return isEtf(w.ticker); });
-    if (etfs.length) html += etfCard(etfs, M);
+    if (etfs.length) deep += etfCard(etfs, M);
+    if (deep) html += '<details class="px-more" data-more="dig"' + (S.digOpen || lget('qx-more-dig') === 'open' ? ' open' : '') + '><summary><span>Dig deeper</span><span class="form-note">What you really own through your ETFs' + (etfs.length ? ', and a scorecard for each ETF' : '') + '</span></summary><div class="px-more-body">' + deep + '</div></details>';
     return html;
   }
   function today() { return new Date().toISOString().slice(0, 10); }
-  function health(k, v, bar, color, s) {
-    return '<div class="card px-hc">' + label(k) + '<div class="px-hv" style="color:' + color + '">' + v + '</div><div class="px-meter"><span style="width:' + Math.max(2, Math.min(100, bar)).toFixed(0) + '%;background:' + color + '"></span></div><p>' + s + '</p></div>';
+  function tip(text) { return '<button type="button" class="qx-tip" aria-label="What does this mean?" data-tip="' + esc(text) + '"><span aria-hidden="true">i</span></button>'; }
+  function health(k, v, bar, color, s, help) {
+    return '<div class="card px-hc">' + label(k + (help ? tip(help) : '')) + '<div class="px-hv" style="color:' + color + '">' + v + '</div><div class="px-meter"><span style="width:' + Math.max(2, Math.min(100, bar)).toFixed(0) + '%;background:' + color + '"></span></div><p>' + s + '</p></div>';
   }
   function donut(M) {
     var C = 2 * Math.PI * 56, cum = 0;
@@ -456,13 +631,13 @@
       sm = '<span title="US fund-manager, politician and insider filings only cover US-listed shares.">' + chip('Toronto listing', '') + '</span>';
     } else if (d) {
       var b = (d.h || []).filter(function (h) { return h[2] === 'New' || h[2] === 'Add'; }).length, s = (d.h || []).filter(function (h) { return h[2] === 'Trim'; }).length + (d.x || []).length;
-      sm = (d.h || []).length || s ? chip(b + '↑ ' + s + '↓', b > s ? 'up' : s > b ? 'down' : '') : chip('No tracked owner', '');
+      sm = leanPill(smartLine(d)); void b; void s;
       if (d.le && d.le.est != null && d.le.d >= addDays(-50)) er = chip(d.le.eps >= d.le.est ? 'Beat' : 'Missed', d.le.eps >= d.le.est ? 'up' : 'down');
       else if (d.e && d.e.d >= today()) er = chip(fmtShort(d.e.d), '');
     }
     var pos = w.amount ? sym(typedCcy(w)) + Math.round(w.amount).toLocaleString('en-US') : w.shares ? (+w.shares).toLocaleString('en-US') + ' shares' : '<span class="muted">—</span>';
     if (w.paid && w.shares) pos += '<div class="tkr-name">avg. ' + price(+w.paid, typedCcy(w)) + ' a share</div>';
-    return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkr(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div>' + (d && d.q && d.q.p ? '<div class="tkr-name mono">' + price(d.q.p, nativeCcy(t)) + (d.q.chg != null ? ' <span class="' + (d.q.chg >= 0 ? 'up' : 'down') + '">' + pct(d.q.chg, 2) + '</span>' : '') + '</div>' : '') + '</td>' +
+    return '<tr' + (w.active ? '' : ' class="paused"') + '><td>' + tkrBtn(t, d) + (w.input ? ' <span class="tag" title="Matched from the Toronto listing">from ' + esc(w.input) + '</span>' : '') + (w.active ? '' : ' <span class="tag tag-gold">Paused</span>') + '<div class="tkr-name">' + esc(name) + '</div>' + (d && d.q && d.q.p ? '<div class="tkr-name mono">' + price(d.q.p, nativeCcy(t)) + (d.q.chg != null ? ' <span class="px-daily" title="Today’s move. One day says little; what you paid matters more.">' + pct(d.q.chg, 1) + ' today</span>' : '') + '</div>' : '') + '</td>' +
       '<td>' + pos + ' <button type="button" class="linklike" data-edit="' + esc(t) + '">' + (w.amount || w.shares ? 'Edit' : 'Add size') + '</button>' + posForm(w) + '</td>' +
       '<td>' + (weight != null ? '<div class="px-wbar"><span style="width:' + Math.min(100, weight * 2.5).toFixed(0) + '%"></span></div><span class="mono">' + weight.toFixed(1) + '%</span>' : '<span class="muted">—</span>') + '</td>' +
       '<td class="num mono">' + (v ? usd(v.now) + (v.kind === 'paid' ? '<div class="tkr-name">at your average price</div>' : '') + (v.kind === 'live' && v.invested ? '<div class="tkr-name ' + (v.now >= v.invested ? 'up' : 'down') + '">' + (v.now >= v.invested ? '+' : '−') + usd(Math.abs(v.now - v.invested)) + ' (' + pct((v.now / v.invested - 1) * 100) + ')</div>' : '') : w.shares ? '<button type="button" class="linklike" data-edit="' + esc(t) + '">Add average price</button>' : '<span class="muted">—</span>') + '</td>' +
@@ -585,7 +760,8 @@
     if (!stocks.length) return soon('Add a US-listed stock to see the smart money', (caNote ? caNote + ' ' : '') + 'This tab shows which fund managers, politicians and insiders are buying or selling the stocks you own. ETFs are explained on My Portfolio.');
     var cell = function (b, s, note) {
       var tot = b + s, net = b - s, a = tot ? Math.min(0.55, 0.18 + Math.abs(net) / tot * 0.6) : 0;
-      var bg = !tot || !net ? 'var(--px-cell)' : net > 0 ? 'rgba(45,212,191,' + a.toFixed(2) + ')' : 'rgba(248,113,113,' + a.toFixed(2) + ')';
+      // Blue for buying, violet for selling: flows are context, not good or bad news (red is kept for real risk).
+      var bg = !tot || !net ? 'var(--px-cell)' : net > 0 ? 'rgba(96,165,250,' + a.toFixed(2) + ')' : 'rgba(167,139,250,' + a.toFixed(2) + ')';
       return '<div class="px-cell" style="background:' + bg + '"><b class="mono">' + (tot ? b + '↑ ' + s + '↓' : '—') + '</b><span>' + esc(note) + '</span></div>';
     };
     var rows = stocks.map(function (w) {
@@ -596,25 +772,26 @@
       var cb = cg.filter(function (x) { return x.a === 'buy'; }).length, cs = cg.length - cb;
       var pb = pr.filter(function (x) { return x.a === 'buy'; }).length, ps = pr.length - pb;
       var inb = d.cl ? d.cl.i : d.ib ? d.ib.i : 0, ins = d.is ? d.is.i : 0;
-      return '<div class="px-hrow"><div class="px-hname">' + tkr(w.ticker, d) + '<span class="tkr-name">' + esc(d.n || '') + '</span></div>' +
+      var ln = smartLine(d);
+      return '<details class="px-flow"><summary><span class="px-flow-t"><b class="mono">' + esc(w.ticker) + '</b><span class="tkr-name">' + esc(d.n || '') + '</span></span>' + leanPill(ln) + '<span class="px-flow-s">' + esc(ln.text) + '</span><span class="px-flow-more">Breakdown</span></summary><div class="px-hrow">' +
         cell(fb, fs, h.length ? plural(h.length, 'holder') + ((d.x || []).length ? ' · ' + d.x.length + ' sold out' : '') : (d.x || []).length ? d.x.length + ' sold out' : 'none tracked') +
         cell(ib, is, ih.length ? plural(ih.length, 'institution') : 'none') +
         cell(cb, cs, cg.length ? 'disclosed, 6 months' : 'none') +
         cell(pb, ps, pr.length ? 'disclosed, 6 months' : 'none') +
-        cell(inb, ins, d.cl ? 'buying cluster' : inb || ins ? 'insiders, ' + (S.index.insiderQuarter || 'quarter') : 'no open-market trades') + '</div>';
+        cell(inb, ins, d.cl ? 'buying cluster' : inb || ins ? 'insiders, ' + (S.index.insiderQuarter || 'quarter') : 'no open-market trades') + '</div><div class="px-flow-foot"><span class="form-note">Fund managers from their last 13F · politicians from the last 6 months · insiders from SEC Form 4</span><button type="button" class="linklike" data-stock="' + esc(w.ticker) + '">Everything about ' + esc(w.ticker) + ' →</button></div></details>';
     }).join('');
-    var html = '<section class="card" aria-label="Who is buying and selling your stocks"><div class="px-h2row"><h2 class="px-h2">Who is buying and selling your stocks</h2><span class="form-note">Buys ↑ vs. sells ↓ · fund managers from their last 13F · politicians and insiders from recent disclosures</span></div>' +
-      '<div class="px-heat-wrap"><div class="px-heat"><div class="px-hrow head"><div></div><div>Fund managers</div><div>Institutions</div><div>Congress</div><div>President</div><div>Insiders</div></div>' + rows + '</div></div>' +
-      '<div class="px-split-key"><span><i style="background:rgba(45,212,191,.45)"></i>More buying</span><span><i style="background:var(--px-cell)"></i>Balanced or none</span><span><i style="background:rgba(248,113,113,.45)"></i>More selling</span><span class="muted">Many insider sales are planned in advance; clusters of insider buying are the rarer signal.</span></div>' + (caNote ? '<p class="form-note">Not shown: ' + caNote + '</p>' : '') + '</section>';
+    var html = '<section class="card" aria-label="Who is buying and selling your stocks"><div class="px-h2row"><h2 class="px-h2">Who is buying and selling your stocks</h2><span class="form-note">One line per stock. Open a row for the breakdown.</span></div>' +
+      '<div class="px-flows">' + rows + '</div>' +
+      '<p class="form-note px-flow-key">Selling isn’t a warning by itself: funds trim to rebalance and insiders sell for taxes. Several buyers at once is the rarer signal.</p>' + (caNote ? '<p class="form-note">Not shown: ' + caNote + '</p>' : '') + '</section>';
 
-    var feed = activity(stocks);
+    var feed = groupFeed(activity(stocks));
     var filters = [['all', 'All'], ['fund', 'Fund managers'], ['pol', 'Politicians'], ['ins', 'Insiders']];
     var shown = feed.filter(function (e) { return S.filter === 'all' || e.k === S.filter; });
     var limit = pro ? (S.more ? 60 : 12) : 4;
     html += '<div class="px-grid2"><section class="card" aria-label="Recent activity"><div class="px-h2row"><h2 class="px-h2">Recent activity</h2><div class="px-seg small" role="group" aria-label="Filter activity">' +
       filters.map(function (f) { return '<button type="button" data-filter="' + f[0] + '" aria-pressed="' + (S.filter === f[0] ? 'true' : 'false') + '"' + (S.filter === f[0] ? ' class="on"' : '') + '>' + f[1] + '</button>'; }).join('') + '</div></div>' +
       (shown.length ? '<ol class="px-feed">' + shown.slice(0, limit).map(function (e) {
-        return '<li><div class="px-fd">' + esc(e.date) + '<span class="px-ftag">' + esc(e.tag) + '</span></div><div><div><b class="mono ' + (e.buy ? 'up' : 'down') + '">' + esc(e.t) + '</b> · ' + esc(e.text) + '</div><div class="tkr-name">' + esc(e.detail) + (e.u ? ' · <a href="' + esc(e.u) + '" target="_blank" rel="noopener nofollow">Filing</a>' : '') + '</div></div></li>';
+        return '<li><div class="px-fd">' + esc(e.date) + '<span class="px-ftag">' + esc(e.tag) + '</span></div><div><div>' + (e.group ? '<b>' + esc(e.mgr) + '</b> · ' + e.group : '<button type="button" class="tkr linklike flow-' + (e.buy ? 'b' : 's') + '" data-stock="' + esc(e.t) + '">' + esc(e.t) + '</button> · ' + esc(e.text)) + '</div><div class="tkr-name">' + esc(e.detail) + (e.u ? ' · <a href="' + esc(e.u) + '" target="_blank" rel="noopener nofollow">Filing</a>' : '') + '</div></div></li>';
       }).join('') + '</ol>' : '<p class="muted">Nothing in this category yet.</p>') +
       (pro && shown.length > limit ? '<button type="button" class="btn btn-sm" data-act="more">Show ' + Math.min(48, shown.length - limit) + ' more</button>' : '') +
       (!pro && shown.length > limit ? lock((shown.length - limit) + ' more moves in your stocks.') : '') + '</section>';
@@ -645,7 +822,7 @@
           if (h[2] === 'Hold') return;
           var m = S.index.managers[h[0]] || {};
           var txt = h[2] === 'New' ? 'opened a new position' : h[2] === 'Add' ? 'added ' + Math.abs(h[3] || 0) + '% more shares' : 'trimmed ' + Math.abs(h[3] || 0) + '% of their shares';
-          out.push({ k: 'fund', sort: m.filed || '', date: fmtShort(m.filed), tag: inst ? 'Institution' : '13F', t: t, buy: h[2] !== 'Trim', text: mname(h[0]) + ' ' + txt, detail: 'Now ' + h[1].toFixed(h[1] < 1 ? 2 : 1) + '% of their portfolio · holdings as of ' + fmtDate(m.period), u: m.url });
+          out.push({ k: 'fund', mgr: mname(h[0]), verb: h[2] === 'New' ? 'opened' : h[2] === 'Add' ? 'added ' + Math.abs(h[3] || 0) + '%' : 'trimmed ' + Math.abs(h[3] || 0) + '%', sort: m.filed || '', date: fmtShort(m.filed), tag: inst ? 'Institution' : '13F', t: t, buy: h[2] !== 'Trim', text: mname(h[0]) + ' ' + txt, detail: 'Now ' + h[1].toFixed(h[1] < 1 ? 2 : 1) + '% of their portfolio · holdings as of ' + fmtDate(m.period), u: m.url });
         });
       };
       mv(d.h, false); mv(d.ih, true);
@@ -655,6 +832,23 @@
       if (d.is) out.push({ k: 'ins', sort: '0', date: S.index.insiderQuarter || '', tag: 'Insiders', t: t, buy: false, text: plural(d.is.i, 'insider') + ' sold shares on the open market', detail: 'About ' + money(d.is.v) + ' · many sales are planned in advance' });
     });
     return out.sort(function (a, b) { return String(b.sort).localeCompare(String(a.sort)); });
+  }
+  /** One line per manager per filing: "Robert Torray · added GOOGL 24%, trimmed AAPL 6%, MSFT 5%". */
+  function groupFeed(feed) {
+    var by = {}, out = [];
+    feed.forEach(function (e) {
+      if (e.k !== 'fund' || !e.mgr) return out.push(e);
+      var key = e.mgr + '|' + e.sort, g = by[key];
+      if (!g) { g = by[key] = { k: 'fund', mgr: e.mgr, sort: e.sort, date: e.date, tag: e.tag, items: [], u: e.u, detail: e.detail.replace(/^Now [^·]+· /, '') }; out.push(g); }
+      g.items.push(e);
+    });
+    return out.map(function (g) {
+      if (!g.items) return g;
+      if (g.items.length === 1) return g.items[0];
+      g.group = g.items.map(function (e) { return e.verb.split(' ')[0] + ' <button type="button" class="tkr linklike flow-' + (e.buy ? 'b' : 's') + '" data-stock="' + esc(e.t) + '">' + esc(e.t) + '</button>' + (e.verb.split(' ')[1] ? ' ' + esc(e.verb.split(' ')[1]) : ''); }).join(', ');
+      g.detail = plural(g.items.length, 'of your stocks', 'of your stocks') + ' in one filing · ' + g.detail;
+      return g;
+    });
   }
   function twins(stocks, pro) {
     var by = {};
@@ -701,7 +895,11 @@
     var latest = all.map(function (m) { return m.period; }).sort().pop();
     var recent = all.slice().sort(function (a, b) { return String(b.filed).localeCompare(String(a.filed)); }).slice(0, 8);
     var nNew = all.filter(function (m) { return m.period === latest; }).length;
-    var html = '<section class="card px-justfiled" aria-label="Just filed"><div class="px-h2row"><h2 class="px-h2">Just filed</h2><span class="form-note">' + nNew + ' of ' + all.length + ' have filed for ' + qLabel(latest) + '. Most file in the final two weeks before the deadline, 45 days after the quarter ends.</span></div><div class="px-jf">' +
+    var fset = follows(), followed = all.filter(function (m) { return fset.indexOf(m.slug) >= 0; });
+    var html = '<section class="card px-following" aria-label="Investors you follow"><div class="px-h2row"><h2 class="px-h2">Investors you follow</h2><span class="form-note">' + (followed.length ? 'We show their new filings first, here and in the strip on My Stocks.' : 'Follow up to ' + 10 + ' investors you trust. Open one and tap Follow.') + '</span></div>' +
+      (followed.length ? '<div class="px-jf">' + followed.map(function (m) { return '<button type="button" class="px-jf-i" data-inv="' + esc(m.slug) + '"><span class="px-jf-d">' + esc(qLabel(m.period)) + ' · filed ' + esc(fmtShort(m.filed)) + (fresh(m.filed) ? ' <span class="px-chip gold">New</span>' : '') + '</span><b>' + esc(m.n) + '</b><span class="tkr-name">' + (m.shared ? 'owns ' + plural(m.shared, 'of your stocks', 'of your stocks') : esc(m.f)) + '</span></button>'; }).join('') + '</div>'
+        : '<div class="px-follow-suggest">' + all.slice().sort(function (a, b) { return b.shared - a.shared || b.v - a.v; }).filter(function (m) { return !m.p || pro; }).slice(0, 4).map(function (m) { return '<button type="button" class="btn btn-sm" data-follow="' + esc(m.slug) + '"><i class="fa-regular fa-star" aria-hidden="true"></i> ' + esc(m.n) + '</button>'; }).join('') + '<span class="form-note">Suggested: they own the most of your stocks.</span></div>') + '</section>';
+    html += '<section class="card px-justfiled" aria-label="Just filed"><div class="px-h2row"><h2 class="px-h2">Just filed</h2><span class="form-note">' + nNew + ' of ' + all.length + ' have filed for ' + qLabel(latest) + '. Most file in the final two weeks before the deadline, 45 days after the quarter ends.</span></div><div class="px-jf">' +
       recent.map(function (m) {
         return '<button type="button" class="px-jf-i" data-inv="' + esc(m.slug) + '"><span class="px-jf-d">' + esc(fmtShort(m.filed)) + (fresh(m.filed) ? ' <span class="px-chip gold">New</span>' : '') + '</span><b>' + esc(m.n) + '</b><span class="tkr-name">' + esc(m.f) + ' · ' + esc(qLabel(m.period)) + '</span></button>';
       }).join('') + '</div></section>';
@@ -741,8 +939,10 @@
     var buys = m.h.filter(function (h) { return h[6] > 0; }).sort(function (a, b) { return b[6] - a[6]; }).slice(0, 5);
     var sells = m.h.filter(function (h) { return h[6] < 0; }).map(function (h) { return [h[0], h[1], h[6], 'Trimmed']; }).concat(m.x.map(function (x) { return [x[0], x[1], -x[2], 'Sold out']; })).sort(function (a, b) { return a[2] - b[2]; }).slice(0, 5);
     var hmax = Math.max.apply(null, m.hist.map(function (x) { return x[1]; }).concat([1]));
+    var fol = follows().indexOf(slug) >= 0;
+    var followBtn = '<button type="button" class="btn btn-sm' + (fol ? ' on' : '') + '" data-follow="' + esc(slug) + '" aria-pressed="' + fol + '"><i class="fa-' + (fol ? 'solid' : 'regular') + ' fa-star" aria-hidden="true"></i> ' + (fol ? 'Following' : 'Follow') + '</button>';
     var html = back + '<section class="card px-inv-hero"><div class="px-h2row"><div>' + label(esc(m.c.map(function (c) { var x = CATS.filter(function (y) { return y[0] === c; })[0]; return x ? x[1] : c; }).join(' · '))) +
-      '<h2 class="px-h2 big">' + esc(m.n) + '</h2><p class="form-note">' + esc(m.meta || m.f) + '</p></div><div class="px-inv-tags">' + m.t.map(function (t) { return '<span class="px-chip">' + esc(t) + '</span>'; }).join('') + '</div></div>' +
+      '<h2 class="px-h2 big">' + esc(m.n) + '</h2><p class="form-note">' + esc(m.meta || m.f) + '</p></div><div class="px-inv-tags">' + followBtn + m.t.map(function (t) { return '<span class="px-chip">' + esc(t) + '</span>'; }).join('') + '</div></div>' +
       '<p class="px-inv-about">' + esc(m.a) + '</p>' + (m.ph.length ? '<ul class="px-inv-ph">' + m.ph.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
       '<div class="px-grid4">' +
       '<div class="px-sub">' + label('Portfolio value') + '<div class="px-hv">' + bn(m.v) + '</div><p>' + (m.vChg != null ? '<span class="' + (m.vChg >= 0 ? 'up' : 'down') + '">' + pct(m.vChg) + '</span> vs. ' + esc(qLabel(m.prevPeriod)) : 'US-listed stocks') + '</p></div>' +
@@ -785,12 +985,15 @@
     if (sized.length) {
       var avg = at('avg'), lo = at('low'), hi = at('high');
       var X = function (v) { return (10 + (v - Math.min(lo, now) * 0.97) / (hi * 1.02 - Math.min(lo, now) * 0.97) * 500).toFixed(1); };
-      html += '<section class="card">' + label('If analysts are right, in 12 months your stocks are worth') + '<div class="px-big gold">' + usd(avg) + ' <span class="px-gain ' + (avg >= now ? 'up' : 'down') + '">' + pct((avg / now - 1) * 100) + '</span></div><p class="form-note">vs. ' + usd(now) + ' today, using each stock’s average target. ETFs are explained on My Portfolio.</p>' +
+      // Range first, with the three outcomes given equal weight: a single big optimistic number anchors people.
+      var cellR = function (k, v2) { return '<div><span class="px-label">' + k + '</span><b class="mono">' + usd(v2) + '</b><span class="mono ' + (v2 >= now ? 'up' : 'down') + '">' + pct((v2 / now - 1) * 100, 0) + '</span></div>'; };
+      html += '<section class="card">' + label('Your stocks in 12 months, by analysts’ targets') + '<div class="px-range3">' + cellR('If every lowest target hits', lo) + cellR('Average targets', avg) + cellR('If every highest target hits', hi) + '</div><p class="form-note">vs. ' + usd(now) + ' today. Analyst targets have tended to run optimistic, so read this as a range of opinions, not a forecast. ETFs are explained on the Overview.</p>' +
         '<svg viewBox="0 0 520 96" width="100%" height="96" role="img" aria-label="Your stocks today ' + usd(now) + ', at average targets ' + usd(avg) + '"><rect x="10" y="40" width="500" height="14" rx="7" fill="var(--px-track)"></rect><rect x="' + X(lo) + '" y="40" width="' + (X(hi) - X(lo)).toFixed(1) + '" height="14" rx="7" fill="var(--px-band)"></rect><line x1="' + X(now) + '" y1="30" x2="' + X(now) + '" y2="64" stroke="currentColor" stroke-width="3"></line><text x="' + X(now) + '" y="22" text-anchor="middle" fill="currentColor" font-size="13" font-family="IBM Plex Mono, monospace">Today ' + usd(now) + '</text><circle cx="' + X(avg) + '" cy="47" r="10" fill="#F5B83D"></circle><text x="' + X(avg) + '" y="84" text-anchor="middle" fill="#F5B83D" font-size="13" font-family="IBM Plex Mono, monospace">Average ' + usd(avg) + '</text></svg>' +
-        '<div class="px-lohi"><span>Every lowest target: ' + usd(lo) + '</span><span>Every highest target: ' + usd(hi) + '</span></div></section>';
+        '</section>';
     }
-    var ranked = info.slice().sort(function (a, b) { return b.up - a.up; });
-    html += '<section class="card"><h3 class="px-h3">Room to run, ranked</h3><p class="form-note">Average target vs. today’s price. Click a stock for your scenarios.</p>' + ranked.map(function (x) {
+    // Ordered by how much of your money is in each stock, not by upside: ranking by upside invites chasing.
+    var ranked = info.slice().sort(function (a, b) { return (b.v ? b.v.now : 0) - (a.v ? a.v.now : 0); });
+    html += '<section class="card"><h3 class="px-h3">Analysts’ view of each stock</h3><p class="form-note">Average target vs. today’s price, biggest holdings first. Click a stock for your scenarios.</p>' + ranked.map(function (x) {
       var c = Math.max(-20, Math.min(30, x.up)), left = c >= 0 ? 40 : 40 + c / 50 * 100, width = Math.abs(c) / 50 * 100;
       return '<button type="button" class="px-uprow' + (x.t === sel.t ? ' on' : '') + '" data-sel="' + esc(x.t) + '" aria-pressed="' + (x.t === sel.t ? 'true' : 'false') + '"><b class="mono">' + esc(x.t) + '</b><span class="px-uptrack"><span class="zero"></span><span class="bar ' + (x.up >= 0 ? 'up' : 'down') + '" style="left:' + left.toFixed(1) + '%;width:' + width.toFixed(1) + '%"></span></span><span class="mono ' + (x.up >= 0 ? 'up' : 'down') + '">' + pct(x.up, 0) + '</span><span class="px-cons">' + esc(x.consensus) + '</span></button>';
     }).join('') + '</section></div>';
@@ -837,17 +1040,18 @@
         '<div class="px-grid4">' + up.map(function (x) { var v = value(x.w); return '<div class="px-sub"><b class="mono">' + esc(x.w.ticker) + '</b> <span class="muted">· ' + esc(x.d.e.l) + (x.d.e.est ? ' (expected)' : '') + '</span><p>' + (x.d.e.eps != null ? 'Expected EPS <b>$' + x.d.e.eps.toFixed(2) + '</b>' : 'Estimate not published yet') + (x.d.e.t === 'amc' ? ' · after the close' : x.d.e.t === 'bmo' ? ' · before the open' : '') + '</p>' + (v && M.total ? '<p class="muted">' + (v.now / M.total * 100).toFixed(1) + '% of your portfolio</p>' : '') + '</div>'; }).join('') + '</div>';
     } else html += '<p class="muted">None of your stocks have a report date in the next four months yet.</p>';
     html += '</section><div class="px-grid2">';
-    html += '<section class="card" aria-label="Did they beat expectations"><h2 class="px-h2">Did they beat expectations?</h2><p class="form-note">Earnings per share vs. the analysts’ estimate, from the earnings calendar.</p>' + stocks.map(function (w) {
+    html += '<section class="card" aria-label="Did they beat expectations"><h2 class="px-h2">Did they beat expectations?</h2><p class="form-note">Earnings per share vs. the analysts’ estimate, from the earnings calendar.</p>' + (stocks.every(function (w) { var d = S.data[w.ticker] || {}; return !lastResult(d) && !d.e; }) ? '<p class="muted">No results or report dates for your stocks in the calendar yet.</p>' : '') + stocks.map(function (w) {
       var d = S.data[w.ticker] || {};
       var hist = (d.er || []).slice(0, 8).reverse();
       var dots = hist.length ? '<span class="px-dots" aria-label="Last ' + hist.length + ' quarters, oldest first">' + hist.map(function (e) { return '<i class="' + (e.e == null ? '' : e.a >= e.e ? 'b' : 'm') + '" title="' + esc(e.d) + '"></i>'; }).join('') + '</span>' : '';
-      if (d.le && d.le.est != null) {
-        var s = (d.le.eps / d.le.est - 1) * 100 * (d.le.est < 0 ? -1 : 1), beat = d.le.eps >= d.le.est;
-        return '<div class="px-res"><b class="mono">' + esc(w.ticker) + '</b><div><div><span class="' + (beat ? 'up' : 'down') + '">' + (beat ? 'Beat' : 'Missed') + '</span>: $' + d.le.eps.toFixed(2) + ' vs. $' + d.le.est.toFixed(2) + ' expected (' + pct(s) + ')</div><div class="tkr-name">Reported ' + esc(d.le.l) + (d.le.q ? ' for the quarter to ' + esc(d.le.q.replace('/', ' ')) : '') + '</div></div>' + dots + '</div>';
+      var tb = tkrBtn(w.ticker, d), lr = lastResult(d);
+      if (lr) {
+        var s = (lr.a / lr.e - 1) * 100 * (lr.e < 0 ? -1 : 1);
+        return '<div class="px-res">' + tb + '<div><div><span class="' + (lr.beat ? 'up' : 'down') + '">' + (lr.beat ? 'Beat' : 'Missed') + '</span>: $' + lr.a.toFixed(2) + ' vs. $' + lr.e.toFixed(2) + ' expected (' + pct(s) + ')</div><div class="tkr-name">' + (d.le && d.le.est != null ? 'Reported ' + esc(d.le.l) + (d.le.q ? ' for the quarter to ' + esc(d.le.q.replace('/', ' ')) : '') : 'Latest quarter on record (' + esc(fmtShort(lr.when)) + ')') + (d.e && d.e.d >= today() ? ' · next: ' + esc(d.e.l) : '') + '</div></div>' + dots + '</div>';
       }
-      if (d.e) return '<div class="px-res"><b class="mono">' + esc(w.ticker) + '</b><div><div>Reports ' + esc(d.e.l) + '</div><div class="tkr-name">' + (d.e.eps != null ? 'Expected $' + d.e.eps.toFixed(2) + ' a share' : 'Estimate not published yet') + '</div></div>' + dots + '</div>';
-      return '<div class="px-res"><b class="mono">' + esc(w.ticker) + '</b><div class="muted">No recent report in the calendar</div>' + dots + '</div>';
-    }).join('') + '</section>';
+      if (d.e) return '<div class="px-res">' + tb + '<div><div>Reports ' + esc(d.e.l) + '</div><div class="tkr-name">' + (d.e.eps != null ? 'Expected $' + d.e.eps.toFixed(2) + ' a share' : 'Estimate not published yet') + '</div></div>' + dots + '</div>';
+      return '';
+    }).join('') + (stocks.some(function (w) { var d = S.data[w.ticker] || {}; return (d.er || []).length; }) ? '<div class="px-split-key"><span><i class="px-dot b"></i>Beat</span><span><i class="px-dot m"></i>Missed</span><span class="muted">Dots: the last quarters, oldest first</span></div>' : '') + '</section>';
     var ev = [];
     stocks.forEach(function (w) { ((S.data[w.ticker] || {}).k8 || []).forEach(function (k) { ev.push({ t: w.ticker, k: k }); }); });
     ev.sort(function (a, b) { return b.k.d.localeCompare(a.k.d); });
@@ -879,13 +1083,16 @@
       '<div class="px-seg" role="group" aria-label="Country">' + [['us', 'United States'], ['ca', 'Canada']].map(function (r) { return '<button type="button" data-region="' + r[0] + '" aria-pressed="' + (S.region === r[0] ? 'true' : 'false') + '"' + (S.region === r[0] ? ' class="on"' : '') + '>' + r[1] + '</button>'; }).join('') + '</div></div>' +
       '<div class="px-dials">' + w.dials.map(gauge).join('') + '</div></section>';
     if (!pro) return html + lock('The indicators behind each dial, with what they mean and where they sit in history, are part of QWERTx Pro.');
-    html += w.groups.map(function (g) {
-      return '<section class="px-wgroup" aria-label="' + esc(g.title) + '"><div class="px-h2row"><h2 class="px-h2">' + esc(g.title) + '</h2><span class="form-note">' + esc(g.q) + '</span></div><div class="px-wcards">' + g.cards.map(function (c) {
+    html += '<p class="form-note px-wg-note">The indicators behind each dial. Open a group to see them.</p>' + w.groups.map(function (g) {
+      var t = { good: 0, mid: 0, bad: 0 }; g.cards.forEach(function (c) { t[c.tone] = (t[c.tone] || 0) + 1; });
+      var tally = [t.good ? t.good + ' calm' : '', t.mid ? t.mid + ' mixed' : '', t.bad ? t.bad + ' warning' + (t.bad > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
+      var key = 'qx-wg-' + g.title, open = lget(key) === 'open';
+      return '<details class="px-wgroup" data-wg="' + esc(g.title) + '"' + (open ? ' open' : '') + '><summary><span class="px-wg-t">' + esc(g.title) + '</span><span class="form-note">' + esc(g.q) + '</span><span class="px-wg-tally">' + plural(g.cards.length, 'indicator') + (tally ? ' · ' + tally : '') + '</span></summary><div class="px-wcards">' + g.cards.map(function (c) {
         var col = c.tone === 'good' ? '#2DD4BF' : c.tone === 'bad' ? '#F87171' : '#F5B83D';
         return '<article class="card px-wcard"><div class="px-wc-h"><span>' + esc(c.name) + '</span><span class="px-chip ' + (c.tone === 'good' ? 'up' : c.tone === 'bad' ? 'down' : 'gold') + '">' + esc(c.status) + '</span></div><div class="px-wc-v">' + esc(c.value) + '</div>' +
           '<div class="px-band" aria-label="' + esc(c.name + ' sits at ' + c.pos + '% of its range') + '"><div class="t"><span style="width:' + c.pos + '%;background:' + col + '"></span><i style="left:' + c.pos + '%"></i></div><div class="lh"><span>' + esc(c.lo) + '</span><span>' + esc(c.hi) + '</span></div></div>' +
           '<p>' + esc(c.meaning) + '</p><div class="px-src">' + esc(c.source) + (c.date ? ' · ' + esc(c.date) : '') + (c.since ? ' · history since ' + esc(c.since) : '') + '</div></article>';
-      }).join('') + '</div></section>';
+      }).join('') + '</div></details>';
     }).join('');
     return html;
   }
@@ -910,7 +1117,8 @@
         (b.tickers.length ? '<div class="px-brief-t"><span class="form-note">Stocks in this Brief:</span>' + b.tickers.map(function (t) { return '<span class="px-chip ' + (mine[t] ? 'gold' : '') + '">' + esc(t) + (mine[t] ? ' · you own' : '') + '</span>'; }).join('') + '</div>' : '') +
         (b.status === 'published' ? '<div class="px-brief-fb"><span>Was this useful?</span><button type="button" class="px-vote' + (B.myVote === 1 ? ' on' : '') + '" data-vote="1" aria-pressed="' + (B.myVote === 1) + '" aria-label="Yes, useful"><i class="fa-regular fa-thumbs-up" aria-hidden="true"></i></button><button type="button" class="px-vote' + (B.myVote === -1 ? ' on' : '') + '" data-vote="-1" aria-pressed="' + (B.myVote === -1) + '" aria-label="Not useful"><i class="fa-regular fa-thumbs-down" aria-hidden="true"></i></button>' +
           '<form class="px-ask" id="px-ask"><label class="sr-only" for="px-q">Ask a question</label><input class="input input-sm" id="px-q" name="q" placeholder="Ask a question about this Brief" maxlength="1000"><button class="btn btn-sm" type="submit">Send</button><span class="form-note" role="status"></span></form></div>' : '') +
-        (B.admin && b.up != null ? '<p class="form-note">Admin: ' + b.up + ' found it useful, ' + b.down + ' didn’t.</p>' : '') + '</article>';
+        (B.admin && b.up != null ? '<p class="form-note">Admin: ' + b.up + ' found it useful, ' + b.down + ' didn’t.</p>' : '') +
+        (b.status === 'published' ? '<p class="px-done"><i class="fa-solid fa-circle-check" aria-hidden="true"></i> You’re caught up for the week. The next Brief arrives this weekend.</p>' : '') + '</article>';
     } else {
       html += '<article class="card px-brief-main">' + label('The QWERTx Brief') + '<h2 class="px-brief-title">The first Brief is on its way</h2><p class="muted">Every weekend, a short, plain-English note on what moved markets, what smart money did and what to watch next week. It also opens the Friday email.</p></article>';
     }
@@ -1068,14 +1276,35 @@
   // ---------- events ----------
   function on(sel, ev, fn) { root.querySelectorAll(sel).forEach(function (el) { el.addEventListener(ev, function (e) { fn(e, el); }); }); }
   function bind() {
-    on('[data-tab]', 'click', function (e, b) { if (b.getAttribute('data-tab') === 'investors' && S.tab === 'investors') S.inv = null; S.tab = b.getAttribute('data-tab'); store('qx-tab', S.tab); history.replaceState(null, '', '#' + S.tab); render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); });
-    on('[data-tab-go]', 'click', function (e, b) { e.preventDefault(); S.tab = b.getAttribute('data-tab-go'); store('qx-tab', S.tab); render(); });
+    on('[data-tab]', 'click', function (e, b) { S.stock = null; if (b.getAttribute('data-tab') === 'investors' && S.tab === 'investors') S.inv = null; S.tab = b.getAttribute('data-tab'); store('qx-tab', S.tab); history.replaceState(null, '', '#' + S.tab); render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); });
+    on('[data-tab-go]', 'click', function (e, b) { e.preventDefault(); S.stock = null; S.tab = b.getAttribute('data-tab-go'); store('qx-tab', S.tab); history.replaceState(null, '', '#' + S.tab); render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }); });
+    on('[data-top]', 'click', function (e, b) {
+      e.preventDefault();
+      var t = TOP.filter(function (x) { return x[0] === b.getAttribute('data-top'); })[0];
+      if (t[0] === 'investors' && S.tab === 'investors') S.inv = null;
+      S.stock = null;
+      S.tab = t[0] === 'stocks' ? (S.lastStockView || 'portfolio') : t[3][0];
+      store('qx-tab', S.tab); history.replaceState(null, '', '#' + S.tab); render();
+      window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+    });
+    on('[data-stock]', 'click', function (e, b) { e.preventDefault(); e.stopPropagation(); S.stock = b.getAttribute('data-stock'); S.stockFocus = true; S.stockFrom = b.getAttribute('data-stock'); render(); });
+    on('[data-act="stock-close"]', 'click', function (e) { e.preventDefault(); S.stock = null; render(); var back = root.querySelector('[data-stock="' + (S.stockFrom || '') + '"]'); if (back) back.focus(); });
     root.querySelectorAll('details[data-howto]').forEach(function (d) { d.addEventListener('toggle', function () { lset('qx-howto-' + d.getAttribute('data-howto'), d.open ? 'open' : 'closed'); }); });
     on('[data-open]', 'click', function (e) { e.preventDefault(); S.drawer = true; render(); var el = document.getElementById('membership'); if (el) el.scrollIntoView({ behavior: 'smooth' }); });
     on('[data-filter]', 'click', function (e, b) { S.filter = b.getAttribute('data-filter'); S.more = false; render(); });
     on('[data-region]', 'click', function (e, b) { S.region = b.getAttribute('data-region'); render(); });
+    root.querySelectorAll('details[data-wg]').forEach(function (d) { d.addEventListener('toggle', function () { lset('qx-wg-' + d.getAttribute('data-wg'), d.open ? 'open' : 'closed'); }); });
+    root.querySelectorAll('details[data-more]').forEach(function (d) { d.addEventListener('toggle', function () { lset('qx-more-' + d.getAttribute('data-more'), d.open ? 'open' : 'closed'); }); });
+    on('[data-follow]', 'click', function (e, b) {
+      e.preventDefault(); e.stopPropagation();
+      var slug = b.getAttribute('data-follow'), list = follows().slice(), i = list.indexOf(slug);
+      if (i >= 0) list.splice(i, 1); else if (list.length < 10) list.push(slug); else { alert('You can follow up to 10 investors. Unfollow one first.'); return; }
+      S.me.prefs = Object.assign({}, S.me.prefs, { follow: list });
+      render();
+      api('POST', '/api/prefs', { follow: list });
+    });
     on('[data-dircat]', 'click', function (e, b) { S.dirCat = b.getAttribute('data-dircat'); render(); });
-    on('[data-inv]', 'click', function (e, b) { S.inv = b.getAttribute('data-inv'); S.tab = 'investors'; S.invAll = null; render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90 }); });
+    on('[data-inv]', 'click', function (e, b) { S.stock = null; S.inv = b.getAttribute('data-inv'); S.tab = 'investors'; S.invAll = null; render(); window.scrollTo({ top: root.getBoundingClientRect().top + window.scrollY - 90 }); });
     var ds = document.getElementById('px-dir-sort');
     if (ds) ds.addEventListener('change', function () { S.dirSort = ds.value; render(); });
     var dq = document.getElementById('px-dir-q');
@@ -1087,7 +1316,7 @@
       api('POST', '/api/prefs', { currency: c });
     });
     on('[data-sel]', 'click', function (e, b) { S.sel = b.getAttribute('data-sel'); render(); });
-    on('[data-etf]', 'click', function (e, b) { e.preventDefault(); S.etf = b.getAttribute('data-etf'); render(); var el = document.getElementById('etf-card'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+    on('[data-etf]', 'click', function (e, b) { e.preventDefault(); S.etf = b.getAttribute('data-etf'); S.stock = null; S.digOpen = true; S.tab = 'portfolio'; render(); var el = document.getElementById('etf-card'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
     var add = document.getElementById('wl-add-form');
     if (add) {
       add.addEventListener('submit', function (e) { e.preventDefault(); var v = add.tickers.value; if (!v.trim()) return; add.querySelector('button[type="submit"]').disabled = true; addTickers(v.split(/[\s,;]+/)); });
@@ -1174,7 +1403,7 @@
       if (act === 'more') { S.more = true; render(); }
       if (act === 'inv-back') { S.inv = null; render(); }
       if (act === 'inv-all') { S.invAll = S.inv; render(); }
-      if (act === 'welcome-done') { lset('qx-welcome', '1'); render(); }
+      if (act === 'welcome-done') { S.welcome = false; render(); }
       if (act === 'new-brief') { S.briefEdit = null; render(); }
       if (act === 'logout') api('POST', '/api/auth/logout').then(function () { location.href = '/account.html'; });
       if (act === 'portal') { b.disabled = true; api('POST', '/api/billing-portal').then(function (j) { if (j.url) location.href = j.url; else { b.disabled = false; alert(j.message); } }); }
