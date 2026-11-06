@@ -4,6 +4,7 @@
     python3 scripts/lib/sheet2json.py FILE [SHEET]
 
 Output: {"sheets": [...names], "sheet": "chosen", "rows": [[cell, ...], ...]}
+With SHEET "*": {"sheets": [...names], "all": {name: rows, ...}} (every worksheet).
 Cells are numbers, strings or null. Dates become "YYYY-MM-DD" strings.
 .xls needs the xlrd package, .xlsx needs openpyxl (the workflows install both).
 If SHEET is missing or not found, the first sheet whose name contains "data" is used, else the first sheet.
@@ -35,19 +36,34 @@ def cell(v):
     return s or None
 
 
+def trim(rows):
+    while rows and all(v is None for v in rows[-1]):
+        rows.pop()
+    return rows
+
+
 def read_xlsx(path, wanted):
     import openpyxl
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+    grab = lambda n: trim([[cell(v) for v in row] for row in wb[n].iter_rows(values_only=True)])
+    if wanted == '*':
+        return wb.sheetnames, '*', {n: grab(n) for n in wb.sheetnames}
     name = pick(wb.sheetnames, wanted)
-    rows = [[cell(v) for v in row] for row in wb[name].iter_rows(values_only=True)]
-    return wb.sheetnames, name, rows
+    return wb.sheetnames, name, grab(name)
 
 
 def read_xls(path, wanted):
     import xlrd
     wb = xlrd.open_workbook(path)
     names = wb.sheet_names()
+    if wanted == '*':
+        return names, '*', {n: read_xls_sheet(wb, n) for n in names}
     name = pick(names, wanted)
+    return names, name, read_xls_sheet(wb, name)
+
+
+def read_xls_sheet(wb, name):
+    import xlrd
     sh = wb.sheet_by_name(name)
     rows = []
     for r in range(sh.nrows):
@@ -65,7 +81,7 @@ def read_xls(path, wanted):
             else:
                 out.append(cell(x.value))
         rows.append(out)
-    return names, name, rows
+    return trim(rows)
 
 
 def main():
@@ -76,9 +92,8 @@ def main():
         head = f.read(8)
     # .xlsx files are zip archives ("PK"); old .xls files are OLE2 compound documents.
     names, name, rows = (read_xlsx if head[:2] == b'PK' else read_xls)(path, wanted)
-    while rows and all(v is None for v in rows[-1]):
-        rows.pop()
-    json.dump({'sheets': names, 'sheet': name, 'rows': rows}, sys.stdout, separators=(',', ':'))
+    out = {'sheets': names, 'all': rows} if name == '*' else {'sheets': names, 'sheet': name, 'rows': rows}
+    json.dump(out, sys.stdout, separators=(',', ':'))
 
 
 if __name__ == '__main__':

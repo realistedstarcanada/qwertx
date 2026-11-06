@@ -301,8 +301,8 @@ export function buildWeather({ macro, market, insiders, politics, live, valuatio
   if (erpObs?.length) {
     const [d, v] = erpObs.at(-1), p = percentile(erpObs, v);
     prem.cards.push(card('us_erp', { name: 'Implied risk premium (Damodaran)', value: v, unit: '%', digits: 2, date: d, freq: 'm', source: V.erp.source || 'Aswath Damodaran, NYU Stern', obs: erpObs, pos: p,
-      status: v < 4 ? 'Thin' : p <= 25 ? 'Below average' : v <= 5.5 ? 'Normal' : 'Generous', tone: v < 4 || p <= 25 ? 'mid' : 'good',
-      meaning: `The extra yearly return over the 10-year Treasury that today’s S&P 500 price implies, if analysts’ forecasts of dividends, buybacks and profit growth come true. ${p <= 1 ? 'The lowest' : p <= 50 ? `Lower than ${100 - p}%` : `Higher than ${p}%`} of monthly readings since ${erpObs[0][0].slice(0, 4)}.${ecyNow != null ? ` Shiller’s measure (${ecyNow.toFixed(1)}%) uses past profits instead of forecasts; the gap between the two is the optimism built into prices.` : ''}` }));
+      status: v < 4 ? 'Thin' : p <= 25 && erpObs.length >= 36 ? 'Below average' : v <= 5.5 ? 'Normal' : 'Generous', tone: v < 4 || (p <= 25 && erpObs.length >= 36) ? 'mid' : 'good',
+      meaning: `The extra yearly return over the 10-year Treasury that today’s S&P 500 price implies, if analysts’ forecasts of dividends, buybacks and profit growth come true. ${erpObs.length < 36 ? '' : `${p <= 1 ? 'The lowest' : p <= 50 ? `Lower than ${100 - p}%` : `Higher than ${p}%`} of monthly readings since ${erpObs[0][0].slice(0, 4)}.`}${ecyNow != null ? ` Shiller’s measure (${ecyNow.toFixed(1)}%) uses past profits instead of forecasts; the gap between the two is the optimism built into prices.` : ''}` }));
   }
 
   // "Is the trend up?" Month-end S&P 500 vs. its 10-month average (Meb Faber's rule) and index concentration.

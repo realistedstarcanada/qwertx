@@ -62,9 +62,12 @@ export function parseShiller(rows) {
   const hi = rows.findIndex((r) => r && norm(r[0]) === 'date' && r.some((c) => norm(c) === 'cape'));
   if (hi < 0) throw new Error('Shiller: header row with Date and CAPE not found');
   const head = rows[hi].map(norm);
+  // Some labels are spread over the rows above the header ("Real" / "Total" / "Return Price"); read them joined too.
+  const joined = head.map((h, i) => norm([rows[hi - 2]?.[i], rows[hi - 1]?.[i], rows[hi][i]].filter((x) => x != null).join(' ')));
   const col = (...names) => head.findIndex((h) => names.some((n) => h === n));
-  const colLike = (re) => head.findIndex((h) => re.test(h));
-  const cCape = col('cape'), cEcy = colLike(/^excess cape yield/), cTr = colLike(/^real total return price/), cGs10 = colLike(/gs10/), cCpi = col('cpi');
+  const colLike = (re) => { const i = head.findIndex((h) => re.test(h)); return i >= 0 ? i : joined.findIndex((h) => re.test(h)); };
+  const cCape = col('cape'), cEcy = colLike(/excess cape yield/), cTr = colLike(/real total return price|real tr price/), cGs10 = colLike(/gs10/), cCpi = col('cpi');
+  const cFwd = colLike(/10 year annualized stock real return/);
   const cape = [], ecy = [], tr = [], gs10 = [], cpi = [];
   for (const r of rows.slice(hi + 1)) {
     const d = shillerDate(r?.[0]);
@@ -91,15 +94,19 @@ export function parseShiller(rows) {
     }).filter(Boolean);
   }
   const trMap = new Map(tr);
-  const fwd10 = tr.map(([d, v]) => {
+  let fwd10 = tr.map(([d, v]) => {
     const later = `${Number(d.slice(0, 4)) + 10}${d.slice(4)}`;
     return trMap.has(later) && v > 0 ? [d, r4(((trMap.get(later) / v) ** 0.1 - 1) * 100)] : null;
   }).filter(Boolean);
-  return { cape, ecy: excess.map(([d, v]) => [d, r4(v)]), fwd10 };
+  if (!fwd10.length && cFwd >= 0) {
+    // Shiller's own "10 Year Annualized Stock Real Return" column (a fraction), when the price column isn't found.
+    fwd10 = rows.slice(hi + 1).map((r) => [shillerDate(r?.[0]), num(r?.[cFwd])]).filter(([d, v]) => d && Number.isFinite(v)).map(([d, v]) => [d, r4(Math.abs(v) < 1 ? v * 100 : v)]);
+  }
+  return { cape, ecy: excess.map(([d, v]) => [d, r4(v)]), fwd10, columns: { header: rows[hi].slice(0, 24), above: rows[hi - 1]?.slice(0, 24) || [], tr: cTr, fwd: cFwd, ecy: cEcy } };
 }
 
 /** Damodaran's monthly implied ERP sheet: a date column and an "ERP" column; returns [[month, %], ...]. */
-export function parseDamodaran(rows) {
+export function parseDamodaran(rows, { min = 12 } = {}) {
   // The header row has an ERP column and at least one other label (title rows above it are single cells).
   const isErp = (c) => /\berp\b|risk premium/i.test(String(c ?? ''));
   const hi = rows.findIndex((r) => r && r.some(isErp) && r.filter((c) => c != null && c !== '').length >= 2);
@@ -125,7 +132,7 @@ export function parseDamodaran(rows) {
   let out = [...by.entries()].sort((a, b) => a[0].localeCompare(b[0]));
   if (out.length && Math.max(...out.map((o) => Math.abs(o[1]))) < 1) out = out.map(([d, v]) => [d, v * 100]);
   out = out.filter(([, v]) => v > 0 && v < 20).map(([d, v]) => [d, r4(v)]);
-  if (out.length < 12) throw new Error(`Damodaran: only ${out.length} monthly ERP values`);
+  if (out.length < min) throw new Error(`Damodaran: only ${out.length} monthly ERP values`);
   return out;
 }
 
@@ -223,8 +230,21 @@ async function damodaran() {
   for (const url of [...new Set(urls)]) {
     try {
       const buf = await download(url);
-      const sheet = readSheet(buf, url.endsWith('x') ? '.xlsx' : '.xls');
-      return { erp: parseDamodaran(sheet.rows), url };
+      // The file may hold one sheet or one per year: read them all and merge by month.
+      const book = readSheet(buf, url.endsWith('x') ? '.xlsx' : '.xls', '*');
+      const by = new Map(), sheets = {};
+      for (const [name, rows] of Object.entries(book.all || {})) {
+        try {
+          const got = parseDamodaran(rows, { min: 1 });
+          got.forEach(([d, v]) => by.set(d, v));
+          sheets[name] = got.length;
+        } catch (e) {
+          sheets[name] = `${rows.length} rows, skipped: ${e.message}`;
+        }
+      }
+      const erp = [...by.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+      if (erp.length < 12) throw new Error(`Damodaran: only ${erp.length} months across sheets ${JSON.stringify(sheets)}`);
+      return { erp, url, sheets };
     } catch (e) {
       lastErr = e;
     }
@@ -246,10 +266,12 @@ async function run() {
   };
   await step('shiller', async () => {
     const s = await shiller();
+    out.status.shillerColumns = s.columns;
     return { shiller: { source: 'Robert Shiller, Yale University (shillerdata.com)', url: s.url, cape: s.cape, ecy: s.ecy, fwd10: s.fwd10 } };
   });
   await step('damodaran', async () => {
     const d = await damodaran();
+    out.status.damodaranSheets = d.sheets;
     return { erp: { source: 'Aswath Damodaran, NYU Stern', url: d.url, obs: d.erp } };
   });
   await step('ebp', async () => {
@@ -263,7 +285,7 @@ async function run() {
   });
   writeJSON(OUT, out);
   const s = out.status;
-  console.log(`Valuation: ${Object.entries(s).map(([k, v]) => `${k} ${v.ok ? 'ok' : `FAILED (${v.error})`}`).join(' · ')}`);
+  console.log(`Valuation: ${Object.entries(s).filter(([, v]) => 'ok' in v).map(([k, v]) => `${k} ${v.ok ? 'ok' : `FAILED (${v.error})`}`).join(' · ')}`);
   console.log(`  CAPE ${out.shiller?.cape?.at(-1)?.join(' ') || '-'} · ECY ${out.shiller?.ecy?.at(-1)?.join(' ') || '-'} · ERP ${out.erp?.obs?.at(-1)?.join(' ') || '-'} · EBP ${out.ebp?.obs?.at(-1)?.join(' ') || '-'} · TSX ${out.tsx?.obs?.at(-1)?.join(' ') || '-'}`);
 }
 
