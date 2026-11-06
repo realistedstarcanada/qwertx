@@ -47,7 +47,15 @@ def read_xlsx(path, wanted):
     wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
     grab = lambda n: trim([[cell(v) for v in row] for row in wb[n].iter_rows(values_only=True)])
     if wanted == '*':
-        return wb.sheetnames, '*', {n: grab(n) for n in wb.sheetnames}
+        # Worksheets only: chart sheets have no cells.
+        names = [ws.title for ws in wb.worksheets]
+        out = {}
+        for n in names:
+            try:
+                out[n] = grab(n)
+            except Exception as e:  # one odd sheet shouldn't hide the others
+                out[n] = [['sheet2json error', str(e)[:200]]]
+        return wb.sheetnames, '*', out
     name = pick(wb.sheetnames, wanted)
     return wb.sheetnames, name, grab(name)
 

@@ -222,16 +222,21 @@ async function shiller() {
   throw lastErr;
 }
 
+const debug = {};
+
 async function damodaran() {
   let urls = [];
   try { urls = findLinks(await fetchRetry(DAMODARAN_PAGE, { headers: UA }), DAMODARAN_PAGE, /ERPbymonth\.xlsx?$/i); } catch {}
   urls.push(...DAMODARAN_FILES);
+  // Newest format first: an old .xls copy (stopped in 2018) is still online and must not win.
+  urls = [...new Set(urls)].sort((a, b) => Number(b.endsWith('x')) - Number(a.endsWith('x')));
   let lastErr;
-  for (const url of [...new Set(urls)]) {
+  for (const url of urls) {
     try {
       const buf = await download(url);
       // The file may hold one sheet or one per year: read them all and merge by month.
       const book = readSheet(buf, url.endsWith('x') ? '.xlsx' : '.xls', '*');
+      if (process.env.QX_DEBUG_SHEETS) debug[url] = { sheets: book.sheets, sample: Object.fromEntries(Object.entries(book.all || {}).map(([n, rows]) => [n, rows.filter((r, i) => i < 15 || i % 12 === 0 || i > rows.length - 6).map((r) => (r || []).slice(0, 10))])) };
       const by = new Map(), sheets = {};
       for (const [name, rows] of Object.entries(book.all || {})) {
         try {
@@ -242,12 +247,14 @@ async function damodaran() {
           sheets[name] = `${rows.length} rows, skipped: ${e.message}`;
         }
       }
-      if (process.env.QX_DEBUG_SHEETS) sheets._sample = Object.fromEntries(Object.entries(book.all || {}).map(([n, rows]) => [n, rows.slice(0, 140).map((r) => (r || []).slice(0, 9))]));
       const erp = [...by.entries()].sort((a, b) => a[0].localeCompare(b[0]));
       if (erp.length < 12) throw new Error(`Damodaran: only ${erp.length} months across sheets ${JSON.stringify(sheets)}`);
+      const ageMonths = (Date.now() - Date.parse(erp.at(-1)[0])) / (30.44 * 864e5);
+      if (ageMonths > 4) throw new Error(`Damodaran: ${url} stops at ${erp.at(-1)[0]} (stale copy)`);
       return { erp, url, sheets };
     } catch (e) {
       lastErr = e;
+      if (process.env.QX_DEBUG_SHEETS) debug[url] = { ...(debug[url] || {}), error: String(e.message || e).slice(0, 400) };
     }
   }
   throw lastErr;
@@ -284,6 +291,7 @@ async function run() {
     if (obs.length < 24) throw new Error(`TSX: only ${obs.length} months`);
     return { tsx: { source: 'Yahoo Finance (S&P/TSX Composite)', obs } };
   });
+  if (process.env.QX_DEBUG_SHEETS) out.status.debug = debug;
   writeJSON(OUT, out);
   const s = out.status;
   console.log(`Valuation: ${Object.entries(s).filter(([, v]) => 'ok' in v).map(([k, v]) => `${k} ${v.ok ? 'ok' : `FAILED (${v.error})`}`).join(' · ')}`);
