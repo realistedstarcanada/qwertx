@@ -43,6 +43,8 @@ jobs:
       - name: Shiller CAPE, Damodaran ERP, Fed excess bond premium, TSX trend
         run: node scripts/fetch-valuation.mjs
         continue-on-error: true
+        env:
+          QX_DEBUG_SHEETS: '1'
       - name: Commit updated data
         run: |
           git config user.name "qwertx-bot"

@@ -242,6 +242,7 @@ async function damodaran() {
           sheets[name] = `${rows.length} rows, skipped: ${e.message}`;
         }
       }
+      if (process.env.QX_DEBUG_SHEETS) sheets._sample = Object.fromEntries(Object.entries(book.all || {}).map(([n, rows]) => [n, rows.slice(0, 140).map((r) => (r || []).slice(0, 9))]));
       const erp = [...by.entries()].sort((a, b) => a[0].localeCompare(b[0]));
       if (erp.length < 12) throw new Error(`Damodaran: only ${erp.length} months across sheets ${JSON.stringify(sheets)}`);
       return { erp, url, sheets };
