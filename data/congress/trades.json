@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-06T19:23:23.210Z",
+  "updatedAt": "2026-11-07T17:45:03.288Z",
   "since": "2026-04-01",
   "checks": {
     "house": {
-      "at": "2026-11-06T19:23:23.210Z",
-      "docs": 3,
-      "complete": 3,
+      "at": "2026-11-07T17:45:03.288Z",
+      "docs": 1,
+      "complete": 1,
       "incomplete": []
     }
   },
@@ -425,9 +425,36 @@
     "H20035763",
     "H20035662",
     "H20035778",
-    "H20035765"
+    "H20035765",
+    "H20035770"
   ],
   "trades": [
+    {
+      "id": "H20035770-0",
+      "chamber": "House",
+      "member": "Josh Gottheimer",
+      "bioguide": "G000583",
+      "party": "Democrat",
+      "state": "NJ",
+      "district": "05",
+      "filed": "2026-11-05",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf",
+      "ticker": "AMAT",
+      "assetType": "ST",
+      "asset": "Applied Materials, Inc. - Common Stock (AMAT)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-10-26",
+      "notified": "2026-10-26",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "JT",
+      "company": "APPLIED MATERIALS INC /DE"
+    },
     {
       "id": "H20035778-1",
       "chamber": "House",
@@ -557,6 +584,58 @@
       },
       "owner": "Self",
       "company": "PROCTER & GAMBLE Co"
+    },
+    {
+      "id": "H20035770-2",
+      "chamber": "House",
+      "member": "Josh Gottheimer",
+      "bioguide": "G000583",
+      "party": "Democrat",
+      "state": "NJ",
+      "district": "05",
+      "filed": "2026-11-05",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf",
+      "ticker": "TLK",
+      "assetType": "ST",
+      "asset": "PT Telekomunikasi Indonesia, Tbk (TLK)",
+      "type": "sell",
+      "partial": false,
+      "date": "2026-10-15",
+      "notified": "2026-10-15",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "JT",
+      "company": "PERUSAHAAN PERSEROAN PERSERO PT TELEKOMUNIKASI INDONESIA TBK"
+    },
+    {
+      "id": "H20035770-1",
+      "chamber": "House",
+      "member": "Josh Gottheimer",
+      "bioguide": "G000583",
+      "party": "Democrat",
+      "state": "NJ",
+      "district": "05",
+      "filed": "2026-11-05",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035770.pdf",
+      "ticker": "BHE",
+      "assetType": "ST",
+      "asset": "Benchmark Electronics, Inc. Common Stock (BHE)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-10-12",
+      "notified": "2026-10-12",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "JT",
+      "company": "BENCHMARK ELECTRONICS INC"
     },
     {
       "id": "H20035662-0",
