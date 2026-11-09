@@ -15,7 +15,7 @@
   "rows": 1147,
   "from": "2026-05-05",
   "to": "2026-05-29",
-  "mapped": 1017,
+  "mapped": 1016,
   "stocks": 1079,
   "untyped": 0,
   "transactions": [
@@ -615,7 +615,7 @@
       "hi": 250000,
       "checked": 2,
       "cls": "stock",
-      "tk": "ACGL"
+      "tk": "ACGLN"
     },
     {
       "no": 48,
@@ -2198,7 +2198,7 @@
       "hi": 15000,
       "checked": 2,
       "cls": "stock",
-      "tk": "SRE"
+      "tk": "SREA"
     },
     {
       "no": 170,
@@ -3473,8 +3473,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "ACA"
+      "cls": "stock"
     },
     {
       "no": 270,

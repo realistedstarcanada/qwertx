@@ -50,9 +50,14 @@
       "id": "20035553",
       "codes": 1,
       "parsed": 1
+    },
+    {
+      "id": "20035780",
+      "codes": 1,
+      "parsed": 1
     }
   ],
-  "updatedAt": "2026-11-08T17:55:14.027Z",
+  "updatedAt": "2026-11-09T22:19:31.673Z",
   "annualDoc": "10075701",
   "docs": {
     "10075701": {
@@ -1843,6 +1848,28 @@
           "hi": 1000000,
           "label": "$500,001 – $1,000,000",
           "desc": "Investment in LLC which is acquiring and managing a commercial office property at 225 Bush Street in San Francisco, CA.",
+          "option": null
+        }
+      ]
+    },
+    "20035780": {
+      "kind": "ptr",
+      "filed": "2026-11-06",
+      "url": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20035780.pdf",
+      "codes": 1,
+      "transactions": [
+        {
+          "name": "A Common Stock (WBD)",
+          "ticker": "WBD",
+          "code": "ST",
+          "owner": "Self",
+          "type": "sell",
+          "partial": false,
+          "date": "2026-10-07",
+          "lo": 50001,
+          "hi": 100000,
+          "label": "$50,001 – $100,000",
+          "desc": "Cash proceeds from Warner Bros Discovery merger with Paramount Skydance.",
           "option": null
         }
       ]

@@ -15,7 +15,7 @@
   "rows": 3621,
   "from": "2026-01-01",
   "to": "2026-04-08",
-  "mapped": 3223,
+  "mapped": 3221,
   "stocks": 3534,
   "untyped": 2,
   "transactions": [
@@ -8255,8 +8255,7 @@
       "lo": 50001,
       "hi": 100000,
       "checked": 3,
-      "cls": "stock",
-      "tk": "ACA"
+      "cls": "stock"
     },
     {
       "page": 21,
@@ -27151,7 +27150,7 @@
       "lo": 1001,
       "hi": 15000,
       "cls": "stock",
-      "tk": "SRE"
+      "tk": "SREA"
     },
     {
       "no": 212,
@@ -32032,7 +32031,7 @@
       "hi": 15000,
       "checked": 3,
       "cls": "stock",
-      "tk": "SRE"
+      "tk": "SREA"
     },
     {
       "no": 2491,
@@ -33525,7 +33524,7 @@
       "hi": 15000,
       "checked": 2,
       "cls": "stock",
-      "tk": "ACGL"
+      "tk": "ACGLN"
     },
     {
       "no": 2606,
@@ -34401,7 +34400,7 @@
       "hi": 15000,
       "checked": 2,
       "cls": "stock",
-      "tk": "AMH"
+      "tk": "AMH-H"
     },
     {
       "no": 2675,
@@ -42076,8 +42075,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "ACA"
+      "cls": "stock"
     },
     {
       "no": 3276,

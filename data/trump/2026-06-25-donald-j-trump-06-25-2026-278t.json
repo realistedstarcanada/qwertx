@@ -15,7 +15,7 @@
   "rows": 1372,
   "from": "2026-04-01",
   "to": "2026-04-30",
-  "mapped": 1234,
+  "mapped": 1233,
   "stocks": 1323,
   "untyped": 0,
   "transactions": [
@@ -2470,7 +2470,7 @@
       "hi": 250000,
       "checked": 2,
       "cls": "stock",
-      "tk": "ACGL"
+      "tk": "ACGLN"
     },
     {
       "no": 192,
@@ -2508,8 +2508,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "ACA"
+      "cls": "stock"
     },
     {
       "no": 195,
@@ -14407,7 +14406,7 @@
       "hi": 15000,
       "checked": 2,
       "cls": "stock",
-      "tk": "SRE"
+      "tk": "SREA"
     },
     {
       "no": 1115,
@@ -14549,7 +14548,7 @@
       "hi": 15000,
       "checked": 2,
       "cls": "stock",
-      "tk": "SPG"
+      "tk": "SPGJ"
     },
     {
       "no": 1126,
