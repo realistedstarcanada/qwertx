@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-09T22:19:23.138Z",
+  "updatedAt": "2026-11-10T19:42:17.878Z",
   "since": "2026-04-01",
   "checks": {
     "house": {
-      "at": "2026-11-09T22:19:23.138Z",
+      "at": "2026-11-10T19:42:17.878Z",
       "docs": 2,
       "complete": 2,
       "incomplete": []
@@ -434,9 +434,36 @@
     "S/search/view/ptr/02b5fe88-e8e1-4ef3-b6b5-6a46b420fb3c/",
     "S/search/view/ptr/3ab689df-21ae-44c5-85ac-1f5e4bc8464d/",
     "S/search/view/ptr/e67780bf-56e4-46f0-a81e-574a701dd539/",
-    "S/search/view/ptr/6aa5ccb2-ff27-491a-9314-778b9ab37964/"
+    "S/search/view/ptr/6aa5ccb2-ff27-491a-9314-778b9ab37964/",
+    "H20024921",
+    "H20035014"
   ],
   "trades": [
+    {
+      "id": "H20024921-0",
+      "chamber": "House",
+      "member": "David Kustoff",
+      "bioguide": "K000392",
+      "party": "Republican",
+      "state": "TN",
+      "district": "08",
+      "filed": "2026-11-09",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20024921.pdf",
+      "ticker": "WBD",
+      "assetType": "ST",
+      "asset": "A Common Stock (WBD)",
+      "type": "sell",
+      "partial": false,
+      "date": "2026-10-07",
+      "notified": "2026-10-07",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "Self"
+    },
     {
       "id": "H20035775-0",
       "chamber": "House",

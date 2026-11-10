@@ -4751,7 +4751,7 @@
       "hi": 15000,
       "checked": 2,
       "cls": "stock",
-      "tk": "SHO",
+      "tk": "SHO.PRI",
       "fz": 0.81
     },
     {
@@ -11851,7 +11851,7 @@
       "hi": 50000,
       "checked": 2,
       "cls": "stock",
-      "tk": "SPGJ"
+      "tk": "SPG"
     },
     {
       "no": 923,
@@ -13981,7 +13981,7 @@
       "hi": 15000,
       "checked": 2,
       "cls": "stock",
-      "tk": "ACGLN"
+      "tk": "ACGL"
     },
     {
       "no": 1087,
