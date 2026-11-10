@@ -1,71 +1,137 @@
 {
-  "updatedAt": "2026-11-09T22:44:05.781Z",
+  "updatedAt": "2026-11-10T03:40:58.917Z",
   "items": [
     {
-      "title": "Stock Market Today, Nov. 9: Plug Power Rises 3.45% on Positioning Ahead of Q3 Report",
-      "link": "https://www.nasdaq.com/articles/stock-market-today-nov-9-plug-power-rises-345-positioning-ahead-q3-report",
+      "title": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
+      "link": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-10T03:38:00.000Z"
+    },
+    {
+      "title": "Anthropic's S-1 Says It Will Expand Its Data Center Footprint. Here's Who Could Pour the Concrete, Wire the Power, and Cool the Chips.",
+      "link": "https://www.nasdaq.com/articles/anthropics-s-1-says-it-will-expand-its-data-center-footprint-heres-who-could-pour-concrete",
       "source": "Nasdaq",
-      "published": "2026-11-09T22:24:10.000Z"
+      "published": "2026-11-10T03:14:00.000Z"
+    },
+    {
+      "title": "Australian Market Extends Early Gains In Mid-market",
+      "link": "https://www.nasdaq.com/articles/australian-market-extends-early-gains-mid-market",
+      "source": "Nasdaq",
+      "published": "2026-11-10T03:13:53.000Z"
+    },
+    {
+      "title": "Asian Markets A Sea Of Green",
+      "link": "https://www.nasdaq.com/articles/asian-markets-sea-green",
+      "source": "Nasdaq",
+      "published": "2026-11-10T03:07:52.000Z"
+    },
+    {
+      "title": "AbCellera Biologics Inc Q3 Loss Decreases",
+      "link": "https://www.nasdaq.com/articles/abcellera-biologics-inc-q3-loss-decreases",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:57:33.000Z"
+    },
+    {
+      "title": "China exports, imports soar past expectations in October — surplus narrows sharply",
+      "link": "https://www.cnbc.com/2026/11/10/china-trade-october-exports-imports-surplus-.html",
+      "source": "CNBC",
+      "published": "2026-11-10T02:55:48.000Z"
+    },
+    {
+      "title": "Novanta Inc. Reports Fall In Q3 Bottom Line",
+      "link": "https://www.nasdaq.com/articles/novanta-inc-reports-fall-q3-bottom-line",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:50:00.000Z"
+    },
+    {
+      "title": "If I Could Buy Just 1 Stock in November and Hold for 5 Years, It Would Be Alphabet",
+      "link": "https://www.nasdaq.com/articles/if-i-could-buy-just-1-stock-november-and-hold-5-years-it-would-be-alphabet",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:50:00.000Z"
+    },
+    {
+      "title": "Mesa Labs (MLAB) Q2 2027 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/mesa-labs-mlab-q2-2027-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:45:54.000Z"
+    },
+    {
+      "title": "iHeartMedia (IHRT) Q3 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/iheartmedia-ihrt-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:45:54.000Z"
+    },
+    {
+      "title": "P3 Health (PIII) Q3 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/p3-health-piii-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:45:54.000Z"
+    },
+    {
+      "title": "Equinox Gold Corp. Announces Retreat In Q3 Bottom Line",
+      "link": "https://www.nasdaq.com/articles/equinox-gold-corp-announces-retreat-q3-bottom-line",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:45:11.000Z"
+    },
+    {
+      "title": "Onto Innovation Inc. Bottom Line Rises In Q3",
+      "link": "https://www.nasdaq.com/articles/innovation-inc-bottom-line-rises-q3",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:42:00.000Z"
+    },
+    {
+      "title": "Dorel Ind Inc B SV Q3 Loss Drops",
+      "link": "https://www.nasdaq.com/articles/dorel-ind-inc-b-sv-q3-loss-drops",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:34:56.000Z"
+    },
+    {
+      "title": "ADP: 3 Key Takeaways for Long-Term Investors",
+      "link": "https://www.nasdaq.com/articles/adp-3-key-takeaways-long-term-investors",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:33:56.000Z"
+    },
+    {
+      "title": "Indian Markets Closed For Diwali Balipratipada",
+      "link": "https://www.nasdaq.com/articles/indian-markets-closed-diwali-balipratipada",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:32:59.000Z"
+    },
+    {
+      "title": "AMC Global Media (AMCX) Q3 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/amc-global-media-amcx-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-10T02:32:38.000Z"
+    },
+    {
+      "title": "The short seller who saw signs of Nvidia’s China scandal months ago claims Megaspeed isn’t the only company helping China access chips",
+      "link": "https://www.marketwatch.com/story/the-short-seller-who-saw-signs-of-nvidias-china-scandal-months-ago-claims-megaspeed-isnt-the-ony-company-helping-china-access-chips-9877f544?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-10T00:48:00.000Z"
+    },
+    {
+      "title": "This retired professor has reinvented himself — as a Taylor Swift scholar",
+      "link": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-09T23:52:00.000Z"
+    },
+    {
+      "title": "Rocket Lab shares dip after the company’s ‘defining’ quarter misses the mark",
+      "link": "https://www.marketwatch.com/story/rocket-lab-shares-dip-after-the-companys-defining-quarter-misses-the-mark-9f74c3b5?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-09T22:49:00.000Z"
+    },
+    {
+      "title": "Here’s how Bernie Sanders wants to keep Social Security solvent ‘for generations’",
+      "link": "https://www.marketwatch.com/story/heres-how-bernie-sanders-wants-to-keep-social-security-solvent-for-generations-f5666a38?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-09T22:49:00.000Z"
     },
     {
       "title": "3 unexpected reasons the October jobs report was so strong",
       "link": "https://www.cnbc.com/2026/11/09/october-jobs-report-hiring-by-sector.html",
       "source": "CNBC",
       "published": "2026-11-09T22:23:56.000Z"
-    },
-    {
-      "title": "Stock Market Today, Nov. 9: Markets Rally as Semiconductor Gains Lift Nasdaq",
-      "link": "https://www.nasdaq.com/articles/stock-market-today-nov-9-markets-rally-semiconductor-gains-lift-nasdaq",
-      "source": "Nasdaq",
-      "published": "2026-11-09T22:23:39.000Z"
-    },
-    {
-      "title": "Micron Technology: Is the Stock a No-Brainer Buy at Less Than $740?",
-      "link": "https://www.nasdaq.com/articles/micron-technology-stock-no-brainer-buy-less-740",
-      "source": "Nasdaq",
-      "published": "2026-11-09T22:20:02.000Z"
-    },
-    {
-      "title": "This Dividend ETF Could Generate $1,000 per Month in Passive Income. Here's How.",
-      "link": "https://www.nasdaq.com/articles/dividend-etf-could-generate-1000-month-passive-income-heres-how",
-      "source": "Nasdaq",
-      "published": "2026-11-09T22:20:00.000Z"
-    },
-    {
-      "title": "Voters Just Rejected Data Centers in 40 of 41 Ballot Measures. Here Are 4 Midterm Results Investors Can’t Ignore.",
-      "link": "https://www.nasdaq.com/articles/voters-just-rejected-data-centers-40-41-ballot-measures-here-are-4-midterm-results",
-      "source": "Nasdaq",
-      "published": "2026-11-09T22:17:02.000Z"
-    },
-    {
-      "title": "SoFi’s Earnings Shine While PayPal & Boeing’s Earnings Look &quot;Meh&quot;",
-      "link": "https://www.nasdaq.com/articles/sofis-earnings-shine-while-paypal-boeings-earnings-look-meh",
-      "source": "Nasdaq",
-      "published": "2026-11-09T22:15:58.000Z"
-    },
-    {
-      "title": "Why Lucid Stock Fell 25% in October",
-      "link": "https://www.nasdaq.com/articles/why-lucid-stock-fell-25-october",
-      "source": "Nasdaq",
-      "published": "2026-11-09T22:14:54.000Z"
-    },
-    {
-      "title": "Roivant Sciences (ROIV) Q2 2026 Earnings Call Transcript",
-      "link": "https://www.nasdaq.com/articles/roivant-sciences-roiv-q2-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "published": "2026-11-09T22:13:45.000Z"
-    },
-    {
-      "title": "Why Via Transportation Stock Rocked the Market Today",
-      "link": "https://www.nasdaq.com/articles/why-transportation-stock-rocked-market-today",
-      "source": "Nasdaq",
-      "published": "2026-11-09T21:58:45.000Z"
-    },
-    {
-      "title": "PowerFleet (AIOT) Q2 2027 Earnings Call Transcript",
-      "link": "https://www.nasdaq.com/articles/powerfleet-aiot-q2-2027-earnings-call-transcript",
-      "source": "Nasdaq",
-      "published": "2026-11-09T21:58:34.000Z"
     },
     {
       "title": "As Nvidia’s stock falls, here’s what Wall Street has to say about the Jensen Huang scandal",
@@ -78,42 +144,6 @@
       "link": "https://www.marketwatch.com/story/dow-sees-its-third-1-000-point-swing-in-four-days-why-volatility-isnt-over-yet-5380567b?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "published": "2026-11-09T21:52:00.000Z"
-    },
-    {
-      "title": "Occidental Petroleum Q3 Net Income Rises",
-      "link": "https://www.nasdaq.com/articles/occidental-petroleum-q3-net-income-rises",
-      "source": "Nasdaq",
-      "published": "2026-11-09T21:50:57.000Z"
-    },
-    {
-      "title": "Reverse Stock-Split Watch: Archer Aviation at $4 and Joby Aviation at $5. Here's Which One Gets There First -- and What History Says Happens After.",
-      "link": "https://www.nasdaq.com/articles/reverse-stock-split-watch-archer-aviation-4-and-joby-aviation-5-heres-which-one-gets-there",
-      "source": "Nasdaq",
-      "published": "2026-11-09T21:50:00.000Z"
-    },
-    {
-      "title": "Medicus Pharma (MDCX) Q3 2026 Earnings Call Transcript",
-      "link": "https://www.nasdaq.com/articles/medicus-pharma-mdcx-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "published": "2026-11-09T21:49:14.000Z"
-    },
-    {
-      "title": "Chipotle Brings BOGO Promotion Back",
-      "link": "https://www.nasdaq.com/articles/chipotle-brings-bogo-promotion-back",
-      "source": "Nasdaq",
-      "published": "2026-11-09T21:45:17.000Z"
-    },
-    {
-      "title": "Why Cinemark Stock Is Up Today",
-      "link": "https://www.nasdaq.com/articles/why-cinemark-stock-today",
-      "source": "Nasdaq",
-      "published": "2026-11-09T21:45:05.000Z"
-    },
-    {
-      "title": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
-      "link": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-09T21:45:00.000Z"
     },
     {
       "title": "Are AMD and Broadcom the real winners of the Nvidia spy scandal?",
@@ -140,34 +170,10 @@
       "published": "2026-11-09T21:21:00.000Z"
     },
     {
-      "title": "Why prediction markets and Wall Street pros so often fail to see what’s coming",
-      "link": "https://www.marketwatch.com/story/why-prediction-markets-and-wall-street-pros-so-often-fail-to-see-whats-coming-c516b6e3?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-09T21:14:00.000Z"
-    },
-    {
       "title": "A key report for where inflation stood in October comes out Tuesday. Here's what to expect",
       "link": "https://www.cnbc.com/2026/11/09/october-cpi-report-2026-inflation.html",
       "source": "CNBC",
       "published": "2026-11-09T21:03:55.000Z"
-    },
-    {
-      "title": "I’m 53 and not sure how to handle merging finances with my long-term partner.",
-      "link": "https://www.marketwatch.com/story/his-mine-or-ours-im-53-and-not-sure-how-to-handle-merging-finances-with-my-long-term-partner-4c34c914?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-09T21:02:00.000Z"
-    },
-    {
-      "title": "Hot U.S. inflation hasn’t cooled off. Rising consumer prices to keep Fed rate hike on track.",
-      "link": "https://www.marketwatch.com/story/hot-u-s-inflation-hasnt-cooled-off-rising-consumer-prices-to-keep-fed-rate-hike-on-track-926c44b0?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-09T21:01:00.000Z"
-    },
-    {
-      "title": "Analysts say these chip stocks are bargains. Is it time to buy?",
-      "link": "https://www.marketwatch.com/story/analysts-say-these-chip-stocks-are-bargains-is-it-time-to-buy-fb5fdde8?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-09T20:48:00.000Z"
     },
     {
       "title": "Millions of dollars poured into prediction markets on election night, trading on Democratic control of Congress and Texas governor's race",
