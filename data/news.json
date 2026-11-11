@@ -1,101 +1,119 @@
 {
-  "updatedAt": "2026-11-11T18:28:31.200Z",
+  "updatedAt": "2026-11-11T19:53:33.664Z",
   "items": [
     {
-      "title": "Crypto-Style Perpetual Futures Will Soon Be Available For Individual Stocks. Here's What Investors Need to Know.",
-      "link": "https://www.nasdaq.com/articles/crypto-style-perpetual-futures-will-soon-be-available-individual-stocks-heres-what",
+      "title": "I’m 63 and spending $95,000 on a roof deck for my $500,000 home. Am I being extravagant?",
+      "link": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-11T19:41:00.000Z"
+    },
+    {
+      "title": "Rigetti: 3 Key Takeaways for Long-Term Investors",
+      "link": "https://www.nasdaq.com/articles/rigetti-3-key-takeaways-long-term-investors",
       "source": "Nasdaq",
-      "published": "2026-11-11T18:15:00.000Z"
+      "published": "2026-11-11T19:25:02.000Z"
+    },
+    {
+      "title": "3 Possible Paths Forward for AI Stocks (Bull Case, Bear Case, Base Case) -- and How to Invest for Each",
+      "link": "https://www.nasdaq.com/articles/3-possible-paths-forward-ai-stocks-bull-case-bear-case-base-case-and-how-invest-each",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:24:09.000Z"
+    },
+    {
+      "title": "Stran (SWAG) Q3 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/stran-swag-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:22:00.000Z"
+    },
+    {
+      "title": "Datadog vs. Fastly: Which Cloud Tech Stock Is a Better Buy for 2027?",
+      "link": "https://www.nasdaq.com/articles/datadog-vs-fastly-which-cloud-tech-stock-better-buy-2027",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:20:02.000Z"
+    },
+    {
+      "title": "Why Apple Stock Fell Despite a Record Quarter",
+      "link": "https://www.nasdaq.com/articles/why-apple-stock-fell-despite-record-quarter",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:20:02.000Z"
+    },
+    {
+      "title": "Here Are My Top 3 ETFs to Buy Before 2027",
+      "link": "https://www.nasdaq.com/articles/here-are-my-top-3-etfs-buy-2027",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:20:00.000Z"
+    },
+    {
+      "title": "ICL: 3 Key Takeaways for Long-Term Investors",
+      "link": "https://www.nasdaq.com/articles/icl-3-key-takeaways-long-term-investors",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:19:08.000Z"
+    },
+    {
+      "title": "Anterix (ATEX) Q2 2027 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/anterix-atex-q2-2027-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:19:05.000Z"
+    },
+    {
+      "title": "Amprius (AMPX) Q3 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/amprius-ampx-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:19:05.000Z"
+    },
+    {
+      "title": "Ex-Div Reminder for Super Micro Computer's Series A Preferred Stock",
+      "link": "https://www.nasdaq.com/articles/ex-div-reminder-super-micro-computers-series-preferred-stock",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:18:17.000Z"
+    },
+    {
+      "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
+      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
+      "source": "CNBC",
+      "published": "2026-11-11T19:17:19.000Z"
+    },
+    {
+      "title": "Wednesday 11/11 Insider Buying Report: LUMN, DKNG",
+      "link": "https://www.nasdaq.com/articles/wednesday-11-11-insider-buying-report-lumn-dkng",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:17:08.000Z"
+    },
+    {
+      "title": "Reminder: Bridgewater Bancshares' Preferred Stock Series A Goes Ex-Dividend Soon",
+      "link": "https://www.nasdaq.com/articles/reminder-bridgewater-bancshares-preferred-stock-series-goes-ex-dividend-soon",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:15:55.000Z"
+    },
+    {
+      "title": "Prediction: Nvidia Stock Will Be Worth This Much by Year-End 2027",
+      "link": "https://www.nasdaq.com/articles/prediction-nvidia-stock-will-be-worth-much-year-end-2027",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:15:00.000Z"
+    },
+    {
+      "title": "FLEX LNG (FLNG) Q3 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/flex-lng-flng-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:14:19.000Z"
+    },
+    {
+      "title": "Himalaya Shipping (HSHP) Q3 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/himalaya-shipping-hshp-q3-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-11T19:14:19.000Z"
+    },
+    {
+      "title": "Nvidia is spending more than ever on Washington lobbying. It may not stop Congress from limiting China chip sales now.",
+      "link": "https://www.marketwatch.com/story/nvidia-is-spending-more-than-ever-on-washington-lobbying-it-still-may-not-be-able-to-stop-congress-from-limiting-its-china-chip-sales-now-d4c34c66?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-11T18:48:00.000Z"
     },
     {
       "title": "Oracle’s stock is totally misunderstood and should be a ‘go-to’ AI play, says this analyst",
       "link": "https://www.marketwatch.com/story/oracles-stock-is-totally-misunderstood-and-should-be-a-go-to-ai-play-says-this-analyst-2a87e80d?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "published": "2026-11-11T18:13:00.000Z"
-    },
-    {
-      "title": "GXO Logistics Expands Partnership With ASOS",
-      "link": "https://www.nasdaq.com/articles/gxo-logistics-expands-partnership-asos",
-      "source": "Nasdaq",
-      "published": "2026-11-11T18:09:53.000Z"
-    },
-    {
-      "title": "Analysis: Is Nvidia too big to fail? Its AI financing web raises the stakes",
-      "link": "https://www.cnbc.com/2026/11/11/nvidia-jensen-huang-ai-financial-system-risk.html",
-      "source": "CNBC",
-      "published": "2026-11-11T18:09:50.000Z"
-    },
-    {
-      "title": "Canadian Stocks Showing Notable Move Back To The Upside",
-      "link": "https://www.nasdaq.com/articles/canadian-stocks-showing-notable-move-back-upside",
-      "source": "Nasdaq",
-      "published": "2026-11-11T18:08:00.000Z"
-    },
-    {
-      "title": "Nike Stock Is Down 78% From Its Peak. Here's Why I'd Buy and Hold for a Decade.",
-      "link": "https://www.nasdaq.com/articles/nike-stock-down-78-its-peak-heres-why-id-buy-and-hold-decade",
-      "source": "Nasdaq",
-      "published": "2026-11-11T18:05:00.000Z"
-    },
-    {
-      "title": "Why Advanced Micro Devices Stock Popped Today",
-      "link": "https://www.nasdaq.com/articles/why-advanced-micro-devices-stock-popped-today",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:54:22.000Z"
-    },
-    {
-      "title": "Is the Micron Sell-Off a Buying Opportunity or a Falling Knife?",
-      "link": "https://www.nasdaq.com/articles/micron-sell-buying-opportunity-or-falling-knife",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:50:00.000Z"
-    },
-    {
-      "title": "3 Roth Conversion Tricks to Use Before RMDs Strike",
-      "link": "https://www.nasdaq.com/articles/3-roth-conversion-tricks-use-rmds-strike",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:48:02.000Z"
-    },
-    {
-      "title": "Is Nvidia Stock a Buy After Hitting a Seven-Month Low? (Hint: Yes.)",
-      "link": "https://www.nasdaq.com/articles/nvidia-stock-buy-after-hitting-seven-month-low-hint-yes",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:41:02.000Z"
-    },
-    {
-      "title": "These 5 Gold Mining Stocks Give You a Different Way to Own Gold",
-      "link": "https://www.nasdaq.com/articles/these-5-gold-mining-stocks-give-you-different-way-own-gold",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:35:00.000Z"
-    },
-    {
-      "title": "Worksport (WKSP) Q3 2026 Earnings Call Transcript",
-      "link": "https://www.nasdaq.com/articles/worksport-wksp-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:31:12.000Z"
-    },
-    {
-      "title": "Okta’s Real Opportunity Isn’t Its S&P 500 Spot. It’s AI Agents.",
-      "link": "https://www.nasdaq.com/articles/oktas-real-opportunity-isnt-its-sp-500-spot-its-ai-agents",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:22:02.000Z"
-    },
-    {
-      "title": "Wednesday's ETF with Unusual Volume: IXG",
-      "link": "https://www.nasdaq.com/articles/wednesdays-etf-unusual-volume-ixg",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:20:21.000Z"
-    },
-    {
-      "title": "SNDL: 3 Key Takeaways for Long-Term Investors",
-      "link": "https://www.nasdaq.com/articles/sndl-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:20:02.000Z"
-    },
-    {
-      "title": "Werner Enterprises: 3 Key Takeaways for Long-Term Investors",
-      "link": "https://www.nasdaq.com/articles/werner-enterprises-3-key-takeaways-long-term-investors",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:20:02.000Z"
     },
     {
       "title": "Has Nvidia flown too close to the sun? One analyst warns of major scrutiny ahead.",
@@ -108,12 +126,6 @@
       "link": "https://www.marketwatch.com/story/need-money-for-a-down-payment-more-employers-are-offering-to-help-59c57da3?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "published": "2026-11-11T17:06:00.000Z"
-    },
-    {
-      "title": "Wednesday's ETF Movers: AIS, EUAD",
-      "link": "https://www.nasdaq.com/articles/wednesdays-etf-movers-ais-euad",
-      "source": "Nasdaq",
-      "published": "2026-11-11T17:05:08.000Z"
     },
     {
       "title": "Anthropic’s IPO roadshow kicks off — and the big money is already lining up",
@@ -134,12 +146,6 @@
       "published": "2026-11-11T15:26:00.000Z"
     },
     {
-      "title": "I’m 63 and want to spend $95,000 on a roof deck for my $500,000 home. Is that a good investment?",
-      "link": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-11T15:25:00.000Z"
-    },
-    {
       "title": "Market angst is driving investors into low-volatility stocks as AI trade stumbles",
       "link": "https://www.marketwatch.com/story/market-angst-is-driving-investors-into-low-volatility-stocks-as-ai-trade-stumbles-23d905e9?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -150,12 +156,6 @@
       "link": "https://www.marketwatch.com/story/from-living-in-his-car-to-a-756-credit-score-how-one-veteran-rebuilt-his-finances-026c3336?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "published": "2026-11-11T15:08:00.000Z"
-    },
-    {
-      "title": "My friend hates her job but shuts down when I give her advice. How can I help her?",
-      "link": "https://www.marketwatch.com/story/my-friend-feels-trapped-at-her-job-but-wont-do-anything-about-it-am-i-supposed-to-step-in-7e55604e?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-11T14:24:00.000Z"
     },
     {
       "title": "Consumers are showing signs of strain even as they keep spending, CNBC/NRF Retail Monitor shows",
