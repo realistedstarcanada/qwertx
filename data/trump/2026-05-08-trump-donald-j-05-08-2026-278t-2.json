@@ -15,7 +15,7 @@
   "rows": 3621,
   "from": "2026-01-01",
   "to": "2026-04-08",
-  "mapped": 3220,
+  "mapped": 3215,
   "stocks": 3534,
   "untyped": 2,
   "transactions": [
@@ -14573,8 +14573,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "KVUE"
+      "cls": "stock"
     },
     {
       "no": 1140,
@@ -17076,8 +17075,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "RAMP"
+      "cls": "stock"
     },
     {
       "no": 1335,
@@ -17638,8 +17636,7 @@
       "lo": 15001,
       "hi": 50000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "KVUE"
+      "cls": "stock"
     },
     {
       "no": 1378,
@@ -29940,8 +29937,7 @@
       "lo": 1001,
       "hi": 15000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "KVUE"
+      "cls": "stock"
     },
     {
       "no": 2329,
@@ -33226,8 +33222,7 @@
       "lo": 1001,
       "hi": 15000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "RAMP"
+      "cls": "stock"
     },
     {
       "no": 2583,

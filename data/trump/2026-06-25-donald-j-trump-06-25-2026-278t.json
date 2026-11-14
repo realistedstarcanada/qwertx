@@ -15,7 +15,7 @@
   "rows": 1372,
   "from": "2026-04-01",
   "to": "2026-04-30",
-  "mapped": 1233,
+  "mapped": 1229,
   "stocks": 1323,
   "untyped": 0,
   "transactions": [
@@ -430,8 +430,7 @@
       "lo": 50001,
       "hi": 100000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "KVUE"
+      "cls": "stock"
     },
     {
       "page": 2,
@@ -9621,8 +9620,7 @@
       "lo": 1001,
       "hi": 15000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "KVUE"
+      "cls": "stock"
     },
     {
       "no": 745,
@@ -9634,8 +9632,7 @@
       "lo": 1001,
       "hi": 15000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "KVUE"
+      "cls": "stock"
     },
     {
       "no": 746,
@@ -9647,8 +9644,7 @@
       "lo": 1001,
       "hi": 15000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "KVUE"
+      "cls": "stock"
     },
     {
       "no": 747,
