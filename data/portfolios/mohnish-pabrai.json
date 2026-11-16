@@ -2,21 +2,21 @@
   "slug": "mohnish-pabrai",
   "entityName": "Dalal Street, LLC",
   "cik": "0001549575",
-  "period": "2026-06-30",
-  "filingDate": "2026-08-13",
+  "period": "2026-09-30",
+  "filingDate": "2026-11-13",
   "form": "13F-HR",
-  "accession": "0001549575-26-000015",
-  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1549575/000154957526000015/0001549575-26-000015-index.htm",
-  "prevPeriod": "2026-03-31",
-  "prevAccession": "0001549575-26-000009",
-  "prevTotalValue": 422885142,
-  "totalValue": 326749980,
+  "accession": "0001549575-26-000023",
+  "filingUrl": "https://www.sec.gov/Archives/edgar/data/1549575/000154957526000023/0001549575-26-000023-index.htm",
+  "prevPeriod": "2026-06-30",
+  "prevAccession": "0001549575-26-000015",
+  "prevTotalValue": 326749980,
+  "totalValue": 362064212,
   "holdingsCount": 4,
   "counts": {
-    "new": 1,
-    "added": 0,
-    "reduced": 2,
-    "unchanged": 1,
+    "new": 0,
+    "added": 3,
+    "reduced": 1,
+    "unchanged": 0,
     "sold": 0
   },
   "holdings": [
@@ -27,13 +27,13 @@
       "cls": "COM",
       "putCall": null,
       "shType": "SH",
-      "shares": 1744050,
-      "value": 141547098,
-      "weight": 0.43319695995084684,
-      "prevShares": 1810831,
-      "sharesChangePct": -0.03687864853208279,
-      "status": "reduced",
-      "flow": -5419945.96,
+      "shares": 1867295,
+      "value": 164452671,
+      "weight": 0.45420857833913725,
+      "prevShares": 1744050,
+      "sharesChangePct": 0.07066597861299848,
+      "status": "added",
+      "flow": 10854187.173100661,
       "ticker": "HCC"
     },
     {
@@ -43,13 +43,13 @@
       "cls": "REGISTERED SHS",
       "putCall": null,
       "shType": "SH",
-      "shares": 20398659,
-      "value": 99749443,
-      "weight": 0.3052775795120171,
-      "prevShares": 20392672,
-      "sharesChangePct": 0.00029358585280045695,
-      "status": "unchanged",
-      "flow": 29276.430143814843,
+      "shares": 28475305,
+      "value": 149210598,
+      "weight": 0.4121108716483694,
+      "prevShares": 20398659,
+      "sharesChangePct": 0.39594004684327533,
+      "status": "added",
+      "flow": 42321624.983272634,
       "ticker": "RIG"
     },
     {
@@ -59,13 +59,13 @@
       "cls": "COM",
       "putCall": null,
       "shType": "SH",
-      "shares": 517194,
-      "value": 85305978,
-      "weight": 0.26107416441157855,
-      "prevShares": 579738,
-      "sharesChangePct": -0.10788321621146103,
+      "shares": 170744,
+      "value": 28722556,
+      "weight": 0.07933000569523287,
+      "prevShares": 517194,
+      "sharesChangePct": -0.6698646929392066,
       "status": "reduced",
-      "flow": -10316007.316465389,
+      "flow": -58279819.64929953,
       "ticker": "AMR"
     },
     {
@@ -75,31 +75,18 @@
       "cls": "SPONSORED ADS",
       "putCall": null,
       "shType": "SH",
-      "shares": 1702,
-      "value": 147461,
-      "weight": 0.00045129612555752874,
-      "status": "new",
-      "prevShares": 0,
-      "sharesChangePct": null,
-      "flow": 147461,
+      "shares": 209211,
+      "value": 19678387,
+      "weight": 0.054350544317260496,
+      "prevShares": 1702,
+      "sharesChangePct": 121.92068155111633,
+      "status": "added",
+      "flow": 19518296.877233986,
       "ticker": "KSPI"
     }
   ],
   "sold": [],
   "history": [
-    {
-      "period": "2024-06-30",
-      "filingDate": "2024-08-13",
-      "acc": "0001549575-24-000009",
-      "total": 232830310,
-      "count": 4,
-      "w": {
-        "020764106": 54.094,
-        "03940R107": 25.655,
-        "93627C101": 12.712,
-        "20854L108": 7.539
-      }
-    },
     {
       "period": "2024-09-30",
       "filingDate": "2024-11-13",
@@ -203,7 +190,20 @@
         "H8817H100": 30.528,
         "020764106": 26.107
       }
+    },
+    {
+      "period": "2026-09-30",
+      "filingDate": "2026-11-13",
+      "acc": "0001549575-26-000023",
+      "total": 362064212,
+      "count": 4,
+      "w": {
+        "93627C101": 45.421,
+        "H8817H100": 41.211,
+        "020764106": 7.933,
+        "48581R205": 5.435
+      }
     }
   ],
-  "updatedAt": "2026-10-19T18:50:13.584Z"
+  "updatedAt": "2026-11-16T14:51:47.327Z"
 }

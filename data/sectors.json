@@ -4056,5 +4056,35 @@
     "name": "SiteOne Landscape Supply, Inc.",
     "sic": "5040",
     "sicDescription": "Wholesale-Professional & Commercial Equipment & Supplies"
+  },
+  "EQX": {
+    "sector": "Materials",
+    "name": "Equinox Gold Corp.",
+    "sic": "1040",
+    "sicDescription": "Gold and Silver Ores"
+  },
+  "COTY": {
+    "sector": "Consumer Staples",
+    "name": "COTY INC.",
+    "sic": "2844",
+    "sicDescription": "Perfumes, Cosmetics & Other Toilet Preparations"
+  },
+  "IMXI": {
+    "sector": "Industrials",
+    "name": "International Money Express, Inc.",
+    "sic": "7389",
+    "sicDescription": "Services-Business Services, NEC"
+  },
+  "GIL": {
+    "sector": "Consumer Discretionary",
+    "name": "Gildan Activewear Inc.",
+    "sic": "2300",
+    "sicDescription": "Apparel & Other Finishd Prods of  Fabrics & Similar Matl"
+  },
+  "HONA": {
+    "sector": "Industrials",
+    "name": "Honeywell Aerospace Inc.",
+    "sic": "3724",
+    "sicDescription": "Aircraft Engines & Engine Parts"
   }
 }

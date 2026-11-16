@@ -199,6 +199,11 @@
     "name": "CORPAY INC",
     "type": "Common Stock"
   },
+  "222070203": {
+    "ticker": "COTY",
+    "name": "COTY INC-CL A",
+    "type": "Common Stock"
+  },
   "227046109": {
     "ticker": "CROX",
     "name": "CROCS INC",
@@ -378,6 +383,11 @@
   "372460105": {
     "ticker": "GPC",
     "name": "GENUINE PARTS CO",
+    "type": "Common Stock"
+  },
+  "375916103": {
+    "ticker": "GIL",
+    "name": "GILDAN ACTIVEWEAR INC",
     "type": "Common Stock"
   },
   "382550101": {
@@ -4110,6 +4120,21 @@
   "82982L103": {
     "ticker": "SITE",
     "name": "SITEONE LANDSCAPE SUPPLY INC",
+    "type": "Common Stock"
+  },
+  "29446Y502": {
+    "ticker": "EQX",
+    "name": "EQUINOX GOLD CORP",
+    "type": "Common Stock"
+  },
+  "46005L101": {
+    "ticker": "IMXI",
+    "name": "INTERNATIONAL MONEY EXPRESS",
+    "type": "Common Stock"
+  },
+  "43849R105": {
+    "ticker": "HONA",
+    "name": "HONEYWELL AEROSPACE INC",
     "type": "Common Stock"
   }
 }
