@@ -15,7 +15,7 @@
   "rows": 517,
   "from": "2026-08-03",
   "to": "2026-08-31",
-  "mapped": 435,
+  "mapped": 434,
   "stocks": 445,
   "untyped": 0,
   "transactions": [
@@ -4598,8 +4598,7 @@
       "lo": 1000001,
       "hi": 5000000,
       "checked": 2,
-      "cls": "stock",
-      "tk": "MOD"
+      "cls": "stock"
     },
     {
       "no": 359,
