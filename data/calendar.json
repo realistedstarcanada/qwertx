@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T20:59:54.950Z",
+  "updatedAt": "2026-11-20T02:27:53.431Z",
   "econ": [
     {
       "id": "1001683751401",
@@ -5029,71 +5029,6 @@
     }
   ],
   "earnings": [
-    {
-      "date": "2026-10-01",
-      "ticker": "ACN",
-      "name": "Accenture plc",
-      "time": "",
-      "marketCap": 152127750000,
-      "quarter": "Aug/2026",
-      "epsForecast": 3.19,
-      "estimates": 7,
-      "lastYearEps": null,
-      "eps": 3.29,
-      "surprise": 3.13
-    },
-    {
-      "date": "2026-10-01",
-      "ticker": "NKE",
-      "name": "Nike, Inc.",
-      "time": "",
-      "marketCap": 53931565000,
-      "quarter": "Aug/2026",
-      "epsForecast": 0.43,
-      "estimates": 11,
-      "lastYearEps": null,
-      "eps": 0.48,
-      "surprise": 11.63
-    },
-    {
-      "date": "2026-10-01",
-      "ticker": "MKC",
-      "name": "McCormick & Company, Incorporated",
-      "time": "",
-      "marketCap": 12465757200,
-      "quarter": "Aug/2026",
-      "epsForecast": 0.75,
-      "estimates": 6,
-      "lastYearEps": null,
-      "eps": 0.86,
-      "surprise": 14.67
-    },
-    {
-      "date": "2026-10-01",
-      "ticker": "MKC.V",
-      "name": "McCormick & Company, Incorporated",
-      "time": "",
-      "marketCap": 12465757200,
-      "quarter": "Aug/2026",
-      "epsForecast": null,
-      "estimates": null,
-      "lastYearEps": null,
-      "eps": 0.86,
-      "surprise": null
-    },
-    {
-      "date": "2026-10-01",
-      "ticker": "AYI",
-      "name": "Acuity Inc.",
-      "time": "",
-      "marketCap": 9695884300,
-      "quarter": "Aug/2026",
-      "epsForecast": 5.19,
-      "estimates": 4,
-      "lastYearEps": null,
-      "eps": 5.51,
-      "surprise": 6.17
-    },
     {
       "date": "2026-10-06",
       "ticker": "STZ",
@@ -19558,7 +19493,7 @@
       "marketCap": 178991989000,
       "quarter": "Sep/2026",
       "epsForecast": null,
-      "estimates": null,
+      "estimates": 1,
       "lastYearEps": null,
       "eps": null,
       "surprise": null
@@ -20104,7 +20039,7 @@
       "marketCap": 10615859200,
       "quarter": "Sep/2026",
       "epsForecast": null,
-      "estimates": 1,
+      "estimates": null,
       "lastYearEps": 2.56,
       "eps": null,
       "surprise": null
@@ -20975,7 +20910,7 @@
       "marketCap": 32965586900,
       "quarter": "Oct/2026",
       "epsForecast": 1.16,
-      "estimates": null,
+      "estimates": 2,
       "lastYearEps": null,
       "eps": null,
       "surprise": null
@@ -22792,42 +22727,42 @@
     "UHALB": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "XNGSY": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "COLB": {
       "date": null,
       "raw": "Earnings announcement* for COLB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BABAF": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "SQ": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "DBRG": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "CATY": {
       "date": null,
       "raw": "Earnings announcement* for CATY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "EXAS": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "PLD": {
       "date": null,
@@ -22837,87 +22772,87 @@
     "SVRE": {
       "date": null,
       "raw": "Earnings announcement* for SVRE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "APCX": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "MLPT": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BLSM": {
       "date": null,
       "raw": "Earnings announcement* for BLSM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "APLM": {
       "date": null,
       "raw": "Earnings announcement* for APLM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BBD": {
       "date": null,
       "raw": "Earnings announcement* for BBD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "GREE": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "PSNY": {
       "date": null,
       "raw": "Earnings announcement* for PSNY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "AVBC": {
       "date": null,
       "raw": "Earnings announcement* for AVBC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BYRN": {
       "date": null,
       "raw": "Earnings announcement* for BYRN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "CBKM": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "MPB": {
       "date": null,
       "raw": "Earnings announcement* for MPB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "EWSB": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "HEPA": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ADRX": {
       "date": null,
       "raw": "Earnings announcement* for ADRX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "QVCG": {
       "date": null,
       "raw": "Earnings announcement* for QVCG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ETRA": {
       "date": null,
       "raw": "Earnings announcement* for ETRA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "MKTX": {
       "date": null,
@@ -22977,7 +22912,7 @@
     "PARA": {
       "date": null,
       "raw": "Earnings announcement* for PARA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "WELL": {
       "date": null,
@@ -23012,7 +22947,7 @@
     "FSBC": {
       "date": null,
       "raw": "Earnings announcement* for FSBC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "MSGS": {
       "date": null,
@@ -23317,12 +23252,12 @@
     "PAMT": {
       "date": null,
       "raw": "Earnings announcement* for PAMT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "RVSB": {
       "date": null,
       "raw": "Earnings announcement* for RVSB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "STLA": {
       "date": null,
@@ -23332,7 +23267,7 @@
     "JMKE": {
       "date": null,
       "raw": "Earnings announcement* for JMKE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "GOOGL": {
       "date": null,
@@ -23717,17 +23652,17 @@
     "JLL": {
       "date": null,
       "raw": "Earnings announcement* for JLL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "GPI": {
       "date": null,
       "raw": "Earnings announcement* for GPI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "UMC": {
       "date": null,
       "raw": "Earnings announcement* for UMC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "PWP": {
       "date": null,
@@ -24207,37 +24142,37 @@
     "HOG": {
       "date": null,
       "raw": "Earnings announcement* for HOG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "MIAX": {
       "date": null,
       "raw": "Earnings announcement* for MIAX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "IDA": {
       "date": null,
       "raw": "Earnings announcement* for IDA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "PATK": {
       "date": null,
       "raw": "Earnings announcement* for PATK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "SUPN": {
       "date": null,
       "raw": "Earnings announcement* for SUPN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ERIE": {
       "date": null,
       "raw": "Earnings announcement* for ERIE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "INGM": {
       "date": null,
       "raw": "Earnings announcement* for INGM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ILMN": {
       "date": null,
@@ -24247,17 +24182,17 @@
     "CLBK": {
       "date": null,
       "raw": "Earnings announcement* for CLBK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BWFG": {
       "date": null,
       "raw": "Earnings announcement* for BWFG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "PBF": {
       "date": null,
       "raw": "Earnings announcement* for PBF:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "CVX": {
       "date": null,
@@ -24592,27 +24527,27 @@
     "LGIH": {
       "date": null,
       "raw": "Earnings announcement* for LGIH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "RHP": {
       "date": null,
       "raw": "Earnings announcement* for RHP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "GRAB": {
       "date": null,
       "raw": "Earnings announcement* for GRAB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "FANG": {
       "date": null,
       "raw": "Earnings announcement* for FANG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "CC": {
       "date": null,
       "raw": "Earnings announcement* for CC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "LPX": {
       "date": null,
@@ -24937,7 +24872,7 @@
     "FTK": {
       "date": null,
       "raw": "Earnings announcement* for FTK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "MDLN": {
       "date": null,
@@ -24962,7 +24897,7 @@
     "GWRS": {
       "date": null,
       "raw": "Earnings announcement* for GWRS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "KHC": {
       "date": null,
@@ -25437,37 +25372,37 @@
     "AVNT": {
       "date": null,
       "raw": "Earnings announcement* for AVNT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "NWE": {
       "date": null,
       "raw": "{\"data\":null,\"message\":null,\"status\":{\"rCode\":400,\"bCodeMessage\":[{\"code\":1001,\"errorMessage\":\"Symbol not exists.\"}],\"developerMessage\":null}}",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "VCYT": {
       "date": null,
       "raw": "Earnings announcement* for VCYT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "SMA": {
       "date": null,
       "raw": "Earnings announcement* for SMA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "TPC": {
       "date": null,
       "raw": "Earnings announcement* for TPC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BORR": {
       "date": null,
       "raw": "Earnings announcement* for BORR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "UTHR": {
       "date": null,
       "raw": "Earnings announcement* for UTHR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BNS": {
       "date": "2026-12-02",
@@ -25482,7 +25417,7 @@
     "MAIR": {
       "date": null,
       "raw": "Earnings announcement* for MAIR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ABNB": {
       "date": null,
@@ -25957,77 +25892,77 @@
     "CMI": {
       "date": null,
       "raw": "Earnings announcement* for CMI:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "SNDA": {
       "date": null,
       "raw": "Earnings announcement* for SNDA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "DMLP": {
       "date": null,
       "raw": "Earnings announcement* for DMLP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "KRP": {
       "date": null,
       "raw": "Earnings announcement* for KRP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "IONQ": {
       "date": null,
       "raw": "Earnings announcement* for IONQ:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "FA": {
       "date": null,
       "raw": "Earnings announcement* for FA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "SVV": {
       "date": null,
       "raw": "Earnings announcement* for SVV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "LFST": {
       "date": null,
       "raw": "Earnings announcement* for LFST:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "AUGO": {
       "date": null,
       "raw": "Earnings announcement* for AUGO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "KBDC": {
       "date": null,
       "raw": "Earnings announcement* for KBDC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "NGL": {
       "date": null,
       "raw": "Earnings announcement* for NGL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ONC": {
       "date": null,
       "raw": "Earnings announcement* for ONC:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "YORW": {
       "date": null,
       "raw": "Earnings announcement* for YORW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BGDE": {
       "date": null,
       "raw": "Earnings announcement* for BGDE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "GSAT": {
       "date": null,
       "raw": "Earnings announcement* for GSAT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "UA": {
       "date": null,
@@ -26122,12 +26057,12 @@
     "ELAN": {
       "date": null,
       "raw": "Earnings announcement* for ELAN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "DKL": {
       "date": null,
       "raw": "Earnings announcement* for DKL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "TLK": {
       "date": null,
@@ -26282,17 +26217,17 @@
     "RKLB": {
       "date": null,
       "raw": "Earnings announcement* for RKLB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ORKA": {
       "date": null,
       "raw": "Earnings announcement* for ORKA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ATTO": {
       "date": null,
       "raw": "Earnings announcement* for ATTO:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ONON": {
       "date": null,
@@ -26357,27 +26292,27 @@
     "VG": {
       "date": null,
       "raw": "Earnings announcement* for VG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "AZTA": {
       "date": null,
       "raw": "Earnings announcement* for AZTA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ALH": {
       "date": null,
       "raw": "Earnings announcement* for ALH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "MANE": {
       "date": null,
       "raw": "Earnings announcement* for MANE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "WIX": {
       "date": null,
       "raw": "Earnings announcement* for WIX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "COYA": {
       "date": null,
@@ -26397,17 +26332,17 @@
     "BRVE": {
       "date": null,
       "raw": "Earnings announcement* for BRVE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "IMTX": {
       "date": null,
       "raw": "Earnings announcement* for IMTX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ACON": {
       "date": null,
       "raw": "Earnings announcement* for ACON:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "CTVA": {
       "date": null,
@@ -26492,12 +26427,12 @@
     "LGN": {
       "date": null,
       "raw": "Earnings announcement* for LGN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "CDNL": {
       "date": null,
       "raw": "Earnings announcement* for CDNL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "AMAT": {
       "date": null,
@@ -26577,22 +26512,22 @@
     "KOD": {
       "date": null,
       "raw": "Earnings announcement* for KOD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "AVAH": {
       "date": null,
       "raw": "Earnings announcement* for AVAH:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ALMS": {
       "date": null,
       "raw": "Earnings announcement* for ALMS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "SCTX": {
       "date": null,
       "raw": "Earnings announcement* for SCTX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "KB": {
       "date": null,
@@ -26629,130 +26564,200 @@
       "raw": "Earnings announcement* for JBGS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
       "checked": "2026-11-19T20:59:54.950Z"
     },
-    "WSM": {
-      "date": "2026-11-19",
-      "estimated": true,
-      "checked": "2026-11-16T22:33:19.653Z"
-    },
     "SHAZ": {
       "date": null,
       "raw": "Earnings announcement* for SHAZ:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "TSN": {
       "date": null,
       "raw": "Earnings announcement* for TSN:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BIDU": {
       "date": null,
       "raw": "Earnings announcement* for BIDU:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "XP": {
       "date": null,
       "raw": "Earnings announcement* for XP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ACM": {
       "date": null,
       "raw": "Earnings announcement* for ACM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "BEKE": {
       "date": null,
       "raw": "Earnings announcement* for BEKE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "NVDA": {
       "date": null,
       "raw": "Earnings announcement* for NVDA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "HD": {
       "date": null,
       "raw": "Earnings announcement* for HD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "JD": {
       "date": null,
       "raw": "Earnings announcement* for JD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "KLAR": {
       "date": null,
       "raw": "Earnings announcement* for KLAR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "DIS": {
       "date": null,
       "raw": "Earnings announcement* for DIS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "OCSL": {
       "date": null,
       "raw": "Earnings announcement* for OCSL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "TME": {
       "date": null,
       "raw": "Earnings announcement* for TME:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "VIK": {
       "date": null,
       "raw": "Earnings announcement* for VIK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "ESLT": {
       "date": null,
       "raw": "Earnings announcement* for ESLT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "LZB": {
       "date": null,
       "raw": "Earnings announcement* for LZB:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "PONY": {
       "date": null,
       "raw": "Earnings announcement* for PONY:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "TJX": {
       "date": null,
       "raw": "Earnings announcement* for TJX:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "LOW": {
       "date": null,
       "raw": "Earnings announcement* for LOW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "PANW": {
       "date": null,
       "raw": "Earnings announcement* for PANW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "WWD": {
       "date": null,
       "raw": "Earnings announcement* for WWD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "HP": {
       "date": null,
       "raw": "Earnings announcement* for HP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "TGT": {
       "date": null,
       "raw": "Earnings announcement* for TGT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
     },
     "SBLK": {
       "date": null,
       "raw": "Earnings announcement* for SBLK:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
-      "checked": "2026-11-19T02:42:02.263Z"
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "WMG": {
+      "date": null,
+      "raw": "Earnings announcement* for WMG:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "BABA": {
+      "date": null,
+      "raw": "Earnings announcement* for BABA:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "WMT": {
+      "date": null,
+      "raw": "Earnings announcement* for WMT:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "BULL": {
+      "date": null,
+      "raw": "Earnings announcement* for BULL:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "RERE": {
+      "date": null,
+      "raw": "Earnings announcement* for RERE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "PDD": {
+      "date": null,
+      "raw": "Earnings announcement* for PDD:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "VVV": {
+      "date": null,
+      "raw": "Earnings announcement* for VVV:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "MATW": {
+      "date": null,
+      "raw": "Earnings announcement* for MATW:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "KEYS": {
+      "date": null,
+      "raw": "Earnings announcement* for KEYS:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "WSM": {
+      "date": null,
+      "raw": "Earnings announcement* for WSM:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "INTU": {
+      "date": null,
+      "raw": "Earnings announcement* for INTU:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "ESE": {
+      "date": null,
+      "raw": "Earnings announcement* for ESE:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "GAP": {
+      "date": null,
+      "raw": "Earnings announcement* for GAP:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "NTES": {
+      "date": null,
+      "raw": "Earnings announcement* for NTES:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
+    },
+    "BNR": {
+      "date": null,
+      "raw": "Earnings announcement* for BNR:  Our vendor, Zacks Investment Research, hasn't provided us with the upcoming earnings report date.",
+      "checked": "2026-11-20T02:27:53.431Z"
     }
   }
 }
