@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-11-22T19:36:38.736Z",
+  "updatedAt": "2026-11-23T23:51:28.528Z",
   "since": "2026-04-01",
   "checks": {
     "house": {
-      "at": "2026-11-19T20:33:44.745Z",
-      "docs": 4,
-      "complete": 4,
+      "at": "2026-11-23T23:51:28.528Z",
+      "docs": 2,
+      "complete": 2,
       "incomplete": []
     }
   },
@@ -455,9 +455,64 @@
     "H20036855",
     "H20036864",
     "S/search/view/ptr/8f97b859-75e2-4739-8392-d375744aea97/",
-    "S/search/view/ptr/f0f7eba0-ca09-4b80-a97b-64b6dafb835e/"
+    "S/search/view/ptr/f0f7eba0-ca09-4b80-a97b-64b6dafb835e/",
+    "H20036891",
+    "H20036883"
   ],
   "trades": [
+    {
+      "id": "H20036891-0",
+      "chamber": "House",
+      "member": "Ed Case",
+      "bioguide": "C001055",
+      "party": "Democrat",
+      "state": "HI",
+      "district": "01",
+      "filed": "2026-11-21",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036891.pdf",
+      "ticker": "AAPL",
+      "assetType": "ST",
+      "asset": "Apple Inc. - Common Stock (AAPL)",
+      "type": "buy",
+      "partial": false,
+      "date": "2026-11-16",
+      "notified": "2026-11-16",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "SP",
+      "desc": "Automatic stock dividend reinvestment C",
+      "company": "Apple Inc."
+    },
+    {
+      "id": "H20036883-1",
+      "chamber": "House",
+      "member": "Jennifer L. McClellan",
+      "bioguide": "M001227",
+      "party": "Democrat",
+      "state": "VA",
+      "district": "04",
+      "filed": "2026-11-20",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036883.pdf",
+      "ticker": "VZ",
+      "assetType": "ST",
+      "asset": "Verizon Communications Inc. Common Stock (VZ)",
+      "type": "sell",
+      "partial": true,
+      "date": "2026-11-19",
+      "notified": "2026-11-19",
+      "amount": {
+        "label": "$50,001 – $100,000",
+        "low": 50001,
+        "high": 100000,
+        "mid": 75000.5
+      },
+      "owner": "Self",
+      "company": "VERIZON COMMUNICATIONS INC"
+    },
     {
       "id": "Sf0f7eba0-ca09-4b80-a97b-64b6dafb835e-23",
       "chamber": "Senate",
