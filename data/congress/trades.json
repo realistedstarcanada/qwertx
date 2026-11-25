@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-11-24T22:24:36.247Z",
+  "updatedAt": "2026-11-25T21:39:47.491Z",
   "since": "2026-04-01",
   "checks": {
     "house": {
-      "at": "2026-11-24T22:24:36.247Z",
+      "at": "2026-11-25T21:39:47.491Z",
       "docs": 1,
       "complete": 1,
       "incomplete": []
@@ -459,7 +459,8 @@
     "H20036891",
     "H20036883",
     "H20035776",
-    "S/search/view/ptr/9d3510cc-b11b-4777-a8a8-f0a58e886290/"
+    "S/search/view/ptr/9d3510cc-b11b-4777-a8a8-f0a58e886290/",
+    "H20036848"
   ],
   "trades": [
     {
@@ -678,6 +679,32 @@
         "mid": 8000.5
       },
       "owner": "Spouse"
+    },
+    {
+      "id": "H20036848-0",
+      "chamber": "House",
+      "member": "Daniel Meuser",
+      "bioguide": "M001204",
+      "party": "Republican",
+      "state": "PA",
+      "district": "09",
+      "filed": "2026-11-24",
+      "source": "https://disclosures-clerk.house.gov/public_disc/ptr-pdfs/2026/20036848.pdf",
+      "ticker": "NVDA",
+      "assetType": "ST",
+      "asset": "NVIDIA Corporation - Common Stock (NVDA)",
+      "type": "sell",
+      "partial": true,
+      "date": "2026-10-27",
+      "notified": "2026-10-27",
+      "amount": {
+        "label": "$1,001 – $15,000",
+        "low": 1001,
+        "high": 15000,
+        "mid": 8000.5
+      },
+      "owner": "SP",
+      "company": "NVIDIA CORP"
     },
     {
       "id": "S9d3510cc-b11b-4777-a8a8-f0a58e886290-9",

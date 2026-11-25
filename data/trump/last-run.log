@@ -1,7 +1,7 @@
 list 0: 0 Trump links
-list page error https://extapps2.oge.gov/201/Presiden.nsf/PAS%20Filings%20by%20Date?OpenView&Count=1000 fetch failed
-list page error https://extapps2.oge.gov/201/Presiden.nsf/PAS%20IndexA?OpenView&RestrictToCategory=T&ExpandView&Count=1000 fetch failed
-PDF links: 21
+list 1: 73 Trump links
+list 2: 73 Trump links
+PDF links: 22
 SEC tickers 10400
 Donald-J-Trump-08.12.2025-278T.pdf: 505 rows, 0/2 stocks mapped, 0 untyped, 2025-01-21..2025-06-13
 Donald-J-Trump-08.12.2025-278T(2) AMENDED.pdf: 143 rows, 0/0 stocks mapped, 0 untyped, 2025-07-02..2025-07-22
