@@ -1,71 +1,131 @@
 {
-  "updatedAt": "2026-11-24T22:47:21.717Z",
+  "updatedAt": "2026-11-25T04:24:30.285Z",
   "items": [
+    {
+      "title": "‘Ready for any storm’: UAE minister optimistic on economy as IMF lifts forecast",
+      "link": "https://www.cnbc.com/2026/11/25/uae-iran-war-economy-oil.html",
+      "source": "CNBC",
+      "published": "2026-11-25T04:06:01.000Z"
+    },
+    {
+      "title": "Australian Market Extends Early Losses In Mid-market",
+      "link": "https://www.nasdaq.com/articles/australian-market-extends-early-losses-mid-market-9",
+      "source": "Nasdaq",
+      "published": "2026-11-25T03:40:56.000Z"
+    },
+    {
+      "title": "World's Best Space Company SpaceX Will Soon Be 40% Better",
+      "link": "https://www.nasdaq.com/articles/worlds-best-space-company-spacex-will-soon-be-40-better",
+      "source": "Nasdaq",
+      "published": "2026-11-25T03:20:02.000Z"
+    },
+    {
+      "title": "Best Buy: 3 Key Takeaways for Long-Term Investors",
+      "link": "https://www.nasdaq.com/articles/best-buy-3-key-takeaways-long-term-investors",
+      "source": "Nasdaq",
+      "published": "2026-11-25T03:11:46.000Z"
+    },
+    {
+      "title": "Asian Markets Trade Mostly Lower On Tech Rout",
+      "link": "https://www.nasdaq.com/articles/asian-markets-trade-mostly-lower-tech-rout",
+      "source": "Nasdaq",
+      "published": "2026-11-25T03:04:26.000Z"
+    },
+    {
+      "title": "Jensen Huang's Return Could Make a Tesla/SpaceX Merger More Likely",
+      "link": "https://www.nasdaq.com/articles/jensen-huangs-return-could-make-tesla-spacex-merger-more-likely",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:50:02.000Z"
+    },
+    {
+      "title": "Japanese Market Sharply Lower",
+      "link": "https://www.nasdaq.com/articles/japanese-market-sharply-lower-7",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:45:07.000Z"
+    },
+    {
+      "title": "Arista Networks vs. SentinelOne: Which Technology Stock Is a Better Buy for 2027?",
+      "link": "https://www.nasdaq.com/articles/arista-networks-vs-sentinelone-which-technology-stock-better-buy-2027",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:43:50.000Z"
+    },
+    {
+      "title": "Almadex Minerals Ltd. Q3 Income Advances",
+      "link": "https://www.nasdaq.com/articles/almadex-minerals-ltd-q3-income-advances",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:38:18.000Z"
+    },
+    {
+      "title": "Indian Shares Seen Higher At Open",
+      "link": "https://www.nasdaq.com/articles/indian-shares-seen-higher-open-1",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:34:38.000Z"
+    },
+    {
+      "title": "Alimentation Couche-Tard Inc. Reports Retreat In Q2 Bottom Line",
+      "link": "https://www.nasdaq.com/articles/alimentation-couche-tard-inc-reports-retreat-q2-bottom-line",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:33:30.000Z"
+    },
+    {
+      "title": "Orogen Royalties Inc. Q3 Earnings Summary",
+      "link": "https://www.nasdaq.com/articles/orogen-royalties-inc-q3-earnings-summary",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:32:28.000Z"
+    },
+    {
+      "title": "CleanSpark (CLSK) Q4 2026 Earnings Call Transcript",
+      "link": "https://www.nasdaq.com/articles/cleanspark-clsk-q4-2026-earnings-call-transcript",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:27:54.000Z"
+    },
+    {
+      "title": "e.l.f. Beauty vs. Hershey: Which Consumer Goods Stock Is a Better Buy for 2027?",
+      "link": "https://www.nasdaq.com/articles/elf-beauty-vs-hershey-which-consumer-goods-stock-better-buy-2027",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:22:50.000Z"
+    },
+    {
+      "title": "1 Reason I Haven’t Bought Oklo Stock -- and Probably Never Will",
+      "link": "https://www.nasdaq.com/articles/1-reason-i-havent-bought-oklo-stock-and-probably-never-will",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:20:02.000Z"
+    },
+    {
+      "title": "Thai Stock Market May Open Under Pressure On Wednesday",
+      "link": "https://www.nasdaq.com/articles/thai-stock-market-may-open-under-pressure-wednesday",
+      "source": "Nasdaq",
+      "published": "2026-11-25T02:01:18.000Z"
+    },
+    {
+      "title": "I’m in my 70s and buying a new BMW X1. Should I put my only son on the title?",
+      "link": "https://www.marketwatch.com/story/im-in-my-70s-and-buying-a-new-bmw-x1-should-i-put-my-only-son-on-the-title-25731040?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-25T02:00:00.000Z"
+    },
+    {
+      "title": "Dell’s stock rises as the AI boom helps sales more than double",
+      "link": "https://www.marketwatch.com/story/dells-stock-rises-as-the-ai-boom-helps-sales-more-than-double-cfb8cf65?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-25T01:11:00.000Z"
+    },
+    {
+      "title": "My husband secretly sends his ex-wife $1,500 a month after she lost her job. We have $2.4 million saved. Has he lied by omission?",
+      "link": "https://www.marketwatch.com/story/my-husband-secretly-sends-his-ex-wife-1-500-a-month-after-she-lost-her-job-we-have-2-4-million-saved-has-he-lied-by-omission-ede1972a?mod=mw_rss_topstories",
+      "source": "MarketWatch",
+      "published": "2026-11-25T00:05:00.000Z"
+    },
     {
       "title": "Micron boosted CEO Sanjay Mehrotra’s security budget by 2,000%, new filing shows",
       "link": "https://www.marketwatch.com/story/micron-boosted-ceo-sanjay-mehrotras-security-budget-by-2-000-new-filing-shows-d6202acc?mod=mw_rss_topstories",
       "source": "MarketWatch",
-      "published": "2026-11-24T22:43:00.000Z"
+      "published": "2026-11-24T23:11:00.000Z"
     },
     {
-      "title": "Prediction: Here's What $10,000 in Coca-Cola Could Pay You in Dividends by 2036",
-      "link": "https://www.nasdaq.com/articles/prediction-heres-what-10000-coca-cola-could-pay-you-dividends-2036",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:33:02.000Z"
-    },
-    {
-      "title": "Is Netflix a Buy for $1,000?",
-      "link": "https://www.nasdaq.com/articles/netflix-buy-1000",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:30:02.000Z"
-    },
-    {
-      "title": "Wall Street's $1.4 Trillion Bubble May Be on the Verge of Bursting -- but It's Not Artificial Intelligence (AI)",
-      "link": "https://www.nasdaq.com/articles/wall-streets-14-trillion-bubble-may-be-verge-bursting-its-not-artificial-intelligence-ai",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:20:02.000Z"
-    },
-    {
-      "title": "PennantPark (PNNT) Q4 2026 Earnings Call Transcript",
-      "link": "https://www.nasdaq.com/articles/pennantpark-pnnt-q4-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:14:55.000Z"
-    },
-    {
-      "title": "Dell Just Reported Earnings and Raised Its Forecast by $10 Billion. Is the Stock a Buy After Tuesday's Selloff?",
-      "link": "https://www.nasdaq.com/articles/dell-just-reported-earnings-and-raised-its-forecast-10-billion-stock-buy-after-tuesdays",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:14:43.000Z"
-    },
-    {
-      "title": "Stock Market Today, Nov. 24: Hecla Mining Slides as Silver Prices Fall on Rate-Hike Worries",
-      "link": "https://www.nasdaq.com/articles/stock-market-today-nov-24-hecla-mining-slides-silver-prices-fall-rate-hike-worries",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:13:01.000Z"
-    },
-    {
-      "title": "Stock Market Today, Nov. 24: Tech Sell-Off Drags Nasdaq as Dow Gains on Value Rotation",
-      "link": "https://www.nasdaq.com/articles/stock-market-today-nov-24-tech-sell-drags-nasdaq-dow-gains-value-rotation",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:11:48.000Z"
-    },
-    {
-      "title": "Wendy's Faces Class Action Lawsuit Over Alleged Menu Price Hike Manipulation",
-      "link": "https://www.nasdaq.com/articles/wendys-faces-class-action-lawsuit-over-alleged-menu-price-hike-manipulation",
-      "source": "Nasdaq",
-      "published": "2026-11-24T22:03:09.000Z"
-    },
-    {
-      "title": "Abercrombie (ANF) Q3 2026 Earnings Call Transcript",
-      "link": "https://www.nasdaq.com/articles/abercrombie-anf-q3-2026-earnings-call-transcript",
-      "source": "Nasdaq",
-      "published": "2026-11-24T21:58:20.000Z"
-    },
-    {
-      "title": "Why Anthropic Stock Fell Again",
-      "link": "https://www.nasdaq.com/articles/why-anthropic-stock-fell-again",
-      "source": "Nasdaq",
-      "published": "2026-11-24T21:55:02.000Z"
+      "title": "Kalshi daily volume of ‘perps’ trading begins to top its prediction markets",
+      "link": "https://www.cnbc.com/2026/11/24/kalshi-perps-volume-prediction-markets.html",
+      "source": "CNBC",
+      "published": "2026-11-24T23:03:24.000Z"
     },
     {
       "title": "12 days of sardines and Croc charms: Are Advent calendars getting out of control?",
@@ -80,30 +140,6 @@
       "published": "2026-11-24T21:52:05.000Z"
     },
     {
-      "title": "Universal Corporation Names John Ament President Of Universal Ingredients",
-      "link": "https://www.nasdaq.com/articles/universal-corporation-names-john-ament-president-universal-ingredients",
-      "source": "Nasdaq",
-      "published": "2026-11-24T21:49:54.000Z"
-    },
-    {
-      "title": "Stock Market Today, Nov. 24: Nvidia Gives Back $240 Billion in Market Value Despite Wall Street Upgrade Signaling 29% Upside",
-      "link": "https://www.nasdaq.com/articles/stock-market-today-nov-24-nvidia-gives-back-240-billion-market-value-despite-wall-street",
-      "source": "Nasdaq",
-      "published": "2026-11-24T21:49:49.000Z"
-    },
-    {
-      "title": "HP Reports Q4 Profit Decline Despite Revenue Growth",
-      "link": "https://www.nasdaq.com/articles/hp-reports-q4-profit-decline-despite-revenue-growth",
-      "source": "Nasdaq",
-      "published": "2026-11-24T21:48:19.000Z"
-    },
-    {
-      "title": "Why Analog Devices Stock Fell Nearly 20% Today",
-      "link": "https://www.nasdaq.com/articles/why-analog-devices-stock-fell-nearly-20-today",
-      "source": "Nasdaq",
-      "published": "2026-11-24T21:46:48.000Z"
-    },
-    {
       "title": "Anthropic’s stock just broke below its IPO price for the first time",
       "link": "https://www.marketwatch.com/story/anthropics-stock-just-broke-below-its-ipo-price-for-the-first-time-5dc82668?mod=mw_rss_topstories",
       "source": "MarketWatch",
@@ -114,12 +150,6 @@
       "link": "https://www.marketwatch.com/story/hpe-just-posted-its-strongest-growth-ever-and-its-stock-is-tacking-on-more-big-gains-4421cebb?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "published": "2026-11-24T21:45:00.000Z"
-    },
-    {
-      "title": "Workday Q3 Profit Edges Lower; Raises FY27 Subscription Revenue Outlook",
-      "link": "https://www.nasdaq.com/articles/workday-q3-profit-edges-lower-raises-fy27-subscription-revenue-outlook",
-      "source": "Nasdaq",
-      "published": "2026-11-24T21:41:25.000Z"
     },
     {
       "title": "How much more are richest Americans spending on the holidays compared to everyone else?",
@@ -138,30 +168,6 @@
       "link": "https://www.marketwatch.com/story/microns-stock-falls-as-an-analyst-warns-about-a-future-supply-glut-f7fbeefb?mod=mw_rss_topstories",
       "source": "MarketWatch",
       "published": "2026-11-24T21:22:00.000Z"
-    },
-    {
-      "title": "The stock market is hardly cheap, even taking recent declines into account",
-      "link": "https://www.marketwatch.com/story/the-stock-market-is-hardly-cheap-even-taking-recent-declines-into-account-fe0a7989?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-24T21:22:00.000Z"
-    },
-    {
-      "title": "I’ve been married for 58 years. It’s ‘our’ money, not ‘his’ and ‘hers.’ Why do so many couples keep their finances separate?",
-      "link": "https://www.marketwatch.com/story/ive-been-married-for-58-years-its-our-money-not-his-and-hers-why-dont-others-feel-the-same-c5745889?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-24T21:15:00.000Z"
-    },
-    {
-      "title": "Nvidia’s stock drops as these major questions loom over Jensen Huang’s return",
-      "link": "https://www.marketwatch.com/story/nvidias-stock-drops-as-these-major-questions-loom-over-jensen-huangs-return-9096636f?mod=mw_rss_topstories",
-      "source": "MarketWatch",
-      "published": "2026-11-24T21:14:00.000Z"
-    },
-    {
-      "title": "Kalshi daily volume of ‘perps’ trading begins to top its prediction markets",
-      "link": "https://www.cnbc.com/2026/11/24/kalshi-perps-volume-prediction-markets.html",
-      "source": "CNBC",
-      "published": "2026-11-24T18:34:55.000Z"
     },
     {
       "title": "Consumer confidence shoots up after Democrats' midterm victories — though inflation worries persist",
