@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T19:50:21.475Z",
+  "updatedAt": "2026-11-27T21:40:01.061Z",
   "fearGreed": {
     "score": 25,
     "rating": "extreme fear",
@@ -7,7 +7,7 @@
     "previousWeek": 19,
     "previousMonth": 33,
     "previousYear": 18,
-    "asOf": "2026-11-27T19:33:06+00:00",
+    "asOf": "2026-11-27T21:23:16+00:00",
     "source": "CNN Fear & Greed Index"
   },
   "vix": {
@@ -613,11 +613,11 @@
     },
     "brent": {
       "name": "Brent oil",
-      "value": 90.62999725341797,
+      "value": 90.83999633789062,
       "date": "2026-11-27",
-      "change": -0.04206746994247593,
-      "changeAbs": -3.9800033569335938,
-      "week": -0.014677169539523173,
+      "change": -0.03984784111763815,
+      "changeAbs": -3.7700042724609375,
+      "week": -0.012394074553564727,
       "unit": "$"
     },
     "gold": {
